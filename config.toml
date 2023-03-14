@@ -26,7 +26,7 @@ enableGitInfo = true
         lineNumbersInTable = true
         style = "dracula"
     [frontmatter]
-        lastmod = ["date modified","lastmod", ":git", "date", "publishDate"]
+        lastmod = ["date created","lastmod", ":git", "date", "publishDate"]
         publishDate = ["date created","publishDate", "date"]
     [markup.goldmark.renderer]
         unsafe = true
