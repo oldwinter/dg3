@@ -11,9 +11,11 @@ const config: QuartzConfig = {
     pageTitle: "Quartz 4",
     pageTitleSuffix: "",
     enableSPA: true,
+    pageTitleSuffix: "",
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
+      tagId: "G-11MD77L81V",
     },
     locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
@@ -66,7 +68,7 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false, enableCheckbox: true }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
@@ -83,6 +85,8 @@ const config: QuartzConfig = {
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
+        rssLimit: 10,
+        rssFullHtml: true
       }),
       Plugin.Assets(),
       Plugin.Static(),
