@@ -8,7 +8,7 @@
   }
 
   & > .search-button {
-    background-color: var(--lightgray);
+    background-color: color-mix(in srgb, var(--lightgray) 60%, var(--light));
     border: none;
     border-radius: 4px;
     font-family: inherit;
@@ -42,7 +42,7 @@
     }
   }
 
-  & > #search-container {
+  & > .search-container {
     position: fixed;
     contain: layout;
     z-index: 999;
@@ -58,7 +58,7 @@
       display: inline-block;
     }
 
-    & > #search-space {
+    & > .search-space {
       width: 65%;
       margin-top: 12vh;
       margin-left: auto;
@@ -91,7 +91,7 @@
         }
       }
 
-      & > #search-layout {
+      & > .search-layout {
         display: none;
         flex-direction: row;
         border: 1px solid var(--lightgray);
@@ -102,7 +102,7 @@
           display: flex;
         }
 
-        &[data-preview] > #results-container {
+        &[data-preview] > .results-container {
           flex: 0 0 min(30%, 450px);
         }
 
@@ -133,11 +133,13 @@
         }
 
         @media all and ($mobile) {
-          & > #preview-container {
+          flex-direction: column;
+
+          & > .preview-container {
             display: none !important;
           }
 
-          &[data-preview] > #results-container {
+          &[data-preview] > .results-container {
             width: 100%;
             height: auto;
             flex: 0 0 100%;
@@ -150,7 +152,7 @@
           scroll-margin-top: 2rem;
         }
 
-        & > #preview-container {
+        & > .preview-container {
           flex-grow: 1;
           display: block;
           overflow: hidden;
@@ -171,7 +173,7 @@
           }
         }
 
-        & > #results-container {
+        & > .results-container {
           overflow-y: auto;
 
           & .result-card {
@@ -202,6 +204,12 @@
 
             & > h3 {
               margin: 0;
+            }
+
+            @media all and not ($mobile) {
+              & > p.card-description {
+                display: none;
+              }
             }
 
             & > ul.tags {
