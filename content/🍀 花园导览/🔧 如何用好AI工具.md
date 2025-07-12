@@ -1,10 +1,7 @@
 ---
-uid: f6222587-a8d0-46c3-8e30-7a7f385e095f
-title: 🤖 如何用好AIGC工具
-date created: 2023-03-16
-date modified: 2025-07-11
-publish: true
+{"publish":true,"permalink":"/🍀 花园导览/🔧 如何用好AI工具.md","title":"🔧 如何用好AI工具","created":"2023-03-16","modified":"2025-07-12","published":"2025-07-12T15:49:25.638+08:00","cssclasses":""}
 ---
+
 
 现在ai要用好，就3步：
 
@@ -16,9 +13,7 @@ publish: true
 
 [[Spaces/2-Area/思维工具与模块/模型使用时间占比毛估估-每月更新]]
 
-## chatbot 类型
-
->
+## chatbot 类
 
 - 本地
 	- [[Spaces/3-Resource/软件梳理/macos软件/Cherry Studio]]

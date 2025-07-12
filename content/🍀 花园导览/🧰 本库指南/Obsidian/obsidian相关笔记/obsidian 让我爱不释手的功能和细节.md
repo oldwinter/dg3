@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian 让我爱不释手的功能和细节.md","title":"obsidian 让我爱不释手的功能和细节","created":"2022-08-01","modified":"2023-03-14","published":"2025-07-10T22:37:51.667+08:00","cssclasses":""}
+date created: 2022-08-01
+date modified: 2023-03-14
+title: obsidian 让我爱不释手的功能和细节
+publish: true
 ---
-
 
 - **真·本地化**。和任何其他笔记软件不同，obsidian的库中，所有的md格式笔记和配置，都可以打包带走，并在别人那重新开启后，重现一个完全一模一样的界面和笔记，简直amazing😱，就像docker的镜像一样。这是我目前遇到的任何其他笔记软件都没做到的事情。
 - **真·个人完全免费**。体现在2个方面：

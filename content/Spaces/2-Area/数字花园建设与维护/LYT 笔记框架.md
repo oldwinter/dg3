@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/数字花园建设与维护/LYT 笔记框架.md","aliases":"lyt kit","title":"LYT 笔记框架","created":"2022-06-19","modified":"2023-03-14","published":"2025-07-09T14:30:14.370+08:00","cssclasses":""}
+aliases:
+  - lyt kit
+date created: 2022-06-19
+date modified: 2023-03-14
+title: LYT 笔记框架
+publish: true
 ---
-
 down:: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]
 
 [LYT Kit 6: Your starter kit to build your PKM system (+free download for your Obsidian app) - YouTube](https://www.youtube.com/watch?v=ftzQOkzGCLg)  

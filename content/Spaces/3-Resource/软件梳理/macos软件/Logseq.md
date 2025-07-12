@@ -1,7 +1,17 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Logseq.md","title":"Logseq","created":"2022-06-09","modified":"2025-07-09","published":"2025-07-09T18:16:24.552+08:00","tags":["macOS软件"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2025-07-09
+title: Logseq
+icon: "[[icon-cc-image-Logseq.png]]"
+tags:
+  - macOS软件
+作用: obsidian 备选
+评价: 4
+设置同步: github 仓库
+是否已备份: y
+是否已重装:
+publish: true
 ---
-
 
 ##
 

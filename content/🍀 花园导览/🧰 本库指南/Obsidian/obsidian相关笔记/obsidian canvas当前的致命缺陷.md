@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian canvas当前的致命缺陷.md","title":"obsidian canvas当前的致命缺陷","created":"2023-02-27","modified":"2024-08-09","published":"2025-07-10T22:05:10.573+08:00","cssclasses":""}
+title: obsidian canvas当前的致命缺陷
+date created: 2023-02-27
+date modified: 2024-08-09
+publish: true
 ---
-
 
 - canvas中引用的卡片，打开后，其反向链接面板无数据。
 	- [[2Hop links Plus插件]]可解决此问题

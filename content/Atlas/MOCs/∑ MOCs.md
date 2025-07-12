@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Atlas/MOCs/∑ MOCs.md","aliases":"什么是MOC笔记组织法 索引笔记 Map Of Content","title":"MOC","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-09T18:42:14.943+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Atlas/MOCs/∑ MOCs.md","aliases":"什么是MOC笔记组织法 索引笔记 Map Of Content","title":"MOC","created":"2022-06-09","modified":"2025-07-12","published":"2025-07-12T03:18:00.780+08:00","cssclasses":""}
 ---
 
 
@@ -14,18 +14,17 @@ MOC 和传统目录最大的不同，应该是它是我们根据自己的思维�
 举例：
 
 - 卡片笔记的 MOC：  
-	卡片笔记是[[Cards/Properties Added/卢曼]]创造的一种自下而上的笔记方法，有本书[[Spaces/2-Area/知识管理/卡片笔记]]进行了完整的思想和方法论阐述，但书中提到的工具，太烂了，现在有更好的[[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]软件，结合其强大的[[Cards/双链笔记]]概念，简直和卡片笔记不谋而合，这就是[[Cards/工具和方法论]]的完美结合状态吧。
-	
+	卡片笔记是[[Spaces/3-Resource/人/卢曼]]创造的一种自下而上的笔记方法，有本书[[Spaces/2-Area/知识管理/卡片笔记]]进行了完整的思想和方法论阐述，但书中提到的工具，太烂了，现在有更好的[[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]软件，结合其强大的[[Cards/双链笔记]]概念，简直和卡片笔记不谋而合，这就是[[Cards/工具和方法论]]的完美结合状态吧。
 - 卡片笔记的目录：  
-	什么是卡片笔记？  
-[[Spaces/2-Area/知识管理/卡片笔记]]  
-	什么是双链笔记？  
-[[Cards/双链笔记]]  
-	有哪些好用的双链笔记工具？  
-[[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]  
-	obsidian 中如何践行卡片笔记写作法？  
-[[Cards/工具和方法论]]  
-[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian组织笔记的5个要素]]
+	- 什么是卡片笔记？  
+- [[Spaces/2-Area/知识管理/卡片笔记]]  
+	- 什么是双链笔记？  
+- [[Cards/双链笔记]]  
+	- 有哪些好用的双链笔记工具？  
+- [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]  
+	- obsidian 中如何践行卡片笔记写作法？  
+- [[Cards/工具和方法论]]  
+- [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian组织笔记的5个要素]]
 
 ---
 

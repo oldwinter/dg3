@@ -1,13 +1,15 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/markdown.md","title":"markdown","created":"2022-06-09","modified":"2025-07-10","published":"2025-07-10T22:31:07.790+08:00","cssclasses":""}
+date created: 2022-06-09
+date modified: 2025-07-10
+title: markdown
+publish: true
 ---
-
 
 x:: [[Spaces/2-Area/知识管理/vim、markdown与org-mode]]
 
 markdown 相比于 txt 这种 0 格式的文本，有辅助符号能帮助我们进行排版；相比于 word 这种超级编辑器，不需要也不支持复杂的排版格式。
 
-markdown 可以说就是 [[📥 Inbox/中庸之道]]，牺牲排版功能完备性，引入简单符号，就能实现常用的基本排版功能。简单且通用，所以十分利于传播和分发。
+markdown 可以说就是 [[Cards/中庸之道]]，牺牲排版功能完备性，引入简单符号，就能实现常用的基本排版功能。简单且通用，所以十分利于传播和分发。
 
 ## 历史和现状
 

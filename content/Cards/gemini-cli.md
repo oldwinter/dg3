@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Cards/gemini-cli.md","created":"2025-06-25","modified":"2025-07-10","published":"2025-07-11T15:11:47.195+08:00","tags":["AI工具"],"cssclasses":""}
+date created: 2025-06-25
+date modified: 2025-07-10
+tags:
+  - AI工具
+publish: true
 ---
-
 
 ![CleanShot 2025-07-10 at 17.50.48@2x.png](https://pub-pic.oldwinter.top/2025/07/d7bbeeb0693c3a6118a7a252a8e6ecdc.png)
 

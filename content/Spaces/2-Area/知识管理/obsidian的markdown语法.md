@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/obsidian的markdown语法.md","title":"obsidian的markdown语法","created":"2022-08-08","modified":"2023-03-14","published":"2025-07-10T22:31:15.236+08:00","cssclasses":""}
+date created: 2022-08-08
+date modified: 2023-03-14
+title: obsidian的markdown语法
+publish: true
 ---
-
 
 [Obsidian Flavored Markdown - Obsidian Help](https://help.obsidian.md/obsidian-flavored-markdown)
 

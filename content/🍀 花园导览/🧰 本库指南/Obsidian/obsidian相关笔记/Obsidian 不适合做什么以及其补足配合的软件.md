@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian 不适合做什么以及其补足配合的软件.md","title":"Obsidian 不适合做什么以及其补足配合的软件","created":"2023-04-11","modified":"2025-07-07","published":"2025-07-07T17:12:01.708+08:00","cssclasses":""}
+title: Obsidian 不适合做什么以及其补足配合的软件
+date created: 2023-04-11
+date modified: 2025-07-07
+publish: true
 ---
-
 
 obsidian不适合做什么:  
 

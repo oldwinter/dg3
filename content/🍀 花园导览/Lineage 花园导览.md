@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/Lineage 花园导览.md","created":"2025-07-09T11:18:47.260+08:00","modified":"2025-07-10T21:34:33.604+08:00","published":"2025-07-10T21:34:33.604+08:00","tags":["AI生成","花园导览"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/Lineage 花园导览.md","created":"2025-07-09T11:18:47.260+08:00","modified":"2025-07-12T02:53:33.369+08:00","published":"2025-07-12T02:53:33.369+08:00","tags":["AI生成","花园导览"],"cssclasses":""}
 ---
 
 
@@ -186,7 +186,7 @@
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Dataview]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Cubox Obsidian 同步插件]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Commander]]
-- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Auto Link Title]]
+- [[Spaces/2-Area/计算机知识/Auto Link Title]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Advanced Canvas]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Webpage HTML Export]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Waypoint]]

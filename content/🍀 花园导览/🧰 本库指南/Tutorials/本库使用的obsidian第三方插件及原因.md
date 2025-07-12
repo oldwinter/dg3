@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/本库使用的obsidian第三方插件及原因.md","title":"本库使用的obsidian第三方插件及原因","created":"2022-08-09","modified":"2025-07-10","published":"2025-07-10T22:36:54.534+08:00","cssclasses":""}
+date created: 2022-08-09
+date modified: 2025-07-10
+title: 本库使用的obsidian第三方插件及原因
+publish: true
 ---
-
 
 up:: [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/∑ obsidian插件]]  
 x:: [[Spaces/Published/已发布文章/2022年7月，obsidian 依然必装的 10 个插件]]

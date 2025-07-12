@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/本库启用obsidian核心插件的进阶平替第三方插件.md","title":"本库启用obsidian核心插件的进阶平替第三方插件","created":"2023-03-02","modified":"2023-03-14","published":"2025-07-10T22:03:41.697+08:00","cssclasses":""}
+title: 本库启用obsidian核心插件的进阶平替第三方插件
+date created: 2023-03-02
+date modified: 2023-03-14
+publish: true
 ---
-
 
 - 快速切换
 	- 改用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Another Quick Switcher]]。

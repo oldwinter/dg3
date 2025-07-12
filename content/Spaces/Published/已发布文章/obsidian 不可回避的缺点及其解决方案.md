@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/obsidian 不可回避的缺点及其解决方案.md","title":"obsidian 不可回避的缺点及其解决方案","created":"2022-08-01 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","published":"2025-07-10T22:36:54.180+08:00","tags":["文章/已完成"],"cssclasses":""}
+date created: 2022-08-01 00:00:00+00:00
+date modified: 2023-03-14 00:00:00+00:00
+tags:
+  - 文章/已完成
+title: obsidian 不可回避的缺点及其解决方案
+publish: true
 ---
-
 >可以访问此文的双链版本，获得完整阅读体验：[Obsidian 不可回避的缺点及其解决方案 — 🌱 oldwinterの数字花园](https://notes.oldwinter.top/obsidian-%E4%B8%8D%E5%8F%AF%E5%9B%9E%E9%81%BF%E7%9A%84%E7%BC%BA%E7%82%B9%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
 
 通过[[Cards/国内采用本地优先存储方案的笔记软件的对比]]，其实logseq和思源笔记也是很好的选择。我个人的想法与obsidian理念最贴合，所以最终选择了这个笔记软件。
@@ -32,7 +36,7 @@
 	- [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]+[[Spaces/3-Resource/VSCode插件/foam]]插件+[[Cards/正则表达式]]解决批量文件处理和搜索替换的编辑问题。如果用系统自带文件管理器或其他第三方软件修改文件名，则会因为不自动更新链接，导致双链失效。
 		- ，[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Bulk Rename]]插件能更完美地实现批量重命名，无需使用vscode了。
 	- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/File Cooker]]插件解决文件按需批量移动和删除。
-	- [[📥 Inbox/笔记重组插件]]+[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Note Refactor]]插件解决文件重组和拆分等场景。
+	- [[Cards/笔记重组插件]]+[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Note Refactor]]插件解决文件重组和拆分等场景。
 	- [[Sources/GithubStarsSync/longform]]插件，解决文件合并与编排问题。
 	- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/DB Folder]]插件，解决[[Cards/frontmatter\|frontdata]]批量处理问题。
 		- 2025-07-10：[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/File Cooker]]批量处理[[Cards/frontmatter]]。
@@ -50,7 +54,7 @@
 ### 富媒体文件支持
 
 - 缺点：现在很多的笔记软件如notion、语雀等，都可以通过/符号，让用户选择插入图片、视频、pdf，甚至思维导图、ppt、表格、投票、地图、密码锁等组件。而obsidian顶天支持图片、视频和pdf这类普通文件的插入，其他都依赖iframe方案进行。
-- 解决方案：图片、视频可以使用同样本地优先的[[📥 Inbox/billfish]]来管理，或采用[[Cards/图片保存：图床or本地\|图床]]。一些云笔记定制的地图等功能，obsidian有些功能有人开发了插件实现，但实用性不强。最好的方式还是，将这些富媒体功能，通过其他云笔记软件实现，并将页面[[Cards/手动双向链接]]至obsidian笔记中。即[[Cards/重器轻用]]。[[2023-02-27]]更新：有了canvas白板后，canvas可以做为一种更富的富媒体，里面也能嵌入图片、网址、视频、pdf等等。如果需要画图场景，则可嵌入[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Excalidraw]]。
+- 解决方案：图片、视频可以使用同样本地优先的[[Spaces/2-Area/计算机知识/billfish]]来管理，或采用[[Cards/图片保存：图床or本地\|图床]]。一些云笔记定制的地图等功能，obsidian有些功能有人开发了插件实现，但实用性不强。最好的方式还是，将这些富媒体功能，通过其他云笔记软件实现，并将页面[[Cards/手动双向链接]]至obsidian笔记中。即[[Cards/重器轻用]]。[[2023-02-27]]更新：有了canvas白板后，canvas可以做为一种更富的富媒体，里面也能嵌入图片、网址、视频、pdf等等。如果需要画图场景，则可嵌入[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Excalidraw]]。
 
 ## 写在最后
 

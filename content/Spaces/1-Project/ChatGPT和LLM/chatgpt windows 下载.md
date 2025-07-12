@@ -1,7 +1,8 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/ChatGPT和LLM/chatgpt windows 下载.md","created":"2024-11-15","modified":"2025-07-08","published":"2025-07-08T23:01:40.729+08:00","cssclasses":""}
+date created: 2024-11-15
+date modified: 2025-07-08
+publish: true
 ---
-
 
 ![](https://pub-pic.oldwinter.top/2024/11/aa5af18ceffdc0f715daa2fda3548cb2.png)
 

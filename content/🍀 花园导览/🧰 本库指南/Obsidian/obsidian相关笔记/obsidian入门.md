@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian入门.md","title":"obsidian入门","created":"2022-06-09","modified":"2025-07-05","published":"2025-07-07T17:10:23.996+08:00","cssclasses":""}
+date created: 2022-06-09
+date modified: 2025-07-05
+title: obsidian入门
+publish: true
 ---
-
 
 ## 别人眼中的 obsidian
 
@@ -32,7 +34,7 @@
 
 - 随时引用。随时随地双链，有种码代码的畅快感，能随时引用到曾经写过思考过的东西，很爽。这种爽感，倒逼出了创作激情。
 - [[Cards/context 切换]]极快。基础文件都是markdown，完全本地化，从而换文件阅读或编辑（[[Cards/context 切换]]）的速度极快，不像其他笔记软件，换个页面转圈圈等 3 秒，简直无法忍。notion，语雀别看了，说的就是你。
-- [[Cards/∑ 平台＋插件]]玩法，和 chrome 与 vscode 类似，入门简单，开箱即用，又不失可玩性，且玩法上限极高，甚至无边界。
+- [[Spaces/3-Resource/软件梳理/平台＋插件]]玩法，和 chrome 与 vscode 类似，入门简单，开箱即用，又不失可玩性，且玩法上限极高，甚至无边界。
 
 ### 使用初衷
 

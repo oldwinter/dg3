@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/linux必备软件.md","title":"linux必备软件","created":"2022-07-06","modified":"2023-03-14","published":"2025-07-11T16:16:15.158+08:00","cssclasses":""}
+date created: 2022-07-06
+date modified: 2023-03-14
+title: linux必备软件
+publish: true
 ---
-
 
 很少使用linux图形界面。
 

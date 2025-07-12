@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/∑ obsidian相关笔记.md","created":"2025-07-09","modified":"2025-07-09","published":"2025-07-10T13:42:03.101+08:00","tags":["MOC","AI生成"],"cssclasses":""}
+tags:
+  - MOC
+  - AI生成
+date created: 2025-07-09
+date modified: 2025-07-09
+publish: true
 ---
-
 
 # ∑ Obsidian 相关笔记
 

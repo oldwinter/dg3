@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Tab Switcher.md","created":"2025-06-06","modified":"2025-07-10","published":"2025-07-10T21:28:16.761+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2025-06-06
+date modified: 2025-07-10
+tags:
+  - obsidian插件
+rating: 6
+status:
+publish: true
 ---
-
 
 表现好于[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Tab Selector]]，它能跨tab group，而后者是不行的。
 

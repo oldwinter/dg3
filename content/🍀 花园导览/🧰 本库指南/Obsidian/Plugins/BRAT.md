@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/BRAT.md","created":"2024-05-11","modified":"2025-07-10","published":"2025-07-10T20:56:42.162+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2024-05-11
+date modified: 2025-07-10
+tags:
+  - obsidian插件
+status:
+rating: 5
+publish: true
 ---
-
 
 和[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Strange New Worlds]]同作者。
 

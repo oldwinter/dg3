@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Obsidian.md","title":"Obsidian","created":"2022-06-09","modified":"2025-07-10","published":"2025-07-10T17:11:45.382+08:00","tags":["评论/少数派","macOS软件","笔记应用","知识管理"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Obsidian.md","title":"Obsidian","created":"2022-06-09","modified":"2025-07-10","published":"2025-07-12T03:18:40.610+08:00","tags":["评论/少数派","macOS软件","笔记应用","知识管理"],"cssclasses":""}
 ---
 
 

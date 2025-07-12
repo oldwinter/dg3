@@ -1,7 +1,22 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Warp.md","title":"Warp","created":"2023-01-06","modified":"2024-08-07","published":"2025-07-11T15:32:35.527+08:00","tags":["macOS软件","AI产品/编程","windows软件","raycast插件","AI工具"],"cssclasses":""}
+title: Warp
+date created: 2023-01-06
+date modified: 2024-08-07
+tags:
+  - macOS软件
+  - AI产品/编程
+  - windows软件
+  - raycast插件
+  - AI工具
+评价: 6
+当前使用频率: 5
+icon: "[[icon-cc-image-Warp.png]]"
+当前是否还在使用: true
+是否已重装: true
+brew安装命令: brew install --cask warp
+设置同步: 官方账号
+publish: true
 ---
-
 
 ## 最牛逼的特性
 
@@ -20,7 +35,7 @@
 
 
 ##
-最近新出的[[Cards/ghostty]]，有空试试好使不
+最近新出的[[Spaces/2-Area/计算机知识/ghostty]]，有空试试好使不
 
 ![Pasted image 20240713181946](https://pub-pic.oldwinter.top/2025/06/dc4788ce9c6dd1b53fc4b406154a6cc9.png)
 

@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/数字花园建设与维护/§ TOCs.md","title":"§ TOCs","created":"2022-08-14","modified":"2025-07-09","published":"2025-07-09T18:29:21.969+08:00","tags":["目录笔记","todo/持续迭代"],"cssclasses":""}
+date created: 2022-08-14
+date modified: 2025-07-09
+tags:
+  - 目录笔记
+  - todo/持续迭代
+title: § TOCs
+publish: true
 ---
-
 
 > 尝试定期将笔记库局部内容结构化，结构化的过程中，会有新的体会。
 
@@ -58,7 +63,7 @@
 	   - [[Spaces/2-Area/知识管理/个人知识笔记系统]]
 		  - [[Spaces/2-Area/知识管理/基于markdown的IDE - Obsidian]]
 		  - [[Cards/内容、工具与方法论]]
-		  - [[Cards/∑ 平台＋插件]]
+		  - [[Spaces/3-Resource/软件梳理/平台＋插件]]
 	   - [[Cards/个人输出发布系统]]
 	   - [[Spaces/2-Area/数字花园建设与维护/效率系统4大子系统联动与配合]]
 	   - [[Spaces/1-Project/工作流与SOP/个人效率系统工作流]]
@@ -69,15 +74,15 @@
 - Cards
 - Sources
 - Spaces
-   - [[Spaces/1-Project/About Project]]
-	  - [[Cards/∑ 个人职业生涯]]
+   - [[Spaces/1-Project/_ Project Readme]]
+	  - [[Atlas/MOCs/∑ 个人职业生涯]]
 		 - [[Spaces/1-Project/求职/∑ 个人简历]]
 		 - [[Cards/求职与面试]]
 		 - [[Cards/职场影响力]]
 		 - [[Cards/行业影响力]]
-	  - [[Cards/∑ 我的开源项目]]
+	  - [[Atlas/MOCs/∑ 我的开源项目]]
 		 - [[Spaces/2-Area/数字花园建设与维护/知识笔记库开源]]
-		 - [[Cards/常用命令行工具包]]
+		 - [[Spaces/2-Area/计算机知识/常用命令行工具包]]
 		 - [[Cards/metacloud]]
 		 - [[raycast插件]]
 		 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/∑ obsidian插件]]
@@ -103,12 +108,12 @@
 	  - [[Spaces/2-Area/知识管理/∑ 工作和生活的效率体系建设]]
 		 - [[Spaces/2-Area/数字花园建设与维护/∑ 必备软件]]
 		 - [[Cards/个人高效学习系统]]
-		 - [[Cards/个人查找搜索系统]]
+		 - [[Spaces/3-Resource/个人成长/个人查找搜索系统]]
 	  - [[Spaces/2-Area/运动健康/∑ 运动与健康]]
 		 - [[健身]]
 		 - [[跑步]]
-		 - [[Spaces/PPV人生管理系统/Pillars - 经营领域/Pillars - 人生经营领域/饮食]]
-	  - [[Spaces/2-Area/知识管理/∑ 知识管理]]
+		 - [[饮食]]
+	  - [[∑ 知识管理]]
 		 - [[Spaces/3-Resource/软件梳理/macos软件/Notion]]
 		 - [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]
 		 - [[Spaces/3-Resource/软件梳理/macos软件/Cubox]]
@@ -119,7 +124,7 @@
 			- [[股市]]
 			- [[Cards/合约、配资、期货等金融杠杆]]
 		 - [[Spaces/3-Resource/软件梳理/好用网站/什么值得买]]
-   - [[Spaces/3-Resource/About Resource]]
+   - [[Spaces/3-Resource/_ Resource Readme]]
 	  - [[Sources/Courses/人文社科通识/∑ 人文社科通识]]
 		 - [[Sources/Courses/人文社科通识/法学/∑ 法学]]
 		 - [[Sources/Courses/人文社科通识/金融学/∑ 金融学]]
@@ -129,16 +134,16 @@
 	  - [[书影音]]
 		 - [[Spaces/3-Resource/电影笔记/∑ 电影笔记]]
 		 - [[Sources/Books/读书笔记/∑ 读书笔记]]
-		 - [[Cards/∑ 视频笔记]]
+		 - [[Atlas/MOCs/∑ 视频笔记]]
 		 - [[Spaces/3-Resource/软件梳理/macos软件/微信读书]]
 		 - [[Spaces/3-Resource/电视剧笔记/∑ 电视剧笔记]]
 	  - [[Sources/Courses/在线课程MOOC/∑ 在线课程MOOC]]
-	  - [[Cards/∑ 小知识点]]
+	  - [[Atlas/MOCs/∑ 小知识点]]
 		 - [[Cards/游戏笔记]]
 	  - [[∑ 知识原子库]]
 		 - [[单词库与概念库]]
-		 - [[Cards/∑ 英文缩写的方法或模型]]
-		 - [[Cards/∑ 金句库]]
+		 - [[Atlas/MOCs/∑ 英文缩写的方法或模型]]
+		 - [[Atlas/MOCs/∑ 金句库]]
 		 - [[∑ 人物库]]
 		 - [[Spaces/2-Area/思维工具与模块/∑ 常见思维工具]]
 		 - [[Atlas/MOCs/∑ 习惯库]]

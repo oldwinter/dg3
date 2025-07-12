@@ -1,11 +1,11 @@
 ---
-{"publish":true,"permalink":"/Cards/_ Cards Readme.md","title":"About Cards","created":"2022-06-22","modified":"2025-07-09","published":"2025-07-09T15:22:07.307+08:00","tags":["workflow","本库教程"],"cssclasses":""}
+{"publish":true,"permalink":"/Cards/_ Cards Readme.md","title":"About Cards","created":"2022-06-22","modified":"2025-07-09","published":"2025-07-12T03:43:41.125+08:00","tags":["workflow"],"cssclasses":""}
 ---
 
 
 从[[📥 Inbox/_ 📥 Inbox Readme]]来的，可以是临时卡片，也可以是[[Cards/永久笔记]]，不管怎么称呼。这里的笔记，我可能通过以下几种方式进行纳管：
 
-- 某个主题超过30张以上卡片，可以考虑进行[[Spaces/2-Area/知识管理/P.A.R.A\|PARA]]化了。操作见[[📥 Inbox/让Cursor将Cards中的笔记，针对某个主题进行有机串联，然后统一归入PARA]]
+- 某个主题超过30张以上卡片，可以考虑进行[[Spaces/2-Area/知识管理/P.A.R.A\|PARA]]化了。操作见[[Cards/让Cursor将Cards中的笔记，针对某个主题进行有机串联，然后统一归入PARA]]
 - 给卡片打上轻量的tags或者properties，然后在base里面索引查看。当然，这个并不产生反向链接。比如某些卡片可以打上tag临时挪个地儿，放到[[Cards/Properties Added/_Properties Added Readme]]，之后再形成更大规模后，用para或moc承载。
 - 在其他卡片（canvas, md等）中通过标题搜索，引用Cards中的卡片。
 
@@ -27,16 +27,10 @@ up:: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]
 
 一些临时的，pending的又不舍得删除的笔记先放到Pending文件夹里，等以后再处理。
 
-## 原文解释
+使用cursor的处理提示词，注意这里只是为了让cards不要堆积太多文件显得卡顿，所以象征性地给他们一个文件夹：
 
-The cards folder is one of my favorite places because it has*umami*. Apparently umami is one of the five basic tastes. There are: Sweetness, Sourness, Saltiness, Bitterness—and that oddball Umami.
+整理出来以后，用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/File Cooker]]处理一下，将他们分到10个文件夹中。
 
-Umami is hard to describe but you know when it's there. The same is true of this folder's contents. It's a mixture of insights and ideas, concepts and connections, all mingling together to create that mysterious full mouthfeel that magnificently completes any meal for the mind.
-
-So, what are "cards"? Anything that is a bit of knowledge that you might call a "thing" or a "statement about things".
-
-Yes, the definition is not rigid, but it works.
-
-Over time, you may have a few subfolders here too. I have a "People" subfolder. If I was an amateur chef with a growing number of recipe notes, I'd put a "Recipes" folder here. If I was making building a personal library of important exercises, I'd likely make an "Exercises" folder.
-
-[[Information that crosses our attentional filter becomes knowledge]].
+```
+按照某种较大的分类表中，将这些卡片分成10个大类。每个大类的md文件中，用[[]]语法引用这些从属cards文件，注意不要改动文件名字，也不要挪动他们的位置。
+```

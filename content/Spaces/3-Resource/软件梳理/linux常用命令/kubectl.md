@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/linux常用命令/kubectl.md","aliases":"kubernetes-cli","title":"kubectl","created":"2025-07-04","modified":"2025-07-04","published":"2025-07-11T15:32:47.388+08:00","cssclasses":""}
+date created: 2025-07-04
+date modified: 2025-07-04
+title: kubectl
+aliases:
+  - kubernetes-cli
+publish: true
 ---
-
 
 ## 安装
 

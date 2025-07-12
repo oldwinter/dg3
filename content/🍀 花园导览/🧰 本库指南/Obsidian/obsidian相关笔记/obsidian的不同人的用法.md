@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian的不同人的用法.md","aliases":"obsidian的使用level tier","title":"obsidian的不同人的用法","created":"2023-02-24","modified":"2023-03-14","published":"2025-07-09T15:46:57.103+08:00","cssclasses":""}
+title: obsidian的不同人的用法
+date created: 2023-02-24
+date modified: 2023-03-14
+publish: true
+aliases:
+  - obsidian的使用level tier
+是否已review: true
 ---
-
 
 - markdown编辑器  
 - md文件管理器  

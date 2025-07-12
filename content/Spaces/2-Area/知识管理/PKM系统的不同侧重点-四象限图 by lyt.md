@@ -1,9 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/PKM系统的不同侧重点-四象限图 by lyt.md","title":"PKM系统的不同侧重点-四象限图 by lyt","created":"2022-06-22","modified":"2023-03-14","published":"2025-07-10T22:12:44.170+08:00","cssclasses":""}
+date created: 2022-06-22
+date modified: 2023-03-14
+title: PKM系统的不同侧重点-四象限图 by lyt
+publish: true
 ---
 
-
-[[Spaces/2-Area/∑ PKM]] 系统当下存在 3 对矛盾：
+[[Spaces/2-Area/知识管理/∑ PKM]] 系统当下存在 3 对矛盾：
 
 - knowledge 和 action 的矛盾
 	- 联想：有点像[[理想主义和现实主义]]的对立。

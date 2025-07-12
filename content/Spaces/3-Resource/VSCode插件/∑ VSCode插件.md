@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/VSCode插件/∑ VSCode插件.md","title":"vscode必备插件","created":"2022-06-01","modified":"2025-05-31","published":"2025-07-09T18:55:57.310+08:00","cssclasses":""}
+title: vscode必备插件
+date created: 2022-06-01
+date modified: 2025-05-31
+PARA: Resources
+publish: true
 ---
-
 
 [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]
 

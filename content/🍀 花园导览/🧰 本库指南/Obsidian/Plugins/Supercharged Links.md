@@ -1,7 +1,13 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Supercharged Links.md","title":"Supercharged Links","created":"2022-06-09","modified":"2025-07-10","published":"2025-07-10T21:27:04.729+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2025-07-10
+tags:
+  - obsidian插件
+status:
+title: Supercharged Links
+rating: 7
+publish: true
 ---
-
 
 神器啊神器。作者为什么弃坑了？
 

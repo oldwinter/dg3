@@ -1,7 +1,8 @@
 ---
-{"publish":true,"permalink":"/CLAUDE.md","created":"2025-07-06","modified":"2025-07-06","published":"2025-07-08T20:59:30.232+08:00","cssclasses":""}
+date created: 2025-07-06
+date modified: 2025-07-06
+publish: true
 ---
-
 
 # CLAUDE.md
 

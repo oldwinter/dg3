@@ -1,7 +1,8 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/windows高效使用/Windows Hyper键快捷键分配.md","created":"2024-11-21","modified":"2025-06-20","published":"2025-07-10T22:42:15.648+08:00","cssclasses":""}
+date created: 2024-11-21
+date modified: 2025-06-20
+publish: true
 ---
-
 
 hyper 使用 [[Spaces/3-Resource/软件梳理/windows软件/MyKeyMap]] 配置
 

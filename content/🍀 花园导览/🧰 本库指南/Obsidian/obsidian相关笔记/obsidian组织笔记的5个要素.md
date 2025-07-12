@@ -33,6 +33,6 @@ x:: [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian
 - [[Cards/传统笔记软件]]缺少links和dataview
 - [[Spaces/2-Area/知识管理/notion-like笔记软件]]有database，是dataview的[[Spaces/2-Area/知识管理/自下而上]]的平替版本。但缺少tags，且links功能有限。且你察觉不到files。
 - [[Spaces/2-Area/知识管理/roam-like笔记软件]]有细粒度的块引用和大纲系统，但缺少文件夹，且tags被理解为一种特殊的links。且你察觉不到files。
-- [[📥 Inbox/hepta-like笔记软件]]有视觉化白板，缺少dataview和files。
+- [[Cards/hepta-like笔记软件]]有视觉化白板，缺少dataview和files。
 
 其实目前看来，[[Cards/思源笔记]]是功能最全面的集大成者，可惜用户小众，并且自定义了json格式存放数据，以后如果黄了导出的markdown文件会存在太多特殊语法，以至于迁移不便。[[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]当然也有一些自定义的特殊语法，但使用的时候克制一下，可迁移性会好非常多。

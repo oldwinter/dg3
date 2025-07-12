@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/org-mode.md","title":"org-mode","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-10T22:30:09.554+08:00","cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+title: org-mode
+publish: true
 ---
-
 
 甚至和 [[子弹笔记]] 那种通过各种标记来处理文本和事务的方法很类似。
 

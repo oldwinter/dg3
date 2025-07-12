@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/vim、markdown与org-mode.md","title":"vim、markdown与org-mode","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-10T22:30:04.993+08:00","cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+title: vim、markdown与org-mode
+publish: true
 ---
-
 
 共通点：均是对纯文本的快捷操作，使其呈现出不同的视觉效果。
 

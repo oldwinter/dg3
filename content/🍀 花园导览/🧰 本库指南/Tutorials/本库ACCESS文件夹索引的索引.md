@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/本库ACCESS文件夹索引的索引.md","title":"本库ACCESS文件夹索引的索引","created":"2022-06-23","modified":"2023-03-14","published":"2025-07-07T17:10:23.960+08:00","tags":["dataview"],"cssclasses":""}
+date created: 2022-06-23
+date modified: 2023-03-14
+tags:
+  - dataview
+title: 本库ACCESS文件夹索引的索引
+publish: true
 ---
-
 | File                                                                     | tags                       |
 | ------------------------------------------------------------------------ | -------------------------- |
 | [[Spaces/4-Archive/Dataviews/Index for Atlas\|Index for Atlas]]       | <ul><li>dataview</li></ul> |

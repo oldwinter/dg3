@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/deeplink.md","title":"deeplink","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-09T18:44:32.702+08:00","cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+title: deeplink
+publish: true
 ---
-
 
 x:: [[Cards/URL scheme]]
 

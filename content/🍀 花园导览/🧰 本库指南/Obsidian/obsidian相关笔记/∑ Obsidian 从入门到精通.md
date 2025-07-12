@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/∑ Obsidian 从入门到精通.md","created":"2024-07-29","modified":"2025-07-05","published":"2025-07-09T14:50:13.427+08:00","tags":["MOC","todo","AI生成"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/∑ Obsidian 从入门到精通.md","created":"2024-07-29","modified":"2025-07-05","published":"2025-07-12T03:18:40.427+08:00","tags":["MOC","todo","AI生成"],"cssclasses":""}
 ---
 
 
@@ -13,7 +13,7 @@
 - **本地优先，数据私有**：您的所有笔记都以纯文本 Markdown 文件的形式存储在本地，您拥有数据的绝对控制权。这种 [[Sources/Clippings/How I use Obsidian\|文件优于应用]] 的哲学，保证了知识的持久性和安全性。
 - **双向链接，网状思考**：通过 `[[Cards/双链笔记]]`，Obsidian 帮助我们将网状的思想真正地组织起来，构建一个属于自己的知识网络，而非孤立的笔记孤岛。可以参考 [[Sources/CuboxSync/玩转 Obsidian 04：为什么推荐使用 Obsidian 做知识管理 - 少数派-2022-05-29]] 中对双向链接的精彩阐述。
 - **高度定制，无限可能**：强大的 [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/∑ obsidian插件\|插件生态系统]] 赋予了 Obsidian 极高的可玩性，您可以根据自己的需求，将其打造成学习、思考、写作和项目管理的利器。
-- **和现有AI工具无缝集成**：AI很懂且能轻易识别markdown格式的文件，于是在[[Cards/Context Engineering]]的当下，可以让我们极为方便地让AI引用我们的知识库，进行二次创造和更改，参见[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/如何使用Cursor管理Obsidian知识库]]。
+- **和现有AI工具无缝集成**：AI很懂且能轻易识别markdown格式的文件，于是在[[Spaces/1-Project/ChatGPT和LLM/Context Engineering]]的当下，可以让我们极为方便地让AI引用我们的知识库，进行二次创造和更改，参见[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/如何使用Cursor管理Obsidian知识库]]。
 
 当我们将 Obsidian 与 [[Spaces/3-Resource/软件梳理/macos软件/Notion]] 等工具对比时（参考 [[Obsidian vs Notion KM Comparison.canvas]]），更能体会到其在构建个人深度知识体系上的优势，具体可以参考 [[Spaces/2-Area/知识管理/obsidian base 和 notion database的本质不同]]。
 

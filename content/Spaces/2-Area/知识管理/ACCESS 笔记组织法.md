@@ -1,10 +1,12 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/ACCESS 笔记组织法.md","title":"ACCESS 笔记组织法","created":"2022-06-22","modified":"2025-07-10","published":"2025-07-10T22:47:02.356+08:00","cssclasses":""}
+date created: 2022-06-22
+date modified: 2025-07-10
+title: ACCESS 笔记组织法
+publish: true
 ---
 
-
 > [!NOTE] Title
-> 虽然[[Cards/Properties Added/Nick Milo]]这几年又更新了什么ACE笔记组织法，但我觉得可能更多地是他出于出课程卖课的需求，我用ACCESS感觉已经足够，不想也不需要再做大调整了。
+> 虽然[[Spaces/3-Resource/人/Nick Milo]]这几年又更新了什么ACE笔记组织法，但我觉得可能更多地是他出于出课程卖课的需求，我用ACCESS感觉已经足够，不想也不需要再做大调整了。
 
 [Folders or Links? The ACCESS Approach - YouTube](https://www.youtube.com/watch?v=p0zWJ-TLghw)
 
@@ -12,9 +14,9 @@
 
 ## 理解
 
-[[Cards/Properties Added/Nick Milo]]为了解决 [[Spaces/2-Area/知识管理/PKM系统的不同侧重点-四象限图 by lyt]] 中提到的 3 对矛盾，提出了 ACCESS 文件夹结构。
+[[Spaces/3-Resource/人/Nick Milo]]为了解决 [[Spaces/2-Area/知识管理/PKM系统的不同侧重点-四象限图 by lyt]] 中提到的 3 对矛盾，提出了 ACCESS 文件夹结构。
 
-ACCESS 基于传统 [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/文件夹和标签]]式的[[Spaces/2-Area/∑ PKM]]系统，但更引入了[[Atlas/MOCs/∑ MOCs]]来动态地链接散落或分布在各个文件夹中的笔记，这种动态聚合能力（常借用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Dataview]]实现），也远高于标签的简单聚合能力。因此结合[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/文件夹和标签]]及[[Atlas/MOCs/∑ MOCs]]，最终达到结构性和灵活性的平衡。
+ACCESS 基于传统 [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/文件夹和标签]]式的[[Spaces/2-Area/知识管理/∑ PKM]]系统，但更引入了[[Atlas/MOCs/∑ MOCs]]来动态地链接散落或分布在各个文件夹中的笔记，这种动态聚合能力（常借用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Dataview]]实现），也远高于标签的简单聚合能力。因此结合[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/文件夹和标签]]及[[Atlas/MOCs/∑ MOCs]]，最终达到结构性和灵活性的平衡。
 
 使用这个方法不可缺少的能力之一，就是掌握[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Dataview]]。
 
@@ -48,7 +50,7 @@ ACCESS 基于传统 [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相�
 	- 翻译：让被我们消化过的外部资源中的知识，更方便被引用。文章、书、博客、论文、课程、演讲、电影等等外部材料都是。
 	- 我理解为[[Cards/文献笔记]]。也就是将消化过的外部资源或材料放这，方便引用。之前为了保持 obsidian 的纯粹性，不往里面放 epub，pdf 等文件，虽然有单向引用链接可以跳转至外部的这些文件，但缺少反向链接总是不得劲儿，先开始尝试把重要资源保存至 obsidian 库内。
 - Spaces
-	- 翻译：生活和工作的大事项的[[📥 Inbox/工作台]]。
+	- 翻译：生活和工作的大事项的[[Cards/工作台]]。
 	- 我理解为[[Cards/项目笔记]]。即为一些可执行的有期限的可闭环的较大的事儿，设立一个专题。比如我的某个爱好的专题。这个空间也是对[[Spaces/2-Area/知识管理/PKM系统的不同侧重点-四象限图 by lyt]]中的knowledge和action的2个维度的结合尝试。有[[Spaces/2-Area/知识管理/P.A.R.A]]的影子。
 	- Archive，自创。待到内容规模大了，也许还是需要归档机制，缓解内心压力感。
 

@@ -1,13 +1,15 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/notion-like笔记软件.md","title":"notion-like笔记软件","created":"2022-06-18","modified":"2023-03-14","published":"2025-07-10T17:47:39.106+08:00","cssclasses":""}
+date created: 2022-06-18
+date modified: 2023-03-14
+title: notion-like笔记软件
+publish: true
 ---
-
 
 3 个重要特征:
 
-- [[📥 Inbox/block]]
-- [[📥 Inbox/folder first]]
-- [[📥 Inbox/database]]
+- [[Cards/block]]
+- [[Cards/folder first]]
+- [[Cards/database]]
 
 常见产品:
 

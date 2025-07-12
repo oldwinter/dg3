@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian publish 发布.md","title":"obsidian publish 发布","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-07T17:10:24.350+08:00","tags":["todo/某天"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+title: obsidian publish 发布
+tags:
+  - todo/某天
+publish: true
 ---
-
 ## 2022年6月新发现
 
 有个5美元1个月的markbase服务，正在内测。关注。目前双链还不支持。#待办/某天

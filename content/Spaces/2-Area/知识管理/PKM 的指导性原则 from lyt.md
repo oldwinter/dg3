@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/PKM 的指导性原则 from lyt.md","title":"PKM 的指导性原则 from lyt","created":"2022-06-19","modified":"2023-03-14","published":"2025-07-10T22:45:27.214+08:00","cssclasses":""}
+date created: 2022-06-19
+date modified: 2023-03-14
+title: PKM 的指导性原则 from lyt
+publish: true
 ---
-
 
 ## PKM 的指导性原则 from lyt
 

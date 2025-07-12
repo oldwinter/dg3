@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Quick Switcher++.md","created":"2024-05-11","modified":"2025-05-31","published":"2025-07-10T20:55:06.713+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2024-05-11
+date modified: 2025-05-31
+tags:
+  - obsidian插件
+status:
+rating: 7
+publish: true
 ---
-
 
 满分，神器。
 

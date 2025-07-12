@@ -1,7 +1,8 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/ack和k8s/Devops.md","created":"2025-07-09","modified":"2025-07-09","published":"2025-07-09T18:24:18.334+08:00","cssclasses":""}
+date created: 2025-07-09
+date modified: 2025-07-09
+publish: true
 ---
-
 
 ## devops思考
 
@@ -14,4 +15,4 @@
 
 ##
 
-[[Cards/github 门禁配置]]
+[[Spaces/2-Area/计算机知识/github 门禁配置]]

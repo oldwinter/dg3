@@ -1,12 +1,16 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/本库推荐的obsidian入门路线及资源.md","title":"本库推荐的obsidian入门路线及资源","created":"2022-07-14","modified":"2023-03-14","published":"2025-07-07T17:10:23.996+08:00","cssclasses":""}
+date created: 2022-07-14
+date modified: 2023-03-14
+title: 本库推荐的obsidian入门路线及资源
+相关笔记:
+  - "[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian入门]]"
+publish: true
 ---
-
 up:: [[🍀 花园导览/🧰 本库指南/🧰 本库使用指南]]
 
 ## 都2022年了，入门最快的方式是看视频
 
-- [[Cards/Properties Added/Johnny学]]的入门课：[Johnny学的公开课 第一集 将近3小时的Obsidian小白入门课，都是基础知识，学会了就能上手OB，一个社区插件都没讲_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1i3411k7TQ?spm_id_from=333.337.search-card.all.click&vd_source=c16ee9cfb2023d2af8428dbfe604b72f)
+- [[Spaces/3-Resource/人/Johnny学]]的入门课：[Johnny学的公开课 第一集 将近3小时的Obsidian小白入门课，都是基础知识，学会了就能上手OB，一个社区插件都没讲_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1i3411k7TQ?spm_id_from=333.337.search-card.all.click&vd_source=c16ee9cfb2023d2af8428dbfe604b72f)
 	- 别傻傻的一集一集慢慢看，讲到会的或你不感兴趣的内容跳过即可。**绝对不要只看视频，要跟着一起动手操作，这很重要。**
 - [也许是B站最好的Obsidian新手教程！爆肝30天，一站式入门双向链接笔记软件_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV18a411r7mt?spm_id_from=333.337.search-card.all.click)
 	- 看看这个视频，爽一爽，也许更能让你下定决心开始学习obsidian。爽归爽，我自己是只使用了视频中提到的20%不到的功能。
@@ -16,7 +20,7 @@ up:: [[🍀 花园导览/🧰 本库指南/🧰 本库使用指南]]
 
 - 快速过一遍官方帮助文档：[Obsidian Help](https://help.obsidian.md/)
 	- 其实跟着官方帮助文档，**动手操作一遍**，于我（程序员、且对效率工具比较熟悉）个人而言，是最快的上手方式。
-- 实践过程中，遇到问题，可以先搜索一下[[Cards/Properties Added/落山鸡]]的帮助文档，很全面：[Obsidian中文教程 - Obsidian Publish](https://publish.obsidian.md/chinesehelp)
+- 实践过程中，遇到问题，可以先搜索一下[[Spaces/3-Resource/人/落山鸡]]的帮助文档，很全面：[Obsidian中文教程 - Obsidian Publish](https://publish.obsidian.md/chinesehelp)
 	- 其他各种文章，基本都能在落山鸡的帮助文档中搜到索引。再次用文字感谢这个🐔。
 	- 这位小姐姐写的一系列入门文章深入浅出，单拎出来推荐一下：[莉莉安Obsidian文章MOC - 经验分享 - Obsidian 中文论坛](https://forum-zh.obsidian.md/t/topic/324)。
 	- 如果对插件情有独钟，这位台湾朋友，做了将近100个视频讲解各种插件的使用：[简睿学堂-emisjerry的个人空间_哔哩哔哩_bilibili](https://space.bilibili.com/1119961064)。关键在于，他**每个视频都配了文章**，小白看视频，老鸟看文章，各取所需，学习效率杠杠的。

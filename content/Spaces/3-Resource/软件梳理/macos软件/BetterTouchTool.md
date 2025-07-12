@@ -1,7 +1,20 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/BetterTouchTool.md","title":"BetterTouchTool","created":"2022-06-09","modified":"2025-06-18","published":"2025-07-10T22:41:09.772+08:00","tags":["macOS软件"],"cssclasses":""}
+作用: 触摸板的高级手势
+评价: 6
+设置同步: icloud 自动同步不好使，手动导出预设
+是否已备份: y
+是否已重装: true
+brew安装命令: brew install --cask bettertouchtool
+tags:
+  - macOS软件
+title: BetterTouchTool
+date created: 2022-06-09
+date modified: 2025-06-18
+icon: "[[icon-cc-image-BetterTouchTool.png]]"
+当前是否还在使用: true
+是否有破解版: true
+publish: true
 ---
-
 
 ## 配置备份和同步
 
