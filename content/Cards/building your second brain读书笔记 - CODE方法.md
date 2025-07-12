@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/building your second brain读书笔记 - CODE方法.md","title":"building your second brain读书笔记 - CODE方法","created":"2022-06-30","modified":"2024-06-10","published":"2025-07-10T22:44:37.997+08:00","cssclasses":""}
+date created: 2022-06-30
+date modified: 2024-06-10
+title: building your second brain读书笔记 - CODE方法
+publish: true
 ---
-
 ## 构建第二大脑的CODE方法
 
 ### capture：捕获

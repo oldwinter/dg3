@@ -1,7 +1,6 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/windows高效使用/Windows 常用快捷键.md","created":"2023-12-15T14:00:29.577+08:00","modified":"2025-07-10T22:38:28.695+08:00","published":"2025-07-10T22:38:28.695+08:00","cssclasses":""}
+publish: true
 ---
-
 [[Spaces/2-Area/macos高效使用/MacOS 常用快捷键]]
 ## 系统级别
 

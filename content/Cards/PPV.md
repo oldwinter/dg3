@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/PPV.md","title":"PPV","created":"2022-06-22","modified":"2023-03-19","published":"2025-07-10T22:12:56.396+08:00","cssclasses":""}
+date created: 2022-06-22
+date modified: 2023-03-19
+title: PPV
+publish: true
 ---
-
 
 [Notion Life Design with Pillars, Pipelines & Vaults (PPV)](https://www.yearzero.io/notion-life-design)
 
@@ -80,3 +82,11 @@ PPV就像一个人生经营系统。相比于[[Spaces/2-Area/知识管理/P.A.R.
 	- Annual review
 	- Accomplishments and takeaway
 	- Feedback
+
+[[∑ Pillars - 经营领域]]
+
+[[Pipelines - 行动管道]]
+
+[[Vaults - 知识库]]
+
+[[Cycle - 检视回顾]]

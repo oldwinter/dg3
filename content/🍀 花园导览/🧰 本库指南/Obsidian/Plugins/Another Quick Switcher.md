@@ -1,7 +1,15 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Another Quick Switcher.md","title":"Another Quicker Switcher","created":"2023-01-23","modified":"2025-06-06","published":"2025-07-09T01:29:12.675+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2023-01-23
+date modified: 2025-06-06
+tags:
+  - obsidian插件
+status:
+当前是否还在使用: false
+当前使用频率:
+title: Another Quicker Switcher
+rating: 5
+publish: true
 ---
-
 
 ## Another Quick Switcher
 

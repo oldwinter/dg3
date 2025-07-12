@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/本库不建议在obsidian中搞专属定制.md","title":"本库不建议在obsidian中搞专属定制","created":"2022-09-07","modified":"2023-03-14","published":"2025-07-07T17:10:23.996+08:00","cssclasses":""}
+date created: 2022-09-07
+date modified: 2023-03-14
+title: 本库不建议在obsidian中搞专属定制
+publish: true
 ---
-
 此处的专属定制，意思就是，本可以用操作系统通用的方式实现，却非要在某个软件内定制另一套实现方式，从而带来使用体验感的割裂，并且增加大脑运行成本，因为要记忆多套工作流。
 
 最常见的例子：snippet输入，emoji输入，当天时间输入，各类编辑快捷键，字典查询等等。

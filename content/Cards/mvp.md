@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/Cards/mvp.md","aliases":"最小可行性版本 MVP Minimum Viable Product","created":"2023-09-03","modified":"2024-08-15","published":"2025-07-09T18:55:07.519+08:00","cssclasses":""}
+aliases:
+  - 最小可行性版本
+  - MVP
+  - Minimum Viable Product
+date created: 2023-09-03
+date modified: 2024-08-15
+publish: true
 ---
-
 
 [[Cards/快速试错]]  
 [[Cards/PMF]]

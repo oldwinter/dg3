@@ -1,8 +1,12 @@
 ---
-{"publish":true,"permalink":"/Cards/quartz syncer.md","created":"2025-07-07","modified":"2025-07-09","published":"2025-07-10T21:51:01.649+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2025-07-07
+date modified: 2025-07-09
+tags:
+  - obsidian插件
+rating: 6
+publish: true
 ---
-
 
 ## token
 
-[[📥 Inbox/quartz syncer token]]
+[[Spaces/3-Resource/账号密码/quartz syncer token]]

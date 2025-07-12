@@ -1,7 +1,14 @@
 ---
-{"publish":true,"permalink":"/Cards/Advanced URL.md","title":"Advanced URL","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-09T18:44:42.450+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+title: Advanced URL
+当前是否还在使用: true
+当前使用频率: 3
+tags:
+  - obsidian插件
+rating: 5
+publish: true
 ---
-
 
 iii:: [[Spaces/3-Resource/软件梳理/安卓软件/小红书\|小红书]]
 

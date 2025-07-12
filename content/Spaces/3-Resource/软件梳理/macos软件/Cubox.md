@@ -1,7 +1,17 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Cubox.md","title":"Cubox","created":"2022-06-17","modified":"2024-07-11","published":"2025-07-11T16:10:33.828+08:00","tags":["macOS软件","windows软件"],"cssclasses":""}
+date created: 2022-06-17
+date modified: 2024-07-11
+title: Cubox
+tags:
+  - macOS软件
+  - windows软件
+评价: 4
+brew安装命令: brew install --cask cubox
+作用: 网络文章剪藏
+当前使用频率: 4
+icon: "[[icon-cc-image-cubox icon-cc-image.png]]"
+publish: true
 ---
-
 
 [[Spaces/3-Resource/软件梳理/macos软件/Cubox]]和[[Spaces/3-Resource/软件梳理/macos软件/Raindrop]] 的区别:
 

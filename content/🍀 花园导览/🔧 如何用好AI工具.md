@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🔧 如何用好AI工具.md","title":"🤖 如何用好AIGC工具","created":"2023-03-16","modified":"2025-07-11","published":"2025-07-11T16:04:39.720+08:00","cssclasses":""}
+uid: f6222587-a8d0-46c3-8e30-7a7f385e095f
+title: 🤖 如何用好AIGC工具
+date created: 2023-03-16
+date modified: 2025-07-11
+publish: true
 ---
-
 
 现在ai要用好，就3步：
 
@@ -25,7 +28,7 @@
 
 ## copilot 类型
 
-- [[Cards/raycast ai]]
+- [[Spaces/1-Project/Raycast/raycast ai]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Warp]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Arc浏览器]]
 	- 逐步得换成[[Spaces/3-Resource/软件梳理/macos软件/Dia 浏览器]]了。

@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/vibe coding.md","created":"2025-03-16","modified":"2025-06-12","published":"2025-07-11T15:32:12.990+08:00","cssclasses":""}
+date created: 2025-03-16
+date modified: 2025-06-12
+tags: []
+publish: true
 ---
-
 
 ## 资深软件工程师的用法
 

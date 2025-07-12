@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Sources/AIGC/_AIGC Readme.md","title":"AIGC","created":"2025-06-07T01:57:27.668+08:00","modified":"2025-07-09T15:30:00.993+08:00","published":"2025-07-09T15:30:00.993+08:00","tags":["AI生成"],"cssclasses":""}
+toc: true
+title: AIGC
+tags:
+  - AI生成
+publish: true
+是否已review: true
 ---
-
 
 > AI生成，且未经过审阅修改的，先都放这个目录下。
 

@@ -1,7 +1,8 @@
 ---
-{"publish":true,"permalink":"/Cards/AI Assisted Coding.md","created":"2025-04-25","modified":"2025-04-25","published":"2025-07-11T15:32:08.377+08:00","cssclasses":""}
+date created: 2025-04-25
+date modified: 2025-04-25
+publish: true
 ---
-
 
 依旧from[[Cards/Andrej Karpathy]]
 

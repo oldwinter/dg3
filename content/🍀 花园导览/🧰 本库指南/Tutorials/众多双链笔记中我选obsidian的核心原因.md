@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/众多双链笔记中我选obsidian的核心原因.md","title":"众多双链笔记中我选obsidian的核心原因","created":"2022-08-18","modified":"2023-03-14","published":"2025-07-07T17:10:23.960+08:00","cssclasses":""}
+date created: 2022-08-18
+date modified: 2023-03-14
+title: 众多双链笔记中我选obsidian的核心原因
+publish: true
 ---
-
 以下是当初在众多双链笔记软件中选择它的初始原因，即初心。
 
 - 第一眼，类似[[Spaces/3-Resource/软件梳理/macos软件/VSCode]]界面，有亲切感。当然，根本原因其实就是极其灵活的多窗口支持啦。多窗口，在非虚构类写作场景下十分便捷有用，同时参考多条笔记及其上下文，在我写作思路卡壳时极其有用。

@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/这才是真的AI Agent：使用Cursor对Obsidian进行一键批量智能操作.md","created":"2025-06-27","modified":"2025-06-27","published":"2025-07-07T17:10:23.996+08:00","tags":["AI教程"],"cssclasses":""}
+date created: 2025-06-27
+date modified: 2025-06-27
+tags:
+  - AI教程
+publish: true
 ---
-
 
 ## 本次目标
 
@@ -87,7 +90,7 @@
 
 ![CleanShot 2025-06-27-j81a7a.png](https://pub-pic.oldwinter.top/2025/06/3b629dd0f71d4cc7993843f39c9ce70e.png)
 
-但仔细观察，会发现使用curl命令下载的很多图片，都是无法正常打开的。这证明了触发了网站的反爬虫策略（试想一下如果随便几个curl命令就能批量下载网站的图片等资源，那网站的cdn费用不是爆炸）。所以这里我们需要转换思路，使用带有图片搜索和下载功能的mcp，让cursor间接地通过mcp来干活。同时可以顺便问一下，cursor有哪些内置的tools，以便让我们更了解能力边界，不会提出过份的要求，比如让它生成一个视频之类的。（我这里启用了一个 使用浏览器的 playwright mcp）：之前的备忘录[[Cards/cursor 1.0 有的全部tools]]
+但仔细观察，会发现使用curl命令下载的很多图片，都是无法正常打开的。这证明了触发了网站的反爬虫策略（试想一下如果随便几个curl命令就能批量下载网站的图片等资源，那网站的cdn费用不是爆炸）。所以这里我们需要转换思路，使用带有图片搜索和下载功能的mcp，让cursor间接地通过mcp来干活。同时可以顺便问一下，cursor有哪些内置的tools，以便让我们更了解能力边界，不会提出过份的要求，比如让它生成一个视频之类的。（我这里启用了一个 使用浏览器的 playwright mcp）：之前的备忘录[[Spaces/1-Project/Cursor/cursor 1.0 有的全部tools]]
 
 ![CleanShot 2025-06-27-w9932m.png](https://pub-pic.oldwinter.top/2025/06/105907c72fdec24b76962f5696503e57.png)
 

@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/如何做笔记 note-making.md","title":"如何做笔记 note-making","created":"2022-06-20","modified":"2023-03-14","published":"2025-07-10T22:45:17.633+08:00","cssclasses":""}
+date created: 2022-06-20
+date modified: 2023-03-14
+title: 如何做笔记 note-making
+publish: true
 ---
-
 
 ## 做笔记有 3 个内在含义
 

@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Cards/Text expand.md","title":"Text expand","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-10T22:46:50.494+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+title: Text expand
+publish: true
+tags:
+  - obsidian插件
 ---
-
 
 ## 这个插件对我真的有用吗？
 

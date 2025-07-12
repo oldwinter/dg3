@@ -1,7 +1,8 @@
 ---
-{"publish":true,"permalink":"/Cards/pyenv.md","created":"2023-12-06","modified":"2024-11-05","published":"2025-07-10T22:00:20.087+08:00","cssclasses":""}
+date created: 2023-12-06
+date modified: 2024-11-05
+publish: true
 ---
-
 
 ## 安装命令
 

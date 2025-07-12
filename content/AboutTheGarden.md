@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/AboutTheGarden.md","title":"AboutTheGarden","description":"上面这些字段，大多是为了适配第三方发布方案，如hugo和jekyll。","created":"2022-08-06","modified":"2024-10-23","published":"2025-07-08T14:05:33.272+08:00","tags":["本库教程"],"cssclasses":""}
+{"publish":true,"permalink":"/AboutTheGarden.md","title":"AboutTheGarden","created":"2022-08-06","modified":"2024-10-23","published":"2025-07-12T03:17:59.589+08:00","tags":["本库教程"],"cssclasses":""}
 ---
 
 hello 👋，我是 oldwinter ❄️，一个云计算工程师，写过几万行代码，带过十几人团队。

@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/使用简悦对web文章进行渐进式总结.md","title":"使用简悦对web文章进行渐进式总结","created":"2022-07-26","modified":"2023-03-14","published":"2025-07-08T23:06:44.485+08:00","cssclasses":""}
+date created: 2022-07-26
+date modified: 2023-03-14
+title: 使用简悦对web文章进行渐进式总结
+publish: true
 ---
-
 
 ## 整体效果
 

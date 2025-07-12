@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/» 本库非md的资源文件管理工作流.md","aliases":"非md资源文件管理 附件管理","title":"» 本库非md的资源文件管理工作流","created":"2022-08-07","modified":"2023-03-14","published":"2025-07-08T01:38:18.404+08:00","tags":["AI生成","workflow","file-management"],"cssclasses":""}
----
+date created: 2022-08-07
+date modified: 2023-03-14
+title: » 本库非md的资源文件管理工作流
 
+publish: true
+tags: [AI生成, workflow, file-management]
+aliases: [非md资源文件管理, 附件管理]
+---
 # 非 MD 资源文件管理工作流
 
 本指南旨在为您提供一个清晰、高效的方法，来管理 Obsidian 仓库中的非 Markdown 格式的资源文件（如图片、PDF、视频、音频、脚本等）。
@@ -91,7 +96,15 @@ source: "某个研究机构"
 
 | 场景 | 推荐做法 |
 | :--- | :--- |
-| 通用图片、PDF、音视频 | 存入 `Extras/Attachments/` 下的分类文件夹，并通过 `
+| 通用图片、PDF、音视频 | 存入 `Extras/Attachments/` 下的分类文件夹，并通过 `---
+date created: 2022-08-07
+date modified: 2023-03-14
+title: » 本库非md的资源文件管理工作流
+
+publish: true
+tags: [AI生成, workflow, file-management]
+aliases: [非md资源文件管理, 附件管理]
+---
 # 非 MD 资源文件管理工作流
 
 本指南旨在为您提供一个清晰、高效的方法，来管理 Obsidian 仓库中的非 Markdown 格式的资源文件（如图片、PDF、视频、音频、脚本等）。
@@ -181,7 +194,15 @@ source: "某个研究机构"
 
 | 场景 | 推荐做法 |
 | :--- | :--- |
-| 通用图片、PDF、音视频 | 存入 `Extras/Attachments/` 下的分类文件夹，并通过 `
+| 通用图片、PDF、音视频 | 存入 `Extras/Attachments/` 下的分类文件夹，并通过 `---
+date created: 2022-08-07
+date modified: 2023-03-14
+title: » 本库非md的资源文件管理工作流
+
+publish: true
+tags: [AI生成, workflow, file-management]
+aliases: [非md资源文件管理, 附件管理]
+---
 # 非 MD 资源文件管理工作流
 
 本指南旨在为您提供一个清晰、高效的方法，来管理 Obsidian 仓库中的非 Markdown 格式的资源文件（如图片、PDF、视频、音频、脚本等）。
@@ -271,7 +292,15 @@ source: "某个研究机构"
 
 | 场景 | 推荐做法 |
 | :--- | :--- |
-| 通用图片、PDF、音视频 | 存入 `Extras/Attachments/` 下的分类文件夹，并通过 `
+| 通用图片、PDF、音视频 | 存入 `Extras/Attachments/` 下的分类文件夹，并通过 `---
+date created: 2022-08-07
+date modified: 2023-03-14
+title: » 本库非md的资源文件管理工作流
+
+publish: true
+tags: [AI生成, workflow, file-management]
+aliases: [非md资源文件管理, 附件管理]
+---
 # 非 MD 资源文件管理工作流
 
 本指南旨在为您提供一个清晰、高效的方法，来管理 Obsidian 仓库中的非 Markdown 格式的资源文件（如图片、PDF、视频、音频、脚本等）。
@@ -361,7 +390,15 @@ source: "某个研究机构"
 
 | 场景 | 推荐做法 |
 | :--- | :--- |
-| 通用图片、PDF、音视频 | 存入 `Extras/Attachments/` 下的分类文件夹，并通过 `
+| 通用图片、PDF、音视频 | 存入 `Extras/Attachments/` 下的分类文件夹，并通过 `---
+date created: 2022-08-07
+date modified: 2023-03-14
+title: » 本库非md的资源文件管理工作流
+
+publish: true
+tags: [AI生成, workflow, file-management]
+aliases: [非md资源文件管理, 附件管理]
+---
 # 非 MD 资源文件管理工作流
 
 本指南旨在为您提供一个清晰、高效的方法，来管理 Obsidian 仓库中的非 Markdown 格式的资源文件（如图片、PDF、视频、音频、脚本等）。
