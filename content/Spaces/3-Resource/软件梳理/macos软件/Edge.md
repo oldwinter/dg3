@@ -1,7 +1,17 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Edge.md","title":"Edge","created":"2023-03-01","modified":"2024-08-15","published":"2025-07-11T16:07:55.960+08:00","tags":["macOS软件","安卓软件"],"cssclasses":""}
+title: Edge
+date created: 2023-03-01
+date modified: 2024-08-15
+icon: "[[icon-cc-image-Edge.png]]"
+tags:
+  - macOS软件
+  - 安卓软件
+是否已备份: "true"
+评价: 4
+brew安装命令: brew install --cask microsoft-edge
+设置同步: 微软账号自动同步
+publish: true
 ---
-
 
 
 ## windows 版本的精简方法

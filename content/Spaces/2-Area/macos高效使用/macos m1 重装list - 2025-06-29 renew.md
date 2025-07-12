@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macos m1 重装list - 2025-06-29 renew.md","created":"2023-09-02","modified":"2025-07-04","published":"2025-07-11T16:14:33.769+08:00","cssclasses":""}
+相关笔记:
+  - "[[Spaces/4-Archive/ingtube/交接/Inbox/MacOS 2023年7月软件安装列表-适配映兔工作流]]"
+  - "[[Spaces/3-Resource/软件梳理/macos软件/macos m3 重装list]]"
+date created: 2023-09-02
+date modified: 2025-07-04
+publish: true
 ---
-
 
 > 要注意，有arm或通用版本，则尽量不要使用intel版本，卡顿且耗电。
 
@@ -22,7 +26,7 @@
 - [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Clash Verge]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Warp]]
-- [[Cards/Ice]]
+- [[Sources/GithubStarsSync/Ice]]
 - [[Spaces/3-Resource/软件梳理/macos软件/CleanShot X]]
 - [[Spaces/3-Resource/软件梳理/macos软件/istat Menus]]
 - [[Spaces/3-Resource/软件梳理/macos软件/BetterAndBetter]]
@@ -265,7 +269,7 @@ views:
 
 ### 通用环境和命令行
 
-- [[Cards/git 命令本机权限配置]]
+- [[Spaces/2-Area/计算机知识/git 命令本机权限配置]]
 - [[Spaces/2-Area/windows高效使用/mise\|mise]]
 - [[Cards/dot文件配置同步仓库]]
 

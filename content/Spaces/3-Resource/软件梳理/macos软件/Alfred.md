@@ -1,7 +1,18 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Alfred.md","title":"Alfred","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-11T16:13:17.662+08:00","tags":["macOS软件"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+title: Alfred
+tags:
+  - macOS软件
+作用: 搜索一切 的 hub
+评价: 5
+brew安装命令: brew install --cask alfred
+设置同步: icloud 自动同步
+是否已备份: y
+是否已重装:
+icon: "[[icon-cc-image-Alfred.png]]"
+publish: true
 ---
-
 
 其他竞品：[[Spaces/3-Resource/软件梳理/macos软件/uTools]]，[[Sources/GithubStarsSync/Go]]
 
@@ -13,7 +24,7 @@
 
 ## alfred 的综合调教
 
-依据 [[Cards/个人查找搜索系统#搜索判断树]] 改造和聚合
+依据 [[Spaces/3-Resource/个人成长/个人查找搜索系统#搜索判断树]] 改造和聚合
 
 高速缓存聚合：[[Spaces/3-Resource/软件梳理/macos软件/Devonthink]]
 

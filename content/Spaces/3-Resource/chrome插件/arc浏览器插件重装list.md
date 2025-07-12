@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/arc浏览器插件重装list.md","created":"2025-04-04","modified":"2025-06-25","published":"2025-07-11T16:12:42.548+08:00","cssclasses":""}
+相关笔记:
+  - "[[Spaces/3-Resource/chrome插件/∑ Chrome插件]]"
+date created: 2025-04-04
+date modified: 2025-06-25
+publish: true
 ---
-
 
 - [[Cards/Glarity]]
 - [[Cards/HARPA AI]]
@@ -14,7 +17,7 @@
 - [[Spaces/3-Resource/软件梳理/macos软件/bitwarden]]
 - [[Cards/multipost]]
 - [[Spaces/3-Resource/chrome插件/obsidian web clipper]]
-- [[Cards/Raycast Companion]]
+- [[Spaces/1-Project/Raycast/Raycast Companion]]
 - [[Spaces/3-Resource/chrome插件/refined github]]
 - [[Spaces/3-Resource/chrome插件/ublacklist]]
 - [[Spaces/3-Resource/chrome插件/uBlock Origin]]

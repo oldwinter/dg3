@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/MacOS 常用快捷键.md","created":"2023-12-24","modified":"2024-12-19","published":"2025-07-10T22:38:33.990+08:00","cssclasses":""}
+tags:
+date created: 2023-12-24
+date modified: 2024-12-19
+publish: true
 ---
-
 [[Spaces/2-Area/macos高效使用/MacOS Windows 修饰键 对比]]
 
 ## 系统级别
@@ -26,7 +28,7 @@
 - cmd + option + l： 锁定电脑，通过 raycast 配置
 - cmd + option + x ： 历史剪切板
 - alt + 字母： 快捷打开或关闭某应用；重复按可以隐藏应用全部窗口。
-	- macOS 新系统会有概率出问题，所以换成了 [[Cards/hyperKey]]+ 字母。见 [[Spaces/2-Area/macos高效使用/MacOS 应用的Hyper快捷键]]
+	- macOS 新系统会有概率出问题，所以换成了 [[Spaces/3-Resource/个人成长/hyperKey]]+ 字母。见 [[Spaces/2-Area/macos高效使用/MacOS 应用的Hyper快捷键]]
 
 ### 软件内级别
 

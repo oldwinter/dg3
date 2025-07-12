@@ -1,9 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/ChatGPT和LLM/chatGPT web页面的自带提示词破解.md","created":"2024-02-08","modified":"2024-02-19","published":"2025-07-08T22:59:51.726+08:00","cssclasses":""}
+date created: 2024-02-08
+date modified: 2024-02-19
+相关笔记: []
+publish: true
 ---
 
-
-[[Cards/raycast ai 的自带提示词破解]]
+[[Spaces/1-Project/Raycast/raycast ai 的自带提示词破解]]
 
 提问： 
 

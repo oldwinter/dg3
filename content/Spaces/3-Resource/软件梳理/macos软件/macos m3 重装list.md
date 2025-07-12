@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/macos m3 重装list.md","created":"2024-07-11","modified":"2024-12-23","published":"2025-07-11T16:14:52.676+08:00","cssclasses":""}
+tags:
+date created: 2024-07-11
+date modified: 2024-12-23
+publish: true
 ---
-
 其实现在有非常多都支持 brew cask 安装，后面记得尝试。
 
 
@@ -39,7 +41,7 @@
 	- [x] 因为 raycast 的应用配置快捷键功能很好用，弃用 ✅ 2024-07-23
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Keyboard Maestro]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Bartender]] ✅ 2024-07-23
-	- [x] [[Cards/Ice]] 免费
+	- [x] [[Sources/GithubStarsSync/Ice]] 免费
 	- [x] [[Spaces/3-Resource/软件梳理/macos软件/Barbee]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/ChatGPT 桌面端]] ✅ 2024-07-23
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Snipaste]] ✅ 2025-06-25
@@ -102,7 +104,7 @@ keyboardholder		tencent-meeting
 
 ```
 
-- [[Cards/Ice]]
+- [[Sources/GithubStarsSync/Ice]]
 	- brew install jordanbaird-ice
 - [[Cards/QuickRecorder]]
 	- brew install lihaoyun6/tap/quickrecorder
