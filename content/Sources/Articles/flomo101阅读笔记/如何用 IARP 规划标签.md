@@ -1,7 +1,14 @@
 ---
-{"publish":true,"permalink":"/Sources/Articles/flomo101阅读笔记/如何用 IARP 规划标签.md","title":"如何用 IARP 规划标签","created":"2022-07-22","modified":"2023-03-14","published":"2025-07-08T23:55:39.893+08:00","tags":["review"],"cssclasses":""}
+date created: 2022-07-22
+date modified: 2023-03-14
+tags:
+- review
+title: 如何用 IARP 规划标签
+publish: true
+sr-due: 2031-05-01
+sr-interval: 2539
+sr-ease: 330
 ---
-
 
 up:: [[Sources/Articles/flomo101阅读笔记/§ flomo101 - 思维方式目录]]
 

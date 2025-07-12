@@ -1,7 +1,15 @@
 ---
-{"publish":true,"permalink":"/Sources/Articles/常青笔记阅读笔记/常青笔记的标题就像 API.md","title":"常青笔记的标题就像 API","created":"2022-08-11","modified":"2023-03-14","published":"2025-07-09T00:03:43.288+08:00","tags":["review","todo/持续迭代"],"cssclasses":""}
+date created: 2022-08-11
+date modified: 2023-03-14
+tags:
+- review
+- todo/持续迭代
+title: 常青笔记的标题就像 API
+publish: true
+sr-due: 2031-05-12
+sr-interval: 2550
+sr-ease: 332
 ---
-
 
 
 > 译者注：文中的 API 指的是 Application Programming Interface，即应用程序接口。

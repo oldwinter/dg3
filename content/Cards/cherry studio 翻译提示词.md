@@ -1,7 +1,8 @@
 ---
-{"publish":true,"permalink":"/Cards/cherry studio 翻译提示词.md","created":"2025-05-06","modified":"2025-05-06","published":"2025-07-11T15:56:01.427+08:00","cssclasses":""}
+date created: 2025-05-06
+date modified: 2025-05-06
+publish: true
 ---
-
 
 x: [[Cards/bob 翻译提示词]]
 

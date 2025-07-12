@@ -1,7 +1,16 @@
 ---
-{"publish":true,"permalink":"/Sources/AIGC/kubectl 命令执行流程图.md","title":"kubectl 命令执行流程图","created":"2025-01-28","modified":"2025-01-28","published":"2025-07-10T20:24:19.565+08:00","tags":["k8s","kubectl","流程图","mermaid","架构图","AI生成"],"cssclasses":""}
+title: kubectl 命令执行流程图
+date created: 2025-01-28
+date modified: 2025-01-28
+tags:
+  - k8s
+  - kubectl
+  - 流程图
+  - mermaid
+  - 架构图
+  - AI生成
+publish: true
 ---
-
 
 # 🔧 kubectl 命令执行流程图
 
@@ -46,24 +55,14 @@ graph TB
         LOGS["kubectl logs<br/>📜 查看日志"]
     end
     
-    %% 用户交互
-    U --> kubectl
-    kubectl --> API
-    
-    %% 控制面组件交互
+     控制面组件交互
     API <--> etcd
     API --> CM
     API --> Scheduler
     CM --> API
     Scheduler --> API
     
-    %% 数据面组件交互
-    API --> kubelet
-    API --> proxy
-    kubelet <--> CRI
-    kubelet --> API
-    
-    %% 命令流程
+     命令流程
     GET --> API
     DELETE --> API
     APPLY --> API
@@ -209,7 +208,7 @@ sequenceDiagram
 
 ### 工具链相关
 - [[Spaces/3-Resource/软件梳理/linux常用命令/kubectl]]：命令行工具详解
-- [[Cards/kubelet]]：节点代理组件
+- [[Spaces/1-Project/ack和k8s/kubelet]]：节点代理组件
 - [[Spaces/1-Project/ack和k8s/kube-proxy]]：网络代理组件
 
 ### 实践指南

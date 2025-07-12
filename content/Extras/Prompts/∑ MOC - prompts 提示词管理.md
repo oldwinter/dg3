@@ -1,7 +1,18 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/∑ MOC - prompts 提示词管理.md","title":"社交媒体摘要","created":"2025-04-24","modified":"2025-05-15","published":"2025-07-11T16:00:59.463+08:00","tags":["marketing","summary","中文","prompts"],"cssclasses":""}
+title: 社交媒体摘要
+model: gpt-4o
+tags:
+  - marketing
+  - summary
+  - 中文
+  - prompts
+temperature: 0.7
+updated: 2025-04-23
+reasoning effort: "0"
+date created: 2025-04-24
+date modified: 2025-05-15
+publish: true
 ---
-
 提示词模板：[[Extras/Templates/prompts template - 提示词模板]]
 
 ## 图片生成类

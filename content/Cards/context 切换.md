@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Cards/context 切换.md","title":"context 切换","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-10T00:57:48.811+08:00","tags":["todo/持续迭代"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+tags:
+  - todo/持续迭代
+title: context 切换
+publish: true
 ---
-
 
 ## 概念
 

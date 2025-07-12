@@ -1,7 +1,13 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Excalidraw.md","title":"Excalidraw","created":"2023-01-23","modified":"2023-03-14","published":"2025-07-10T22:36:52.721+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2023-01-23
+date modified: 2023-03-14
+tags:
+  - obsidian插件
+status:
+rating: 5
+publish: true
+title: Excalidraw
 ---
-
 
 更喜欢用[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian canvas]]而非用它。[[Cards/Andrej Karpathy]]大佬做得几个超长视频，都是用了excalidraw画的，太强了。
 

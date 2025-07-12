@@ -1,7 +1,13 @@
 ---
-{"publish":true,"permalink":"/Cards/daily note.md","aliases":"每日笔记","title":"dailynote","created":"2022-06-09","modified":"2025-07-09","published":"2025-07-09T18:36:46.137+08:00","cssclasses":""}
+date created: 2022-06-09
+date modified: 2025-07-09
+title: dailynote
+aliases:
+  - 每日笔记
+相关笔记:
+  - "[[Spaces/2-Area/数字花园建设与维护/» Daily notes工作流]]"
+publish: true
 ---
-
 
 每日笔记（dailynote）不是每日日记。
 

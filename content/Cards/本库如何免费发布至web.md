@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/本库如何免费发布至web.md","title":"本库如何免费发布至web","created":"2022-07-11","modified":"2023-03-14","published":"2025-07-11T16:06:27.567+08:00","cssclasses":""}
+date created: 2022-07-11
+date modified: 2023-03-14
+title: 本库如何免费发布至web
+publish: true
 ---
-
 
 将obsidian双链笔记公开发布到网上的实操方法：[[Spaces/Published/已发布文章/obsidian 目前最完美的免费发布方案 - 渐进式教程]]
 

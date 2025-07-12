@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Cards/nvm.md","created":"2024-03-20","modified":"2024-09-13","published":"2025-07-10T22:00:23.621+08:00","cssclasses":""}
+date created: 2024-03-20
+date modified: 2024-09-13
+相关笔记:
+  - "[[Cards/jenv]]"
+  - "[[Cards/vfox]]"
+publish: true
 ---
-
 
 ## 安装
 

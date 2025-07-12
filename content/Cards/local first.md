@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Cards/local first.md","aliases":"本地优先","title":"local first","created":"2022-08-01","modified":"2025-07-09","published":"2025-07-10T22:02:48.300+08:00","cssclasses":""}
+aliases:
+  - 本地优先
+date created: 2022-08-01
+date modified: 2025-07-09
+title: local first
+publish: true
 ---
-
 
 x:: [[Cards/本地优先的特点]]
 

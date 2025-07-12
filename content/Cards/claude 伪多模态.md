@@ -1,7 +1,8 @@
 ---
-{"publish":true,"permalink":"/Cards/claude 伪多模态.md","created":"2024-10-30","modified":"2024-10-30","published":"2025-07-08T23:01:12.497+08:00","cssclasses":""}
+date created: 2024-10-30
+date modified: 2024-10-30
+publish: true
 ---
-
 
 相当于就是让大模型生成mermaid这样的纯text，但是其实它能被渲染成图表。包括让大模型生成[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian canvas]]也是毫无问题的。
 

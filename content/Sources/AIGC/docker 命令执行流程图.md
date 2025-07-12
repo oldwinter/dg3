@@ -1,7 +1,16 @@
 ---
-{"publish":true,"permalink":"/Sources/AIGC/docker 命令执行流程图.md","title":"docker 命令执行流程图","created":"2025-01-28","modified":"2025-01-28","published":"2025-07-10T20:24:23.878+08:00","tags":["docker","流程图","mermaid","架构图","容器技术","AI生成"],"cssclasses":""}
+title: docker 命令执行流程图
+date created: 2025-01-28
+date modified: 2025-01-28
+tags:
+  - docker
+  - 流程图
+  - mermaid
+  - 架构图
+  - 容器技术
+  - AI生成
+publish: true
 ---
-
 
 # 🐋 Docker 命令执行流程图
 
@@ -54,32 +63,15 @@ graph TB
         PULL["docker pull<br/>⬇️ 拉取镜像"]
     end
     
-    %% 用户交互
-    U --> docker
-    docker <--> dockerd
-    
-    %% 守护进程层交互
+     守护进程层交互
     dockerd <--> registry
     dockerd --> containerd
     
-    %% 运行时层交互
-    containerd --> runc
-    containerd --> shim
-    runc --> shim
-    
-    %% 存储网络层交互
+     存储网络层交互
     containerd --> storage
     containerd --> network
     
-    %% 命令流程
-    PS --> dockerd
-    RUN --> dockerd
-    RM --> dockerd
-    LOGS --> dockerd
-    IMAGES --> dockerd
-    PULL --> dockerd
-    
-    %% 样式
+     样式
     classDef userLayer fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
     classDef daemonLayer fill:#e3f2fd,stroke:#0d47a1,stroke-width:2px
     classDef highRuntime fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
