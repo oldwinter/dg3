@@ -1,12 +1,7 @@
 ---
-date created: 2022-08-14
-date modified: 2025-07-09
-tags:
-  - 目录笔记
-  - todo/持续迭代
-title: § TOCs
-publish: true
+{"publish":true,"permalink":"/Spaces/2-Area/数字花园建设与维护/§ TOCs.md","title":"§ TOCs","created":"2022-08-14","modified":"2025-07-09","published":"2025-07-13T01:41:13.306+08:00","tags":["目录笔记","todo/持续迭代"],"cssclasses":""}
 ---
+
 
 > 尝试定期将笔记库局部内容结构化，结构化的过程中，会有新的体会。
 

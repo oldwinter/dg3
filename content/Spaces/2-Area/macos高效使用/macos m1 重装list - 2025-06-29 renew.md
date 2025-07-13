@@ -253,7 +253,7 @@ views:
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/kubectl]]
 	- [[Cards/podman]]
 	- [[Cards/pandoc]]
-	- [[Spaces/1-Project/Raycast/zoxide\|zoxide]]
+	- [[Sources/GithubStarsSync/zoxide\|zoxide]]
 	- [[Cards/ffmpeg]]
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/kubectl]]
 	- brew install fd rg fzf

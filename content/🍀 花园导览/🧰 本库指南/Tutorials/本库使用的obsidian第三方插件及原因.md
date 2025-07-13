@@ -21,7 +21,7 @@ x:: [[Spaces/Published/已发布文章/2022年7月，obsidian 依然必装的 10
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Commander]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Dataview]]
 - [[Spaces/0-Work/Cards/excalibrain]]
-- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Excalidraw]]
+- [[Sources/GithubStarsSync/excalidraw]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/File Cooker]]
 - [[Cards/Find orphaned files and broken links]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Focus and Highlight]]

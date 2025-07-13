@@ -1,18 +1,15 @@
 ---
-tags:
-date created: 2024-07-11
-date modified: 2024-12-23
-publish: true
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/macos m3 重装list.md","created":"2024-07-11","modified":"2025-07-13","published":"2025-07-13T20:56:46.693+08:00","cssclasses":""}
 ---
-其实现在有非常多都支持 brew cask 安装，后面记得尝试。
 
+
+其实现在有非常多都支持 brew cask 安装，后面记得尝试。
 
 > 要注意，有 arm 或通用版本，则尽量不要使用 intel 版本，卡顿且耗电。
 
 ## 前置模块
 
 - [[Spaces/3-Resource/软件梳理/linux常用命令/Homebrew]]
-- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Obsidian Git\|Obsidian Git]]
 - [[Spaces/2-Area/macos高效使用/Xcode Command Line Tools]]
 
 ## 个人必装
@@ -86,6 +83,7 @@ publish: true
 ### 可以通过 homebrew 一键安装
 
 2025-04-03 ：brew list 备份
+
 ```
 brew list --cask
 adrive			ngrok

@@ -1,8 +1,7 @@
 ---
-date created: 2025-07-06
-date modified: 2025-07-11
-publish: true
+{"publish":true,"permalink":"/Cards/llm联网有时候可能降低智能.md","created":"2025-07-06","modified":"2025-07-11","published":"2025-07-13T22:51:24.456+08:00","cssclasses":""}
 ---
+
 
 比如 Perplexity 就显得很呆，它倾向于直接去搜答案，而不是自己推理。
 

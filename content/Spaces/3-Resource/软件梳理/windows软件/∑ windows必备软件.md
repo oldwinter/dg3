@@ -1,11 +1,7 @@
 ---
-date created: 2022-06-09
-date modified: 2025-06-27
-title: ∑ windows必备软件
-aliases:
-  - ∑ windows必装软件
-publish: true
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/windows软件/∑ windows必备软件.md","aliases":"∑ windows必装软件","title":"∑ windows必备软件","created":"2022-06-09","modified":"2025-06-27","published":"2025-07-13T19:05:15.213+08:00","cssclasses":""}
 ---
+
 
 ## 常用
 
