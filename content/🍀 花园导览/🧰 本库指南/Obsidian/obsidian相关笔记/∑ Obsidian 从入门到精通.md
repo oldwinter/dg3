@@ -8,14 +8,14 @@
 
 ## 引言：为什么选择 Obsidian？
 
-在众多笔记软件中，[[Spaces/3-Resource/软件梳理/macos软件/Obsidian]] 以其独特的理念脱颖而出。它不仅仅是一个笔记软件，更是一个强大的、完全本地化的知识库。正如 [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian入门]] 中提到的，它的核心价值在于：
+在众多笔记软件中，[[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]] 以其独特的理念脱颖而出。它不仅仅是一个笔记软件，更是一个强大的、完全本地化的知识库。正如 [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian入门]] 中提到的，它的核心价值在于：
 
 - **本地优先，数据私有**：您的所有笔记都以纯文本 Markdown 文件的形式存储在本地，您拥有数据的绝对控制权。这种 [[Sources/Clippings/How I use Obsidian\|文件优于应用]] 的哲学，保证了知识的持久性和安全性。
 - **双向链接，网状思考**：通过 `[[Cards/双链笔记]]`，Obsidian 帮助我们将网状的思想真正地组织起来，构建一个属于自己的知识网络，而非孤立的笔记孤岛。可以参考 [[Sources/CuboxSync/玩转 Obsidian 04：为什么推荐使用 Obsidian 做知识管理 - 少数派-2022-05-29]] 中对双向链接的精彩阐述。
 - **高度定制，无限可能**：强大的 [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/∑ obsidian插件\|插件生态系统]] 赋予了 Obsidian 极高的可玩性，您可以根据自己的需求，将其打造成学习、思考、写作和项目管理的利器。
 - **和现有AI工具无缝集成**：AI很懂且能轻易识别markdown格式的文件，于是在[[Spaces/1-Project/ChatGPT和LLM/Context Engineering]]的当下，可以让我们极为方便地让AI引用我们的知识库，进行二次创造和更改，参见[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/如何使用Cursor管理Obsidian知识库]]。
 
-当我们将 Obsidian 与 [[Spaces/3-Resource/软件梳理/macos软件/Notion]] 等工具对比时（参考 [[Obsidian vs Notion KM Comparison.canvas]]），更能体会到其在构建个人深度知识体系上的优势，具体可以参考 [[Spaces/2-Area/知识管理/obsidian base 和 notion database的本质不同]]。
+当我们将 Obsidian 与 [[Spaces/3-Resource/软件梳理/安卓软件/Notion]] 等工具对比时（参考 [[Obsidian vs Notion KM Comparison.canvas]]），更能体会到其在构建个人深度知识体系上的优势，具体可以参考 [[Spaces/2-Area/知识管理/obsidian base 和 notion database的本质不同]]。
 
 与[[Cards/思源笔记]]相比，劣势在于原生支持的功能比较少，要靠大量第三方插件扩充，且块引用能力弱；优势在于obsidian使用纯markdown格式承载，当然我觉得[[Cards/我们需要拒绝任何侵入式改动了obsidian的markdown语法的插件]]。
 
@@ -51,7 +51,7 @@
 ### 核心功能实践
 
 - **Canvas (画布)**：一个无限的可视化空间，适合用来头脑风暴、梳理复杂概念。您可以参考 [[Atlas/Canvas/» canvas使用经验]] 和这个高级学习路径图 [[Obsidian 从入门到精通 - 高级版.canvas]]。
-- **Bases (数据库)**：作为 [[Spaces/3-Resource/软件梳理/macos软件/Notion]] Database 的替代品，Bases 提供了强大的数据库功能，但更灵活。参考 [[Extras/Documents/Obsidian bases 规范]] 和 [[Spaces/2-Area/知识管理/obsidian base 和 notion database的本质不同]]。本库的 [[Obsidian插件.base]] 就是一个很好的应用实例。
+- **Bases (数据库)**：作为 [[Spaces/3-Resource/软件梳理/安卓软件/Notion]] Database 的替代品，Bases 提供了强大的数据库功能，但更灵活。参考 [[Extras/Documents/Obsidian bases 规范]] 和 [[Spaces/2-Area/知识管理/obsidian base 和 notion database的本质不同]]。本库的 [[Obsidian插件.base]] 就是一个很好的应用实例。
 - **Templates (模板)**：使用模板可以极大地提高效率和一致性，本库的模板入口在 [[Extras/Templates/∑ 模板文件创建入口]]。
 
 ### 典型工作流

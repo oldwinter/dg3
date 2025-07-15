@@ -18,7 +18,7 @@ publish: true
 
 发现 cursor 和 idea 插件，能选中文件，并让其在另一个文件中打开。
 
-考虑在 [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]] 中实现类似功能：
+考虑在 [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]] 中实现类似功能：
 
 一方面，需要在每个 app 中都安装一个插件，有点麻烦。另一方面，我日常高频使用 [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]，想将其做为控制中枢，之前它有个 warp2finder 这样的插件，所以我想，应该是能做到类似效果的。
 
@@ -42,7 +42,7 @@ publish: true
 ## 🔗 相关笔记
 
 - [[Spaces/3-Resource/软件梳理/macos软件/Cursor]] - AI 编程工具
-- [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]] - 知识管理工具  
+- [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]] - 知识管理工具  
 - [[Spaces/3-Resource/软件梳理/macos软件/Raycast]] - Mac 效率工具
 - [[插件开发]] - 相关开发经验
 

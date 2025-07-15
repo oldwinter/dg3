@@ -19,7 +19,7 @@
 	- [[Spaces/3-Resource/软件梳理/macos软件/Cherry Studio]]
 - 网页
 	- [[Sources/GithubStarsSync/lobe-chat]]
-	- [[Spaces/1-Project/ChatGPT和LLM/ChatGPT\|ChatGPT]]
+	- [[Spaces/3-Resource/软件梳理/安卓软件/ChatGPT\|ChatGPT]]
 
 ## copilot 类型
 

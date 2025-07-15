@@ -14,7 +14,7 @@ publish: true
 - 整段翻译必须能快速进行，且需要和原文有对照。
 - 支持批量导出批注或译文的[[Cards/deeplink]]，方便和笔记软件联动。
 
-体验过[[marginnote]]、、[[Spaces/3-Resource/软件梳理/macos软件/微信读书]]和obsidian内置annotator插件。综合下来还是[[marginnote]]最符合需求。
+体验过[[marginnote]]、、[[Spaces/3-Resource/软件梳理/安卓软件/微信读书]]和obsidian内置annotator插件。综合下来还是[[marginnote]]最符合需求。
 
 本次实践[[Spaces/2-Area/数字花园建设与维护/∑ Building a Second Brain 翻译和读书笔记]]，就选用它进行。
 

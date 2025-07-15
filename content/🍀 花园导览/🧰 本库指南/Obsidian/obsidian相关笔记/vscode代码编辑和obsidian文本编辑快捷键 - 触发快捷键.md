@@ -10,7 +10,7 @@ publish: true
 默认的有些快捷键可能有不同，尽量地去改成一致，带来相同的编辑体验。  
 
 
-|                 | [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]      | [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]    | [[Spaces/3-Resource/软件梳理/linux常用命令/vim]] 或 [[Spaces/3-Resource/软件梳理/macos软件/Warp]] | 使用频率 |
+|                 | [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]      | [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]    | [[Spaces/3-Resource/软件梳理/linux常用命令/vim]] 或 [[Spaces/3-Resource/软件梳理/macos软件/Warp]] | 使用频率 |
 | --------------- | --------------- | --------------- | ------------------ | ---- |
 | 搜索文件名           | cmd + p         | cmd + p         |                    | 5    |
 | 搜索命令行           | cmd + shift + p | cmd + shift + p |                    |      |
@@ -19,7 +19,7 @@ publish: true
 | 搜索当前同目录文件/反链/出链 |                 | cmd + l         |                    |      |
 |                 |                 |                 |                    |      |
 
-|          | [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]          | [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]                    | [[Spaces/3-Resource/软件梳理/linux常用命令/vim]] 或 [[Spaces/3-Resource/软件梳理/macos软件/Warp]] | 使用频率 |
+|          | [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]          | [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]                    | [[Spaces/3-Resource/软件梳理/linux常用命令/vim]] 或 [[Spaces/3-Resource/软件梳理/macos软件/Warp]] | 使用频率 |
 | -------- | ------------------- | ------------------------------- | ------------------ | ---- |
 | 删除当前行    | control +u          | control +u （实际是删除段落）            | control + u        | 5    |
 | 单行注释     | cmd + /             | cmd + /                         |                    | 5    |

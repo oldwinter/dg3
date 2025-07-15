@@ -1,8 +1,7 @@
 ---
-date created: 2025-07-06
-date modified: 2025-07-06
-publish: true
+{"publish":true,"permalink":"/GEMINI.md","created":"2025-07-06","modified":"2025-07-06","published":"2025-07-15T21:00:46.347+08:00","cssclasses":""}
 ---
+
 
 # GEMINI.md
 

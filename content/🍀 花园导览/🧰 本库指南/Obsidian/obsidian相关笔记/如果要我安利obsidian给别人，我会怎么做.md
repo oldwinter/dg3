@@ -41,12 +41,12 @@ publish: true
 		- 没有自己的积累，全是照搬的剪藏，引用很不方便。
 		- 缺少复习回顾系统，笔记做完再也不看了。
 		- 被网络捆绑，格式独有迁移困难，有时候切换页面等几秒，频繁切换的话，就非常烦了。
-	- [[Cards/双链笔记]]和[[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]如何优雅地解决
+	- [[Cards/双链笔记]]和[[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]如何优雅地解决
 		- 双链笔记
 			- 自下而上，[[Cards/daily note]]，减少输入摩擦，整理压力延后且减小
 			- [[Spaces/2-Area/知识管理/markdown]]语法，简单符号，通用格式，精美排版
 			- 无摩擦输入激发写作欲望，有了原料，两个中括号随时引用。引用的时候，就有大脑连通的感觉。以及局部图谱和全局图谱带来的成就感和满足感。
-		- [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]独有
+		- [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]独有
 			- 社区插件实现[[Spaces/3-Resource/软件梳理/macos软件/Anki]]复习系统。以及强大社区引发的各种奇妙增强，带来[[Cards/渐进式学习]]的感觉。
 				- [[Spaces/3-Resource/软件梳理/macos软件/Anki]]集成
 				- [[Cards/Outliner]]大纲笔记
@@ -58,4 +58,4 @@ publish: true
 			- 发布收费，而且发布出来的东西也就是很朴素的页面
 		- 解决方案
 			- 干脆不用。需要备份就 git 自动定时 push 就行。写笔记的云同步，其实有时候是伪需求。把 obsdian 的作用收窄，只作为[[Spaces/2-Area/知识管理/个人知识笔记系统]]，而不是[[Spaces/2-Area/知识管理/个人信息管理系统]]，[[Cards/个人任务管理系统]]或[[Cards/个人输出发布系统]]。[[Cards/重器轻用]]，obsidian 可以通过社区插件实现所有系统的闭环，但没必要，也太折腾。社区的 sync 插件终极解决。
-			- 发布和分享不好用，就不用，同上一条规则。发布和分享的时候，通过[[Spaces/3-Resource/软件梳理/macos软件/Notion]]等方式进行。[[notion和obsidian整合联动]]
+			- 发布和分享不好用，就不用，同上一条规则。发布和分享的时候，通过[[Spaces/3-Resource/软件梳理/安卓软件/Notion]]等方式进行。[[notion和obsidian整合联动]]
