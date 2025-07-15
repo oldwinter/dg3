@@ -29,7 +29,7 @@ x:: [[🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 工作流�
 - #todo/now #todo/本周
 - [Anki 回顾笔记](obsidian://advanced-uri?vault=knowledge-garden&commandid=obsidian-spaced-repetition%253Asrs-note-review-open-note)
 - [[Spaces/Published/文章草稿/∑ 文章草稿]]
-- [[Spaces/Published/已发布文章/∑ 已发布文章]]
+- [[∑ 已发布文章.canvas]]
 
 ## Cards
 
