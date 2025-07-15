@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/∑ macOS 必备软件.md","title":"∑ mac必备软件","created":"2022-06-09","modified":"2025-04-03","published":"2025-07-14T12:24:24.418+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/∑ macOS 必备软件.md","title":"∑ mac必备软件","created":"2022-06-09","modified":"2025-04-03","published":"2025-07-15T20:22:36.984+08:00","cssclasses":""}
 ---
 
 
