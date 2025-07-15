@@ -1,12 +1,7 @@
 ---
-date created: 2024-02-04
-date modified: 2024-10-28
-tags:
-  - AI产品
-相关笔记:
-  - "[[Spaces/3-Resource/账号密码/Perplexity sonar api token]]"
-publish: true
+{"publish":true,"permalink":"/Cards/perplexity.ai.md","created":"2024-02-04","modified":"2024-10-28","published":"2025-07-15T19:57:25.533+08:00","tags":["AI产品"],"cssclasses":""}
 ---
+
 
 ## Perplexity.ai
 

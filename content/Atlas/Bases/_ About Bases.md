@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Atlas/Bases/_ About Bases.md","title":"About DB folders","created":"2023-03-01","modified":"2025-07-09","published":"2025-07-10T15:24:36.963+08:00","tags":["本库教程","workflow"],"cssclasses":""}
+{"publish":true,"permalink":"/Atlas/Bases/_ About Bases.md","title":"About DB folders","created":"2023-03-01","modified":"2025-07-15","published":"2025-07-15T19:36:19.292+08:00","tags":["本库教程","workflow"],"cssclasses":""}
 ---
 
+
+> obsidian版本号>=1.9，才能使用base功能哦。未拥有obsidian catalyst的用户，请耐心等待这个大版本公开，个人预估在25年8月左右。
 
 相比于dataview，可以批量编辑，具备更好的灵活度。且性能非常强，再也不会像dataview一样，偶尔打开某个页面直接卡死，被硬控10秒。
 
