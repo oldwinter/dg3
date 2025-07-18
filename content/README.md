@@ -12,7 +12,7 @@
 </p>
 
 > [!TIP] 重大更新💡  
-> 迎接AI时代，本库发布 v2.0 版本，包含了大量使用[[Spaces/3-Resource/软件梳理/安卓软件/ChatGPT\|ChatGPT]]、[[Spaces/3-Resource/软件梳理/安卓软件/Gemini App\|Gemini]]、[[Spaces/1-Project/ChatGPT和LLM/DeepSeek]]等应用的笔记，请到 release 中下载。
+> 迎接AI时代，本库发布 v2.0 版本，包含了大量使用[[Spaces/3-Resource/软件梳理/安卓软件/ChatGPT\|ChatGPT]]、[[Spaces/3-Resource/软件梳理/安卓软件/Gemini App\|Gemini]]、[[Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/DeepSeek]]等应用的笔记，请到 release 中下载。
 
 ## 这是什么
 

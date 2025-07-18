@@ -1,10 +1,7 @@
 ---
-date created: 2025-06-08
-date modified: 2025-06-27
-tags:
-  - AI教程
-publish: true
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian canvas 使用 cursor生成.md","created":"2025-06-08","modified":"2025-06-27","published":"2025-07-18T13:52:28.584+08:00","tags":["AI教程"],"cssclasses":""}
 ---
+
 
 ## 示例一
 

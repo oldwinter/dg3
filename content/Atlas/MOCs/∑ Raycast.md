@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Atlas/MOCs/∑ Raycast.md","created":"2025-07-07","modified":"2025-07-07","published":"2025-07-12T03:04:32.130+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Atlas/MOCs/∑ Raycast.md","created":"2025-07-07","modified":"2025-07-07","published":"2025-07-18T14:33:09.419+08:00","cssclasses":""}
 ---
 
 
@@ -53,7 +53,7 @@ Raycast 提供了强大的窗口管理功能，可以替代 [[Sources/GithubStar
 - **快速链接与深度链接**: [[Raycast Quicklinks]], [[Spaces/1-Project/Raycast/raycast deeplink]], [[Sources/CuboxSync/Raycast 小技巧之 Quicklink 二三事 - 少数派-2022-05-30]]
 - **应用启动与快捷键**:
     - [[Spaces/1-Project/Raycast/raycast 一键快速应用 平替 rcmd]]
-    - [[Spaces/1-Project/Raycast/raycast 快捷键 实现应用一键打开或关闭]]
+    - [[Spaces/1-Project/Raycast/全局快捷键将app一键打开或隐藏]]
     - [[Spaces/3-Resource/软件梳理/macos软件/Raycast Hyper Key]]
 - **浮动笔记**: [[Spaces/3-Resource/软件梳理/macos软件/Raycast Notes]]
 - **其他**:

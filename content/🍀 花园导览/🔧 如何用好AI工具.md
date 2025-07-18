@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🔧 如何用好AI工具.md","title":"🔧 如何用好AI工具","created":"2023-03-16","modified":"2025-07-12","published":"2025-07-12T15:49:25.638+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🔧 如何用好AI工具.md","title":"🔧 如何用好AI工具","created":"2023-03-16","modified":"2025-07-12","published":"2025-07-17T21:37:51.490+08:00","cssclasses":""}
 ---
 
 
@@ -8,6 +8,8 @@
 1. 快速判断自己的问题是否要联网，是否要快，还是要细。[[Cards/Gemini DeepResearch]]，[[Cards/llm联网有时候可能降低智能]]
 2. 快速，方便提供足够上下文 。[[Spaces/3-Resource/软件梳理/macos软件/Cursor]]快速@引用已有文件。
 3. 提示词说清楚需求。[[Extras/Prompts/∑ MOC - prompts 提示词管理]]
+
+详细阐释：[[📥 Inbox/AI使用的MAPS框架]]
 
 ## 模型视角，我的产品选择
 
@@ -30,7 +32,7 @@
 
 ## agent 类型
 
-- [[Spaces/1-Project/AI Agent 开发/Dify\|Dify]]
+- [[Spaces/1-Project/搞透 AI Agent 开发/Dify\|Dify]]
 - [[Sources/GithubStarsSync/n8n]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Cursor]]
 - [[fellou浏览器]]

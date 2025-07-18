@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"2025/my-macos-ranks","created":"2025-07-14","modified":"2025-07-14","published":"2025-07-15T20:22:36.911+08:00","cssclasses":""}
+{"publish":true,"permalink":"2025/my-macos-ranks","created":"2025-07-14","modified":"2025-07-14","published":"2025-07-16T14:54:19.580+08:00","cssclasses":""}
 ---
 
 
@@ -22,7 +22,7 @@
 - [[Spaces/3-Resource/软件梳理/macos软件/Google Drive]]
 	- 隐私、安全，有点小贵的网盘，这个是唯一给网盘生成永久id的网盘，从而资源挪位置、重命名以后，链接依然有效。
 	- 全文搜索能力，堪比windows上的everything。
-- [[Spaces/3-Resource/软件梳理/macos软件/Obsidian]]
+- [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]
 	- 我把cursor评价为神级，有它一功。
 	- 这里篇幅太小，夸赞的内容写不下，详见我的第一篇小红书笔记。
 - [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]
@@ -41,11 +41,11 @@
 	- 之前续费用了一年，现在竞品多了用得少了，现在用[[GEMINI]]，但目前只有网页版，无法快速呼出提问。
 - [[Spaces/3-Resource/软件梳理/macos软件/Cherry Studio]]
 	- 免费，还要啥自行车。
-- [[Spaces/3-Resource/软件梳理/macos软件/Chrome]]
+- [[Spaces/3-Resource/软件梳理/安卓软件/Chrome]]
 	- 插件同步器。arc和zen的plan b。
 - [[Spaces/3-Resource/软件梳理/macos软件/CleanShot X]]
 	- 别人都说好。比[[Spaces/3-Resource/软件梳理/macos软件/Snipaste]]和[[Spaces/2-Area/windows高效使用/PixPin]]更原生。一键截图发给ai提问的功能，别家应该没有？
-- [[Spaces/3-Resource/软件梳理/macos软件/Folo\|Folo]]
+- [[Spaces/3-Resource/软件梳理/好用网站/Folo\|Folo]]
 	- 告别被推荐机制裹挟，让RSS再次伟大。
 - [[Spaces/3-Resource/软件梳理/macos软件/Klack]]
 	- 给每次按键赋予机械键盘声，使用笔记本时候必开。开源平替是[[Cards/KeyEcho]]。
@@ -64,19 +64,19 @@
 
 ## B
 
-- [[Spaces/3-Resource/软件梳理/macos软件/Spotify]]
+- [[Spaces/3-Resource/软件梳理/安卓软件/Spotify]]
 - [[Spaces/3-Resource/软件梳理/macos软件/AlDente]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Input source pro]]
 - [[Spaces/3-Resource/软件梳理/macos软件/阿里云盘]]
 - [[Spaces/3-Resource/软件梳理/macos软件/App Cleaner & Uninstaller PRO]]
 - [[Spaces/3-Resource/软件梳理/macos软件/搜狗输入法]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Cubox]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Slack]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Notion]]
+- [[Spaces/3-Resource/软件梳理/安卓软件/Slack]]
+- [[Spaces/3-Resource/软件梳理/安卓软件/Notion]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Proxyman]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Lookaway]]
-- [[Spaces/3-Resource/软件梳理/macos软件/微信读书]]
-- [[Spaces/3-Resource/软件梳理/macos软件/夸克]]
+- [[Spaces/3-Resource/软件梳理/安卓软件/微信读书]]
+- [[Spaces/3-Resource/软件梳理/安卓软件/夸克]]
 - [[Spaces/3-Resource/软件梳理/macos软件/istat Menus]]
 
 ## C
@@ -86,7 +86,7 @@
 - [[Spaces/3-Resource/软件梳理/macos软件/Anki]]
 - [[Spaces/3-Resource/软件梳理/macos软件/OBS Studio]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Plex]]
-- [[Spaces/3-Resource/软件梳理/macos软件/微信]]
+- [[Spaces/3-Resource/软件梳理/安卓软件/微信]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Heptabase]]
 - [[Spaces/3-Resource/chrome插件/豆包]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Onedrive]]
@@ -99,7 +99,7 @@
 - [[Spaces/2-Area/windows高效使用/PixPin]]
 - [[Spaces/3-Resource/软件梳理/macos软件/PicGo\|PicGo]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Apifox]]
-- [[Spaces/3-Resource/软件梳理/macos软件/百度网盘]]
+- [[Spaces/3-Resource/软件梳理/安卓软件/百度网盘]]
 - [[Spaces/3-Resource/软件梳理/macos软件/坚果云]]
 - [[Spaces/3-Resource/软件梳理/macos软件/BoringNotch]]
 - [[Spaces/3-Resource/软件梳理/macos软件/BetterAndBetter]]

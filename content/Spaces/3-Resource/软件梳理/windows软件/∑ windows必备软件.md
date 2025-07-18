@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/windows软件/∑ windows必备软件.md","aliases":"∑ windows必装软件","title":"∑ windows必备软件","created":"2022-06-09","modified":"2025-06-27","published":"2025-07-15T13:32:21.372+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/windows软件/∑ windows必备软件.md","aliases":"∑ windows必装软件","title":"∑ windows必备软件","created":"2022-06-09","modified":"2025-06-27","published":"2025-07-16T15:06:19.162+08:00","cssclasses":""}
 ---
 
 
@@ -9,7 +9,7 @@
 ## 常用
 
 - [[Spaces/3-Resource/软件梳理/windows软件/Everything]]
-- [[Spaces/3-Resource/软件梳理/windows软件/ImageGlass]]
+- [[Sources/GithubStarsSync/ImageGlass]]
 - [[Spaces/3-Resource/软件梳理/windows软件/AutoHotkey]]
 - [[Spaces/3-Resource/软件梳理/windows软件/MyKeyMap]]
 - [[Spaces/3-Resource/软件梳理/windows软件/Quicker]]
@@ -20,8 +20,8 @@
 - [[Spaces/3-Resource/软件梳理/macos软件/Burp suite]]
 - [[Spaces/3-Resource/软件梳理/windows软件/Wox]]
 - [[Spaces/3-Resource/软件梳理/windows软件/Git]]
-- [[Spaces/3-Resource/软件梳理/windows软件/Quicklook]]
-- [[Spaces/3-Resource/软件梳理/windows软件/PowerToys]]
+- [[Sources/GithubStarsSync/QuickLook]]
+- [[Sources/GithubStarsSync/PowerToys]]
 - [[Spaces/3-Resource/软件梳理/windows软件/mumu模拟器]]
 - [[Spaces/3-Resource/软件梳理/windows软件/火绒安全]]
 - [[Spaces/3-Resource/软件梳理/windows软件/图吧工具箱]]
@@ -50,7 +50,7 @@
 - [[Spaces/3-Resource/软件梳理/windows软件/Unigram]]
 - [[Spaces/3-Resource/软件梳理/windows软件/Twinkle Tray]]
 - [[Spaces/3-Resource/软件梳理/windows软件/Bulk Carp Uninstaller]]
-- [[Spaces/3-Resource/软件梳理/windows软件/UniGetUI]]
+- [[Cards/UniGetUI]]
 - [[Spaces/3-Resource/软件梳理/macos软件/bitwarden]]
 - 绿色版
 	- [[Spaces/3-Resource/软件梳理/windows软件/HEU_KMS_Activator]]

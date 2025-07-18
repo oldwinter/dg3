@@ -1,14 +1,18 @@
 ---
-{"publish":true,"permalink":"/Spaces/_ Spaces Readme.md","created":"2025-04-26","modified":"2025-06-27","published":"2025-07-08T21:33:59.221+08:00","tags":["workflow"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/_ Spaces Readme.md","created":"2025-04-26","modified":"2025-07-17","published":"2025-07-17T21:02:22.113+08:00","tags":["workflow"],"cssclasses":""}
 ---
 
 
-> 在Obsidian -> files and links -> excluded files里面将这个文件夹加入，降低搜索匹配优先级。
+> AI时代，文件夹的作用又上升了，因为使用@，将整个文件夹给ai作为上下文，是当前最简洁有效的方式。所以需要在习惯上做一些更改，不能像之前一样纯用链接或标签来进行管理了。
+
+如果有需要，比如降低Resource或Archive目录中文档的优先级，则可以在Obsidian -> files and links -> excluded files里面将这个文件夹加入，降低搜索匹配优先级。
 
 移动文件夹和创建moc文件的频率其实不高，需要的时候手动搞一下还能加深印象，所以这里就不搞那些文件夹根据PARA属性进行流转的自动化了。
 
-这个目录用于 历史归档 archive  
-暂时不重要了，降低优先级的地方。
+- Project 这个目录用于跟踪近期需要行动、需要执行力、需要时间投入的事务。可以在文件夹命名上进行显著区分，甚至加上时间限定，比如『2025小红书探索』，如果探索成功了，可以转入Area，如果完成了，可以转入Archive。
+- Area 这个目录用于跟踪以年为单位，可能中长期，持续感兴趣的领域。比如『数字花园建设与维护』，『macos高效使用』。
+- Resource 这个目录用于创建一个文件夹将有明显特征的内容圈起来，就不要自己手动挪了，定期让AI整理既可。比如『有意思的语言』,『软件梳理』
+- Archive 这个目录用于 历史归档 archive ，暂时不重要了，降低优先级的地方。主要靠笔记名搜索、全文搜索、AI向量化搜索或者反向链接等方式找到。
 
 这里的文件，主要从[[Cards/daily note]]、[[📥 Inbox/_ 📥 Inbox Readme]]、[[Cards/_ Cards Readme]]输送过来。可以且强烈建议使用cursor自动生成moc文件，然后使用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/File Cooker]]进行批量移动。cursor提示词
 

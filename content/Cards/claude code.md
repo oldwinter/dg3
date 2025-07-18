@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/claude code.md","created":"2025-04-17","modified":"2025-06-25","published":"2025-07-12T21:48:52.499+08:00","tags":["powershell命令","linux命令"],"cssclasses":""}
+{"publish":true,"permalink":"/Cards/claude code.md","created":"2025-04-17","modified":"2025-06-25","published":"2025-07-16T14:36:53.340+08:00","tags":["powershell命令","linux命令"],"cssclasses":""}
 ---
 
 
@@ -14,3 +14,7 @@
 3. 连接到ide，比如cursor。
 	1. cursor中安装claude code。
 	2. cc中输入/ide进行连接。
+
+## 使用其他模型
+
+[[📥 Inbox/kimi v2用于claude code]]

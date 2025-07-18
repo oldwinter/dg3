@@ -31,7 +31,7 @@ publish: true
 
 [[Spaces/2-Area/macos高效使用/MacOS Hyper键快捷键分配]]
 
-[[Spaces/2-Area/macos高效使用/MacOS F区功能键快捷键分配]]
+[[Spaces/2-Area/macos高效使用/macOS F区功能键快捷键分配]]
 
 ## 编辑器的编辑快捷键
 
