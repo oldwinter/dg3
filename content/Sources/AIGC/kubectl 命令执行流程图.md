@@ -203,16 +203,16 @@ sequenceDiagram
 
 ### 核心组件文档
 - [[Sources/AIGC/∑ k8s 入门到精通 MOC]]：完整学习路径
-- [[Spaces/1-Project/ack和k8s/kubernetes 核心组件及架构]]：组件详解
+- [[Spaces/1-Project/2025年ack和k8s学习回顾/kubernetes 核心组件及架构]]：组件详解
 - [[k8s技术架构图]]：现有架构图
 
 ### 工具链相关
 - [[Spaces/3-Resource/软件梳理/linux常用命令/kubectl]]：命令行工具详解
-- [[Spaces/1-Project/ack和k8s/kubelet]]：节点代理组件
-- [[Spaces/1-Project/ack和k8s/kube-proxy]]：网络代理组件
+- [[Spaces/1-Project/2025年ack和k8s学习回顾/kubelet]]：节点代理组件
+- [[Spaces/1-Project/2025年ack和k8s学习回顾/kube-proxy]]：网络代理组件
 
 ### 实践指南
-- [[Spaces/1-Project/ack和k8s/k8s 快速入门]]：快速上手指南
+- [[Spaces/1-Project/2025年ack和k8s学习回顾/k8s 快速入门]]：快速上手指南
 - [[k8s 本地开发]]：本地开发环境
 
 ---

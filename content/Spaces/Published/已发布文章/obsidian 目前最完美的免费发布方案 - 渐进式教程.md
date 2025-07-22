@@ -27,7 +27,7 @@
 | 文件夹层级显示              | 无                                 | 支持                            | 无                                             | 无                             |
 | [[首屏加载速度]]            | 极快，2s内，下载资源<1M            | 中等，5秒内，下载资源<5M        | 极快，2s内，下载资源<1M                        | 超慢，10秒，下载资源<30M       |
 | 图谱显示                    | 支持全局图谱，但1K+笔记就很卡      | 完美支持                        | 支持局部图谱，中文支持不友好                   | 支持，稍卡                     |
-| [[📥 Inbox/横向卷动布局- andy mode]] | 不支持                             | 支持                            | 不支持                                         | 不支持                         |
+| [[Cards/横向卷动布局- andy mode]] | 不支持                             | 支持                            | 不支持                                         | 不支持                         |
 | 暗色模式支持                | 不支持                             | 支持                            | 支持                                           | 支持，但固定，不能切换         |
 | [[SEO优化]]                 | 可被google自动收录                 | 官方做了优化，收录优先级更高    | 可被google自动收录                             | google好像不会收录单html的方案 |
 | 移动端支持                  | 支持                               | 支持                            | 支持                                           | 支持                           |
@@ -43,7 +43,7 @@
 - logseq方案，[GitHub - pengx17/logseq-publish: Logseq Publish Action](https://github.com/pengx17/logseq-publish)
 - zola方案，[GitHub - ppeetteerrs/obsidian-zola: A no-brainer solution to turning your Obsidian PKM into a Zola site.](https://github.com/ppeetteerrs/obsidian-zola)
 - perlite方案，[GitHub - secure-77/Perlite: A webbased markdown viewer optimized for Obsidian](https://github.com/secure-77/Perlite)
-- gatsby方案，支持[[📥 Inbox/横向卷动布局- andy mode]]，但构建时长小时级别，[GitHub - aravindballa/gatsby-theme-andy: A Gatsby theme to build Andy style websites. 📑](https://github.com/aravindballa/gatsby-theme-andy/)
+- gatsby方案，支持[[Cards/横向卷动布局- andy mode]]，但构建时长小时级别，[GitHub - aravindballa/gatsby-theme-andy: A Gatsby theme to build Andy style websites. 📑](https://github.com/aravindballa/gatsby-theme-andy/)
 - 新发现方案：[GitHub - mathieudutour/gatsby-digital-garden: 🌷 🌻 🌺 Create a digital garden with Gatsby](https://github.com/mathieudutour/gatsby-digital-garden/)
 
 总之，有钱就选官方服务准没错。其次，综合对比后，我选择了jekyll方案1，如何一步步实现，见下文。
@@ -71,11 +71,11 @@
 	- 执行本地调试命令`bundle exec jekyll serve`，接着浏览器打开`http://localhost:4000`看是否正常显示页面。
 	- 将obsidian库全部要发布的文件用linter插件加上YAML格式的[[Cards/frontmatter]]区，然后拷贝至`_notes_`目录。
 		- linter插件支持一键对全库进行markdown格式美化，强烈推荐。⚠️执行前请先备份。
-		- 有能力的朋友，可以直接将obsidian笔记库添加为[[Cards/git submodule]]。
+		- 有能力的朋友，可以直接将obsidian笔记库添加为[[Spaces/2-Area/计算机知识/git submodule]]。
 	- ctrl + c 停止`bundle exec jekyll serve`命令，并重新执行。接着浏览器打开`http://localhost:4000/笔记名`。例如我的obsidian笔记库里面有`数字花园`这条笔记，则访问`http://localhost:4000/数字花园`即可看到笔记。
 - 2.[[Cards/Netlify]]配置自动构建。
 	- 按照这个教程[手把手教你使用Netlify部署博客及部署自动化 - 知乎](https://zhuanlan.zhihu.com/p/55252024)，界面一步步点，都按默认配置来，从而将上一步fork的自己仓库，通过netlify构建和发布。
-		- 主流的免费的还有[[Cards/github pages]]和[[Spaces/2-Area/云服务和部署/Vercel]]服务，前者缺少[[Cards/CDN]]导致国内访问很慢，后者存在非html后缀的链接报404错误的问题。
+		- 主流的免费的还有[[Spaces/2-Area/计算机知识/github pages]]和[[Spaces/2-Area/云服务和部署/Vercel]]服务，前者缺少[[Cards/CDN]]导致国内访问很慢，后者存在非html后缀的链接报404错误的问题。
 	- 完成上一步后，应该能得到一个`https://master--zippy-dango-d43c8d.netlify.app/`类似格式的网址，打开后正常显示原仓库的页面即可。
 - 3.将本地全部文件push至github。
 	- 本地仓库的根目录执行git三件套：`git add .` `git commit -m "first commit"` `git push`
@@ -92,7 +92,7 @@
 		- 在[[Cards/Netlify]]的Build Setting的Build command设置中，将图片从obsidian的图片库移动至工程根目录，如`mv _notes/Extras . && jekyll build --trace`。
 - （可选）自定义自己的域名
 	- 在netlify界面按提示一步步操作即可，需要有自己的域名且已经备案。
-	- [[Cards/第一次购买并备案域名的经验]]
+	- [[Spaces/2-Area/计算机知识/第一次购买并备案域名的经验]]
 	- [[Cards/DNS解析]]
 - （可选）嵌入评论系统新增
 	- 推荐用giscus，不用自己折腾数据库这些烦人的东西。[[Cards/博客的评论系统借用github discussion模块 - giscus]]

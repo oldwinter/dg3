@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/∑ macOS 必备软件.md","title":"∑ mac必备软件","created":"2022-06-09","modified":"2025-04-03","published":"2025-07-18T11:26:34.881+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/∑ macOS 必备软件.md","title":"∑ mac必备软件","created":"2022-06-09","modified":"2025-04-03","published":"2025-07-19T15:36:17.295+08:00","cssclasses":""}
 ---
 
 
@@ -187,7 +187,7 @@
 
 - [[Spaces/3-Resource/软件梳理/macos软件/1Piece]] (功能未知)
 - [[Spaces/3-Resource/软件梳理/macos软件/charmstone]] (功能未知)
-- [[Spaces/3-Resource/软件梳理/macos软件/doordoor]] (疑似重复)
+- [[Spaces/3-Resource/软件梳理/macos软件/dockdoor]] (疑似重复)
 - [[Spaces/3-Resource/软件梳理/macos软件/expanso]] (功能未知)
 - [[Spaces/3-Resource/软件梳理/macos软件/Fig]] (功能未知)
 

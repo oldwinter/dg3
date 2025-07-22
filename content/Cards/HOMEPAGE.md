@@ -7,35 +7,22 @@ publish: true
 ---
 ## 最近编辑的笔记
 
-| 标题                                                                                                            | 时间                      |
-| ------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| [[Spaces/3-Resource/软件梳理/macos软件/Bartender\|Bartender]]                                                    | 2:16 PM - July 12, 2025 |
-| [[Spaces/1-Project/ack和k8s/CNCF landscape全局鸟瞰图\|CNCF landscape全局鸟瞰图]]                                      | 2:13 PM - July 12, 2025 |
-| [[Spaces/1-Project/ack和k8s/CNCF\|CNCF]]                                                                    | 2:13 PM - July 12, 2025 |
-| [[Spaces/4-Archive/ingtube/交接/Inbox/fine-tuning技术可行性分析\|fine-tuning技术可行性分析]]                               | 2:13 PM - July 12, 2025 |
-| [[Spaces/4-Archive/ingtube/交接/Inbox/fine-tuning初步结论0915\|fine-tuning初步结论0915]]                             | 2:13 PM - July 12, 2025 |
-| [[Spaces/4-Archive/ingtube/交接/Inbox/fine-tuning，rag，pre-training技术的对比\|fine-tuning，rag，pre-training技术的对比]] | 2:13 PM - July 12, 2025 |
-| [[Spaces/4-Archive/ingtube/交接/Inbox/fine-tuning\|fine-tuning]]                                             | 2:13 PM - July 12, 2025 |
-| [[Spaces/4-Archive/ingtube/交接/Inbox/Fine-tuning： 基于自建LLm调优\|Fine-tuning： 基于自建LLm调优]]                       | 2:13 PM - July 12, 2025 |
-| [[Spaces/4-Archive/ingtube/交接/Inbox/Fine-tuning：基于Openai 微调\|Fine-tuning：基于Openai 微调]]                     | 2:13 PM - July 12, 2025 |
-| [[Spaces/4-Archive/ingtube/交接/Inbox/Image generation：支持调用第三方接口，文字生成图片\|Image generation：支持调用第三方接口，文字生成图片]] | 2:13 PM - July 12, 2025 |
-
+```dataview
+table WITHOUT ID file.link AS "标题",file.mtime as "时间"
+from ""
+sort file.mtime desc
+limit 10
+```
 
 ## 七天内创建的笔记
 
-| File                                           | 创建时间                    |
-| ---------------------------------------------- | ----------------------- |
-| [[📥 Inbox/穷鬼AI套餐\|穷鬼AI套餐]]                 | 2:03 PM - July 12, 2025 |
-| [[📥 Inbox/Anna’s Archive\|Anna’s Archive]] | 1:21 PM - July 12, 2025 |
-| [[Atlas/MOCs/∑ 其他杂项\|∑ 其他杂项]]               | 4:01 AM - July 12, 2025 |
-| [[Atlas/MOCs/∑ 思维与表达\|∑ 思维与表达]]             | 4:01 AM - July 12, 2025 |
-| [[Atlas/MOCs/∑ 媒体与娱乐\|∑ 媒体与娱乐]]             | 4:01 AM - July 12, 2025 |
-| [[Atlas/MOCs/∑ 生活经验与建议\|∑ 生活经验与建议]]         | 4:00 AM - July 12, 2025 |
-| [[Atlas/MOCs/∑ 工作与职业发展\|∑ 工作与职业发展]]         | 4:00 AM - July 12, 2025 |
-| [[Atlas/MOCs/∑ 技术与工具\|∑ 技术与工具]]             | 4:00 AM - July 12, 2025 |
-| [[Atlas/MOCs/∑ 生产力与学习技巧\|∑ 生产力与学习技巧]]       | 4:00 AM - July 12, 2025 |
-| [[Atlas/MOCs/∑ 心理学与认知偏误\|∑ 心理学与认知偏误]]       | 4:00 AM - July 12, 2025 |
-
+```dataview
+table file.ctime as 创建时间
+from ""
+where date(today) - file.ctime <=dur(7 days)
+sort file.ctime desc
+limit 10
+```
 
 ---
 date created: 2022-08-04
@@ -68,7 +55,7 @@ x:: [[🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 工作流�
 - #todo/now #todo/本周
 - [Anki 回顾笔记](obsidian://advanced-uri?vault=knowledge-garden&commandid=obsidian-spaced-repetition%253Asrs-note-review-open-note)
 - [[Spaces/Published/文章草稿/∑ 文章草稿]]
-- [[Spaces/Published/已发布文章/∑ 已发布文章]]
+- [[∑ 已发布文章.canvas]]
 
 ## Cards
 
@@ -122,182 +109,19 @@ Spaces下全部PARA内的MOC文件
 
 ## Miscellaneous
 
-#### Spaces/1-Project
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/1-Project/∑ 1-Project\|∑ 1-Project]]|June 27, 2025|July 12, 2025|
-
-#### Spaces/1-Project/ChatGPT和LLM
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/1-Project/ChatGPT和LLM/让cursor把各种流程用mermaid画一遍\|让cursor把各种流程用mermaid画一遍]]|July 12, 2025|July 12, 2025|
-
-#### Spaces/1-Project/golang与后端
-
-|Name3|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/1-Project/golang与后端/∑ golang\|∑ golang]]|April 04, 2025|June 27, 2025|
-|[[Spaces/1-Project/golang与后端/∑ 计算机科学\|∑ 计算机科学]]|April 04, 2025|July 12, 2025|
-|[[Spaces/1-Project/golang与后端/Go语言复习大纲\|Go语言复习大纲]]|July 06, 2025|July 12, 2025|
-
-#### Spaces/1-Project/Raycast
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/1-Project/Raycast/∑ Raycast\|∑ Raycast]]|July 06, 2025|July 12, 2025|
-
-#### Spaces/1-Project/工作流与SOP
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/1-Project/工作流与SOP/_ 工作流与实践\|_ 工作流与实践]]|June 27, 2025|July 12, 2025|
-
-#### Spaces/1-Project/求职
-
-|Name3|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/1-Project/求职/∑ 个人简历\|∑ 个人简历]]|April 04, 2025|July 12, 2025|
-|[[Spaces/1-Project/求职/∑ 个人简历-优化版\|∑ 个人简历-优化版]]|July 04, 2025|July 10, 2025|
-|[[Spaces/1-Project/求职/Kubernetes\|Kubernetes]]|December 11, 2022|July 12, 2025|
-
-#### Spaces/1-Project/项目管理
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/1-Project/项目管理/_ 方法论与管理\|_ 方法论与管理]]|June 27, 2025|July 12, 2025|
-
-#### Spaces/2-Area
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/2-Area/∑ 2-Area\|∑ 2-Area]]|April 04, 2025|July 11, 2025|
-
-#### Spaces/2-Area/macos高效使用
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/2-Area/macos高效使用/_macos高效使用\|_macos高效使用]]|June 27, 2025|July 12, 2025|
-
-#### Spaces/2-Area/windows高效使用
-
-|Name2|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/2-Area/windows高效使用/_ windows高效使用\|_ windows高效使用]]|June 27, 2025|June 27, 2025|
-|[[Spaces/2-Area/windows高效使用/∑ 快捷键（MacOS + Windows）\|∑ 快捷键（MacOS + Windows）]]|April 04, 2025|July 12, 2025|
-
-#### Spaces/2-Area/云服务和部署
-
-|Name3|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/2-Area/云服务和部署/_ 云服务和部署\|_ 云服务和部署]]|June 27, 2025|July 12, 2025|
-|[[Spaces/2-Area/云服务和部署/∑ DevOps roadmap 运维路线图\|∑ DevOps roadmap 运维路线图]]|April 04, 2025|July 12, 2025|
-|[[Spaces/2-Area/云服务和部署/∑ 云计算与云原生\|∑ 云计算与云原生]]|April 04, 2025|July 12, 2025|
-
-#### Spaces/2-Area/思维工具与模块
-
-|Name3|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/2-Area/思维工具与模块/_ 思维工具与模块\|_ 思维工具与模块]]|June 27, 2025|July 12, 2025|
-|[[Spaces/2-Area/思维工具与模块/∑ 常见思维工具\|∑ 常见思维工具]]|April 04, 2025|June 25, 2025|
-|[[Spaces/2-Area/思维工具与模块/∑ 查理·芒格论人类误判心理学\|∑ 查理·芒格论人类误判心理学]]|July 06, 2025|July 12, 2025|
-
-#### Spaces/2-Area/数字花园建设与维护
-
-|Name3|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/2-Area/数字花园建设与维护/_ 数字花园建设与维护\|_ 数字花园建设与维护]]|June 27, 2025|July 12, 2025|
-|[[Spaces/2-Area/数字花园建设与维护/∑ Building a Second Brain 翻译和读书笔记\|∑ Building a Second Brain 翻译和读书笔记]]|April 04, 2025|July 12, 2025|
-|[[Spaces/2-Area/数字花园建设与维护/∑ 必备软件\|∑ 必备软件]]|January 07, 2023|July 12, 2025|
-
-#### Spaces/2-Area/知识管理
-
-|Name4|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/2-Area/知识管理/_ 知识管理\|_ 知识管理]]|June 27, 2025|July 06, 2025|
-|[[Spaces/2-Area/知识管理/∑ PKM\|∑ PKM]]|April 04, 2025|July 12, 2025|
-|[[Spaces/2-Area/知识管理/∑ 工作和生活的效率体系建设\|∑ 工作和生活的效率体系建设]]|April 04, 2025|July 12, 2025|
-|[[Spaces/2-Area/知识管理/核心主题分类框架\|核心主题分类框架]]|April 04, 2025|July 12, 2025|
-
-#### Spaces/2-Area/计算机知识
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/2-Area/计算机知识/∑ 计算机知识 MOC\|∑ 计算机知识 MOC]]|June 27, 2025|July 12, 2025|
-
-#### Spaces/2-Area/运动健康
-
-|Name2|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/2-Area/运动健康/∑ 运动与健康\|∑ 运动与健康]]|April 04, 2025|July 12, 2025|
-|[[Spaces/2-Area/运动健康/∑ 运动健康\|∑ 运动健康]]|July 06, 2025|July 12, 2025|
-
-#### Spaces/3-Resource
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/3-Resource/∑ 3-Resource\|∑ 3-Resource]]|July 06, 2025|July 12, 2025|
-
-#### Spaces/3-Resource/电影笔记
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/3-Resource/电影笔记/∑ 电影笔记\|∑ 电影笔记]]|April 04, 2025|July 06, 2025|
-
-#### Spaces/3-Resource/电视剧笔记
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/3-Resource/电视剧笔记/∑ 电视剧笔记\|∑ 电视剧笔记]]|April 04, 2025|July 06, 2025|
-
-#### Spaces/3-Resource/软件梳理
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/3-Resource/软件梳理/平台＋插件\|平台＋插件]]|July 12, 2025|July 12, 2025|
-
-#### Spaces/3-Resource/软件梳理/macos软件
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/3-Resource/软件梳理/macos软件/∑ linux常用命令行\|∑ linux常用命令行]]|September 30, 2022|July 12, 2025|
-
-#### Spaces/4-Archive
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/4-Archive/∑ 4-Archive\|∑ 4-Archive]]|July 06, 2025|July 12, 2025|
-
-#### Spaces/4-Archive/Dataviews
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/4-Archive/Dataviews/∑ 本库Dataview汇总\|∑ 本库Dataview汇总]]|November 12, 2022|July 12, 2025|
-
-#### Spaces/4-Archive/ingtube/交接/Archive/Project
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/4-Archive/ingtube/交接/Archive/Project/_ingtube 文件夹\|_ingtube 文件夹]]|April 04, 2025|July 12, 2025|
-
-#### Spaces/Private
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/Private/∑ Private MOC\|∑ Private MOC]]|June 27, 2025|July 12, 2025|
-
-#### Spaces/Published/已发布文章
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/Published/已发布文章/∑ 已发布文章\|∑ 已发布文章]]|January 04, 2023|June 08, 2025|
-
-#### Spaces/Published/文章草稿
-
-|Name1|创建日期|修改日期|
-|---|---|---|
-|[[Spaces/Published/文章草稿/∑ 文章草稿\|∑ 文章草稿]]|September 21, 2022|June 08, 2025|
+```dataviewjs
+// 获取指定文件夹下的指定标签的文件
+const filter = '"Spaces" and #MOC'
+// 通过文件夹分组，检索文件夹下全部文件的标签、修改时间等相关信息
+const groups =  dv.pages(`${filter}`).groupBy(p => p.file.folder)
+for (let group of groups) {
+	dv.header(4, group.key);
+	dv.table(["Name", "创建日期", "修改日期"],
+		group.rows
+			.sort(k => k.file.name, 'asc')
+			.map(k => [k.file.link, k.file.cday, k.file.mday]))
+}
+```
 
 - [[🍀 花园导览/🧰 本库指南/Tutorials/§ 本库obsidian使用说明书]]
 
@@ -329,19 +153,60 @@ tags:
 - dataview
 title: 本库的宏观统计数据
 ---
-==已使用obsidian== **2324** 天
+```dataviewjs
+let allFiles = dv.pages()
 
-==文件总数== **9894** 个
+let ftMd = allFiles.file.sort(t => t.cday)[0]
+let total = parseInt([new Date() - ftMd.ctime] / (60*60*24*1000))
+dv.paragraph(`==已使用obsidian== **${total}** 天`)
 
-==标签== **353** 个; ==文件夹数== **196** 个; ==文件别名== **2793** 个
+dv.paragraph(`==文件总数== **${allFiles.length}** 个`)
 
-==正向链接== **15168** 个; ==未创建== **2394** 个
+dv.span(`==标签== **${allFiles.file.tags.distinct().length}** 个`)
+dv.span("; ")
+dv.span(`==文件夹数== **${allFiles.file.folder.distinct().length}** 个`)
+dv.span("; ")
+dv.span(`==文件别名== **${allFiles.file.aliases.distinct().length}** 个`)
 
-==反向链接== **10611** 个; ==孤立文件== **4971** 个
 
-==MOC文件== **0** 个，==TOC文件== **8** 个
+// 统计未创建链接文件的正向链接总数，即broken links counts
+const unresolvedLinks  = Object.values(app.metadataCache.unresolvedLinks)
+.filter(unresolved => Object.keys(unresolved).length > 0 )
+.flatMap(unresolved => Object.keys(unresolved))
+.map(f => "[[" + f + "]]");
+//console.log(unresolvedLinks)
 
-==anki卡片== **0** 个，==待办文件== **1** 个
+// 统计入链数为0的文件数，即未被其他页面引用的文件数，即orphaned files counts
+const orphanedFiles = allFiles.filter(f => f.file.inlinks.length==0)
+//console.log(orphanedFiles)
+
+
+dv.paragraph("\n")
+dv.span(`==正向链接== **${allFiles.file.outlinks.length}** 个`)
+dv.span("; ")
+dv.span(`==未创建== **${unresolvedLinks.length}** 个`)
+
+dv.paragraph("\n")
+dv.span(`==反向链接== **${allFiles.file.inlinks.length}** 个`)
+dv.span("; ")
+dv.span(`==孤立文件== **${orphanedFiles.length}** 个`)
+
+
+let mocFiles = dv.pages("#索引笔记")
+let tocFiles = dv.pages("#目录笔记")
+
+dv.paragraph(`==MOC文件== **${mocFiles.length}** 个，==TOC文件== **${tocFiles.length}** 个`)
+
+let ankiFiles = dv.pages("#复习回顾")
+let todoFiles = dv.pages("#待办")
+
+dv.paragraph(`==anki卡片== **${ankiFiles.length}** 个，==待办文件== **${todoFiles.length}** 个`)
+
+
+
+
+
+```
 
 >[!INFO]  
 >  主页其实也是一种 [[Spaces/2-Area/思维工具与模块/模板与套路]]，当我大脑放空，不知道接下来需要做什么的时候，不妨打开这里，找寻一点思路。主页同时也是[[Spaces/2-Area/数字花园建设与维护/LYT 笔记框架\|lyt kit]]认为的不可或缺的组成部分，和[[Atlas/MOCs/∑ MOCs]]组成一个导览整体。

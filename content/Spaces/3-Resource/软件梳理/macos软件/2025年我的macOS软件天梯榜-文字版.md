@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"2025/my-macos-ranks","created":"2025-07-14","modified":"2025-07-14","published":"2025-07-16T14:54:19.580+08:00","cssclasses":""}
+{"publish":true,"permalink":"2025/my-macos-ranks","created":"2025-07-14","modified":"2025-07-14","published":"2025-07-19T15:12:44.921+08:00","cssclasses":""}
 ---
 
 
@@ -76,7 +76,7 @@
 - [[Spaces/3-Resource/软件梳理/macos软件/Proxyman]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Lookaway]]
 - [[Spaces/3-Resource/软件梳理/安卓软件/微信读书]]
-- [[Spaces/3-Resource/软件梳理/安卓软件/夸克]]
+- [[Spaces/3-Resource/软件梳理/macos软件/夸克网盘]]
 - [[Spaces/3-Resource/软件梳理/macos软件/istat Menus]]
 
 ## C

@@ -46,7 +46,7 @@
 
 先积累出一些常用的模板，比如：
 - [[Cards/贴吧嘴臭老哥]]
-- [[Spaces/1-Project/ChatGPT和LLM/chatgpt 与 可视化画图 mermaid]]
+- [[Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatgpt 与 可视化画图 mermaid]]
 - [[Cards/咪蒙公众号标题风格生成]]
 
 ## 各大主流编程工具内置系统提示词

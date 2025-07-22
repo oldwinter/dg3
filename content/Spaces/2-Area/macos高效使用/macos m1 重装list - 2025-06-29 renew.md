@@ -126,7 +126,7 @@ views:
 
 ## 破解版
 
-> 从[[Spaces/1-Project/ack和k8s/Macked]]下载。
+> 从[[Spaces/1-Project/2025年ack和k8s学习回顾/Macked]]下载。
 
 1. iStat Menus
 2. CleanShot X

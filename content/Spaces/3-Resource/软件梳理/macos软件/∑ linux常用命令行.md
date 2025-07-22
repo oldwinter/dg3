@@ -1,11 +1,7 @@
 ---
-date created: 2022-06-09
-date modified: 2024-07-26
-tags:
-  - moc
-title: ∑ linux常用命令行
-publish: true
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/∑ linux常用命令行.md","title":"∑ linux常用命令行","created":"2022-06-09","modified":"2024-07-26","published":"2025-07-21T13:11:59.702+08:00","tags":["moc"],"cssclasses":""}
 ---
+
 
 - 官方下载 pkg 安装
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/nodejs]]，自带[[Spaces/3-Resource/软件梳理/linux常用命令/npm]]

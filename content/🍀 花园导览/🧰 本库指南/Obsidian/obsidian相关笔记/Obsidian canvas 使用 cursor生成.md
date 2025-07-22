@@ -1,17 +1,22 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian canvas 使用 cursor生成.md","created":"2025-06-08","modified":"2025-06-27","published":"2025-07-18T13:52:28.584+08:00","tags":["AI教程"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian canvas 使用 cursor生成.md","created":"2025-06-08","modified":"2025-06-27","published":"2025-07-21T13:36:05.296+08:00","tags":["AI教程"],"cssclasses":""}
 ---
 
 
-## 示例一
 
-无中生有，直接一句话让cursor生成canvas。
+> [!important] 显著优势
+> 相比于使用AI生成其他html、svg、ppt、mermaid等图表，生成obsidian canvas有2大好处：
+> 1. 首次出图后，方便二次无痛编辑，再也不用被AI反复抽卡困扰。
+> 2. obsidian canvas 可引用库内已有文件，而非孤立卡片，从而形成知识网络。
+
+
+## 示例一：无中生有，直接一句话让cursor生成canvas。
 
 ```cursor-prompts
 生成甄嬛传人物关系图和时间线 canvas
 ```
 
-这里我之所以可以写这么短的提示词，是因为使用了cursorrule，里面已经有比较详细的提示词描述了，全文见文末。
+这里我之所以可以写这么短的提示词，是因为使用了cursorrule，里面已经有比较详细的提示词描述了，全文见文末。🍠读者关注我首页置顶，下载我的开源知识库，里面搜这偏卡片标题既可。
 
 ![CleanShot 2025-06-27 at 17.59.43@2x.png](https://pub-pic.oldwinter.top/2025/06/f9153ab38bc7827b8eade10a2e616c63.png)
 

@@ -71,7 +71,7 @@
 - Spaces
    - [[Spaces/1-Project/_ Project Readme]]
 	  - [[Atlas/MOCs/∑ 个人职业生涯]]
-		 - [[Spaces/1-Project/求职/∑ 个人简历]]
+		 - [[Spaces/1-Project/下半年看看新机会/∑ 个人简历]]
 		 - [[Cards/求职与面试]]
 		 - [[Cards/职场影响力]]
 		 - [[Cards/行业影响力]]

@@ -10,5 +10,5 @@
 
 [[Cards/How I use LLMs]]
 
-[[Spaces/1-Project/ChatGPT和LLM/Deep Dive into LLMs like ChatGPT]]
+[[Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/Deep Dive into LLMs like ChatGPT]]
 

@@ -58,7 +58,7 @@ dataview 有种数据挖掘的感觉。通过不同角度分析和挖掘自己�
 
 ## dataviewjs 的内置函数与变量
 
-[[Cards/dataview的数据来源]]
+[[Spaces/2-Area/计算机知识/dataview的数据来源]]
 
 不支持代码智能联想，只能手动记忆或查表。
 

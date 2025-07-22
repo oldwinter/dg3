@@ -297,7 +297,7 @@ sequenceDiagram
 
 ### 实践指南
 - [[Spaces/2-Area/云服务和部署/istio基于gateway网关的灰度发布]]：Gateway 和 VirtualService 灰度发布实践
-- [[Spaces/1-Project/求职/Istio]]：Istio 学习资源汇总
+- [[Spaces/1-Project/下半年看看新机会/Istio]]：Istio 学习资源汇总
 - [[Cards/再读istio官方文档的笔记]]：官方文档学习笔记
 
 ### 相关架构图

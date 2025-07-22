@@ -1,10 +1,10 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/windows软件/∑ windows必备软件.md","aliases":"∑ windows必装软件","title":"∑ windows必备软件","created":"2022-06-09","modified":"2025-06-27","published":"2025-07-16T15:06:19.162+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/windows软件/∑ windows必备软件.md","aliases":"∑ windows必装软件","title":"∑ windows必备软件","created":"2022-06-09","modified":"2025-06-27","published":"2025-07-20T14:08:05.955+08:00","cssclasses":""}
 ---
 
 
 > [[2025年我的Windows软件天梯榜.canvas|2025年我的Windows软件天梯榜]]
-> [[2025Windows软件天梯榜-文字版本.canvas|2025Windows软件天梯榜-文字版本]]
+> [[2025年Windows软件天梯榜-文字版本.canvas|2025Windows软件天梯榜-文字版本]]
 
 ## 常用
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/📥 Inbox/comet浏览器.md","created":"2025-07-15","modified":"2025-07-15","published":"2025-07-17T00:00:32.577+08:00","cssclasses":""}
+{"publish":true,"permalink":"/📥 Inbox/comet浏览器.md","created":"2025-07-15","modified":"2025-07-15","published":"2025-07-20T11:54:11.257+08:00","tags":["macOS软件","windows软件"],"cssclasses":""}
 ---
 
 
@@ -8,7 +8,7 @@
 ~~邀请链接： https://perplexity.ai/browser/claim/F1J5PY0OOJ~~
 
 [You're invited to Comet](https://perplexity.ai/browser/claim/H586GGTNI6)
-[You're invited to Comet](https://perplexity.ai/browser/claim/X70C1NHG8L)
+~~[You're invited to Comet](https://perplexity.ai/browser/claim/X70C1NHG8L)~~
 
 谁领了的话，如果你愿意，可以通过邮箱或者其他方式联系到我，让我知道是哪位高手眼疾手快。
 
