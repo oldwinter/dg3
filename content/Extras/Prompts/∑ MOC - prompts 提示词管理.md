@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/∑ MOC - prompts 提示词管理.md","title":"社交媒体摘要","created":"2025-04-24","modified":"2025-05-15","published":"2025-07-12T16:52:42.291+08:00","tags":["marketing","summary","中文","prompts"],"cssclasses":""}
+{"publish":true,"permalink":"/Extras/Prompts/∑ MOC - prompts 提示词管理.md","title":"社交媒体摘要","created":"2025-04-24","modified":"2025-05-15","published":"2025-07-25T17:03:02.431+08:00","tags":["marketing","summary","中文","prompts"],"cssclasses":""}
 ---
 
 提示词模板：[[Extras/Templates/prompts template - 提示词模板]]
@@ -29,6 +29,7 @@
 - [[Extras/Prompts/视觉学习导师]]
 - [[Cards/互联网讽刺大师]]
 - [[Cards/元提示词 - 优化提示词 - 优化prompts]]
+- [[📥 Inbox/阴阳怪气大师]]
 
 ## 快速 日常场景
 
@@ -41,6 +42,10 @@
 一般联网
 
 - [[Extras/Prompts/mermaid 生成 - 文本生成]]
+
+## 图表与可视化生成
+
+- [[Extras/Prompts/SVG流程图生成提示词模板]]
 
 ## deep search 或者 deepresearch
 

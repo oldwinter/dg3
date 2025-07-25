@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/Clippings/_ Clippings Readme.md","created":"2025-04-09T22:42:26.817+08:00","modified":"2025-07-12T13:46:11.721+08:00","published":"2025-07-12T13:46:11.721+08:00","tags":["workflow"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/Clippings/_ Clippings Readme.md","created":"2025-04-09T22:42:26.817+08:00","modified":"2025-07-12T11:44:31.088+08:00","published":"2025-07-12T11:44:31.088+08:00","tags":["workflow"],"cssclasses":""}
 ---
 
 

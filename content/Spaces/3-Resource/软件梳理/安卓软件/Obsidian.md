@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/Obsidian.md","title":"Obsidian","created":"2022-06-09","modified":"2025-07-10","published":"2025-07-15T21:00:02.480+08:00","tags":["评论/少数派","macOS软件","笔记应用","知识管理","安卓软件","windows软件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/Obsidian.md","title":"Obsidian","created":"2022-06-09","modified":"2025-07-10","published":"2025-07-24T18:33:55.688+08:00","tags":["评论/少数派","macOS软件","笔记应用","知识管理","安卓软件","windows软件"],"cssclasses":""}
 ---
 
 
@@ -39,7 +39,7 @@ jumps:: [[Spaces/3-Resource/软件梳理/安卓软件/Notion]]
 
 ##
 
-[[Spaces/Private/Obsidian 同步库账号密码]]
+[[Spaces/Private/Obsidian 同步库账号密码 - 内测账号密码]]
 
 ## 参考文献
 

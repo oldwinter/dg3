@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Atlas/Bases/∑ BASE.md","aliases":"Bases","created":"2025-05-22","modified":"2025-07-10","published":"2025-07-10T18:20:46.565+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Atlas/Bases/∑ BASE.md","aliases":"Bases","created":"2025-05-22","modified":"2025-07-10","published":"2025-07-24T16:09:54.002+08:00","cssclasses":""}
 ---
 
 
@@ -65,3 +65,4 @@ x: [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/base 使�
 - [[Obsidian插件.base]]
 - [[vscode插件.base]]
 - [[chrome插件.base]]
+

@@ -1,8 +1,7 @@
 ---
-date created: 2025-07-06
-date modified: 2025-07-06
-publish: true
+{"publish":true,"permalink":"/CLAUDE.md","created":"2025-07-06","modified":"2025-07-06","published":"2025-07-24T17:28:47.898+08:00","cssclasses":""}
 ---
+
 
 # CLAUDE.md
 

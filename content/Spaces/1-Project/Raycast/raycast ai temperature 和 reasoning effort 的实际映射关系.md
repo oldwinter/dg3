@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast ai temperature 和 reasoning effort 的实际映射关系.md","created":"2025-04-12","modified":"2025-04-12","published":"2025-07-12T14:09:52.057+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast ai temperature 和 reasoning effort 的实际映射关系.md","created":"2025-04-12","modified":"2025-04-12","published":"2025-07-17T11:01:07.514+08:00","cssclasses":""}
 ---
 
 

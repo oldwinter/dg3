@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/∑ PKM.md","aliases":"personal knowledge management 『入不孵出』PKM系统 个人知识管理","title":"∑ PKM","created":"2022-06-09","modified":"2024-11-07","published":"2025-07-12T13:43:54.936+08:00","tags":["moc"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/知识管理/∑ PKM.md","aliases":"personal knowledge management 『入不孵出』PKM系统 个人知识管理","title":"∑ PKM","created":"2022-06-09","modified":"2024-11-07","published":"2025-07-12T11:44:30.869+08:00","tags":["moc"],"cssclasses":""}
 ---
 
 

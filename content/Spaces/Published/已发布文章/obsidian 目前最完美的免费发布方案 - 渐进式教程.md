@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/obsidian 目前最完美的免费发布方案 - 渐进式教程.md","title":"obsidian 目前最完美的免费发布方案 - 渐进式教程","created":"2022-08-15 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","published":"2025-07-10T21:53:24.392+08:00","tags":["文章/已完成"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/Published/已发布文章/obsidian 目前最完美的免费发布方案 - 渐进式教程.md","title":"obsidian 目前最完美的免费发布方案 - 渐进式教程","created":"2022-08-15 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","published":"2025-07-25T18:32:03.677+08:00","tags":["文章/已完成"],"cssclasses":""}
 ---
 
 > 可以访问此文的双链版本，获得完整阅读体验：[obsidian 目前最完美的免费发布方案 - 渐进式教程 - 🌲 oldwinterの数字花园](https://oldwinter.top/Calendar/%E5%B7%B2%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/obsidian+%E7%9B%AE%E5%89%8D%E6%9C%80%E5%AE%8C%E7%BE%8E%E7%9A%84%E5%85%8D%E8%B4%B9%E5%8F%91%E5%B8%83%E6%96%B9%E6%A1%88+-+%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%95%99%E7%A8%8B)
@@ -48,7 +48,7 @@
 
 总之，有钱就选官方服务准没错。其次，综合对比后，我选择了jekyll方案1，如何一步步实现，见下文。
 
-新增[[Cards/quartz]]方案，已经成熟很多，比jekyll方案性能更好，还支持搜索。
+新增[[Sources/GithubStarsSync/quartz]]方案，已经成熟很多，比jekyll方案性能更好，还支持搜索。
 
 ## 渐进式教程
 

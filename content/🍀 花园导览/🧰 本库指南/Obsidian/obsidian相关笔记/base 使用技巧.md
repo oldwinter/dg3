@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/base 使用技巧.md","created":"2025-06-27","modified":"2025-06-27","published":"2025-07-12T14:12:25.340+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/base 使用技巧.md","created":"2025-06-27","modified":"2025-06-27","published":"2025-07-17T11:01:41.680+08:00","cssclasses":""}
 ---
 
 

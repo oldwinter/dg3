@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast quick ai.md","created":"2025-07-11","modified":"2025-07-11","published":"2025-07-12T14:10:01.447+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast quick ai.md","created":"2025-07-11","modified":"2025-07-11","published":"2025-07-17T11:01:10.520+08:00","cssclasses":""}
 ---
 
 

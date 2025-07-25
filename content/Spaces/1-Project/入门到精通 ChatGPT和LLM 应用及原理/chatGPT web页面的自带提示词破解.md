@@ -1,9 +1,7 @@
 ---
-date created: 2024-02-08
-date modified: 2024-02-19
-相关笔记: []
-publish: true
+{"publish":true,"permalink":"/Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatGPT web页面的自带提示词破解.md","created":"2024-02-08","modified":"2024-02-19","published":"2025-07-23T16:39:34.149+08:00","cssclasses":""}
 ---
+
 
 [[Spaces/1-Project/Raycast/raycast ai 的自带提示词破解]]
 
