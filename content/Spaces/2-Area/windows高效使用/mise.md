@@ -1,9 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/windows高效使用/mise.md","description":"dev tools, env vars, task runner","created":"2025-06-18","modified":"2025-07-04","published":"2025-07-10T22:00:38.229+08:00","tags":["linux命令","github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/windows高效使用/mise.md","description":"dev tools, env vars, task runner","created":"2025-06-18","modified":"2025-07-04","published":"2025-07-29T23:24:26.598+08:00","tags":["linux命令","github开源"],"cssclasses":""}
 ---
 
 
-在macos和linux上，可以替换掉[[Cards/pyenv]]、[[Cards/nvm]]、[[Spaces/1-Project/golang与后端/goenv\|goenv]]、[[Cards/rvm]]、[[Cards/vfox]]了。windows还是得继续用这些。
+在macos和linux上，可以替换掉[[Sources/GithubStarsSync/goenv\|goenv]]、[[Cards/rvm]]、[[Sources/GithubStarsSync/vfox]]了。windows还是得继续用这些。
 
 https://github.com/jdx/mise
 
@@ -75,3 +75,10 @@ echo 'eval "$(mise activate bash)"' >> ~/.bashrc
 ## 验证node是否识别 ，新建terminal tab以激活环境变量
 node -v
 ```
+
+## mise ls
+
+```
+
+```
+

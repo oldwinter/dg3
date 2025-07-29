@@ -1,10 +1,7 @@
 ---
-title: vscode必备插件
-date created: 2022-06-01
-date modified: 2025-05-31
-PARA: Resources
-publish: true
+{"publish":true,"permalink":"/Spaces/3-Resource/VSCode插件/∑ VSCode插件.md","title":"vscode必备插件","created":"2022-06-01","modified":"2025-05-31","published":"2025-07-29T23:24:26.587+08:00","cssclasses":""}
 ---
+
 
 [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]
 
@@ -57,7 +54,7 @@ publish: true
 
 - [[Spaces/3-Resource/VSCode插件/Go - vscode插件]]
 - [[Spaces/3-Resource/VSCode插件/Tooltitude for Go （GoLang）]]
-- [[Spaces/3-Resource/VSCode插件/mirrord]]
+- [[Spaces/4-Archive/ingtube/交接/Inbox/mirrord]]
 
 ## 考察中
 
@@ -67,7 +64,7 @@ publish: true
 - [[Spaces/3-Resource/VSCode插件/Roo Code]]
 - [[Spaces/3-Resource/VSCode插件/ahk++]]
 - [[Spaces/3-Resource/VSCode插件/SVG - vscode插件]]
-- [[Spaces/3-Resource/VSCode插件/foam]]
+- [[Sources/GithubStarsSync/foam]]
 - [[Spaces/3-Resource/VSCode插件/live server]]
 - [[Spaces/3-Resource/VSCode插件/live share]]
 - [[Spaces/3-Resource/VSCode插件/gitignore 语法]]
