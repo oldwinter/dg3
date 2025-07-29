@@ -20,7 +20,7 @@ publish: true
 - [[Spaces/3-Resource/软件梳理/macos软件/夸克网盘]]
 - [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]
 - [[Spaces/3-Resource/软件梳理/安卓软件/Notion]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Bob]]
+- [[Sources/GithubStarsSync/Bob]]
 - [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Cursor]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]

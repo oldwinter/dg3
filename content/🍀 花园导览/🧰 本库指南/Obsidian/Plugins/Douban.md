@@ -1,5 +1,12 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Douban.md","created":"2024-05-11","modified":"2025-07-10","published":"2025-07-10T21:07:45.813+08:00","tags":["obsidian插件"],"cssclasses":""}
+date created: 2024-05-11
+date modified: 2025-07-10
+tags:
+  - obsidian插件
+status:
+rating: 6
+publish: true
+title: Douban
 ---
 
 

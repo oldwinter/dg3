@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macOS 应用的Hyper快捷键.md","created":"2024-11-21","modified":"2024-11-21","published":"2025-07-19T01:52:41.034+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macOS 应用的Hyper快捷键.md","created":"2024-11-21","modified":"2024-11-21","published":"2025-07-28T20:00:46.484+08:00","cssclasses":""}
 ---
 
 与option快捷键差别：hyper重复按键可以呼出/隐藏切换。option则只能呼出，再按一次无法隐藏。
@@ -52,7 +52,7 @@
 | X   | [[Spaces/3-Resource/软件梳理/安卓软件/微信]]          | Raycast | 取 X 字母的象形意思， 微信连通四方                      |
 | C   | [[Spaces/3-Resource/软件梳理/macos软件/Cursor]]      | Raycast |                                          |
 | V   |                 |         |                                          |
-| B   | [[Spaces/3-Resource/软件梳理/macos软件/Bob]] 快捷查词    | 软件内     |                                          |
+| B   | [[Sources/GithubStarsSync/Bob]] 快捷查词    | 软件内     |                                          |
 | N   | [[Spaces/3-Resource/软件梳理/安卓软件/Notion]]      | Raycast |                                          |
 | M   | [[Spaces/3-Resource/软件梳理/安卓软件/Spotify]]     | Raycast | Music                                    |
 | ,   |                 |         |                                          |

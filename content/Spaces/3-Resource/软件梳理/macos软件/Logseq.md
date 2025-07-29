@@ -1,17 +1,7 @@
 ---
-date created: 2022-06-09
-date modified: 2025-07-09
-title: Logseq
-icon: "[[icon-cc-image-Logseq.png]]"
-tags:
-  - macOS软件
-作用: obsidian 备选
-评价: 4
-设置同步: github 仓库
-是否已备份: y
-是否已重装:
-publish: true
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Logseq.md","title":"Logseq","description":"A privacy-first, open-source platform for knowledge management and collaboration. Download link: http://github.com/logseq/logseq/releases. roadmap: http://trello.com/b/8txSM12G/roadmap","created":"2022-06-09","modified":"2025-07-09","published":"2025-07-29T01:28:53.438+08:00","tags":["macOS软件","github开源"],"cssclasses":""}
 ---
+
 
 ##
 

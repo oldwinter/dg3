@@ -1,20 +1,9 @@
 ---
-作用: 触摸板的高级手势
-评价: 6
-设置同步: icloud 自动同步不好使，手动导出预设
-是否已备份: y
-是否已重装: true
-brew安装命令: brew install --cask bettertouchtool
-tags:
-  - macOS软件
-title: BetterTouchTool
-date created: 2022-06-09
-date modified: 2025-06-18
-icon: "[[icon-cc-image-BetterTouchTool.png]]"
-当前是否还在使用: true
-是否有破解版: true
-publish: true
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/BetterTouchTool.md","title":"BetterTouchTool","created":"2022-06-09","modified":"2025-06-18","published":"2025-07-29T14:21:36.715+08:00","tags":["macOS软件"],"cssclasses":""}
 ---
+
+
+2025-07-29 目前在macOS 26 beta上面还有bug，设置hyper键，会让屏幕突然失效，无法点击，或者左键变成了右键的效果。
 
 ## 配置备份和同步
 

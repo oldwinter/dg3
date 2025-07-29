@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast quick ai.md","created":"2025-07-11","modified":"2025-07-11","published":"2025-07-17T11:01:10.520+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast quick ai.md","created":"2025-07-11","modified":"2025-07-11","published":"2025-07-28T20:00:46.205+08:00","cssclasses":""}
 ---
 
 
@@ -8,7 +8,7 @@
 还有几个，必须要降低摩擦力的：
 
 - 传统流程
-	- 随时随地[[Cards/OCR]]，目前我用得[[Spaces/3-Resource/软件梳理/macos软件/Bob\|Bob]]中的ocr能力
+	- 随时随地[[Cards/OCR]]，目前我用得[[Sources/GithubStarsSync/Bob\|Bob]]中的ocr能力
 	- 随时随地翻译，依旧用的bob。
 - AI流程
 	- 随时随地截图翻译/提问。
