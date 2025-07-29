@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/GithubStarsSync/Bob.md","title":"Bob","description":"Bob 是一款 macOS 平台的翻译和 OCR 软件。","created":"2022-06-09","modified":"2025-07-28","published":"2025-07-28T20:01:32.782+08:00","tags":["macOS软件","raycast插件"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/GithubStarsSync/Bob.md","title":"Bob","description":"Bob 是一款 macOS 平台的翻译和 OCR 软件。","created":"2022-06-09","modified":"2025-07-28","published":"2025-07-29T21:01:20.664+08:00","tags":["macOS软件","raycast插件"],"cssclasses":""}
 ---
 
 

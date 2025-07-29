@@ -12,6 +12,7 @@ brew安装命令: brew install --cask alfred
 是否已重装:
 icon: "[[icon-cc-image-Alfred.png]]"
 publish: true
+跨平台技术栈: "[[Cards/Swift]]"
 ---
 
 其他竞品：[[Spaces/3-Resource/软件梳理/macos软件/uTools]]，[[Sources/GithubStarsSync/Go]]

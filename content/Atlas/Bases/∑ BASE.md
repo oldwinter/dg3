@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Atlas/Bases/∑ BASE.md","aliases":"Bases","created":"2025-05-22","modified":"2025-07-10","published":"2025-07-24T16:09:54.002+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Atlas/Bases/∑ BASE.md","aliases":"Bases","created":"2025-05-22","modified":"2025-07-10","published":"2025-07-29T20:45:56.221+08:00","cssclasses":""}
 ---
 
 
@@ -59,7 +59,7 @@ x: [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/base 使�
 
 ## 软件、产品、插件
 
-- [[App软件管理.base]]
+- [[App应用软件管理.base]]
 - [[好用网站管理.base]]
 - [[AI 产品和公司.base]]
 - [[Obsidian插件.base]]

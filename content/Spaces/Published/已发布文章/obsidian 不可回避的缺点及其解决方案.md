@@ -33,10 +33,10 @@ publish: true
 
 - 缺点：虽然有文件管理器、查找替换等功能，但是当涉及大量文件的修改、命名、重组、拆分、合并等场景时，obsidian显得力不从心。比如批量编辑yaml区数据，批量调整文件及文件夹位置。
 - 解决方案：
-	- [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]+[[Spaces/3-Resource/VSCode插件/foam]]插件+[[Cards/正则表达式]]解决批量文件处理和搜索替换的编辑问题。如果用系统自带文件管理器或其他第三方软件修改文件名，则会因为不自动更新链接，导致双链失效。
-		- ，[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Bulk Rename]]插件能更完美地实现批量重命名，无需使用vscode了。
+	- [[Sources/GithubStarsSync/foam]]插件+[[Cards/正则表达式]]解决批量文件处理和搜索替换的编辑问题。如果用系统自带文件管理器或其他第三方软件修改文件名，则会因为不自动更新链接，导致双链失效。
+		- ，[[Cards/Bulk Rename]]插件能更完美地实现批量重命名，无需使用vscode了。
 	- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/File Cooker]]插件解决文件按需批量移动和删除。
-	- [[Cards/笔记重组插件]]+[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Note Refactor]]插件解决文件重组和拆分等场景。
+	- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Note Refactor]]插件解决文件重组和拆分等场景。
 	- [[Sources/GithubStarsSync/longform]]插件，解决文件合并与编排问题。
 	- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/DB Folder]]插件，解决[[Cards/frontmatter\|frontdata]]批量处理问题。
 		- 2025-07-10：[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/File Cooker]]批量处理[[Cards/frontmatter]]。

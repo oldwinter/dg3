@@ -20,7 +20,7 @@ x:: [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Dataview]]，数据库
 	- 综合使用[[Cards/frontmatter]]和[[Cards/inline fields]]的信息
 	- 类似notion的数据库的用法
-	- 更新：[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/DB Folder]]和[[Cards/Projects]]插件，使得其跟notion数据库用法无限逼近。
+	- 更新：[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Projects]]插件，使得其跟notion数据库用法无限逼近。
 - files
 	- 和files对应的是大纲类软件roam和块类软件notion，放弃了文件概念，引入了最小信息承载单位-块
 - canvas

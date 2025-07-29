@@ -258,7 +258,7 @@ tags:
 
 #### 软件与工具
 
-- [[Spaces/2-Area/macos高效使用/easydict]]
+- [[Sources/GithubStarsSync/Easydict]]
 - [[Spaces/2-Area/macos高效使用/rcmd]]
 - [[Spaces/2-Area/macos高效使用/Applite]]
 - [[Spaces/2-Area/macos高效使用/KeePassXC]]

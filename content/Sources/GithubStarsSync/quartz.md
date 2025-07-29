@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/GithubStarsSync/quartz.md","title":"quartz","description":"🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites","created":"2022-08-21","modified":"2025-07-25","published":"2025-07-25T18:31:45.899+08:00","tags":["github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/GithubStarsSync/quartz.md","title":"quartz","description":"🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites","created":"2022-08-21","modified":"2025-07-29","published":"2025-07-29T20:29:00.282+08:00","tags":["github开源"],"cssclasses":""}
 ---
 
 
@@ -26,3 +26,11 @@ x:: [[Cards/quartz syncer]]
 每一个待发布的笔记，frontmatter都新增如下字段。
 
 publishDate: 2024-01-02
+
+## 全局图谱太占内存了，已打开直接3gb没了。
+
+如果是未打开全局图谱，只有200MB左右的内存占用，一打开，直接飙升到3gb以上。我的读者如果看到了，会不会骂死我，尤其是电脑内存比较紧张的。
+
+而且似乎有内存泄露，现在这一会儿，已经占用5gb内存了。
+
+![CleanShot 2025-07-29 at 20.26.49@2x.png](https://pub-pic.oldwinter.top/2025/07/514b26c42307a4f8dc99dc7fdadcd5b9.png)

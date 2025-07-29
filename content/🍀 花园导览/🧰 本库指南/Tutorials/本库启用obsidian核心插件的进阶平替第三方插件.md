@@ -8,9 +8,9 @@ publish: true
 - 快速切换
 	- 改用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Another Quick Switcher]]。
 - 命令面板
-	- 改用[[Cards/Better Command Palette]]。
+	- 改用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Better Command Palette]]。
 - 模板
-	- 改用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Templater]]。
+	- 改用[[Sources/GithubStarsSync/Templater]]。
 - 大纲
 	- 改用。
 - 同步

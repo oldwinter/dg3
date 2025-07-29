@@ -1,17 +1,13 @@
 ---
-相关笔记:
-  - "[[Spaces/4-Archive/ingtube/交接/Inbox/MacOS 2023年7月软件安装列表-适配映兔工作流]]"
-  - "[[Spaces/3-Resource/软件梳理/macos软件/macos m3 重装list]]"
-date created: 2023-09-02
-date modified: 2025-07-04
-publish: true
+{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macos m1 重装list - 2025-06-29 renew.md","created":"2023-09-02","modified":"2025-07-04","published":"2025-07-29T23:45:26.840+08:00","cssclasses":""}
 ---
+
 
 > 要注意，有arm或通用版本，则尽量不要使用intel版本，卡顿且耗电。
 
 ## 个人必装
 
-从[[App软件管理.base]]筛选7分和6分必装。5分选装。
+从[[App应用软件管理.base]]筛选7分和6分必装。5分选装。
 
 - [[Spaces/3-Resource/软件梳理/macos软件/搜狗输入法]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Arc浏览器]]
@@ -261,9 +257,11 @@ views:
 		- [[Spaces/3-Resource/软件梳理/linux常用命令/rg\|rg命令]]
 		- [[Spaces/3-Resource/软件梳理/linux常用命令/fzf]]
 - 官方脚本安装
-	- [[Spaces/3-Resource/软件梳理/linux常用命令/ohmyzsh\|ohmyzsh]]
+	- [[Sources/GithubStarsSync/ohmyzsh\|ohmyzsh]]
 	- [[Cards/gemini-cli]]
 
+
+![[App应用软件管理.base#命令行工具]]
 
 ## 开发环境
 

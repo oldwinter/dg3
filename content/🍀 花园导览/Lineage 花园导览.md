@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/Lineage 花园导览.md","created":"2025-07-09T11:18:47.260+08:00","modified":"2025-07-12T02:53:33.369+08:00","published":"2025-07-12T02:53:33.369+08:00","tags":["AI生成","花园导览"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/Lineage 花园导览.md","created":"2025-07-09T11:18:47.260+08:00","modified":"2025-07-29T23:24:26.523+08:00","published":"2025-07-29T23:24:26.523+08:00","tags":["AI生成","花园导览"],"cssclasses":""}
 ---
 
 
@@ -105,7 +105,7 @@
 - [[Cards/测试验证lineage视图语法]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Datacore]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Daily notes calendar]]
-- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Daily Note Outline]]
+- [[Cards/Daily Note Outline]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Another Quick Switcher]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Enhanced Canvas]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Better Command Palette]]
@@ -160,8 +160,8 @@
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/WuCai highlights Official]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Weread]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Various Complements]]
-- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Text Generator]]
-- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Templater]]
+- [[Cards/Text Generator]]
+- [[Sources/GithubStarsSync/Templater]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Tasks]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Tag Wrangler]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Tab Switcher]]
@@ -170,7 +170,7 @@
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Strange New Worlds]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Spaced Repetition]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Sortable]]
-- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Smart Connections]]
+- [[Spaces/2-Area/计算机知识/Smart Connections]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Share Note]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Settings Search]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Recent Notes]]
@@ -195,7 +195,7 @@
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Augmented Canvas]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Repeat]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Quiet Outline]]
-- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/QuickAdd]]
+- [[Cards/QuickAdd]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Homepage]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Hider]]
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Harper]]

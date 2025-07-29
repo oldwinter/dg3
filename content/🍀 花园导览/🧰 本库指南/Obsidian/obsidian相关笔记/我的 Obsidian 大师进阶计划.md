@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/我的 Obsidian 大师进阶计划.md","title":"我的 Obsidian 大师进阶计划","created":"2025-01-27","modified":"2025-01-27","published":"2025-07-08T03:32:49.158+08:00","tags":["obsidian","学习计划","个人成长"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/我的 Obsidian 大师进阶计划.md","title":"我的 Obsidian 大师进阶计划","created":"2025-01-27","modified":"2025-01-27","published":"2025-07-29T23:24:26.577+08:00","tags":["obsidian","学习计划","个人成长"],"cssclasses":""}
 ---
 
 
@@ -130,7 +130,7 @@
 - [[🍀 花园导览/🍀 花园导览]]
 - [[Atlas/_ Atlas Readme]]
 - [[Cards/一元化收集]]
-- [[Calendar/Daily notes]]
+- [[Daily notes]]
 
 ---
 

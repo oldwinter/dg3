@@ -24,17 +24,7 @@ sort file.ctime desc
 limit 10
 ```
 
----
-date created: 2022-08-04
-date modified: 2023-03-14
-tags:
-  - moc
-  - todo/持续迭代
-  - todo/now
-  - todo/本周
-title: ∑ 本库 ACCESS 的文件夹入口汇总
-publish: true
----
+
 up:: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]  
 x:: [[🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 工作流汇总]] , [[🍀 花园导览/🧰 本库指南/Tutorials/本库ACCESS文件夹结构与混合笔记法]]  
 

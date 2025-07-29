@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/GEMINI.md","created":"2025-07-06","modified":"2025-07-06","published":"2025-07-27T16:14:56.537+08:00","cssclasses":""}
+{"publish":true,"permalink":"/GEMINI.md","created":"2025-07-06","modified":"2025-07-06","published":"2025-07-15T21:00:46.347+08:00","cssclasses":""}
 ---
 
 

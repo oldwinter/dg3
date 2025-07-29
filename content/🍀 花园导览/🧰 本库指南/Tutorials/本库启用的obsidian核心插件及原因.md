@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/本库启用的obsidian核心插件及原因.md","title":"本库启用的obsidian核心插件及原因","created":"2022-08-09","modified":"2023-03-14","published":"2025-07-15T01:45:39.790+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/本库启用的obsidian核心插件及原因.md","title":"本库启用的obsidian核心插件及原因","created":"2022-08-09","modified":"2023-03-14","published":"2025-07-29T23:24:26.553+08:00","cssclasses":""}
 ---
 
 ## 启用

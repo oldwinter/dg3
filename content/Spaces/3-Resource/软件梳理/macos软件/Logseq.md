@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Logseq.md","title":"Logseq","description":"A privacy-first, open-source platform for knowledge management and collaboration. Download link: http://github.com/logseq/logseq/releases. roadmap: http://trello.com/b/8txSM12G/roadmap","created":"2022-06-09","modified":"2025-07-09","published":"2025-07-29T01:28:53.438+08:00","tags":["macOS软件","github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Logseq.md","title":"Logseq","description":"A privacy-first, open-source platform for knowledge management and collaboration. Download link: http://github.com/logseq/logseq/releases. roadmap: http://trello.com/b/8txSM12G/roadmap","created":"2022-06-09","modified":"2025-07-09","published":"2025-07-29T21:05:09.789+08:00","tags":["macOS软件","github开源"],"cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/横向卷动布局- andy mode.md","aliases":"obsidian stack tabs","created":"2025-07-10","modified":"2025-07-10","published":"2025-07-12T11:20:32.805+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/横向卷动布局- andy mode.md","aliases":"obsidian stack tabs","created":"2025-07-10","modified":"2025-07-10","published":"2025-07-10T22:11:40.161+08:00","cssclasses":""}
 ---
 
 

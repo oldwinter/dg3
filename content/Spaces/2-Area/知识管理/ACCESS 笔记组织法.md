@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/ACCESS 笔记组织法.md","title":"ACCESS 笔记组织法","created":"2022-06-22","modified":"2025-07-10","published":"2025-07-13T22:04:29.974+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/知识管理/ACCESS 笔记组织法.md","title":"ACCESS 笔记组织法","created":"2022-06-22","modified":"2025-07-10","published":"2025-07-29T23:24:26.598+08:00","cssclasses":""}
 ---
 
 
@@ -16,7 +16,7 @@
 
 [[Spaces/3-Resource/人/Nick Milo]]为了解决 [[Spaces/2-Area/知识管理/PKM系统的不同侧重点-四象限图 by lyt]] 中提到的 3 对矛盾，提出了 ACCESS 文件夹结构。
 
-ACCESS 基于传统 [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/文件夹和标签]]式的[[Spaces/2-Area/知识管理/∑ PKM]]系统，但更引入了[[Atlas/MOCs/∑ MOCs]]来动态地链接散落或分布在各个文件夹中的笔记，这种动态聚合能力（常借用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Dataview]]实现），也远高于标签的简单聚合能力。因此结合[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/文件夹和标签]]及[[Atlas/MOCs/∑ MOCs]]，最终达到结构性和灵活性的平衡。
+ACCESS 基于传统 [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/文件夹和标签]]及[[Atlas/MOCs/∑ MOCs]]，最终达到结构性和灵活性的平衡。
 
 使用这个方法不可缺少的能力之一，就是掌握[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Dataview]]。
 

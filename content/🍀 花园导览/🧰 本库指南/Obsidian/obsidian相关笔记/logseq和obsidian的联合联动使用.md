@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/logseq和obsidian的联合联动使用.md","title":"logseq和obsidian的联合联动使用","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-10T22:06:41.120+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/logseq和obsidian的联合联动使用.md","title":"logseq和obsidian的联合联动使用","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-12T02:51:53.585+08:00","cssclasses":""}
 ---
 
 

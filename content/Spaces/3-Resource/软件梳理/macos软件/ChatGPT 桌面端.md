@@ -12,6 +12,7 @@ icon: "[[icon-cc-image-ChatGPT桌面端.png]]"
 是否已重装: true
 设置同步: 官方账号
 publish: true
+跨平台技术栈: 不同技术栈
 ---
 
 优势：

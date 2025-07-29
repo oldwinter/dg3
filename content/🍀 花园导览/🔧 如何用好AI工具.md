@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🔧 如何用好AI工具.md","title":"🔧 如何用好AI工具","created":"2023-03-16","modified":"2025-07-12","published":"2025-07-17T21:37:51.490+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🔧 如何用好AI工具.md","title":"🔧 如何用好AI工具","created":"2023-03-16","modified":"2025-07-12","published":"2025-07-29T23:24:26.519+08:00","cssclasses":""}
 ---
 
 
@@ -32,7 +32,7 @@
 
 ## agent 类型
 
-- [[Spaces/1-Project/搞透 AI Agent 开发/Dify\|Dify]]
+- [[Sources/GithubStarsSync/dify\|Dify]]
 - [[Sources/GithubStarsSync/n8n]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Cursor]]
 - [[fellou浏览器]]

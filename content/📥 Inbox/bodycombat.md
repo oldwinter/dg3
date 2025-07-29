@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/📥 Inbox/bodycombat.md","created":"2025-07-12","modified":"2025-07-12","published":"2025-07-17T11:04:45.260+08:00","cssclasses":""}
+{"publish":true,"permalink":"/📥 Inbox/bodycombat.md","created":"2025-07-12","modified":"2025-07-12","published":"2025-07-12T19:43:51.280+08:00","cssclasses":""}
 ---
 
 

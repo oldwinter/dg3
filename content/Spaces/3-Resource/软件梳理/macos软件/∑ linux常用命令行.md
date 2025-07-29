@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/∑ linux常用命令行.md","title":"∑ linux常用命令行","created":"2022-06-09","modified":"2024-07-26","published":"2025-07-21T13:11:59.702+08:00","tags":["moc"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/∑ linux常用命令行.md","title":"∑ linux常用命令行","created":"2022-06-09","modified":"2024-07-26","published":"2025-07-29T23:24:26.592+08:00","tags":["moc"],"cssclasses":""}
 ---
 
 
@@ -12,7 +12,7 @@
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/npm]]
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/fzf]]
 		- [[Spaces/3-Resource/软件梳理/linux常用命令/rg]]
-	- [[Spaces/3-Resource/软件梳理/linux常用命令/thefuck]]
+	- [[Sources/GithubStarsSync/thefuck]]
 	- [[Spaces/3-Resource/有意思的语言/网络用语/TL;DR]]
 	- [[tree]]
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/powershell]]
@@ -20,7 +20,7 @@
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/linux命令行测速 - speedtest]]
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/Homebrew]]
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/zsh]]
-	- [[Spaces/3-Resource/软件梳理/linux常用命令/ohmyzsh]]
+	- [[Sources/GithubStarsSync/ohmyzsh]]
 	- [[Spaces/3-Resource/软件梳理/windows软件/Git]]
 	- [[curl]]
 	- [[wget]]
@@ -32,4 +32,4 @@
 	- [[http-server]]
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/kubectl]]
 	- [[Spaces/3-Resource/软件梳理/linux常用命令/kubectx]]
-	- [[Spaces/3-Resource/软件梳理/linux常用命令/mackup]]
+	- [[Sources/GithubStarsSync/mackup]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Raycast.md","title":"Raycast","created":"2022-12-17","modified":"2025-06-26","published":"2025-07-18T14:33:22.933+08:00","tags":["macOS软件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Raycast.md","title":"Raycast","created":"2022-12-17","modified":"2025-06-26","published":"2025-07-29T23:24:26.591+08:00","tags":["macOS软件"],"cssclasses":""}
 ---
 
 ## 备份
@@ -54,7 +54,7 @@
 
 ## 替换了哪些常用软件
 
-- [[Spaces/3-Resource/软件梳理/macos软件/Rectangle]]
+- [[Sources/GithubStarsSync/Rectangle]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Paste App]]
 
 [能少一个是一个：我用 Raycast 替代了这些应用 - 少数派](https://sspai.com/post/72540)

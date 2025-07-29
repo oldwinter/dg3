@@ -15,7 +15,7 @@ publish: true
 	- 增强型cmd p
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Awesome Image]]
 	- 图片查看增强
-- [[Cards/Better Search Views]]
+- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Better Search Views]]
 	- 反向链接面板美化格式化
 - [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Commander]]
 	- 自定义各个页面的icon

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macOS 应用的Hyper快捷键.md","created":"2024-11-21","modified":"2024-11-21","published":"2025-07-28T20:00:46.484+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macOS 应用的Hyper快捷键.md","created":"2024-11-21","modified":"2024-11-21","published":"2025-07-28T20:00:36.778+08:00","cssclasses":""}
 ---
 
 与option快捷键差别：hyper重复按键可以呼出/隐藏切换。option则只能呼出，再按一次无法隐藏。

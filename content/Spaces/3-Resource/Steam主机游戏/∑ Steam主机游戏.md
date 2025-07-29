@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/Steam主机游戏/∑ Steam主机游戏.md","created":"2025-07-06","modified":"2025-07-12","published":"2025-07-12T03:22:41.510+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/Steam主机游戏/∑ Steam主机游戏.md","created":"2025-07-06","modified":"2025-07-12","published":"2025-07-29T23:24:26.587+08:00","cssclasses":""}
 ---
 
 
@@ -19,4 +19,4 @@
 
 [[Spaces/3-Resource/Steam主机游戏/仙剑奇侠传七]]
 
-[[Spaces/3-Resource/Steam主机游戏/星露谷物语]]
+[[Cards/星露谷物语]]
