@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/元提示词 - 优化提示词 - 优化prompts.md","created":"2025-06-26","modified":"2025-06-26","published":"2025-07-11T16:00:35.632+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/元提示词 - 优化提示词 - 优化prompts.md","created":"2025-06-26","modified":"2025-06-26","published":"2025-07-29T23:04:09.670+08:00","cssclasses":""}
 ---
 
 [PromptPilot](https://promptpilot.volcengine.com/startup)

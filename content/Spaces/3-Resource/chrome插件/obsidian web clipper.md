@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/obsidian web clipper.md","created":"2025-04-04","modified":"2025-05-31","published":"2025-07-25T20:48:45.088+08:00","tags":["chrome插件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/obsidian web clipper.md","created":"2025-04-04","modified":"2025-05-31","published":"2025-07-29T23:04:28.680+08:00","tags":["chrome插件"],"cssclasses":""}
 ---
 
 

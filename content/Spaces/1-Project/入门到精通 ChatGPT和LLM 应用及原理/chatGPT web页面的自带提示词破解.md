@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatGPT web页面的自带提示词破解.md","created":"2024-02-08","modified":"2024-02-19","published":"2025-07-23T16:39:34.149+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatGPT web页面的自带提示词破解.md","created":"2024-02-08","modified":"2024-02-19","published":"2025-07-29T23:04:33.778+08:00","cssclasses":""}
 ---
 
 

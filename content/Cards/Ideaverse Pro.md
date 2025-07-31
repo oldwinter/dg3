@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/Ideaverse Pro.md","created":"2025-06-15","modified":"2025-07-09","published":"2025-07-09T18:32:04.713+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/Ideaverse Pro.md","created":"2025-06-15","modified":"2025-07-09","published":"2025-07-29T23:04:06.067+08:00","cssclasses":""}
 ---
 
 

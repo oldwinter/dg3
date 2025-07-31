@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/Gandy.md","title":"Gandy","created":"2022-12-11","modified":"2023-03-14","published":"2025-07-12T18:37:43.444+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/Gandy.md","title":"Gandy","created":"2022-12-11","modified":"2023-03-14","published":"2025-07-29T23:04:04.635+08:00","cssclasses":""}
 ---
 
 

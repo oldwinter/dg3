@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/项目管理/项目经理vs产品经理.md","created":"2025-04-04T01:13:48.536+08:00","modified":"2025-07-11T16:36:46.695+08:00","published":"2025-07-11T16:36:46.695+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/项目管理/项目经理vs产品经理.md","created":"2025-07-29T23:04:32.617+08:00","modified":"2025-07-29T23:04:32.620+08:00","published":"2025-07-29T23:04:32.620+08:00","cssclasses":""}
 ---
 
 

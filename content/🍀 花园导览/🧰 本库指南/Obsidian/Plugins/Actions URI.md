@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Actions URI.md","created":"2024-05-11","modified":"2025-06-06","published":"2025-07-12T02:52:00.034+08:00","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Actions URI.md","created":"2024-05-11","modified":"2025-06-06","published":"2025-07-10T20:46:41.243+08:00","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/gemini-cli.md","created":"2025-06-25","modified":"2025-07-10","published":"2025-07-20T18:42:28.812+08:00","tags":["AI工具","linux命令"],"cssclasses":""}
+{"publish":true,"permalink":"/Cards/gemini-cli.md","created":"2025-06-25","modified":"2025-07-10","published":"2025-07-29T23:04:08.840+08:00","tags":["AI工具","linux命令"],"cssclasses":""}
 ---
 
 

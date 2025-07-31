@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/DeepSeek.md","created":"2025-01-16","modified":"2025-02-26","published":"2025-07-27T18:50:25.788+08:00","tags":["AI产品"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/DeepSeek.md","created":"2025-01-16","modified":"2025-02-26","published":"2025-07-29T23:04:33.397+08:00","tags":["AI产品"],"cssclasses":""}
 ---
 
 

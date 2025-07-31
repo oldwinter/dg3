@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/减脂不用过份关注食物的GI升糖指数.md","title":"减脂不用过份关注食物的GI升糖指数","created":"2022-10-21","modified":"2023-03-14","published":"2025-07-12T18:50:22.831+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/减脂不用过份关注食物的GI升糖指数.md","title":"减脂不用过份关注食物的GI升糖指数","created":"2022-10-21","modified":"2023-03-14","published":"2025-07-29T23:04:08.328+08:00","cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/Andrej Karpathy.md","created":"2025-03-31","modified":"2025-03-31","published":"2025-07-12T04:16:14.428+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/Andrej Karpathy.md","created":"2025-03-31","modified":"2025-03-31","published":"2025-07-29T23:04:10.230+08:00","cssclasses":""}
 ---
 
 

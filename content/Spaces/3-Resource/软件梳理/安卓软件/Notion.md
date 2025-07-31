@@ -1,10 +1,8 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/Notion.md","title":"Notion","created":"2022-06-09","modified":"2024-10-22","published":"2025-07-29T20:48:23.364+08:00","tags":["评论/少数派","macOS软件","windows软件","AI产品","安卓软件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/Notion.md","title":"Notion","created":"2022-06-09","modified":"2025-07-31","published":"2025-07-31T23:00:22.584+08:00","tags":["评论/少数派","macOS软件","windows软件","AI产品","安卓软件"],"cssclasses":""}
 ---
 
-## notion token
 
-[[Spaces/3-Resource/账号密码/notion api token]]
 ## notion 教程
 
 - 官方文档
@@ -17,6 +15,10 @@
 - 2020 年，笔记软件领域的两个标志性软件 Notion 和 [[Cards/Roam Research]]
 	- Notion 引入了 block 块的概念，让做笔记以及网站构建如同搭建积木的一样简单方便
 	- 而 [[Cards/Roam Research]] 则引入 [[Cards/双向链接]] 以及对 [[Spaces/3-Resource/人/卢曼]] 的 [[Spaces/2-Area/知识管理/卡片盒笔记法 - Zettelkasten]] 的宣传，引来一波大热。
+
+## notion token
+
+[[Spaces/3-Resource/账号密码/notion api token]]
 
 ## 使用范围
 

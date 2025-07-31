@@ -1,16 +1,36 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Raycast.md","title":"Raycast","created":"2022-12-17","modified":"2025-06-26","published":"2025-07-29T23:24:26.591+08:00","tags":["macOS软件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Raycast.md","title":"Raycast","created":"2022-12-17","modified":"2025-07-30","published":"2025-07-30T23:33:34.815+08:00","tags":["macOS软件"],"cssclasses":""}
 ---
 
-## 备份
 
+## 评价 翻译from x
+
+Raycast 不仅仅是节省时间，更是尊重时间。
+
+它不是一个启动器，而是一种哲学。
+
+Raycast 是软件尊重用户时间的产物。
+
+它是当有人问“如果我们做一个能帮助其他应用程序的应用程序会怎么样？”时的答案。
+
+它不会分散你的注意力，也不是焦点。而是在完成任务的瞬间便消失无踪。
+
+它让你保持专注。不是通过为你代劳，而是通过为你扫清一切障碍。
+
+最疯狂的是，Raycast 并不试图让人印象深刻，而是力求隐于无形。
+
+它的价值不在于被看见，而在于完成使命后即刻消失。
+
+## 备份
 
 [[Spaces/2-Area/计算机知识/raycast 备份解压密码]]
 
 ![[Raycast 2025-06-30 09.13.16.rayconfig]]
+
 ![[Raycast 2025-06-23 10.02.58.rayconfig]]
 
 ##
+
 [[Spaces/1-Project/Raycast/raycast for windows]]
 
 [[Spaces/1-Project/Raycast/raycast wrapped 年底年度总结]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/BetterTouchTool 配置hyperkey.md","created":"2025-06-18","modified":"2025-06-18","published":"2025-07-18T11:23:55.284+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/BetterTouchTool 配置hyperkey.md","created":"2025-06-18","modified":"2025-06-18","published":"2025-07-29T23:04:04.535+08:00","cssclasses":""}
 ---
 
 

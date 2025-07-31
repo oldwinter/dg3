@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/linux常用命令/vim.md","title":"vim","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-10T22:30:06.852+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/linux常用命令/vim.md","title":"vim","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-29T23:04:30.687+08:00","cssclasses":""}
 ---
 
 

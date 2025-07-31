@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Cursor.md","title":"Cursor","created":"2023-12-02","modified":"2024-11-21","published":"2025-07-29T20:47:44.737+08:00","tags":["windows软件","macOS软件","AI产品/编程","raycast插件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Cursor.md","title":"Cursor","created":"2023-12-02","modified":"2024-11-21","published":"2025-07-29T23:04:29.355+08:00","tags":["windows软件","macOS软件","AI产品/编程","raycast插件"],"cssclasses":""}
 ---
 
 

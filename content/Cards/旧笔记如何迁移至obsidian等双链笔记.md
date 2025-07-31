@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/旧笔记如何迁移至obsidian等双链笔记.md","created":"2025-07-09","modified":"2025-07-09","published":"2025-07-12T02:37:57.287+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/旧笔记如何迁移至obsidian等双链笔记.md","created":"2025-07-09","modified":"2025-07-09","published":"2025-07-29T23:04:08.298+08:00","cssclasses":""}
 ---
 
 

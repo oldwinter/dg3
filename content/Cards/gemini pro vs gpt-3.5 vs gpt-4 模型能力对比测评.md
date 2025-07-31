@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/gemini pro vs gpt-3.5 vs gpt-4 模型能力对比测评.md","created":"2023-12-22","modified":"2023-12-26","published":"2025-07-11T15:57:46.220+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/gemini pro vs gpt-3.5 vs gpt-4 模型能力对比测评.md","created":"2023-12-22","modified":"2023-12-26","published":"2025-07-29T23:04:09.253+08:00","cssclasses":""}
 ---
 
 [Google launched Gemini. Is it better than GPT-4? - ChatGPT - OpenAI Developer Forum](https://community.openai.com/t/google-launched-gemini-is-it-better-than-gpt-4/546519)

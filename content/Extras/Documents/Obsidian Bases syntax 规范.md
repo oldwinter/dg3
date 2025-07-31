@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Extras/Documents/Obsidian Bases syntax 规范.md","created":"2025-05-21T23:17:59.167+08:00","modified":"2025-07-25T23:41:08.766+08:00","published":"2025-07-25T23:41:08.766+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Extras/Documents/Obsidian Bases syntax 规范.md","created":"2025-05-21T23:17:59.167+08:00","modified":"2025-07-25T23:14:20.017+08:00","published":"2025-07-25T23:14:20.017+08:00","cssclasses":""}
 ---
 
 

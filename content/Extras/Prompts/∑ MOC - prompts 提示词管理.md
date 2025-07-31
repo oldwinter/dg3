@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/∑ MOC - prompts 提示词管理.md","title":"社交媒体摘要","created":"2025-04-24","modified":"2025-05-15","published":"2025-07-29T23:24:25.509+08:00","tags":["marketing","summary","中文","prompts"],"cssclasses":""}
+{"publish":true,"permalink":"/Extras/Prompts/∑ MOC - prompts 提示词管理.md","title":"社交媒体摘要","created":"2025-04-24","modified":"2025-05-15","published":"2025-07-30T15:14:32.470+08:00","tags":["marketing","summary","中文","prompts"],"cssclasses":""}
 ---
 
 提示词模板：[[Extras/Templates/prompts template - 提示词模板]]
@@ -59,6 +59,8 @@
 ## 各大主流编程工具内置系统提示词
 
 [GitHub - x1xhlol/system-prompts-and-models-of-ai-tools: FULL v0, Cursor, Manus, Same.dev, Lovable, Devin, Replit Agent, Windsurf Agent & VSCode Agent (And other Open Sourced) System Prompts, Tools & AI Models.](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+
+[[📥 Inbox/openai新的学习模式系统提示词]]
 
 ## 其他
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/2022年7月，obsidian 依然必装的 10 个插件.md","title":"2022年7月，obsidian 依然必装的 10 个插件","created":"2022-06-09 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","published":"2025-07-12T23:46:11.222+08:00","tags":["文章/已完成"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/Published/已发布文章/2022年7月，obsidian 依然必装的 10 个插件.md","title":"2022年7月，obsidian 依然必装的 10 个插件","created":"2022-06-09 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","published":"2025-07-29T23:04:27.731+08:00","tags":["文章/已完成"],"cssclasses":""}
 ---
 
 内心OS：**obsidian的插件，既是春药，也是毒药**
