@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/obsidian 是可以用一辈子不换的笔记软件吗.md","title":"obsidian 是可以用一辈子不换的笔记软件吗","created":"2022-06-09 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","published":true,"tags":["文章/已完成"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/Published/已发布文章/obsidian 是可以用一辈子不换的笔记软件吗.md","title":"obsidian 是可以用一辈子不换的笔记软件吗","created":"2022-06-09 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","tags":["文章/已完成"],"cssclasses":""}
 ---
 
 >可以访问此文的双链版本，获得完整阅读体验：[obsidian 是可以用一辈子不换的笔记软件吗 - 🌲 oldwinterの数字花园](https://oldwinter.top/Calendar/%E5%B7%B2%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/obsidian+%E6%98%AF%E5%8F%AF%E4%BB%A5%E7%94%A8%E4%B8%80%E8%BE%88%E5%AD%90%E4%B8%8D%E6%8D%A2%E7%9A%84%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E5%90%97)

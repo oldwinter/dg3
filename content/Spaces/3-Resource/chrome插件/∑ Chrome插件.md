@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/∑ Chrome插件.md","title":"chrome必装插件","created":"2022-06-09","modified":"2025-07-25","published":"2025-07-29T23:04:28.797+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/∑ Chrome插件.md","title":"chrome必装插件","created":"2022-06-09","modified":"2025-07-25","cssclasses":""}
 ---
 
 

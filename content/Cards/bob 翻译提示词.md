@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/bob 翻译提示词.md","created":"2025-05-06T13:39:35.042+08:00","modified":"2025-07-11T15:56:06.008+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/bob 翻译提示词.md","created":"2025-07-29T23:04:03.918+08:00","modified":"2025-07-29T23:04:03.920+08:00","cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/Obsidian 最优雅的多端同步插件LiveSync.md","title":"Obsidian 最优雅的多端同步插件LiveSync","created":"2025-07-12","modified":"2025-07-12","published":"2025-07-29T23:04:27.717+08:00","tags":["文章/已完成"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/Published/已发布文章/Obsidian 最优雅的多端同步插件LiveSync.md","title":"Obsidian 最优雅的多端同步插件LiveSync","created":"2025-07-12","modified":"2025-07-12","tags":["文章/已完成"],"cssclasses":""}
 ---
 
 

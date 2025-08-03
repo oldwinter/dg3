@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/youtube英文视频如何看，工具推荐.md","created":"2025-04-04T01:14:38.575+08:00","modified":"2025-07-25T20:51:26.658+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/youtube英文视频如何看，工具推荐.md","created":"2025-07-29T23:04:28.719+08:00","modified":"2025-07-29T23:04:28.729+08:00","cssclasses":""}
 ---
 
 

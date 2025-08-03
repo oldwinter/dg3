@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Karabiner-Elements.md","description":"Karabiner-Elements is a powerful tool for customizing keyboards on macOS","created":"2024-10-22","modified":"2024-10-23","published":"2025-07-29T23:04:29.086+08:00","tags":["macOS软件","github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Karabiner-Elements.md","description":"Karabiner-Elements is a powerful tool for customizing keyboards on macOS","created":"2024-10-22","modified":"2024-10-23","tags":["macOS软件","github开源"],"cssclasses":""}
 ---
 
 ## 配置备份
