@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Atlas/MOCs/∑ MOCs.md","aliases":"什么是MOC笔记组织法 索引笔记 Map Of Content","title":"MOC","created":"2022-06-09","modified":"2025-07-12","published":"2025-07-12T03:18:00.780+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Atlas/MOCs/∑ MOCs.md","aliases":"什么是MOC笔记组织法 索引笔记 Map Of Content","title":"MOC","created":"2022-06-09","modified":"2025-07-12","cssclasses":""}
 ---
 
 

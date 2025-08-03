@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/VSCode.md","title":"VSCode","description":"Visual Studio Code","created":"2023-02-28","modified":"2024-07-11","published":"2025-07-29T23:04:29.982+08:00","tags":["macOS软件","windows软件","github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/VSCode.md","title":"VSCode","description":"Visual Studio Code","created":"2023-02-28","modified":"2024-07-11","tags":["macOS软件","windows软件","github开源"],"cssclasses":""}
 ---
 
 

@@ -5,6 +5,7 @@ title: Text expand
 publish: true
 tags:
   - obsidian插件
+rating: 1
 ---
 
 ## 这个插件对我真的有用吗？

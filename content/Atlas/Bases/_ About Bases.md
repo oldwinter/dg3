@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Atlas/Bases/_ About Bases.md","title":"About DB folders","created":"2023-03-01","modified":"2025-07-15","published":"2025-07-15T19:36:19.292+08:00","tags":["本库教程","workflow"],"cssclasses":""}
+{"publish":true,"permalink":"/Atlas/Bases/_ About Bases.md","title":"About DB folders","created":"2023-03-01","modified":"2025-07-15","tags":["本库教程","workflow"],"cssclasses":""}
 ---
 
 

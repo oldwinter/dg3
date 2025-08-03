@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Cubox Obsidian 同步插件.md","created":"2025-06-05","modified":"2025-07-10","published":"2025-07-31T22:52:45.819+08:00","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Cubox Obsidian 同步插件.md","created":"2025-06-05","modified":"2025-07-10","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

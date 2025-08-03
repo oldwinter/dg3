@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/📥 Inbox/Obsidian Flight School.md","created":"2025-08-01","modified":"2025-08-01","published":"2025-08-02T00:10:26.173+08:00","cssclasses":""}
+{"publish":true,"permalink":"/📥 Inbox/Obsidian Flight School.md","created":"2025-08-01","modified":"2025-08-01","cssclasses":""}
 ---
 
 

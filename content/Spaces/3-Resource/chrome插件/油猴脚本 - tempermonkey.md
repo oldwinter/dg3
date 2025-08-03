@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/油猴脚本 - tempermonkey.md","title":"油猴脚本 - tempermonkey","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-29T23:04:28.705+08:00","tags":["chrome插件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/油猴脚本 - tempermonkey.md","title":"油猴脚本 - tempermonkey","created":"2022-06-09","modified":"2023-03-14","tags":["chrome插件"],"cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Inscribe.md","created":"2025-06-16","modified":"2025-06-16","published":"2025-07-10T21:12:24.874+08:00","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Inscribe.md","created":"2025-06-16","modified":"2025-06-16","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/Books/读书笔记/THE STARTUP CTO'S HANDBOOK.md","created":"2024-11-21","modified":"2024-11-23","published":"2025-07-10T20:16:32.525+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Sources/Books/读书笔记/THE STARTUP CTO'S HANDBOOK.md","created":"2024-11-21","modified":"2024-11-23","cssclasses":""}
 ---
 
 

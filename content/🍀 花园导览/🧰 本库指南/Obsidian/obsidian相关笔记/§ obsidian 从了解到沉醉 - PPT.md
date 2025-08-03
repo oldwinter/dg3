@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/§ obsidian 从了解到沉醉 - PPT.md","title":"§ obsidian 从了解到沉醉 - PPT","created":"2022-06-21","modified":"2023-03-14","published":"2025-07-10T22:06:41.338+08:00","tags":["目录笔记"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/§ obsidian 从了解到沉醉 - PPT.md","title":"§ obsidian 从了解到沉醉 - PPT","created":"2022-06-21","modified":"2023-03-14","tags":["目录笔记"],"cssclasses":""}
 ---
 
 

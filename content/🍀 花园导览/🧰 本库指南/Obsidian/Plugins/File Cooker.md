@@ -5,8 +5,9 @@ date modified: 2025-07-10
 tags:
   - obsidian插件
 status:
-rating: 6
+rating: 7
 publish: true
+一句话理由: 批量编辑、移动神器，和cursor联动有奇效
 ---
 
 必备，神器。文件批量移动，批量重命名，批量加properties，且都不会让反向链接失效。

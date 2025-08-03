@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/📥 Inbox/kiro.md","created":"2025-07-15","modified":"2025-07-15","published":"2025-07-29T20:48:13.997+08:00","tags":["macOS软件","windows软件"],"cssclasses":""}
+{"publish":true,"permalink":"/📥 Inbox/kiro.md","created":"2025-07-15","modified":"2025-07-15","tags":["macOS软件","windows软件"],"cssclasses":""}
 ---
 
 

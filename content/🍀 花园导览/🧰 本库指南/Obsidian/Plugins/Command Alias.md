@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Command Alias.md","created":"2025-06-06","modified":"2025-07-10","published":"2025-07-10T21:02:21.958+08:00","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Command Alias.md","created":"2025-06-06","modified":"2025-07-10","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

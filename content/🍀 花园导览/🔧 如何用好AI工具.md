@@ -1,6 +1,10 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🔧 如何用好AI工具.md","title":"🔧 如何用好AI工具","created":"2023-03-16","modified":"2025-07-12","published":"2025-07-29T23:24:26.519+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🔧 如何用好AI工具.md","title":"🔧 如何用好AI工具","created":"2023-03-16","modified":"2025-07-12","cssclasses":""}
 ---
+
+
+> [!MAP] 领域导航
+> 🔧 如何用好AI工具 | [[🍀 花园导览/🏋 如何保持健康]] | [[🍀 花园导览/🧀 个人知识管理]] | [[🍀 花园导览/🗜 效率工具使用]]
 
 
 现在ai要用好，就3步：

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/macos m3 重装list.md","created":"2024-07-11","modified":"2025-07-13","published":"2025-07-29T23:04:29.619+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/macos m3 重装list.md","created":"2024-07-11","modified":"2025-07-13","cssclasses":""}
 ---
 
 

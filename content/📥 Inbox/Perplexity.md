@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/📥 Inbox/Perplexity.md","aliases":"perplexity.ai pplx","created":"2024-02-04","modified":"2024-10-28","published":"2025-07-27T18:50:26.666+08:00","tags":["AI产品","安卓软件"],"cssclasses":""}
+{"publish":true,"permalink":"/📥 Inbox/Perplexity.md","aliases":"perplexity.ai pplx","created":"2024-02-04","modified":"2024-10-28","tags":["AI产品","安卓软件"],"cssclasses":""}
 ---
 
 

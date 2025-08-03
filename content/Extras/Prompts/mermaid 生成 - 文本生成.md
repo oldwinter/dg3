@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/mermaid 生成 - 文本生成.md","created":"2025-05-03","modified":"2025-05-26","published":"2025-07-11T16:01:15.489+08:00","tags":["prompts"],"cssclasses":""}
+{"publish":true,"permalink":"/Extras/Prompts/mermaid 生成 - 文本生成.md","created":"2025-05-03","modified":"2025-05-26","tags":["prompts"],"cssclasses":""}
 ---
 
 Role：你是最擅长内容和数据视觉化、信息图展示的大师。

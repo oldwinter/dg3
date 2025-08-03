@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/windows软件/∑ windows必备软件.md","aliases":"∑ windows必装软件","title":"∑ windows必备软件","created":"2022-06-09","modified":"2025-06-27","published":"2025-07-29T23:24:26.591+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/windows软件/∑ windows必备软件.md","aliases":"∑ windows必装软件","title":"∑ windows必备软件","created":"2022-06-09","modified":"2025-06-27","cssclasses":""}
 ---
 
 

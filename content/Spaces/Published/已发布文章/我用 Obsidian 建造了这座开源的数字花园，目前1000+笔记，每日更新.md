@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新.md","title":"我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新","created":"2022-06-25 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","published":"2025-07-29T23:04:27.672+08:00","tags":["文章/已完成"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/Published/已发布文章/我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新.md","title":"我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新","created":"2022-06-25 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","tags":["文章/已完成"],"cssclasses":""}
 ---
 
 ## 开门见山

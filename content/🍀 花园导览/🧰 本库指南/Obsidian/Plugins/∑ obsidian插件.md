@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/∑ obsidian插件.md","title":"∑ obsidian插件","created":"2022-08-15","modified":"2025-07-05","published":"2025-07-29T23:24:26.576+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/∑ obsidian插件.md","title":"∑ obsidian插件","created":"2022-08-15","modified":"2025-07-05","cssclasses":""}
 ---
 
 

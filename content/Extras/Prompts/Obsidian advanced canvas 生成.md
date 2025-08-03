@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/Obsidian advanced canvas 生成.md","created":"2025-05-14","modified":"2025-05-26","published":"2025-07-11T16:02:04.322+08:00","tags":["prompts"],"cssclasses":""}
+{"publish":true,"permalink":"/Extras/Prompts/Obsidian advanced canvas 生成.md","created":"2025-05-14","modified":"2025-05-26","tags":["prompts"],"cssclasses":""}
 ---
 
 

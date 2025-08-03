@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/如何提高Obsidian的启动速度？.md","title":"如何提高Obsidian的启动速度？","created":"2022-06-09","modified":"2023-03-14","published":"2025-07-07T17:10:24.430+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/如何提高Obsidian的启动速度？.md","title":"如何提高Obsidian的启动速度？","created":"2022-06-09","modified":"2023-03-14","cssclasses":""}
 ---
 
 

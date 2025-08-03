@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Extras/Documents/JSON Canvas 1.0 规范.md","created":"2025-04-25T22:49:37.291+08:00","modified":"2025-07-08T21:54:26.672+08:00","published":"2025-07-08T21:54:26.672+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Extras/Documents/JSON Canvas 1.0 规范.md","created":"2025-04-25T22:49:37.291+08:00","modified":"2025-07-08T21:54:26.672+08:00","cssclasses":""}
 ---
 
 

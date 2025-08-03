@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/SPA.md","aliases":"单页应用","created":"2025-02-28","modified":"2025-07-10","published":"2025-07-29T23:04:09.213+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/SPA.md","aliases":"单页应用","created":"2025-02-28","modified":"2025-07-10","cssclasses":""}
 ---
 
 

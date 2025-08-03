@@ -8,29 +8,7 @@ publish: true
 ## 如果要我安利 obsidian 给别人，我会怎么做
 
 - 如果是纯文字
-	- ## 别人眼中的 obsidian
-
-### Obsidian 官方介绍
-
-> Obsidian is a powerful **knowledge base** on top of a**local folder**of plain text Markdown files.
-
-### 写作之难
-
-```ad-quote
-写作之难，在于将网状的思想，通过树状的句法，用线性的文字展开
-	--史蒂芬· 平克，世界知名的认知科学家、心理学家、语言学家和畅销书作家。
-```
-
-引申思考：阅读和学习，是从线性读字，树状总结，网状思考。写作反之，网状思维，树状归纳，线性写字。
-
-### 卡片盒笔记法
-
-[[Spaces/2-Area/知识管理/卡片盒笔记法 - Zettelkasten]]
-
-- ### obsidian 和 ZK 笔记法
-
-  用[[Cards/双链笔记]]就可以完美实现 ZK 笔记法的核心要义。这个功能市面上支持的软件很多。但 obsidian 还有很多其他核心特点和玩法，让我最终选择了它。
-
+	- ![[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian入门#obsidian 的使用快感]]
 	- 甩一个看起来最屌的视频：[也许是B站最好的Obsidian新手教程！爆肝30天，一站式入门双向链接笔记软件_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV18a411r7mt?spm_id_from=333.337.search-card.all.click)
 	- 甩一篇看起来最入门的文章：[Obsidian是什么以及它能用来做什么 - 少数派 (sspai.com)](https://sspai.com/post/67399)
 - 如果有演示的机会，或者做视频表达

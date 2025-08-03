@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Colored Tags Wrangler.md","created":"2025-06-06","modified":"2025-07-10","published":"2025-07-10T21:00:46.741+08:00","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Colored Tags Wrangler.md","created":"2025-06-06","modified":"2025-07-10","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

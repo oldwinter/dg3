@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/从anki、onenote到obsidian，一名小镇做题家的笔记进化史.md","title":"从anki、onenote到obsidian，一名小镇做题家的笔记进化史","created":"2022-07-18 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","published":"2025-07-29T23:04:27.679+08:00","tags":["文章/已完成"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/Published/已发布文章/从anki、onenote到obsidian，一名小镇做题家的笔记进化史.md","title":"从anki、onenote到obsidian，一名小镇做题家的笔记进化史","created":"2022-07-18 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","tags":["文章/已完成"],"cssclasses":""}
 ---
 
 

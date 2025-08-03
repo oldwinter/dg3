@@ -1,11 +1,7 @@
 ---
-toc: true
-title: AIGC
-tags:
-  - AI生成
-publish: true
-是否已review: true
+{"publish":true,"permalink":"/Sources/AIGC/_AIGC Readme.md","title":"AIGC","created":"2025-07-12T02:46:20.267+08:00","modified":"2025-08-03T02:50:50.167+08:00","tags":["AI生成"],"cssclasses":""}
 ---
+
 
 > AI生成，且未经过审阅修改的，先都放这个目录下。
 
