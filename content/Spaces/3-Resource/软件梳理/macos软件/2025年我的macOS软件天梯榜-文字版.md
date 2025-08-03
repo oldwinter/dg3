@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"2025/my-macos-ranks","created":"2025-07-14","modified":"2025-07-14","published":"2025-07-29T23:04:30.156+08:00","cssclasses":""}
+{"publish":true,"permalink":"2025/my-macos-ranks","created":"2025-07-14","modified":"2025-07-14","cssclasses":""}
 ---
 
 

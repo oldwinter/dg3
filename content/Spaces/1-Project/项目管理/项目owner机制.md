@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/项目管理/项目owner机制.md","title":"项目owner机制","created":"2022-05-13","modified":"2023-03-14","published":"2025-07-29T23:04:32.639+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/项目管理/项目owner机制.md","title":"项目owner机制","created":"2022-05-13","modified":"2023-03-14","cssclasses":""}
 ---
 
 

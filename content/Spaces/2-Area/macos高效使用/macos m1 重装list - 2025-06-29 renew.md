@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macos m1 重装list - 2025-06-29 renew.md","created":"2023-09-02","modified":"2025-07-04","published":"2025-07-29T23:45:26.840+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macos m1 重装list - 2025-06-29 renew.md","created":"2023-09-02","modified":"2025-07-04","cssclasses":""}
 ---
 
 

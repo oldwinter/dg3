@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/windows高效使用/mise.md","description":"dev tools, env vars, task runner","created":"2025-06-18","modified":"2025-07-04","published":"2025-07-29T23:24:26.598+08:00","tags":["linux命令","github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/windows高效使用/mise.md","description":"dev tools, env vars, task runner","created":"2025-06-18","modified":"2025-07-04","tags":["linux命令","github开源"],"cssclasses":""}
 ---
 
 

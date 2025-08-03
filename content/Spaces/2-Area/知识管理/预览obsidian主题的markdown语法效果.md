@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/预览obsidian主题的markdown语法效果.md","title":"大标题","created":"2023-01-06","modified":"2023-03-14","published":"2025-07-29T23:04:15.111+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/知识管理/预览obsidian主题的markdown语法效果.md","title":"大标题","created":"2023-01-06","modified":"2023-03-14","cssclasses":""}
 ---
 
 

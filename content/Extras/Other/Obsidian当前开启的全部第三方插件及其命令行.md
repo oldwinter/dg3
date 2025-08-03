@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Extras/Other/Obsidian当前开启的全部第三方插件及其命令行.md","created":"2025-06-27","modified":"2025-06-27","published":"2025-07-09T00:33:08.272+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Extras/Other/Obsidian当前开启的全部第三方插件及其命令行.md","created":"2025-06-27","modified":"2025-06-27","cssclasses":""}
 ---
 
 

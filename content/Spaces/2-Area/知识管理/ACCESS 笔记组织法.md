@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/ACCESS 笔记组织法.md","title":"ACCESS 笔记组织法","created":"2022-06-22","modified":"2025-07-10","published":"2025-07-29T23:24:26.598+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/知识管理/ACCESS 笔记组织法.md","title":"ACCESS 笔记组织法","created":"2022-06-22","modified":"2025-07-10","cssclasses":""}
 ---
 
 

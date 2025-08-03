@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/云服务和部署/Cloudflare Worker.md","title":"Cloudflare Worker","created":"2023-03-04","modified":"2023-03-14","published":"2025-07-29T23:04:12.204+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/云服务和部署/Cloudflare Worker.md","title":"Cloudflare Worker","created":"2023-03-04","modified":"2023-03-14","cssclasses":""}
 ---
 
 

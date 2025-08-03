@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast for windows.md","created":"2025-07-09","modified":"2025-07-09","published":"2025-07-29T23:24:26.594+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast for windows.md","created":"2025-07-09","modified":"2025-07-09","cssclasses":""}
 ---
 
 

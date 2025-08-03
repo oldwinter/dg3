@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/∑ linux常用命令行.md","title":"∑ linux常用命令行","created":"2022-06-09","modified":"2024-07-26","published":"2025-07-29T23:24:26.592+08:00","tags":["moc"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/∑ linux常用命令行.md","title":"∑ linux常用命令行","created":"2022-06-09","modified":"2024-07-26","tags":["moc"],"cssclasses":""}
 ---
 
 

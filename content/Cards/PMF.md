@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/PMF.md","aliases":"Product-Market Fit","created":"2024-03-18","modified":"2024-08-15","published":"2025-07-29T23:03:59.385+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/PMF.md","aliases":"Product-Market Fit","created":"2024-03-18","modified":"2024-08-15","cssclasses":""}
 ---
 
 

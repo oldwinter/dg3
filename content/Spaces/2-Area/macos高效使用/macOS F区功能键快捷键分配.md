@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macOS F区功能键快捷键分配.md","created":"2024-10-08","modified":"2024-10-22","published":"2025-07-29T23:04:15.338+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macOS F区功能键快捷键分配.md","created":"2024-10-08","modified":"2024-10-22","cssclasses":""}
 ---
 
 [[Spaces/2-Area/windows高效使用/Windows F区功能键快捷键分配]]

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/GFM - GitHub Flavored Markdown.md","title":"GFM - GitHub Flavored Markdown","created":"2022-07-31","modified":"2023-03-14","published":"2025-07-29T23:04:15.071+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/知识管理/GFM - GitHub Flavored Markdown.md","title":"GFM - GitHub Flavored Markdown","created":"2022-07-31","modified":"2023-03-14","cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast ai 的自带提示词破解.md","created":"2025-04-04","modified":"2025-07-08","published":"2025-07-29T23:04:34.786+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/Raycast/raycast ai 的自带提示词破解.md","created":"2025-04-04","modified":"2025-07-08","cssclasses":""}
 ---
 
 

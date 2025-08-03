@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/obsidian、notion和logseq的异同分析及软件选用.md","title":"obsidian、notion和logseq的异同分析及软件选用","created":"2023-02-18","modified":"2023-03-14","published":"2025-07-29T23:04:15.207+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/知识管理/obsidian、notion和logseq的异同分析及软件选用.md","title":"obsidian、notion和logseq的异同分析及软件选用","created":"2023-02-18","modified":"2023-03-14","cssclasses":""}
 ---
 
 
