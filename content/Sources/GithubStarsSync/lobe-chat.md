@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/GithubStarsSync/lobe-chat.md","description":"🤯 Lobe Chat - an open-source, modern design AI chat framework. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modal (Plugins / Artifacts / MCP) and thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.","created":"2025-06-20","modified":"2025-07-11","published":"2025-07-11T16:02:51.714+08:00","tags":["github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/GithubStarsSync/lobe-chat.md","description":"🤯 Lobe Chat - an open-source, modern design AI chat framework. Supports multiple AI providers (OpenAI / Claude 4 / Gemini / DeepSeek / Ollama / Qwen), Knowledge Base (file upload / knowledge management / RAG ), Multi-Modal (Plugins / Artifacts / MCP) and thinking. One-click FREE deployment of your private ChatGPT/ Claude / DeepSeek application.","created":"2025-06-20","modified":"2025-07-11","tags":["github开源"],"cssclasses":""}
 ---
 
 

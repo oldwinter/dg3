@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Atlas/Bases/∑ BASE.md","aliases":"Bases","created":"2025-05-22","modified":"2025-07-10","published":"2025-07-29T20:45:56.221+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Atlas/Bases/∑ BASE.md","aliases":"Bases","created":"2025-05-22","modified":"2025-07-10","cssclasses":""}
 ---
 
 

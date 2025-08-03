@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/📥 Inbox/_ 📥 Inbox Readme.md","created":"2025-06-17","modified":"2025-07-09","published":"2025-07-09T15:00:23.008+08:00","tags":["workflow"],"cssclasses":""}
+{"publish":true,"permalink":"/📥 Inbox/_ 📥 Inbox Readme.md","created":"2025-06-17","modified":"2025-07-09","tags":["workflow"],"cssclasses":""}
 ---
 
 

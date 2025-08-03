@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Style Settings.md","title":"Style Settings","created":"2023-01-23","modified":"2025-07-17","published":"2025-07-17T19:57:23.340+08:00","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Style Settings.md","title":"Style Settings","created":"2023-01-23","modified":"2025-07-17","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

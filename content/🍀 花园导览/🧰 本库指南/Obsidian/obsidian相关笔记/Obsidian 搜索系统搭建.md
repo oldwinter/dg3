@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian 搜索系统搭建.md","created":"2025-01-02","modified":"2025-01-02","published":"2025-07-07T17:10:23.997+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian 搜索系统搭建.md","created":"2025-01-02","modified":"2025-01-02","cssclasses":""}
 ---
 
 没有标签，没有文件夹。真的就纯靠搜索来找笔记吗？

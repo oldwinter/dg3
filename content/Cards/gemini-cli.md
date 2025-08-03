@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/gemini-cli.md","created":"2025-06-25","modified":"2025-07-10","published":"2025-07-29T23:04:08.840+08:00","tags":["AI工具","linux命令"],"cssclasses":""}
+{"publish":true,"permalink":"/Cards/gemini-cli.md","created":"2025-06-25","modified":"2025-07-10","tags":["AI工具","linux命令"],"cssclasses":""}
 ---
 
 
@@ -52,59 +52,4 @@ gemini
 - 创建mermaid。
 - 编辑 jupyter notebook
 
-
-## 完整工具清单（共14个）
-
-### 文件操作类（5个）
-
-1. read_file - 读取文件内容
-
-2. edit_file - 编辑或创建文件
-
-3. search_replace - 搜索替换文本
-
-4. delete_file - 删除文件
-
-5. list_dir - 列出目录内容
-
-### 搜索类（3个）
-
-1. codebase_search - 语义搜索代码
-
-2. grep_search - 正则表达式搜索
-
-3. file_search - 文件路径模糊搜索
-
-### 执行类（1个）
-
-1. run_terminal_cmd - 执行终端命令
-
-### 专用编辑类（1个）
-
-1. edit_notebook - 编辑Jupyter notebook
-
-### 信息获取类（1个）
-
-1. web_search - 网络搜索
-
-### 可视化类（1个）
-
-1. create_diagram - 创建Mermaid图表
-
-### 知识管理类（1个）
-
-1. add_to_memory - 存储知识到知识库
-
-### 修复类（1个）
-
-1. reapply - 重新应用编辑
-
-
-## mcp
-
-通过mcp引入。
-### 交互类（1个）
-
-这个mcp可以极大地缩减快速请求次数的消耗。
-
-1. mcp_interactive-feedback_interactive_feedback - 交互式反馈
+![[Spaces/1-Project/Cursor/cursor 1.0 有的全部tools]]

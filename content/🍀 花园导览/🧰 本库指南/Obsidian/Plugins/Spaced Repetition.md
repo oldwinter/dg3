@@ -1,15 +1,7 @@
 ---
-date created: 2022-06-09
-date modified: 2023-03-14
-tags:
-  - obsidian插件
-status:
-rating: 6
-publish: true
-aliases:
-  - 间隔重复
-title: Spaced Repetition
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Spaced Repetition.md","aliases":"间隔重复","title":"Spaced Repetition","created":"2022-06-09","modified":"2023-03-14","tags":["obsidian插件"],"cssclasses":""}
 ---
+
 
 多个闪卡插件，还是最喜欢这个，给笔记本身作为闪卡，从而不会污染笔记格式。
 

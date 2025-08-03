@@ -5,6 +5,7 @@ title: Remotely Save
 tags:
   - obsidian插件
 publish: true
+rating: 4
 ---
 
 通过 [[Spaces/3-Resource/软件梳理/macos软件/Onedrive]]或者[[Spaces/2-Area/云服务和部署/S3 - 对象存储服务]] 进行不同终端的数据同步。

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Image auto upload Plugin.md","created":"2024-05-11","modified":"2025-06-06","published":"2025-07-10T21:12:19.393+08:00","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Image auto upload Plugin.md","created":"2024-05-11","modified":"2025-06-06","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

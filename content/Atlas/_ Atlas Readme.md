@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Atlas/_ Atlas Readme.md","title":"About Atlas","created":"2022-06-23","modified":"2023-10-09","published":"2025-07-13T22:51:55.564+08:00","tags":["workflow"],"cssclasses":"dashboard"}
+{"publish":true,"permalink":"/Atlas/_ Atlas Readme.md","title":"About Atlas","created":"2022-06-23","modified":"2023-10-09","tags":["workflow"],"cssclasses":"dashboard"}
 ---
 
 

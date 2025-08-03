@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/GithubStarsSync/waline.md","description":"💬 A Simple, Safe Comment System","created":"2025-06-20T01:50:34.294+08:00","modified":"2025-07-09T18:50:57.393+08:00","published":"2025-07-09T18:50:57.393+08:00","tags":["github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/GithubStarsSync/waline.md","description":"💬 A Simple, Safe Comment System","created":"2025-06-20T01:50:34.294+08:00","modified":"2025-07-09T18:50:57.393+08:00","tags":["github开源"],"cssclasses":""}
 ---
 
 

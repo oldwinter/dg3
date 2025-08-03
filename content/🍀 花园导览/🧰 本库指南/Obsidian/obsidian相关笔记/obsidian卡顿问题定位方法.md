@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian卡顿问题定位方法.md","created":"2023-12-21","modified":"2024-11-21","published":"2025-07-09T15:47:48.743+08:00","cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian卡顿问题定位方法.md","created":"2023-12-21","modified":"2024-11-21","cssclasses":""}
 ---
 
 

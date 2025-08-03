@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/bodypump杠铃操.md","title":"bodypump杠铃操","created":"2022-10-08","modified":"2023-03-14","published":"2025-07-29T23:04:05.082+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/bodypump杠铃操.md","title":"bodypump杠铃操","created":"2022-10-08","modified":"2023-03-14","cssclasses":""}
 ---
 
 

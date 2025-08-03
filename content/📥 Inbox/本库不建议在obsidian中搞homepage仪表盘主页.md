@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/📥 Inbox/本库不建议在obsidian中搞homepage仪表盘主页.md","created":"2025-07-18","modified":"2025-07-18","published":"2025-07-19T01:52:04.819+08:00","tags":["AI生成"],"cssclasses":""}
+{"publish":true,"permalink":"/📥 Inbox/本库不建议在obsidian中搞homepage仪表盘主页.md","created":"2025-07-18","modified":"2025-07-18","tags":["AI生成"],"cssclasses":""}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/_ Cards Readme.md","title":"About Cards","created":"2022-06-22","modified":"2025-07-09","published":"2025-07-29T23:04:04.349+08:00","tags":["workflow"],"cssclasses":""}
+{"publish":true,"permalink":"/Cards/_ Cards Readme.md","title":"About Cards","created":"2022-06-22","modified":"2025-07-09","tags":["workflow"],"cssclasses":""}
 ---
 
 

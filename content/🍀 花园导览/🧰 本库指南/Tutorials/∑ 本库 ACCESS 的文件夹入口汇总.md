@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 的文件夹入口汇总.md","title":"∑ 本库 ACCESS 的文件夹入口汇总","created":"2022-08-04","modified":"2023-03-14","published":"2025-07-27T02:18:09.546+08:00","tags":["moc","todo/持续迭代","todo/now","todo/本周"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 的文件夹入口汇总.md","title":"∑ 本库 ACCESS 的文件夹入口汇总","created":"2022-08-04","modified":"2023-03-14","tags":["moc","todo/持续迭代","todo/now","todo/本周"],"cssclasses":""}
 ---
 
 up:: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]  

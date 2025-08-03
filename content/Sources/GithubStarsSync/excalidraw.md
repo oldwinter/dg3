@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/GithubStarsSync/excalidraw.md","title":"Excalidraw","description":"Virtual whiteboard for sketching hand-drawn like diagrams","created":"2023-01-23","modified":"2025-07-12","published":"2025-07-12T23:46:57.727+08:00","tags":["github开源","obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/GithubStarsSync/excalidraw.md","title":"Excalidraw","description":"Virtual whiteboard for sketching hand-drawn like diagrams","created":"2023-01-23","modified":"2025-07-12","tags":["github开源","obsidian插件"],"cssclasses":""}
 ---
 
 

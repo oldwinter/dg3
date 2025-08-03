@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/2025下半年小红书探索/13 为什么我不顾一切，给Cursor评级God.md","created":"2025-07-21","modified":"2025-07-21","published":"2025-07-29T23:04:32.798+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/1-Project/2025下半年小红书探索/13 为什么我不顾一切，给Cursor评级God.md","created":"2025-07-21","modified":"2025-07-21","cssclasses":""}
 ---
 
 

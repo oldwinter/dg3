@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Lineage.md","aliases":"类似gingko的插件","created":"2025-04-28","modified":"2025-07-09","published":"2025-07-14T19:57:28.243+08:00","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Lineage.md","aliases":"类似gingko的插件","created":"2025-04-28","modified":"2025-07-09","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

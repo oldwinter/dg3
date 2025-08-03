@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/GithubStarsSync/quartz.md","title":"quartz","description":"🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites","created":"2022-08-21","modified":"2025-07-29","published":"2025-07-29T20:29:00.282+08:00","tags":["github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/GithubStarsSync/quartz.md","title":"quartz","description":"🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites","created":"2022-08-21","modified":"2025-07-29","tags":["github开源"],"cssclasses":""}
 ---
 
 
