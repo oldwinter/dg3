@@ -1,9 +1,10 @@
 ---
-{"publish":true,"permalink":"/Cards/claude code.md","created":"2025-04-17","modified":"2025-08-02","tags":["powershell命令","linux命令"],"cssclasses":""}
+{"publish":true,"permalink":"/Cards/claude code.md","created":"2025-04-17","modified":"2025-08-05","tags":["powershell命令","linux命令"],"cssclasses":""}
 ---
 
 
 用量监控[[📥 Inbox/claude code monitor]]
+
 ##
 
 在多个子环境中使用
@@ -26,6 +27,8 @@ mise trust
 mise use node
 
 npm install -g @anthropic-ai/claude-code
+
+npm install -g @musistudio/claude-code-router
 ```
 
 ##
