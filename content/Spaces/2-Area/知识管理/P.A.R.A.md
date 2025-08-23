@@ -1,13 +1,7 @@
 ---
-aliases:
-  - 什么是PARA笔记组织法
-  - PARA
-date created: 2022-06-09
-date modified: 2024-07-25
-title: PARA
-publish: true
-是否已review: true
+{"publish":true,"permalink":"/Spaces/2-Area/知识管理/P.A.R.A.md","aliases":"什么是PARA笔记组织法 PARA","title":"PARA","created":"2022-06-09","modified":"2024-07-25","cssclasses":""}
 ---
+
 
 读[[Sources/Books/微信读书同步/未分类/Building a Second Brain-Tiago Forte]]，恍然大悟。PARA应该是用来组织信息，而非组织笔记。不应该生搬硬套到我的[[Spaces/2-Area/知识管理/个人知识笔记系统]]中，而是应该纳入[[Spaces/2-Area/知识管理/个人信息管理系统]]。
 

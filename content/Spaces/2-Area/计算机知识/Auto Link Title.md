@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/计算机知识/Auto Link Title.md","title":"Auto Link Title","created":"2024-05-11","modified":"2025-07-10","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/计算机知识/Auto Link Title.md","aliases":"obsidian-auto-link-title","title":"Auto Link Title","created":"2024-05-11","modified":"2025-07-10","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

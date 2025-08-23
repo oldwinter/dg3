@@ -55,7 +55,7 @@
 	- 苹果电脑，就让梨子来清理吧🍐。真简洁，真开源免费。卸掉你电脑里那些花里胡哨耗你电量的，[[Spaces/3-Resource/软件梳理/macos软件/CleanMyMac X]]别看了，说的就是你小资。
 - [[Spaces/3-Resource/软件梳理/macos软件/PicGo\|PicList]]
 	- 图床。
-- [[Spaces/3-Resource/软件梳理/macos软件/Warp]]
+- [[Spaces/3-Resource/软件梳理/macos软件/Warp App]]
 	- 春宵苦短日高起，从此不记命令行。自然语言生成命令行的成功率，已经超过90%。
 	- 但我真不懂，你融资几千万美元，如何赚钱？我已经白嫖你2年了吧，当你开始收费，我可能就要当渣男了。
 - [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]

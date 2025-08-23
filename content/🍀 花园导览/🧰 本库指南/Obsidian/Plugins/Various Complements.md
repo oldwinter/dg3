@@ -7,6 +7,8 @@ status:
 title: Various Complements
 rating: 6
 publish: true
+aliases:
+  - various-complements
 ---
 
 ## Various Complements

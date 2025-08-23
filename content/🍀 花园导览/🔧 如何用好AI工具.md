@@ -30,7 +30,7 @@
 ## copilot 类型
 
 - [[Spaces/1-Project/Raycast/raycast ai]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Warp]]
+- [[Spaces/3-Resource/软件梳理/macos软件/Warp App]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Arc浏览器]]
 	- 逐步得换成[[Spaces/3-Resource/软件梳理/macos软件/Dia 浏览器]]了。
 

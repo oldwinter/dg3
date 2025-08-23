@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/CleanShot X.md","title":"CleanShot X","created":"2025-04-03","modified":"2025-07-26","tags":["macOS软件","截图工具"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/CleanShot X.md","title":"CleanShot X","created":"2025-04-03","modified":"2025-07-26","tags":["macOS软件"],"cssclasses":""}
 ---
 
 

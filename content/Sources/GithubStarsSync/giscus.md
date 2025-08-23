@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/GithubStarsSync/giscus.md","description":"A commenting system powered by GitHub Discussions. :octocat: :speech_balloon: :gem:","created":"2025-06-20T01:50:32.039+08:00","modified":"2025-07-09T18:51:02.580+08:00","tags":["github开源"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/GithubStarsSync/giscus.md","description":"A commenting system powered by GitHub Discussions. :octocat: :speech_balloon: :gem:","created":"2025-06-20T01:50:32.039+08:00","modified":"2025-08-15T22:00:00.635+08:00","tags":["github开源"],"cssclasses":""}
 ---
 
 

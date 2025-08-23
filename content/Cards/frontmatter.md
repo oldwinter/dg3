@@ -1,12 +1,7 @@
 ---
-aliases:
-  - frontdata
-  - properties
-date created: 2022-06-09
-date modified: 2023-03-14
-title: frontmatter
-publish: true
+{"publish":true,"permalink":"/Cards/frontmatter.md","aliases":"frontdata properties","title":"frontmatter","created":"2022-06-09","modified":"2023-03-14","cssclasses":""}
 ---
+
 
 x:: [[Cards/inline fields]], [[Cards/metadata]]
 

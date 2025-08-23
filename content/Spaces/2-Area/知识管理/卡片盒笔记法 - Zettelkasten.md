@@ -1,9 +1,7 @@
 ---
-date created: 2022-06-09
-date modified: 2023-03-14
-title: 卡片盒笔记法 - Zettelkasten
-publish: true
+{"publish":true,"permalink":"/Spaces/2-Area/知识管理/卡片盒笔记法 - Zettelkasten.md","title":"卡片盒笔记法 - Zettelkasten","created":"2022-06-09","modified":"2023-03-14","cssclasses":""}
 ---
+
 
 [[Cards/我的卡片盒笔记法实操]]
 

@@ -7,7 +7,7 @@
 
 配置备份：界面没有导入导出，直接复制到data目录
 
-![[config.json]]
+![config.json](https://drive.google.com/open?id=1uoEECO1ntEgddBCLhMmKRFtXtRDP-wlN)
 
 ## 独特优势
 
@@ -20,6 +20,13 @@ caps + r，默认直接可以起到同应用不同窗口的切换，类似macos 
 ### 激活窗口
 
 ## 🚀 启动程序或激活窗口
+
+
+## 要做一下配置，不然不丝滑
+
+![PixPin_2025-08-07_01-10-16.png](https://pub-pic.oldwinter.top/2025/08/bfa1c5f0093277028b36db9e1387ac15.png)
+
+
 
 ### 概述
 

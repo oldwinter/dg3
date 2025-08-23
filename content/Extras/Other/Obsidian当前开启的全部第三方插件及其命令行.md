@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Extras/Other/Obsidian当前开启的全部第三方插件及其命令行.md","created":"2025-06-27","modified":"2025-06-27","cssclasses":""}
+{"publish":true,"permalink":"/Extras/Other/Obsidian当前开启的全部第三方插件及其命令行.md","description":"不能随便改名、删除、挪动位置，需要various complement插件一起改","created":"2025-06-27","modified":"2025-06-27","cssclasses":""}
 ---
 
 

@@ -8,4 +8,4 @@
 2025-07-01全局
 
 
-![[obsidian-web-clipper-settings.json]]
+![obsidian-web-clipper-settings.json](https://drive.google.com/open?id=1FyZbK4Tzl8MYq6oH3ZxFxids0bMwhkAw)

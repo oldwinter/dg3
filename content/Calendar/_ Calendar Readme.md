@@ -3,10 +3,20 @@
 ---
 
 
-> [!warning] 提醒
-> 这个文件夹下面隐私内容太多了，无法快速隔离出来并且发布，只能上传几个意思一下。
+# 📅 日历管理 (Calendar) 说明
 
-## 主要作用
+本文件夹主要用于存放时间相关的笔记和计划。
+
+> [!warning] 隐私内容提醒
+> 这个文件夹下面隐私内容较多，无法快速隔离出来并且发布，只能上传部分样例。
+
+## 主要子文件夹说明
+
+- **`Daily notes/`**: 存放[[Cards/daily note]]日常笔记，记录每日的思考、事件和感想
+- **`Plan & Review/`**: 存放[[Cards/计划与回顾]]笔记，包括周、月、季、年度计划和总结
+- **`Tasks/`**: 存放任务管理相关的笔记和清单
+
+## 使用方式
 
 存放[[Cards/daily note]]，以及[[Cards/计划与回顾]]笔记。
 
@@ -24,6 +34,7 @@ views:
     filters:
       and:
         - file.name.startsWith("2025")
+    limit: 30
     columnSize:
       file.name: 128
   - type: table

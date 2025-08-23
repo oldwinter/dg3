@@ -19,11 +19,14 @@
 
 **主要子文件夹说明：**
 
-- `Cards/`: 存放原子化的知识卡片或 Zettelkasten 笔记。
-- `Sources/`: 存放文献笔记或对外部资源的引用和摘要。
-- `Canvas/`: 存放用于可视化思考和知识结构的 Canvas 画板。
-- `Dataviews/`: 存放 Dataview 查询，用于动态组织和展示笔记。
-- `Draws/`: 可能用于存放 Excalidraw 等绘图文件。
+- `Bases/`: 存放基础概念和核心知识框架，包含各种基础概念定义和知识结构
+- `Canvas/`: 存放 Obsidian Canvas 画板文件，用于可视化思考和知识结构梳理
+- `Categories/`: 存放各种分类体系和标准，帮助组织和归类知识
+- `Components/`: 存放可复用的知识组件和模块
+- `Dataviews/`: 存放 Dataview 查询脚本，用于动态聚合和展示笔记数据
+- `Draws/`: 存放 Excalidraw 绘图文件和其他图形化资料
+- `Lineages/`: 存放知识谱系和演进脉络，追踪概念的发展历程
+- `MOCs/`: 存放内容地图 (Maps of Content)，作为知识导航的枢纽
 
 **核心方法论：**
 

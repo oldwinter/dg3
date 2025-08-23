@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Cubox.md","title":"Cubox","created":"2022-06-17","modified":"2025-07-25","tags":["macOS软件","windows软件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Cubox.md","aliases":"cubox-sync","title":"Cubox","created":"2022-06-17","modified":"2025-07-25","tags":["macOS软件","windows软件","obsidian插件"],"cssclasses":""}
 ---
 
 

@@ -32,7 +32,7 @@
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Clash Pro]]
 	- [x] [[Spaces/3-Resource/软件梳理/macos软件/Clash Verge]] 还在继续维护
 	- [x] [[Cards/Surge]] 🛫 2025-05-12
-- [x] [[Spaces/3-Resource/软件梳理/macos软件/Warp]] ✅ 2024-07-23
+- [x] [[Spaces/3-Resource/软件梳理/macos软件/Warp App]] ✅ 2024-07-23
 	- [x] 中文乱码问题还没解决，可能是 macOS 15 beta 版本导致的。
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Contexts]] ✅ 2024-07-23
 	- [x] 因为 raycast 的应用配置快捷键功能很好用，弃用 ✅ 2024-07-23
@@ -63,7 +63,7 @@
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Keka]]
 - [x] [[Spaces/3-Resource/软件梳理/安卓软件/localsend]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/menubarX]]
-- [x] [[LinearMouse]]
+- [x] [[📥 Inbox/Linear Mouse]]
 - [x] [[Spaces/3-Resource/软件梳理/windows软件/OpenAI Translater]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/OrbStack]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Presentify]] ✅ 2025-06-25
@@ -110,9 +110,9 @@ keyboardholder		tencent-meeting
 	- brew install --cask input-source-pro
 - [[Spaces/3-Resource/软件梳理/macos软件/KeyboardHolder]]
 	- brew install --cask keyboardholder
-- [[LinearMouse]]
+- [[📥 Inbox/Linear Mouse]]
 	- brew install --cask linearmouse
-- [[Spaces/3-Resource/软件梳理/macos软件/Warp]]
+- [[Spaces/3-Resource/软件梳理/macos软件/Warp App]]
 	- brew install --cask warp
 - orbstack
 	- brew install orbstack

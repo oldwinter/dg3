@@ -50,7 +50,7 @@
 ### 开发工具
 
 - ! [[Spaces/3-Resource/软件梳理/macos软件/Cursor]]
-- ! [[Spaces/3-Resource/软件梳理/macos软件/Warp]]
+- ! [[Spaces/3-Resource/软件梳理/macos软件/Warp App]]
 - ! [[Spaces/3-Resource/软件梳理/macos软件/OrbStack]]
 - ! [[Spaces/3-Resource/软件梳理/macos软件/Proxyman]]
 - ! [[Spaces/3-Resource/软件梳理/macos软件/Goland]]

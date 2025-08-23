@@ -15,7 +15,7 @@
 
 ![[Spaces/3-Resource/chrome插件/∑ Chrome插件]]
 
-![[VSCode 插件]]
+![[📥 Inbox/VSCode 插件]]
 
 ![[账号与安全]]
 
