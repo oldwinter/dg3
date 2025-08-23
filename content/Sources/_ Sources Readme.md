@@ -5,6 +5,19 @@
 
 up:: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]
 
+## 主要子文件夹说明
+
+- `AIGC/`: 存放与人工智能生成内容相关的文献、资料和案例
+- `Articles/`: 存放网络文章、博客文章等的文献笔记和摘要
+- `Books/`: 存放书籍阅读笔记、摘要和思考
+- `Clippings/`: 存放各种剪藏内容的原始资料
+- `Courses/`: 存放在线课程、培训等的学习笔记和资料
+- `CuboxSync/`: 从Cubox同步的网络收藏和剪藏内容
+- `GithubStarsSync/`: 从GitHub Stars同步的开源项目和代码库资料
+- `Movies + TV/`: 存放影视作品相关的观后感和评论
+- `Newsletter + RSS/`: 存放订阅的新闻邮件和RSS内容
+- `WuCaiSync/`: 从五彩同步的网络高亮和标注内容
+
 ## 个人用法
 
 Spaces 中的 Resource 偏向 action 行动，以及作为 project 和 area 的强相关的支撑材料，以内容为分类依据。

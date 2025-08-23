@@ -1,12 +1,7 @@
 ---
-date created: 2022-06-09
-date modified: 2023-03-14
-title: Remotely Save
-tags:
-  - obsidian插件
-publish: true
-rating: 4
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Remotely Save.md","title":"Remotely Save","created":"2022-06-09","modified":"2023-03-14","tags":["obsidian插件"],"cssclasses":""}
 ---
+
 
 通过 [[Spaces/3-Resource/软件梳理/macos软件/Onedrive]]或者[[Spaces/2-Area/云服务和部署/S3 - 对象存储服务]] 进行不同终端的数据同步。
 

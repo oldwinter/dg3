@@ -32,5 +32,5 @@
 以上免费版用的人太多，有点卡。性能比较好的：
 
 - [[Spaces/3-Resource/账号密码/deepseek 腾讯云]]
-- [[Spaces/3-Resource/账号密码/deepseek 火山引擎]]，最强，速度最快
+- [[Spaces/3-Resource/账号密码/deepseek 和 kimi 模型免费 - 火山引擎]]，最强，速度最快
 - [[Spaces/3-Resource/账号密码/deepseek 阿里云百炼（通义千问Qwen）]]

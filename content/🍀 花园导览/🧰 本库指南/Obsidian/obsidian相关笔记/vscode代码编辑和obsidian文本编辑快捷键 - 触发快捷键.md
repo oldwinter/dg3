@@ -1,25 +1,20 @@
 ---
-date created: 2022-06-15
-date modified: 2025-06-14
-title: vscode代码编辑和obsidian文本编辑快捷键
-aliases:
-  - Obsidian 文本编辑快捷键
-publish: true
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/vscode代码编辑和obsidian文本编辑快捷键 - 触发快捷键.md","aliases":"Obsidian 文本编辑快捷键","title":"vscode代码编辑和obsidian文本编辑快捷键","created":"2022-06-15","modified":"2025-06-14","cssclasses":""}
 ---
+
 
 默认的有些快捷键可能有不同，尽量地去改成一致，带来相同的编辑体验。  
 
 
-|                 | [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]      | [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]    | [[Spaces/3-Resource/软件梳理/linux常用命令/vim]] 或 [[Spaces/3-Resource/软件梳理/macos软件/Warp]] | 使用频率 |
-| --------------- | --------------- | --------------- | ------------------ | ---- |
-| 搜索文件名           | cmd + p         | cmd + p         |                    | 5    |
-| 搜索命令行           | cmd + shift + p | cmd + shift + p |                    |      |
-| 搜索header        | cmd + t         | cmd + t         |                    |      |
-| 搜索当前文件symbols   | cmd+shift+o     | cmd+shift+o     |                    |      |
-| 搜索当前同目录文件/反链/出链 |                 | cmd + l         |                    |      |
-|                 |                 |                 |                    |      |
+|                 | [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]      | [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]         | [[Spaces/3-Resource/软件梳理/linux常用命令/vim]] 或 [[Spaces/3-Resource/软件梳理/macos软件/Warp App]] | 使用频率 |     |
+| --------------- | --------------- | -------------------- | ------------------ | ---- | --- |
+| 搜索文件名           | cmd + p         | cmd + t主用，cmd + o自带。 |                    | 5    |     |
+| 搜索命令行           | cmd + shift + p | cmd + p              |                    | 5    |     |
+| 搜索header        | cmd + t         | cmd + t， 然后输入#空格     |                    | 2    |     |
+| 搜索当前文件symbols   | cmd+shift+o     | cmd+shift+o，白板中好用    |                    | 3    |     |
+| 搜索当前同目录文件/反链/出链 |                 | cmd + t， 然后输入 ^空格    |                    | 1    |     |
 
-|          | [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]          | [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]                    | [[Spaces/3-Resource/软件梳理/linux常用命令/vim]] 或 [[Spaces/3-Resource/软件梳理/macos软件/Warp]] | 使用频率 |
+|          | [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]          | [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]                    | [[Spaces/3-Resource/软件梳理/linux常用命令/vim]] 或 [[Spaces/3-Resource/软件梳理/macos软件/Warp App]] | 使用频率 |
 | -------- | ------------------- | ------------------------------- | ------------------ | ---- |
 | 删除当前行    | control +u          | control +u （实际是删除段落）            | control + u        | 5    |
 | 单行注释     | cmd + /             | cmd + /                         |                    | 5    |

@@ -1,12 +1,7 @@
 ---
-date created: 2022-08-05
-date modified: 2023-03-14
-tags:
-  - 本库教程
-  - workflow
-title: » 本库笔记的emoji符号记录
-publish: true
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/» 本库笔记的emoji符号记录.md","title":"» 本库笔记的emoji符号记录","created":"2022-08-05","modified":"2023-03-14","tags":["本库教程","workflow"],"cssclasses":""}
 ---
+
 ## 为什么要给文件名引入emoji
 
 卡片中的一些概念，可以聚集在一起，并打上特殊标记，也便于被搜索被引用。用字母或符号当前缀的话，字母容易造成搜索的过量匹配，符号容易不够用。最后一想，通过emoji😃来进行。
@@ -21,7 +16,7 @@ publish: true
 
 MOC 使用`+`符号作为前缀，让其在自然排序中靠在最前面，既方便搜索，也 方便在文件夹中最先被看到。  
 	，决定批量改用`∑`符号，option+w输入。因为+过于常用，搜索的时候会有过多干扰项，另外可能会被某些系统识别为保留字符而出错，比如在[[Sources/GithubStarsSync/hugo]]中会出现404问题。  
-	option +w被用于[[Spaces/3-Resource/软件梳理/macos软件/Raycast]]指定打开[[Spaces/3-Resource/软件梳理/macos软件/Warp]]的快捷键，固弃用`∑`符号，并且TOC不常用，改用 `§`符号作为前缀。
+	option +w被用于[[Spaces/3-Resource/软件梳理/macos软件/Raycast]]指定打开[[Spaces/3-Resource/软件梳理/macos软件/Warp App]]的快捷键，固弃用`∑`符号，并且TOC不常用，改用 `§`符号作为前缀。
 
 TOC 使用`§`符号作为前缀（option+6输入，注意可能的快捷键冲突），让其在自然排序中靠在最前面，既方便搜索，也方便在文件夹中最先被看到。
 

@@ -5,7 +5,7 @@
 
 ## 配置同步
 
-![[config-1751195220.bobconfig]]
+![config-1751195220.bobconfig](https://drive.google.com/open?id=1WL5yk6KGtAakSvXdzbuHIRX8a4J3x4HN)
 
 ##
 

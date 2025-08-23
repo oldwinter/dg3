@@ -7,6 +7,8 @@ status:
 rating: 6
 publish: true
 title: Note Refactor
+aliases:
+  - note-refactor-obsidian
 ---
 
 

@@ -3,7 +3,7 @@
 ---
 
 
-相关：[[📥 Inbox/滴答清单官方理解的ppv]]
+相关：[[Spaces/2-Area/知识管理/滴答清单官方理解的ppv]]
 
 [Notion Life Design with Pillars, Pipelines & Vaults (PPV)](https://www.yearzero.io/notion-life-design)
 

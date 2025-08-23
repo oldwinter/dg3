@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Advanced Canvas.md","created":"2024-05-11","modified":"2025-07-10","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Advanced Canvas.md","aliases":"advanced-canvas","created":"2024-05-11","modified":"2025-07-10","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 
@@ -30,3 +30,7 @@ id设置成中文也行，只要是唯一的值。
 [[macos 必备软件.canvas#xxxx|macos 必备软件]]
 
 [[内网穿透原理解析.canvas#9be3b3c44cf4d1e2|内网穿透原理解析]]
+
+### 图片导出可以选择只导出选中的节点。
+
+增选或减选某节点，使用shift辅助键即可。

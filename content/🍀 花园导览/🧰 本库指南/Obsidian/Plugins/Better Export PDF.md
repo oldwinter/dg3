@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Better Export PDF.md","created":"2024-05-11","modified":"2025-06-15","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Better Export PDF.md","aliases":"better-export-pdf","created":"2024-05-11","modified":"2025-06-15","tags":["obsidian插件"],"cssclasses":""}
 ---
 
 

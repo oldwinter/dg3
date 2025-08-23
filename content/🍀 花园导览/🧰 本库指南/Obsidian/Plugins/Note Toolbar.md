@@ -6,6 +6,8 @@ tags:
 status:
 rating: 7
 publish: true
+aliases:
+  - note-toolbar
 ---
 
 神器。

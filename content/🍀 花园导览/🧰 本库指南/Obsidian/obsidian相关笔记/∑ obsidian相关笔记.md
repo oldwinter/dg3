@@ -122,7 +122,7 @@
 - [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian开箱即用示例库]]：学习和借鉴他人的优秀实践。
 - [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian拎包入住开荒仓库]]：一个现成的开荒仓库。
 - [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/§ obsidian 从了解到沉醉 - PPT]]：一个分享 Obsidian 的 PPT 大纲。
-- [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/我的 Obsidian 大师进阶计划]]：系统化地提升你的 Obsidian 技能。
+- [[Sources/AIGC/我的 Obsidian 大师进阶计划]]：系统化地提升你的 Obsidian 技能。
 - [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/∑ Obsidian 从入门到精通]]：一个已经存在的优秀 MOC，可作为参考。
 
 ## 6. 其他

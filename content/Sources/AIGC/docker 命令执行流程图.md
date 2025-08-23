@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/AIGC/docker 命令执行流程图.md","title":"docker 命令执行流程图","created":"2025-01-28","modified":"2025-01-28","tags":["docker","流程图","mermaid","架构图","容器技术","AI生成"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/AIGC/docker 命令执行流程图.md","title":"docker 命令执行流程图","created":"2025-01-28","modified":"2025-01-28","cssclasses":""}
 ---
 
 

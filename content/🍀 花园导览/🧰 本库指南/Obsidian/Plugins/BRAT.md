@@ -6,6 +6,8 @@ tags:
 status:
 rating: 5
 publish: true
+aliases:
+  - obsidian42-brat
 ---
 
 和[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Strange New Worlds]]同作者。

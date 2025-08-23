@@ -1,17 +1,7 @@
 ---
-title: Istio 架构与命令执行流程图
-date created: 2025-01-28
-date modified: 2025-01-28
-tags:
-  - istio
-  - 服务网格
-  - 流程图
-  - mermaid
-  - 架构图
-  - 云原生
-  - AI生成
-publish: true
+{"publish":true,"permalink":"/Sources/AIGC/istio 架构与命令执行流程图.md","title":"Istio 架构与命令执行流程图","created":"2025-01-28","modified":"2025-01-28","cssclasses":""}
 ---
+
 
 # 🕸️ Istio 架构与命令执行流程图
 
@@ -82,17 +72,36 @@ graph TB
         DASHBOARD["istioctl dashboard<br/>📈 仪表板"]
     end
     
-     控制平面内部交互
+    %% 用户交互
+    U --> istioctl
+    U --> kubectl
+    istioctl <--> istiod
+    kubectl <--> istiod
+    
+    %% 控制平面内部交互
     istiod --> pilot
     istiod --> citadel
     istiod --> galley
     
-     数据平面应用交互
+    %% 控制平面到数据平面
+    pilot --> envoy1
+    pilot --> envoy2
+    pilot --> gatewayenvoy
+    citadel --> envoy1
+    citadel --> envoy2
+    citadel --> gatewayenvoy
+    
+    %% 数据平面应用交互
     app1 <--> envoy1
     app2 <--> envoy2
     gateway <--> gatewayenvoy
     
-     配置资源关联
+    %% 代理间通信
+    envoy1 <--> envoy2
+    gatewayenvoy <--> envoy1
+    gatewayenvoy <--> envoy2
+    
+    %% 配置资源关联
     vs -.-> pilot
     dr -.-> pilot
     gw -.-> pilot
@@ -100,7 +109,15 @@ graph TB
     pa -.-> citadel
     ap -.-> citadel
     
-     样式
+    %% 命令流程
+    INSTALL --> istiod
+    STATUS --> istiod
+    CONFIG --> istiod
+    ANALYZE --> istiod
+    INJECT --> istiod
+    DASHBOARD --> istiod
+    
+    %% 样式
     classDef userLayer fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
     classDef controlPlane fill:#e3f2fd,stroke:#0d47a1,stroke-width:2px
     classDef dataPlane fill:#f3e5f5,stroke:#4a148c,stroke-width:2px

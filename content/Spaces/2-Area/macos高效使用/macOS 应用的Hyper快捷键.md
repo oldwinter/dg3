@@ -28,7 +28,7 @@
 | 按键  | 功能/应用           | mac 上配置 | 适配解释                                     |
 | --- | --------------- | ------- | ---------------------------------------- |
 | Q   | [[Spaces/3-Resource/软件梳理/macos软件/Cubox]]       | Raycast | 取发音，类似 Q 发音                              |
-| W   | [[Spaces/3-Resource/软件梳理/macos软件/Warp]]        | Raycast |                                          |
+| W   | [[Spaces/3-Resource/软件梳理/macos软件/Warp App]]        | Raycast |                                          |
 | E   | [[Cards/企业微信]]        | Raycast | Enterprise 企业                            |
 | R   |                 | Raycast |                                          |
 | T   | [[Spaces/3-Resource/软件梳理/macos软件/Telegram]]    | Raycast |                                          |

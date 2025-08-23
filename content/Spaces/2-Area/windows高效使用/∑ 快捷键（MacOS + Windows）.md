@@ -1,15 +1,7 @@
 ---
-date created: 2022-06-09
-date modified: 2024-11-21
-tags:
-  - todo/持续迭代
-  - moc
-title: ∑ 快捷键
-sr-due: 2023-01-21
-sr-interval: 238
-sr-ease: 310
-publish: true
+{"publish":true,"permalink":"/Spaces/2-Area/windows高效使用/∑ 快捷键（MacOS + Windows）.md","title":"∑ 快捷键","created":"2022-06-09","modified":"2024-11-21","tags":["todo/持续迭代","moc"],"cssclasses":""}
 ---
+
 
 [[Cards/快捷键、图标、命令行的对比与选择]]
 

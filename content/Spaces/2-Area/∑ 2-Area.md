@@ -2,7 +2,7 @@
 {"publish":true,"permalink":"/Spaces/2-Area/∑ 2-Area.md","created":"2025-04-04","modified":"2025-06-27","tags":["moc"],"cssclasses":""}
 ---
 
-![[A.Obsidian-ABCDE预制仓库模版 7.3(阿泽小朋友更新).zip]]
+![A.Obsidian-ABCDE预制仓库模版 7.3(阿泽小朋友更新).zip](https://drive.google.com/open?id=1YqJsJCppdPu_6SwIraiRz0fpddZQrxS0)
 
 
 ## 2025-06-27 cursor整理

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/perplexity.ai的工作机制背后原理.md","created":"2025-07-29T23:04:09.553+08:00","modified":"2025-07-29T23:04:09.554+08:00","cssclasses":""}
+{"publish":true,"permalink":"/Cards/perplexity.ai的工作机制背后原理.md","created":"2025-07-29T23:04:09.553+08:00","modified":"2025-08-15T21:59:57.948+08:00","cssclasses":""}
 ---
 
 

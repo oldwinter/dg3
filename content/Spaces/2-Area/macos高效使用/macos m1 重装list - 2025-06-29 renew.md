@@ -21,7 +21,7 @@
 - [[Spaces/3-Resource/软件梳理/macos软件/Cursor]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Clash Verge]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Warp]]
+- [[Spaces/3-Resource/软件梳理/macos软件/Warp App]]
 - [[Sources/GithubStarsSync/Ice]]
 - [[Spaces/3-Resource/软件梳理/macos软件/CleanShot X]]
 - [[Spaces/3-Resource/软件梳理/macos软件/istat Menus]]
