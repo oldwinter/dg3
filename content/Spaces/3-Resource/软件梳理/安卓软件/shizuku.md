@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/shizuku.md","description":"Using system APIs directly with adb/root privileges from normal apps through a Java process started with app_process.","created":"2025-07-29T23:04:30.991+08:00","modified":"2025-08-15T22:00:04.303+08:00","tags":["github开源","安卓软件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/shizuku.md","description":"Using system APIs directly with adb/root privileges from normal apps through a Java process started with app_process.","created":"2024-04-13T22:16:30.978+08:00","modified":"2025-08-25T19:24:19.426+08:00","cssclasses":""}
 ---
 
 

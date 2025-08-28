@@ -1,4 +1,8 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/_ Resource Readme.md","title":"About Resource","created":"2022-08-05","modified":"2023-03-14","tags":["workflow"],"cssclasses":""}
+date created: 2022-08-05
+date modified: 2023-03-14
+title: About Resource
+publish: true
+分类:
+- '[[Atlas/Categories/工作流workflow - fileclass]]'
 ---
-

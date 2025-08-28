@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Alfred.md","title":"Alfred","created":"2022-06-09","modified":"2023-03-14","tags":["macOS软件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Alfred.md","title":"Alfred","created":"2022-06-09","modified":"2023-03-14","cssclasses":""}
 ---
 
 

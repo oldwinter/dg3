@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新.md","title":"我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新","created":"2022-06-25 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","tags":["文章/已完成"],"cssclasses":""}
+date created: 2022-06-25 00:00:00+00:00
+date modified: 2023-03-14 00:00:00+00:00
+title: 我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新
+publish: true
+分类:
+- '[[Atlas/Categories/文章-已完成 - fileclass]]'
 ---
-
 ## 开门见山
 
 我用obsidian持续写了3个月的1000+双链笔记库，包含深度体验100+插件后，留存的30+插件和配置，全量开源：

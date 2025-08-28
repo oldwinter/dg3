@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/BetterTouchTool.md","title":"BetterTouchTool","created":"2022-06-09","modified":"2025-06-18","tags":["macOS软件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/BetterTouchTool.md","title":"BetterTouchTool","created":"2022-06-09","modified":"2025-06-18","cssclasses":""}
 ---
 
 

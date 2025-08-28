@@ -2,12 +2,11 @@
 date created: 2024-05-11
 date modified: 2025-07-10
 aliases:
-  - Copilot 插件
-tags:
-  - obsidian插件
-status:
+- Copilot 插件
+status: null
 rating: 4
 publish: true
+分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
 ---
 
 停用所有ai插件了，比如[[Cards/Text Generator\|Text Generator]]等等

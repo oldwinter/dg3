@@ -1,9 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Cursor.md","title":"Cursor","created":"2023-12-02","modified":"2024-11-21","tags":["windows软件","macOS软件","AI产品/编程","raycast插件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Cursor.md","title":"Cursor","created":"2023-12-02","modified":"2024-11-21","cssclasses":""}
 ---
 
 
-[[📥 Inbox/cursor cli]]
+[[Cards/cursor cli]]
 
 [[Spaces/1-Project/Cursor/cursor 使用技巧总结]]
 [[Spaces/1-Project/Cursor/cursor和idea比如goland之间互相跳转]]

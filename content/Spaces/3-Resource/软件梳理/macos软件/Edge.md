@@ -2,15 +2,15 @@
 title: Edge
 date created: 2023-03-01
 date modified: 2024-08-15
-icon: "[[icon-cc-image-Edge.png]]"
-tags:
-  - macOS软件
-  - 安卓软件
-是否已备份: "true"
+icon: '[[icon-cc-image-Edge.png]]'
+是否已备份: 'true'
 评价: 4
 brew安装命令: brew install --cask microsoft-edge
 设置同步: 微软账号自动同步
 publish: true
+分类:
+- '[[Atlas/Categories/macOS软件 - fileclass]]'
+- '[[Atlas/Categories/安卓软件 - fileclass]]'
 ---
 
 

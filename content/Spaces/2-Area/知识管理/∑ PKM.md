@@ -1,7 +1,15 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/∑ PKM.md","aliases":"personal knowledge management 『入不孵出』PKM系统 个人知识管理","title":"∑ PKM","created":"2022-06-09","modified":"2024-11-07","tags":["moc"],"cssclasses":""}
+aliases:
+- personal knowledge management
+- 『入不孵出』PKM系统
+- 个人知识管理
+date created: 2022-06-09
+date modified: 2024-11-07
+title: ∑ PKM
+publish: true
+分类:
+- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
 ---
-
 
 [[Spaces/2-Area/知识管理/语雀创始人玉伯 对 笔记和知识管理的理解]]
 

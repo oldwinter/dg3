@@ -1,7 +1,13 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/从anki、onenote到obsidian，一名小镇做题家的笔记进化史.md","title":"从anki、onenote到obsidian，一名小镇做题家的笔记进化史","created":"2022-07-18 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","tags":["文章/已完成"],"cssclasses":""}
+date created: 2022-07-18 00:00:00+00:00
+date modified: 2023-03-14 00:00:00+00:00
+title: 从anki、onenote到obsidian，一名小镇做题家的笔记进化史
+publish: true
+相关笔记:
+- '[[从anki、onenote到obsidian，小镇做题家笔记软件变迁史.canvas|从anki、onenote到obsidian，小镇做题家笔记软件变迁史]]'
+分类:
+- '[[Atlas/Categories/文章-已完成 - fileclass]]'
 ---
-
 
 ## 我的笔记之路
 

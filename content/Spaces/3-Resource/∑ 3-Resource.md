@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/∑ 3-Resource.md","created":"2025-07-06","modified":"2025-07-12","tags":["AI生成","MOC"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/∑ 3-Resource.md","created":"2025-07-06","modified":"2025-07-12","cssclasses":""}
 ---
 
 
@@ -11,11 +11,9 @@
 
 ## 资源主题
 
-![[软件梳理与工具链]]
+![[Spaces/3-Resource/chrome插件/∑ chrome插件]]
 
-![[Spaces/3-Resource/chrome插件/∑ Chrome插件]]
-
-![[📥 Inbox/VSCode 插件]]
+![[Cards/VSCode 插件]]
 
 ![[账号与安全]]
 

@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Sources/AIGC/_AIGC Readme.md","title":"AIGC","created":"2025-07-12T02:46:20.267+08:00","modified":"2025-08-15T21:59:59.749+08:00","tags":["AI生成"],"cssclasses":""}
+title: AIGC
+publish: true
+是否已review: true
+分类:
+- '[[Atlas/Categories/AI生成 - fileclass]]'
 ---
-
 
 > AI生成，且未经过审阅修改的，先都放这个目录下。
 

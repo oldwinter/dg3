@@ -1,10 +1,10 @@
 ---
 date created: 2022-07-20
 date modified: 2023-03-14
-tags:
-  - moc
 title: ∑ flomo101阅读笔记
 publish: true
+分类:
+- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
 ---
 
 [[Sources/Articles/flomo101阅读笔记/§ flomo101 - 思维方式目录]]

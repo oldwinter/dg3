@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/Obsidian.md","title":"Obsidian","created":"2022-06-09","modified":"2025-07-10","tags":["评论/少数派","macOS软件","安卓软件","windows软件"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/Obsidian.md","title":"Obsidian","created":"2022-06-09","modified":"2025-07-10","tags":["评论/少数派"],"cssclasses":""}
 ---
 
 

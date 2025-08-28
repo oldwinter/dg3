@@ -3,9 +3,8 @@ date created: 2022-06-09
 date modified: 2023-03-14
 title: Text expand
 publish: true
-tags:
-  - obsidian插件
 rating: 1
+分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
 ---
 
 ## 这个插件对我真的有用吗？

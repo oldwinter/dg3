@@ -1,7 +1,15 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 的文件夹入口汇总.md","title":"∑ 本库 ACCESS 的文件夹入口汇总","created":"2022-08-04","modified":"2023-03-14","tags":["moc","todo/持续迭代","todo/now","todo/本周"],"cssclasses":""}
+date created: 2022-08-04
+date modified: 2023-03-14
+tags:
+- todo/持续迭代
+- todo/now
+- todo/本周
+title: ∑ 本库 ACCESS 的文件夹入口汇总
+publish: true
+分类:
+- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
 ---
-
 up:: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]  
 x:: [[🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 工作流汇总]] , [[🍀 花园导览/🧰 本库指南/Tutorials/本库ACCESS文件夹结构与混合笔记法]]  
 
@@ -11,7 +19,7 @@ x:: [[🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 工作流�
 ## Atlas
 
 - [[∑ canvas创建入口]]
-- [[Spaces/4-Archive/Dataviews/∑ 本库Dataview汇总]]
+- [[Spaces/4-Archive/黑洞/Dataviews/∑ 本库Dataview汇总]]
 - [[∑ excalidraw 白板创建入口]]
 - [[Atlas/MOCs/_ MOCs Readme]]
 - [[Spaces/2-Area/数字花园建设与维护/§ TOCs]]
@@ -57,7 +65,7 @@ Spaces下全部PARA内的MOC文件
 - Project
 	- [[Spaces/2-Area/数字花园建设与维护/∑ Building a Second Brain 翻译和读书笔记]]
 	- [[Atlas/MOCs/∑ 人与科技融合]]
-	- [[Spaces/3-Resource/chrome插件/∑ Chrome插件]]
+	- [[Spaces/3-Resource/chrome插件/∑ chrome插件]]
 	- [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/∑ obsidian插件]]
 	- [[Spaces/3-Resource/VSCode插件/∑ VSCode插件]]
 - Area
@@ -65,9 +73,9 @@ Spaces下全部PARA内的MOC文件
 	- [[Atlas/MOCs/∑ 个人职业生涯]]
 	- [[Atlas/MOCs/∑ Fronted roadmap 前端路线图]]
 	- [[Spaces/2-Area/云服务和部署/∑ 云计算与云原生]]
-	- [[Spaces/2-Area/运动健康/∑ 运动与健康]]
+	- [[Spaces/2-Area/运动健康/∑ 运动健康]]
 	- [[Spaces/2-Area/云服务和部署/∑ DevOps roadmap 运维路线图]]
-	- [[∑ 知识管理]]
+	- [[Spaces/2-Area/知识管理/∑ 知识管理]]
 - Resource
 	- [[Spaces/1-Project/golang与后端/∑ 计算机科学]]
 	- [[Spaces/4-Archive/王者荣耀/§ 王者荣耀]]
