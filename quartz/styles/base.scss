@@ -39,7 +39,9 @@ li,
 ol,
 ul,
 .katex,
-.math {
+.math,
+.typst-doc,
+.typst-doc * {
   color: var(--darkgray);
   fill: var(--darkgray);
   hyphens: auto;
@@ -53,7 +55,9 @@ li,
 ol,
 ul,
 .katex,
-.math {
+.math,
+.typst-doc,
+.typst-doc * {
   overflow-wrap: anywhere;
   /* tr and td removed from list of selectors for overflow-wrap, allowing them to use default 'normal' property value */
 }
