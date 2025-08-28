@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Export Image plugin.md","aliases":"obsidian-export-image","created":"2025-06-06","modified":"2025-07-13","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Export Image plugin.md","aliases":"obsidian-export-image","created":"2025-06-06","modified":"2025-07-13","cssclasses":""}
 ---
 
 

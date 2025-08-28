@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Calendar/_ Calendar Readme.md","created":"2025-04-26","modified":"2025-07-11","tags":["workflow"],"cssclasses":""}
+{"publish":true,"permalink":"/Calendar/_ Calendar Readme.md","created":"2025-04-26","modified":"2025-07-11","cssclasses":""}
 ---
 
 

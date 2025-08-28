@@ -1,7 +1,16 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Dataview.md","aliases":"Dataviewjs","title":"Dataview","created":"2022-06-09","modified":"2023-03-14","tags":["obsidian插件"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+status: null
+rating: 6
+publish: true
+aliases:
+- Dataviewjs
+title: Dataview
+当前是否还在使用: true
+当前使用频率: 5
+分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
 ---
-
 
 除了偶尔充当性能刺客，让我打开某个文件的时候，卡半天。其他都很好。[[Atlas/Bases/∑ BASE\|Bases]]性能嘎嘎好，永不背刺。
 

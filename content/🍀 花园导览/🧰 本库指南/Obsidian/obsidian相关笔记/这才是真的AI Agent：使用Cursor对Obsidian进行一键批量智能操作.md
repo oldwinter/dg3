@@ -1,10 +1,7 @@
 ---
-date created: 2025-06-27
-date modified: 2025-06-27
-tags:
-  - AI教程
-publish: true
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/这才是真的AI Agent：使用Cursor对Obsidian进行一键批量智能操作.md","created":"2025-06-27","modified":"2025-06-27","cssclasses":""}
 ---
+
 
 ## 本次目标
 

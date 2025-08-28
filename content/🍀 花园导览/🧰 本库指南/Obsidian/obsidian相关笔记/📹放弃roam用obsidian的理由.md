@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/📹放弃roam用obsidian的理由.md","title":"📹放弃roam用obsidian的理由","created":"2022-06-09","modified":"2023-03-14","cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+title: 📹放弃roam用obsidian的理由
+publish: true
+分类:
+- '[[Atlas/Categories/长视频 - fileclass]]'
 ---
-
 
 [Why I chose Obsidian over Roam (as a Roam investor) - YouTube](https://www.youtube.com/watch?v=AWUk8-6yG2g)
 

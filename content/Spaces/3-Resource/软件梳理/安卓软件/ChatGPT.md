@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/ChatGPT.md","title":"chatGPT","created":"2023-02-15","modified":"2024-11-15","tags":["AI产品","安卓软件","好用网站"],"cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/ChatGPT.md","title":"chatGPT","created":"2023-02-15","modified":"2024-11-15","cssclasses":""}
 ---
 
 

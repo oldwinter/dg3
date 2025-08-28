@@ -12,15 +12,15 @@ pushed_date: 2025-06-18
 is_fork: false
 license: MIT License
 topics:
-  - python
-  - shell
+- python
+- shell
 size_kb: 6189
 issues: 65
-tags:
-  - github开源
 date created: 2023-12-06
 date modified: 2024-11-05
 publish: true
+分类:
+- '[[Atlas/Categories/github开源 - fileclass]]'
 ---
 
 

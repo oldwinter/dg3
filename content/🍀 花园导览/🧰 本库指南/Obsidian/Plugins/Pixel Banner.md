@@ -1,5 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Pixel Banner.md","created":"2025-06-09","modified":"2025-06-09","tags":["obsidian插件"],"cssclasses":""}
+date created: 2025-06-09
+date modified: 2025-06-09
+rating: 5
+status: null
+publish: true
+分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
 ---
-
 方便地设置头图、logo等，类似notion

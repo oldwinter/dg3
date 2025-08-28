@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Image auto upload Plugin.md","created":"2024-05-11","modified":"2025-06-06","tags":["obsidian插件"],"cssclasses":""}
+date created: 2024-05-11
+date modified: 2025-06-06
+status: null
+rating: 6
+publish: true
+分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
 ---
-
 
 ## Image auto upload Plugin
 

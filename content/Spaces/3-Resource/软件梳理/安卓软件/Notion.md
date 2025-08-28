@@ -1,7 +1,26 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/Notion.md","title":"Notion","created":"2022-06-09","modified":"2025-07-31","tags":["评论/少数派","macOS软件","windows软件","AI产品","安卓软件"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2025-07-31
+title: Notion
+tags:
+- 评论/少数派
+作用: 打造数字花园
+评价: 6
+设置同步: 谷歌账号
+是否已备份: y
+是否已重装: true
+icon: '[[icon-cc-image-Notion.png]]'
+brew安装命令: brew install --cask notion
+当前是否还在使用: true
+是否通过UniGetUI安装: true
+publish: true
+跨平台技术栈: '[[Atlas/Categories/Electron]]'
+分类:
+- '[[Atlas/Categories/macOS软件 - fileclass]]'
+- '[[Atlas/Categories/安卓软件 - fileclass]]'
+- '[[Atlas/Categories/windows软件 - fileclass]]'
+- '[[Atlas/Categories/AI产品 - fileclass]]'
 ---
-
 
 ## notion 教程
 

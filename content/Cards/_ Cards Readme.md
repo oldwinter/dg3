@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/Cards/_ Cards Readme.md","title":"About Cards","created":"2022-06-22","modified":"2025-07-09","tags":["workflow"],"cssclasses":""}
+date created: 2022-06-22
+date modified: 2025-07-09
+title: About Cards
+publish: true
+是否已review: true
+分类:
+- '[[Atlas/Categories/工作流workflow - fileclass]]'
 ---
-
 
 # 🃏 卡片笔记 (Cards) 说明
 

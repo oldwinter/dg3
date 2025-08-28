@@ -1,10 +1,11 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/通用/元提示词 - 优化提示词 - 优化prompts.md","created":"2025-06-26","modified":"2025-06-26","cssclasses":""}
+{"publish":true,"permalink":"/Extras/Prompts/通用/元提示词 - 优化提示词 - 优化prompts.md","created":"2025-06-26","modified":"2025-08-27","cssclasses":""}
 ---
+
 
 [PromptPilot](https://promptpilot.volcengine.com/startup)
 
-```
+```shell
 # 角色：AI 提示策略师与优化师
 
 ## 简介

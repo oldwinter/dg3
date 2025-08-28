@@ -1,4 +1,13 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Onedrive.md","title":"Onedrive","created":"2023-02-28","modified":"2023-03-14","tags":["macOS软件"],"cssclasses":""}
+作用: 私人数据同步盘
+评价: 4
+设置同步: 微软账号
+是否已备份: y
+是否已重装: null
+title: Onedrive
+date created: 2023-02-28
+date modified: 2023-03-14
+icon: '[[icon-cc-image-Onedrive.png]]'
+publish: true
+分类: '[[Atlas/Categories/macOS软件 - fileclass]]'
 ---
-

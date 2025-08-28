@@ -1,7 +1,21 @@
 ---
-{"publish":true,"permalink":"/Sources/Books/微信读书同步/未分类/Building a Second Brain-Tiago Forte.md","title":"Building a Second Brain-Tiago Forte","created":"2022-08-09","modified":"2023-03-14","tags":["微信读书笔记"],"cssclasses":"","socialImage":"https://res.weread.qq.com/wrepub/CB_1x64Y84a47Mu6ZM6YE_parsecover"}
+author: Tiago Forte
+bookId: CB_Eqp1jP1ju6RU6Zk6YE
+category:
+cover: https://res.weread.qq.com/wrepub/CB_1x64Y84a47Mu6ZM6YE_parsecover
+date created: 2022-08-09
+date modified: 2023-03-14
+doc_type: weread-highlights-reviews
+isbn:
+lastReadDate: 2022-08-07 00:00:00+00:00
+noteCount: 1
+publisher: Profile
+reviewCount: 42
+title: Building a Second Brain-Tiago Forte
+publish: true
+类型: 个人知识管理
+分类: "[[Atlas/Categories/微信读书笔记 - fileclass]]"
 ---
-
 
 ## 元数据
 

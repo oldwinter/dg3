@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Cards/Andrej Karpathy.md","created":"2025-03-31","modified":"2025-03-31","cssclasses":""}
+date created: 2025-03-31
+date modified: 2025-03-31
+publish: true
+分类:
+- '[[Atlas/Categories/person人 - fileclass]]'
 ---
-
 
 ![](https://pub-pic.oldwinter.top/2025/03/a326a01b3093cf50aeddcd4ade2b5580.png)
 

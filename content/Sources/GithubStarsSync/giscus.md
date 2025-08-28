@@ -1,7 +1,38 @@
 ---
-{"publish":true,"permalink":"/Sources/GithubStarsSync/giscus.md","description":"A commenting system powered by GitHub Discussions. :octocat: :speech_balloon: :gem:","created":"2025-06-20T01:50:32.039+08:00","modified":"2025-08-15T22:00:00.635+08:00","tags":["github开源"],"cssclasses":""}
+star_date: 2022-08-16 16:57:38
+repo_name: giscus/giscus
+repo_url: https://github.com/giscus/giscus
+description: 'A commenting system powered by GitHub Discussions. :octocat: :speech_balloon:
+  :gem:'
+language: TypeScript
+stars: 9909
+forks: 387
+created_date: 2021-03-27
+updated_date: 2025-06-19
+pushed_date: 2025-04-21
+is_fork: false
+license: MIT License
+topics:
+- blog
+- comment-system
+- comments
+- comments-widget
+- giscus
+- github
+- github-discussions
+- hacktoberfest
+- javascript
+- nextjs
+- react
+- reactjs
+- utterances
+- widget
+size_kb: 3547
+issues: 97
+publish: true
+分类:
+- '[[Atlas/Categories/github开源 - fileclass]]'
 ---
-
 
 # giscus/giscus
 

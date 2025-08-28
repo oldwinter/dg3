@@ -1,7 +1,15 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/chrome插件/油猴脚本 - tempermonkey.md","title":"油猴脚本 - tempermonkey","created":"2022-06-09","modified":"2023-03-14","tags":["chrome插件"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2023-03-14
+title: 油猴脚本 - tempermonkey
+评价: 7
+是否有firefox版本: true
+设置同步: google drive
+publish: true
+icon: https://pub-pic.oldwinter.top/2025/07/7f5747b8e51cc963fc050525516c131d.png
+分类:
+- '[[Atlas/Categories/chrome插件 - fileclass]]'
 ---
-
 
 ![image.png](https://pub-pic.oldwinter.top/2025/07/7f5747b8e51cc963fc050525516c131d.png)
 

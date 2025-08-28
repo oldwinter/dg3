@@ -3,9 +3,9 @@ date created: 2025-07-07
 date modified: 2025-07-07
 publish: true
 PARA: Projects
-tags: 
- - moc
- - AI生成
+分类:
+- '[[Atlas/Categories/AI生成 - fileclass]]'
+- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
 ---
 
 

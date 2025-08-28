@@ -1,11 +1,10 @@
 ---
 date created: 2025-06-06
 date modified: 2025-07-10
-tags:
-  - obsidian插件
 rating: 2
-status:
+status: null
 publish: true
+分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
 ---
 
 

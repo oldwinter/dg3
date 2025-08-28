@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Actions URI.md","created":"2024-05-11","modified":"2025-06-06","tags":["obsidian插件"],"cssclasses":""}
+date created: 2024-05-11
+date modified: 2025-06-06
+status: null
+rating: 4
+publish: true
+分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
 ---
-
 
 > 现在还没用上，更倾向于all in ob以后，需要和obsidian软件外联动的不多，没用起来。[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Advanced URI]]用用足够了对我来说。
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/README.md","title":"README","created":"2022-08-06","modified":"2025-07-12","tags":["本库教程"],"cssclasses":""}
+{"publish":true,"permalink":"/README.md","title":"README","created":"2022-08-06","modified":"2025-07-12","cssclasses":""}
 ---
 
 <h1 align="center">oldwinterの数字花园</h1>

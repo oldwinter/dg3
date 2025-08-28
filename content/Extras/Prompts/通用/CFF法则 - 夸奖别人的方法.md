@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/通用/CFF法则 - 夸奖别人的方法.md","aliases":"CFF","title":"CFF法则 - 夸奖别人的方法","created":"2022-08-14","modified":"2024-05-30","tags":["review","prompts","action","adventure"],"cssclasses":""}
+{"publish":true,"permalink":"/Extras/Prompts/通用/CFF法则 - 夸奖别人的方法.md","aliases":"CFF","title":"CFF法则 - 夸奖别人的方法","created":"2022-08-14","modified":"2024-05-30","cssclasses":""}
 ---
 
 

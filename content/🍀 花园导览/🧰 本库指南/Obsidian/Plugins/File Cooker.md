@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/File Cooker.md","aliases":"obsidian-file-cooker","title":"File Cooker","created":"2024-05-11","modified":"2025-08-19","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/File Cooker.md","aliases":"obsidian-file-cooker","title":"File Cooker","created":"2024-05-11","modified":"2025-08-19","cssclasses":""}
 ---
 
 

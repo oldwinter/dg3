@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Atlas/MOCs/_ MOCs Readme.md","aliases":"MOC","title":"∑ MOCs","created":"2022-06-06","modified":"2025-07-09","tags":["moc"],"cssclasses":""}
+{"publish":true,"permalink":"/Atlas/MOCs/_ MOCs Readme.md","aliases":"MOC","title":"∑ MOCs","created":"2022-06-06","modified":"2025-07-09","cssclasses":""}
 ---
 
 

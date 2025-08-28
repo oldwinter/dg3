@@ -2,7 +2,7 @@
 star_date: 2025-03-11 05:19:18
 repo_name: go-nv/goenv
 repo_url: https://github.com/go-nv/goenv
-description: ":blue_car: Like pyenv and rbenv, but for Go."
+description: ':blue_car: Like pyenv and rbenv, but for Go.'
 language: Shell
 stars: 2290
 forks: 255
@@ -12,22 +12,22 @@ pushed_date: 2025-06-16
 is_fork: false
 license: MIT License
 topics:
-  - bash
-  - go
-  - goenv
-  - golang
-  - homebrew
-  - pyenv
-  - rbenv
-  - shims-goenv
-  - version-manager
+- bash
+- go
+- goenv
+- golang
+- homebrew
+- pyenv
+- rbenv
+- shims-goenv
+- version-manager
 size_kb: 3029
 issues: 10
-tags:
-  - github开源
 date created: 2025-03-11
 date modified: 2025-03-11
 publish: true
+分类:
+- '[[Atlas/Categories/github开源 - fileclass]]'
 ---
 
 

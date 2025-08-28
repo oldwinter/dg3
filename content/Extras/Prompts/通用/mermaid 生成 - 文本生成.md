@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/通用/mermaid 生成 - 文本生成.md","created":"2025-05-03","modified":"2025-05-26","tags":["prompts"],"cssclasses":""}
+date created: 2025-05-03
+date modified: 2025-05-26
+publish: true
+分类:
+- '[[Atlas/Categories/提示词prompts - fileclass]]'
 ---
-
 Role：你是最擅长内容和数据视觉化、信息图展示的大师。
 
 Task：

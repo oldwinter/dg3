@@ -1,9 +1,21 @@
 ---
-{"publish":true,"permalink":"/Cards/claude code.md","created":"2025-04-17","modified":"2025-08-13","tags":["powershell命令","linux命令"],"cssclasses":""}
+{"publish":true,"permalink":"/Cards/claude code.md","created":"2025-04-17","modified":"2025-08-13","cssclasses":""}
 ---
 
 
-用量监控[[📥 Inbox/claude code monitor]]
+## 别人的配置参考
+
+[[📥 Inbox/claude code 配置]]
+
+##
+
+塞尔达音效 
+```
+npm install -g zelda-claude-code@latest
+```
+
+## 
+用量监控[[Cards/claude code monitor]]
 
 ##
 
@@ -41,7 +53,7 @@ npm install -g @anthropic-ai/claude-code
 
 使用[[Sources/GithubStarsSync/claude-code-router]]绕过官方限制。或者使用各种第三方的中转站： [[Cards/claude code 第三方中转站]]
 
-[[📥 Inbox/claude code windows]]
+[[Cards/claude code windows]]
 
 ## 常用快捷键
 
@@ -49,7 +61,7 @@ control + r展开被收缩的文本，以查看详情。
 
 ## 常用命令
 
->如果命令不适应，使用开源的可视化界面也不错[[📥 Inbox/Claudia]]
+>如果命令不适应，使用开源的可视化界面也不错[[Cards/Claudia]]
 
 ###
 
@@ -198,7 +210,7 @@ telegram 和folo频道推荐
 
 ## 使用其他模型
 
-[[📥 Inbox/kimi v2用于claude code-官方token-不用ccr的情况下]]
+[[Cards/kimi v2用于claude code-官方token-不用ccr的情况下]]
 
 ## 参考教学视频
 

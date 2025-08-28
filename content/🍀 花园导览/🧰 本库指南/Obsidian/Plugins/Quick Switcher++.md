@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Quick Switcher++.md","aliases":"darlal-switcher-plus","created":"2024-05-11","modified":"2025-08-07","tags":["obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Quick Switcher++.md","aliases":"darlal-switcher-plus","created":"2024-05-11","modified":"2025-08-07","cssclasses":""}
 ---
 
 
@@ -34,3 +34,5 @@
 ![CleanShot 2025-07-28 at 18.39.46@2x.png](https://pub-pic.oldwinter.top/2025/07/f70d717548df8eb29ecaa397ac85dc48.png)
 
 这个配置如果打开，会导致输入法的第一个输入被吞，所以先不打开了。
+
+2025-08-28：最新版本已经修复此问题，重新打开这个选项了。

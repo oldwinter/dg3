@@ -1,4 +1,10 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Recent Notes.md","aliases":"recent-notes","created":"2025-06-06","modified":"2025-07-10","tags":["obsidian插件"],"cssclasses":""}
+date created: 2025-06-06
+date modified: 2025-07-10
+rating: 6
+status: null
+publish: true
+aliases:
+- recent-notes
+分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
 ---
-

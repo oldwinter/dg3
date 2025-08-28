@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Extras/Other/_ Other readme.md","title":"README","created":"2022-08-06","modified":"2025-07-12","tags":["本库教程"],"cssclasses":""}
+publish: true
+date created: 2022-08-06
+date modified: 2025-07-12
+title: README
+分类:
+- '[[Atlas/Categories/本库教程 - fileclass]]'
 ---
-
 
 
 # Extras/Other 工具脚本说明

@@ -2,7 +2,8 @@
 star_date: 2024-07-26 08:39:06
 repo_name: version-fox/vfox
 repo_url: https://github.com/version-fox/vfox
-description: A cross-platform and extendable version manager with support for Java, Node.js, Flutter, .Net & more
+description: A cross-platform and extendable version manager with support for Java,
+  Node.js, Flutter, .Net & more
 language: Go
 stars: 3354
 forks: 128
@@ -12,34 +13,34 @@ pushed_date: 2025-05-20
 is_fork: false
 license: Apache License 2.0
 topics:
-  - asdf
-  - bash
-  - cli
-  - cmd
-  - cross-platform
-  - development-tools
-  - golang
-  - linux
-  - lua
-  - macos
-  - nodejs
-  - plugin-manager
-  - powershell
-  - sdk
-  - tools
-  - version-manager
-  - windows
-  - zsh
+- asdf
+- bash
+- cli
+- cmd
+- cross-platform
+- development-tools
+- golang
+- linux
+- lua
+- macos
+- nodejs
+- plugin-manager
+- powershell
+- sdk
+- tools
+- version-manager
+- windows
+- zsh
 size_kb: 22909
 issues: 88
-tags:
-  - github开源
 date created: 2024-07-29
 date modified: 2024-07-29
 aliases:
-  - tool-version
-  - linux命令
+- tool-version
+- linux命令
 publish: true
+分类:
+- '[[Atlas/Categories/github开源 - fileclass]]'
 ---
 
 

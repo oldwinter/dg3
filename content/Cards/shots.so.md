@@ -1,10 +1,10 @@
 ---
 date created: 2025-06-05
 date modified: 2025-06-05
-tags:
-  - 好用网站
 评价: 5
 publish: true
+分类:
+- '[[Atlas/Categories/好用网站 - fileclass]]'
 ---
 [Shots - Create Amazing Mockups](https://shots.so/)
 

@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Cards/让Cursor将Cards中的笔记，针对某个主题进行有机串联，然后统一归入PARA.md","created":"2025-07-09","modified":"2025-07-09","tags":["obsidian与AI"],"cssclasses":""}
+{"publish":true,"permalink":"/Cards/让Cursor将Cards中的笔记，针对某个主题进行有机串联，然后统一归入PARA.md","created":"2025-07-09","modified":"2025-07-09","cssclasses":""}
 ---
 
 

@@ -1,10 +1,10 @@
 ---
 date created: 2022-08-09
 date modified: 2023-03-14
-tags:
-  - moc
 title: ∑ 本库obsidian基本配置及原因
 publish: true
+分类:
+- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
 ---
 只选个人认为重要的配置项，说明原因。
 

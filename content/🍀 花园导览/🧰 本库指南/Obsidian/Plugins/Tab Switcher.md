@@ -1,14 +1,7 @@
 ---
-date created: 2025-06-06
-date modified: 2025-07-10
-tags:
-  - obsidian插件
-rating: 6
-status:
-publish: true
-aliases:
-  - cycle-through-panes
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Tab Switcher.md","aliases":"cycle-through-panes","created":"2025-06-06","modified":"2025-07-10","cssclasses":""}
 ---
+
 
 表现好于[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Tab Selector]]，它能跨tab group，而后者是不行的。
 

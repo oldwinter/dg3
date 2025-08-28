@@ -1,9 +1,9 @@
 ---
 date created: 2025-07-10
 date modified: 2025-07-10
-tags:
-  - moc
 publish: true
+分类:
+- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
 ---
 
 - [[Sources/AIGC/从浏览器输入一个网址到得到网站页面，中间发生了什么#mermaid图]]

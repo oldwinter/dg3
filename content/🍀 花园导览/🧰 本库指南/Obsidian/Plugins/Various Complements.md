@@ -1,15 +1,7 @@
 ---
-date created: 2022-06-09
-date modified: 2025-06-06
-tags:
-  - obsidian插件
-status:
-title: Various Complements
-rating: 6
-publish: true
-aliases:
-  - various-complements
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Various Complements.md","aliases":"various-complements","title":"Various Complements","created":"2022-06-09","modified":"2025-06-06","cssclasses":""}
 ---
+
 
 ## Various Complements
 

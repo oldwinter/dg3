@@ -1,7 +1,46 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Logseq.md","title":"Logseq","description":"A privacy-first, open-source platform for knowledge management and collaboration. Download link: http://github.com/logseq/logseq/releases. roadmap: http://trello.com/b/8txSM12G/roadmap","created":"2022-06-09","modified":"2025-07-09","tags":["macOS软件","github开源"],"cssclasses":""}
+date created: 2022-06-09
+date modified: 2025-07-09
+title: Logseq
+icon: '[[icon-cc-image-Logseq.png]]'
+作用: obsidian 备选
+评价: 4
+设置同步: github 仓库
+是否已备份: y
+是否已重装: null
+publish: true
+star_date: 2022-03-03 17:12:08
+repo_name: logseq/logseq
+repo_url: https://github.com/logseq/logseq
+description: 'A privacy-first, open-source platform for knowledge management and collaboration.
+  Download link: http://github.com/logseq/logseq/releases. roadmap: http://trello.com/b/8txSM12G/roadmap'
+language: Clojure
+stars: 37095
+forks: 2195
+created_date: 2020-05-23
+updated_date: 2025-06-19
+pushed_date: 2025-06-19
+is_fork: false
+license: GNU Affero General Public License v3.0
+topics:
+- clojure
+- clojurescript
+- git
+- graph
+- knowledge-base
+- knowledge-graph
+- local-first
+- markdown
+- note-taking
+- org-mode
+- pkm
+size_kb: 133510
+issues: 1362
+跨平台技术栈: '[[Atlas/Categories/Electron]]'
+分类:
+- '[[Atlas/Categories/macOS软件 - fileclass]]'
+- '[[Atlas/Categories/github开源 - fileclass]]'
 ---
-
 
 ##
 

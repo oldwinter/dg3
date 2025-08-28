@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Sources/GithubStarsSync/Templater.md","aliases":"templater-obsidian","title":"Templater","description":"A template plugin for obsidian","created":"2022-06-09","modified":"2023-03-14 - obsidian插件","tags":["github开源","obsidian插件"],"cssclasses":""}
+{"publish":true,"permalink":"/Sources/GithubStarsSync/Templater.md","aliases":"templater-obsidian","title":"Templater","description":"A template plugin for obsidian","created":"2022-06-09","modified":"2023-03-14 - obsidian插件","cssclasses":""}
 ---
 
 

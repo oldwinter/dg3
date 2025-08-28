@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/Published/已发布文章/obsidian 不可回避的缺点及其解决方案.md","title":"obsidian 不可回避的缺点及其解决方案","created":"2022-08-01 00:00:00+00:00","modified":"2023-03-14 00:00:00+00:00","tags":["文章/已完成"],"cssclasses":""}
+date created: 2022-08-01 00:00:00+00:00
+date modified: 2023-03-14 00:00:00+00:00
+title: obsidian 不可回避的缺点及其解决方案
+publish: true
+分类:
+- '[[Atlas/Categories/文章-已完成 - fileclass]]'
 ---
-
 >可以访问此文的双链版本，获得完整阅读体验：[Obsidian 不可回避的缺点及其解决方案 — 🌱 oldwinterの数字花园](https://notes.oldwinter.top/obsidian-%E4%B8%8D%E5%8F%AF%E5%9B%9E%E9%81%BF%E7%9A%84%E7%BC%BA%E7%82%B9%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
 
 通过[[Cards/国内采用本地优先存储方案的笔记软件的对比]]，其实logseq和思源笔记也是很好的选择。我个人的想法与obsidian理念最贴合，所以最终选择了这个笔记软件。

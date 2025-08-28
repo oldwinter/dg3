@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Spaces/_ Spaces Readme.md","created":"2025-04-26","modified":"2025-07-17","tags":["workflow"],"cssclasses":""}
+date created: 2025-04-26
+date modified: 2025-07-17
+publish: true
+分类:
+- '[[Atlas/Categories/工作流workflow - fileclass]]'
 ---
-
 
 # 🗂️ PARA 空间管理 (Spaces) 说明
 

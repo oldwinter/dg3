@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/§ obsidian 从了解到沉醉 - PPT.md","title":"§ obsidian 从了解到沉醉 - PPT","created":"2022-06-21","modified":"2023-03-14","tags":["目录笔记"],"cssclasses":""}
+date created: 2022-06-21
+date modified: 2023-03-14
+title: § obsidian 从了解到沉醉 - PPT
+publish: true
+分类:
+- '[[Atlas/Categories/目录笔记 - fileclass]]'
 ---
-
 
 - 演示：
 	- [[5分钟直观感受双链笔记神奇之处]]

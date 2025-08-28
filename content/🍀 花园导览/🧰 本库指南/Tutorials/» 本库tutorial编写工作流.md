@@ -3,8 +3,8 @@ date created: 2022-08-07
 date modified: 2023-03-14
 title: » 本库tutorial编写工作流
 publish: true
-tags:
-  - workflow
+分类:
+- '[[Atlas/Categories/工作流workflow - fileclass]]'
 ---
 提问：
 

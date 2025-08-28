@@ -2,10 +2,11 @@
 date created: 2022-08-04
 date modified: 2023-03-14
 tags:
-  - moc
-  - todo/持续迭代
+- todo/持续迭代
 title: ∑ 本库 ACCESS 工作流汇总
 publish: true
+分类:
+- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
 ---
 up: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]
 
@@ -23,7 +24,7 @@ up: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]
 
 ## Atlas
 
-- [[Spaces/4-Archive/Dataviews/» 本库常用的dataview工作流]]
+- [[Spaces/4-Archive/黑洞/Dataviews/» 本库常用的dataview工作流]]
 - [[🍀 花园导览/🧰 本库指南/Tutorials/» 本库tutorial编写工作流]]
 
 ## Calendar

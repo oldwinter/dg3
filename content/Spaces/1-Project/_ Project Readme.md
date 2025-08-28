@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/_ Project Readme.md","title":"About Project","created":"2025-04-09","modified":"2025-06-27","tags":["本库教程"],"cssclasses":""}
+date created: 2025-04-09
+date modified: 2025-06-27
+title: About Project
+publish: true
+分类:
+- '[[Atlas/Categories/本库教程 - fileclass]]'
 ---
-
 
 [[Cards/项目笔记]] 的所在地。集中存放短中期聚焦的项目内容。
 

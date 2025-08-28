@@ -12,24 +12,23 @@ pushed_date: 2025-06-18
 is_fork: false
 license: Other
 topics:
-  - graph-visualisation
-  - markdown
-  - markdown-editor
-  - note-taking
-  - notes-app
-  - personal-knowledge-base
-  - pkm
-  - vscode
-  - zettelkasten
+- graph-visualisation
+- markdown
+- markdown-editor
+- note-taking
+- notes-app
+- personal-knowledge-base
+- pkm
+- vscode
+- zettelkasten
 size_kb: 60162
 issues: 130
-tags:
-  - github开源
 date created: 2025-06-15
-date modified: 2025-06-15
-  - VSCode插件
+date modified: 2025-06-15 - VSCode插件
 评价: 6
 publish: true
+分类:
+- '[[Atlas/Categories/github开源 - fileclass]]'
 ---
 
 

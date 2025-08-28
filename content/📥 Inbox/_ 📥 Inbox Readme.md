@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/📥 Inbox/_ 📥 Inbox Readme.md","created":"2025-06-17","modified":"2025-07-09","tags":["workflow"],"cssclasses":""}
+date created: 2025-06-17
+date modified: 2025-07-09
+publish: true
+是否已review: true
+分类:
+- '[[Atlas/Categories/工作流workflow - fileclass]]'
 ---
-
 
 # 📥 收件箱 (Inbox) 说明
 
