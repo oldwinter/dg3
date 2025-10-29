@@ -39,7 +39,7 @@ jumps:: [[Spaces/3-Resource/软件梳理/安卓软件/Notion]]
 
 ##
 
-[[Spaces/Private/Obsidian 同步库账号密码 - 内测账号密码]]
+[[📥 Inbox/Obsidian Sync 同步库账号密码 - 内测账号密码]]
 
 ## 参考文献
 

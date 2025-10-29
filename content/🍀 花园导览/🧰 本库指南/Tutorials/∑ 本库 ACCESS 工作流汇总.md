@@ -1,13 +1,7 @@
 ---
-date created: 2022-08-04
-date modified: 2023-03-14
-tags:
-- todo/持续迭代
-title: ∑ 本库 ACCESS 工作流汇总
-publish: true
-分类:
-- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 工作流汇总.md","title":"∑ 本库 ACCESS 工作流汇总","created":"2022-08-04","modified":"2023-03-14","tags":["todo/持续迭代"],"cssclasses":""}
 ---
+
 up: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]
 
 根据对obsidian的使用目标不同，分为3个层次，难度逐渐加大，因人而异。更多的层次划分，见[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian的不同人的用法]]。
@@ -49,7 +43,7 @@ up: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]
 - [[Spaces/3-Resource/电影笔记/» 电影笔记工作流]]
 - [[» 论文笔记工作流]]
 - [[» 播客笔记工作流]]
-- [[Spaces/1-Project/工作流与SOP/» 视频笔记工作流]]
+- [[Spaces/4-Archive/工作流与SOP/» 视频笔记工作流]]
 
 ## Spaces
 

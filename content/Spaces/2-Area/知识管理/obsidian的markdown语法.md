@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/obsidian的markdown语法.md","title":"obsidian的markdown语法","created":"2022-08-08","modified":"2025-08-23","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/2-Area/知识管理/obsidian的markdown语法.md","title":"obsidian的markdown语法","created":"2022-08-08","modified":"2025-08-28","cssclasses":""}
 ---
 
 

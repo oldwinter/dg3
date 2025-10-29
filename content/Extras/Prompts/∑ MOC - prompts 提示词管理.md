@@ -14,6 +14,7 @@
 - [[Extras/Prompts/通用/使用CFF法则优化夸人语句]]
 	- [[Extras/Prompts/通用/CFF法则 - 夸奖别人的方法\|CFF]]
 - [[Extras/Prompts/通用/全文中文对照翻译]]
+- [[Cards/小红书爆款标题生成]]
 
 ## 图片生成类
 
@@ -21,11 +22,13 @@
 
 [awesome-gpt4o-images](https://github.com/jamez-bondos/awesome-gpt4o-images)
 
+nano banana： [GitHub - JimmyLv/awesome-nano-banana](https://github.com/JimmyLv/awesome-nano-banana)
+
 图库参考sora官方：[Sora](https://sora.com/explore/images)
 
 - [[Extras/Prompts/通用/立体弹出式明信片 - 图片生成]]
 - [[Extras/Prompts/通用/水晶球 - 图片生成]]
-- [[📥 Inbox/社交卡片生成 - 图片生成]]
+- [[Cards/社交卡片生成 - 图片生成]]
 - [[Extras/Prompts/通用/平庸自拍照 - 图片生成]]
 - [[Extras/Prompts/通用/城市天气微缩图 - 图片生成]]
 - [[Extras/Prompts/通用/图标icon果冻3d效果 - 图片生成]]
@@ -46,7 +49,8 @@
 - [[Extras/Prompts/通用/互联网讽刺大师]]
 - [[Extras/Prompts/通用/元提示词 - 优化提示词 - 优化prompts]]
 - [[Extras/Prompts/通用/阴阳怪气大师]]
-- [[📥 Inbox/行业深度洞察大师]]
+- [[Cards/行业深度洞察大师]]
+- [[Cards/youtube视频提炼-转成blog风格]]
 
 ## 查询、检索
 
@@ -73,10 +77,15 @@
 
 ## 各大主流编程工具内置系统提示词
 
-[system-prompts-and-models-of-ai-tools: FULL v0, Cursor, Manus, Same.dev, Lovable, Devin, Replit Agent, Windsurf](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
+[[Cards/各大ai工具的系统提示词和模型]]
+
+[[Extras/Prompts/编程相关/cursor prompts提示词]]
+
 
 [[Extras/Prompts/通用/openai新的学习模式系统提示词]]
 
-## 其他
+## 其他 obsidian等
 
 [[Extras/Prompts/通用/Obsidian advanced canvas 生成]]
+[[Cards/obsidian canvas 深度分析内容]]
+[[Cards/使用LLM生成obsidian canvas帮助日常阅读理解长文章]]

@@ -7,7 +7,7 @@
 
 ## 配置备份和同步
 
-![btt配置文件.bttpreset](https://drive.google.com/open?id=1ZqSRzvNaFY2ZH1yexK_mDsmM1tCCbBOY)
+[btt配置文件.bttpreset](https://drive.google.com/open?id=1ZqSRzvNaFY2ZH1yexK_mDsmM1tCCbBOY)
 
 ##
 

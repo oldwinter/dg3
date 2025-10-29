@@ -3,6 +3,8 @@
 ---
 
 
+[[Spaces/3-Resource/软件梳理/macos软件/macos m4 新装 list]]
+
 其实现在有非常多都支持 brew cask 安装，后面记得尝试。
 
 > 要注意，有 arm 或通用版本，则尽量不要使用 intel 版本，卡顿且耗电。
@@ -23,7 +25,7 @@
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/夸克网盘]]
 - [x] [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]
 - [x] [[Spaces/3-Resource/软件梳理/安卓软件/Notion]]
-	- [x] [[📥 Inbox/飞书]]
+	- [x] [[Cards/飞书]]
 - [x] [[Sources/GithubStarsSync/Bob]]
 - [x] [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/VSCode]]
@@ -52,7 +54,7 @@
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Reeder]] ✅ 2024-07-23
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/Latest - MacOS软件]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/1Piece]]
-- [x] [[📥 Inbox/腾讯会议]]
+- [x] [[Cards/腾讯会议]]
 - [x] [[Spaces/3-Resource/软件梳理/安卓软件/微信]]
 - [x] [[Spaces/3-Resource/软件梳理/安卓软件/微信读书]]
 - [x] [[Spaces/3-Resource/软件梳理/macos软件/AlDente]]

@@ -143,7 +143,7 @@ views:
     name: macos软件列表视图
     filters:
       and:
-        - tags.containsAny("macOS软件")
+        - 分类.containsAny("macos")
         - 是否有破解版 == true
     order:
       - file.name
@@ -182,7 +182,7 @@ views:
     name: macos软件列表视图
     filters:
       and:
-        - tags.containsAny("macOS软件")
+        - 分类.containsAny("macOS软件")
         - "!brew安装命令.isEmpty()"
         - 评价 >= 5
     order:
@@ -228,7 +228,7 @@ views:
 ```base
 filters:
   and:
-    - tags.contains("chrome插件")
+    - 分类.containsAny(link("chrome插件 - fileclass"))
 views:
   - type: table
     name: Table
@@ -240,6 +240,8 @@ views:
     sort:
       - property: 评价
         direction: DESC
+    limit: 20
+
 ```
  
 
@@ -251,7 +253,6 @@ views:
 	- [[Cards/pandoc]]
 	- [[Sources/GithubStarsSync/zoxide\|zoxide]]
 	- [[Cards/ffmpeg]]
-	- [[Spaces/3-Resource/软件梳理/linux常用命令/kubectl]]
 	- brew install fd rg fzf
 		- [[Cards/fd命令]]
 		- [[Spaces/3-Resource/软件梳理/linux常用命令/rg\|rg命令]]

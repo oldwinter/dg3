@@ -1,12 +1,7 @@
 ---
-date created: 2022-08-05
-date modified: 2023-03-14
-title: » 本库笔记的emoji符号记录
-publish: true
-分类:
-- '[[Atlas/Categories/工作流workflow - fileclass]]'
-- '[[Atlas/Categories/本库教程 - fileclass]]'
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/» 本库笔记的emoji符号记录.md","title":"» 本库笔记的emoji符号记录","created":"2022-08-05","modified":"2023-03-14","cssclasses":""}
 ---
+
 ## 为什么要给文件名引入emoji
 
 卡片中的一些概念，可以聚集在一起，并打上特殊标记，也便于被搜索被引用。用字母或符号当前缀的话，字母容易造成搜索的过量匹配，符号容易不够用。最后一想，通过emoji😃来进行。

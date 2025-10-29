@@ -1,15 +1,7 @@
 ---
-date created: 2022-08-04
-date modified: 2023-03-14
-tags:
-- todo/持续迭代
-- todo/now
-- todo/本周
-title: ∑ 本库 ACCESS 的文件夹入口汇总
-publish: true
-分类:
-- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 的文件夹入口汇总.md","title":"∑ 本库 ACCESS 的文件夹入口汇总","created":"2022-08-04","modified":"2023-03-14","tags":["todo/持续迭代","todo/now","todo/本周"],"cssclasses":""}
 ---
+
 up:: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]  
 x:: [[🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 工作流汇总]] , [[🍀 花园导览/🧰 本库指南/Tutorials/本库ACCESS文件夹结构与混合笔记法]]  
 
@@ -77,10 +69,10 @@ Spaces下全部PARA内的MOC文件
 	- [[Spaces/2-Area/云服务和部署/∑ DevOps roadmap 运维路线图]]
 	- [[Spaces/2-Area/知识管理/∑ 知识管理]]
 - Resource
-	- [[Spaces/1-Project/golang与后端/∑ 计算机科学]]
+	- [[Spaces/4-Archive/golang与后端/∑ 计算机科学]]
 	- [[Spaces/4-Archive/王者荣耀/§ 王者荣耀]]
 	- [[Atlas/MOCs/∑ 小知识点]]
-	- [[Spaces/1-Project/golang与后端/∑ golang]]
+	- [[Spaces/4-Archive/golang与后端/∑ golang]]
 
 ## Miscellaneous
 

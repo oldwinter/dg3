@@ -1,33 +1,46 @@
 ---
-{"publish":true,"permalink":"/Cards/claude code.md","created":"2025-04-17","modified":"2025-08-13","cssclasses":""}
+{"publish":true,"permalink":"/Cards/claude code.md","created":"2025-04-17","modified":"2025-09-01","cssclasses":""}
 ---
-
-
-## 别人的配置参考
-
-[[📥 Inbox/claude code 配置]]
 
 ##
 
-塞尔达音效 
 ```
+npm install -g @anthropic-ai/claude-code
+```
+
+## 别人的配置参考
+
+[[Cards/claude code 配置]]
+
+## 各种第三方插件
+
+### 塞尔达音效
+
+```shell
 npm install -g zelda-claude-code@latest
 ```
 
-## 
+###
+
 用量监控[[Cards/claude code monitor]]
+
+### 状态栏
+
+[GitHub - Haleclipse/CCometixLine: Claude Code statusline tool written in Rust](https://github.com/Haleclipse/CCometixLine)
+
+![CleanShot 2025-09-01 at 18.53.10@2x.png](https://pub-pic.oldwinter.top/2025/09/00ecaf59eaa539d3df6ec4cd81d53d2e.png)
 
 ##
 
 在多个子环境中使用
 
-```
+```shell
 orb -m ubuntu -u root
 ```
 
 如果使用非root模式，则安装有点麻烦。如果使用root，则无法使用 claude 的疯狂模式。
 
-```
+```shell
 curl https://mise.run | sh
 
 echo "eval \"\$(/root/.local/bin/mise activate bash)\"" >> ~/.bashrc
@@ -45,7 +58,7 @@ npm install -g @musistudio/claude-code-router
 
 ##
 
-```
+```shell
 npm install -g @anthropic-ai/claude-code
 ```
 
@@ -61,7 +74,7 @@ control + r展开被收缩的文本，以查看详情。
 
 ## 常用命令
 
->如果命令不适应，使用开源的可视化界面也不错[[Cards/Claudia]]
+> 如果命令不适应，使用开源的可视化界面也不错[[Cards/Claudia]]
 
 ###
 
@@ -120,7 +133,7 @@ claude -p "今天您吃了吗"
 
 也叫yolo模式？
 
-```
+```shell
 claude --dangerously-skip-permissions
 ```
 
@@ -136,8 +149,9 @@ claude --dangerously-skip-permissions
 
 > 不通用，考虑直接使用系统级别的比如raycast 的snippet更好。
 
-Create custom slash commands by adding .md files to .claude/commands/ in your project or ~/.claude/commands/ for commands that work 
-    in any project
+Create custom slash commands by adding .md files to .claude/commands/ in your project or ~/.claude/commands/ for commands that work
+
+	in any project
 
 ### 导出内容
 
@@ -170,7 +184,7 @@ telegram 和folo频道推荐
 
 编辑设置文件 ~/.claude/settings.json
 
-```
+```shell
 
 {
   "model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
@@ -203,7 +217,7 @@ telegram 和folo频道推荐
 
 ## sub agent
 
->map reduce， 子agent是并行执行的，会获取精简的上下文。
+> map reduce， 子agent是并行执行的，会获取精简的上下文。
 /agent
 
 ## 其他常用参数

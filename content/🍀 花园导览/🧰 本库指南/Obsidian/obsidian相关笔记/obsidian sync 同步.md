@@ -1,9 +1,7 @@
 ---
-date created: 2022-06-09
-date modified: 2023-03-14
-title: obsidian sync 同步
-publish: true
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian sync 同步.md","title":"obsidian sync 同步","created":"2022-06-09","modified":"2023-03-14","cssclasses":""}
 ---
+
 
 [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Remotely Save]]和[[Spaces/2-Area/云服务和部署/LiveSync]] 各有优劣，前者实时性差且插件同步体验差，但简单方便。后者需要折腾太长时间。
 

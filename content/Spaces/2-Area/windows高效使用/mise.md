@@ -1,26 +1,7 @@
 ---
-date created: 2025-06-18
-date modified: 2025-07-04
-star_date: 2025-06-17 18:01:04
-repo_name: jdx/mise
-repo_url: https://github.com/jdx/mise
-description: dev tools, env vars, task runner
-language: Rust
-stars: 16303
-forks: 535
-created_date: 2023-01-09
-updated_date: 2025-06-19
-pushed_date: 2025-06-18
-is_fork: false
-license: MIT License
-topics: []
-size_kb: 25482
-issues: 43
-publish: true
-分类:
-- '[[Atlas/Categories/linux命令 - fileclass]]'
-- '[[Atlas/Categories/github开源 - fileclass]]'
+{"publish":true,"permalink":"/Spaces/2-Area/windows高效使用/mise.md","description":"dev tools, env vars, task runner","created":"2025-06-18","modified":"2025-07-04","cssclasses":""}
 ---
+
 
 在macos和linux上，可以替换掉[[Sources/GithubStarsSync/goenv\|goenv]]、[[Cards/rvm]]、[[Sources/GithubStarsSync/vfox]]了。windows还是得继续用这些。
 
@@ -72,6 +53,17 @@ $newPath = $currentPath + ";" + $shimPath
 mise use --global node@22
 node -v
 # v22.x.x
+
+mise use --global python@3.11
+
+
+
+```
+
+如果新建terminal，不识别python命令，则可能需要配置$PROFILE
+
+```
+Invoke-Expression (& { (mise activate pwsh | Out-String) })
 ```
 
 ### 使用wsl

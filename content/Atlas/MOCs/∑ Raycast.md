@@ -1,12 +1,7 @@
 ---
-date created: 2025-07-07
-date modified: 2025-07-07
-publish: true
-PARA: Projects
-分类:
-- '[[Atlas/Categories/AI生成 - fileclass]]'
-- '[[Atlas/Categories/MOC内容地图 - fileclass]]'
+{"publish":true,"permalink":"/Atlas/MOCs/∑ Raycast.md","created":"2025-07-07","modified":"2025-07-07","cssclasses":""}
 ---
+
 
 
 # ∑ Raycast
@@ -28,15 +23,15 @@ Raycast 的强大之处在于其丰富的原生功能，这些功能可以替代
 
 Raycast AI 将大型语言模型集成到您的日常工作流程中，提供快速问答、文本生成、代码辅助等功能。
 
-- **概述**: [[Spaces/1-Project/Raycast/raycast ai]]
-- **AI Chat**: [[Spaces/1-Project/Raycast/raycast ai chat]]
-- **AI Command & Preset**: [[Spaces/1-Project/Raycast/raycast ai command]], [[Spaces/1-Project/Raycast/raycast ai preset]]
-- **AI 扩展**: [[Spaces/1-Project/Raycast/Raycast AI Extension]], [[Spaces/1-Project/Raycast/Raycast Companion]]
+- **概述**: [[Spaces/4-Archive/Raycast/raycast ai]]
+- **AI Chat**: [[Spaces/4-Archive/Raycast/raycast ai chat]]
+- **AI Command & Preset**: [[Spaces/4-Archive/Raycast/raycast ai command]], [[Spaces/4-Archive/Raycast/raycast ai preset]]
+- **AI 扩展**: [[Spaces/4-Archive/Raycast/Raycast AI Extension]], [[Spaces/4-Archive/Raycast/Raycast Companion]]
 - **模型与限制**:
-    - [[Spaces/1-Project/Raycast/raycast 支持的模型models清单]]
+    - [[Spaces/4-Archive/Raycast/raycast 支持的模型models清单]]
     - [[Sources/Clippings/Raycast AI Models Request Limits]]
-    - [[Spaces/1-Project/Raycast/raycast ai 上下文限额测试]]
-    - [[Spaces/1-Project/Raycast/raycast ai 的自带提示词破解]]
+    - [[Spaces/4-Archive/Raycast/raycast ai 上下文限额测试]]
+    - [[Spaces/4-Archive/Raycast/raycast ai 的自带提示词破解]]
     - [[Sources/Clippings/ChatGPT/raycast 的deepseek r1模型喜欢玩包含latex的高级和抽象]]
 - **自定义 API**:
     - [[Sources/Clippings/一个搭配最新Raycast，无痛用自己的API畅享QuickAI功能的CF Workers - 开发调优  开发调优, Lv2]]
@@ -56,15 +51,15 @@ Raycast 提供了强大的窗口管理功能，可以替代 [[Sources/GithubStar
 
 - **剪贴板历史**: [[Raycast Clipboard]]
 - **代码片段**: [[Raycast Snippets]]
-- **快速链接与深度链接**: [[Raycast Quicklinks]], [[Spaces/1-Project/Raycast/raycast deeplink]], [[Sources/CuboxSync/Raycast 小技巧之 Quicklink 二三事 - 少数派-2022-05-30]]
+- **快速链接与深度链接**: [[Raycast Quicklinks]], [[Spaces/4-Archive/Raycast/raycast deeplink]], [[Sources/CuboxSync/Raycast 小技巧之 Quicklink 二三事 - 少数派-2022-05-30]]
 - **应用启动与快捷键**:
-    - [[Spaces/1-Project/Raycast/raycast 一键快速应用 平替 rcmd]]
-    - [[Spaces/1-Project/Raycast/全局快捷键将app一键打开或隐藏]]
+    - [[Spaces/4-Archive/Raycast/raycast 一键快速应用 平替 rcmd]]
+    - [[Spaces/4-Archive/Raycast/全局快捷键将app一键打开或隐藏]]
     - [[Spaces/3-Resource/软件梳理/macos软件/Raycast Hyper Key]]
 - **浮动笔记**: [[Spaces/3-Resource/软件梳理/macos软件/Raycast Notes]]
 - **其他**:
-    - [[Spaces/1-Project/Raycast/raycast 2fa插件管理]]
-    - [[Spaces/1-Project/Raycast/raycast 快速查看时区]]
+    - [[Spaces/4-Archive/Raycast/raycast 2fa插件管理]]
+    - [[Spaces/4-Archive/Raycast/raycast 快速查看时区]]
     - [[Spaces/3-Resource/软件梳理/macos软件/Raycast Auto Quit Applications]]
     - [[Spaces/3-Resource/软件梳理/macos软件/Raycast Focus]]
 
@@ -76,15 +71,15 @@ Raycast 的生态系统是其核心优势之一，允许用户通过插件和脚
     - [[raycast插件]]
     - [[Sources/GithubStarsSync/categorized-raycast-extensions]]
     - [[Sources/GithubStarsSync/raycast-g4f]]
-- **插件开发**: [[Spaces/1-Project/Raycast/raycast插件开发]]
+- **插件开发**: [[Spaces/4-Archive/Raycast/raycast插件开发]]
 - **脚本**: [[Sources/CuboxSync/极具潜力的效率启动器 App，Raycast 脚本功能详解 - 少数派-2022-05-30]]
 
 ## 使用技巧与心得
 
-- [[Spaces/1-Project/Raycast/Raycast 小技巧 奇技淫巧]]
-- [[Spaces/1-Project/Raycast/Raycast 我最常用的功能]]
-- [[Spaces/1-Project/Raycast/raycast topN常用功能]]
-- [[Spaces/1-Project/Raycast/raycast wrapped 年底年度总结]]
+- [[Spaces/4-Archive/Raycast/Raycast 小技巧 奇技淫巧]]
+- [[Spaces/4-Archive/Raycast/Raycast 我最常用的功能]]
+- [[Spaces/4-Archive/Raycast/raycast topN常用功能]]
+- [[Spaces/4-Archive/Raycast/raycast wrapped 年底年度总结]]
 - [[Sources/Clippings/Heptabase 最完整模板中文教學及配合 Raycast 使用模板的方法]]
 - [[Spaces/4-Archive/ingtube/交接/Inbox/基于raycast快速根据博主ID等信息打开小二后台对应页面的演示以及配置方法]]
 
@@ -102,31 +97,31 @@ Raycast 的生态系统是其核心优势之一，允许用户通过插件和脚
 ## 🎯 核心功能
 
 ### AI功能
-- [[Spaces/1-Project/Raycast/raycast ai]] - AI功能总览
-- [[Spaces/1-Project/Raycast/raycast ai chat]] - AI聊天功能
-- [[Spaces/1-Project/Raycast/raycast ai command]] - AI命令功能
-- [[Spaces/1-Project/Raycast/raycast ai preset]] - AI预设配置
-- [[Spaces/1-Project/Raycast/raycast 支持的模型models清单]] - 支持的AI模型列表
+- [[Spaces/4-Archive/Raycast/raycast ai]] - AI功能总览
+- [[Spaces/4-Archive/Raycast/raycast ai chat]] - AI聊天功能
+- [[Spaces/4-Archive/Raycast/raycast ai command]] - AI命令功能
+- [[Spaces/4-Archive/Raycast/raycast ai preset]] - AI预设配置
+- [[Spaces/4-Archive/Raycast/raycast 支持的模型models清单]] - 支持的AI模型列表
 
 ### 应用管理与快捷键
-- [[Spaces/1-Project/Raycast/全局快捷键将app一键打开或隐藏]] - 应用快捷键管理
-- [[Spaces/1-Project/Raycast/raycast 一键快速应用 平替 rcmd]] - 快速应用切换
+- [[Spaces/4-Archive/Raycast/全局快捷键将app一键打开或隐藏]] - 应用快捷键管理
+- [[Spaces/4-Archive/Raycast/raycast 一键快速应用 平替 rcmd]] - 快速应用切换
 - [[Spaces/3-Resource/软件梳理/macos软件/Raycast Window Management]] - 窗口管理功能
 
 ### 实用工具
-- [[Spaces/1-Project/Raycast/raycast 2fa插件管理]] - 2FA管理
-- [[Spaces/1-Project/Raycast/raycast 快速查看时区]] - 时区查看
-- [[Spaces/1-Project/Raycast/raycast deeplink]] - 深链接功能
-- [[Spaces/1-Project/Raycast/raycast wrapped 年底年度总结]] - 年度总结功能
+- [[Spaces/4-Archive/Raycast/raycast 2fa插件管理]] - 2FA管理
+- [[Spaces/4-Archive/Raycast/raycast 快速查看时区]] - 时区查看
+- [[Spaces/4-Archive/Raycast/raycast deeplink]] - 深链接功能
+- [[Spaces/4-Archive/Raycast/raycast wrapped 年底年度总结]] - 年度总结功能
 
 ## 📝 使用心得
 
 ### 个人使用经验
-- [[Spaces/1-Project/Raycast/Raycast 我最常用的功能]] - 个人使用心得
-- [[Spaces/1-Project/Raycast/raycast topN常用功能]] - 最常用功能清单
+- [[Spaces/4-Archive/Raycast/Raycast 我最常用的功能]] - 个人使用心得
+- [[Spaces/4-Archive/Raycast/raycast topN常用功能]] - 最常用功能清单
 
 ### 开发与定制
-- [[Spaces/1-Project/Raycast/raycast插件开发]] - 插件开发指南
+- [[Spaces/4-Archive/Raycast/raycast插件开发]] - 插件开发指南
 - [[raycast 插件清单]] - 插件清单数据库
 
 ## 🛠️ 技术资源
@@ -169,18 +164,18 @@ Raycast 的生态系统是其核心优势之一，允许用户通过插件和脚
 ## 📚 学习路径
 
 ### 入门级
-1. [[Spaces/1-Project/Raycast/raycast topN常用功能]] - 了解核心功能
-2. [[Spaces/1-Project/Raycast/Raycast 我最常用的功能]] - 参考实际使用经验
-3. [[Spaces/1-Project/Raycast/全局快捷键将app一键打开或隐藏]] - 学习快捷键设置
+1. [[Spaces/4-Archive/Raycast/raycast topN常用功能]] - 了解核心功能
+2. [[Spaces/4-Archive/Raycast/Raycast 我最常用的功能]] - 参考实际使用经验
+3. [[Spaces/4-Archive/Raycast/全局快捷键将app一键打开或隐藏]] - 学习快捷键设置
 
 ### 进阶级
-1. [[Spaces/1-Project/Raycast/raycast ai]] - 深入了解AI功能
+1. [[Spaces/4-Archive/Raycast/raycast ai]] - 深入了解AI功能
 2. [[Spaces/3-Resource/软件梳理/macos软件/Raycast Window Management]] - 掌握窗口管理
-3. [[Spaces/1-Project/Raycast/raycast 2fa插件管理]] - 配置安全工具
+3. [[Spaces/4-Archive/Raycast/raycast 2fa插件管理]] - 配置安全工具
 
 ### 高级定制
-1. [[Spaces/1-Project/Raycast/raycast插件开发]] - 开发自定义插件
-2. [[Spaces/1-Project/Raycast/raycast deeplink]] - 集成深链接功能
+1. [[Spaces/4-Archive/Raycast/raycast插件开发]] - 开发自定义插件
+2. [[Spaces/4-Archive/Raycast/raycast deeplink]] - 集成深链接功能
 3. 相关开源项目 - 学习社区解决方案
 
 ## 🔗 相关资源

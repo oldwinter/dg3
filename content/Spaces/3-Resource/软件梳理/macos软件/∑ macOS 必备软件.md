@@ -133,7 +133,6 @@
 - [[Spaces/3-Resource/软件梳理/macos软件/Clash Pro]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Proxifier]]
 - [[Spaces/3-Resource/软件梳理/macos软件/V2rayU]]
-- [[Spaces/3-Resource/软件梳理/macos软件/GreenHub]]
 - [[Spaces/3-Resource/软件梳理/macos软件/Mihomo Party]]
 
 ### 设计创作

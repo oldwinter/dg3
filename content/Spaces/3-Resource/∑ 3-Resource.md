@@ -1,5 +1,5 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/∑ 3-Resource.md","created":"2025-07-06","modified":"2025-07-12","cssclasses":""}
+{"publish":true,"permalink":"/Spaces/3-Resource/∑ 3-Resource.md","created":"2025-07-06","modified":"2025-07-12","tags":["categories"],"cssclasses":""}
 ---
 
 

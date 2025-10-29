@@ -1,43 +1,46 @@
 ---
-title: Warp
-date created: 2023-01-06
-date modified: 2024-08-07
-评价: 6
-当前使用频率: 5
-icon: '[[icon-cc-image-Warp.png]]'
-当前是否还在使用: true
-是否已重装: true
-brew安装命令: brew install --cask warp
-设置同步: 官方账号
-publish: true
-跨平台技术栈: '[[Cards/Swift]]'
-aliases:
-- Warp
-分类:
-- '[[Atlas/Categories/macOS软件 - fileclass]]'
-- '[[Atlas/Categories/windows软件 - fileclass]]'
-- '[[Atlas/Categories/AI产品-编程 - fileclass]]'
-- '[[Atlas/Categories/raycast插件 - fileclass]]'
-- '[[Atlas/Categories/AI产品 - fileclass]]'
+{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Warp App.md","aliases":"Warp","title":"Warp","created":"2023-01-06","modified":"2025-09-02","cssclasses":""}
 ---
+
+
+Warp官方优惠码，新开账号或续费用得上  
+花5刀买一个月Pro优惠码：5DOLLARGPT5 花1刀买一个月Pro优惠码：DELTA
+
+[[Cards/warp preview 内测版]]
+
+## 3大使用场景
+
+- 直接输入terminal，开箱即用，不用配置各种fish之类的东西
+- 输入# ，跟着自然语言，生成命令，比如：# 使用kubectl命令进入到pod的容器a
+- cmd +i 切换到ai agent模式。
+	- 目前自动识别对中文不友好，先用不了，只能通过cmd i手动切换
+	- 2025-09-15：现在自然识别效果很强，不需要自己切换了
 
 ## 最牛逼的特性
 
 远程 ssh 的terminal ，warpify以后，可以支持各种智能识别功能。
-![CleanShot 2025-07-01 at 14.34.08@2x.png](https://pub-pic.oldwinter.top/2025/07/3b89a0661693c7ce4ceff8fa53d7c268.png)
 
+![CleanShot 2025-07-01 at 14.34.08@2x.png](https://pub-pic.oldwinter.top/2025/07/3b89a0661693c7ce4ceff8fa53d7c268.png)
 
 ## warp ai agent的平替
 
 [[Cards/aichat]]
+
 [[Cards/aider]]
+
+[[Cards/claude code]]
+
+[[Cards/codex cli]]
+
+[[Cards/gemini-cli]]
+
 
 ## warp使用截图
 
 ![](https://pub-pic.oldwinter.top/2025/04/42f9a57a30acdf6c9f9cb7c1609d1de6.png)
 
-
 ##
+
 最近新出的[[Spaces/2-Area/计算机知识/ghostty]]，有空试试好使不
 
 ![Pasted image 20240713181946](https://pub-pic.oldwinter.top/2025/06/dc4788ce9c6dd1b53fc4b406154a6cc9.png)
@@ -61,7 +64,10 @@ aliases:
 
 ## 使用warp 的 launch configurations功能，一键快速开始vibe coding
 
+> 更高级的技巧，在raycast中，将某个配置保存成quicklink，从而可以一键启动。
+
 配置文件：
+
 /Users/oldwinter/.warp/launch_configurations/k8s.yaml
 
 ```yaml

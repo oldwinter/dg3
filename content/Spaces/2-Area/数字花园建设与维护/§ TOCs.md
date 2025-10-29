@@ -1,13 +1,7 @@
 ---
-date created: 2022-08-14
-date modified: 2025-07-09
-tags:
-- todo/持续迭代
-title: § TOCs
-publish: true
-分类:
-- '[[Atlas/Categories/目录笔记 - fileclass]]'
+{"publish":true,"permalink":"/Spaces/2-Area/数字花园建设与维护/§ TOCs.md","title":"§ TOCs","created":"2022-08-14","modified":"2025-07-09","tags":["todo/持续迭代"],"cssclasses":""}
 ---
+
 
 > 尝试定期将笔记库局部内容结构化，结构化的过程中，会有新的体会。
 
@@ -40,7 +34,7 @@ publish: true
 - [[Spaces/2-Area/知识管理/∑ 工作和生活的效率体系建设]]
    - [[Cards/效率系统三原则]]
 		- [[Cards/一元化收集]]
-		- [[Spaces/1-Project/项目管理/项目式管理]]
+		- [[Spaces/4-Archive/项目管理/项目式管理]]
 		- [[多维度链接]]
    - [[Cards/效率成瘾五味药]]
 		- [[Cards/工具的归工具，玩具的归玩具]]
@@ -67,7 +61,7 @@ publish: true
 		  - [[Spaces/3-Resource/软件梳理/平台＋插件]]
 	   - [[Cards/个人输出发布系统]]
 	   - [[Spaces/2-Area/数字花园建设与维护/效率系统4大子系统联动与配合]]
-	   - [[Spaces/1-Project/工作流与SOP/个人效率系统工作流]]
+	   - [[Spaces/4-Archive/工作流与SOP/个人效率系统工作流]]
 - [[Cards/开源、免费与流量]]
 
 ## [[Spaces/2-Area/知识管理/ACCESS 笔记组织法\|ACCESS]]| 我的知识库
@@ -77,7 +71,7 @@ publish: true
 - Spaces
    - [[Spaces/1-Project/_ Project Readme]]
 	  - [[Atlas/MOCs/∑ 个人职业生涯]]
-		 - [[Spaces/1-Project/下半年看看新机会/∑ 个人简历]]
+		 - [[Spaces/4-Archive/2025下半年看看新机会/∑ 个人简历]]
 		 - [[Cards/求职与面试]]
 		 - [[Cards/职场影响力]]
 		 - [[Cards/行业影响力]]
@@ -94,7 +88,7 @@ publish: true
 		 - [[Cards/云计算与个人]]
 		 - [[IAAS、PAAS与SAAS]]
    - [[About Area]]
-	  - [[Spaces/1-Project/golang与后端/∑ 计算机科学]]
+	  - [[Spaces/4-Archive/golang与后端/∑ 计算机科学]]
 		 - [[Cards/计算机基础知识]]
 			- [[Spaces/2-Area/计算机知识/计算机体系结构]]
 			- [[Spaces/2-Area/计算机知识/计算机网络]]

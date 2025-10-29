@@ -1,11 +1,7 @@
 ---
-date created: 2022-07-14
-date modified: 2023-03-14
-title: 本库推荐的obsidian入门路线及资源
-相关笔记:
-  - "[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian入门]]"
-publish: true
+{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/本库推荐的obsidian入门路线及资源.md","title":"本库推荐的obsidian入门路线及资源","created":"2022-07-14","modified":"2023-03-14","cssclasses":""}
 ---
+
 up:: [[🍀 花园导览/🧰 本库指南/🧰 本库使用指南]]
 
 ## 都2022年了，入门最快的方式是看视频
