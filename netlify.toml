@@ -1,0 +1,6 @@
+[build]
+command = "git fetch --unshallow || true && mv -f content/AboutTheGarden.md content/index.md && npx quartz plugin restore && npx quartz build"
+publish = "public"
+
+[build.environment]
+NODE_VERSION = "24"
