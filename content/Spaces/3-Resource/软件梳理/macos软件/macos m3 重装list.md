@@ -3,6 +3,7 @@ publish: true
 permalink: /Spaces/3-Resource/软件梳理/macos软件/macos m3 重装list.md
 created: 2024-07-11
 modified: 2025-07-13
+published: 2025-10-12T18:06:04.317+08:00
 ---
 
 [[macos m4 新装 list]]

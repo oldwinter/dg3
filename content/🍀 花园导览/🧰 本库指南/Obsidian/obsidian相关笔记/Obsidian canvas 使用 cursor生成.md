@@ -3,6 +3,7 @@ publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian canvas 使用 cursor生成.md
 created: 2025-06-08
 modified: 2025-06-27
+published: 2025-09-01T14:49:30.483+08:00
 ---
 
 > [!important] 显著优势

@@ -4,6 +4,7 @@ permalink: /Spaces/3-Resource/软件梳理/macos软件/∑ macOS 必备软件.md
 title: ∑ mac必备软件
 created: 2022-06-09
 modified: 2025-04-03
+published: 2026-02-08T14:30:47.526+08:00
 ---
 
 [[2025年我的macOS软件天梯榜.canvas]]

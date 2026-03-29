@@ -4,6 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/lo
 title: logseq和obsidian的联合联动使用
 created: 2022-06-09
 modified: 2023-03-14
+published: 2025-08-15T22:00:05.139+08:00
 ---
 
 obsidian 的发布功能还没试过，但看了别人的发布效果，感觉也一般。

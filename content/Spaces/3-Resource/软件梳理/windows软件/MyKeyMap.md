@@ -4,6 +4,7 @@ permalink: /Spaces/3-Resource/软件梳理/windows软件/MyKeyMap.md
 description: 一款基于 AutoHotkey 的键盘映射工具
 created: 2024-08-17
 modified: 2025-07-13
+published: 2026-02-14T00:01:10.491+08:00
 ---
 
 [[Capslox]]

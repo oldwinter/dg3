@@ -3,6 +3,7 @@ publish: true
 permalink: /Cards/obsidian 必装插件.md
 created: 2025-07-11
 modified: 2025-07-11
+published: 2025-08-15T21:59:57.923+08:00
 ---
 
 [[∑ obsidian插件]]

@@ -3,6 +3,7 @@ publish: true
 permalink: /Cards/Ideaverse Pro.md
 created: 2025-06-15
 modified: 2025-07-09
+published: 2025-08-15T21:59:57.081+08:00
 ---
 
 [[Nick Milo]]的obsidian使用课程[[Obsidian Flight School]]

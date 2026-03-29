@@ -3,6 +3,7 @@ publish: true
 permalink: /Extras/Prompts/通用/chatgpt 与 可视化画图 mermaid.md
 created: 2024-11-04
 modified: 2025-08-27
+published: 2025-08-27T10:37:58.224+08:00
 ---
 
 如果要样式精美，最推荐的是[[chatgpt 与 svg画图]]

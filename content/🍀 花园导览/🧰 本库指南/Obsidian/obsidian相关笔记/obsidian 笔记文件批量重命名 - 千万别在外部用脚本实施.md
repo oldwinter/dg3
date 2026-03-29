@@ -4,6 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/ob
 title: obsidian 笔记文件批量重命名
 created: 2022-08-11
 modified: 2023-03-14
+published: 2025-08-15T22:00:05.144+08:00
 ---
 
 x:: [[vscode 文件批量重命名]]

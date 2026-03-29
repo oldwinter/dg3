@@ -4,6 +4,7 @@ permalink: /Cards/让Cursor将Cards中的笔记，针对某个主题进行有机
 title: 让Cursor将Cards中的笔记，针对某个主题进行有机串联，然后统一归入PARA
 created: 2025-07-09
 modified: 2025-07-09
+published: 2026-03-07T20:32:32.610+08:00
 ---
 
 ## 第一步：让cursor针对cards目录搜索，并基于某个主题创作moc

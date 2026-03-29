@@ -5,6 +5,7 @@ title: Logseq
 description: "A privacy-first, open-source platform for knowledge management and collaboration. Download link: http://github.com/logseq/logseq/releases. roadmap: http://trello.com/b/8txSM12G/roadmap"
 created: 2022-06-09
 modified: 2025-07-09
+published: 2025-12-28T16:13:30.584+08:00
 ---
 
 ##

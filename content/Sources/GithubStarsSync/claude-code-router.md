@@ -6,6 +6,7 @@ aliases:
 description: Use Claude Code as the foundation for coding infrastructure, allowing you to decide how to interact with the model while enjoying updates from Anthropic.
 created: 2025-06-18
 modified: 2025-06-18
+published: 2025-12-11T01:21:08.488+08:00
 ---
 
 更简洁的竞品：[[y-router]]

@@ -6,6 +6,7 @@ aliases:
 title: File Cooker
 created: 2024-05-11
 modified: 2025-08-19
+published: 2025-08-26T18:25:03.179+08:00
 ---
 
 2025-8-19发现，将文件拖动到canvas，然后选中，右键批量移动，非常方便，都不需要用到file cooker了。

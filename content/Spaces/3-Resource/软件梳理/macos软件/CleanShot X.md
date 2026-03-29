@@ -4,6 +4,7 @@ permalink: /Spaces/3-Resource/软件梳理/macos软件/CleanShot X.md
 title: CleanShot X
 created: 2025-04-03
 modified: 2025-07-26
+published: 2025-12-28T16:28:28.725+08:00
 ---
 
 使用技巧：

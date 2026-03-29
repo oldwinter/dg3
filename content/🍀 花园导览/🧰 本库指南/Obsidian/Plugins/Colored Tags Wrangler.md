@@ -5,6 +5,7 @@ aliases:
   - colored-tags-wrangler
 created: 2025-06-06
 modified: 2025-07-10
+published: 2025-08-26T18:25:02.139+08:00
 ---
 
 给标签染色，还能给背景染色，在canvas中使用，相当于一个跟随卡片本身，而非canvas颜色配置的标记系统。

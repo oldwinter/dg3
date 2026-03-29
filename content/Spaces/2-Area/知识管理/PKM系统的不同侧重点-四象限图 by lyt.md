@@ -4,6 +4,7 @@ permalink: /Spaces/2-Area/知识管理/PKM系统的不同侧重点-四象限图 
 title: PKM系统的不同侧重点-四象限图 by lyt
 created: 2022-06-22
 modified: 2023-03-14
+published: 2025-10-02T14:01:53.263+08:00
 ---
 
 [[∑ PKM]] 系统当下存在 3 对矛盾：

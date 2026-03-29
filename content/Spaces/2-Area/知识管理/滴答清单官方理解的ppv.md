@@ -3,6 +3,7 @@ publish: true
 permalink: /Spaces/2-Area/知识管理/滴答清单官方理解的ppv.md
 created: 2025-07-23
 modified: 2025-07-23
+published: 2025-08-19T16:34:19.575+08:00
 ---
 
 **人生支柱 + 行动路径！打造你的个人管理系统**

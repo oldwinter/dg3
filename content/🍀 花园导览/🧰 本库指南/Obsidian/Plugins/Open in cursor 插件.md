@@ -3,6 +3,7 @@ publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Open in cursor 插件.md
 created: 2025-03-21
 modified: 2025-07-10
+published: 2025-11-04T01:08:09.165+08:00
 ---
 
 发布太麻烦了，自己用吧。

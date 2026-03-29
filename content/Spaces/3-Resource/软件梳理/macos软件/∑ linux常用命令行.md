@@ -7,6 +7,7 @@ aliases:
 title: ∑ linux常用命令行
 created: 2022-06-09
 modified: 2026-03-14
+published: 2026-03-14T19:58:37.992+08:00
 ---
 
 这一页收拢本库里跟 CLI、命令行工具、shell、终端工作流相关的笔记。

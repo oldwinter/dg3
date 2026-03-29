@@ -4,6 +4,7 @@ permalink: /🍀 花园导览/🔧 如何用好AI工具.md
 title: 🔧 如何用好AI工具
 created: 2023-03-16
 modified: 2025-07-12
+published: 2026-02-08T13:48:32.103+08:00
 ---
 
 > [!MAP] 领域导航

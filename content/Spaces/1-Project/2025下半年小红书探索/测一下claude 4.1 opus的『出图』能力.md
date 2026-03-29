@@ -3,6 +3,7 @@ publish: true
 permalink: /Spaces/1-Project/2025下半年小红书探索/测一下claude 4.1 opus的『出图』能力.md
 created: 2025-08-06
 modified: 2025-08-06
+published: 2025-08-14T19:13:29.809+08:00
 ---
 
 图一是一句话出的看板，无任何二次改动。

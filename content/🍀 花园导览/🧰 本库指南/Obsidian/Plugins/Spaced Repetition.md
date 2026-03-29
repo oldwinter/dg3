@@ -7,6 +7,7 @@ aliases:
 title: Spaced Repetition
 created: 2022-06-09
 modified: 2023-03-14
+published: 2025-08-26T18:25:03.568+08:00
 ---
 
 多个闪卡插件，还是最喜欢这个，给笔记本身作为闪卡，从而不会污染笔记格式。

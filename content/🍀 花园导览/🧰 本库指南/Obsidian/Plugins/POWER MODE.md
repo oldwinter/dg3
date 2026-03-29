@@ -5,6 +5,7 @@ aliases:
   - power-mode
 created: 2025-04-28
 modified: 2025-08-30
+published: 2025-08-30T19:11:34.225+08:00
 ---
 
 提供情绪价值！！必须有用！！

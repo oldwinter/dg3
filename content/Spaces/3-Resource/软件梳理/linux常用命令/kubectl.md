@@ -6,6 +6,7 @@ aliases:
 title: kubectl
 created: 2025-07-04
 modified: 2025-07-04
+published: 2026-03-14T19:59:23.320+08:00
 ---
 
 ## 安装

@@ -3,6 +3,7 @@ publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian icon替换.md
 created: 2025-04-04T01:06:54.445+08:00
 modified: 2025-11-10T11:24:59.708+08:00
+published: 2025-11-10T11:24:59.708+08:00
 ---
 
 [[obsidian 插件内置的各种icon名称 lucide图标为主，查询]]

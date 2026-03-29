@@ -4,6 +4,7 @@ permalink: /Spaces/3-Resource/软件梳理/macos软件/Cursor.md
 title: Cursor
 created: 2023-12-02
 modified: 2025-09-08
+published: 2025-12-28T16:17:05.970+08:00
 ---
 
 [[cursor cli]]

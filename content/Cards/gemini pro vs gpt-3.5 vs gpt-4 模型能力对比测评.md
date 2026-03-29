@@ -3,6 +3,7 @@ publish: true
 permalink: /Cards/gemini pro vs gpt-3.5 vs gpt-4 模型能力对比测评.md
 created: 2023-12-22
 modified: 2023-12-26
+published: 2026-02-08T13:48:32.070+08:00
 ---
 
 up:: [[∑ 大模型产品对比]]

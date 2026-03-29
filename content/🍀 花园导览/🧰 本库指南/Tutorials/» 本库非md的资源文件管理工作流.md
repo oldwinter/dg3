@@ -7,6 +7,7 @@ aliases:
 title: » 本库非md的资源文件管理工作流
 created: 2022-08-07
 modified: 2023-03-14
+published: 2025-08-25T19:09:00.821+08:00
 ---
 
 # 非 MD 资源文件管理工作流

@@ -3,6 +3,7 @@ publish: true
 permalink: /Extras/Prompts/∑ MOC - prompts 提示词管理.md
 created: 2025-04-24
 modified: 2025-08-27
+published: 2026-01-01T12:12:58.199+08:00
 ---
 
 [[如何快速地搜索存在obsidian中的提示词并复制]]

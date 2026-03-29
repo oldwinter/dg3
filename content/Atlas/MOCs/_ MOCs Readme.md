@@ -6,6 +6,7 @@ aliases:
 title: ∑ MOCs
 created: 2022-06-06
 modified: 2026-03-14
+published: 2026-03-14T20:01:54.130+08:00
 ---
 
 > `Atlas/MOCs/` 是本库的 MOC 入口层。这里主要解决“从哪里开始逛”“主题总入口放哪里”“哪些 MOC 该长期维护”这 3 个问题。

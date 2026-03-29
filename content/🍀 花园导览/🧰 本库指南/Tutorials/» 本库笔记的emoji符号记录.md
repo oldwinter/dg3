@@ -4,6 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Tutorials/» 本库笔记的emoj
 title: » 本库笔记的emoji符号记录
 created: 2022-08-05
 modified: 2023-03-14
+published: 2025-08-31T00:40:49.631+08:00
 ---
 
 ## 为什么要给文件名引入emoji

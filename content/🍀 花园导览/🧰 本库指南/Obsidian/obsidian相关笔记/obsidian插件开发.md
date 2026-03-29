@@ -4,6 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/ob
 title: obsidian插件开发
 created: 2023-08-08
 modified: 2023-08-08
+published: 2025-08-24T21:17:03.574+08:00
 ---
 
 ## 一键让ai创建

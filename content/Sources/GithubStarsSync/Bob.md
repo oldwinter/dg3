@@ -5,6 +5,7 @@ title: Bob
 description: Bob 是一款 macOS 平台的翻译和 OCR 软件。
 created: 2022-06-09
 modified: 2025-07-28
+published: 2025-10-13T14:37:43.241+08:00
 ---
 
 ## 配置同步

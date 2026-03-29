@@ -4,6 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库推荐的obsidia
 title: 本库推荐的obsidian入门路线及资源
 created: 2022-07-14
 modified: 2023-03-14
+published: 2025-08-29T02:36:53.214+08:00
 ---
 
 up:: [[🧰 本库使用指南]]

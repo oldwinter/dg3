@@ -3,6 +3,7 @@ publish: true
 permalink: /Spaces/2-Area/macos高效使用/macos 批量修改不同扩展名的默认程序 - duti.md
 created: 2024-12-16
 modified: 2025-06-24
+published: 2025-08-22T12:18:37.105+08:00
 ---
 
 查看

@@ -3,6 +3,7 @@ publish: true
 permalink: /Extras/Prompts/通用/使用CFF法则优化夸人语句.md
 created: 2025-06-05
 modified: 2025-06-05
+published: 2025-08-25T19:11:16.903+08:00
 ---
 
 [[CFF法则 - 夸奖别人的方法|CFF]]

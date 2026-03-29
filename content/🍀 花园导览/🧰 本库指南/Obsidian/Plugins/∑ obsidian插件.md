@@ -4,6 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/Plugins/∑ obsidian插
 title: ∑ obsidian插件
 created: 2022-08-15
 modified: 2025-07-05
+published: 2025-08-15T22:00:05.126+08:00
 ---
 
 ## 本仓库的已安装插件列表

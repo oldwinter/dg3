@@ -4,4 +4,5 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Ob
 title: Obsidian42 - BRAT
 created: 2023-01-23
 modified: 2023-03-14
+published: 2025-08-15T22:00:05.130+08:00
 ---

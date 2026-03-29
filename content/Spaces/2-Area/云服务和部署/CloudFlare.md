@@ -4,6 +4,7 @@ permalink: /Spaces/2-Area/云服务和部署/CloudFlare.md
 title: CloudFlare
 created: 2022-07-01
 modified: 2023-03-14
+published: 2026-03-20T18:56:21.591+08:00
 ---
 
 日常使用考虑配合ai生成命令行，用[[wrangler]]进行操作

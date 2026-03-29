@@ -4,6 +4,7 @@ permalink: /Atlas/Bases/_ About Bases.md
 title: About DB folders
 created: 2023-03-01
 modified: 2025-07-15
+published: 2025-10-23T00:46:26.015+08:00
 ---
 
 > obsidian版本号>=1.9，才能使用base功能哦。未拥有obsidian catalyst的用户，请耐心等待这个大版本公开，个人预估在25年8月左右。

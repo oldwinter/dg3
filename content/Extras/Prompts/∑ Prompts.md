@@ -3,6 +3,7 @@ publish: true
 permalink: /Extras/Prompts/∑ Prompts.md
 created: 2026-02-08T13:48:32.074+08:00
 modified: 2026-02-08T13:48:32.074+08:00
+published: 2026-02-08T13:48:32.074+08:00
 ---
 
 ## 给工具用的整体规则型提示词

@@ -3,6 +3,7 @@ publish: true
 permalink: 2025/my-macos-ranks
 created: 2025-07-14
 modified: 2025-07-14
+published: 2026-02-08T13:48:32.095+08:00
 ---
 
 ## God

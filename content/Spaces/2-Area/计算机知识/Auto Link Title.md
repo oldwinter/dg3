@@ -6,6 +6,7 @@ aliases:
 title: Auto Link Title
 created: 2024-05-11
 modified: 2025-07-10
+published: 2025-08-26T18:25:02.936+08:00
 ---
 
 给自动粘贴的url，自动获取标题。小工具，但必装。

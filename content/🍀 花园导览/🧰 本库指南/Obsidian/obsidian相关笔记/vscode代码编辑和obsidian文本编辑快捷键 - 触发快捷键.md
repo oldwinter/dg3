@@ -6,6 +6,7 @@ aliases:
 title: vscode代码编辑和obsidian文本编辑快捷键
 created: 2022-06-15
 modified: 2025-06-14
+published: 2025-08-15T22:00:05.153+08:00
 ---
 
 默认的有些快捷键可能有不同，尽量地去改成一致，带来相同的编辑体验。

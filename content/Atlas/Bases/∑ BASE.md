@@ -5,6 +5,7 @@ aliases:
   - Bases
 created: 2025-05-22
 modified: 2025-08-24
+published: 2026-03-08T01:37:26.144+08:00
 ---
 
 x: [[base 使用技巧]]

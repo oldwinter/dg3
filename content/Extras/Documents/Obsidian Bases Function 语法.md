@@ -3,6 +3,7 @@ publish: true
 permalink: /Extras/Documents/Obsidian Bases Function 语法.md
 created: 2025-07-25
 modified: 2025-08-19
+published: 2025-08-19T21:19:38.077+08:00
 ---
 
 Functions are used in [Bases](https://help.obsidian.md/bases) to manipulate data from [Properties](https://help.obsidian.md/properties) in filters and formulas. See the [bases syntax](https://help.obsidian.md/bases/syntax) reference to learn more about how you can use functions.

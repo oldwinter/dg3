@@ -5,6 +5,7 @@ aliases:
   - better-export-pdf
 created: 2024-05-11
 modified: 2025-08-30
+published: 2025-08-30T17:45:53.429+08:00
 ---
 
 ## Better Export PDF

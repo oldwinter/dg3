@@ -6,6 +6,7 @@ aliases:
 title: Style Settings
 created: 2023-01-23
 modified: 2025-07-17
+published: 2025-08-26T18:25:03.581+08:00
 ---
 
 ## 给style setting中某些字段，配置快捷命令的方式。

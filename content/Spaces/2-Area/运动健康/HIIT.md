@@ -4,6 +4,7 @@ permalink: /Spaces/2-Area/运动健康/HIIT.md
 title: HIIT
 created: 2022-09-04
 modified: 2023-03-14
+published: 2025-08-15T22:00:03.809+08:00
 ---
 
 x:: [[EPOC]], [[HIIT，持续有氧各自有什么优势]]

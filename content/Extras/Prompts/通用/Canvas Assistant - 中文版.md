@@ -4,6 +4,7 @@ permalink: /Extras/Prompts/通用/Canvas Assistant - 中文版.md
 title: Canvas Assistant - 中文版
 created: 2025-01-08
 modified: 2025-08-27
+published: 2025-08-27T10:37:16.861+08:00
 ---
 
 # Canvas Assistant - 中文版

@@ -3,6 +3,7 @@ publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian graph.md
 created: 2025-06-24
 modified: 2025-06-24
+published: 2025-08-15T22:00:05.127+08:00
 ---
 
 ![image.png](https://pub-pic.oldwinter.top/2025/06/e3a4ceea68b2b329acf7e69e3374ea62.png)

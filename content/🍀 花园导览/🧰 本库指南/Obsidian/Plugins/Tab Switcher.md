@@ -5,6 +5,7 @@ aliases:
   - cycle-through-panes
 created: 2025-06-06
 modified: 2025-07-10
+published: 2025-08-26T18:25:02.350+08:00
 ---
 
 表现好于[[Tab Selector]]，它能跨tab group，而后者是不行的。

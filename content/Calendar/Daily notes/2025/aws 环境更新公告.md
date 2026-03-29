@@ -3,6 +3,7 @@ publish: true
 permalink: /Calendar/Daily notes/2025/aws 环境更新公告.md
 created: 2025-11-21
 modified: 2025-12-02
+published: 2025-12-08T21:51:26.985+08:00
 ---
 
 数据apiserver\

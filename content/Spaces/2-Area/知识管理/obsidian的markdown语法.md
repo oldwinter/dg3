@@ -4,6 +4,7 @@ permalink: /Spaces/2-Area/知识管理/obsidian的markdown语法.md
 title: obsidian的markdown语法
 created: 2022-08-08
 modified: 2025-08-28
+published: 2025-08-28T22:53:56.562+08:00
 ---
 
 [Obsidian Flavored Markdown - Obsidian Help](https://help.obsidian.md/obsidian-flavored-markdown)
