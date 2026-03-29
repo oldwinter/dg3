@@ -1,5 +1,7 @@
 #yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 
+#yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: 🌱 oldwinterの数字花园
@@ -207,7 +209,7 @@ plugins:
     enabled: true
     order: 50
     options:
-      theme: willemstad
+      theme: agate
 
 layout:
   groups:
