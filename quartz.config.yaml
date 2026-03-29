@@ -1,6 +1,8 @@
+#yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "🌱 oldwinterの数字花园"
+  pageTitle: 🌱 oldwinterの数字花园
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -50,7 +52,7 @@ plugins:
         - aliases
       excludedProperties: []
       hidePropertiesView: true
-      delimiters: "---"
+      delimiters: ---
       language: yaml
     order: 5
   - source: github:quartz-community/created-modified-date
@@ -197,6 +199,15 @@ plugins:
     options:
       links:
         GitHub: https://github.com/oldwinter/dg3
+  - source:
+      name: quartz-themes
+      repo: github:saberzero1/quartz-themes
+      subdir: plugin
+      ref: main
+    enabled: true
+    order: 50
+    options:
+      theme: willemstad
 
 layout:
   groups:
