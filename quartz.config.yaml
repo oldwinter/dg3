@@ -216,10 +216,11 @@ layout:
         beforeBody: []
         left: []
         right: []
-    content: {}
     folder:
       positions:
         right: []
     tag:
       positions:
         right: []
+    canvas: {}
+    bases: {}
