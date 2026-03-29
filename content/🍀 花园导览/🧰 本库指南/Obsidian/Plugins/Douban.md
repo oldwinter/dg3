@@ -1,8 +1,12 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Douban.md","aliases":"obsidian-douban-plugin","title":"Douban","created":"2024-05-11","modified":"2025-07-10","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Douban.md
+aliases:
+  - obsidian-douban-plugin
+title: Douban
+created: 2024-05-11
+modified: 2025-07-10
 ---
-
-
 
 其他都很好，必备。
 

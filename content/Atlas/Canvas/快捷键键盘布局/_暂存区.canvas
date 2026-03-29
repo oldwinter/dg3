@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"f3d9594a09aef03f","type":"group","x":-1087,"y":-203,"width":2580,"height":670,"color":"4","label":"windows快捷键布局"},
+		{"id":"9f26de6eb5656c04","type":"group","ratio":1.7777777777777777,"x":-68,"y":-168,"width":1200,"height":675,"label":"New Slide"},
+		{"id":"d37be17d12fe92b4","type":"file","file":"Atlas/Canvas/快捷键键盘布局/键盘快捷键映射图 - option - macOS.canvas","x":-1492,"y":-507,"width":400,"height":400},
+		{"id":"06c4c1009c1e62f2","type":"file","file":"Atlas/Canvas/快捷键键盘布局/raycast windows management 快捷键布局.canvas","x":893,"y":-73,"width":400,"height":400},
+		{"id":"759072be8378e8c1","type":"file","file":"Atlas/Canvas/快捷键键盘布局/windows alt快捷键.canvas","x":153,"y":-73,"width":400,"height":400},
+		{"id":"29346d4d5ce7f1ea","type":"file","file":"Atlas/Canvas/快捷键键盘布局/键盘快捷键映射 - Windows.canvas","x":-968,"y":-107,"width":400,"height":400}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

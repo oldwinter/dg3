@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"27932be74a3326e7","type":"file","file":"Atlas/Bases/App应用软件管理.base","x":-440,"y":-100,"width":1143,"height":1182},
+		{"id":"b4424fea4e9cd367","type":"file","file":"Atlas/Bases/App应用软件管理.base","subpath":"#macos软件画廊视图-3d果冻","x":893,"y":-100,"width":1149,"height":1182},
+		{
+			"id":"8ac8d767728dd22b",
+			"type":"text",
+			"text":"提示词 from 歸藏 in x",
+			"styleAttributes":{"textAlign":"center"},
+			"x":2647,
+			"y":1125,
+			"width":260,
+			"height":60
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

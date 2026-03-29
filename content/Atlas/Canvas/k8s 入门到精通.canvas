@@ -1,0 +1,30 @@
+{
+	"edges":[
+		{"id":"e_center_overview","fromNode":"center","fromSide":"left","toNode":"overview","toSide":"bottom"},
+		{"id":"e_center_path","fromNode":"center","fromSide":"top","toNode":"path","toSide":"bottom"},
+		{"id":"e_center_install","fromNode":"center","fromSide":"top","toNode":"install","toSide":"bottom"},
+		{"id":"e_center_component","fromNode":"center","fromSide":"right","toNode":"component","toSide":"bottom"},
+		{"id":"e_center_resource","toFloating":false,"fromNode":"center","fromSide":"right","toNode":"resource","toSide":"left"},
+		{"id":"e_center_network","fromNode":"center","fromSide":"bottom","toNode":"network","toSide":"top"},
+		{"id":"e_center_storage","fromNode":"center","fromSide":"left","toNode":"storage","toSide":"top"},
+		{"id":"e_center_security","fromNode":"center","fromSide":"left","toNode":"security","toSide":"right"},
+		{"id":"e_center_ops","fromNode":"center","fromSide":"left","toNode":"ops","toSide":"right"},
+		{"id":"e_center_ecosystem","fromNode":"center","fromSide":"left","toNode":"ecosystem","toSide":"right"},
+		{"id":"e_center_practice","fromNode":"center","fromSide":"left","toNode":"practice","toSide":"right"}
+	],
+	"metadata":{"version":"1.0-1.0"},
+	"nodes":[
+		{"id":"center","type":"file","file":"Sources/AIGC/∑ k8s 入门到精通 MOC.md","x":0,"y":-300,"width":400,"height":700},
+		{"id":"overview","type":"text","text":"🎯 学习概览","x":-600,"y":-300,"width":220,"height":120,"color":"3"},
+		{"id":"path","type":"text","text":"🛣️ 学习路径","x":-200,"y":-500,"width":220,"height":120,"color":"3"},
+		{"id":"install","type":"text","text":"🔧 安装与环境","x":250,"y":-500,"width":220,"height":120,"color":"3"},
+		{"id":"component","type":"text","text":"🧩 核心组件","x":650,"y":-250,"width":220,"height":120,"color":"3"},
+		{"id":"resource","type":"text","text":"📐 资源操作","x":650,"y":50,"width":220,"height":120,"color":"3"},
+		{"id":"network","type":"text","text":"🚪 服务与网络","x":250,"y":400,"width":220,"height":120,"color":"3"},
+		{"id":"storage","type":"text","text":"💾 存储持久化","x":-200,"y":400,"width":220,"height":120,"color":"3"},
+		{"id":"security","type":"text","text":"🔒 安全证书","x":-600,"y":50,"width":220,"height":120,"color":"3"},
+		{"id":"ops","type":"text","text":"⚙️ 运维调试","x":-950,"y":-250,"width":220,"height":120,"color":"3"},
+		{"id":"ecosystem","type":"text","text":"🚀 生态工具链","x":-950,"y":-50,"width":220,"height":120,"color":"3"},
+		{"id":"practice","type":"text","text":"👷 实战实践","x":-600,"y":300,"width":220,"height":120,"color":"3"}
+	]
+}

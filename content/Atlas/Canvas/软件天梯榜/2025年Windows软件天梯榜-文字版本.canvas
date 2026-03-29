@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "id": "562b114f1cb65c28",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#S",
+      "x": 180,
+      "y": -480,
+      "width": 400,
+      "height": 500,
+      "color": "1"
+    },
+    {
+      "id": "c0c5857d797fbba1",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#God",
+      "x": -260,
+      "y": -200,
+      "width": 400,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "3dbe256ad73e3d25",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#^874f84",
+      "styleAttributes": {
+        "border": "dotted"
+      },
+      "x": -260,
+      "y": -480,
+      "width": 400,
+      "height": 200,
+      "color": "1"
+    },
+    {
+      "id": "ab422e3cf3acef5c",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#B",
+      "x": 620,
+      "y": -480,
+      "width": 400,
+      "height": 1280,
+      "color": "6"
+    },
+    {
+      "id": "bad512d63e0794bc",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#C",
+      "x": 1060,
+      "y": -480,
+      "width": 400,
+      "height": 580,
+      "color": "4"
+    },
+    {
+      "id": "47be4d9a97b8d309",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#A",
+      "x": 180,
+      "y": 60,
+      "width": 400,
+      "height": 740,
+      "color": "3"
+    },
+    {
+      "id": "bec38d97bad4424b",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#D",
+      "x": 1060,
+      "y": 180,
+      "width": 400,
+      "height": 620,
+      "color": "5"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

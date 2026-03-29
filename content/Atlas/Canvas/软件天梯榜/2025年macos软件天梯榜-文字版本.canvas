@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "a8fe4f8e5c9fb4d4",
+      "type": "file",
+      "file": "Spaces/3-Resource/软件梳理/macos软件/2025年我的macOS软件天梯榜-文字版.md",
+      "subpath": "#S",
+      "x": -598,
+      "y": -683,
+      "width": 873,
+      "height": 621,
+      "color": "1"
+    },
+    {
+      "id": "e68fa2a3338382f2",
+      "type": "file",
+      "file": "Spaces/3-Resource/软件梳理/macos软件/2025年我的macOS软件天梯榜-文字版.md",
+      "subpath": "#A",
+      "x": -598,
+      "y": -14,
+      "width": 873,
+      "height": 949,
+      "color": "3"
+    },
+    {
+      "id": "771b0b10421b7f19",
+      "type": "file",
+      "file": "Spaces/3-Resource/软件梳理/macos软件/2025年我的macOS软件天梯榜-文字版.md",
+      "subpath": "#D",
+      "x": 339,
+      "y": 515,
+      "width": 260,
+      "height": 420,
+      "color": "5"
+    },
+    {
+      "id": "21be75995f86cffb",
+      "type": "file",
+      "file": "Spaces/3-Resource/软件梳理/macos软件/2025年我的macOS软件天梯榜-文字版.md",
+      "subpath": "#B",
+      "x": 339,
+      "y": -683,
+      "width": 260,
+      "height": 621,
+      "color": "6"
+    },
+    {
+      "id": "8d761509a80bebae",
+      "type": "file",
+      "file": "Spaces/3-Resource/软件梳理/macos软件/2025年我的macOS软件天梯榜-文字版.md",
+      "subpath": "#C",
+      "x": 339,
+      "y": -14,
+      "width": 260,
+      "height": 440,
+      "color": "4"
+    },
+    {
+      "id": "56e1b3e627e56fbe",
+      "type": "file",
+      "file": "Spaces/3-Resource/软件梳理/macos软件/2025年我的macOS软件天梯榜-文字版.md",
+      "subpath": "#God",
+      "x": -598,
+      "y": -934,
+      "width": 1197,
+      "height": 200,
+      "color": "1"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

@@ -1,7 +1,15 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/拓扑灵犀/AI-Agent公司3个月运维开发贡献计划.md","title":"AI-Agent公司3个月运维开发贡献计划","created":"2025-10-05","modified":"2025-10-05","tags":["运维","AI-Agent","计划","贡献"],"cssclasses":""}
+publish: true
+permalink: /Spaces/1-Project/拓扑灵犀/AI-Agent公司3个月运维开发贡献计划.md
+title: AI-Agent公司3个月运维开发贡献计划
+created: 2025-10-05
+modified: 2025-10-05
+tags:
+  - 运维
+  - AI-Agent
+  - 计划
+  - 贡献
 ---
-
 
 # 基于个人简历的3个月运维开发贡献计划
 

@@ -1,0 +1,732 @@
+{
+  "edges": [
+    {
+      "fromNode": "sheng_hong",
+      "fromSide": "left",
+      "id": "rel_sh_sltt",
+      "label": "养母/子",
+      "toNode": "sheng_laotaitai",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "sheng_minglan",
+      "fromSide": "top",
+      "id": "rel_sm_sltt",
+      "label": "祖孙 (抚养)",
+      "toNode": "sheng_laotaitai",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "sheng_hong",
+      "fromSide": "left",
+      "id": "rel_sh_wr",
+      "label": "夫妻",
+      "toNode": "wang_ruofu",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "sheng_hong",
+      "fromSide": "top",
+      "id": "rel_sh_lqs",
+      "label": "夫妻(妾)",
+      "toNode": "lin_qinshuang",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "sheng_hong",
+      "fromSide": "right",
+      "id": "rel_sh_wsy",
+      "label": "夫妻(妾)",
+      "toNode": "wei_shuyi",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "wang_ruofu",
+      "fromSide": "bottom",
+      "id": "rel_wr_shl",
+      "label": "母女",
+      "toNode": "sheng_hualan",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "wang_ruofu",
+      "fromSide": "bottom",
+      "id": "rel_wr_scb",
+      "label": "母子",
+      "toNode": "sheng_changbai",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "wang_ruofu",
+      "fromSide": "bottom",
+      "id": "rel_wr_srl",
+      "label": "母女",
+      "toNode": "sheng_rulan",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "lin_qinshuang",
+      "fromSide": "bottom",
+      "id": "rel_lqs_scf",
+      "label": "母子",
+      "toNode": "sheng_changfeng",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "lin_qinshuang",
+      "fromSide": "bottom",
+      "id": "rel_lqs_sml",
+      "label": "母女",
+      "toNode": "sheng_molan",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "wei_shuyi",
+      "fromSide": "bottom",
+      "id": "rel_wsy_smlan",
+      "label": "母女",
+      "toNode": "sheng_minglan",
+      "toSide": "top"
+    },
+    {
+      "color": "5",
+      "fromNode": "sheng_minglan",
+      "fromSide": "right",
+      "id": "rel_minglan_gutingye",
+      "label": "夫妻 (Husband/Wife)",
+      "styleAttributes": {
+        "path": "long-dashed"
+      },
+      "toNode": "gu_tingye",
+      "toSide": "left"
+    },
+    {
+      "color": "2",
+      "fromNode": "sheng_minglan",
+      "fromSide": "right",
+      "id": "rel_minglan_qiheng",
+      "label": "初恋 (First Love)",
+      "toNode": "qi_heng",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "sheng_minglan",
+      "fromSide": "bottom",
+      "id": "rel_minglan_hehongwen",
+      "label": "议亲 (Almost Engaged)",
+      "toNode": "he_hongwen",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "sheng_minglan",
+      "fromSide": "left",
+      "id": "rel_minglan_rulan",
+      "label": "姐妹",
+      "toNode": "sheng_rulan",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "sheng_minglan",
+      "fromSide": "top",
+      "id": "rel_minglan_molan",
+      "label": "敌对姐妹 (Rivals)",
+      "toNode": "sheng_molan",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "gu_tingye",
+      "fromSide": "top",
+      "id": "rel_gty_gyk",
+      "label": "父子",
+      "toNode": "gu_yankai",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "gu_tingye",
+      "fromSide": "top",
+      "id": "rel_gty_xqs",
+      "label": "继母/子 (Enemy)",
+      "toNode": "xiao_qinshi",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "gu_tingye",
+      "fromSide": "left",
+      "id": "rel_gty_gtyu",
+      "label": "兄弟",
+      "toNode": "gu_tingyu",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "gu_tingye",
+      "fromSide": "right",
+      "id": "rel_gty_zmn",
+      "label": "外室/仇人",
+      "toNode": "zhu_manniang",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "zhu_manniang",
+      "fromSide": "bottom",
+      "id": "rel_zmn_rong",
+      "label": "母女",
+      "toNode": "rong_er",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "zhu_manniang",
+      "fromSide": "bottom",
+      "id": "rel_zmn_chang",
+      "label": "母子",
+      "toNode": "chang_er",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "qi_heng",
+      "fromSide": "top",
+      "id": "rel_qh_pnj",
+      "label": "母子",
+      "toNode": "pingning_junzhu",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "timeline_childhood",
+      "fromSide": "right",
+      "id": "timeline_edge_1",
+      "styleAttributes": {
+        "pathfindingMethod": "direct"
+      },
+      "toNode": "timeline_adolescence",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "timeline_adolescence",
+      "fromSide": "right",
+      "id": "timeline_edge_2",
+      "styleAttributes": {
+        "pathfindingMethod": "direct"
+      },
+      "toNode": "timeline_adulthood",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "timeline_childhood",
+      "fromSide": "bottom",
+      "id": "event_edge_1",
+      "toNode": "event_wei_death",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_childhood",
+      "fromSide": "bottom",
+      "id": "event_edge_2",
+      "toNode": "event_raised_by_grandma",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_childhood",
+      "fromSide": "bottom",
+      "id": "event_edge_3",
+      "toNode": "event_first_love",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adolescence",
+      "fromSide": "bottom",
+      "id": "event_edge_4",
+      "toNode": "event_qi_heng_fails",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adolescence",
+      "fromSide": "bottom",
+      "id": "event_edge_5",
+      "toNode": "event_molan_scheme",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adolescence",
+      "fromSide": "bottom",
+      "id": "event_edge_6",
+      "toNode": "event_gu_proposal",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adulthood",
+      "fromSide": "bottom",
+      "id": "event_edge_7",
+      "toNode": "event_wedding",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adulthood",
+      "fromSide": "bottom",
+      "id": "event_edge_8",
+      "toNode": "event_household_manage",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adulthood",
+      "fromSide": "bottom",
+      "id": "event_edge_9",
+      "toNode": "event_vs_xiaoqinshi",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adulthood",
+      "fromSide": "bottom",
+      "id": "event_edge_10",
+      "toNode": "event_exile",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adulthood",
+      "fromSide": "bottom",
+      "id": "event_edge_11",
+      "toNode": "event_justice",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adulthood",
+      "fromSide": "bottom",
+      "id": "event_edge_12",
+      "toNode": "event_coup_return",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "timeline_adulthood",
+      "fromSide": "bottom",
+      "id": "event_edge_13",
+      "toNode": "event_happy_ending",
+      "toSide": "top"
+    },
+    {
+      "color": "6",
+      "fromNode": "sheng_minglan",
+      "fromSide": "bottom",
+      "id": "crosslink_minglan_wei_death",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toNode": "event_wei_death",
+      "toSide": "top"
+    },
+    {
+      "color": "6",
+      "fromNode": "sheng_minglan",
+      "fromSide": "bottom",
+      "id": "crosslink_minglan_first_love",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toNode": "event_first_love",
+      "toSide": "top"
+    },
+    {
+      "color": "6",
+      "fromNode": "qi_heng",
+      "fromSide": "bottom",
+      "id": "crosslink_qiheng_first_love",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toNode": "event_first_love",
+      "toSide": "top"
+    },
+    {
+      "color": "6",
+      "fromNode": "gu_tingye",
+      "fromSide": "bottom",
+      "id": "crosslink_gutingye_proposal",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "toNode": "event_gu_proposal",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "frontmatter": {},
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "height": 1000,
+      "id": "timeline_group",
+      "label": "关键事件时间线 Key Events Timeline",
+      "type": "group",
+      "width": 4500,
+      "x": -2100,
+      "y": 1300
+    },
+    {
+      "color": "1",
+      "height": 1800,
+      "id": "group_gu_family",
+      "label": "顾家 The Gu Family",
+      "type": "group",
+      "width": 1450,
+      "x": -300,
+      "y": -600
+    },
+    {
+      "color": "4",
+      "height": 1800,
+      "id": "group_sheng_family",
+      "label": "盛家 The Sheng Family",
+      "type": "group",
+      "width": 1400,
+      "x": -2000,
+      "y": -600
+    },
+    {
+      "color": "6",
+      "height": 600,
+      "id": "group_qi_family",
+      "label": "齐家 The Qi Family",
+      "type": "group",
+      "width": 500,
+      "x": 1450,
+      "y": -250
+    },
+    {
+      "height": 60,
+      "id": "sheng_laotaitai",
+      "text": "盛老太太 (勇毅侯府嫡女)\nSheng Hong's adoptive mother",
+      "type": "text",
+      "width": 250,
+      "x": -1950,
+      "y": -500
+    },
+    {
+      "height": 60,
+      "id": "sheng_hong",
+      "text": "盛紘 Sheng Hong\nHead of Sheng family",
+      "type": "text",
+      "width": 200,
+      "x": -1650,
+      "y": -500
+    },
+    {
+      "height": 60,
+      "id": "wang_ruofu",
+      "text": "王若弗 Wang Ruofu (大娘子)\nSheng Hong's first wife",
+      "type": "text",
+      "width": 250,
+      "x": -1950,
+      "y": -200
+    },
+    {
+      "height": 60,
+      "id": "lin_qinshuang",
+      "text": "林噙霜 Lin Qinshuang (林小娘)\nSheng Hong's concubine",
+      "type": "text",
+      "width": 250,
+      "x": -1650,
+      "y": -200
+    },
+    {
+      "height": 60,
+      "id": "wei_shuyi",
+      "text": "卫恕意 Wei Shuyi (卫小娘)\nSheng Hong's concubine",
+      "type": "text",
+      "width": 250,
+      "x": -1350,
+      "y": -200
+    },
+    {
+      "height": 60,
+      "id": "sheng_hualan",
+      "text": "盛华兰 Sheng Hualan",
+      "type": "text",
+      "width": 200,
+      "x": -1950,
+      "y": 100
+    },
+    {
+      "height": 60,
+      "id": "sheng_changbai",
+      "text": "盛长柏 Sheng Changbai",
+      "type": "text",
+      "width": 200,
+      "x": -1950,
+      "y": 200
+    },
+    {
+      "height": 60,
+      "id": "sheng_rulan",
+      "text": "盛如兰 Sheng Rulan",
+      "type": "text",
+      "width": 200,
+      "x": -1950,
+      "y": 300
+    },
+    {
+      "height": 60,
+      "id": "he_hongwen",
+      "text": "贺弘文 He Hongwen",
+      "type": "text",
+      "width": 200,
+      "x": -1350,
+      "y": 400
+    },
+    {
+      "height": 60,
+      "id": "sheng_changfeng",
+      "text": "盛长枫 Sheng Changfeng",
+      "type": "text",
+      "width": 200,
+      "x": -1650,
+      "y": 100
+    },
+    {
+      "height": 60,
+      "id": "sheng_molan",
+      "text": "盛墨兰 Sheng Molan",
+      "type": "text",
+      "width": 200,
+      "x": -1650,
+      "y": 200
+    },
+    {
+      "height": 80,
+      "id": "sheng_minglan",
+      "styleAttributes": {
+        "shape": "pill"
+      },
+      "text": "盛明兰 Sheng Minglan\n(女主角) Protagonist",
+      "type": "text",
+      "width": 250,
+      "x": -1350,
+      "y": 100
+    },
+    {
+      "height": 80,
+      "id": "gu_tingye",
+      "styleAttributes": {
+        "shape": "pill"
+      },
+      "text": "顾廷烨 Gu Tingye\n(男主角) Protagonist",
+      "type": "text",
+      "width": 250,
+      "x": -50,
+      "y": 100
+    },
+    {
+      "height": 60,
+      "id": "gu_yankai",
+      "text": "顾偃开 Gu Yankai\nMarquis of Ningyuan",
+      "type": "text",
+      "width": 200,
+      "x": -250,
+      "y": -500
+    },
+    {
+      "height": 60,
+      "id": "xiao_qinshi",
+      "text": "小秦氏 The Junior Mrs. Qin\nGu Tingye's stepmother",
+      "type": "text",
+      "width": 250,
+      "x": -250,
+      "y": -350
+    },
+    {
+      "height": 60,
+      "id": "gu_tingyu",
+      "text": "顾廷煜 Gu Tingyu\nGu Tingye's half-brother",
+      "type": "text",
+      "width": 200,
+      "x": -250,
+      "y": -200
+    },
+    {
+      "height": 60,
+      "id": "zhu_manniang",
+      "text": "朱曼娘 Zhu Manniang\nGu Tingye's former mistress",
+      "type": "text",
+      "width": 250,
+      "x": 300,
+      "y": 100
+    },
+    {
+      "height": 40,
+      "id": "rong_er",
+      "text": "蓉姐儿 Rong'er",
+      "type": "text",
+      "width": 150,
+      "x": 300,
+      "y": 200
+    },
+    {
+      "height": 40,
+      "id": "chang_er",
+      "text": "昌哥儿 Chang'er",
+      "type": "text",
+      "width": 150,
+      "x": 480,
+      "y": 200
+    },
+    {
+      "height": 60,
+      "id": "qi_heng",
+      "text": "齐衡 Qi Heng\nMinglan's first love",
+      "type": "text",
+      "width": 200,
+      "x": 1500,
+      "y": 100
+    },
+    {
+      "height": 60,
+      "id": "pingning_junzhu",
+      "text": "平宁郡主 Princess Pingning\nQi Heng's mother",
+      "type": "text",
+      "width": 250,
+      "x": 1500,
+      "y": -150
+    },
+    {
+      "height": 50,
+      "id": "timeline_childhood",
+      "text": "童年时期\nChildhood",
+      "type": "text",
+      "width": 200,
+      "x": -1900,
+      "y": 1400
+    },
+    {
+      "height": 50,
+      "id": "timeline_adolescence",
+      "text": "少女时期\nAdolescence",
+      "type": "text",
+      "width": 200,
+      "x": -900,
+      "y": 1400
+    },
+    {
+      "height": 80,
+      "id": "event_wei_death",
+      "text": "卫小娘被害\nLin Qinshuang's scheme leads to Minglan's mother's death in childbirth.",
+      "type": "text",
+      "width": 250,
+      "x": -1950,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_raised_by_grandma",
+      "text": "祖母抚养\nMinglan is raised by Old Mrs. Sheng, who protects and educates her.",
+      "type": "text",
+      "width": 250,
+      "x": -1650,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_wedding",
+      "text": "盛大婚礼\nMinglan marries Gu Tingye and becomes the lady of the Marquis's manor.",
+      "type": "text",
+      "width": 250,
+      "x": -150,
+      "y": 1550
+    },
+    {
+      "height": 50,
+      "id": "timeline_adulthood",
+      "text": "婚后生活\nMarried Life",
+      "type": "text",
+      "width": 200,
+      "x": 100,
+      "y": 1400
+    },
+    {
+      "height": 80,
+      "id": "event_first_love",
+      "text": "初恋萌芽\nMinglan and Qi Heng develop feelings for each other.",
+      "type": "text",
+      "width": 250,
+      "x": -1350,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_qi_heng_fails",
+      "text": "齐衡提亲失败\nDue to family pressure, Qi Heng's proposal fails, breaking their hearts.",
+      "type": "text",
+      "width": 250,
+      "x": -1050,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_molan_scheme",
+      "text": "墨兰的诡计\nSheng Molan schemes to marry Liang Han, shaming the Sheng family.",
+      "type": "text",
+      "width": 250,
+      "x": -750,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_gu_proposal",
+      "text": "顾廷烨求亲\nGu Tingye, now a powerful general, lays an elaborate plan to marry Minglan.",
+      "type": "text",
+      "width": 250,
+      "x": -450,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_household_manage",
+      "text": "管家立威\nMinglan skillfully manages the complex household and deals with difficult relatives.",
+      "type": "text",
+      "width": 250,
+      "x": 150,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_vs_xiaoqinshi",
+      "text": "对抗小秦氏\nContinuous struggle against the schemes of her stepmother-in-law, Xiao Qinshi.",
+      "type": "text",
+      "width": 250,
+      "x": 450,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_justice",
+      "text": "明兰伸冤\nA pregnant Minglan seeks justice for her husband, confronting the empress and officials.",
+      "type": "text",
+      "width": 250,
+      "x": 1050,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_coup_return",
+      "text": "平乱归来\nGu Tingye returns triumphantly after quelling a rebellion, clearing his name.",
+      "type": "text",
+      "width": 250,
+      "x": 1350,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_happy_ending",
+      "text": "幸福结局\nAll antagonists receive their comeuppance. Minglan and Gu Tingye live a happy, peaceful life.",
+      "type": "text",
+      "width": 250,
+      "x": 1650,
+      "y": 1550
+    },
+    {
+      "height": 80,
+      "id": "event_exile",
+      "text": "顾廷烨被贬\nGu Tingye is framed by his enemies and the emperor, and is exiled.",
+      "type": "text",
+      "width": 250,
+      "x": 750,
+      "y": 1550
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+filters:
+  and:
+    - 分类.containsAny(link("chrome插件 - fileclass"))
+views:
+  - type: cards
+    name: 画廊视图
+    order:
+      - file.name
+      - 评价
+    sort:
+      - property: 评价
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    image: note.icon
+    imageFit: contain
+    imageAspectRatio: 0.95
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - 是否有firefox版本
+    sort:
+      - property: 评价
+        direction: DESC

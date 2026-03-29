@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"center_main","type":"text","x":0,"y":0,"width":400,"height":160,"color":"2","text":"# 🎮 英伟达 CES 2025 发布会\n\n**时间**: 2025年1月6日\n**主讲**: 黄仁勋 (Jensen Huang)\n**主题**: AI + 图形计算的新纪元\n\n> \"这是英伟达历史上最重要的发布会之一\""},
+		{"id":"rtx50_title","type":"text","x":-700,"y":-400,"width":500,"height":100,"color":"1","text":"# 🖥️ RTX 50系列显卡\n### 基于全新 Blackwell 架构"},
+		{"id":"rtx5090","type":"text","x":-700,"y":-280,"width":240,"height":200,"color":"6","text":"## RTX 5090 👑\n**旗舰怪兽**\n\n💰 **$1,999**\n📅 1月30日上市\n\n🚀 **性能是4090的2倍！**\n\n想象一下：\n上代王者直接被碾压"},
+		{"id":"rtx5080","type":"text","x":-440,"y":-280,"width":240,"height":200,"color":"5","text":"## RTX 5080\n**高端甜品**\n\n💰 **$999**\n📅 1月30日上市\n\n⚡ 性价比之选\n\n适合：\n追求高画质的玩家"},
+		{"id":"rtx5070ti","type":"text","x":-700,"y":-60,"width":240,"height":180,"color":"4","text":"## RTX 5070 Ti\n**中高端选择**\n\n💰 **$749**\n📅 2月上市\n\n🎯 平衡性能与价格"},
+		{"id":"rtx5070","type":"text","x":-440,"y":-60,"width":240,"height":180,"color":"3","text":"## RTX 5070 🌟\n**最大惊喜！**\n\n💰 **$549**\n📅 2月上市\n\n🤯 **AI性能≈上代4090**\n（4090要$1599！）"},
+		{"id":"blackwell_arch","type":"text","x":-700,"y":140,"width":500,"height":180,"color":"1","text":"## 🧠 Blackwell架构 是什么？\n\n**小白理解版**：\n这是显卡的\"大脑设计图\"，决定了它有多聪明、多能干\n\n| 指标 | 数值 | 意味着什么 |\n|------|------|------------|\n| 晶体管 | 920亿个 | 芯片超级复杂精密 |\n| AI算力 | 4000 TOPS | 每秒4万亿次AI运算 |\n| 光追性能 | 380 TFLOPS | 画面更真实 |"},
+		{"id":"dlss4_title","type":"text","x":500,"y":-400,"width":500,"height":80,"color":"1","text":"# 🎨 DLSS 4 技术\n### 让AI帮你\"画\"游戏画面"},
+		{"id":"dlss4_explain","type":"text","x":500,"y":-300,"width":500,"height":280,"color":"4","text":"## 什么是DLSS？\n\n**Deep Learning Super Sampling**\n深度学习超级采样\n\n### 🍕 披萨比喻：\n\n想象你点了一个小披萨（低分辨率画面）\nDLSS就像一个超级厨师，能把小披萨\n\"变\"成大披萨（高分辨率画面）\n而且味道（画质）几乎一样好！\n\n### 💡 核心价值：\n- 显卡只需渲染\"小图\"\n- AI自动放大成\"大图\"\n- 帧率暴涨，画质不降"},
+		{"id":"dlss4_mfg","type":"text","x":500,"y":0,"width":500,"height":240,"color":"5","text":"## 🎬 多帧生成 (Multi Frame Generation)\n\n**DLSS 4的杀手锏！**\n\n### 动画片原理：\n传统动画：每秒24张手绘图\nDLSS 4：你画1张，AI帮你\"脑补\"3张！\n\n```\n真实渲染帧: [1] ... ... ... [2] ... ... ... [3]\nAI生成帧:      [A][B][C]      [D][E][F]\n```\n\n### 🔢 惊人数据：\n**16个像素里，15个是AI画的！**\n\n支持75+款游戏"},
+		{"id":"digits_title","type":"text","x":0,"y":-550,"width":400,"height":60,"color":"2","text":"# 💻 Project DIGITS\n### 个人AI超级计算机"},
+		{"id":"digits_detail","type":"text","x":0,"y":-470,"width":400,"height":260,"color":"6","text":"## 把超算搬回家！\n\n**小白理解**：\n以前训练AI模型需要去机房租服务器\n现在？桌上摆个\"大号路由器\"就行！\n\n### 📦 规格：\n- 芯片：Grace Blackwell 超级芯片\n- 体积：约一个Mac Mini大小\n- 价格：**$3,000**\n- 上市：2025年5月\n\n### 👨‍💻 适合谁？\n- AI研究员\n- 开发者\n- 学生\n- 想玩本地大模型的极客"},
+		{"id":"cosmos_title","type":"text","x":-300,"y":380,"width":600,"height":60,"color":"2","text":"# 🤖 Cosmos 平台 + 机器人野心\n### 物理世界的AI基础模型"},
+		{"id":"cosmos_detail","type":"text","x":-300,"y":460,"width":300,"height":280,"color":"3","text":"## Cosmos 是什么？\n\n**世界首个\"物理世界基础模型\"**\n\n### 🎓 训练数据：\n2000万小时视频！\n\n### 🎯 目的：\n让AI理解：\n- 物体会掉落（重力）\n- 撞墙会停（碰撞）\n- 水会流动（物理规律）\n\n### 💡 小白比喻：\nChatGPT理解文字\nCosmos理解\"真实世界\""},
+		{"id":"robot_vision","type":"text","x":20,"y":460,"width":280,"height":280,"color":"5","text":"## 🦾 人形机器人\n\n黄仁勋花了大量时间讲这个！\n\n### 愿景：\n> \"机器人的ChatGPT时刻即将到来\"\n\n### 应用场景：\n- 工厂自动化\n- 物流搬运\n- 家庭服务\n\n### 🚗 合作伙伴：\n**丰田** - 自动驾驶\n**各大机器人公司**"},
+		{"id":"summary_box","type":"text","x":0,"y":200,"width":400,"height":140,"color":"1","text":"## ⭐ 一句话总结\n\n英伟达不只是\"显卡公司\"了\n\n**现在是**：\n🎮 游戏显卡 + 🧠 AI芯片 + 🤖 机器人平台\n\n> \"AI工厂\"的时代来了"},
+		{"id":"laptop_note","type":"text","x":500,"y":260,"width":300,"height":120,"color":"4","text":"## 💻 笔记本也有！\n\n- RTX 50系列笔记本版\n- 2025年3月上市\n- 起价 $1,299\n- 续航提升40%（Max-Q技术）"}
+	],
+	"edges":[
+		{"id":"edge1","fromNode":"center_main","fromSide":"left","toNode":"rtx50_title","toSide":"right","color":"1","label":"核心产品"},
+		{"id":"edge2","fromNode":"center_main","fromSide":"right","toNode":"dlss4_title","toSide":"left","color":"4","label":"核心技术"},
+		{"id":"edge3","fromNode":"center_main","fromSide":"top","toNode":"digits_title","toSide":"bottom","color":"6","label":"新品类"},
+		{"id":"edge4","fromNode":"center_main","fromSide":"bottom","toNode":"cosmos_title","toSide":"top","color":"3","label":"未来布局"},
+		{"id":"edge5","fromNode":"rtx50_title","fromSide":"bottom","toNode":"rtx5090","toSide":"top"},
+		{"id":"edge6","fromNode":"rtx50_title","fromSide":"bottom","toNode":"rtx5080","toSide":"top"},
+		{"id":"edge7","fromNode":"rtx5090","fromSide":"bottom","toNode":"rtx5070ti","toSide":"top"},
+		{"id":"edge8","fromNode":"rtx5080","fromSide":"bottom","toNode":"rtx5070","toSide":"top"},
+		{"id":"edge9","fromNode":"rtx5070ti","fromSide":"bottom","toNode":"blackwell_arch","toSide":"top"},
+		{"id":"edge10","fromNode":"dlss4_title","fromSide":"bottom","toNode":"dlss4_explain","toSide":"top"},
+		{"id":"edge11","fromNode":"dlss4_explain","fromSide":"bottom","toNode":"dlss4_mfg","toSide":"top"},
+		{"id":"edge12","fromNode":"digits_title","fromSide":"bottom","toNode":"digits_detail","toSide":"top"},
+		{"id":"edge13","fromNode":"cosmos_title","fromSide":"bottom","toNode":"cosmos_detail","toSide":"top"},
+		{"id":"edge14","fromNode":"cosmos_title","fromSide":"bottom","toNode":"robot_vision","toSide":"top"},
+		{"id":"edge15","fromNode":"dlss4_mfg","fromSide":"bottom","toNode":"laptop_note","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

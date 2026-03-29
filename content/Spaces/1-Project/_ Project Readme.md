@@ -4,10 +4,10 @@ date modified: 2025-06-27
 title: About Project
 publish: true
 分类:
-- '[[Atlas/Categories/本库教程 - fileclass]]'
+- '[[本库教程 - fileclass]]'
 ---
 
-[[Cards/项目笔记]] 的所在地。集中存放短中期聚焦的项目内容。
+[[项目笔记]] 的所在地。集中存放短中期聚焦的项目内容。
 
 这里面的笔记，应该都是可执行的任务分解出的，或者是任务执行结束或闭环后的归纳总结。
 
@@ -33,3 +33,4 @@ publish: true
 │   └── 相关资源/
 ├── 项目B/
 └── Projects Readme.md
+```

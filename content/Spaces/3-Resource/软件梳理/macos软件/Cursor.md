@@ -1,19 +1,22 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Cursor.md","title":"Cursor","created":"2023-12-02","modified":"2025-09-08","cssclasses":""}
+publish: true
+permalink: /Spaces/3-Resource/软件梳理/macos软件/Cursor.md
+title: Cursor
+created: 2023-12-02
+modified: 2025-09-08
 ---
 
+[[cursor cli]]
 
-[[Cards/cursor cli]]
+[[cursor 使用技巧总结]]
 
-[[Spaces/1-Project/Cursor/cursor 使用技巧总结]]
+[[cursor和idea比如goland之间互相跳转]]
 
-[[Spaces/1-Project/Cursor/cursor和idea比如goland之间互相跳转]]
+[[cursor开发ios 项目]]
 
-[[Spaces/1-Project/Cursor/cursor开发ios 项目]]
+[[cursor账号清单]]
 
-[[Spaces/3-Resource/账号密码/cursor账号清单]]
-
-[[Spaces/1-Project/Cursor/cursor-auto 试用]]
+[[cursor-auto 试用]]
 
 ## 默认快捷键配置
 
@@ -64,4 +67,4 @@ Use these for <type>: fix, feat, build, chore, ci, docs, style, refactor, perf, 
 Reply with JUST the commit message, without quotes, comments, questions, etc!
 ```
 
-[[Cards/ai 生成界面和样式代码]]
+[[ai 生成界面和样式代码]]

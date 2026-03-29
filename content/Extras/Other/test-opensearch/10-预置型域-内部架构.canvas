@@ -1,0 +1,46 @@
+{
+	"nodes":[
+		{"id":"grp_vpc","type":"group","x":-620,"y":-240,"width":1700,"height":980,"label":"VPC / 子网 / 安全组（多可用区）"},
+		{"id":"az1","type":"group","x":-580,"y":-200,"width":520,"height":900,"label":"可用区 A"},
+		{"id":"az2","type":"group","x":-40,"y":-200,"width":520,"height":900,"label":"可用区 B"},
+		{"id":"az3","type":"group","x":500,"y":-200,"width":520,"height":900,"label":"可用区 C"},
+		{"id":"title","type":"text","text":"OpenSearch 预置型（Domain/域）内部架构","x":-80,"y":-340,"width":720,"height":80,"color":"6"},
+		{"id":"masters_a","type":"text","text":"专用主节点（集群管理）","x":-560,"y":-160,"width":480,"height":140,"color":"4"},
+		{"id":"data_hot_a","type":"text","text":"数据节点（热，EBS gp3/io1）\n- 索引/查询协调\n- 分片/副本放置","x":-560,"y":40,"width":480,"height":200,"color":"1"},
+		{"id":"ops","type":"text","text":"运维与弹性\n- 多AZ/故障转移、Auto-Tune、蓝/绿部署\n- ISM 生命周期（热->温->冷）、分片/副本管理\n- 监控：CloudWatch、审计日志：CloudWatch Logs","x":-620,"y":780,"width":1700,"height":180,"color":"6"},
+		{"id":"warm_a","type":"text","text":"UltraWarm 节点（温）\n- 低成本长期保留\n- S3 近线 + 本地缓存","x":-560,"y":280,"width":480,"height":160,"color":"2"},
+		{"id":"ml_a","type":"text","text":"可选：ML/向量检索\n- k-NN / 语义搜索","x":-560,"y":480,"width":480,"height":120,"color":"3"},
+		{"id":"masters_c","type":"text","text":"专用主节点（集群管理）","x":520,"y":-160,"width":480,"height":140,"color":"4"},
+		{"id":"data_hot_b","type":"text","text":"数据节点（热，EBS gp3/io1）","x":-20,"y":40,"width":480,"height":200,"color":"1"},
+		{"id":"warm_b","type":"text","text":"UltraWarm 节点（温）","x":-20,"y":280,"width":480,"height":160,"color":"2"},
+		{"id":"ml_b","type":"text","text":"可选：ML/向量检索","x":-20,"y":480,"width":480,"height":120,"color":"3"},
+		{"id":"data_hot_c","type":"text","text":"数据节点（热，EBS gp3/io1）","x":520,"y":40,"width":480,"height":200,"color":"1"},
+		{"id":"warm_c","type":"text","text":"UltraWarm 节点（温）","x":520,"y":280,"width":480,"height":160,"color":"2"},
+		{"id":"ml_c","type":"text","text":"可选：ML/向量检索","x":520,"y":480,"width":480,"height":120,"color":"3"},
+		{"id":"cold","type":"text","text":"冷存储（S3 上的只读索引）\n- 按需挂载/查询\n- 低频访问成本优化","x":1060,"y":-120,"width":560,"height":220,"color":"5"},
+		{"id":"snap","type":"text","text":"备份 / 快照\n- 自动/手动到 S3（托管仓库）\n- 跨区域恢复","x":1060,"y":140,"width":560,"height":160,"color":"5"},
+		{"id":"ingest","type":"text","text":"摄取入口\n- OpenSearch Ingestion / Logstash / KDF\n- 协调 -> 写入管线","x":1060,"y":360,"width":560,"height":160,"color":"2"},
+		{"id":"query","type":"text","text":"查询入口\n- Dashboards / REST API\n- 路由 -> 聚合/搜索","x":1060,"y":540,"width":560,"height":160,"color":"2"},
+		{"id":"security","type":"text","text":"安全与治理\n- VPC/SG、IAM、Cognito/SAML/OIDC\n- 细粒度访问控制（索引/字段/文档）\n- KMS 加密（静态）、TLS（传输/节点间）","x":1060,"y":720,"width":560,"height":180,"color":"6"},
+		{"id":"masters_b","type":"text","text":"专用主节点（集群管理）","x":-10,"y":-160,"width":480,"height":140,"color":"4"}
+	],
+	"edges":[
+		{"id":"s1","fromNode":"ingest","fromSide":"left","toNode":"data_hot_a","toSide":"right","label":"写入"},
+		{"id":"s2","fromNode":"ingest","fromSide":"left","toNode":"data_hot_b","toSide":"right"},
+		{"id":"s3","fromNode":"ingest","fromSide":"left","toNode":"data_hot_c","toSide":"right"},
+		{"id":"s4","fromNode":"query","fromSide":"left","toNode":"data_hot_a","toSide":"right","label":"查询/聚合"},
+		{"id":"s5","fromNode":"query","fromSide":"left","toNode":"data_hot_b","toSide":"right"},
+		{"id":"s6","fromNode":"query","fromSide":"left","toNode":"data_hot_c","toSide":"right"},
+		{"id":"s7","fromNode":"data_hot_a","fromSide":"right","toNode":"warm_a","toSide":"left","label":"ISM 迁移"},
+		{"id":"s8","fromNode":"data_hot_b","fromSide":"right","toNode":"warm_b","toSide":"left"},
+		{"id":"s9","fromNode":"data_hot_c","fromSide":"right","toNode":"warm_c","toSide":"left"},
+		{"id":"s10","fromNode":"warm_b","fromSide":"right","toNode":"cold","toSide":"left","label":"降冷/挂载"},
+		{"id":"s11","fromNode":"data_hot_b","fromSide":"bottom","toNode":"snap","toSide":"left","label":"快照"},
+		{"id":"s12","fromNode":"masters_a","fromSide":"right","toNode":"masters_b","toSide":"left","label":"仲裁/选主"},
+		{"id":"s13","fromNode":"masters_b","fromSide":"right","toNode":"masters_c","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

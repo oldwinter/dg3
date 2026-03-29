@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.ext != "md"
+    - file.ext != "base"
+    - file.ext != "canvas"
+    - file.name.contains("icon")
+views:
+  - type: cards
+    name: Table
+    order:
+      - file.name
+    columnSize:
+      file.name: 221
+    image: file.file

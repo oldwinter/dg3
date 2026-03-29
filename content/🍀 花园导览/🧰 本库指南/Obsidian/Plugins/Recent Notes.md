@@ -6,5 +6,5 @@ status: null
 publish: true
 aliases:
 - recent-notes
-分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
+分类: "[[obsidian插件 - fileclass]]"
 ---

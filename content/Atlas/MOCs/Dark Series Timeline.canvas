@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"type":"file","file":"Extras/Attachments/banana_art.png","id":"banana_node","x":-600,"y":-600,"width":400,"height":400},
+		{"type":"text","text":"# Dark Series Timeline\n## A Comprehensive Guide to Winden's Knot\nThis canvas visualizes the timeline, key events, and parallel worlds of the Netflix series *Dark*.\n\nEverything is connected. The beginning is the end, and the end is the beginning.","id":"title","x":-150,"y":-600,"width":800,"height":300},
+		{"type":"group","label":"Origin World","id":"origin_group","x":-600,"y":-150,"width":400,"height":700},
+		{"type":"text","text":"**1971**\n- **The Accident**: H.G. Tannhaus's son, daughter-in-law, and granddaughter die in a car crash on a rainy night. This is the catalyst for everything.","id":"origin_1971","x":-580,"y":-100,"width":360,"height":150},
+		{"type":"text","text":"**1986**\n- **The Split**: Tannhaus activates his time machine in the bunker to save his family. instead of traveling back, it destroys his world and splits it into two: Adam's World and Eva's World.","id":"origin_1986","x":-580,"y":100,"width":360,"height":180},
+		{"type":"text","text":"**Finale**\n- Jonas (Adam's World) and Martha (Eva's World) travel to the Origin World 1971.\n- They prevent the car crash.\n- Tannhaus never builds the machine.\n- The two worlds disappear.","id":"origin_finale","x":-580,"y":330,"width":360,"height":180},
+		{"type":"group","label":"Adam's World (The Loop)","id":"adam_group","x":-100,"y":-150,"width":2400,"height":1200},
+		{"type":"text","text":"**1888**\n- **Stranded**: Adult Jonas, Magnus, Franziska, and Bartosz arrive here after escaping the 2020 apocalypse.\n- They work on building a time machine (the \"God Particle\").","id":"adam_1888","x":0,"y":0,"width":350,"height":250},
+		{"type":"text","text":"**1921**\n- **Sic Mundus**: Noah (Young) and Agnes lives here.\n- **Adam**: Old Jonas leads Sic Mundus.\n- Jonas (Young) is brought here and meets Adam.","id":"adam_1921","x":400,"y":0,"width":350,"height":250},
+		{"type":"text","text":"**1953**\n- **Arrivals**: Ulrich arrives from 2019 to find Mikkel. He is arrested by Egon Tiedemann.\n- **Construction**: The Nuclear Power Plant construction begins.\n- **Helge**: Ulrich attacks young Helge, scarring him.","id":"adam_1953","x":800,"y":0,"width":350,"height":250},
+		{"type":"text","text":"**1986**\n- **Missing**: Mads Nielsen disappears (died in chair).\n- **Mikkel**: Arrives from 2019, adopted by Ines, becomes Michael Kahnwald.\n- **Power Plant**: Nuclear accident creates the dark matter (God Particle).\n- **Claudia**: Takes over the plant.","id":"adam_1986","x":1200,"y":0,"width":350,"height":300},
+		{"type":"text","text":"**2019 - Start of Series**\n- **Suicide**: Michael Kahnwald hangs himself (June 21).\n- **Disappearance**: Mikkel Nielsen vanishes near the caves (Nov 4).\n- **Investigation**: Ulrich and Charlotte investigate.\n- **Discovery**: Jonas finds the map in the attic.","id":"adam_2019","x":1600,"y":0,"width":350,"height":300},
+		{"type":"text","text":"**2020 - The Apocalypse**\n- **Martha's Death**: Adam kills Martha.\n- **Rescue**: Alt-Martha appears to save Jonas.\n- **Apocalypse**: The God Particle stabilizes and destroys Winden (June 27).\n- **Survivors**: Some escape to 1888, some bunker down.","id":"adam_2020","x":1600,"y":350,"width":350,"height":250},
+		{"type":"text","text":"**2052**\n- **Post-Apocalypse**: Winden is a ruin.\n- **Elisabeth**: Leads the survivors, protects the God Particle.\n- **Jonas**: Arrives here from 1986 (Season 1 finale).","id":"adam_2052","x":2000,"y":0,"width":350,"height":250},
+		{"type":"group","label":"Eva's World (The Mirror)","id":"eva_group","x":-100,"y":1100,"width":2400,"height":600},
+		{"type":"text","text":"**Key Differences**\n- **Mikkel**: Does not travel back. Michael Kahnwald doesn't exist. Jonas doesn't exist.\n- **Ulrich**: Cheats on Katharina with Charlotte Doppler? No, he's just as messy.\n- **Martha**: Becomes the traveler (Eva).\n- **Apocalypse**: Triggered in Nov 2019.","id":"eva_diff","x":50,"y":1200,"width":500,"height":400},
+		{"type":"text","text":"**Eva (Old Martha)**\n- Leads the Erit Lux (counterpart to Sic Mundus).\n- Wants to preserve the knot so her son (The Origin) can live.","id":"eva_main","x":600,"y":1200,"width":400,"height":300}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"origin_1986","toNode":"adam_1986","toSide":"top","label":"Creates reality","fromSide":"right"},
+		{"id":"e2","fromNode":"adam_2019","toNode":"adam_1986","fromSide":"left","toSide":"right","label":"Mikkel travels back"},
+		{"id":"e3","fromNode":"adam_1986","toNode":"adam_2052","fromSide":"right","toSide":"left","label":"Jonas travels fwd"},
+		{"id":"e4","fromNode":"origin_finale","toNode":"origin_1971","toSide":"bottom","label":"Prevents accident","fromSide":"top"},
+		{"id":"e5","fromNode":"adam_2020","toNode":"adam_1888","toSide":"right","label":"Survivors travel back","fromSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

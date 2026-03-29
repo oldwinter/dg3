@@ -1,0 +1,231 @@
+{
+  "nodes": [
+    {
+      "id": "83f9196a2e1269d1",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -145,
+      "y": -50,
+      "width": 1765,
+      "height": 610,
+      "color": "2",
+      "label": "openai"
+    },
+    {
+      "id": "2f6d24b32727e92d",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1700,
+      "y": -50,
+      "width": 1000,
+      "height": 610,
+      "color": "1",
+      "label": "国内"
+    },
+    {
+      "id": "d2963c087456fdbd",
+      "type": "text",
+      "text": "### gpt-3.5-turbo-0613",
+      "styleAttributes": {},
+      "x": -125,
+      "y": -30,
+      "width": 345,
+      "height": 110
+    },
+    {
+      "id": "30146056ba663ae1",
+      "type": "text",
+      "text": "## prompts 输入\n\n请模仿小红书风格，针对macbook air m1电脑，写一篇推广笔记\n\n## 输出结果",
+      "styleAttributes": {},
+      "x": -125,
+      "y": 180,
+      "width": 345,
+      "height": 360
+    },
+    {
+      "id": "0e1be6edf6a56c60",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/openai chat api模型列表.md",
+      "styleAttributes": {},
+      "x": -720,
+      "y": -520,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "id": "e5ee482d5640e089",
+      "type": "text",
+      "text": "需要看看gpt4+合理的prompts提示词，效果是否能打败gpt3.5的fine-tuning",
+      "styleAttributes": {},
+      "x": 320,
+      "y": -200,
+      "width": 345,
+      "height": 100
+    },
+    {
+      "id": "348e4314797663ba",
+      "type": "file",
+      "file": "Extras/Media/Pasted image 20230905103251.png",
+      "styleAttributes": {},
+      "x": 293,
+      "y": -480,
+      "width": 400,
+      "height": 98
+    },
+    {
+      "id": "9baddbc77b475bee",
+      "type": "text",
+      "text": "先用10-100条数据集训练看看。\n输入格式是[[JSONL]]，[[如何高效地将csv转成jsonl]]",
+      "styleAttributes": {},
+      "x": 760,
+      "y": -200,
+      "width": 345,
+      "height": 100
+    },
+    {
+      "id": "a34295b68091c94a",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/大语言模型列表 - LLM.md",
+      "styleAttributes": {},
+      "x": 1740,
+      "y": -600,
+      "width": 980,
+      "height": 400
+    },
+    {
+      "id": "898f13f3267e6a2e",
+      "type": "text",
+      "text": "### gpt-4-0613",
+      "styleAttributes": {},
+      "x": 320,
+      "y": -30,
+      "width": 345,
+      "height": 110
+    },
+    {
+      "id": "08710fa7309e44a5",
+      "type": "text",
+      "text": "和通用模型用同样的prompts提示词，输出结果是否有改进？",
+      "styleAttributes": {},
+      "x": 1200,
+      "y": -200,
+      "width": 400,
+      "height": 100
+    },
+    {
+      "id": "96eb1b364c1552fc",
+      "type": "text",
+      "text": "### 测试数据集（微调后ft-gpt-3.5-turbo-0613）",
+      "styleAttributes": {},
+      "x": 1200,
+      "y": -30,
+      "width": 400,
+      "height": 110
+    },
+    {
+      "id": "4efadcc6a7352d07",
+      "type": "text",
+      "text": "## prompts 输入\n\n请模仿小红书风格，针对macbook air m1电脑，写一篇推广笔记\n\n## 输出结果",
+      "styleAttributes": {},
+      "x": 1208,
+      "y": 180,
+      "width": 392,
+      "height": 360
+    },
+    {
+      "id": "24f0e2374d8d1c50",
+      "type": "text",
+      "text": "### 训练数据集（预期微调后的模型输入输出）",
+      "styleAttributes": {},
+      "x": 760,
+      "y": -30,
+      "width": 345,
+      "height": 110
+    },
+    {
+      "id": "2dbfe10c9ef1d579",
+      "type": "text",
+      "text": "## prompts 输入\n\n请模仿小红书风格，针对macbook air m1电脑，写一篇推广笔记\n\n## 预期输出结果",
+      "styleAttributes": {},
+      "x": 760,
+      "y": 180,
+      "width": 345,
+      "height": 360
+    },
+    {
+      "id": "d1d6ed3518596d40",
+      "type": "text",
+      "text": "## prompts 输入\n\n请模仿小红书风格，针对macbook air m1电脑，写一篇推广笔记\n\n## 输出结果",
+      "styleAttributes": {},
+      "x": 320,
+      "y": 180,
+      "width": 345,
+      "height": 360
+    },
+    {
+      "id": "9a92ed0c21c16222",
+      "type": "text",
+      "text": "## 千帆大模型\n已有fine-tuning接口开放，也有embdding",
+      "styleAttributes": {},
+      "x": 1720,
+      "y": -30,
+      "width": 440,
+      "height": 110
+    },
+    {
+      "id": "12df6bcc2add19f7",
+      "type": "text",
+      "text": "## 星火认知大模型\n已有embdding",
+      "styleAttributes": {},
+      "x": 2280,
+      "y": -30,
+      "width": 400,
+      "height": 110
+    },
+    {
+      "id": "1bfcd39acbadd072",
+      "type": "text",
+      "text": "## prompts 输入\n\n请模仿小红书风格，针对macbook air m1电脑，写一篇推广笔记\n\n## 输出结果",
+      "styleAttributes": {},
+      "x": 1720,
+      "y": 180,
+      "width": 440,
+      "height": 360
+    },
+    {
+      "id": "fbf24b717fbe48d6",
+      "type": "text",
+      "text": "## prompts 输入\n\n请模仿小红书风格，针对macbook air m1电脑，写一篇推广笔记\n\n## 输出结果",
+      "styleAttributes": {},
+      "x": 2288,
+      "y": 180,
+      "width": 392,
+      "height": 360
+    }
+  ],
+  "edges": [
+    {
+      "id": "acab503c4a674e6f",
+      "fromNode": "08710fa7309e44a5",
+      "fromSide": "bottom",
+      "toNode": "96eb1b364c1552fc",
+      "toSide": "top"
+    },
+    {
+      "id": "25637fd652f9318d",
+      "fromNode": "348e4314797663ba",
+      "fromSide": "bottom",
+      "toNode": "e5ee482d5640e089",
+      "toSide": "top"
+    },
+    {
+      "id": "af3111a073d7058d",
+      "fromNode": "d1d6ed3518596d40",
+      "fromSide": "bottom",
+      "toNode": "2dbfe10c9ef1d579",
+      "toSide": "bottom",
+      "label": "预期输出结果，可以参考gpt4"
+    }
+  ],
+  "metadata": {}
+}

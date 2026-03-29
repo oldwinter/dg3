@@ -1,0 +1,608 @@
+{
+  "edges": [
+    {
+      "id": "80d4dc25e78011e7",
+      "fromNode": "068ffd0381a33399",
+      "fromSide": "bottom",
+      "toNode": "523a3ad4b1bfcabc",
+      "toSide": "top"
+    },
+    {
+      "id": "99de1195d1f1d0b7",
+      "fromNode": "068ffd0381a33399",
+      "fromSide": "bottom",
+      "toNode": "ab2d883955562557",
+      "toSide": "top"
+    },
+    {
+      "id": "7bd7c36418863286",
+      "fromNode": "523a3ad4b1bfcabc",
+      "fromSide": "bottom",
+      "toNode": "28eba48212031c9a",
+      "toSide": "top"
+    },
+    {
+      "id": "77d745be8e96d2ef",
+      "fromNode": "523a3ad4b1bfcabc",
+      "fromSide": "bottom",
+      "toNode": "f2401b9d1ffde023",
+      "toSide": "top"
+    },
+    {
+      "id": "959a161e13c778d0",
+      "fromNode": "28eba48212031c9a",
+      "fromSide": "bottom",
+      "toNode": "1531fee40b4fe66b",
+      "toSide": "top"
+    },
+    {
+      "id": "7efd24c39017a9ca",
+      "fromNode": "f2401b9d1ffde023",
+      "fromSide": "bottom",
+      "toNode": "0e2d979351d27fe9",
+      "toSide": "top"
+    },
+    {
+      "id": "8d92d88c321c19f3",
+      "fromNode": "ab2d883955562557",
+      "fromSide": "bottom",
+      "toNode": "a94a17061908a849",
+      "toSide": "top"
+    },
+    {
+      "id": "63fd05466720cfa4",
+      "fromNode": "a94a17061908a849",
+      "fromSide": "bottom",
+      "toNode": "cb716cdd3a029d37",
+      "toSide": "top"
+    },
+    {
+      "id": "1ab847ea4a95da68",
+      "fromNode": "57cb454d1f71c22d",
+      "fromSide": "bottom",
+      "toNode": "8a3b96428cbb8d6a",
+      "toSide": "top",
+      "label": "文本总结会议纪要"
+    },
+    {
+      "id": "c231a053b6e54ff0",
+      "fromNode": "0e2d979351d27fe9",
+      "fromSide": "bottom",
+      "toNode": "c710c85c6c79aa04",
+      "toSide": "top",
+      "label": "举例"
+    },
+    {
+      "id": "294ecca450be0863",
+      "fromNode": "c710c85c6c79aa04",
+      "fromSide": "bottom",
+      "toNode": "57cb454d1f71c22d",
+      "toSide": "top",
+      "label": "录音转文本"
+    },
+    {
+      "id": "6cd26b5ed0fb1d3b",
+      "fromNode": "6c794e4ac1fa675a",
+      "fromSide": "bottom",
+      "toNode": "ef0d5800164c2711",
+      "toSide": "top",
+      "label": "示例1"
+    },
+    {
+      "id": "0b54f3bc9de7aa55",
+      "fromNode": "ef0d5800164c2711",
+      "fromSide": "bottom",
+      "toNode": "5b625a67655d151f",
+      "toSide": "top"
+    },
+    {
+      "id": "ba57613bff720ec3",
+      "fromNode": "a9b7eb5f6b22668e",
+      "fromSide": "bottom",
+      "toNode": "af31604f39559c17",
+      "toSide": "top"
+    },
+    {
+      "id": "c4115f86067f79c2",
+      "fromNode": "37ced4de69c6ab3d",
+      "fromSide": "bottom",
+      "toNode": "a2b3b0e3fcfa283e",
+      "toSide": "top"
+    },
+    {
+      "id": "7bd84c7d7c0bc3d6",
+      "fromNode": "a2b3b0e3fcfa283e",
+      "fromSide": "bottom",
+      "toNode": "db14e791993b0245",
+      "toSide": "top"
+    },
+    {
+      "id": "25a9fba8d7f0a696",
+      "fromNode": "c7c6bcdaa9b207f0",
+      "fromSide": "bottom",
+      "toNode": "65113964aabe79fc",
+      "toSide": "top"
+    },
+    {
+      "id": "c980a6e58bcce077",
+      "fromNode": "f2d4c1c79cac0a9b",
+      "fromSide": "bottom",
+      "toNode": "07b7b111dc2d56ec",
+      "toSide": "top"
+    },
+    {
+      "id": "f17ef612adf8917a",
+      "fromNode": "07b7b111dc2d56ec",
+      "fromSide": "bottom",
+      "toNode": "744928330c3e75d3",
+      "toSide": "top"
+    },
+    {
+      "id": "100edbd9f4f9f755",
+      "fromNode": "a2b3b0e3fcfa283e",
+      "fromSide": "bottom",
+      "toNode": "6b98c61c02ff8411",
+      "toSide": "top"
+    },
+    {
+      "id": "dec6fa0fd6bb153a",
+      "fromNode": "6b98c61c02ff8411",
+      "fromSide": "bottom",
+      "toNode": "3f407f17ebb6a974",
+      "toSide": "top"
+    },
+    {
+      "id": "e556ce101999462a",
+      "fromNode": "db14e791993b0245",
+      "fromSide": "bottom",
+      "toNode": "288213a9fc8cc229",
+      "toSide": "top"
+    },
+    {
+      "id": "d13506c7a2335103",
+      "fromNode": "65113964aabe79fc",
+      "fromSide": "bottom",
+      "toNode": "daeb3416b3236e20",
+      "toSide": "top"
+    },
+    {
+      "id": "262f6aefcb314442",
+      "fromNode": "daeb3416b3236e20",
+      "fromSide": "bottom",
+      "toNode": "58e8c2808f435df0",
+      "toSide": "top"
+    },
+    {
+      "id": "8f621a7a951227dd",
+      "fromNode": "65113964aabe79fc",
+      "fromSide": "bottom",
+      "toNode": "967b9de380f2201c",
+      "toSide": "top"
+    },
+    {
+      "id": "6a8eed851e593213",
+      "fromNode": "967b9de380f2201c",
+      "fromSide": "bottom",
+      "toNode": "49c9faf64d123c2b",
+      "toSide": "top"
+    },
+    {
+      "id": "d7b9bc5105ebae16",
+      "fromNode": "8ad3e152195a6647",
+      "fromSide": "bottom",
+      "toNode": "073088016a49f9c7",
+      "toSide": "top"
+    },
+    {
+      "id": "4818ad105d9227fe",
+      "fromNode": "073088016a49f9c7",
+      "fromSide": "bottom",
+      "toNode": "463d950e5a05b9a0",
+      "toSide": "top"
+    },
+    {
+      "id": "ce6a0ee1bd69596b",
+      "fromNode": "ab2d883955562557",
+      "fromSide": "bottom",
+      "toNode": "13bea44ea9a7faf4",
+      "toSide": "top"
+    },
+    {
+      "id": "d2fc93e2c7ba2970",
+      "fromNode": "6c794e4ac1fa675a",
+      "fromSide": "bottom",
+      "toNode": "a9b7eb5f6b22668e",
+      "toSide": "top",
+      "label": "示例2"
+    },
+    {
+      "id": "97c860be2c18684c",
+      "fromNode": "13bea44ea9a7faf4",
+      "fromSide": "bottom",
+      "toNode": "6c794e4ac1fa675a",
+      "toSide": "top"
+    },
+    {
+      "id": "1eadfd6065b83a76",
+      "fromNode": "8ad3e152195a6647",
+      "fromSide": "right",
+      "toNode": "8651d921209cabef",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "id": "523a3ad4b1bfcabc",
+      "styleAttributes": {},
+      "text": "会议纪要",
+      "type": "text",
+      "x": -480,
+      "y": -300,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "28eba48212031c9a",
+      "styleAttributes": {},
+      "text": "常规工作流",
+      "type": "text",
+      "x": -620,
+      "y": -160,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "f2401b9d1ffde023",
+      "styleAttributes": {},
+      "text": "AI赋能工作流",
+      "type": "text",
+      "x": -300,
+      "y": -160,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "1531fee40b4fe66b",
+      "styleAttributes": {},
+      "text": "- 我是新人，我听不懂他们开会说的啥，我不会写。\n- 我是老人，绞尽脑汁，花了3小时，终于写出来了，但会不会漏了什么重要的东西，老板会不会不满意？\n- 我是老油条，开会就是听听老板说啥，跟着点点头。还要写会议纪要的吗？",
+      "type": "text",
+      "x": -620,
+      "y": -40,
+      "width": 250,
+      "height": 420
+    },
+    {
+      "id": "0e2d979351d27fe9",
+      "styleAttributes": {},
+      "text": "- 会议录音（非敏感会议）\n- 语音转文本。\n\t- 飞书妙记\n- 会议文本丢给chatGPT帮忙输出会议纪要。\n- 全员与会者，都可以根据纪要，进行下一步行动。\n- 就算有漏了，肯定是开会的人口齿不清，或者是AI把信息搞丢了，AI背锅。",
+      "type": "text",
+      "x": -300,
+      "y": -40,
+      "width": 250,
+      "height": 460
+    },
+    {
+      "id": "ab2d883955562557",
+      "styleAttributes": {},
+      "text": "总结文章，书，视频",
+      "type": "text",
+      "x": 0,
+      "y": -300,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "a94a17061908a849",
+      "styleAttributes": {},
+      "text": "常规工作流",
+      "type": "text",
+      "x": 0,
+      "y": -160,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "cb716cdd3a029d37",
+      "styleAttributes": {},
+      "text": "- 老大又在群里发全英文的视频和文章了。没有@我，应该跟我没关系，就当没看到。\n- 花了1小时，终于看到这个英文文章了，但发现好像跟我没关系。",
+      "type": "text",
+      "x": 0,
+      "y": -40,
+      "width": 250,
+      "height": 280
+    },
+    {
+      "id": "af31604f39559c17",
+      "styleAttributes": {},
+      "type": "link",
+      "url": "https://kimi.moonshot.cn/chat/cmtpesg3r07f1r33na80",
+      "x": 425,
+      "y": 700,
+      "width": 520,
+      "height": 500
+    },
+    {
+      "id": "5b625a67655d151f",
+      "styleAttributes": {},
+      "type": "link",
+      "url": "https://kimi.moonshot.cn/chat/cmtl2vucp7f302l49gb0",
+      "x": 0,
+      "y": 590,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "id": "ef0d5800164c2711",
+      "styleAttributes": {},
+      "text": "63页的pdf",
+      "type": "text",
+      "x": 150,
+      "y": 420,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "37ced4de69c6ab3d",
+      "styleAttributes": {},
+      "text": "### 擅长海量输出创意",
+      "type": "text",
+      "x": 478,
+      "y": -566,
+      "width": 260,
+      "height": 100
+    },
+    {
+      "id": "8ad3e152195a6647",
+      "styleAttributes": {},
+      "text": "#### 多模态之图片识别\n[[GPT-4V]]",
+      "type": "text",
+      "x": 2165,
+      "y": 477,
+      "width": 400,
+      "height": 107
+    },
+    {
+      "id": "463d950e5a05b9a0",
+      "styleAttributes": {},
+      "text": "| 实例ID / 名称 | 状态 | 地域 | 可用区 | 实例类型 | 带宽 | 付费方式 | 安全组 | \n| --- | --- | --- | --- | --- | --- | --- | --- |\n| i-uf6ow518qfg5coztkee8 | 运行中 | 华东2 (上海) B | ecs.g7a.xlarge | 4核(vCPU) 16 GiB 0 Mbps | 172.30.8.173 (私有) | 按年包月 | 2024年2月22日 23:59:59到期 | vpc-uf6d11769mpp82lhkx7x vsw-uf6a58k01u5fgwa71a6c |\n| i-uf6ow518qfg5coztkee7 | 运行中 | 华东2 (上海) B | ecs.g7a.xlarge | 4核(vCPU) 16 GiB 0 Mbps | 172.30.8.172 (私有) | 按年包月 | 2024年2月22日 23:59:59到期 | vpc-uf6d11769mpp82lhkx7x vsw-uf6a58k01u5fgwa71a6c |\n| i-uf6ow518qfg5coztkee9 | 运行中 | 华东2 (上海) B | ecs.g7a.xlarge | 4核(vCPU) 16 GiB 0 Mbps | 172.30.8.174 (私有) | 按年包月 | 2024年2月22日 23:59:59到期 | vpc-uf6d11769mpp82lhkx7x vsw-uf6a58k01u5fgwa71a6c |\n",
+      "type": "text",
+      "x": 1840,
+      "y": 987,
+      "width": 925,
+      "height": 530
+    },
+    {
+      "file": "Extras/Attachments/企业微信截图_77f96f8b-5b5c-4d92-93d0-3e5bcc370b60.png",
+      "id": "07b7b111dc2d56ec",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 2165,
+      "y": -281,
+      "width": 399,
+      "height": 297
+    },
+    {
+      "file": "Extras/Media/企业微信截图_ab6b9a42-1334-4366-8c74-427b851907f3.png",
+      "id": "744928330c3e75d3",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 2165,
+      "y": 111,
+      "width": 400,
+      "height": 313
+    },
+    {
+      "file": "Extras/Media/Pasted image 20240201215752.png",
+      "id": "073088016a49f9c7",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 2165,
+      "y": 634,
+      "width": 400,
+      "height": 306
+    },
+    {
+      "id": "58e8c2808f435df0",
+      "styleAttributes": {},
+      "text": "参考别人的，进行ctrl c ，ctrl v",
+      "type": "text",
+      "x": 1315,
+      "y": 36,
+      "width": 275,
+      "height": 129
+    },
+    {
+      "id": "967b9de380f2201c",
+      "styleAttributes": {},
+      "text": "AI赋能工作流",
+      "type": "text",
+      "x": 1590,
+      "y": -63,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "49c9faf64d123c2b",
+      "styleAttributes": {},
+      "text": "直接把饭喂我嘴里，直接给我一个能用的表格，能执行的sql语句，能分享的思维导图。",
+      "type": "text",
+      "x": 1607,
+      "y": 36,
+      "width": 250,
+      "height": 136
+    },
+    {
+      "id": "65113964aabe79fc",
+      "styleAttributes": {},
+      "text": "- 输出表格\n- 输出代码，输出sql语句\n- 输出思维导图，ppt",
+      "type": "text",
+      "x": 1372,
+      "y": -312,
+      "width": 360,
+      "height": 170
+    },
+    {
+      "id": "daeb3416b3236e20",
+      "styleAttributes": {},
+      "text": "常规工作流",
+      "type": "text",
+      "x": 1327,
+      "y": -63,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "068ffd0381a33399",
+      "styleAttributes": {},
+      "text": "### 擅长总结，信息提炼和压缩",
+      "type": "text",
+      "x": -177,
+      "y": -566,
+      "width": 250,
+      "height": 100
+    },
+    {
+      "id": "a2b3b0e3fcfa283e",
+      "styleAttributes": {},
+      "text": "头脑风暴\n- 取名\n- 项目未来规划",
+      "type": "text",
+      "x": 750,
+      "y": -339,
+      "width": 250,
+      "height": 139
+    },
+    {
+      "id": "6b98c61c02ff8411",
+      "styleAttributes": {},
+      "text": "常规工作流",
+      "type": "text",
+      "x": 603,
+      "y": -130,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "db14e791993b0245",
+      "styleAttributes": {},
+      "text": "AI赋能工作流",
+      "type": "text",
+      "x": 945,
+      "y": -132,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "288213a9fc8cc229",
+      "styleAttributes": {},
+      "type": "link",
+      "url": "https://kimi.moonshot.cn/chat/cmtpgr2lnl97jg2n5jrg",
+      "x": 882,
+      "y": 290,
+      "width": 490,
+      "height": 380
+    },
+    {
+      "id": "3f407f17ebb6a974",
+      "styleAttributes": {},
+      "text": "嚼劲脑汁，半天想不出一点东西来。  \n那就只能搜索引擎搜一搜，看能不能找点思路。\n搜着搜着，忘记掉我要干啥来着。",
+      "type": "text",
+      "x": 613,
+      "y": 70,
+      "width": 250,
+      "height": 170
+    },
+    {
+      "id": "a9b7eb5f6b22668e",
+      "styleAttributes": {},
+      "text": "全英文的万字长文",
+      "type": "text",
+      "x": 478,
+      "y": 424,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "13bea44ea9a7faf4",
+      "styleAttributes": {},
+      "text": "AI赋能工作流",
+      "type": "text",
+      "x": 280,
+      "y": -160,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "6c794e4ac1fa675a",
+      "styleAttributes": {},
+      "text": "- 借助总结工具，快速预览文章和书，做到心中有数，再决定要不要细看。",
+      "type": "text",
+      "x": 280,
+      "y": -34,
+      "width": 250,
+      "height": 204
+    },
+    {
+      "id": "c710c85c6c79aa04",
+      "styleAttributes": {},
+      "text": "语音备忘录 录音",
+      "type": "text",
+      "x": -302,
+      "y": 560,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "8a3b96428cbb8d6a",
+      "styleAttributes": {},
+      "type": "link",
+      "url": "https://kimi.moonshot.cn/chat/cmsuacecp7f1tjji6j70",
+      "x": -308,
+      "y": 960,
+      "width": 267,
+      "height": 180
+    },
+    {
+      "id": "57cb454d1f71c22d",
+      "styleAttributes": {},
+      "type": "link",
+      "url": "https://pxt0ppjofd9.feishu.cn/minutes/obcnacapvstig47f4s7r45yq",
+      "x": -304,
+      "y": 700,
+      "width": 258,
+      "height": 134
+    },
+    {
+      "id": "c7c6bcdaa9b207f0",
+      "styleAttributes": {},
+      "text": "###  擅长输出结构化内容",
+      "type": "text",
+      "x": 1372,
+      "y": -566,
+      "width": 360,
+      "height": 100
+    },
+    {
+      "id": "f2d4c1c79cac0a9b",
+      "styleAttributes": {},
+      "text": "#### 有趣的例子",
+      "type": "text",
+      "x": 2165,
+      "y": -566,
+      "width": 360,
+      "height": 100
+    },
+    {
+      "file": "Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/gpt4的图片理解能力.md",
+      "id": "8651d921209cabef",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 2765,
+      "y": 434,
+      "width": 400,
+      "height": 666
+    }
+  ]
+}

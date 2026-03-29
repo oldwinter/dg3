@@ -1,0 +1,366 @@
+{
+	"nodes": [
+		{
+			"id": "g_nav001",
+			"type": "group",
+			"x": -1560,
+			"y": -280,
+			"width": 3440,
+			"height": 240,
+			"label": "gstack-skills-07｜发布与收尾",
+			"color": "2"
+		},
+		{
+			"id": "g_arch002",
+			"type": "group",
+			"x": -1560,
+			"y": 20,
+			"width": 1900,
+			"height": 1480,
+			"label": "架构区｜按角色分层",
+			"color": "4"
+		},
+		{
+			"id": "g_flow003",
+			"type": "group",
+			"x": 420,
+			"y": 20,
+			"width": 1460,
+			"height": 1480,
+			"label": "流程区｜常见使用顺序",
+			"color": "5"
+		},
+		{
+			"id": "g_note004",
+			"type": "group",
+			"x": -1560,
+			"y": 1560,
+			"width": 3440,
+			"height": 420,
+			"label": "注意事项｜相邻域、误用提醒、跳转",
+			"color": "3"
+		},
+		{
+			"id": "t_title005",
+			"type": "text",
+			"text": "发布与收尾\n从整理分支到发 PR、补文档、复盘与升级。",
+			"x": -1480,
+			"y": -220,
+			"width": 920,
+			"height": 140,
+			"color": "2"
+		},
+		{
+			"id": "t_count006",
+			"type": "text",
+			"text": "覆盖 skills：6\n定位：从整理分支到发 PR、补文档、复盘与升级。",
+			"x": -520,
+			"y": -220,
+			"width": 620,
+			"height": 140,
+			"color": "2"
+		},
+		{
+			"id": "f_home007",
+			"type": "file",
+			"file": "gstack-skills-00-总览.canvas",
+			"x": 700,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "2"
+		},
+		{
+			"id": "f_index008",
+			"type": "file",
+			"file": "gstack-skills-总索引.md",
+			"x": 1180,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "2"
+		},
+		{
+			"id": "t_nav009",
+			"type": "text",
+			"text": "导航\n左：总览\n右：文字索引",
+			"x": 1620,
+			"y": -220,
+			"width": 180,
+			"height": 160,
+			"color": "2"
+		},
+		{
+			"id": "t_head010",
+			"type": "text",
+			"text": "交付动作",
+			"x": -1480,
+			"y": 100,
+			"width": 560,
+			"height": 90,
+			"color": "4"
+		},
+		{
+			"id": "t_skill011",
+			"type": "text",
+			"text": "finishing-a-development-branch\n功能完成后决定怎么收尾、提 PR 或清理分支。\n触发：开发分支已接近结束，需要整理落地方式时。",
+			"x": -1480,
+			"y": 220,
+			"width": 560,
+			"height": 170,
+			"color": "4"
+		},
+		{
+			"id": "t_skill012",
+			"type": "text",
+			"text": "create-pull-request\n按项目约定整理并创建 GitHub PR。\n触发：代码完成后需要发起评审时。",
+			"x": -1480,
+			"y": 420,
+			"width": 560,
+			"height": 170,
+			"color": "4"
+		},
+		{
+			"id": "t_skill013",
+			"type": "text",
+			"text": "ship\n完整 ship 工作流：合基线、跑验证、开 PR。\n触发：代码 ready，要按项目流程交付时。",
+			"x": -1480,
+			"y": 620,
+			"width": 560,
+			"height": 170,
+			"color": "4"
+		},
+		{
+			"id": "t_head014",
+			"type": "text",
+			"text": "文档与复盘",
+			"x": -880,
+			"y": 100,
+			"width": 560,
+			"height": 90,
+			"color": "4"
+		},
+		{
+			"id": "t_skill015",
+			"type": "text",
+			"text": "document-release\n把 README、CHANGELOG、架构文档同步到已发布状态。\n触发：功能落地后要补齐文档与说明时。",
+			"x": -880,
+			"y": 220,
+			"width": 560,
+			"height": 170,
+			"color": "4"
+		},
+		{
+			"id": "t_skill016",
+			"type": "text",
+			"text": "retro\n做周期性复盘，分析产出、质量和趋势。\n触发：一周或一个阶段结束，想总结经验时。",
+			"x": -880,
+			"y": 420,
+			"width": 560,
+			"height": 170,
+			"color": "4"
+		},
+		{
+			"id": "t_head017",
+			"type": "text",
+			"text": "工具维护",
+			"x": -280,
+			"y": 100,
+			"width": 560,
+			"height": 90,
+			"color": "4"
+		},
+		{
+			"id": "t_skill018",
+			"type": "text",
+			"text": "gstack-upgrade\n升级 gstack 到最新版本。\n触发：用户明确说升级 gstack 或你发现版本过旧时。",
+			"x": -280,
+			"y": 220,
+			"width": 560,
+			"height": 170,
+			"color": "4"
+		},
+		{
+			"id": "t_ftitle019",
+			"type": "text",
+			"text": "本域主线\nfinishing-a-development-branch → create-pull-request → ship → document-release → retro → gstack-upgrade",
+			"x": 500,
+			"y": 100,
+			"width": 1300,
+			"height": 200,
+			"color": "5"
+		},
+		{
+			"id": "t_flow020",
+			"type": "text",
+			"text": "finishing-a-development-branch\n功能完成后决定怎么收尾、提 PR 或清理分支。",
+			"x": 520,
+			"y": 360,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_flow021",
+			"type": "text",
+			"text": "create-pull-request\n按项目约定整理并创建 GitHub PR。",
+			"x": 520,
+			"y": 500,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_flow023",
+			"type": "text",
+			"text": "ship\n完整 ship 工作流：合基线、跑验证、开 PR。",
+			"x": 520,
+			"y": 640,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_flow025",
+			"type": "text",
+			"text": "document-release\n把 README、CHANGELOG、架构文档同步到已发布状态。",
+			"x": 520,
+			"y": 780,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_flow027",
+			"type": "text",
+			"text": "retro\n做周期性复盘",
+			"x": 520,
+			"y": 920,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_flow029",
+			"type": "text",
+			"text": "gstack-upgrade\n升级 gstack 到最新版本。",
+			"x": 520,
+			"y": 1060,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_decision031",
+			"type": "text",
+			"text": "何时选 A / B\n- 只开 PR：create-pull-request\n- 要整套发货：ship\n- 发完要补 docs：document-release",
+			"x": 500,
+			"y": 1180,
+			"width": 1300,
+			"height": 220,
+			"color": "5"
+		},
+		{
+			"id": "t_adj032",
+			"type": "text",
+			"text": "相邻域推荐\n- QA评审与验证\n- 知识库与技能维护",
+			"x": -1480,
+			"y": 1640,
+			"width": 820,
+			"height": 240,
+			"color": "3"
+		},
+		{
+			"id": "t_warn033",
+			"type": "text",
+			"text": "常见误用提醒\n- ship 比 create-pull-request 更重流程。\n- 文档同步别拖到忘了再补。",
+			"x": -620,
+			"y": 1640,
+			"width": 980,
+			"height": 240,
+			"color": "3"
+		},
+		{
+			"id": "f_adj034",
+			"type": "file",
+			"file": "gstack-skills-06-QA评审与验证.canvas",
+			"x": 500,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "3"
+		},
+		{
+			"id": "f_adj035",
+			"type": "file",
+			"file": "gstack-skills-09-知识库与技能维护.canvas",
+			"x": 980,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "3"
+		},
+		{
+			"id": "t_jump036",
+			"type": "text",
+			"text": "跳转建议\n需要更完整的文字说明时，打开总索引；\n遇到跨域问题时，优先沿相邻域跳转。",
+			"x": 1460,
+			"y": 1640,
+			"width": 320,
+			"height": 240,
+			"color": "3"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_flow022",
+			"fromNode": "t_flow020",
+			"fromSide": "bottom",
+			"toNode": "t_flow021",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"label": "主线",
+			"color": "5"
+		},
+		{
+			"id": "e_flow024",
+			"fromNode": "t_flow021",
+			"fromSide": "bottom",
+			"toNode": "t_flow023",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_flow026",
+			"fromNode": "t_flow023",
+			"fromSide": "bottom",
+			"toNode": "t_flow025",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_flow028",
+			"fromNode": "t_flow025",
+			"fromSide": "bottom",
+			"toNode": "t_flow027",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_flow030",
+			"fromNode": "t_flow027",
+			"fromSide": "bottom",
+			"toNode": "t_flow029",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}

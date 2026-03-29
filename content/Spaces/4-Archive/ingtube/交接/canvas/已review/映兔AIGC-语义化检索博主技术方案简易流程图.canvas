@@ -1,0 +1,284 @@
+{
+  "edges": [
+    {
+      "fromNode": "a33e759ece66e8ec",
+      "fromSide": "right",
+      "id": "c2041dc5c71b79db",
+      "toNode": "475e1155bee87448",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "475e1155bee87448",
+      "fromSide": "right",
+      "id": "52fa2b0dbe1583d4",
+      "label": "存放",
+      "toNode": "ff8a19934a9ccf98",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "85046991f7510ba0",
+      "fromSide": "right",
+      "id": "a153a557dad6f399",
+      "label": "方案1",
+      "toNode": "a33e759ece66e8ec",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "e1e6834cd5cbb0d2",
+      "fromSide": "right",
+      "id": "c1e73f475ed34cac",
+      "label": "方案1",
+      "toNode": "5e8cfdf2a45cfd13",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "5e8cfdf2a45cfd13",
+      "fromSide": "right",
+      "id": "fae445461dd6c658",
+      "toNode": "b4a2f8dfa71cd7a7",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "b4a2f8dfa71cd7a7",
+      "fromSide": "right",
+      "id": "b04531804a81c66c",
+      "label": "查询，获得相似度数据",
+      "toNode": "ff8a19934a9ccf98",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "e1e6834cd5cbb0d2",
+      "fromSide": "left",
+      "id": "7b0a39d9522cf4ce",
+      "toEnd": "none",
+      "toNode": "fc977e1a913b1b99",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "15bd5bc9887f3ef9",
+      "fromSide": "right",
+      "id": "89850422227a610b",
+      "label": "方案2",
+      "toNode": "5e8cfdf2a45cfd13",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "85046991f7510ba0",
+      "fromSide": "bottom",
+      "id": "d79411769e829eb6",
+      "label": "方案2",
+      "toNode": "15bd5bc9887f3ef9",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "15bd5bc9887f3ef9",
+      "fromSide": "right",
+      "id": "a6945f44afb1a40a",
+      "label": "方案2",
+      "toNode": "a33e759ece66e8ec",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "e1e6834cd5cbb0d2",
+      "fromSide": "top",
+      "id": "0125ef5837c3d100",
+      "label": "方案2",
+      "toNode": "15bd5bc9887f3ef9",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6f02510542730283",
+      "fromSide": "bottom",
+      "id": "2fb0eec961695d8b",
+      "toNode": "8e68a4ec43b4f55b",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "8e68a4ec43b4f55b",
+      "fromSide": "right",
+      "id": "f371e687647b873b",
+      "toNode": "85046991f7510ba0",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "c27035477ec77051",
+      "fromSide": "bottom",
+      "id": "8e26ee1f3080cddd",
+      "toNode": "15bd5bc9887f3ef9",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "fc977e1a913b1b99",
+      "fromSide": "top",
+      "id": "e1b38a1d492090f7",
+      "label": "embedding模型，对自然化语义描述效果更好，还是标签化描述效果更好？",
+      "toNode": "8e68a4ec43b4f55b",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "f40376956dce3fb6",
+      "fromSide": "right",
+      "id": "c304e186fced1c2d",
+      "toNode": "ff8a19934a9ccf98",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "ff8a19934a9ccf98",
+      "fromSide": "right",
+      "id": "b61bf19d88309b18",
+      "toNode": "009bdd85c62791b4",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/openai embedding 接口.md",
+      "height": 400,
+      "id": "a33e759ece66e8ec",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -300,
+      "y": -200
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/openai embedding 接口.md",
+      "height": 400,
+      "id": "475e1155bee87448",
+      "styleAttributes": {},
+      "subpath": "#返回数据体",
+      "type": "file",
+      "width": 400,
+      "x": 300,
+      "y": -200
+    },
+    {
+      "color": "3",
+      "file": "Spaces/1-Project/搞透 AI Agent 开发/向量数据库 vectorstore 选型.md",
+      "height": 400,
+      "id": "ff8a19934a9ccf98",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": 1040,
+      "y": -200
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/openai embedding 接口.md",
+      "height": 400,
+      "id": "5e8cfdf2a45cfd13",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -300,
+      "y": 320
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/openai embedding 接口.md",
+      "height": 400,
+      "id": "b4a2f8dfa71cd7a7",
+      "styleAttributes": {},
+      "subpath": "#返回数据体",
+      "type": "file",
+      "width": 400,
+      "x": 300,
+      "y": 320
+    },
+    {
+      "file": "Cards/Embeddings.md",
+      "height": 400,
+      "id": "fc977e1a913b1b99",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -1540,
+      "y": 380
+    },
+    {
+      "height": 200,
+      "id": "8e68a4ec43b4f55b",
+      "styleAttributes": {},
+      "text": "## 数据分析师对博主数据库进行处理，生成csv表格\n\n当前的表格，还是有点过于标签化，metadata化。这种数据不确定embdding接口能不能很好地理解。待测试对比。\n",
+      "type": "text",
+      "width": 430,
+      "x": -1555,
+      "y": -300
+    },
+    {
+      "height": 220,
+      "id": "6f02510542730283",
+      "styleAttributes": {},
+      "text": "## 博主数据库（全量）\n- 个人信息\n- 个人简介\n- 历史笔记\n- 等等",
+      "type": "text",
+      "width": 400,
+      "x": -1540,
+      "y": -730
+    },
+    {
+      "height": 100,
+      "id": "c27035477ec77051",
+      "styleAttributes": {},
+      "text": "## prompt提示词编写\n让chatgpt，将表格数据，转换成人话\n",
+      "type": "text",
+      "width": 370,
+      "x": -830,
+      "y": -510
+    },
+    {
+      "color": "1",
+      "height": 80,
+      "id": "e1e6834cd5cbb0d2",
+      "styleAttributes": {},
+      "text": "## 本次待搜索数据or自然语句",
+      "type": "text",
+      "width": 290,
+      "x": -1000,
+      "y": 500
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "85046991f7510ba0",
+      "styleAttributes": {},
+      "text": "## 初始数据csv",
+      "type": "text",
+      "width": 250,
+      "x": -1050,
+      "y": -260
+    },
+    {
+      "color": "4",
+      "file": "Spaces/2-Area/计算机知识/语义理解转换中间层.md",
+      "height": 380,
+      "id": "15bd5bc9887f3ef9",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 310,
+      "x": -770,
+      "y": 10
+    },
+    {
+      "height": 120,
+      "id": "f40376956dce3fb6",
+      "styleAttributes": {},
+      "text": "## 博主数据 （增量）",
+      "type": "text",
+      "width": 400,
+      "x": -1045,
+      "y": -730
+    },
+    {
+      "height": 400,
+      "id": "009bdd85c62791b4",
+      "styleAttributes": {},
+      "text": "## 返回按照相似度降序的列表",
+      "type": "text",
+      "width": 440,
+      "x": 1600,
+      "y": -200
+    }
+  ]
+}

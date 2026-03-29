@@ -1,0 +1,12 @@
+{
+	"edges":[],
+	"metadata":{
+		"frontmatter":{
+			"aliases":["卡片盒笔记法实施流程"]
+		},
+		"version":"1.0-1.0"
+	},
+	"nodes":[
+		{"file":"Cards/一元化收集.md","id":"69d834f506eb3ebb","type":"file","x":-240,"y":-240,"width":260,"height":160}
+	]
+}

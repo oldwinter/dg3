@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "id": "40659604aa3e2da3",
+      "type": "text",
+      "text": "## 先停消费类型的服务和定时任务（task类型）\n- [[canal-comsumer]]\n- [[mq-proxy-task]]\n- [[regular-task]]\n",
+      "styleAttributes": {},
+      "x": -100,
+      "y": 400,
+      "width": 640,
+      "height": 200
+    },
+    {
+      "id": "985a92d34c6d4131",
+      "type": "text",
+      "text": "## 确认mq消费已完成\n\n让旧数据被消费完，避免新格式数据生产出来后，被旧的消费者消费，产生错误。",
+      "styleAttributes": {},
+      "x": 720,
+      "y": 400,
+      "width": 280,
+      "height": 200
+    },
+    {
+      "id": "330dac0155ea4819",
+      "type": "text",
+      "text": "## 创建一个tmp namespace做为临时环境，将pod等资源全部创建一套\n- namespace\n- secret\n- configmap\n- service\n- app（deployment、statefulset）\n\t- 不处理task类型的app\n",
+      "styleAttributes": {},
+      "x": 1140,
+      "y": 400,
+      "width": 460,
+      "height": 220
+    },
+    {
+      "id": "53407d7a1fe2aa0d",
+      "type": "text",
+      "text": "## 删除tmp namespace",
+      "styleAttributes": {},
+      "x": 1140,
+      "y": 720,
+      "width": 460,
+      "height": 160
+    },
+    {
+      "id": "d4d86006f072e709",
+      "type": "text",
+      "text": "## 删除tmp ingress\n删除tmp ingress后，ingress controller讲自动切换production ingress上面指定的svc重新接管流量",
+      "styleAttributes": {},
+      "x": 1860,
+      "y": 720,
+      "width": 300,
+      "height": 140
+    },
+    {
+      "id": "a1126ac1bc8fd3ee",
+      "type": "text",
+      "text": "## 配置ingress，100%切换流量从production到tmp\n\n这个虽然ingress里面rules的service name没有变，但是由于ingress是在不同namespace创建的，所以流量被正确导流到新的tmp namespace的同名的service中了。",
+      "styleAttributes": {},
+      "x": 1860,
+      "y": 400,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "574b53c64afa8636",
+      "type": "text",
+      "text": "## 将同样的资源文件，sync变更到production namespace",
+      "styleAttributes": {},
+      "x": 2380,
+      "y": 510,
+      "width": 440,
+      "height": 220
+    },
+    {
+      "id": "3de57e3126d7b576",
+      "type": "text",
+      "text": "## 恢复消费类型的服务和定时任务（task类型）",
+      "styleAttributes": {},
+      "x": 400,
+      "y": 720,
+      "width": 640,
+      "height": 160
+    },
+    {
+      "id": "3bcb14a39592fef8",
+      "type": "text",
+      "text": "## 此时mq 新版本一定消费新消息",
+      "styleAttributes": {},
+      "x": -100,
+      "y": 730,
+      "width": 420,
+      "height": 150
+    }
+  ],
+  "edges": [
+    {
+      "id": "6a4bf4b0815d2aa8",
+      "fromNode": "40659604aa3e2da3",
+      "fromSide": "right",
+      "toNode": "985a92d34c6d4131",
+      "toSide": "left"
+    },
+    {
+      "id": "6b3067fa75cb2289",
+      "fromNode": "985a92d34c6d4131",
+      "fromSide": "right",
+      "toNode": "330dac0155ea4819",
+      "toSide": "left"
+    },
+    {
+      "id": "c6faed691c72c7c9",
+      "fromNode": "330dac0155ea4819",
+      "fromSide": "right",
+      "toNode": "a1126ac1bc8fd3ee",
+      "toSide": "left"
+    },
+    {
+      "id": "6d1c076238b7c6f2",
+      "fromNode": "a1126ac1bc8fd3ee",
+      "fromSide": "right",
+      "toNode": "574b53c64afa8636",
+      "toSide": "top",
+      "label": "等待5秒，让流量全部走到tmp production"
+    },
+    {
+      "id": "d86e31410271e99d",
+      "fromNode": "574b53c64afa8636",
+      "fromSide": "bottom",
+      "toNode": "d4d86006f072e709",
+      "toSide": "right"
+    },
+    {
+      "id": "d6c82af1075263eb",
+      "fromNode": "d4d86006f072e709",
+      "fromSide": "left",
+      "toNode": "53407d7a1fe2aa0d",
+      "toSide": "right",
+      "label": "等待5秒，让流量回到production namespace"
+    },
+    {
+      "id": "9a96189833af6ed0",
+      "fromNode": "53407d7a1fe2aa0d",
+      "fromSide": "left",
+      "toNode": "3de57e3126d7b576",
+      "toSide": "right"
+    },
+    {
+      "id": "338a1ffbf2286d84",
+      "fromNode": "3de57e3126d7b576",
+      "fromSide": "left",
+      "toNode": "3bcb14a39592fef8",
+      "toSide": "right"
+    }
+  ],
+  "metadata": {}
+}

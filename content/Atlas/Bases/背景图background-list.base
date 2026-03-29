@@ -1,0 +1,25 @@
+views:
+  - type: cards
+    name: coolbackground
+    filters:
+      and:
+        - file.name.startsWith("coolbackgrounds")
+    image: file.file
+    imageFit: contain
+    imageAspectRatio: 0.75
+  - type: cards
+    name: arc的背景图
+    filters:
+      and:
+        - file.folder == "Extras/Attachments/Images/arc的背景图"
+    image: file.file
+    imageFit: contain
+    imageAspectRatio: 0.75
+  - type: cards
+    name: raycast的背景图
+    filters:
+      and:
+        - file.folder == "Extras/Attachments/Images/raycast的背景图"
+    image: file.file
+    imageAspectRatio: 0.6
+    imageFit: contain

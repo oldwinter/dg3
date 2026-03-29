@@ -1,0 +1,31 @@
+filters:
+  and:
+    - 分类.containsAny(link("github开源 - fileclass"))
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - stars
+      - forks
+      - star_date
+      - language
+      - issues
+      - description
+      - size_kb
+      - repo_url
+      - updated_date
+    sort:
+      - property: star_date
+        direction: ASC
+      - property: forks
+        direction: ASC
+      - property: stars
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: size_kb
+        direction: ASC
+    columnSize:
+      file.name: 254
+      note.license: 199

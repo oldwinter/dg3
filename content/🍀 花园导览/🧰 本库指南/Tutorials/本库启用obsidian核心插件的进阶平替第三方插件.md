@@ -6,16 +6,16 @@ publish: true
 ---
 
 - 快速切换
-	- 改用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Another Quick Switcher]]。
+  - 改用[[Another Quick Switcher]]。
 - 命令面板
-	- 改用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Better Command Palette]]。
+  - 改用[[Better Command Palette]]。
 - 模板
-	- 改用[[Sources/GithubStarsSync/Templater]]。
+  - 改用[[Templater]]。
 - 大纲
-	- 改用。
+  - 改用。
 - 同步
-	- 用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Remotely Save]]平替
+  - 用[[Remotely Save]]平替
 - 发布
-	- 用[[Cards/DIgital Garden]]平替
+  - 用[[DIgital Garden]]平替
 - 幻灯片
-	- [[Cards/Advanced Slides]]插件完爆这个。或如果有简单展示诉求，用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Focus and Highlight]]插件也可平替使用场景。甚至新出的核心插件[[白板]]，用来演示也不错。更新：又新出了一个[[Sources/GithubStarsSync/marp]]插件，支持主题。
+  - [[Advanced Slides]]插件完爆这个。或如果有简单展示诉求，用[[Focus and Highlight]]插件也可平替使用场景。甚至新出的核心插件[[白板]]，用来演示也不错。更新：又新出了一个[[Marp]]插件，支持主题。

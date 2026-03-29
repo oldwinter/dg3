@@ -1,0 +1,73 @@
+{
+	"edges":[
+		{"id":"40c868f585bb21f2","fromNode":"9be3b3c44cf4d1e2","fromSide":"top","toNode":"b598328bd5b45294","toSide":"bottom"},
+		{"id":"baae1d20be498ea0","fromNode":"6c74821078cffea1","fromSide":"left","toNode":"9be3b3c44cf4d1e2","toSide":"right","fromEnd":"arrow","label":"搭建桥梁"},
+		{"id":"385dc314def77fe0","fromNode":"5b6145a9556e1a0e","fromSide":"right","toNode":"9be3b3c44cf4d1e2","toSide":"left","label":"①发起请求"},
+		{"id":"8243325cc7444a30","fromNode":"6c74821078cffea1","fromSide":"top","toNode":"843441d0ceba6592","toSide":"bottom"},
+		{"id":"f3a30b5b317b4529","fromNode":"9be3b3c44cf4d1e2","fromSide":"bottom","toNode":"6c74821078cffea1","toSide":"bottom","label":"②server将请求转给client"},
+		{"id":"5f8e60ef9bbc380a","fromNode":"5b6145a9556e1a0e","fromSide":"top","toNode":"843441d0ceba6592","toSide":"top","label":"③看起来就像直连本地电脑了"}
+	],
+	"metadata":{"version":"1.0-1.0"},
+	"nodes":[
+		{
+			"id":"f00c9445043b1368",
+			"styleAttributes":{},
+			"type":"group",
+			"x":-120,
+			"y":-80,
+			"width":730,
+			"height":220,
+			"label":"Untitled group"
+		},
+		{
+			"id":"9be3b3c44cf4d1e2",
+			"styleAttributes":{},
+			"text":"## frp server",
+			"type":"text",
+			"x":-100,
+			"y":60,
+			"width":250,
+			"height":60
+		},
+		{
+			"id":"5b6145a9556e1a0e",
+			"styleAttributes":{},
+			"text":"## 第三方机器",
+			"type":"text",
+			"x":-620,
+			"y":60,
+			"width":250,
+			"height":60
+		},
+		{
+			"id":"6c74821078cffea1",
+			"styleAttributes":{},
+			"text":"## frp client",
+			"type":"text",
+			"x":340,
+			"y":60,
+			"width":250,
+			"height":60
+		},
+		{
+			"id":"843441d0ceba6592",
+			"styleAttributes":{},
+			"text":"## 本地电脑",
+			"type":"text",
+			"x":340,
+			"y":-60,
+			"width":250,
+			"height":60
+		},
+		{
+			"id":"b598328bd5b45294",
+			"styleAttributes":{},
+			"text":"## 公网机器",
+			"type":"text",
+			"x":-100,
+			"y":-60,
+			"width":250,
+			"height":60
+		}
+	]
+}

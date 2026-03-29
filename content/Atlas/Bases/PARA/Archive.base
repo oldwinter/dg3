@@ -1,0 +1,6 @@
+filters:
+  and:
+    - PARA == "Achieve"
+views:
+  - type: table
+    name: Table

@@ -1,10 +1,11 @@
 ---
-date created: 2025-07-04
-date modified: 2025-07-04
-title: kubectl
+publish: true
+permalink: /Spaces/3-Resource/软件梳理/linux常用命令/kubectl.md
 aliases:
   - kubernetes-cli
-publish: true
+title: kubectl
+created: 2025-07-04
+modified: 2025-07-04
 ---
 
 ## 安装
@@ -37,7 +38,7 @@ https://github.com/ahmetb/kubectx
 
 多集群，多namespace管理的时候，尤其好用，避免了很多的重复指定-n dev这种操作。
 
-安装完[[Spaces/3-Resource/软件梳理/linux常用命令/fzf]]后，只敲命令不跟参数，则会自动进入fzf模糊搜索模式。
+安装完[[fzf]]后，只敲命令不跟参数，则会自动进入fzf模糊搜索模式。
 
 ```bash
       

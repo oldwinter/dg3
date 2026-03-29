@@ -1,0 +1,93 @@
+filters:
+  and:
+    - '!file.path.contains("ingtube")'
+    - file.ext == "canvas"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.folder
+      - file.mtime
+      - file.size
+    sort:
+      - property: file.size
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+      - property: file.folder
+        direction: DESC
+      - property: file.name
+        direction: DESC
+    group_by: file.folder
+    columnSize:
+      file.folder: 190
+      file.mtime: 221
+  - type: canvas-view
+    name: View
+    entryCanvasStates:
+      canvas:
+        nodes:
+          - id: e1e166f8b370f0de
+            type: file
+            file: 🍀 花园导览/🧰 本库指南/📂 本库目录及插件介绍.md
+            x: -340
+            y: -380
+            width: 400
+            height: 400
+          - id: 31b54999d03847a9
+            type: file
+            file: 🍀 花园导览/🧰 本库指南/Tutorials/本库通过todo标签进行简易计划和执行.md
+            x: -320
+            y: 198
+            width: 400
+            height: 400
+          - id: ff64776115f0cb82
+            type: file
+            file: 🍀 花园导览/🧰 本库指南/Tutorials/链接优先.md
+            x: 327
+            y: -453
+            width: 400
+            height: 335
+          - id: 3b09e70596b49c88
+            type: text
+            text: ""
+            x: 150
+            y: 568
+            width: 250
+            height: 60
+          - id: bases-qkjohv
+            type: file
+            file: Atlas/Canvas/普通人需要知道的AI常见术语.canvas
+            label: 普通人需要知道的AI常见术语
+            x: 0
+            y: 0
+            width: 320
+            height: 200
+            unknownData:
+              CanvasForBases:
+                entryPath: Atlas/Canvas/普通人需要知道的AI常见术语.canvas
+                autoPlaced: true
+        edges:
+          - id: 8d4c4ae692cd879f
+            fromNode: ff64776115f0cb82
+            toNode: 31b54999d03847a9
+            fromSide: bottom
+            toSide: right
+            styleAttributes: {}
+        x: 70
+        y: 109
+        zoom: -2.3267077199689354
+      managedPaths:
+        - 🍀 花园导览/🧰 本库指南/📂 本库目录及插件介绍.md
+        - 🍀 花园导览/🧰 本库指南/Tutorials/本库通过todo标签进行简易计划和执行.md
+        - 🍀 花园导览/🧰 本库指南/Tutorials/链接优先.md
+        - Atlas/Canvas/普通人需要知道的AI常见术语.canvas
+  - type: canvas-list-view
+    name: View 2
+  - type: canvas-node-list-view
+    name: node
+  - type: map-view-plugin
+    name: View 3
+    mapCenter: -47.040182144806664,-120.93750000000001
+    mapZoom: 0

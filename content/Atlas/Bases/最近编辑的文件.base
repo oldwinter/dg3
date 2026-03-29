@@ -1,0 +1,20 @@
+filters:
+  and:
+    - file.name != "最近编辑的文件.base"
+formulas:
+  Untitled: note["date modified"]
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.ext
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 50
+    columnSize:
+      file.name: 189
+      file.ext: 84
+      file.mtime: 174

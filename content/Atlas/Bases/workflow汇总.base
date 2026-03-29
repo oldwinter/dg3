@@ -1,0 +1,6 @@
+filters:
+  and:
+    - 分类.containsAny(link("工作流workflow - fileclass"))
+views:
+  - type: table
+    name: Table

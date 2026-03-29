@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian - shimmering 主题.md","title":"obsidian - shimmering 主题","created":"2022-06-11","modified":"2023-03-14","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian - shimmering 主题.md
+title: obsidian - shimmering 主题
+created: 2022-06-11
+modified: 2023-03-14
 ---
-
 
 [GitHub - chrisgrieser/shimmering-focus: A minimalistic Obsidian theme focused on readability and condensed information display](https://github.com/chrisgrieser/shimmering-focus)
 

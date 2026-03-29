@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Extras/Documents/Obsidian Bases View 视图.md","created":"2025-07-25","modified":"2025-08-19","cssclasses":""}
+publish: true
+permalink: /Extras/Documents/Obsidian Bases View 视图.md
+created: 2025-07-25
+modified: 2025-08-19
 ---
-
 
 Views allow you to organize the information in a [Base](https://help.obsidian.md/bases) in multiple different ways. A base can contain several views, and each view can have a unique configuration to display, sort, and filter files.
 
@@ -66,9 +68,9 @@ Filters have three components:
 
 #### Conjunctions
 
-- **All the following are true** is an `and` statement — results will only be shown if *all* conditions in the filter group are met.
-- **Any of the following are true** is an `or` statement — results will be shown if *any* of the conditions in the filter group are met.
-- **None of the following are true** is a `not` statement — results will not be shown if *any* of the conditions in the filter group are met.
+- **All the following are true** is an `and` statement — results will only be shown if _all_ conditions in the filter group are met.
+- **Any of the following are true** is an `or` statement — results will be shown if _any_ of the conditions in the filter group are met.
+- **None of the following are true** is a `not` statement — results will not be shown if _any_ of the conditions in the filter group are met.
 
 #### Filter groups
 

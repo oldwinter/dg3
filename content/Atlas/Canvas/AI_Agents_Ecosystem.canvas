@@ -1,0 +1,78 @@
+{
+	"nodes":[
+		{
+			"id":"central_hub",
+			"type":"file",
+			"file":"Atlas/MOCs/∑ AI Agent.md",
+			"title":"AI Agent 生态系统",
+			"x":1200,
+			"y":400,
+			"width":320,
+			"height":120,
+			"color":"6",
+			"cssclasses":["gradient-bg","card-shadow"]
+		},
+		{"id":"foundation_models","type":"text","text":"## 🤖 基础模型\n\n• Claude Opus 4\n• GPT-4 Turbo\n• Gemini Ultra\n• Grok 2","x":450,"y":150,"width":280,"height":200,"color":"2"},
+		{"id":"mcp_protocol","type":"text","text":"## 🔗 MCP 协议\n\nModel Context Protocol\n\nAnthropic 标准化的\nAgent 通信协议","x":820,"y":50,"width":260,"height":180,"color":"4"},
+		{"id":"tool_use","type":"text","text":"## 🛠️ 工具调用\n\n• 文件系统操作\n• 代码执行\n• API 调用\n• Web Fetch","x":1180,"y":50,"width":280,"height":200,"color":"5"},
+		{"id":"memory_systems","type":"text","text":"## 🧠 记忆系统\n\n• 短期记忆\n• 长期记忆\n• 向量数据库\n• RAG 检索","x":1600,"y":150,"width":280,"height":200,"color":"3"},
+		{
+			"id":"claude_code",
+			"type":"file",
+			"file":"Cards/claude code.md",
+			"x":450,
+			"y":420,
+			"width":240,
+			"height":100,
+			"color":"1",
+			"cssclasses":["rounded-lg"]
+		},
+		{
+			"id":"langchain",
+			"type":"file",
+			"file":"Spaces/4-Archive/2025下半年看看新机会/MCP.md",
+			"x":750,
+			"y":280,
+			"width":240,
+			"height":100,
+			"color":"2",
+			"cssclasses":["rounded-lg"]
+		},
+		{"id":"autogen","type":"text","text":"## 🚀 AutoGen\n\n微软多Agent框架\n\n• Agent 协作\n• 角色分工\n• 复杂工作流","x":450,"y":600,"width":260,"height":180,"color":"4"},
+		{"id":"crewai","type":"text","text":"## 👥 CrewAI\n\n• Hierarchical Agents\n• 任务委派\n• 流程编排","x":800,"y":600,"width":260,"height":160,"color":"6"},
+		{"id":"swarm","type":"text","text":"## 🐝 OpenAI Swarm\n\n• 轻量级框架\n• Agent handoff\n• 教育演示","x":1150,"y":600,"width":260,"height":160,"color":"5"},
+		{
+			"id":"litellm",
+			"type":"file",
+			"file":"Spaces/2-Area/云服务和部署/LiteLLM 配置与问题排查.md",
+			"x":1500,
+			"y":420,
+			"width":240,
+			"height":100,
+			"color":"3",
+			"cssclasses":["rounded-lg"]
+		},
+		{"id":"evaluation","type":"text","text":"## 📊 评估体系\n\n• LLM Arena\n• HELM\n• 基准测试","x":1600,"y":600,"width":240,"height":160,"color":"1"},
+		{"id":"use_cases","type":"text","text":"## 💡 应用场景\n\n• 代码助手\n• 自动化运维\n• 数据分析\n• 客户服务","x":1200,"y":800,"width":300,"height":180,"color":"2"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"foundation_models","fromSide":"right","toNode":"central_hub","toSide":"left"},
+		{"id":"e2","fromNode":"mcp_protocol","fromSide":"bottom","toNode":"central_hub","toSide":"top"},
+		{"id":"e3","fromNode":"tool_use","fromSide":"left","toNode":"central_hub","toSide":"top"},
+		{"id":"e4","fromNode":"memory_systems","fromSide":"left","toNode":"central_hub","toSide":"right"},
+		{"id":"e5","fromNode":"claude_code","fromSide":"right","toNode":"central_hub","toSide":"left"},
+		{"id":"e6","fromNode":"langchain","fromSide":"top","toNode":"central_hub","toSide":"bottom"},
+		{"id":"e7","fromNode":"autogen","fromSide":"right","toNode":"central_hub","toSide":"bottom"},
+		{"id":"e8","fromNode":"crewai","fromSide":"left","toNode":"central_hub","toSide":"bottom"},
+		{"id":"e9","fromNode":"swarm","fromSide":"left","toNode":"central_hub","toSide":"bottom"},
+		{"id":"e10","fromNode":"litellm","fromSide":"left","toNode":"central_hub","toSide":"right"},
+		{"id":"e11","fromNode":"evaluation","fromSide":"left","toNode":"central_hub","toSide":"right"},
+		{"id":"e12","fromNode":"use_cases","fromSide":"top","toNode":"central_hub","toSide":"bottom"}
+	],
+	"groupings":[],
+	"style":{"backgroundColor":"#1a1b26"},
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "id": "47be4d9a97b8d309",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#A",
+      "x": -460,
+      "y": 387,
+      "width": 1326,
+      "height": 413,
+      "color": "3"
+    },
+    {
+      "id": "562b114f1cb65c28",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#S",
+      "x": 257,
+      "y": 94,
+      "width": 609,
+      "height": 225,
+      "color": "1"
+    },
+    {
+      "id": "bad512d63e0794bc",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#C",
+      "x": 2,
+      "y": 837,
+      "width": 400,
+      "height": 620,
+      "color": "4"
+    },
+    {
+      "id": "ab422e3cf3acef5c",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#B",
+      "x": -460,
+      "y": 837,
+      "width": 400,
+      "height": 620,
+      "color": "6"
+    },
+    {
+      "id": "bec38d97bad4424b",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#D",
+      "x": 466,
+      "y": 837,
+      "width": 400,
+      "height": 620,
+      "color": "5"
+    },
+    {
+      "id": "c0c5857d797fbba1",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#God",
+      "x": -460,
+      "y": 94,
+      "width": 662,
+      "height": 220,
+      "color": "1"
+    },
+    {
+      "id": "3dbe256ad73e3d25",
+      "type": "file",
+      "file": "Spaces/2-Area/windows高效使用/2025年我的Windows软件天梯榜-文字版.md",
+      "subpath": "#^874f84",
+      "styleAttributes": {
+        "border": "dotted"
+      },
+      "x": -460,
+      "y": -174,
+      "width": 400,
+      "height": 200,
+      "color": "1"
+    }
+  ],
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

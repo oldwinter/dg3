@@ -11,8 +11,8 @@ icon: '[[icon-cc-image-ChatGPT桌面端.png]]'
 publish: true
 跨平台技术栈: 不同技术栈
 分类:
-- '[[Atlas/Categories/macOS软件 - fileclass]]'
-- '[[Atlas/Categories/windows软件 - fileclass]]'
+- '[[macOS软件 - fileclass]]'
+- '[[windows软件 - fileclass]]'
 ---
 
 优势：

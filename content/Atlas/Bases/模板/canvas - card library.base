@@ -1,0 +1,23 @@
+formulas:
+  是否已出现在当前canvas: this.hasLink(file)
+  测试: this
+properties:
+  formula.是否已出现在当前canvas:
+    displayName: 是否已出现在当前canvas
+  formula.测试:
+    displayName: 当前文件
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - formula.是否已出现在当前canvas
+      - formula.测试
+    sort:
+      - property: formula.是否已出现在当前canvas
+        direction: DESC
+      - property: file.name
+        direction: DESC
+    limit: 50
+    columnSize:
+      file.name: 191

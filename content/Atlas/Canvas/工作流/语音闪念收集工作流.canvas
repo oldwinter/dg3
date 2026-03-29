@@ -1,0 +1,56 @@
+{
+	"edges":[
+		{
+			"fromFloating":true,
+			"id":"20152563ee421a4d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"b964ea9c42ba6baf",
+			"fromSide":"right",
+			"toNode":"ee3a6bab7af63fba",
+			"toSide":"left"
+		},
+		{
+			"fromFloating":true,
+			"id":"8fb586097c23e414",
+			"styleAttributes":{},
+			"toFloating":true,
+			"fromNode":"a6aa6417da10b2d1",
+			"fromSide":"right",
+			"toNode":"d0f35393968f968a",
+			"toSide":"left"
+		},
+		{
+			"fromFloating":true,
+			"id":"31db98d3bffee584",
+			"styleAttributes":{},
+			"toFloating":true,
+			"fromNode":"840bf6ccffdfd316",
+			"fromSide":"right",
+			"toNode":"d0f35393968f968a",
+			"toSide":"left"
+		},
+		{
+			"fromFloating":true,
+			"id":"e0c4d8fb593c7707",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"d0f35393968f968a",
+			"fromSide":"right",
+			"toNode":"b964ea9c42ba6baf",
+			"toSide":"left"
+		}
+	],
+	"metadata":{
+		"frontmatter":{},
+		"version":"1.0-1.0"
+	},
+	"nodes":[
+		{"file":"Spaces/3-Resource/软件梳理/安卓软件/闪念贝壳.md","id":"b964ea9c42ba6baf","type":"file","x":-260,"y":-240,"width":400,"height":400},
+		{"file":"Extras/Attachments/Images/Icons/闪念贝壳 icon.png","id":"d117c6731dc6aef2","type":"file","x":-260,"y":-440,"width":140,"height":140},
+		{"file":"Extras/Attachments/Images/Icons/安卓手机 icon.png","id":"a6aa6417da10b2d1","type":"file","x":-1260,"y":-440,"width":234,"height":234},
+		{"file":"Extras/Attachments/Images/Icons/macos笔记本 icon.png","id":"840bf6ccffdfd316","type":"file","x":-1260,"y":16,"width":234,"height":234},
+		{"file":"Spaces/2-Area/计算机知识/语音输入.md","id":"d0f35393968f968a","type":"file","x":-800,"y":-240,"width":400,"height":400,"color":"1"},
+		{"file":"Spaces/3-Resource/软件梳理/安卓软件/Obsidian.md","id":"ee3a6bab7af63fba","type":"file","x":360,"y":-240,"width":400,"height":400}
+	]
+}

@@ -1,0 +1,295 @@
+{
+	"edges":[
+		{
+			"id":"ewelcomestage1",
+			"styleAttributes":{"arrow":"triangle","path":"bezier"},
+			"fromNode":"welcome",
+			"fromSide":"bottom",
+			"toNode":"stage1group",
+			"toSide":"top",
+			"color":"3"
+		},
+		{
+			"id":"estage1stage2",
+			"styleAttributes":{"arrow":"triangle-outline","path":"bezier"},
+			"fromNode":"stage1group",
+			"fromSide":"right",
+			"toNode":"stage2group",
+			"toSide":"left",
+			"color":"5",
+			"label":"掌握基础后"
+		},
+		{
+			"id":"estage2stage3",
+			"styleAttributes":{"arrow":"diamond","path":"bezier"},
+			"fromNode":"stage2group",
+			"fromSide":"right",
+			"toNode":"stage3group",
+			"toSide":"left",
+			"color":"6",
+			"label":"熟悉核心功能"
+		},
+		{
+			"id":"estage3stage4",
+			"styleAttributes":{"arrow":"circle","path":"bezier"},
+			"fromNode":"stage3group",
+			"fromSide":"right",
+			"toNode":"stage4group",
+			"toSide":"left",
+			"color":"4",
+			"label":"插件增强后"
+		},
+		{
+			"id":"eallworkflow",
+			"styleAttributes":{"path":"square"},
+			"toFloating":true,
+			"fromNode":"stage1group",
+			"fromSide":"bottom",
+			"toNode":"workflowcenter",
+			"toSide":"left"
+		},
+		{
+			"id":"eallworkflow2",
+			"styleAttributes":{"path":"square"},
+			"toFloating":true,
+			"fromNode":"stage2group",
+			"fromSide":"bottom",
+			"toNode":"workflowcenter",
+			"toSide":"left"
+		},
+		{
+			"id":"eallworkflow3",
+			"styleAttributes":{"path":"square"},
+			"toFloating":true,
+			"fromNode":"stage3group",
+			"fromSide":"bottom",
+			"toNode":"workflowcenter",
+			"toSide":"right"
+		},
+		{
+			"id":"eallworkflow4",
+			"styleAttributes":{"path":"square"},
+			"toFloating":true,
+			"fromNode":"stage4group",
+			"fromSide":"bottom",
+			"toNode":"workflowcenter",
+			"toSide":"right"
+		},
+		{
+			"id":"eworkflowtips1",
+			"styleAttributes":{"path":"dotted"},
+			"fromNode":"workflowcenter",
+			"fromSide":"left",
+			"toNode":"tips1",
+			"toSide":"right",
+			"color":"1"
+		},
+		{
+			"id":"eworkflowtips2",
+			"styleAttributes":{"path":"dotted"},
+			"fromFloating":false,
+			"fromNode":"workflowcenter",
+			"fromSide":"right",
+			"toNode":"tips2",
+			"toSide":"left",
+			"color":"6"
+		},
+		{
+			"id":"ebasics1basics3",
+			"styleAttributes":{"path":"direct"},
+			"fromNode":"basics1",
+			"fromSide":"bottom",
+			"toNode":"basics3",
+			"toSide":"top"
+		},
+		{
+			"id":"ebasics2basics4",
+			"styleAttributes":{"path":"direct"},
+			"fromNode":"basics2",
+			"fromSide":"bottom",
+			"toNode":"basics4",
+			"toSide":"top"
+		},
+		{
+			"id":"ecore1core3",
+			"styleAttributes":{"path":"direct"},
+			"fromNode":"core1",
+			"fromSide":"bottom",
+			"toNode":"core3",
+			"toSide":"top"
+		},
+		{
+			"id":"ecore2core4",
+			"styleAttributes":{"path":"direct"},
+			"fromNode":"core2",
+			"fromSide":"bottom",
+			"toNode":"core4",
+			"toSide":"top"
+		},
+		{
+			"id":"eplugin2plugin3",
+			"styleAttributes":{"arrow":"halved-triangle","path":"bezier"},
+			"fromNode":"plugin2",
+			"fromSide":"right",
+			"toNode":"plugin3",
+			"toSide":"left",
+			"label":"配合使用"
+		},
+		{
+			"id":"eadvanced2advanced3",
+			"styleAttributes":{"path":"direct"},
+			"fromNode":"advanced2",
+			"fromSide":"right",
+			"toNode":"advanced3",
+			"toSide":"left"
+		}
+	],
+	"metadata":{
+		"frontmatter":{"created":"2025-01-27","description":"一个全面系统的 Obsidian 学习路径，从基础到高级应用","title":"Obsidian 从入门到精通 - 完整学习路线图"},
+		"startNode":"welcome",
+		"version":"1.0-1.0"
+	},
+	"nodes":[
+		{"id":"stage1group","type":"group","x":-1200,"y":400,"width":700,"height":800,"color":"3","label":"第一阶段：基础入门 (1-2周)"},
+		{"id":"stage2group","type":"group","x":-400,"y":400,"width":700,"height":800,"color":"5","label":"第二阶段：核心功能 (2-4周)"},
+		{"id":"stage3group","type":"group","x":400,"y":400,"width":700,"height":800,"color":"6","label":"第三阶段：插件生态 (1-2个月)"},
+		{"id":"stage4group","type":"group","x":1200,"y":400,"width":700,"height":800,"color":"4","label":"第四阶段：高级应用 (持续精进)"},
+		{
+			"id":"basics1",
+			"styleAttributes":{"shape":"rectangle"},
+			"text":"## 🎯 核心概念\n- Markdown 语法基础\n- 双向链接 [[wikilink]]\n- 标签系统 #tag\n- YAML 前置信息",
+			"type":"text",
+			"x":-1150,
+			"y":450,
+			"width":300,
+			"height":150,
+			"color":"3"
+		},
+		{"file":"Sources/AIGC/Obsidian 专家快速开始指南.md","id":"basics2","type":"file","x":-800,"y":450,"width":300,"height":150},
+		{
+			"id":"basics3",
+			"styleAttributes":{"shape":"rectangle"},
+			"text":"## 📁 文件管理\n- 目录结构设计\n- 文件命名规范\n- 附件管理策略",
+			"type":"text",
+			"x":-1150,
+			"y":650,
+			"width":300,
+			"height":150
+		},
+		{"file":"🍀 花园导览/🧰 本库指南/📂 本库目录及插件介绍.md","id":"basics4","type":"file","x":-800,"y":650,"width":300,"height":150},
+		{
+			"id":"basics5",
+			"styleAttributes":{"shape":"document"},
+			"text":"## 📚 推荐学习资源\n\n### 官方资源\n- [Obsidian 官方文档](https://help.obsidian.md/)\n- [Obsidian 社区论坛](https://forum.obsidian.md/)\n\n### 视频教程\n- Johnny学 3小时入门课\n- 简睿学堂插件系列\n\n### 文章教程\n- 少数派 Obsidian 专栏\n- PKMer 知识管理社区",
+			"type":"text",
+			"x":-1150,
+			"y":850,
+			"width":600,
+			"height":280,
+			"color":"2"
+		},
+		{
+			"id":"core1",
+			"styleAttributes":{"shape":"diamond"},
+			"text":"## 🔍 搜索与查询\n- 全局搜索技巧\n- 搜索运算符\n- 正则表达式\n- 标签与链接过滤",
+			"type":"text",
+			"x":-350,
+			"y":450,
+			"width":300,
+			"height":150
+		},
+		{"id":"tips1","text":"## 💡 学习建议\n\n1. **循序渐进**：不要贪多\n2. **实践为主**：边学边用\n3. **定期回顾**：温故知新\n4. **社区交流**：共同成长","type":"text","x":-1200,"y":1400,"width":400,"height":200,"color":"1"},
+		{
+			"id":"resourceslink",
+			"styleAttributes":{"shape":"pill"},
+			"type":"link",
+			"url":"https://pkmer.cn",
+			"x":-600,
+			"y":1800,
+			"width":300,
+			"height":100
+		},
+		{"id":"core3","text":"## 📝 模板系统\n- 核心模板功能\n- 模板变量\n- 日期格式化\n- 自动化创建","type":"text","x":-350,"y":650,"width":300,"height":150},
+		{
+			"id":"welcome",
+			"styleAttributes":{"border":"solid","shape":"pill","textAlign":"center"},
+			"text":"# 🚀 Obsidian 从入门到精通\n\n## 完整学习路线图\n\n> 从零基础到专家级用户的进阶之路\n\n**预计学习时间：3-6个月**",
+			"type":"text",
+			"x":0,
+			"y":0,
+			"width":500,
+			"height":200,
+			"color":"4"
+		},
+		{"file":"🍀 花园导览/🧰 本库指南/Tutorials/» Daily notes工作流.md","id":"core2","type":"file","x":0,"y":450,"width":300,"height":150},
+		{"file":"Extras/Templates/∑ 模板文件创建入口.md","id":"core4","type":"file","x":0,"y":650,"width":300,"height":150},
+		{
+			"id":"plugin1",
+			"styleAttributes":{"shape":"predefined-process"},
+			"text":"## 🔌 必装插件清单\n\n### 核心增强\n- **Dataview**: 动态查询与数据视图\n- **Templater**: 高级模板引擎\n- **QuickAdd**: 快速创建与自动化\n\n### 编辑增强\n- **Advanced Tables**: 表格编辑\n- **Calendar**: 日历视图\n- **Excalidraw**: 手绘图表",
+			"type":"text",
+			"x":450,
+			"y":450,
+			"width":600,
+			"height":320
+		},
+		{
+			"id":"core5",
+			"styleAttributes":{"shape":"parallelogram"},
+			"text":"## 🎨 Canvas 画布\n\n### 基础操作\n- 创建和连接节点\n- 分组与颜色管理\n- 嵌入文件和链接\n\n### 高级技巧\n- Portal 功能\n- 跨维度连接\n- 自定义样式",
+			"type":"text",
+			"x":-350,
+			"y":850,
+			"width":600,
+			"height":280,
+			"color":"1"
+		},
+		{
+			"id":"advanced1",
+			"styleAttributes":{"shape":"database"},
+			"text":"## 🗃️ 知识管理体系\n\n- **Zettelkasten** 卡片盒笔记法\n- **PARA** 方法论实践\n- **ACCESS** 工作流\n- **MOC** 内容地图构建",
+			"type":"text",
+			"x":1250,
+			"y":450,
+			"width":600,
+			"height":200
+		},
+		{"file":"🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 工作流汇总.md","id":"advanced2","type":"file","x":1250,"y":700,"width":300,"height":150},
+		{
+			"id":"workflowcenter",
+			"styleAttributes":{"shape":"circle","textAlign":"center"},
+			"text":"# 🔄 工作流整合\n\n将所有知识点整合成个人工作流：\n\n**输入** → **处理** → **连接** → **输出**\n\nInbox → Cards → Atlas → Published",
+			"type":"text",
+			"x":0,
+			"y":1400,
+			"width":800,
+			"height":300,
+			"color":"5"
+		},
+		{
+			"id":"communitylink",
+			"styleAttributes":{"shape":"pill"},
+			"type":"link",
+			"url":"https://forum.obsidian.md",
+			"x":0,
+			"y":1800,
+			"width":300,
+			"height":100
+		},
+		{
+			"id":"githublink",
+			"styleAttributes":{"shape":"pill"},
+			"type":"link",
+			"url":"https://github.com/oldwinter/knowledge-garden",
+			"x":600,
+			"y":1800,
+			"width":300,
+			"height":100
+		},
+		{"file":"Spaces/4-Archive/黑洞/Dataviews/» 本库常用的dataview工作流.md","id":"plugin2","type":"file","x":450,"y":800,"width":300,"height":150},
+		{"file":"🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Templater.md","id":"plugin3","portal":true,"type":"file","x":800,"y":800,"width":300,"height":150},
+		{"file":"🍀 花园导览/🧰 本库指南/🍫 本库方法论指南.md","id":"advanced3","type":"file","x":1600,"y":700,"width":300,"height":150},
+		{"id":"advanced4","text":"## 🤖 AI 集成\n\n### Cursor AI 自动化\n- 笔记自动分类\n- 智能标签建议\n- 内容摘要生成\n\n### 其他 AI 工具\n- ChatGPT 集成\n- Claude 辅助写作","type":"text","x":1250,"y":900,"width":600,"height":250,"color":"2"},
+		{"id":"tips2","text":"## 🎯 进阶目标\n\n- 建立个人知识体系\n- 开发自定义插件\n- 分享经验与模板\n- 成为社区贡献者","type":"text","x":1200,"y":1400,"width":400,"height":200,"color":"6"}
+	]
+}

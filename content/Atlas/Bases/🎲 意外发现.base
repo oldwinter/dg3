@@ -1,0 +1,292 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.folder != ".obsidian"
+formulas:
+  days_dormant: ((now() - file.mtime) / 86400000).round(0)
+  days_alive: ((now() - file.ctime) / 86400000).round(0)
+  age_tier: if(((now() - file.ctime) / 86400000) > 730, "🏛️ 古迹", if(((now() - file.ctime) / 86400000) > 365, "📜 陈酿", if(((now() - file.ctime) / 86400000) > 180, "🍂 半年", if(((now() - file.ctime) / 86400000) > 30, "🌿 月级", "🌱 新芽"))))
+  dormancy_tier: if(((now() - file.mtime) / 86400000) > 365, "💀 僵尸", if(((now() - file.mtime) / 86400000) > 180, "😴 沉睡", if(((now() - file.mtime) / 86400000) > 30, "🌙 休眠", "✨ 活跃")))
+  in_links: file.backlinks.length
+  out_links: file.links.length
+  net_links: file.backlinks.length + file.links.length
+  hub_score: if(file.backlinks.length + file.links.length == 0, "🏝️ 孤岛", if(file.backlinks.length + file.links.length < 3, "🌊 边缘", if(file.backlinks.length + file.links.length < 8, "🌲 节点", if(file.backlinks.length + file.links.length < 20, "⭐ 枢纽", "🌌 星系"))))
+  is_orphan: if(file.backlinks.length == 0, "⚠️", "")
+  words_est: (file.size / 5).round(0)
+  depth_tier: if(file.size > 15000, "📚 巨著", if(file.size > 5000, "📖 长文", if(file.size > 1500, "📝 笔记", if(file.size > 300, "💭 片段", "✏️ 便签"))))
+  forgotten_index: (((now() - file.mtime) / 86400000) / max(file.backlinks.length + file.links.length + 1, 1)).round(0)
+  hidden_gem_score: if(file.backlinks.length > 0, (file.size / (file.backlinks.length * 200)).round(1), (file.size / 100).round(1))
+  vitality: if(((now() - file.mtime) / 86400000) < 7, "🔥🔥🔥", if(((now() - file.mtime) / 86400000) < 30, "🔥🔥", if(((now() - file.mtime) / 86400000) < 90, "🔥", if(((now() - file.mtime) / 86400000) < 365, "❄️", "🧊"))))
+  birth_season: if(file.ctime.month <= 3, "🌸 春", if(file.ctime.month <= 6, "☀️ 夏", if(file.ctime.month <= 9, "🍂 秋", "❄️ 冬")))
+  birth_year: file.ctime.year
+  is_night_owl: if(file.ctime.hour >= 22 || file.ctime.hour <= 5, "🦉", "")
+  last_seen: file.mtime.relative()
+  born_on: file.ctime.format("YYYY-MM-DD")
+properties:
+  file.name:
+    displayName: 📄 笔记
+  file.folder:
+    displayName: 📁 位置
+  formula.days_dormant:
+    displayName: 🕐 沉睡天数
+  formula.days_alive:
+    displayName: 📅 年龄
+  formula.age_tier:
+    displayName: ⏳ 年代
+  formula.dormancy_tier:
+    displayName: 💤 活跃度
+  formula.in_links:
+    displayName: 🔙 被引用
+  formula.out_links:
+    displayName: 🔗 引出
+  formula.net_links:
+    displayName: 🕸️ 总连接
+  formula.hub_score:
+    displayName: 🌐 枢纽度
+  formula.is_orphan:
+    displayName: 🏝️
+  formula.words_est:
+    displayName: 📊 字数
+  formula.depth_tier:
+    displayName: 📏 深度
+  formula.forgotten_index:
+    displayName: 😴 遗忘指数
+  formula.hidden_gem_score:
+    displayName: 💎 宝藏指数
+  formula.vitality:
+    displayName: 🔥 活力
+  formula.birth_season:
+    displayName: 🌈 季节
+  formula.birth_year:
+    displayName: 📆 年份
+  formula.is_night_owl:
+    displayName: 🦉
+  formula.last_seen:
+    displayName: 🕰️ 最后更新
+  formula.born_on:
+    displayName: 🎂 创建日期
+views:
+  - type: cards
+    name: 🎰 随机漫游
+    filters:
+      and:
+        - file.size > 500
+    order:
+      - file.name
+      - formula.depth_tier
+      - formula.hub_score
+      - formula.last_seen
+    limit: 16
+  - type: table
+    name: 💎 被遗忘的宝藏 (180天+未动)
+    filters:
+      and:
+        - file.mtime < now() - "180d"
+        - file.size > 1500
+    order:
+      - file.name
+      - formula.depth_tier
+      - formula.days_dormant
+      - formula.in_links
+      - formula.forgotten_index
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: ASC
+    limit: 30
+  - type: table
+    name: 🏝️ 孤岛笔记 (无人引用)
+    filters:
+      and:
+        - file.backlinks.isEmpty()
+        - file.size > 500
+    order:
+      - file.name
+      - formula.is_orphan
+      - formula.words_est
+      - formula.days_alive
+      - formula.out_links
+      - file.folder
+    sort:
+      - property: file.size
+        direction: DESC
+    limit: 50
+  - type: table
+    name: 🦣 沉睡巨人 (大文件长期未动)
+    filters:
+      and:
+        - file.size > 5000
+        - file.mtime < now() - "90d"
+    order:
+      - file.name
+      - formula.words_est
+      - formula.days_dormant
+      - formula.hub_score
+      - formula.vitality
+    sort:
+      - property: file.size
+        direction: DESC
+    limit: 25
+  - type: table
+    name: 🕸️ 隐藏枢纽 (高连接但沉睡)
+    filters:
+      and:
+        - file.backlinks.length + file.links.length >= 8
+        - file.mtime < now() - "60d"
+    order:
+      - file.name
+      - formula.net_links
+      - formula.in_links
+      - formula.out_links
+      - formula.dormancy_tier
+    sort:
+      - property: formula.net_links
+        direction: DESC
+    limit: 25
+  - type: table
+    name: 🎁 被低估的笔记 (内容多引用少)
+    filters:
+      and:
+        - file.size > 3000
+        - file.backlinks.length < 2
+    order:
+      - file.name
+      - formula.hidden_gem_score
+      - formula.words_est
+      - formula.in_links
+      - formula.last_seen
+    sort:
+      - property: file.size
+        direction: DESC
+    limit: 30
+  - type: table
+    name: ⏳ 时光胶囊 (一年以上)
+    filters:
+      and:
+        - file.ctime < now() - "365d"
+    order:
+      - file.name
+      - formula.born_on
+      - formula.birth_season
+      - formula.age_tier
+      - formula.depth_tier
+    sort:
+      - property: file.ctime
+        direction: ASC
+    limit: 40
+  - type: cards
+    name: 🌸 季节记忆
+    filters:
+      and:
+        - file.ctime < now() - "90d"
+        - file.size > 800
+    order:
+      - file.name
+      - formula.birth_season
+      - formula.age_tier
+      - formula.depth_tier
+    limit: 20
+  - type: table
+    name: 🦉 深夜创作 (22:00-05:00)
+    filters:
+      and:
+        - file.ctime.hour >= 22 || file.ctime.hour <= 5
+    order:
+      - file.name
+      - formula.is_night_owl
+      - formula.born_on
+      - formula.depth_tier
+      - file.folder
+    sort:
+      - property: file.ctime
+        direction: DESC
+    limit: 30
+  - type: table
+    name: 🔥 新建未完善 (90天内创建)
+    filters:
+      and:
+        - file.ctime > now() - "90d"
+        - file.mtime < now() - "7d"
+        - file.size < 1000
+    order:
+      - file.name
+      - formula.born_on
+      - formula.days_dormant
+      - formula.words_est
+      - file.folder
+    sort:
+      - property: file.ctime
+        direction: DESC
+    limit: 30
+  - type: table
+    name: ⭐ 新星待连接 (30天内新建)
+    filters:
+      and:
+        - file.ctime > now() - "30d"
+        - file.backlinks.isEmpty()
+        - file.size > 300
+    order:
+      - file.name
+      - formula.born_on
+      - formula.words_est
+      - formula.out_links
+      - file.folder
+    sort:
+      - property: file.ctime
+        direction: DESC
+    limit: 25
+  - type: table
+    name: 🌱 Cards早期种子
+    filters:
+      and:
+        - file.inFolder("Cards")
+    order:
+      - file.name
+      - formula.born_on
+      - formula.age_tier
+      - formula.hub_score
+    sort:
+      - property: file.ctime
+        direction: ASC
+    limit: 50
+  - type: table
+    name: 📊 全库仪表盘
+    order:
+      - file.name
+      - formula.age_tier
+      - formula.dormancy_tier
+      - formula.hub_score
+      - formula.depth_tier
+      - formula.vitality
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 100
+  - type: cards
+    name: 🎯 本周复习推荐
+    filters:
+      and:
+        - file.mtime < now() - "30d"
+        - file.mtime > now() - "180d"
+        - file.size > 1000
+    order:
+      - file.name
+      - formula.depth_tier
+      - formula.hub_score
+      - formula.last_seen
+  - type: table
+    name: 🔗 链接失衡 (引出多被引少)
+    filters:
+      and:
+        - file.links.length > 5
+        - file.backlinks.length < 2
+    order:
+      - file.name
+      - formula.out_links
+      - formula.in_links
+      - formula.hub_score
+      - file.folder
+    sort:
+      - property: formula.out_links
+        direction: DESC

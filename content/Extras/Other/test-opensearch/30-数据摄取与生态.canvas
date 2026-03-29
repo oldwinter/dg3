@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"grp_sink","type":"group","x":560,"y":-240,"width":820,"height":1040,"label":"OpenSearch 目标"},
+		{"id":"grp_pipe","type":"group","x":-260,"y":-240,"width":780,"height":1040,"label":"摄取与处理"},
+		{"id":"grp_src","type":"group","x":-820,"y":-240,"width":520,"height":1040,"label":"数据源"},
+		{"id":"src_apps","type":"text","text":"应用 / 服务\n- 应用日志 / 指标 / 追踪\n- 业务事件 / Clickstream","x":-800,"y":-200,"width":480,"height":200,"color":"3"},
+		{"id":"src_aws","type":"text","text":"AWS 服务\n- CloudWatch Logs / Metrics\n- CloudTrail\n- S3（批量）/ DynamoDB Streams / RDS","x":-800,"y":40,"width":480,"height":260,"color":"3"},
+		{"id":"src_streams","type":"text","text":"流式平台\n- Amazon MSK（Kafka）\n- Kinesis Data Streams","x":-800,"y":340,"width":480,"height":200,"color":"3"},
+		{"id":"src_others","type":"text","text":"其他\n- 自建代理 / 采集器\n- 第三方 SaaS","x":-800,"y":580,"width":480,"height":200,"color":"3"},
+		{"id":"osi","type":"text","text":"OpenSearch Ingestion（Data Prepper 托管）\n- Ingest/Processor/Sink 管道\n- OTel Logs/Metrics/Traces","x":-240,"y":-200,"width":740,"height":200,"color":"2"},
+		{"id":"firehose","type":"text","text":"Kinesis Data Firehose\n- 无服务器投递到 OpenSearch / S3","x":-240,"y":40,"width":740,"height":160,"color":"2"},
+		{"id":"agents","type":"text","text":"代理与采集器\n- Logstash / Beats / Fluent Bit / Fluentd\n- OpenTelemetry Collector","x":-240,"y":240,"width":740,"height":180,"color":"2"},
+		{"id":"batch","type":"text","text":"批处理\n- S3 批量（Lambda/Glue）\n- 重建/回填","x":-240,"y":460,"width":740,"height":160,"color":"2"},
+		{"id":"title","type":"text","text":"数据摄取与生态集成","x":-40,"y":-340,"width":640,"height":80,"color":"6"},
+		{"id":"domain","type":"text","text":"预置型 Domain/域\n- 热/温/冷层级存储\n- 索引/搜索/分析","x":580,"y":-200,"width":780,"height":280,"color":"4"},
+		{"id":"serverless","type":"text","text":"Serverless Collections/集合\n- Index/Search OCU 自动扩缩\n- 多类型集合（Search/TS/Vector）","x":580,"y":140,"width":780,"height":280,"color":"4"},
+		{"id":"dash","type":"text","text":"消费与洞察\n- OpenSearch Dashboards / API / Athena\n- 警报/告警集成（CloudWatch/SNS）","x":580,"y":500,"width":780,"height":240,"color":"1"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"src_apps","fromSide":"right","toNode":"osi","toSide":"left","label":"OTel/HTTP"},
+		{"id":"e2","fromNode":"src_aws","fromSide":"right","toNode":"firehose","toSide":"left","label":"原生集成"},
+		{"id":"e3","fromNode":"src_streams","fromSide":"right","toNode":"agents","toSide":"left","label":"Kafka/Kinesis"},
+		{"id":"e4","fromNode":"src_aws","fromSide":"right","toNode":"batch","toSide":"left","label":"S3 批处理"},
+		{"id":"e5","fromNode":"osi","fromSide":"right","toNode":"domain","toSide":"left","label":"Sink: Domain"},
+		{"id":"e6","fromNode":"firehose","fromSide":"right","toNode":"domain","toSide":"left","label":"投递"},
+		{"id":"e7","fromNode":"agents","fromSide":"right","toNode":"domain","toSide":"left"},
+		{"id":"e8","fromNode":"batch","fromSide":"right","toNode":"domain","toSide":"left"},
+		{"id":"e9","fromNode":"osi","fromSide":"right","toNode":"serverless","toSide":"left","label":"Sink: Serverless"},
+		{"id":"e10","fromNode":"firehose","fromSide":"right","toNode":"serverless","toSide":"left"},
+		{"id":"e11","fromNode":"agents","fromSide":"right","toNode":"serverless","toSide":"left"},
+		{"id":"e12","fromNode":"domain","fromSide":"right","toNode":"dash","toSide":"left","label":"查询/可视化"},
+		{"id":"e13","fromNode":"serverless","fromSide":"right","toNode":"dash","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

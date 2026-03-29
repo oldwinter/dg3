@@ -1,0 +1,69 @@
+{
+  "edges": [
+    {
+      "fromNode": "599bae5ea1efafd0",
+      "fromSide": "top",
+      "id": "4646284fbae64266",
+      "label": "❌无法直接连通",
+      "toNode": "6f033cbb39e55808",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "599bae5ea1efafd0",
+      "fromSide": "right",
+      "id": "178e5331bcb122aa",
+      "label": "✅通过clash代理",
+      "toNode": "6f033cbb39e55808",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "599bae5ea1efafd0",
+      "fromSide": "bottom",
+      "id": "f99d0a6e92a11a0c",
+      "toNode": "2f2092c07f47c356",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "2f2092c07f47c356",
+      "fromSide": "right",
+      "id": "bd1871686ef915ba",
+      "toNode": "6f033cbb39e55808",
+      "toSide": "bottom"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "height": 50,
+      "id": "599bae5ea1efafd0",
+      "styleAttributes": {},
+      "text": "## 个人电脑",
+      "type": "text",
+      "width": 250,
+      "x": -420,
+      "y": 50
+    },
+    {
+      "height": 100,
+      "id": "6f033cbb39e55808",
+      "styleAttributes": {},
+      "text": "## OpenAI \nchatGPT API key",
+      "type": "text",
+      "width": 400,
+      "x": 220,
+      "y": 40
+    },
+    {
+      "height": 320,
+      "id": "2f2092c07f47c356",
+      "styleAttributes": {},
+      "text": "## [[One API - proxy]]\n\n部署在美国硅谷。\n创建出若干个api key，每个key的消耗情况，都可以控制，从而进行管控。\n\n后续换成公司已预付的 azure openai key，对使用者无感，生成效果一样，只不过速度慢一些。\n",
+      "type": "text",
+      "width": 290,
+      "x": -120,
+      "y": 220
+    }
+  ]
+}

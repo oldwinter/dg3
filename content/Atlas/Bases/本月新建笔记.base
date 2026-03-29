@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.ctime > now() - "30d"
+views:
+  - type: table
+    name: 本月新建笔记
+    order:
+      - file.name
+      - file.ctime
+    sort:
+      - property: file.ctime
+        direction: DESC
+  - type: table
+    name: View

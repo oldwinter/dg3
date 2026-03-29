@@ -1,0 +1,24 @@
+filters:
+  and:
+    - type == "movie"
+formulas:
+  scoreEmoji: if(score >= 8, "🐂", if(score >= 6, "💚", if(score >= 1, "⭕", "")))
+properties:
+  formula.scoreEmoji:
+    displayName: 评分表情
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - scoreStar
+      - score
+      - formula.scoreEmoji
+      - myRatingStar
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: property.type
+        direction: ASC
+      - property: property.IMDb
+        direction: ASC

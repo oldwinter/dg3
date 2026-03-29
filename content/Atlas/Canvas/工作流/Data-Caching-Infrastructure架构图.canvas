@@ -1,0 +1,165 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 400,
+      "y": -100,
+      "width": 400,
+      "height": 60,
+      "text": "# Data Caching Infrastructure\n**FastAPI → OpenSearch 网关**"
+    },
+    {
+      "id": "client",
+      "type": "text",
+      "x": 500,
+      "y": 0,
+      "width": 200,
+      "height": 50,
+      "color": "3",
+      "text": "## 🌐 客户端请求"
+    },
+    {
+      "id": "api-layer",
+      "type": "text",
+      "x": 300,
+      "y": 100,
+      "width": 600,
+      "height": 220,
+      "color": "4",
+      "text": "## 📦 API 层\n\n### 入口文件\n- **main.py** - 入口点，`/` 和 `/health` 路由 + 异常处理\n- **application.py** - FastAPI 工厂，配置中间件和路由\n- **lifecycle.py** - startup/shutdown 生命周期管理\n\n### API v1 路由 `/api/v1/search`\n| 端点 | 功能 |\n|------|------|\n| `POST /hybrid` | 混合搜索 |\n| `POST /batch/ids` | 批量 ID 查询 |\n| `POST /elasticsearch/dsl` | DSL 高级搜索 |"
+    },
+    {
+      "id": "service-layer",
+      "type": "text",
+      "x": 300,
+      "y": 370,
+      "width": 600,
+      "height": 200,
+      "color": "6",
+      "text": "## ⚙️ 服务层\n\n### search/manager.py\n- SearchBackend 检测「local_118 或 aws」\n- 索引名称解析与别名映射\n- Shopify 代理转发逻辑\n- 结果格式化与排序\n\n### opensearch/service.py\n- **单例模式** - 客户端生命周期管理\n- **自动重试** - 3次指数退避「2s → 4s → 8s」\n- **连接池管理** - 3分钟或500请求后重置\n- **并发控制** - 信号量限制100并发"
+    },
+    {
+      "id": "env-routing",
+      "type": "text",
+      "x": 500,
+      "y": 620,
+      "width": 200,
+      "height": 50,
+      "color": "5",
+      "text": "## 🔀 环境路由"
+    },
+    {
+      "id": "local-opensearch",
+      "type": "text",
+      "x": 200,
+      "y": 720,
+      "width": 280,
+      "height": 120,
+      "color": "1",
+      "text": "## 🖥️ 本地 OpenSearch\n\n**ENVIRONMENT=local_118**\n\n```\n192.168.10.118:9200\n```\n用户名/密码认证"
+    },
+    {
+      "id": "aws-opensearch",
+      "type": "text",
+      "x": 720,
+      "y": 720,
+      "width": 280,
+      "height": 120,
+      "color": "2",
+      "text": "## ☁️ AWS OpenSearch\n\n**ENVIRONMENT=aws**\n\n```\nAWS OpenSearch Service\n```\nSigV4 认证"
+    },
+    {
+      "id": "shopify-proxy",
+      "type": "text",
+      "x": -100,
+      "y": 300,
+      "width": 320,
+      "height": 140,
+      "color": "5",
+      "text": "## 🛒 Shopify 特殊处理\n\n当满足以下条件时：\n- `platform = shopify`\n- `SHOPIFY_PROXY_LOCAL = true`\n\n**转发到内网穿透地址**\n`http://18.208.13.29:7101`"
+    },
+    {
+      "id": "offline-scripts",
+      "type": "text",
+      "x": 1000,
+      "y": 150,
+      "width": 280,
+      "height": 200,
+      "color": "3",
+      "text": "## 📜 离线脚本\n\n**scripts/sync/**\n```\n├─ linkedin_company/\n│   ├─ create_index.py\n│   └─ data_loaders.py\n├─ linkedin_user/\n└─ shopify/\n    ├─ create_index.py\n    └─ data_processor.py\n```\n\n数据导入到 OpenSearch"
+    },
+    {
+      "id": "lib-indexing",
+      "type": "text",
+      "x": 1000,
+      "y": 400,
+      "width": 280,
+      "height": 150,
+      "color": "4",
+      "text": "## 📚 共享库\n\n**lib/indexing/**\n```\n├─ mappings/    # 索引映射\n├─ settings/    # 索引设置\n└─ processors/  # 数据转换\n```"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-client-api",
+      "fromNode": "client",
+      "fromSide": "bottom",
+      "toNode": "api-layer",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-api-service",
+      "fromNode": "api-layer",
+      "fromSide": "bottom",
+      "toNode": "service-layer",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-service-routing",
+      "fromNode": "service-layer",
+      "fromSide": "bottom",
+      "toNode": "env-routing",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-routing-local",
+      "fromNode": "env-routing",
+      "fromSide": "bottom",
+      "toNode": "local-opensearch",
+      "toSide": "top",
+      "label": "local_118"
+    },
+    {
+      "id": "edge-routing-aws",
+      "fromNode": "env-routing",
+      "fromSide": "bottom",
+      "toNode": "aws-opensearch",
+      "toSide": "top",
+      "label": "aws"
+    },
+    {
+      "id": "edge-shopify",
+      "fromNode": "api-layer",
+      "fromSide": "left",
+      "toNode": "shopify-proxy",
+      "toSide": "right",
+      "label": "shopify 请求"
+    },
+    {
+      "id": "edge-scripts-local",
+      "fromNode": "offline-scripts",
+      "fromSide": "bottom",
+      "toNode": "lib-indexing",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-lib-aws",
+      "fromNode": "lib-indexing",
+      "fromSide": "bottom",
+      "toNode": "aws-opensearch",
+      "toSide": "right",
+      "label": "数据导入"
+    }
+  ]
+}

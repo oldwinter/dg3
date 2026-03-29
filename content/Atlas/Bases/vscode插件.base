@@ -1,0 +1,18 @@
+filters:
+  and:
+    - 分类.containsAny(link("VSCode插件 - fileclass"))
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - 评价
+    sort:
+      - property: 评价
+        direction: ASC
+  - type: cards
+    name: View
+    order:
+      - file.name
+      - 评价
+    image: icon

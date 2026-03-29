@@ -40,9 +40,8 @@ aliases:
 - linux命令
 publish: true
 分类:
-- '[[Atlas/Categories/github开源 - fileclass]]'
+- '[[github开源 - fileclass]]'
 ---
-
 
 # version-fox/vfox
 
@@ -78,11 +77,9 @@ A cross-platform and extendable version manager with support for Java, Node.js, 
 - 🔀 是否Fork: 否
 - ⚖️ 开源协议: Apache License 2.0
 
-
 ---
 
 ## 合并内容
-
 
 A cross-platform and extendable version manager with support for Java, Node.js, Flutter, .Net & more
 

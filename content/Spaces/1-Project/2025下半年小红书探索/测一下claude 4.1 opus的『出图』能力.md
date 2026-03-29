@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/2025下半年小红书探索/测一下claude 4.1 opus的『出图』能力.md","created":"2025-08-06","modified":"2025-08-06","cssclasses":""}
+publish: true
+permalink: /Spaces/1-Project/2025下半年小红书探索/测一下claude 4.1 opus的『出图』能力.md
+created: 2025-08-06
+modified: 2025-08-06
 ---
-
 
 图一是一句话出的看板，无任何二次改动。
 
@@ -11,8 +13,7 @@
 
 90%多的点击率？真的假的
 
-![PixPin_2025-08-07_00-25-25.png](https://pub-pic.oldwinter.top/2025/08/51d90c37213ef2e5445108db14205f0b.png)
-
+![PixPin\_2025-08-07\_00-25-25.png](https://pub-pic.oldwinter.top/2025/08/51d90c37213ef2e5445108db14205f0b.png)
 
 ## 图片来源
 

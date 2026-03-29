@@ -1,0 +1,10 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - author.containsAny(if(this.file.ext.endsWith("base"), "李笑来", this.file.basename))
+        - authors.containsAny(if(this.file.ext.endsWith("base"), "李笑来", this.file.basename))
+    order:
+      - file.name
+      - type

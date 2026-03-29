@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.folder.contains("Calendar")
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.size
+      - file.mtime
+      - file.links
+    sort:
+      - property: file.links
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+      - property: file.size
+        direction: ASC
+    group_by: file.folder
+    columnSize:
+      file.name: 288
+      file.size: 105
+      file.mtime: 190
+      file.links: 360

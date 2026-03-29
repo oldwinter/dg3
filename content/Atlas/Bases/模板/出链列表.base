@@ -1,0 +1,11 @@
+properties:
+  file.links:
+    displayName: links
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.links
+    columnSize:
+      file.links: 365

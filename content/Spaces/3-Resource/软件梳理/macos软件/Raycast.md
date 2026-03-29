@@ -1,11 +1,15 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Raycast.md","title":"Raycast","created":"2022-12-17","modified":"2025-08-30","cssclasses":""}
+publish: true
+permalink: /Spaces/3-Resource/软件梳理/macos软件/Raycast.md
+title: Raycast
+created: 2022-12-17
+modified: 2025-08-30
 ---
-
 
 ##
 
-[[Spaces/3-Resource/软件梳理/macos软件/Raycast 庆祝加emoji]]
+[[Raycast 庆祝加emoji]]
+
 ## 评价 翻译from x
 
 Raycast 不仅仅是节省时间，更是尊重时间。
@@ -26,19 +30,19 @@ Raycast 是软件尊重用户时间的产物。
 
 ## 备份
 
-[[Spaces/2-Area/计算机知识/raycast 备份文件以及解压密码]]
+[[raycast 备份文件以及解压密码]]
 
 ##
 
-[[Spaces/4-Archive/Raycast/raycast for windows]]
+[[Raycast for Windows]]
 
-[[Spaces/4-Archive/Raycast/raycast wrapped 年底年度总结]]
+[[raycast wrapped 年底年度总结]]
 
-[[Spaces/4-Archive/Raycast/raycast 快速查看时区]]
+[[raycast 快速查看时区]]
 
-[[Spaces/4-Archive/Raycast/Raycast 小技巧 奇技淫巧]]
+[[Raycast 小技巧 奇技淫巧]]
 
-[[Spaces/4-Archive/Raycast/raycast插件开发]]
+[[raycast插件开发]]
 
 ## raycast原生的功能
 
@@ -46,11 +50,11 @@ Raycast 是软件尊重用户时间的产物。
 
 [[Raycast Clipboard]]
 
-[[Spaces/3-Resource/软件梳理/macos软件/Raycast Auto Quit Applications]]
+[[Raycast Auto Quit Applications]]
 
-[[Spaces/4-Archive/Raycast/全局快捷键将app一键打开或隐藏]]
+[[全局快捷键将app一键打开或隐藏]]
 
-[[Spaces/4-Archive/Raycast/Raycast Companion]]
+[[Raycast Companion]]
 
 ##
 
@@ -58,14 +62,14 @@ Raycast 是软件尊重用户时间的产物。
 
 作用:: 现代版 Alfred，全能快捷助手，mac 版的 Quicker
 
-[[Spaces/4-Archive/Raycast/raycast deeplink]]
+[[Raycast Deeplink]]
 
-想法:  
+想法:\
 考虑通过**raycast**自己写一个脚本，聚合搜索全网和自己的资源。网盘，笔记等等。现在还是自己大脑初次筛选，然后找指定地方去搜索，如果搜不到再换软件，显得不那么高效。
 
-[[Spaces/4-Archive/Raycast/raycast 一键快速应用 平替 rcmd]]
+[[raycast 一键快速应用 平替 rcmd]]
 
-## [[Spaces/4-Archive/Raycast/raycast wrapped 年底年度总结#2023 年 3 个月的使用记录]]
+## [[raycast wrapped 年底年度总结#2023 年 3 个月的使用记录]]
 
 raycast
 
@@ -78,7 +82,7 @@ raycast
 
 ## 替换了哪些常用软件
 
-- [[Sources/GithubStarsSync/Rectangle]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Paste App]]
+- [[Rectangle]]
+- [[Paste App]]
 
-[[Sources/CuboxSync/能少一个是一个：我用 Raycast 替代了这些应用 - 少数派-2022-05-30]]
+[[能少一个是一个：我用 Raycast 替代了这些应用 - 少数派-2022-05-30]]

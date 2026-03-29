@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Extras/_ Extras Readme.md","created":"2025-04-14","modified":"2025-07-09","cssclasses":""}
+publish: true
+permalink: /Extras/_ Extras Readme.md
+created: 2025-04-14
+modified: 2025-07-09
 ---
-
 
 # ⚙️ 附加资源 (Extras) 说明
 
@@ -15,7 +17,6 @@
 - **`Prompts/`**: 存放与AI相关的提示词(Prompts)，可在Cursor中快速@引用
 - **`Scripts/`**: 存放各种脚本文件，包括Python、JavaScript等自动化脚本
 - **`Templates/`**: 存放笔记模板，用于快速创建标准格式的笔记
-
 
 **管理建议：**
 

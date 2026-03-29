@@ -1,0 +1,66 @@
+{
+	"nodes":[
+		{"id":"319aed5e3e3d0335","type":"file","file":"Spaces/3-Resource/RSS订阅/∑ RSS订阅.md","x":-80,"y":-360,"width":466,"height":1010,"color":"2"},
+		{"id":"62c583a44ab4f6b3","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/folo订阅截图.png","x":-740,"y":-360,"width":584,"height":788},
+		{"id":"5002befa7489e6d2","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/CleanShot 2025-08-04 at 22.11.27@2x.png","x":-47,"y":913,"width":400,"height":257},
+		{"id":"52216733f7d3081a","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/CleanShot 2025-08-04 at 21.58.38@2x.png","x":-740,"y":464,"width":482,"height":371},
+		{
+			"id":"9faf61075f2c1e5d",
+			"type":"text",
+			"text":"## 订阅了一大堆，看完的不足1%\n\n期待接下来搭建一个更强大和个性化的AI帮我进一步筛选和消化这些东西。\n\n## 没有什么是一定要看完的，放过自己\n\n完全可以9999+红点的时候，一键已读，眼不见心不烦\n\n## 不想错过的内容，为其配置自动化，自动推送通知\n> 以folo中的action配置为例，当订阅的b站频道，比如玄离199的科技补全，或者IT咖啡馆的github一周热点，有新内容时，强通知。",
+			"styleAttributes":{},
+			"x":-740,
+			"y":902,
+			"width":482,
+			"height":288
+		},
+		{"id":"b3953f80a668b460","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/CleanShot 2025-08-04 at 22.08.38@2x.png","x":-238,"y":755,"width":165,"height":158}
+	],
+	"edges":[
+		{
+			"id":"f37c6aab1867111e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"9faf61075f2c1e5d",
+			"fromSide":"top",
+			"toNode":"52216733f7d3081a",
+			"toSide":"bottom",
+			"label":"配置自动化，特别关注的资讯，强提醒"
+		},
+		{
+			"id":"d30b2764222892aa",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"62c583a44ab4f6b3",
+			"fromSide":"right",
+			"toNode":"319aed5e3e3d0335",
+			"toSide":"left"
+		},
+		{
+			"id":"20b7d5d676631ccf",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"319aed5e3e3d0335",
+			"fromSide":"bottom",
+			"toNode":"5002befa7489e6d2",
+			"toSide":"top",
+			"label":"folo中搜索oldwinter\n一键copy走我的全部订阅"
+		},
+		{
+			"id":"75696d1c83c687ff",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5002befa7489e6d2",
+			"fromSide":"left",
+			"toNode":"9faf61075f2c1e5d",
+			"toSide":"right",
+			"label":"丑话说前头"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,7 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - list(分类).contains(this.file.basename.split("-", 1).join("").trim())
+        - list(分类).contains(this)

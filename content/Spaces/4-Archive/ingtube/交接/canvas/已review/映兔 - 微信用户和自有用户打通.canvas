@@ -1,0 +1,391 @@
+{
+  "edges": [
+    {
+      "id": "78f85e6ec72f0799",
+      "styleAttributes": {},
+      "fromNode": "d396bfa75a7c0031",
+      "fromSide": "bottom",
+      "toNode": "0aa1d28e00ee7f4c",
+      "toSide": "top",
+      "label": "1.1 用户发起客服请求/\nAPP拉起微信客服"
+    },
+    {
+      "id": "a0e2a6a58bc5155f",
+      "styleAttributes": {},
+      "fromNode": "d396bfa75a7c0031",
+      "fromSide": "bottom",
+      "toNode": "2a6c26b2bf2d2cfb",
+      "toSide": "top",
+      "label": "1.2 同时上报数据到映兔后端"
+    },
+    {
+      "id": "fe25cf635db8f0c3",
+      "styleAttributes": {},
+      "fromNode": "0aa1d28e00ee7f4c",
+      "fromSide": "bottom",
+      "toNode": "5ef04f973e2ed16a",
+      "toSide": "top",
+      "label": "2.1 聊天记录等信息上报"
+    },
+    {
+      "id": "52254cb16167cfe5",
+      "styleAttributes": {},
+      "fromNode": "2a6c26b2bf2d2cfb",
+      "fromSide": "bottom",
+      "toNode": "a8a629fd99ea88ee",
+      "toSide": "top",
+      "label": "3.2 获取博主cpid"
+    },
+    {
+      "id": "8d46c2c61f212a9e",
+      "styleAttributes": {},
+      "fromNode": "5ef04f973e2ed16a",
+      "fromSide": "left",
+      "toNode": "9758c51a97926e3e",
+      "toSide": "top",
+      "label": "3.1 根据customerid拉取微信unionid"
+    },
+    {
+      "id": "35e379ec667e5bdd",
+      "styleAttributes": {},
+      "fromNode": "9758c51a97926e3e",
+      "fromSide": "left",
+      "toNode": "a8a629fd99ea88ee",
+      "toSide": "right"
+    },
+    {
+      "id": "a16aeda5bd420ca6",
+      "styleAttributes": {},
+      "fromNode": "14f21ecc66f4ad6b",
+      "fromSide": "bottom",
+      "toNode": "d66672e6ceea103d",
+      "toSide": "top"
+    },
+    {
+      "id": "a15a7f447aa570ac",
+      "styleAttributes": {},
+      "fromNode": "d66672e6ceea103d",
+      "fromSide": "bottom",
+      "toNode": "4b35edd1608df51f",
+      "toSide": "top"
+    },
+    {
+      "id": "c552f90e74cce068",
+      "styleAttributes": {},
+      "fromNode": "b727836daadcd328",
+      "fromSide": "left",
+      "toNode": "4b35edd1608df51f",
+      "toSide": "right"
+    },
+    {
+      "id": "a28b6a03af7be70b",
+      "styleAttributes": {},
+      "fromNode": "c6f3380e7f8e5940",
+      "fromSide": "bottom",
+      "toNode": "b727836daadcd328",
+      "toSide": "top"
+    },
+    {
+      "id": "7467b640ac43f7c0",
+      "styleAttributes": {},
+      "fromNode": "4b35edd1608df51f",
+      "fromSide": "bottom",
+      "toNode": "7d94a74ad0795901",
+      "toSide": "top"
+    },
+    {
+      "id": "eb89657a10cc413c",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "fromNode": "b727836daadcd328",
+      "fromSide": "bottom",
+      "toNode": "a675c3e7ba0e4059",
+      "toSide": "top"
+    },
+    {
+      "id": "42020b79678edc41",
+      "styleAttributes": {
+        "path": "dotted"
+      },
+      "fromNode": "4b35edd1608df51f",
+      "fromSide": "right",
+      "toNode": "a675c3e7ba0e4059",
+      "toSide": "left"
+    },
+    {
+      "id": "fd2adcdb9ec86170",
+      "styleAttributes": {},
+      "fromNode": "571838a6dd57cac3",
+      "fromSide": "bottom",
+      "toNode": "c6f3380e7f8e5940",
+      "toSide": "top"
+    },
+    {
+      "id": "d0de0b5cefcab018",
+      "styleAttributes": {},
+      "fromNode": "55b8ef42d9507f0d",
+      "fromSide": "bottom",
+      "toNode": "14f21ecc66f4ad6b",
+      "toSide": "top"
+    },
+    {
+      "id": "660a820f6caaf62a",
+      "styleAttributes": {
+        "path": "short-dashed"
+      },
+      "fromNode": "c6f3380e7f8e5940",
+      "fromSide": "left",
+      "toNode": "d66672e6ceea103d",
+      "toSide": "right",
+      "toEnd": "none"
+    },
+    {
+      "id": "569bb3a96f6b505d",
+      "styleAttributes": {
+        "path": "long-dashed"
+      },
+      "fromNode": "10abccf3ce96e602",
+      "fromSide": "top",
+      "toNode": "14f21ecc66f4ad6b",
+      "toSide": "left"
+    },
+    {
+      "id": "6476be9447fd17e8",
+      "styleAttributes": {
+        "path": "long-dashed"
+      },
+      "fromNode": "b09d5746a59c1a50",
+      "fromSide": "left",
+      "toNode": "c6f3380e7f8e5940",
+      "toSide": "right"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "id": "5dba8fc7cdec53f4",
+      "styleAttributes": {},
+      "type": "group",
+      "x": -2040,
+      "y": 1140,
+      "width": 2440,
+      "height": 1740,
+      "label": "微信客服 - 触发后自动更新博主的unionid"
+    },
+    {
+      "id": "e782fd5868e77984",
+      "styleAttributes": {},
+      "type": "group",
+      "x": -1440,
+      "y": 1840,
+      "width": 540,
+      "height": 940,
+      "label": "python后端"
+    },
+    {
+      "id": "dccab96769990375",
+      "styleAttributes": {},
+      "type": "group",
+      "x": -760,
+      "y": 1400,
+      "width": 620,
+      "height": 699,
+      "label": "golang后端"
+    },
+    {
+      "id": "b4fa601a985e5e02",
+      "styleAttributes": {},
+      "text": "### app\n上报映兔博主id、微信customer_id\n\n### 微信客服\n记录微信customer_id及其unionid\n\n### 映兔后端\n根据customer_id，将映兔博主id和其unionid做唯一匹配。\n",
+      "type": "text",
+      "x": -980,
+      "y": -320,
+      "width": 320,
+      "height": 340,
+      "color": "1"
+    },
+    {
+      "id": "d396bfa75a7c0031",
+      "styleAttributes": {},
+      "text": "## APP ",
+      "type": "text",
+      "x": -420,
+      "y": -200,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "0aa1d28e00ee7f4c",
+      "styleAttributes": {},
+      "text": "## 微信客服聊天窗口\n",
+      "type": "text",
+      "x": -80,
+      "y": 60,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "2a6c26b2bf2d2cfb",
+      "styleAttributes": {},
+      "text": "博主id，设备，操作系统。微信customer_id\n\n```json\n{\n  \"CpID\": 1589153583062851600,\n  \"Device\": \"iPhone 13 Pro Max\",\n  \"Source\": \"iOS\",\n  \"OSVersion\": \"16.000000\",\n  \"AppVersion\": \"6.19.0\"\n}\n```",
+      "type": "text",
+      "x": -840,
+      "y": 60,
+      "width": 460,
+      "height": 320
+    },
+    {
+      "id": "5ef04f973e2ed16a",
+      "styleAttributes": {},
+      "text": "## 微信官方服务器",
+      "type": "text",
+      "x": 300,
+      "y": 280,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/微信客服 - 小助手.png",
+      "id": "10abccf3ce96e602",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -1960,
+      "y": 1800,
+      "width": 400,
+      "height": 339
+    },
+    {
+      "id": "9758c51a97926e3e",
+      "styleAttributes": {},
+      "text": "\n[获取客户基础信息 - 文档 - 企业微信开发者中心](https://developer.work.weixin.qq.com/document/path/95159)\n\nexternal_userid 就是 customerid\nunionid就是unionid\n\n![[Pasted image 20240724135745.png]]\n```json\n{\n    \"errcode\": 0,\n    \"errmsg\": \"ok\",\n    \"customer_list\": [\n\t\t{\n\t\t\t\"external_userid\": \"wmxxxxxxxxxxxxxxxxxxxxxx\",\n\t\t\t\"nickname\": \"张三\",\n\t\t\t\"avatar\": \"http://xxxxx\",\n\t\t\t\"gender\": 1,\n\t\t\t\"unionid\": \"oxasdaosaosdasdasdasd\",\n\t\t\t\"enter_session_context\": {\n\t\t\t\t\"scene\": \"123\",\n\t\t\t\t\"scene_param\": \"abc\",\n\t\t\t\t\"wechat_channels\": {\n\t\t\t\t\t\"nickname\": \"进入会话的视频号名称\",\n\t\t\t\t\t\"scene\": 1\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t],\n\t\"invalid_external_userid\": [\n\t\t\"zhangsan\"\n\t]\n}\n```",
+      "type": "text",
+      "x": -420,
+      "y": 520,
+      "width": 760,
+      "height": 560
+    },
+    {
+      "id": "a8a629fd99ea88ee",
+      "styleAttributes": {},
+      "text": "## 后端 map匹配 customer_id 或者 unionid和博主id ",
+      "type": "text",
+      "x": -940,
+      "y": 540,
+      "width": 320,
+      "height": 140,
+      "color": "1"
+    },
+    {
+      "id": "d66672e6ceea103d",
+      "styleAttributes": {},
+      "text": "## 根据customerid，拿到clickid和unionid\n默认首页，小二点开就触发。\n\n取用户信息（包含自定义的enter_session_context里面的EnterSessionContext.SceneParam中获取clickid信息）\n\n[获取客户基础信息 - 文档 - 企业微信开发者中心](https://developer.work.weixin.qq.com/document/path/95159)\n\n",
+      "type": "text",
+      "x": -1420,
+      "y": 1860,
+      "width": 500,
+      "height": 239
+    },
+    {
+      "id": "4b35edd1608df51f",
+      "styleAttributes": {},
+      "text": "## 根据clickid，将其customerid写入wechat_kf_click表",
+      "type": "text",
+      "x": -1420,
+      "y": 2160,
+      "width": 500,
+      "height": 200
+    },
+    {
+      "id": "14f21ecc66f4ad6b",
+      "styleAttributes": {},
+      "text": "## 小二在企微点开客服微信\n\n在企微中打开h5，因此h5页面中加载js sdk，可以获取当前接待客户的customerid或者说userid\n\n\n",
+      "type": "text",
+      "x": -1420,
+      "y": 1420,
+      "width": 500,
+      "height": 320
+    },
+    {
+      "id": "7d94a74ad0795901",
+      "styleAttributes": {},
+      "text": "## 根据customerid，查到其对应的cp_id，再结合unionid写入cp_user_profile表\n\n问题：若customerid查到了多个cpid？\n\n\n至此，完成了触发微信客服后，自动进行cp_id和unionid的关联。",
+      "type": "text",
+      "x": -1420,
+      "y": 2450,
+      "width": 500,
+      "height": 310
+    },
+    {
+      "id": "c6f3380e7f8e5940",
+      "styleAttributes": {},
+      "text": "## 客户/博主在app/小程序端点击『联系客服』\n\n调用后端`/app/tools/v1/wechat_kf_link`接口，后端记录cpid、设备信息、clickid。\n同时往EnterSessionContext.SceneParam里面，塞入clickid信息。\n具体代码搜\n```\nUrl: fmt.Sprintf(\"%s%d\", config.GetOtherString(kf_link), id),\n```\n\n[获取客服账号链接 - 文档 - 企业微信开发者中心](https://developer.work.weixin.qq.com/document/path/94665)\n通过以上，一次性获取后，就写死了。\n\nwechat_kf_link: \"https://work.weixin.qq.com/kfid/kfcb49332e0a38f486b?enc_scene=ENCUVjkPnju5h2hkWSBpV49xR&scene_param=\"",
+      "type": "text",
+      "x": -740,
+      "y": 1420,
+      "width": 580,
+      "height": 380
+    },
+    {
+      "id": "b727836daadcd328",
+      "styleAttributes": {},
+      "text": "## 生成clickid，获取博主cpid 写入wechat_kf_click表",
+      "type": "text",
+      "x": -740,
+      "y": 1860,
+      "width": 580,
+      "height": 219
+    },
+    {
+      "id": "55b8ef42d9507f0d",
+      "styleAttributes": {},
+      "text": "### 映兔小二",
+      "type": "text",
+      "x": -1420,
+      "y": 1160,
+      "width": 500,
+      "height": 100
+    },
+    {
+      "id": "571838a6dd57cac3",
+      "styleAttributes": {},
+      "text": "### 博主",
+      "type": "text",
+      "x": -740,
+      "y": 1160,
+      "width": 580,
+      "height": 100
+    },
+    {
+      "id": "27d6528874aca8eb",
+      "styleAttributes": {},
+      "text": "## 边界场景处理\n\n假设博主有2个微信号a和b。\na绑定了映兔账号cp_id = aaa，a的unionid为uuu，发起微信客服请求，我们将aaa绑定至uuu\n\n此时博主用微信号b，又发起了请求。",
+      "type": "text",
+      "x": -1660,
+      "y": 2980,
+      "width": 720,
+      "height": 400
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/wechat_kf_click表结构.png",
+      "id": "a675c3e7ba0e4059",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -740,
+      "y": 2260,
+      "width": 580,
+      "height": 87
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/小程序 - 我的 - 界面.png",
+      "id": "b09d5746a59c1a50",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -80,
+      "y": 1420,
+      "width": 305,
+      "height": 658
+    }
+  ]
+}

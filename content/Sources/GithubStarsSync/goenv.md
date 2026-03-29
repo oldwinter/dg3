@@ -27,15 +27,14 @@ date created: 2025-03-11
 date modified: 2025-03-11
 publish: true
 分类:
-- '[[Atlas/Categories/github开源 - fileclass]]'
+- '[[github开源 - fileclass]]'
 ---
-
 
 # go-nv/goenv
 
 ## 📝 项目描述
 
-:blue_car: Like pyenv and rbenv, but for Go.
+:blue\_car: Like pyenv and rbenv, but for Go.
 
 ## 🔗 链接
 
@@ -65,10 +64,8 @@ publish: true
 - 🔀 是否Fork: 否
 - ⚖️ 开源协议: MIT License
 
-
 ---
 
 ## 合并内容
-
 
 [GitHub - go-nv/goenv: :blue\_car: Like pyenv and rbenv, but for Go.](https://github.com/go-nv/goenv)

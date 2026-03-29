@@ -1,0 +1,53 @@
+{
+	"nodes":[
+		{"id":"n-overview","type":"text","text":"# gstack 中文架构总览\n\n这张 canvas 把项目拆成 6 个视角：\n1. 源模板与规则\n2. 生成与构建\n3. 多宿主安装与分发\n4. 运行时技能执行\n5. 持久化工件与知识平面\n6. 端到端工作流链\n\n建议从右侧的 Markdown 总图谱开始，再沿连线阅读关键文件。","x":-40,"y":-420,"width":520,"height":280},
+		{"id":"n-source","type":"text","text":"## 1. 源定义层\n\n核心思想：用模板与规则定义技能，而不是手写多份宿主输出。\n\n包含：\n- 根模板\n- 各 skill 模板\n- review / qa 参考规则\n- browse 命令注册表\n- 中文文档层","x":-760,"y":-60,"width":320,"height":220},
+		{"id":"f-root-tmpl","type":"file","file":"docs/gstack-system/repo-mirror/SKILL.md.tmpl","x":-390,"y":-120,"width":320,"height":220},
+		{"id":"f-review-checklist","type":"file","file":"docs/gstack-system/repo-mirror/review/checklist.md","x":-390,"y":130,"width":320,"height":220},
+		{"id":"f-browse-commands","type":"file","file":"docs/gstack-system/repo-mirror/browse/src/commands.ts","x":-390,"y":380,"width":320,"height":220},
+		{"id":"n-gen","type":"text","text":"## 2. 生成与构建层\n\n这里把模板、命令表、snapshot 标志和宿主路径规则合成为最终技能文档与二进制产物。\n\n关键动作：\n- placeholder 解析\n- Claude / Codex 路径改写\n- browse 二进制编译\n- server bundle 生成","x":20,"y":10,"width":340,"height":250},
+		{"id":"f-gen-script","type":"file","file":"docs/gstack-system/repo-mirror/scripts/gen-skill-docs.ts","x":430,"y":20,"width":360,"height":240},
+		{"id":"f-package","type":"file","file":"docs/gstack-system/repo-mirror/package.json","x":430,"y":290,"width":260,"height":180},
+		{"id":"n-install","type":"text","text":"## 3. 安装与宿主分发\n\n`setup` 负责：\n- 构建 browse\n- 安装 Playwright Chromium\n- 链接 Claude / Codex skills\n- 创建 `.agents/skills/gstack/*` sidecar\n\n这是“文本技能”变成“真实可运行系统”的关键桥梁。","x":30,"y":520,"width":340,"height":250},
+		{"id":"f-setup","type":"file","file":"docs/gstack-system/repo-mirror/setup","x":430,"y":540,"width":260,"height":220},
+		{"id":"f-codex-out","type":"file","file":"docs/gstack-system/repo-mirror/.agents/skills/gstack/SKILL.md","x":730,"y":540,"width":280,"height":220},
+		{"id":"n-runtime","type":"text","text":"## 4. 运行时执行层\n\n技能运行时统一经过：\n- 公共前言（升级、telemetry、AskUserQuestion、完整性原则）\n- 专项流程（review / qa / ship / plan）\n- browse 浏览器能力\n- Git / GitHub / gh 集成\n- 可选 Codex 第二意见","x":1090,"y":20,"width":340,"height":250},
+		{"id":"f-browse-server","type":"file","file":"docs/gstack-system/repo-mirror/browse/src/server.ts","x":1490,"y":20,"width":320,"height":220},
+		{"id":"f-ship-skill","type":"file","file":"docs/gstack-system/repo-mirror/ship/SKILL.md","x":1490,"y":270,"width":320,"height":220},
+		{"id":"f-qa-skill","type":"file","file":"docs/gstack-system/repo-mirror/qa/SKILL.md","x":1490,"y":520,"width":320,"height":220},
+		{"id":"n-state","type":"text","text":"## 5. 持久化知识平面\n\n`~/.gstack/` 不是边角缓存，而是系统记忆：\n- design docs\n- review logs\n- QA outcomes\n- telemetry\n- contributor logs\n- retro history\n\n这是 gstack 能跨阶段衔接的根本原因。","x":1090,"y":810,"width":340,"height":250},
+		{"id":"n-state-text","type":"text","text":"关键目录：\n- `~/.gstack/projects/`\n- `~/.gstack/analytics/`\n- `~/.gstack/contributor-logs/`\n- `~/.gstack/sessions/`\n\n关键工件：\n- 设计文档\n- QA 报告\n- review readiness\n- telemetry 与 pending marker","x":1490,"y":820,"width":320,"height":220},
+		{"id":"n-workflow","type":"text","text":"## 6. 核心工作流链\n\n`/office-hours`\n→ `/plan-ceo-review`\n→ `/plan-eng-review`\n→ 编码执行\n→ `/review`\n→ `/qa`\n→ `/ship`\n→ `/document-release`\n→ `/retro`\n\n横切能力：\n- `/browse`\n- `/investigate`\n- `/careful` / `/freeze` / `/guard`\n- `/codex`","x":-760,"y":720,"width":320,"height":280},
+		{"id":"f-readme","type":"file","file":"docs/gstack-system/repo-mirror/README.md","x":-390,"y":720,"width":320,"height":220},
+		{"id":"f-skills-doc","type":"file","file":"docs/gstack-system/repo-mirror/docs/skills.md","x":-390,"y":970,"width":320,"height":220},
+		{"id":"n-doc","type":"file","file":"docs/gstack-system/gstack-system-architecture.zh-CN.md","x":790,"y":-580,"width":520,"height":320}
+	],
+	"edges":[
+		{"id":"e-overview-doc","fromNode":"n-overview","fromSide":"right","toNode":"n-doc","toSide":"left","label":"先读总图谱"},
+		{"id":"e-source-root","fromNode":"n-source","fromSide":"right","toNode":"f-root-tmpl","toSide":"left","label":"根模板"},
+		{"id":"e-source-review","fromNode":"n-source","fromSide":"right","toNode":"f-review-checklist","toSide":"left","label":"规则库"},
+		{"id":"e-source-browse","fromNode":"n-source","fromSide":"right","toNode":"f-browse-commands","toSide":"left","label":"命令注册表"},
+		{"id":"e-root-gen","fromNode":"f-root-tmpl","fromSide":"right","toNode":"n-gen","toSide":"left","label":"模板输入"},
+		{"id":"e-review-gen","fromNode":"f-review-checklist","fromSide":"right","toNode":"n-gen","toSide":"left","label":"引用输入"},
+		{"id":"e-browse-gen","fromNode":"f-browse-commands","fromSide":"right","toNode":"n-gen","toSide":"left","label":"命令说明输入"},
+		{"id":"e-gen-script","fromNode":"n-gen","fromSide":"right","toNode":"f-gen-script","toSide":"left","label":"核心生成器"},
+		{"id":"e-gen-package","fromNode":"n-gen","fromSide":"bottom","toNode":"f-package","toSide":"top","label":"构建入口"},
+		{"id":"e-gen-install","fromNode":"n-gen","fromSide":"bottom","toNode":"n-install","toSide":"top","label":"生成输出"},
+		{"id":"e-install-setup","fromNode":"n-install","fromSide":"right","toNode":"f-setup","toSide":"left","label":"安装器"},
+		{"id":"e-setup-codex","fromNode":"f-setup","fromSide":"right","toNode":"f-codex-out","toSide":"left","label":"Codex 宿主输出"},
+		{"id":"e-install-runtime","fromNode":"n-install","fromSide":"right","toNode":"n-runtime","toSide":"left","label":"技能落地"},
+		{"id":"e-runtime-server","fromNode":"n-runtime","fromSide":"right","toNode":"f-browse-server","toSide":"left","label":"真实浏览器会话"},
+		{"id":"e-runtime-ship","fromNode":"n-runtime","fromSide":"right","toNode":"f-ship-skill","toSide":"left","label":"发布工作流"},
+		{"id":"e-runtime-qa","fromNode":"n-runtime","fromSide":"right","toNode":"f-qa-skill","toSide":"left","label":"QA 修复闭环"},
+		{"id":"e-runtime-state","fromNode":"n-runtime","fromSide":"bottom","toNode":"n-state","toSide":"top","label":"日志 / 工件 / telemetry"},
+		{"id":"e-state-detail","fromNode":"n-state","fromSide":"right","toNode":"n-state-text","toSide":"left","label":"本地知识平面"},
+		{"id":"e-workflow-readme","fromNode":"n-workflow","fromSide":"right","toNode":"f-readme","toSide":"left","label":"产品入口"},
+		{"id":"e-workflow-skills","fromNode":"n-workflow","fromSide":"right","toNode":"f-skills-doc","toSide":"left","label":"技能深度说明"},
+		{"id":"e-workflow-runtime","fromNode":"n-workflow","fromSide":"right","toNode":"n-runtime","toSide":"left","label":"实际执行链"},
+		{"id":"e-doc-workflow","fromNode":"n-doc","fromSide":"bottom","toNode":"n-runtime","toSide":"top","label":"图谱解释运行层"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

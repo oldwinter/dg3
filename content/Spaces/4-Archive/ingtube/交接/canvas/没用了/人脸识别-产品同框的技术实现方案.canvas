@@ -1,0 +1,338 @@
+{
+  "nodes": [
+    {
+      "id": "cbf991b2c3b2efdd",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1340,
+      "y": -1360,
+      "width": 2540,
+      "height": 740,
+      "label": "阿里云视频识别"
+    },
+    {
+      "id": "b649affe3f648b61",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 2940,
+      "y": -1839,
+      "width": 953,
+      "height": 1777,
+      "label": "Untitled group"
+    },
+    {
+      "id": "1ed7ffa1657ac230",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 2026,
+      "y": -1839,
+      "width": 853,
+      "height": 1840,
+      "label": "视频2识别效果"
+    },
+    {
+      "id": "bd9d518045b01af2",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1328,
+      "y": -500,
+      "width": 2565,
+      "height": 600,
+      "label": "gemini视频识别"
+    },
+    {
+      "id": "fdc8c3a632900240",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 380,
+      "y": -1320,
+      "width": 820,
+      "height": 1420,
+      "label": "费用"
+    },
+    {
+      "id": "33b5b91853a87cb5",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 1328,
+      "y": -1839,
+      "width": 632,
+      "height": 1739,
+      "label": "视频1识别效果"
+    },
+    {
+      "id": "ddda50fc672ec14d",
+      "type": "text",
+      "text": "#### 方案一，使用阿里云进行真人露脸和产品同框检测。",
+      "styleAttributes": {},
+      "x": -80,
+      "y": -1300,
+      "width": 360,
+      "height": 100
+    },
+    {
+      "id": "96fa3bc3f4363d46",
+      "type": "text",
+      "text": "决策点：\n- 是否全部的晒单返利、体验测评、定制合作，用户回传的图片、视频，都进行识别。\n- 图片和视频，分别选择阿里云传统api接口，还是gemini或[[GPT-4V|GPT-4V]]进行识别。\n- 是否维持原有的订单状态流程流程，只在『违规预警』中，进行通知处理。",
+      "styleAttributes": {},
+      "x": -660,
+      "y": -1169,
+      "width": 460,
+      "height": 283
+    },
+    {
+      "id": "aceba56316a19e43",
+      "type": "text",
+      "text": "#### 方案二，使用gemini和gpt4-v进行真人露脸和产品同框检测。",
+      "styleAttributes": {},
+      "x": -200,
+      "y": -768,
+      "width": 360,
+      "height": 108
+    },
+    {
+      "id": "17546b35a7ee225d",
+      "type": "text",
+      "text": "gemini 价格\nhttps://ai.google.dev/pricing\n\n![[Pasted image 20240422181008.png]]\n",
+      "styleAttributes": {},
+      "x": -160,
+      "y": -380,
+      "width": 320,
+      "height": 362
+    },
+    {
+      "id": "fc3732bd5801fe06",
+      "type": "file",
+      "file": "Extras/Media/ingtube_1713167237_1673642369506873344_0.mp4",
+      "styleAttributes": {},
+      "x": 1380,
+      "y": -1760,
+      "width": 500,
+      "height": 281
+    },
+    {
+      "id": "7135b986174ec317",
+      "type": "text",
+      "text": "1. **视频基本信息：**\n    \n    - **分辨率：** 1280x720\n    - **时长：** 约34秒\n    - **帧率：** 约30帧/秒\n2. **人物信息：**\n    \n    - **卡通人物：** 在视频的大约8.57%的时间内出现，具体时间范围是从视频开始的约2.6秒到约5.1秒。\n    - **真人（普通）：** 在视频的20%的时间内出现，具体时间范围是从约9.4秒到约13.7秒，以及从约25.6秒到约27.4秒。\n3. **场景信息：**\n    \n    - **真人实景：** 占据视频的约97.14%的时间，时间范围从视频开始到约8.5秒，以及从约9.4秒到视频结束。",
+      "styleAttributes": {},
+      "x": 1360,
+      "y": -1328,
+      "width": 580,
+      "height": 338
+    },
+    {
+      "id": "5634e72aab9dbad0",
+      "type": "file",
+      "file": "Extras/Media/17124667938245494455-Compressed.mp4",
+      "styleAttributes": {},
+      "x": 3240,
+      "y": -1760,
+      "width": 225,
+      "height": 400
+    },
+    {
+      "id": "5e8828d64dc522e7",
+      "type": "text",
+      "text": "这份数据显示了一个视频处理任务的结果，包括场景和时间信息。以下是详细解析：\n\n1. **视频基本信息：**\n    \n    - **分辨率：** 360x640\n    - **时长：** 约42秒\n    - **帧率：** 25帧/秒\n2. **场景信息：**\n    \n    - **游戏屏幕截图（gamescreen-screenshot）：** 占据视频大约78.57%的时间。具体的时间范围是：\n        - 从视频开始到约4秒\n        - 从约5秒到约12秒\n        - 从约13秒到约24秒\n        - 从约26秒到约28秒\n        - 从约30秒到约37秒\n        - 从约40秒到视频结束（约42秒）\n    - **真人实景（liveaction）：** 占据视频约16.67%的时间，时间范围是：\n        - 从约24秒到约26秒\n        - 从约28秒到约30秒\n        - 从约37秒到约40秒\n\n这些信息说明视频内容主要是游戏屏幕的截图，同时穿插了一些真人实景的短片段。这种数据通常用于内容分析，可能是为了标识和区分视频中的不同内容类型，如游戏画面与实际拍摄的场景。如果有更具体的问题或需要进一步的帮助，请告知！",
+      "styleAttributes": {},
+      "x": 2046,
+      "y": -1340,
+      "width": 813,
+      "height": 540
+    },
+    {
+      "id": "08e9b1f6cb97b2ee",
+      "type": "text",
+      "text": "### 图片识别\n用gemini，一张图500token左右。约0.005美元",
+      "styleAttributes": {},
+      "x": 433,
+      "y": -460,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "6b59292bfbe0d14c",
+      "type": "text",
+      "text": "### 视频识别：\n费用\n[视频理解费用\\_视觉智能开放平台(VIAPI)-阿里云帮助中心](https://help.aliyun.com/zh/viapi/developer-reference/billing-is-introduced-11)\n0.2元/分钟，最小计费单位是秒。\n",
+      "styleAttributes": {},
+      "x": 433,
+      "y": -1031,
+      "width": 320,
+      "height": 263
+    },
+    {
+      "id": "2ede0e78759d70a0",
+      "type": "text",
+      "text": "### 图片识别\n费用：\nhttps://help.aliyun.com/zh/viapi/developer-reference/billing-is-introduced-3#concept-1953504\n一张图0.0016元",
+      "styleAttributes": {},
+      "x": 447,
+      "y": -1288,
+      "width": 353,
+      "height": 177
+    },
+    {
+      "id": "b3cd83aae6273037",
+      "type": "text",
+      "text": "\nprompts: 根据这些图片，判断是否有：真人露脸，产品同框。直接返回json，包括3个key： 是否真人露脸，是否产品同框，详细信息",
+      "styleAttributes": {},
+      "x": 593,
+      "y": -600,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "3cd954a570745392",
+      "type": "text",
+      "text": "### 视频识别\n用gemini，一个50秒视频10000token左右。约0.1美元。  \n响应速度，10秒内",
+      "styleAttributes": {},
+      "x": 433,
+      "y": -249,
+      "width": 320,
+      "height": 102
+    },
+    {
+      "id": "699ddd65ff0b1d8f",
+      "type": "text",
+      "text": "根据视频，判断是否有：真人露脸，产品同框。直接返回json，包括3个key： 是否真人露脸，是否产品同框，详细信息",
+      "styleAttributes": {},
+      "x": 428,
+      "y": -80,
+      "width": 331,
+      "height": 125
+    },
+    {
+      "id": "bf27bfab10433ded",
+      "type": "file",
+      "file": "Extras/Media/24538f44-34c3-4afe-ba3e-ff534f51f797-ingtube-upload-share-1712645315602-Compressed.mp4",
+      "styleAttributes": {},
+      "x": 2260,
+      "y": -1819,
+      "width": 225,
+      "height": 400
+    },
+    {
+      "id": "275572afe91f4923",
+      "type": "text",
+      "text": "这份数据提供了关于另一个视频处理任务的详细结果，标注了人物出现的时间和场景类型。这是对数据的详细解析：\n\n1. **视频基本信息：**\n    \n    - **分辨率：** 360x640\n    - **时长：** 约43秒\n    - **帧率：** 25帧/秒\n2. **人物信息：**\n    \n    - **真人名人（武泽锦熙）：** 出现在视频大约4.55%的时间，具体时间范围是从约27秒到约29秒。\n    - **真人（普通）：** 在视频的47.73%的时间内出现，具体时间范围是：\n        - 从约5秒到约7秒\n        - 从约8秒到约11秒\n        - 从约14秒到约27秒\n        - 从约40秒到约42秒\n3. **场景信息：**\n    \n    - **游戏屏幕截图（gamescreen-screenshot）：** 占据视频大约50%的时间，时间范围是：\n        - 从视频开始到约6秒\n        - 从约11秒到约16秒\n        - 从约29秒到约38秒\n        - 从约41秒到视频结束（约43秒）\n    - **真人实景（liveaction）：** 占据视频约40.91%的时间，时间范围是：\n        - 从约6秒到约9秒\n        - 从约16秒到约27秒\n        - 从约38秒到约41秒\n\n这些信息表明视频内容主要包含游戏屏幕截图和真人实景的交替出现，以及特定时间段内有名人（武泽锦熙）的出现。这种数据通常用于内容分析，特别是在需要区分视频中的不同人物和场景类型时。如果您有进一步的问题或需要更多帮助，请随时联系。",
+      "styleAttributes": {},
+      "x": 2960,
+      "y": -1328,
+      "width": 900,
+      "height": 688
+    },
+    {
+      "id": "877b42267f7f8e2b",
+      "type": "text",
+      "text": "## 视频分析：真人露脸 & 产品同框\n\n根据您提供的视频描述，可以判断：\n\n- **真人露脸：** 视频中出现了宝宝的臉部，展现了宝宝户外活动后皮肤泛红的状态，以及使用产品后的改善效果。 因此可以确定视频中有真人露脸。\n    \n- **产品同框：** 视频中展示了安唯伊果冻舒缓CP（喷雾和霜），并且展示了使用产品的过程。所以视频中也有产品同框。",
+      "styleAttributes": {},
+      "x": 2984,
+      "y": -360,
+      "width": 889,
+      "height": 278
+    },
+    {
+      "id": "8865cbd63b3a3836",
+      "type": "text",
+      "text": "根据提供的视频描述，可以判断：\n\n- **没有真人露脸:** 视频中出现的人物形象都是以贴图的形式展现，并非真人出镜。\n    \n- **有产品同框:** 视频中出现了宠物关节保健品，并展示了产品包装和部分成分说明。\n    \n\n因此，视频符合“产品同框”的特征，但不符合“真人露脸”的特征。",
+      "styleAttributes": {},
+      "x": 2064,
+      "y": -422,
+      "width": 780,
+      "height": 403
+    },
+    {
+      "id": "2e8bdcb803c3a5fc",
+      "type": "text",
+      "text": "```\n识别失败，识别成音乐了。\n```",
+      "styleAttributes": {},
+      "x": 1492,
+      "y": -299,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "79503c211b65414d",
+      "type": "text",
+      "text": "```\n{\n  \"是否真人露脸\": true,\n  \"是否产品同框\": true,\n  \"详细信息\": \"图片中包含一位小女孩正在饮用韩真珠品牌的牛奶饮品，画面清晰可见女孩面部和产品包装。\"\n}\n```\n",
+      "styleAttributes": {},
+      "x": 1332,
+      "y": 320,
+      "width": 640,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "13f793995b768b38",
+      "fromNode": "ddda50fc672ec14d",
+      "fromSide": "right",
+      "toNode": "2ede0e78759d70a0",
+      "toSide": "left"
+    },
+    {
+      "id": "7ca52ee2afc676cc",
+      "fromNode": "aceba56316a19e43",
+      "fromSide": "right",
+      "toNode": "08e9b1f6cb97b2ee",
+      "toSide": "left"
+    },
+    {
+      "id": "48f3ab1d0a44f0be",
+      "fromNode": "ddda50fc672ec14d",
+      "fromSide": "right",
+      "toNode": "6b59292bfbe0d14c",
+      "toSide": "left"
+    },
+    {
+      "id": "93cdb22a9e98a34c",
+      "fromNode": "aceba56316a19e43",
+      "fromSide": "right",
+      "toNode": "3cd954a570745392",
+      "toSide": "left"
+    },
+    {
+      "id": "4f790916519c7fca",
+      "fromNode": "08e9b1f6cb97b2ee",
+      "fromSide": "right",
+      "toNode": "79503c211b65414d",
+      "toSide": "left"
+    },
+    {
+      "id": "a3e6a09663d4bce8",
+      "fromNode": "3cd954a570745392",
+      "fromSide": "right",
+      "toNode": "bd9d518045b01af2",
+      "toSide": "left"
+    },
+    {
+      "id": "03ed21356a1979a2",
+      "fromNode": "aceba56316a19e43",
+      "fromSide": "bottom",
+      "toNode": "17546b35a7ee225d",
+      "toSide": "top",
+      "label": "价格"
+    },
+    {
+      "id": "3f7a5f5b0a2be7aa",
+      "fromNode": "6b59292bfbe0d14c",
+      "fromSide": "right",
+      "toNode": "cbf991b2c3b2efdd",
+      "toSide": "left"
+    },
+    {
+      "id": "2aeee2417c3612fe",
+      "fromNode": "b3cd83aae6273037",
+      "fromSide": "left",
+      "toNode": "08e9b1f6cb97b2ee",
+      "toSide": "top"
+    },
+    {
+      "id": "c98bf746acac6657",
+      "fromNode": "699ddd65ff0b1d8f",
+      "fromSide": "top",
+      "toNode": "3cd954a570745392",
+      "toSide": "bottom"
+    }
+  ],
+  "metadata": {}
+}

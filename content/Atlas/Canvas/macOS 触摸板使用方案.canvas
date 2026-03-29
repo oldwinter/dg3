@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"103bc0ed089432bd","type":"text","text":"","zIndex":-4450051,"x":794,"y":-542,"width":200,"height":60},
+		{"id":"48d18cb4c1760119","type":"group","x":-701,"y":-357,"width":1705,"height":2378,"color":"4","label":"我奶奶都能学会的mac触控板配置方案"},
+		{
+			"id":"fb6ba5da36efef1e",
+			"type":"file",
+			"file":"Atlas/Bases/App应用软件管理.base",
+			"subpath":"#macos软件画廊视图",
+			"styleAttributes":{"border":"dashed"},
+			"x":-701,
+			"y":-810,
+			"width":1705,
+			"height":337
+		},
+		{"id":"a518104436115d49","type":"file","file":"Spaces/2-Area/macos高效使用/让 mac 触摸版更好用的设置方法和配套软件.md","subpath":"#开启拖移锁定","x":-681,"y":-287,"width":857,"height":776},
+		{"id":"c869a340b390bd3f","type":"file","file":"Spaces/2-Area/macos高效使用/让 mac 触摸版更好用的设置方法和配套软件.md","subpath":"#定制5个超高频使用的自定义手势","x":-681,"y":548,"width":857,"height":1432},
+		{"id":"9eda606ebb01670a","type":"file","file":"Spaces/2-Area/macos高效使用/让 mac 触摸版更好用的设置方法和配套软件.md","subpath":"#其他习惯的系统设置","x":208,"y":-287,"width":776,"height":2267}
+	],
+	"edges":[
+		{"id":"f0371b9d752b68c6","toFloating":false,"fromNode":"103bc0ed089432bd","fromSide":"bottom","toNode":"48d18cb4c1760119","toSide":"top","color":"1"},
+		{
+			"id":"ea2e1b668d775d1b",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"a518104436115d49",
+			"fromSide":"bottom",
+			"toNode":"c869a340b390bd3f",
+			"toSide":"top"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{},
+		"startNode":"fb6ba5da36efef1e"
+	}
+}

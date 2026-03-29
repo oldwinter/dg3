@@ -1,0 +1,16 @@
+filters:
+  or:
+    - file.ctime.date() == this.file.name
+views:
+  - type: table
+    name: 今日新建笔记
+    order:
+      - file.name
+      - file.ctime
+    sort:
+      - property: file.name
+        direction: ASC
+    limit: 20
+    columnSize:
+      file.name: 467
+      file.ctime: 512

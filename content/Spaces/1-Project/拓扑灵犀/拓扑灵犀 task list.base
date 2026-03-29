@@ -1,0 +1,49 @@
+summaries:
+  new summary: ""
+filters:
+  and:
+    - file.tags.contains("task")
+    - projects.containsAny(link("拓扑灵犀 - 构建高并发Agent服务平台"), link("拓扑灵犀 - 设计LLM服务化架构（模型部署 and 推理加速）"), link("拓扑灵犀 - infra建设"), link("拓扑灵犀 -  misc."))
+formulas:
+  Untitled: status
+views:
+  - type: table
+    name: Table
+    groupBy:
+      property: projects
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - file.tags
+    sort: []
+    summaries:
+      status: Empty
+    columnSize:
+      note.status: 141
+  - type: list
+    name: list view
+    order:
+      - file.name
+      - file.backlinks
+      - file.ctime
+      - file.ext
+      - file.folder
+    markers: number
+    nestedProperties: true
+    separator: ｜
+  - type: tasknotesKanban
+    name: Kanban view
+    groupBy:
+      property: status
+      direction: DESC
+    order: []
+    sort:
+      - property: priority
+        direction: ASC
+  - type: tasknotesCalendar
+    name: Calendar view
+    calendarView: dayGridMonth
+    showICS_ics_jgyrj88agmefi2410: false
+  - type: tasknotesTaskList
+    name: task view

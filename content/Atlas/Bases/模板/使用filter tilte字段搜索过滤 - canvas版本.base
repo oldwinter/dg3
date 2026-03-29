@@ -1,0 +1,11 @@
+filters:
+  and:
+    - if(this["filter title""],file.fullname.lower().contains(this["filter title"].lower()), true)
+views:
+  - type: table
+    name: 使用filter title字段搜索过滤
+    filters:
+      and:
+        - file.ext == "canvas"
+    order:
+      - file.name

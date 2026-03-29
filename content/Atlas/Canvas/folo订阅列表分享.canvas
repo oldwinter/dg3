@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"222932a3328b48da","type":"file","file":"Atlas/Bases/App应用软件管理.base","x":-780,"y":-420,"width":1465,"height":331},
+		{
+			"id":"6faf03e2104bd1f5",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":269,
+			"y":-149,
+			"width":193,
+			"height":60
+		},
+		{"id":"7cc6e576448b6ace","type":"file","file":"Atlas/Canvas/订阅列表分享/folo订阅列表分享-截止至2025-07-19.md","x":-460,"y":140,"width":400,"height":400}
+	],
+	"edges":[
+		{
+			"id":"5e30d846a3a9cb25",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6faf03e2104bd1f5",
+			"fromSide":"bottom",
+			"toNode":"7cc6e576448b6ace",
+			"toSide":"top"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

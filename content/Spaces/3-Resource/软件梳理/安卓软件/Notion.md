@@ -1,43 +1,48 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/Notion.md","title":"Notion","created":"2022-06-09","modified":"2025-07-31","tags":["评论/少数派"],"cssclasses":""}
+publish: true
+permalink: /Spaces/3-Resource/软件梳理/安卓软件/Notion.md
+title: Notion
+created: 2022-06-09
+modified: 2025-07-31
+tags:
+  - 评论/少数派
 ---
-
 
 ## notion 教程
 
 - 官方文档
-- [[Spaces/2-Area/知识管理/Notion All in One：搭建高能效率系统]] 课程 from[[Spaces/3-Resource/人/二一的笔记]]
+- [[Notion All in One：搭建高能效率系统]] 课程 from[[二一的笔记]]
 
 ## notion ai
 
-[[Spaces/2-Area/知识管理/Notion AI的使用技巧]]
+[[Notion AI的使用技巧]]
 
-- 2020 年，笔记软件领域的两个标志性软件 Notion 和 [[Cards/Roam Research]]
-	- Notion 引入了 block 块的概念，让做笔记以及网站构建如同搭建积木的一样简单方便
-	- 而 [[Cards/Roam Research]] 则引入 [[Cards/双向链接]] 以及对 [[Spaces/3-Resource/人/卢曼]] 的 [[Spaces/2-Area/知识管理/卡片盒笔记法 - Zettelkasten]] 的宣传，引来一波大热。
+- 2020 年，笔记软件领域的两个标志性软件 Notion 和 [[Roam Research]]
+  - Notion 引入了 block 块的概念，让做笔记以及网站构建如同搭建积木的一样简单方便
+  - 而 [[Roam Research]] 则引入 [[双向链接]] 以及对 [[卢曼]] 的 [[卡片盒笔记法 - Zettelkasten]] 的宣传，引来一波大热。
 
 ## notion token
 
-[[Spaces/3-Resource/账号密码/notion api token]]
+[[notion api token]]
 
 ## 使用范围
 
 page 和 block 功能，目前还没有对我产生致命吸引。所以我使用 notion，主要使用了其独特的 database、分享与协作、上传不限量等特点和特性。
 
 - 主要使用 notion 的 database 功能。
-	- [[Spaces/2-Area/知识管理/notion database 多视图模式的使用场景探索]]
-	- [[Spaces/3-Resource/个人成长/个人时间使用的宏观洞察]]
+  - [[notion database 多视图模式的使用场景探索]]
+  - [[个人时间使用的宏观洞察]]
 - 主要使用 notion 的团队协作特性
-	- [[Spaces/4-Archive/工作流与SOP/团队信息与知识共享]]
+  - [[团队信息与知识共享]]
 - 主要使用 notion 的分享特性
-	- 个人 [[Spaces/2-Area/数字花园建设与维护/数字花园]] 建设
+  - 个人 [[数字花园]] 建设
 - 主要使用 notion 的文件上传不限量，不审查特性
-	- [[Spaces/Published/已发布文章/这才是重器轻用，用notion珍藏喜闻乐见的涩涩资源]]
-- 是否适合用来剪藏？待问号，搜索太慢了。等好几秒怎么能忍。而且也不支持 [[Cards/OCR]]
+  - [[这才是重器轻用，用notion珍藏喜闻乐见的涩涩资源]]
+- 是否适合用来剪藏？待问号，搜索太慢了。等好几秒怎么能忍。而且也不支持 [[OCR]]
 
 ## 一些使用技巧
 
-当前不支持除了 http 以外的 [[Cards/URL scheme]]，因而无法通过链接直接打开其他应用。
+当前不支持除了 http 以外的 [[URL scheme]]，因而无法通过链接直接打开其他应用。
 
 解决方法：通过短网址服务，将比如 obsidian://这个 url 转成 https。缺点就是要跳一下浏览器，但是已经接近完美了。
 

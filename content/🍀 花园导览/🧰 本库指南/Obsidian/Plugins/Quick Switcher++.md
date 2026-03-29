@@ -1,20 +1,23 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Quick Switcher++.md","aliases":"darlal-switcher-plus","created":"2024-05-11","modified":"2025-08-07","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Quick Switcher++.md
+aliases:
+  - darlal-switcher-plus
+created: 2024-05-11
+modified: 2025-08-07
 ---
-
 
 满分，神器。
 
-和[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Another Quick Switcher]]互补，都有离不开的功能。
+和[[Another Quick Switcher]]互补，都有离不开的功能。
 
-快捷键配置：[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/vscode代码编辑和obsidian文本编辑快捷键 - 触发快捷键\|Obsidian 文本编辑快捷键]]
+快捷键配置：[[vscode代码编辑和obsidian文本编辑快捷键 - 触发快捷键|Obsidian 文本编辑快捷键]]
 
 ### 技巧：
 
 直接用/代表目录，可以搜索文件夹里面的笔记：
 
-![PixPin_2025-08-21_02-00-51.png](https://pub-pic.oldwinter.top/2025/08/2da3c96714d58aa3accdf30d3e690964.png)
-
+![PixPin\_2025-08-21\_02-00-51.png](https://pub-pic.oldwinter.top/2025/08/2da3c96714d58aa3accdf30d3e690964.png)
 
 用$，也就是symble 功能，可以在canvas里面快速导航定位到指定node；也可以在md文件中定位到header标题。
 
@@ -24,10 +27,8 @@
 
 单独使用@ 和 ~符号的话，会感觉很怪，就是因为它默认的是当前匹配项的第一行，啥都不输入的话，当前第一行应该是最近打开的第一个文件。
 
-有个非常有用的场景，就是能通过这个方式，找到png、pdf等各种资源文件的反向链接，也就是它们被哪些文件引用了。 [[Cards/如何查看还未创建文件的反向链接]]]
+有个非常有用的场景，就是能通过这个方式，找到png、pdf等各种资源文件的反向链接，也就是它们被哪些文件引用了。 [[如何查看还未创建文件的反向链接]]]
 ![CleanShot 2025-08-07 at 17.15.13@2x.png](https://pub-pic.oldwinter.top/2025/08/6d675f38a332788a5f0f5f8e796a2edf.png)
-
-
 
 ## bug
 

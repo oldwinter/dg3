@@ -1,0 +1,6 @@
+filters:
+  and:
+    - PARA == "Resources"
+views:
+  - type: table
+    name: Table

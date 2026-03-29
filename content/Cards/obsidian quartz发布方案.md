@@ -1,10 +1,12 @@
 ---
-{"publish":true,"permalink":"/Cards/obsidian quartz发布方案.md","created":"2025-07-09","modified":"2025-07-09","cssclasses":""}
+publish: true
+permalink: /Cards/obsidian quartz发布方案.md
+created: 2025-07-09
+modified: 2025-07-09
 ---
 
+[[quartz|quartz]]
 
-[[Sources/GithubStarsSync/quartz\|quartz]]
+[[quartz-themes]]
 
-[[Sources/GithubStarsSync/quartz-themes]]
-
-[[Cards/quartz syncer]]
+[[quartz syncer]]

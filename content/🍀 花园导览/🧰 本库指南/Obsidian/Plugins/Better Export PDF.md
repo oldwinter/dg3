@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Better Export PDF.md","aliases":"better-export-pdf","created":"2024-05-11","modified":"2025-08-30","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Better Export PDF.md
+aliases:
+  - better-export-pdf
+created: 2024-05-11
+modified: 2025-08-30
 ---
-
 
 ## Better Export PDF
 

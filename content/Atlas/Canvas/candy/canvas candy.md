@@ -1,9 +1,11 @@
 ---
-{"publish":true,"permalink":"/Atlas/Canvas/candy/canvas candy.md","created":"2025-06-23","modified":"2025-08-27","cssclasses":""}
+publish: true
+permalink: /Atlas/Canvas/candy/canvas candy.md
+created: 2025-06-23
+modified: 2025-08-27
 ---
 
-
-使用css的方式，改变[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian canvas]]的界面表现，已经免费且开源：
+使用css的方式，改变[[obsidian canvas]]的界面表现，已经免费且开源：
 
 [GitHub - TfTHacker/obsidian-canvas-candy: Enhances the visual capabilities of Obsidian's Canvas feature](https://github.com/TfTHacker/obsidian-canvas-candy)
 
@@ -18,6 +20,7 @@
 ## 支持的语法
 
 **cssclasses decorations**
+
 - cc-border-bottom
 - cc-border-dashed
 - cc-border-dotted
@@ -56,6 +59,7 @@
 - cc-shape-parallelogram-right
 
 **callout decorations**
+
 - cc-callout-center
 - cc-image-clip
 - cc-image-cover

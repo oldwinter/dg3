@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Extras/Other/Obsidian当前开启的全部第三方插件及其命令行.md","description":"不能随便改名、删除、挪动位置，需要various complement插件一起改","created":"2025-06-27","modified":"2025-06-27","cssclasses":""}
+publish: true
+permalink: /Extras/Other/Obsidian当前开启的全部第三方插件及其命令行.md
+description: 不能随便改名、删除、挪动位置，需要various complement插件一起改
+created: 2025-06-27
+modified: 2025-06-27
 ---
-
 
 advanced-canvas:clone-node-down
 advanced-canvas:clone-node-left
@@ -290,12 +293,12 @@ obsidian-another-quick-switcher:header-search-in-file
 obsidian-another-quick-switcher:in-file-search
 obsidian-another-quick-switcher:link
 obsidian-another-quick-switcher:move
-obsidian-another-quick-switcher:search-command_2-hop-link-search
-obsidian-another-quick-switcher:search-command_file-name-fuzzy-search
-obsidian-another-quick-switcher:search-command_file-name-search
-obsidian-another-quick-switcher:search-command_landmark-search
-obsidian-another-quick-switcher:search-command_recent-search
-obsidian-another-quick-switcher:search-command_star-search
+obsidian-another-quick-switcher:search-command\_2-hop-link-search
+obsidian-another-quick-switcher:search-command\_file-name-fuzzy-search
+obsidian-another-quick-switcher:search-command\_file-name-search
+obsidian-another-quick-switcher:search-command\_landmark-search
+obsidian-another-quick-switcher:search-command\_recent-search
+obsidian-another-quick-switcher:search-command\_star-search
 obsidian-auto-link-title:auto-link-title-normal-paste
 obsidian-auto-link-title:auto-link-title-paste
 obsidian-auto-link-title:enhance-url-with-title
@@ -791,7 +794,7 @@ Excalidraw: (Script) Downloaded/ExcaliAI
 Excalidraw: (Script) Downloaded/Slideshow
 Excalidraw: Add back-of-note card
 Excalidraw: Annotate image in Excalidraw
-Excalidraw: Convert *.excalidraw to* .md files
+Excalidraw: Convert _.excalidraw to_ .md files
 Excalidraw: Convert markdown note to Excalidraw Drawing
 Excalidraw: Convert to file…
 Excalidraw: Copyembed linkfor this drawing

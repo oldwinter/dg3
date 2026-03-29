@@ -1,0 +1,63 @@
+{
+	"nodes":[
+		{"type":"text","text":">[!cc-header-noborder] Header\n\n\n**callouts:**\n```\n>[!cc-header-noborder]\n>[!cc-footer-noborder]\n```\n\n\n>[!cc-footer-noborder] footer","id":"02c35c4f39ef8b38","x":-340,"y":320,"width":360,"height":260,"color":"3"},
+		{"type":"text","text":">[!cc-header] Header\n\n\n**Callouts:**\n```\n>[!cc-header]\n>[!cc-footer]\n```\n\n\n>[!cc-footer] footer","id":"b92b2c5fbd09a3d5","x":-740,"y":320,"width":360,"height":260,"color":"3"},
+		{"type":"text","text":"---\ncssclasses: cc-card-nocolor\n---\n\n>[!cc-header-noborder] Header\n\n**Callouts**\n```\n>[!cc-header-noborder]\n>[!cc-footer-noborder]\n```\n\n**cssclasses**\n- cc-card-nocolor\n\n>[!cc-footer-noborder] footer","id":"e478e0da99207a49","x":-740,"y":630,"width":360,"height":390,"color":"3"},
+		{"type":"text","text":"---\ncssclasses: cc-card-nocolor, cc-border-none\n---\n\n>[!cc-header-noborder] Header\n\n**Callouts**\n```\n>[!cc-header-noborder]\n>[!cc-footer-noborder]\n```\n\n**cssclasses**\n- cc-card-nocolor\n- cc-border-none\n\n>[!cc-footer-noborder] footer","id":"cac2b357b22b167c","x":-340,"y":630,"width":360,"height":390,"color":"3"},
+		{"type":"text","text":">[!cc-label-left] **Label Left**\n\n\n**Callouts:**\n```\n>[!cc-label-left]\n```\n","id":"b82410c2e2452e6d","x":200,"y":320,"width":360,"height":260,"color":"1"},
+		{"type":"text","text":">[!cc-label-left-noborder] **Label Left**\n\n\n**Callouts:**\n```\n>[!cc-label-left-noborder]\n```\n","id":"9f58531cf46ea635","x":600,"y":320,"width":360,"height":260,"color":"1"},
+		{"type":"text","text":">[!cc-label-right] Label right\n\n\n**Callouts:**\n```\n>[!cc-label-right]\n```","id":"fce4d263af96be59","x":200,"y":620,"width":360,"height":260,"color":"1"},
+		{"type":"text","text":">[!cc-label-right-noborder] Label right\n\n\n**Callouts:**\n```\n>[!cc-label-right-noborder]\n```","id":"50e9e62bcf849b46","x":606,"y":620,"width":360,"height":260,"color":"1"},
+		{"type":"text","text":">[!cc-header-noborder] header\n\n**Callout:**\n```\n>[!cc-header-noborder]\n```\n","id":"8f0e59d909b3b8d8","x":1080,"y":320,"width":360,"height":260,"color":"4"},
+		{"type":"text","text":"---\ncssclasses: cc-border-none\n---\n\n>[!cc-header-noborder] header\n\n**Callout:**\n```\n>[!cc-header-noborder] header\n```\n\n**cssclasses**\n- cc-border-none","id":"373fc4cb270c1e25","x":1480,"y":320,"width":360,"height":260,"color":"4"},
+		{"type":"text","text":"---\ncssclasses: cc-card-transparent\n---\n\n>[!cc-header] header\n\n**Callouts:**\n```\n>[!cc-header]\n```\n\n**cssclasses**\n- cc-card-transparent","id":"c0b4e815edc2a2b8","x":1080,"y":640,"width":360,"height":260,"color":"4"},
+		{"type":"text","text":"---\ncssclasses: cc-card-nocolor, cc-border-none\n---\n\n>[!cc-header] header\n\n**Callouts:**\n```\n>[!cc-header]\n```\n\n**cssclasses**\n- cc-card-nocolor\n- cc-border-none","id":"5e3238a2410670cd","x":1480,"y":640,"width":360,"height":260,"color":"4"},
+		{"type":"text","text":"---\ncssclasses: cc-card-nocolor, cc-border-none\n---\n\n>[!cc-header-noborder] header\n\n**Callouts:**\n```\n>[!cc-header-noborder]\n```\n\n**cssclasses**\n- cc-card-nocolor\n- cc-border-none","id":"77f552284ac3da6f","x":1080,"y":960,"width":360,"height":260,"color":"4"},
+		{"type":"text","text":">[!cc-header] header \n>- with additional content\n\n**Callouts:**\n```\n>[!cc-header]\n```","id":"80d3fe8e3d4ea5e0","x":1480,"y":960,"width":360,"height":260,"color":"4"},
+		{"id":"d9b46e02980e948c","type":"file","file":"Extras/Attachments/Images/Icons/obsidian-light-cc-image.svg","x":-1249,"y":1820,"width":360,"height":360},
+		{"type":"text","text":"---\ncssclasses: cc-border-none, cc-card-fill, cc-border-squared\n---\n\n>[!cc-label-left-noborder] **天朗气清**\n","id":"db1ddf06f1826f43","x":200,"y":900,"width":60,"height":191,"color":"5"},
+		{"type":"text","text":"---\ncssclasses: cc-border-none, cc-card-fill, cc-border-squared\n---\n\n>[!cc-label-right-noborder] **人生若如初见**\n","id":"d677fd9f31ff7db4","x":400,"y":900,"width":60,"height":190,"color":"4"},
+		{"id":"cacbf4f075482d66","type":"file","file":"Extras/Attachments/Sticker/party-cc-image.svg","x":-189,"y":80,"width":389,"height":400},
+		{"type":"text","text":"---\ncssclasses: cc-card-nocolor\n---\n\n>[!cc-header-noborder] # Header\n\n**Callouts**\n```\n>[!cc-header-noborder]\n>[!cc-footer-noborder]\n```\n\n**cssclasses**\n- cc-card-nocolor\n\n>[!cc-footer-noborder] footer","id":"4df25a5c0a59c160","x":-740,"y":1080,"width":360,"height":390,"color":"3"},
+		{"type":"text","text":"---\ncssclasses: cc-card-nocolor\n---\n\n>[!cc-header-noborder] Header\n\n**Callouts**\n```\n>[!cc-header-noborder]\n>[!cc-footer-noborder]\n```\n\n**cssclasses**\n- cc-card-nocolor\n\n>[!cc-footer-noborder] # footer","id":"8ea7b23fcdf2a82e","x":-340,"y":1080,"width":360,"height":390,"color":"3"},
+		{"id":"b94a2e7357280c82","type":"file","file":"Extras/Attachments/Images/Icons/youtube-cc-image.svg","x":560,"y":60,"width":369,"height":260},
+		{
+			"id":"796b14ede101ff78",
+			"type":"text",
+			"text":"---\ncssclasses: cc-shape-circle\n---\n",
+			"styleAttributes":{"shape":"pill"},
+			"x":130,
+			"y":1119,
+			"width":260,
+			"height":203
+		},
+		{
+			"id":"1cc44c23128476a8",
+			"type":"text",
+			"text":"需要启用 canvas-candy.css",
+			"styleAttributes":{
+				"border":"invisible",
+				"shape":null
+			},
+			"x":-1252,
+			"y":289,
+			"width":340,
+			"height":500
+		},
+		{
+			"id":"cb1b86cefe3cf612",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":-1260,
+			"y":880,
+			"width":260,
+			"height":60
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

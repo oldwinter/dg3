@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"deployment","type":"group","backgroundColor":"#e3f2fd","x":650,"y":-100,"width":600,"height":200,"label":"🚀 部署模式"},
+		{"id":"routing","type":"group","backgroundColor":"#f3e5f5","x":1300,"y":-100,"width":400,"height":200,"label":"🛤️ 路由策略"},
+		{"id":"random_routing","type":"text","text":"🎲 随机路由\n--policy random\n随机选择工作进程","x":1350,"y":-50,"width":150,"height":40},
+		{"id":"round_robin_routing","type":"text","text":"🔄 轮询路由\n--policy round_robin\n按顺序循环工作进程","x":1350,"y":-10,"width":150,"height":40},
+		{"id":"power_two_routing","type":"text","text":"⚡ 两选一策略\n--policy power_of_two\n选择两个中最少负载的","x":1350,"y":30,"width":150,"height":40},
+		{"id":"cache_aware_routing","type":"text","text":"🧠 缓存感知（默认）\n--policy cache_aware\n结合缓存优化和负载均衡\n- 平衡系统：缓存路由\n- 不平衡系统：最短队列","x":1350,"y":70,"width":150,"height":80},
+		{"id":"fault_tolerance","type":"text","text":"🛡️ 故障容错\n\n- 自动重试机制\n- 断路器保护\n- 动态扩展：添加/移除工作进程\n\ncurl -X POST \"http://localhost:30000/add_worker?url=http://new-worker:port\"","x":0,"y":150,"width":300,"height":100},
+		{"id":"advanced_features","type":"text","text":"⚙️ 高级功能\n\n- Kubernetes 服务发现\n- Prometheus 监控\n- 请求追踪\n- 数据并行感知路由\n- 预填解码分离模式","x":350,"y":150,"width":250,"height":100},
+		{"id":"reference_doc","type":"file","file":"Spaces/1-Project/拓扑灵犀/SGLang Router 官方文档.md","x":1450,"y":250,"width":200,"height":50},
+		{"id":"intro","type":"text","text":"🎯 SGLang Router 概述\n\n高性能请求分发系统，支持缓存感知负载均衡、故障容错和高级部署模式，包括数据并行和预填解码分离。\n\n关键特性：\n- 缓存感知负载均衡\n- 多种路由策略\n- 故障容错\n- 动态扩展\n- Kubernetes 集成","x":0,"y":0,"width":300,"height":100},
+		{"id":"install","type":"text","text":"📦 安装和快速开始\n\npip install sglang-router\n\n查看选项：\npython -m sglang_router.launch_server --help\npython -m sglang_router.launch_router --help","x":350,"y":-50,"width":250,"height":80},
+		{"id":"co_launch","type":"text","text":"1️⃣ 共同启动模式\n\n路由器和工作进程一起启动，最简单。\n\npython -m sglang_router.launch_server \\\n    --model-path meta-llama/Meta-Llama-3.1-8B-Instruct \\\n    --dp-size 4 \\\n    --host 0.0.0.0 \\\n    --port 30000","x":700,"y":-50,"width":250,"height":60},
+		{"id":"separate_launch","type":"text","text":"2️⃣ 分离启动模式\n\n适合多节点部署。\n\n先启动工作进程，然后启动路由器：\n\npython -m sglang_router.launch_router \\\n    --worker-urls http://worker1:8000 http://worker2:8001 \\\n    --host 0.0.0.0 \\\n    --port 30000","x":700,"y":30,"width":250,"height":80},
+		{"id":"pd_disagg","type":"text","text":"3️⃣ 预填解码分离\n\n高级模式，分离预填和解码操作以优化性能。\n\npython -m sglang_router.launch_router \\\n    --pd-disaggregation \\\n    --prefill http://prefill1:8000 \\\n    --decode http://decode1:8001","x":700,"y":120,"width":250,"height":60},
+		{"id":"config_params","type":"text","text":"📋 核心配置参数\n\n- --host, --port: 路由器地址\n- --policy: 路由策略\n- --worker-urls: 工作进程URL\n- --cache-threshold: 缓存阈值\n- --retry-max-retries: 重试次数","x":650,"y":250,"width":400,"height":80},
+		{"id":"learning_tips","type":"text","text":"💡 学习提示\n\n1. 从共同启动模式开始\n2. 理解缓存感知路由的工作原理\n3. 监控 Prometheus 指标\n4. 参考完整文档获取详细参数\n5. 在 Kubernetes 中测试服务发现","x":1100,"y":250,"width":300,"height":80}
+	],
+	"edges":[
+		{"id":"intro_to_install","fromNode":"intro","fromSide":"right","toNode":"install","toSide":"left"},
+		{"id":"install_to_deployment","fromNode":"install","fromSide":"right","toNode":"deployment","toSide":"left"},
+		{"id":"deployment_to_routing","fromNode":"deployment","fromSide":"right","toNode":"routing","toSide":"left"},
+		{"id":"intro_to_fault","fromNode":"intro","fromSide":"bottom","toNode":"fault_tolerance","toSide":"top"},
+		{"id":"install_to_advanced","fromNode":"install","fromSide":"bottom","toNode":"advanced_features","toSide":"top"},
+		{"id":"deployment_to_config","fromNode":"deployment","fromSide":"bottom","toNode":"config_params","toSide":"top"},
+		{"id":"routing_to_tips","fromNode":"routing","fromSide":"bottom","toNode":"learning_tips","toSide":"top"},
+		{"id":"tips_to_reference","fromNode":"learning_tips","fromSide":"right","toNode":"reference_doc","toSide":"left"},
+		{"id":"co_launch_to_separate","fromNode":"co_launch","fromSide":"bottom","toNode":"separate_launch","toSide":"top"},
+		{"id":"separate_to_pd","fromNode":"separate_launch","fromSide":"bottom","toNode":"pd_disagg","toSide":"top"},
+		{"id":"random_to_round","fromNode":"random_routing","fromSide":"bottom","toNode":"round_robin_routing","toSide":"top"},
+		{"id":"round_to_power","fromNode":"round_robin_routing","fromSide":"bottom","toNode":"power_two_routing","toSide":"top"},
+		{"id":"power_to_cache","fromNode":"power_two_routing","fromSide":"bottom","toNode":"cache_aware_routing","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,89 @@
+formulas:
+  命中今日新建: if(file.ctime.date() == this.file.name, "Y", "")
+  命中今日修改: if(file.mtime.date() == this.file.name, "Y", "")
+  命中历史创建: if(date(this.file.name).month == date(file.ctime).month && date(this.file.name).day == date(file.ctime).day && date(this.file.name).year != date(file.ctime).year, "Y", "")
+  命中历史Dailynote: if(date(this.file.name).month == date(file.name).month && date(this.file.name).day == date(file.name).day && date(this.file.name).year != date(file.ctime).year, "Y", "")
+  命中类目: if(file.ctime.date() == this.file.name, "今日新建 ", "") + if(file.mtime.date() == this.file.name, "今日修改 ", "") + if(date(this.file.name).month == date(file.ctime).month && date(this.file.name).day == date(file.ctime).day && date(this.file.name).year != date(file.ctime).year, "历史创建 ", "") + if(date(this.file.name).month == date(file.name).month && date(this.file.name).day == date(file.name).day && date(this.file.name).year != date(file.ctime).year, "历史Dailynote", "")
+views:
+  - type: table
+    name: 统一总览
+    filters:
+      or:
+        - file.ctime.date() == this.file.name
+        - file.mtime.date() == this.file.name
+        - date(this.file.name).month == date(file.ctime).month && date(this.file.name).day == date(file.ctime).day && date(this.file.name).year != date(file.ctime).year
+        - date(this.file.name).month == date(file.name).month && date(this.file.name).day == date(file.name).day && date(this.file.name).year != date(file.ctime).year
+    order:
+      - file.name
+      - formula.命中类目
+      - formula.命中今日新建
+      - formula.命中今日修改
+      - formula.命中历史创建
+      - formula.命中历史Dailynote
+      - file.ctime
+      - file.mtime
+    sort:
+      - property: formula.命中今日修改
+        direction: DESC
+      - property: formula.命中今日新建
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    limit: 120
+    columnSize:
+      file.name: 420
+      formula.命中类目: 230
+      formula.命中今日新建: 105
+      formula.命中今日修改: 105
+      formula.命中历史创建: 105
+      formula.命中历史Dailynote: 140
+  - type: table
+    name: 今日新建笔记
+    filters:
+      or:
+        - file.ctime.date() == this.file.name
+    order:
+      - file.name
+      - file.ctime
+    sort:
+      - property: file.name
+        direction: ASC
+    limit: 20
+    columnSize:
+      file.name: 467
+      file.ctime: 512
+  - type: table
+    name: 今日修改笔记
+    filters:
+      or:
+        - file.mtime.date() == this.file.name
+    order:
+      - file.name
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 30
+    columnSize:
+      file.name: 354
+  - type: table
+    name: 历史上的今天创建
+    filters:
+      and:
+        - date(this.file.name).month == date(file.ctime).month && date(this.file.name).day == date(file.ctime).day
+        - date(this.file.name).year != date(file.ctime).year
+    order:
+      - file.name
+      - file.ctime
+    limit: 10
+  - type: table
+    name: 历史上的今天Dailynote
+    filters:
+      and:
+        - date(this.file.name).month == date(file.name).month && date(this.file.name).day == date(file.name).day
+        - date(this.file.name).year != date(file.ctime).year
+    order:
+      - file.name
+      - file.ctime

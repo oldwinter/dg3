@@ -1,0 +1,76 @@
+{
+	"nodes":[
+		{"id":"b87a96a3ebb58a04","type":"group","x":431,"y":-383,"width":1082,"height":462,"label":"AWS上进行"},
+		{"id":"a068387f144441ea","type":"group","x":-380,"y":-360,"width":290,"height":264,"label":"之前是放在谷歌云上面"},
+		{"id":"1cf6472fa53a14f9","type":"text","text":"common type json","x":-517,"y":192,"width":250,"height":60},
+		{"id":"52976ebe7176e097","type":"text","text":"## 向晏铭提问\nraw-data数据放哪了\nprocess的函数在哪\n\n现在的处理流程，端到端演示操作一下。","x":-785,"y":9,"width":268,"height":213},
+		{"id":"5a67d5281937e634","type":"text","text":"company 4000万条数据\nemployee 几亿条数据","x":-358,"y":-249,"width":250,"height":141},
+		{"id":"15b9b81d51f24d63","type":"text","text":"raw-data\n量级：几千万条","x":-334,"y":9,"width":250,"height":60},
+		{"id":"c46d7e7718fd1478","type":"text","text":"linkedin数据","x":-358,"y":-332,"width":250,"height":60},
+		{"id":"9b486e8906d8e001","type":"text","text":"embedding type json\n3个key需要，比如简介","x":-158,"y":192,"width":250,"height":60},
+		{"id":"3ac7fe24c26add99","type":"text","text":"公司本地服务器 localserver","x":29,"y":-332,"width":250,"height":60},
+		{
+			"id":"257223c0783f5e89",
+			"type":"text",
+			"text":"```\nssh dong@192.168.10.117\n```\n\n\n/data目录",
+			"styleAttributes":{},
+			"x":24,
+			"y":-249,
+			"width":260,
+			"height":144
+		},
+		{"id":"6c37115d295f50c8","type":"text","text":"浙大实验室远程服务器 6台4090","x":-33,"y":69,"width":250,"height":60},
+		{"id":"6d335d21763cd757","type":"text","text":"## 任务目标\n目前处理速度是400条/s\n使用[[在aws服务器上面直接跑一下 benchmark，找到性能瓶颈]]","x":-785,"y":329,"width":268,"height":231},
+		{"id":"939e1e3d2173ed7c","type":"text","text":"final json\n\n合成一个index到es","x":-322,"y":350,"width":250,"height":114},
+		{"id":"5868ba120b691c0b","type":"text","text":"pipeline\n以[[lamda function]]为主，就是serverless的function函数","x":780,"y":-341,"width":250,"height":152},
+		{"id":"d1839fc483b7f5ee","type":"file","file":"Spaces/1-Project/拓扑灵犀/aws opensearch service.md","x":1093,"y":-341,"width":400,"height":400},
+		{"id":"efbfb8708722232d","type":"text","text":"s3","x":451,"y":-341,"width":250,"height":60},
+		{
+			"id":"caf57b75ddc85509",
+			"type":"text",
+			"text":"目前s3里面已有的，就是",
+			"styleAttributes":{},
+			"x":441,
+			"y":-265,
+			"width":260,
+			"height":60
+		},
+		{"id":"c41520cebad20fa9","type":"file","file":"Spaces/1-Project/拓扑灵犀/AWS Lambda 函数 - linkedin原始数据进行清洗 - MyDataTransformerLambda.md","x":780,"y":-540,"width":260,"height":125},
+		{"id":"2a8ae076ac258ae8","type":"text","text":"ocu从4改成8，是否能","x":671,"y":-141,"width":250,"height":60},
+		{
+			"id":"8a458b8a2463abaf",
+			"type":"text",
+			"text":"嵌入向量搜索后，耗时5分钟。\n\n",
+			"styleAttributes":{},
+			"x":60,
+			"y":380,
+			"width":260,
+			"height":100
+		},
+		{"id":"ca4134f595980ed4","type":"file","file":"Spaces/1-Project/拓扑灵犀/company数据预处理流程图.md","x":1680,"y":-240,"width":928,"height":909},
+		{
+			"id":"038b7b02670f5ad5",
+			"type":"text",
+			"text":"## 数据处理流程图\n\n```mermaid\ngraph TB\n    subgraph \"数据源\"\n        A[原始LinkedIn数据] --> B[本地文件系统<br>/data/google-cloud-data/]\n        A --> C[实时数据流<br>AWS事件]\n    end\n    \n    subgraph \"处理层\"\n        D[LinkedinCompanyDataProcessor<br>项目核心处理器]\n        E[DataProcessor<br>Lambda内嵌处理器]\n    end\n    \n    subgraph \"执行环境\"\n        F[本地服务器/集群<br>process_us_companies_to_es.py]\n        G[AWS Lambda<br>lamda-function.py]\n    end\n    \n    subgraph \"存储层\"\n        H[Elasticsearch/OpenSearch<br>索引存储]\n        I[Embeddings文件<br>NPZ格式]\n    end\n    \n    %% 数据流\n    B --> F\n    C --> G\n    \n    %% 处理关系\n    F --> D\n    G --> E\n    \n    %% 依赖关系\n    D -.->|共享逻辑| E\n    \n    %% 存储关系\n    F --> H\n    G --> H\n    I --> F\n    \n    %% 样式\n    classDef sourceClass fill:#e3f2fd,stroke:#1976d2,stroke-width:2px\n    classDef processClass fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px\n    classDef envClass fill:#e8f5e8,stroke:#388e3c,stroke-width:2px\n    classDef storageClass fill:#fff3e0,stroke:#f57c00,stroke-width:2px\n    \n    class A,B,C sourceClass\n    class D,E processClass\n    class F,G envClass\n    class H,I storageClass\n```",
+			"styleAttributes":{},
+			"x":1720,
+			"y":-1012,
+			"width":1327,
+			"height":701
+		}
+	],
+	"edges":[
+		{"id":"10604ed2aa4ff328","fromNode":"c46d7e7718fd1478","fromSide":"right","toNode":"3ac7fe24c26add99","toSide":"left"},
+		{"id":"c052b731e61abb24","toFloating":false,"fromNode":"3ac7fe24c26add99","fromSide":"right","toNode":"efbfb8708722232d","toSide":"left"},
+		{"id":"8bdd0674a35bd73b","fromNode":"efbfb8708722232d","fromSide":"right","toNode":"5868ba120b691c0b","toSide":"left"},
+		{"id":"ebbeea0de91de202","fromNode":"5868ba120b691c0b","fromSide":"right","toNode":"d1839fc483b7f5ee","toSide":"left","label":"存储到"},
+		{"id":"9f1f92795cad03a2","fromNode":"15b9b81d51f24d63","fromSide":"bottom","toNode":"1cf6472fa53a14f9","toSide":"top","label":"process实时处理"},
+		{"id":"db64efacea6893e7","fromNode":"15b9b81d51f24d63","fromSide":"bottom","toNode":"9b486e8906d8e001","toSide":"top","label":"已经离线处理完"},
+		{"id":"aff23a0d5d0a85f2","fromNode":"1cf6472fa53a14f9","fromSide":"bottom","toNode":"939e1e3d2173ed7c","toSide":"top"},
+		{"id":"1750ac8553bebc7f","fromNode":"9b486e8906d8e001","fromSide":"bottom","toNode":"939e1e3d2173ed7c","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

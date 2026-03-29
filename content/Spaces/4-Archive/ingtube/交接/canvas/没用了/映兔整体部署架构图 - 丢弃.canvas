@@ -1,0 +1,313 @@
+{
+  "nodes": [
+    {
+      "id": "f23b2e403a07249c",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -610,
+      "y": -560,
+      "width": 1430,
+      "height": 1220,
+      "label": "global"
+    },
+    {
+      "id": "3f7226c8642d334c",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -590,
+      "y": -420,
+      "width": 1390,
+      "height": 1060,
+      "label": "region - 上海"
+    },
+    {
+      "id": "c5658e19980d65ff",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -610,
+      "y": -1640,
+      "width": 1430,
+      "height": 1020,
+      "label": "global"
+    },
+    {
+      "id": "fefb49a3a135a013",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -590,
+      "y": -1500,
+      "width": 1390,
+      "height": 860,
+      "label": "region - 上海"
+    },
+    {
+      "id": "38612f812395ad82",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -475,
+      "y": -260,
+      "width": 440,
+      "height": 620,
+      "label": "VPC - Dev - Test"
+    },
+    {
+      "id": "3d415bd1d3bef671",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 60,
+      "y": -1240,
+      "width": 440,
+      "height": 260,
+      "label": "VPC - Old"
+    },
+    {
+      "id": "a2d1452e57ebee9d",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -475,
+      "y": 500,
+      "width": 440,
+      "height": 120,
+      "label": "VPC - Production"
+    },
+    {
+      "id": "6f3929161c4792ad",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -560,
+      "y": -1340,
+      "width": 440,
+      "height": 120,
+      "label": "VPC - Dev - Test"
+    },
+    {
+      "id": "0efa49a5246aa804",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -560,
+      "y": -980,
+      "width": 440,
+      "height": 120,
+      "label": "VPC - Production"
+    },
+    {
+      "id": "af4e80d8aa7ed19f",
+      "type": "text",
+      "text": "## CDN",
+      "styleAttributes": {},
+      "x": -582,
+      "y": -1620,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "cea74abb7939f4f4",
+      "type": "text",
+      "text": "## CDN",
+      "styleAttributes": {},
+      "x": -580,
+      "y": -540,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "22782775d50ff228",
+      "type": "text",
+      "text": "# 现状",
+      "styleAttributes": {},
+      "x": -920,
+      "y": -1620,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "be286900bfa50d84",
+      "type": "text",
+      "text": "# 从计算、存储、网络这3个IAAS角度，分析映兔整体架构",
+      "styleAttributes": {},
+      "x": -935,
+      "y": -1800,
+      "width": 805,
+      "height": 80
+    },
+    {
+      "id": "61af02c093e0f919",
+      "type": "text",
+      "text": "## Mysql",
+      "styleAttributes": {},
+      "x": 80,
+      "y": -1200,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "50d931aa3113d21b",
+      "type": "text",
+      "text": "## Redis",
+      "styleAttributes": {},
+      "x": 80,
+      "y": -1100,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "f90f3e5db486f256",
+      "type": "text",
+      "text": "## OSS对象存储",
+      "styleAttributes": {},
+      "x": 205,
+      "y": -1460,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "7e9781d93dc6b155",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/没用了/映兔旧集群后端部署架构图.canvas",
+      "styleAttributes": {},
+      "x": -455,
+      "y": -220,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "id": "a3bae89e7e0e805f",
+      "type": "text",
+      "text": "## rocketmq",
+      "styleAttributes": {},
+      "x": -540,
+      "y": -380,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "990ffd1d2d5670ce",
+      "type": "text",
+      "text": "## ACR 容器镜像仓库",
+      "styleAttributes": {},
+      "x": -280,
+      "y": -540,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "4d2cb8e6ab64c3e6",
+      "type": "text",
+      "text": "# 目标",
+      "styleAttributes": {},
+      "x": -920,
+      "y": -540,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "49cfb50c7e9c9f39",
+      "type": "text",
+      "text": "## rocketmq",
+      "styleAttributes": {},
+      "x": -530,
+      "y": -1460,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "40c9b5bd82ed7d0b",
+      "type": "text",
+      "text": "## NAS 文件存储",
+      "styleAttributes": {},
+      "x": -170,
+      "y": -1460,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "6994c929d1c8a5a6",
+      "type": "text",
+      "text": "## sls日志存储",
+      "styleAttributes": {},
+      "x": 500,
+      "y": -1460,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "911d5b1e0434f259",
+      "type": "text",
+      "text": "## NAS 文件存储",
+      "styleAttributes": {},
+      "x": -180,
+      "y": -380,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "1c5847e767a53d28",
+      "type": "text",
+      "text": "## OSS对象存储",
+      "styleAttributes": {},
+      "x": 195,
+      "y": -380,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "750f54ffb56d9e9c",
+      "type": "text",
+      "text": "## sls日志存储",
+      "styleAttributes": {},
+      "x": 500,
+      "y": -380,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "8fe9ae668796af2e",
+      "type": "text",
+      "text": "## ACR 容器镜像仓库",
+      "styleAttributes": {},
+      "x": -280,
+      "y": -1620,
+      "width": 300,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "f9e8ef1836b5bd81",
+      "fromNode": "38612f812395ad82",
+      "fromSide": "bottom",
+      "toNode": "a2d1452e57ebee9d",
+      "toSide": "top",
+      "toEnd": "none",
+      "label": "资源、网络完全隔离"
+    },
+    {
+      "id": "bb3560c732a06151",
+      "fromNode": "6f3929161c4792ad",
+      "fromSide": "right",
+      "toNode": "3d415bd1d3bef671",
+      "toSide": "left",
+      "fromEnd": "arrow",
+      "label": "对等连接打通"
+    },
+    {
+      "id": "f7af7856f3ff1413",
+      "fromNode": "0efa49a5246aa804",
+      "fromSide": "right",
+      "toNode": "3d415bd1d3bef671",
+      "toSide": "left",
+      "fromEnd": "arrow",
+      "label": "对等连接打通"
+    },
+    {
+      "id": "7f9800f860d613a6",
+      "fromNode": "6f3929161c4792ad",
+      "fromSide": "bottom",
+      "toNode": "0efa49a5246aa804",
+      "toSide": "top",
+      "toEnd": "none",
+      "label": "对等连接不具备传递性，完全隔离"
+    }
+  ],
+  "metadata": {}
+}

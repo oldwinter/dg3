@@ -1,0 +1,111 @@
+{
+	"edges":[
+		{"id":"memory_to_hallucination","fromNode":"memory","fromSide":"right","toNode":"hallucination","toSide":"left"}
+	],
+	"metadata":{
+		"frontmatter":{},
+		"version":"1.0-1.0"
+	},
+	"nodes":[
+		{
+			"id":"pretraining",
+			"styleAttributes":{},
+			"type":"group",
+			"x":-700,
+			"y":-300,
+			"width":600,
+			"height":450,
+			"color":"4",
+			"label":"预训练阶段 (Pretraining)"
+		},
+		{
+			"id":"tokenization",
+			"styleAttributes":{},
+			"text":"## Tokenization (分词)\n- 文本编码为一维token序列\n- 使用Byte Pair Encoding (BPE)\n- GPT-4词汇表约100,277个token\n- 示例: `Hello world` → 2个token\n- 压缩序列长度提高效率",
+			"type":"text",
+			"x":-400,
+			"y":-250,
+			"width":220,
+			"height":170,
+			"color":"3"
+		},
+		{
+			"id":"inference",
+			"styleAttributes":{},
+			"text":"## 推理阶段\n- 基于输入生成下一个token\n- 概率性生成方式\n- 非记忆原文，是统计模式重混\n- 核心是token预测",
+			"type":"text",
+			"x":-400,
+			"y":-50,
+			"width":220,
+			"height":140,
+			"color":"3"
+		},
+		{
+			"id":"sft",
+			"styleAttributes":{},
+			"text":"## 监督微调 (SFT)\n- 将基础模型转为助手模型\n- 使用人类标注对话数据\n- 遵循helpful/truthful/harmless原则\n- 数据集: InstructGPT, OpenAssistant\n- 标注者生成理想回答",
+			"type":"text",
+			"x":-650,
+			"y":250,
+			"width":220,
+			"height":170,
+			"color":"3"
+		},
+		{
+			"id":"abilities",
+			"styleAttributes":{},
+			"text":"## 模型能力\n- few-shot prompting\n- 翻译、问答等任务\n- 模拟助手行为\n- 上下文学习 (in-context learning)\n- 从prompt中学习模式",
+			"type":"text",
+			"x":400,
+			"y":-250,
+			"width":220,
+			"height":150,
+			"color":"3"
+		},
+		{
+			"id":"memory",
+			"styleAttributes":{},
+			"text":"## 模型记忆\n- 可能记住高频文本\n- 如维基百科内容\n- 基于统计概率\n- 非确切存储方式\n- 可通过prompt激活",
+			"type":"text",
+			"x":150,
+			"y":-70,
+			"width":220,
+			"height":150,
+			"color":"3"
+		},
+		{
+			"id":"hallucination",
+			"styleAttributes":{},
+			"text":"## 幻觉 (Hallucination)\n- 可能生成不存在的信息\n- 对未来事件做出猜测\n- 基于训练前知识推断\n- 例如对2024年大选的预测",
+			"type":"text",
+			"x":400,
+			"y":-70,
+			"width":220,
+			"height":150,
+			"color":"3"
+		},
+		{
+			"id":"hardware",
+			"styleAttributes":{},
+			"text":"## 硬件与计算资源\n- 高性能GPU (H100)\n- 云端大规模训练\n- 训练成本高昂\n- 数百万美元投入\n- 需要数月训练时间",
+			"type":"text",
+			"x":150,
+			"y":100,
+			"width":220,
+			"height":150,
+			"color":"3"
+		},
+		{
+			"id":"summary",
+			"styleAttributes":{},
+			"text":"## 总结\n- LLM核心: 预测token的Transformer\n- 预训练提供语言能力\n- 后训练赋予任务能力\n- 理解'心理模型'有助于更好使用\n- 行为基于统计\n- 能力来源于大规模文本数据\n- 不断发展的技术领域",
+			"type":"text",
+			"x":400,
+			"y":100,
+			"width":220,
+			"height":240,
+			"color":"1"
+		},
+		{"file":"Sources/CuboxSync/shockerli-go-awesome- Go 语言优秀资源整理，为项目落地加速🏃-2025-01-15.md","id":"0aa2882891f41aa6","type":"file","x":-460,"y":920,"width":400,"height":400}
+	]
+}

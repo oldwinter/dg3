@@ -39,7 +39,7 @@ date created: 2025-06-20
 date modified: 2025-07-11
 publish: true
 分类:
-- '[[Atlas/Categories/github开源 - fileclass]]'
+- '[[github开源 - fileclass]]'
 ---
 
 > 界面很酷炫，功能很多，但是就是卡。

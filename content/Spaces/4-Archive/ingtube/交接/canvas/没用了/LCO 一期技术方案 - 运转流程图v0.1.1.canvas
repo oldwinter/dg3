@@ -1,0 +1,379 @@
+{
+  "nodes": [
+    {
+      "id": "33c81644eb9cda20",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 40,
+      "y": 1000,
+      "width": 780,
+      "height": 980,
+      "label": "GPTs方案用户使用流程"
+    },
+    {
+      "id": "9ddf0a35e5be10a9",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 200,
+      "y": -160,
+      "width": 460,
+      "height": 1040,
+      "label": "先用GPTs跑通全流程"
+    },
+    {
+      "id": "2cb011febf58f354",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 760,
+      "y": -160,
+      "width": 460,
+      "height": 920,
+      "label": "LCO的终极形态"
+    },
+    {
+      "id": "417bb90baee38b2d",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -380,
+      "y": -160,
+      "width": 480,
+      "height": 720,
+      "label": "Untitled group"
+    },
+    {
+      "id": "d46cdbf507a5e82e",
+      "type": "text",
+      "text": "## 传统app工具使用思路",
+      "styleAttributes": {},
+      "x": -360,
+      "y": -140,
+      "width": 440,
+      "height": 60
+    },
+    {
+      "id": "c4f838ce55a3023f",
+      "type": "text",
+      "text": "## 界面按以下分类配置入口按钮：\n- 素材分析\n- 投流配置分析\n- 投流效果分析",
+      "styleAttributes": {},
+      "x": -360,
+      "y": 40,
+      "width": 440,
+      "height": 220
+    },
+    {
+      "id": "d85b68a4db9101dc",
+      "type": "text",
+      "text": "## 根据不同分析场景，按需上传额外数据",
+      "styleAttributes": {},
+      "x": -360,
+      "y": 380,
+      "width": 440,
+      "height": 160
+    },
+    {
+      "id": "0fb88242a593df2a",
+      "type": "text",
+      "text": "## GPTs使用思路",
+      "styleAttributes": {},
+      "x": 220,
+      "y": -140,
+      "width": 420,
+      "height": 60
+    },
+    {
+      "id": "aa07bc157b403abb",
+      "type": "file",
+      "file": "Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/GPTs 配置.md",
+      "styleAttributes": {},
+      "x": 220,
+      "y": -420,
+      "width": 420,
+      "height": 160
+    },
+    {
+      "id": "e09b14a44c7a5559",
+      "type": "text",
+      "text": "## 语义化提问 GPTs 1\n界面给一些示例问题，引导用户组织提问的语言即可。\n每个GPTs已经内置了其专有数据和处理逻辑。",
+      "styleAttributes": {},
+      "x": 220,
+      "y": 40,
+      "width": 420,
+      "height": 160
+    },
+    {
+      "id": "22d04cbe47a901fc",
+      "type": "text",
+      "text": "## 语义化提问 GPTs 2",
+      "styleAttributes": {},
+      "x": 220,
+      "y": 380,
+      "width": 420,
+      "height": 80
+    },
+    {
+      "id": "11369e75e6d3378e",
+      "type": "text",
+      "text": "## 语义化提问 GPTs 3",
+      "styleAttributes": {},
+      "x": 220,
+      "y": 620,
+      "width": 420,
+      "height": 80
+    },
+    {
+      "id": "0bade820e66d409e",
+      "type": "text",
+      "text": "## 半自动化获得一个答案",
+      "styleAttributes": {},
+      "x": 220,
+      "y": 760,
+      "width": 420,
+      "height": 50
+    },
+    {
+      "id": "bdccd9ee29281fcc",
+      "type": "text",
+      "text": "问题切入点",
+      "styleAttributes": {},
+      "x": 60,
+      "y": 1020,
+      "width": 250,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "9583b0d8db4b8e6a",
+      "type": "text",
+      "text": "素材分析",
+      "styleAttributes": {},
+      "x": 60,
+      "y": 1200,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "cde0ca48422f5618",
+      "type": "text",
+      "text": "## chatbot使用思路",
+      "styleAttributes": {},
+      "x": 780,
+      "y": -140,
+      "width": 420,
+      "height": 60
+    },
+    {
+      "id": "35a397e74fe99d70",
+      "type": "file",
+      "file": "Sources/Books/微信读书同步/计算机/Chatbot从0到1（第2版）：对话式交互实践指南.md",
+      "styleAttributes": {},
+      "x": 780,
+      "y": -420,
+      "width": 420,
+      "height": 160
+    },
+    {
+      "id": "54409134051357c6",
+      "type": "text",
+      "text": "计划分析（投流配置分析）",
+      "styleAttributes": {},
+      "x": 520,
+      "y": 1370,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "d0018ca55421f5bf",
+      "type": "text",
+      "text": "创意分析（投流效果分析）",
+      "styleAttributes": {},
+      "x": 480,
+      "y": 1560,
+      "width": 320,
+      "height": 50
+    },
+    {
+      "id": "19161a42e3738d81",
+      "type": "text",
+      "text": "给出答案",
+      "styleAttributes": {},
+      "x": 420,
+      "y": 1900,
+      "width": 250,
+      "height": 60,
+      "color": "2"
+    },
+    {
+      "id": "5bb60f3a46415c90",
+      "type": "text",
+      "text": "## 全自动化获得一个答案",
+      "styleAttributes": {},
+      "x": 780,
+      "y": 630,
+      "width": 420,
+      "height": 70
+    },
+    {
+      "id": "b463786e046c33ac",
+      "type": "text",
+      "text": "## 语义化提问\n界面给一些示例问题，引导用户组织提问的语言即可。",
+      "styleAttributes": {},
+      "x": 780,
+      "y": 40,
+      "width": 420,
+      "height": 220
+    },
+    {
+      "id": "9a11ed4194ad3ccd",
+      "type": "text",
+      "text": "## 根据用户问题，自动获取额外数据，自动解析用户问题类型。\n对用户完全黑盒化。",
+      "styleAttributes": {},
+      "x": 780,
+      "y": 320,
+      "width": 420,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "ff8d2e433726b432",
+      "fromNode": "d46cdbf507a5e82e",
+      "fromSide": "bottom",
+      "toNode": "c4f838ce55a3023f",
+      "toSide": "top"
+    },
+    {
+      "id": "74896c29c4a8ed38",
+      "fromNode": "cde0ca48422f5618",
+      "fromSide": "bottom",
+      "toNode": "b463786e046c33ac",
+      "toSide": "top"
+    },
+    {
+      "id": "00bf6ba1c35282c9",
+      "fromNode": "c4f838ce55a3023f",
+      "fromSide": "bottom",
+      "toNode": "d85b68a4db9101dc",
+      "toSide": "top"
+    },
+    {
+      "id": "6f8aee318a1634bd",
+      "fromNode": "b463786e046c33ac",
+      "fromSide": "bottom",
+      "toNode": "9a11ed4194ad3ccd",
+      "toSide": "top"
+    },
+    {
+      "id": "dbdc3a1601df5d86",
+      "fromNode": "9583b0d8db4b8e6a",
+      "fromSide": "right",
+      "toNode": "54409134051357c6",
+      "toSide": "top",
+      "label": "素材优质"
+    },
+    {
+      "id": "cc8c8d8cbb56a39d",
+      "fromNode": "54409134051357c6",
+      "fromSide": "right",
+      "toNode": "d0018ca55421f5bf",
+      "toSide": "right"
+    },
+    {
+      "id": "2cad5b4dc0d1f147",
+      "fromNode": "bdccd9ee29281fcc",
+      "fromSide": "bottom",
+      "toNode": "9583b0d8db4b8e6a",
+      "toSide": "top"
+    },
+    {
+      "id": "3c04538a09ef0fd4",
+      "fromNode": "9583b0d8db4b8e6a",
+      "fromSide": "left",
+      "toNode": "19161a42e3738d81",
+      "toSide": "left",
+      "label": "素材劣质"
+    },
+    {
+      "id": "b48fbe2a501b8873",
+      "fromNode": "d0018ca55421f5bf",
+      "fromSide": "left",
+      "toNode": "54409134051357c6",
+      "toSide": "left",
+      "label": "投流效果差，则重新分析投放设置"
+    },
+    {
+      "id": "4fc38be0766debf3",
+      "fromNode": "54409134051357c6",
+      "fromSide": "right",
+      "toNode": "19161a42e3738d81",
+      "toSide": "right",
+      "label": "投流配置的好坏和建议"
+    },
+    {
+      "id": "035a5f8e2139cf1f",
+      "fromNode": "d0018ca55421f5bf",
+      "fromSide": "left",
+      "toNode": "19161a42e3738d81",
+      "toSide": "top",
+      "label": "投流效果的好坏和可能分析"
+    },
+    {
+      "id": "b2c495379b0db667",
+      "fromNode": "0fb88242a593df2a",
+      "fromSide": "bottom",
+      "toNode": "e09b14a44c7a5559",
+      "toSide": "top"
+    },
+    {
+      "id": "8cfa7acd4a658c6b",
+      "fromNode": "e09b14a44c7a5559",
+      "fromSide": "bottom",
+      "toNode": "22d04cbe47a901fc",
+      "toSide": "top",
+      "label": "根据问题和答案，@另一个GPTs"
+    },
+    {
+      "id": "fd6e311a570ed8c2",
+      "fromNode": "22d04cbe47a901fc",
+      "fromSide": "bottom",
+      "toNode": "11369e75e6d3378e",
+      "toSide": "top",
+      "label": "根据问题和答案，@另一个GPTs"
+    },
+    {
+      "id": "edbbe0021e1a5463",
+      "fromNode": "9ddf0a35e5be10a9",
+      "fromSide": "bottom",
+      "toNode": "33c81644eb9cda20",
+      "toSide": "top"
+    },
+    {
+      "id": "e5e2a4a73da6b8e4",
+      "fromNode": "35a397e74fe99d70",
+      "fromSide": "bottom",
+      "toNode": "2cb011febf58f354",
+      "toSide": "top"
+    },
+    {
+      "id": "a8ec32d2f9b0d9a8",
+      "fromNode": "aa07bc157b403abb",
+      "fromSide": "bottom",
+      "toNode": "9ddf0a35e5be10a9",
+      "toSide": "top"
+    },
+    {
+      "id": "18a6bd5be241b063",
+      "fromNode": "11369e75e6d3378e",
+      "fromSide": "bottom",
+      "toNode": "0bade820e66d409e",
+      "toSide": "top"
+    },
+    {
+      "id": "7b0881b79e800583",
+      "fromNode": "9a11ed4194ad3ccd",
+      "fromSide": "bottom",
+      "toNode": "5bb60f3a46415c90",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {}
+}

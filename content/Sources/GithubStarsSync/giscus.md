@@ -31,14 +31,14 @@ size_kb: 3547
 issues: 97
 publish: true
 分类:
-- '[[Atlas/Categories/github开源 - fileclass]]'
+- '[[github开源 - fileclass]]'
 ---
 
 # giscus/giscus
 
 ## 📝 项目描述
 
-A commenting system powered by GitHub Discussions. :octocat: :speech_balloon: :gem:
+A commenting system powered by GitHub Discussions. :octocat: :speech\_balloon: :gem:
 
 ## 🔗 链接
 

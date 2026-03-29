@@ -1,0 +1,28 @@
+filters:
+  and:
+    - "!cubox_url.isEmpty()"
+properties:
+  file.name:
+    displayName: 文件名
+  file.mtime:
+    displayName: 修改时间
+  file.ctime:
+    displayName: 创建时间
+  file.size:
+    displayName: 文件大小
+  tags:
+    displayName: 标签
+views:
+  - type: table
+    name: CuboxSync MD文件
+    order:
+      - file.name
+      - file.mtime
+      - file.ctime
+      - file.size
+      - tags
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: file.mtime
+        direction: DESC

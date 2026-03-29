@@ -1,0 +1,323 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# K8s kubectl命令触发逻辑架构图\n\n从用户执行kubectl命令到k8s集群资源变更的完整触发链路",
+      "x": 300,
+      "y": -100,
+      "width": 600,
+      "height": 80,
+      "color": "6"
+    },
+    {
+      "id": "clientLayer",
+      "type": "group",
+      "label": "客户端层",
+      "x": 0,
+      "y": 50,
+      "width": 560,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "kubectl",
+      "type": "text",
+      "text": "**kubectl客户端**  \n命令解析  \n用户输入解析",
+      "x": 20,
+      "y": 80,
+      "width": 160,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "config",
+      "type": "text",
+      "text": "**配置读取**  \nkubeconfig  \n集群连接信息",
+      "x": 200,
+      "y": 80,
+      "width": 160,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "httpRequest",
+      "type": "text",
+      "text": "**HTTP请求**  \nREST API调用  \nHTTPS请求构造",
+      "x": 380,
+      "y": 80,
+      "width": 160,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "controlPlane",
+      "type": "group",
+      "label": "控制平面层",
+      "x": 600,
+      "y": 50,
+      "width": 480,
+      "height": 320,
+      "color": "1"
+    },
+    {
+      "id": "apiServer",
+      "type": "text",
+      "text": "**API Server**  \n认证授权  \n身份验证+RBAC  \n请求处理中心",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 80,
+      "color": "1"
+    },
+    {
+      "id": "etcd",
+      "type": "text",
+      "text": "**etcd存储**  \n资源状态持久化  \n集群数据存储",
+      "x": 620,
+      "y": 180,
+      "width": 180,
+      "height": 70,
+      "color": "1"
+    },
+    {
+      "id": "controller",
+      "type": "text",
+      "text": "**Controller Manager**  \n控制循环处理  \n资源状态协调",
+      "x": 820,
+      "y": 80,
+      "width": 180,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "scheduler",
+      "type": "text",
+      "text": "**Scheduler**  \n节点调度分配  \nPod资源分配",
+      "x": 820,
+      "y": 170,
+      "width": 180,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "nodeLayer",
+      "type": "group",
+      "label": "工作节点层",
+      "x": 1120,
+      "y": 50,
+      "width": 200,
+      "height": 320,
+      "color": "4"
+    },
+    {
+      "id": "kubelet",
+      "type": "text",
+      "text": "**kubelet**  \n节点代理  \nPod生命周期管理",
+      "x": 1140,
+      "y": 80,
+      "width": 160,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "containerRuntime",
+      "type": "text",
+      "text": "**Container Runtime**  \n容器创建运行  \nDocker/containerd",
+      "x": 1140,
+      "y": 170,
+      "width": 160,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "podRunning",
+      "type": "text",
+      "text": "**Pod运行**  \n应用容器运行  \n业务服务提供",
+      "x": 1140,
+      "y": 260,
+      "width": 160,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "feedbackLayer",
+      "type": "group",
+      "label": "状态反馈链路",
+      "x": 1360,
+      "y": 50,
+      "width": 200,
+      "height": 320,
+      "color": "2"
+    },
+    {
+      "id": "statusReport",
+      "type": "text",
+      "text": "**状态汇报**  \nkubelet → API  \n节点状态上报",
+      "x": 1380,
+      "y": 80,
+      "width": 160,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "statusSync",
+      "type": "text",
+      "text": "**状态同步**  \netcd持久化  \n集群状态一致性",
+      "x": 1380,
+      "y": 170,
+      "width": 160,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "statusQuery",
+      "type": "text",
+      "text": "**状态查询**  \nkubectl get  \n实时状态获取",
+      "x": 1380,
+      "y": 260,
+      "width": 160,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "apiObjects",
+      "type": "text",
+      "text": "**关键API对象传递**  \n  \nDeployment / Pod / Service  \nConfigMap / Secret 等",
+      "x": 300,
+      "y": 420,
+      "width": 250,
+      "height": 80,
+      "color": "6"
+    },
+    {
+      "id": "asyncMechanism",
+      "type": "text",
+      "text": "**异步处理机制**  \n  \nWatch机制 + 事件驱动  \n控制器模式 + 状态协调",
+      "x": 600,
+      "y": 420,
+      "width": 250,
+      "height": 80,
+      "color": "2"
+    },
+    {
+      "id": "explanation",
+      "type": "text",
+      "text": "## kubectl命令执行流程说明\n\n**1. 客户端层**：kubectl解析命令 → 读取kubeconfig配置 → 构造REST API请求发送到API Server  \n\n**2. 控制平面**：API Server进行认证授权 → 将资源状态写入etcd → Controller监听资源变化 → Scheduler进行节点调度  \n\n**3. 工作节点**：kubelet接收调度任务 → 调用容器运行时创建Pod → 持续汇报状态到API Server → 支持kubectl实时查询  \n\n**关键特性**：  \n🔴 红色 = 认证授权安全控制  \n🟢 绿色 = 资源处理执行  \n🟠 橙色 = 状态监控反馈  \n🔵 蓝色 = 客户端交互  \n虚线 = 异步处理机制",
+      "x": 100,
+      "y": 550,
+      "width": 1200,
+      "height": 200,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "fromNode": "kubectl",
+      "toNode": "config",
+      "color": "5",
+      "label": "读取配置"
+    },
+    {
+      "id": "edge2",
+      "fromNode": "config",
+      "toNode": "httpRequest",
+      "color": "5",
+      "label": "构造请求"
+    },
+    {
+      "id": "edge3",
+      "fromNode": "httpRequest",
+      "toNode": "apiServer",
+      "color": "5",
+      "label": "HTTPS调用"
+    },
+    {
+      "id": "edge4",
+      "fromNode": "apiServer",
+      "toNode": "etcd",
+      "color": "1",
+      "label": "持久化"
+    },
+    {
+      "id": "edge5",
+      "fromNode": "apiServer",
+      "toNode": "controller",
+      "color": "1",
+      "label": "通知变更"
+    },
+    {
+      "id": "edge6",
+      "fromNode": "controller",
+      "toNode": "scheduler",
+      "color": "4",
+      "label": "调度请求"
+    },
+    {
+      "id": "edge7",
+      "fromNode": "scheduler",
+      "toNode": "kubelet",
+      "color": "4",
+      "label": "节点分配"
+    },
+    {
+      "id": "edge8",
+      "fromNode": "kubelet",
+      "toNode": "containerRuntime",
+      "color": "4",
+      "label": "创建容器"
+    },
+    {
+      "id": "edge9",
+      "fromNode": "containerRuntime",
+      "toNode": "podRunning",
+      "color": "4",
+      "label": "启动Pod"
+    },
+    {
+      "id": "edge10",
+      "fromNode": "kubelet",
+      "toNode": "statusReport",
+      "color": "2",
+      "label": "状态上报"
+    },
+    {
+      "id": "edge11",
+      "fromNode": "statusReport",
+      "toNode": "statusSync",
+      "color": "2",
+      "label": "同步状态"
+    },
+    {
+      "id": "edge12",
+      "fromNode": "statusSync",
+      "toNode": "statusQuery",
+      "color": "2",
+      "label": "状态查询"
+    },
+    {
+      "id": "edge13",
+      "fromNode": "statusQuery",
+      "toNode": "kubectl",
+      "color": "2",
+      "label": "反馈结果",
+      "fromSide": "left",
+      "toSide": "bottom"
+    },
+    {
+      "id": "edge14",
+      "fromNode": "apiObjects",
+      "toNode": "apiServer",
+      "color": "6",
+      "label": "API对象流转"
+    },
+    {
+      "id": "edge15",
+      "fromNode": "asyncMechanism",
+      "toNode": "controller",
+      "color": "2",
+      "label": "异步处理"
+    }
+  ]
+}

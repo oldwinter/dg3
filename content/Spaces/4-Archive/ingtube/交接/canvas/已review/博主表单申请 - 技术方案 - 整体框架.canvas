@@ -1,0 +1,371 @@
+{
+  "nodes": [
+    {
+      "id": "bcaddb840a06dfe3",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 740,
+      "y": -610,
+      "width": 1340,
+      "height": 1150,
+      "label": "golang处理层"
+    },
+    {
+      "id": "02ade6972591639c",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -1020,
+      "y": -380,
+      "width": 500,
+      "height": 520,
+      "label": "python胶水层"
+    },
+    {
+      "id": "cea116f491be653b",
+      "type": "text",
+      "text": "## 腾讯智能表格表单",
+      "styleAttributes": {},
+      "x": -1280,
+      "y": -900,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "579f78ed836d80b2",
+      "type": "text",
+      "text": "## Ingtube-share数据库",
+      "styleAttributes": {},
+      "x": -860,
+      "y": -720,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "524f646b03eb04f0",
+      "type": "text",
+      "text": "左侧新增『表单管理』主菜单，  \n\t子菜单『定制表单』\n\t\t进入后，填活动id，腾讯表单id等信息，触发后续的自动搜集和报名任务。",
+      "styleAttributes": {},
+      "x": -540,
+      "y": -1320,
+      "width": 320,
+      "height": 120
+    },
+    {
+      "id": "4e598abd63a79abb",
+      "type": "text",
+      "text": "胶水层作用：\n- 对映兔系统内，组合调用原有的app、联盟后台、小二后台的api，从而达到综合性的联动目的。\n- 对系统外，调用各种第三方api，比如腾讯智能表单，飞书表单等。",
+      "styleAttributes": {},
+      "x": -980,
+      "y": -340,
+      "width": 420,
+      "height": 180
+    },
+    {
+      "id": "0e045c2f0473b3a0",
+      "type": "text",
+      "text": "先部署的阿里云函数计算上面，这样有一些安全隐患但发布版本更快，待时机成熟，集成到后端的k8s系统中来。",
+      "styleAttributes": {},
+      "x": -980,
+      "y": -80,
+      "width": 380,
+      "height": 120
+    },
+    {
+      "id": "83a210e9f87f0b5e",
+      "type": "text",
+      "text": "## 小二后台页面",
+      "styleAttributes": {},
+      "x": -380,
+      "y": -1100,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "a95e90441d027f90",
+      "type": "text",
+      "text": "## 小二使用步骤\n- 联盟后台，创建定制活动。拿到活动id\n- 小二后台，输入活动id，创建表单收集任务。拿到表单id和url\n- 后台动态维护表单，也可自己看",
+      "styleAttributes": {},
+      "x": -1060,
+      "y": -1780,
+      "width": 400,
+      "height": 540
+    },
+    {
+      "id": "813461c01f8eec17",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/博主表单申请 - API定义.md",
+      "styleAttributes": {},
+      "x": 860,
+      "y": -1200,
+      "width": 560,
+      "height": 400
+    },
+    {
+      "id": "8faa507d60126c9e",
+      "type": "text",
+      "text": "需要一个token即sid永不过期的小二后台超级管理员账号，后续的接口调用，都用这个。如果直接使用对应小二操作人的sid，则2天过期。\n复用角色管理的功能。创建一个『表单管理助手』角色，token设置为永不过期，\n",
+      "styleAttributes": {},
+      "x": 380,
+      "y": -1020,
+      "width": 360,
+      "height": 260
+    },
+    {
+      "id": "f0cdc41333423b6b",
+      "type": "text",
+      "text": "## 小二后台API",
+      "styleAttributes": {},
+      "x": 300,
+      "y": -533,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "4d2f0e5595c381f0",
+      "type": "text",
+      "text": "### 失败则中止，不做后续处理，并返回原因",
+      "styleAttributes": {},
+      "x": 1361,
+      "y": -533,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "048e4d9fa973be5b",
+      "type": "text",
+      "text": "### 失败则中止，不做后续处理，并返回原因",
+      "styleAttributes": {},
+      "x": 1361,
+      "y": -237,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "6abc144ceacba491",
+      "type": "text",
+      "text": "### 失败则返回原因",
+      "styleAttributes": {},
+      "x": 1361,
+      "y": 0,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "197a41dcb7523c0b",
+      "type": "text",
+      "text": "## 1. 创建映兔账号",
+      "styleAttributes": {},
+      "x": 860,
+      "y": -530,
+      "width": 340,
+      "height": 100
+    },
+    {
+      "id": "da7f9611b2285646",
+      "type": "text",
+      "text": "## 3. 报名活动",
+      "styleAttributes": {},
+      "x": 860,
+      "y": 50,
+      "width": 340,
+      "height": 100
+    },
+    {
+      "id": "d886028c86ad638b",
+      "type": "text",
+      "text": "## 2. 绑定社媒渠道",
+      "styleAttributes": {},
+      "x": 922,
+      "y": -287,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "63211a602d90c593",
+      "type": "text",
+      "text": "## 返回结果",
+      "styleAttributes": {},
+      "x": 870,
+      "y": 340,
+      "width": 320,
+      "height": 100
+    }
+  ],
+  "edges": [
+    {
+      "id": "3e30c133f6171e04",
+      "fromNode": "02ade6972591639c",
+      "fromSide": "right",
+      "toNode": "f0cdc41333423b6b",
+      "toSide": "left",
+      "color": "2",
+      "label": "3.2 博主报名表格逐行调用"
+    },
+    {
+      "id": "f150e21024ba57c1",
+      "fromNode": "197a41dcb7523c0b",
+      "fromSide": "bottom",
+      "toNode": "d886028c86ad638b",
+      "toSide": "top"
+    },
+    {
+      "id": "8183e1415f3f0de2",
+      "fromNode": "d886028c86ad638b",
+      "fromSide": "bottom",
+      "toNode": "da7f9611b2285646",
+      "toSide": "top"
+    },
+    {
+      "id": "9086d3c2e9ed8f48",
+      "fromNode": "197a41dcb7523c0b",
+      "fromSide": "right",
+      "toNode": "4d2f0e5595c381f0",
+      "toSide": "left"
+    },
+    {
+      "id": "4657b6e8ef9004b1",
+      "fromNode": "f0cdc41333423b6b",
+      "fromSide": "right",
+      "toNode": "bcaddb840a06dfe3",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "91a08268cd6b9ffe",
+      "fromNode": "cea116f491be653b",
+      "fromSide": "right",
+      "toNode": "83a210e9f87f0b5e",
+      "toSide": "left",
+      "color": "1",
+      "label": "小二触发"
+    },
+    {
+      "id": "bbe710489fb07641",
+      "fromNode": "d886028c86ad638b",
+      "fromSide": "right",
+      "toNode": "048e4d9fa973be5b",
+      "toSide": "left"
+    },
+    {
+      "id": "28a3091f19d99646",
+      "fromNode": "da7f9611b2285646",
+      "fromSide": "right",
+      "toNode": "6abc144ceacba491",
+      "toSide": "left"
+    },
+    {
+      "id": "2964956216b6af7c",
+      "fromNode": "63211a602d90c593",
+      "fromSide": "bottom",
+      "toNode": "02ade6972591639c",
+      "toSide": "bottom",
+      "color": "2",
+      "label": "返回注册、绑定、报名结果"
+    },
+    {
+      "id": "73eeab3b8f1b36e9",
+      "fromNode": "da7f9611b2285646",
+      "fromSide": "bottom",
+      "toNode": "63211a602d90c593",
+      "toSide": "top"
+    },
+    {
+      "id": "d0b1462a6ce13517",
+      "fromNode": "4d2f0e5595c381f0",
+      "fromSide": "right",
+      "toNode": "63211a602d90c593",
+      "toSide": "right"
+    },
+    {
+      "id": "bee13797558e15b7",
+      "fromNode": "048e4d9fa973be5b",
+      "fromSide": "right",
+      "toNode": "63211a602d90c593",
+      "toSide": "right"
+    },
+    {
+      "id": "e6c1b11d721bc680",
+      "fromNode": "6abc144ceacba491",
+      "fromSide": "right",
+      "toNode": "63211a602d90c593",
+      "toSide": "right"
+    },
+    {
+      "id": "5e3f0c3e927d6b2f",
+      "fromNode": "83a210e9f87f0b5e",
+      "fromSide": "right",
+      "toNode": "f0cdc41333423b6b",
+      "toSide": "top",
+      "color": "1",
+      "label": "1. 创建表单的头"
+    },
+    {
+      "id": "1b7b3331082bb9fc",
+      "fromNode": "f0cdc41333423b6b",
+      "fromSide": "bottom",
+      "toNode": "02ade6972591639c",
+      "toSide": "right",
+      "color": "1",
+      "label": "2. 创建表单的头"
+    },
+    {
+      "id": "e88f782fa8306b46",
+      "fromNode": "02ade6972591639c",
+      "fromSide": "top",
+      "toNode": "579f78ed836d80b2",
+      "toSide": "bottom",
+      "label": "3.3 日志读写"
+    },
+    {
+      "id": "0e84be3370b2e2e2",
+      "fromNode": "f0cdc41333423b6b",
+      "fromSide": "left",
+      "toNode": "579f78ed836d80b2",
+      "toSide": "right",
+      "label": "读"
+    },
+    {
+      "id": "2a82c7d166e925e5",
+      "fromNode": "02ade6972591639c",
+      "fromSide": "top",
+      "toNode": "cea116f491be653b",
+      "toSide": "bottom",
+      "label": "3.2.1 正常和报错信息回填到智能表格"
+    },
+    {
+      "id": "3687a4d31b50a718",
+      "fromNode": "02ade6972591639c",
+      "fromSide": "left",
+      "toNode": "cea116f491be653b",
+      "toSide": "bottom",
+      "label": "3.1 定时循环更新"
+    },
+    {
+      "id": "eb4897952f9d81b2",
+      "edgeStyle": "short-dashed",
+      "fromNode": "813461c01f8eec17",
+      "fromSide": "bottom",
+      "toNode": "f0cdc41333423b6b",
+      "toSide": "top"
+    },
+    {
+      "id": "3d726b6a90a4d5a9",
+      "edgeStyle": "long-dashed",
+      "fromNode": "524f646b03eb04f0",
+      "fromSide": "bottom",
+      "toNode": "83a210e9f87f0b5e",
+      "toSide": "top"
+    },
+    {
+      "id": "290a08bdf4c25ff8",
+      "styleAttributes": {},
+      "fromNode": "8faa507d60126c9e",
+      "fromSide": "bottom",
+      "toNode": "f0cdc41333423b6b",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  }
+}

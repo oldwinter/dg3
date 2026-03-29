@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian的中括号搜索的技巧.md","title":"obsidian的中括号搜索的技巧","created":"2022-06-09","modified":"2023-03-14","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian的中括号搜索的技巧.md
+title: obsidian的中括号搜索的技巧
+created: 2022-06-09
+modified: 2023-03-14
 ---
-
 
 - 中括号直接输入搜索项，连文件夹路径名都会搜索，有时候会有比较多的信息噪音
 - 中括号输入##，只检索 head 标题，速度快很多，而且目的性更强

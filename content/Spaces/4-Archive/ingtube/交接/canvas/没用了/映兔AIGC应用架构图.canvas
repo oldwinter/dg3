@@ -1,0 +1,202 @@
+{
+  "nodes": [
+    {
+      "id": "063f29f380f08dcb",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -440,
+      "y": -1040,
+      "width": 1520,
+      "height": 700,
+      "color": "4",
+      "label": "Query & Output"
+    },
+    {
+      "id": "333591545fbcbada",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -440,
+      "y": -1800,
+      "width": 1520,
+      "height": 340,
+      "color": "1",
+      "label": "Contextual data - 私域数据"
+    },
+    {
+      "id": "9df6c93e522461fa",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 80,
+      "y": -1420,
+      "width": 440,
+      "height": 1040,
+      "label": "Backend Bridge AI-end：桥梁"
+    },
+    {
+      "id": "65242dcdd46381e4",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -440,
+      "y": -1400,
+      "width": 1520,
+      "height": 300,
+      "color": "2",
+      "label": "Prompts Engineering - 指令中心"
+    },
+    {
+      "id": "25509a4e1edd1515",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/APIs For Backend：封装成后端需要的api接口.md",
+      "styleAttributes": {},
+      "x": 100,
+      "y": -918,
+      "width": 400,
+      "height": 215,
+      "color": "2"
+    },
+    {
+      "id": "c0666170a2a22760",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/APIs & Plugins：插件系统，外网访问.md",
+      "styleAttributes": {},
+      "x": 628,
+      "y": -1360,
+      "width": 400,
+      "height": 220
+    },
+    {
+      "id": "8885efb59afe2a89",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/LLM cache：缓存系统长对话支持.md",
+      "styleAttributes": {},
+      "x": 620,
+      "y": -918,
+      "width": 400,
+      "height": 221
+    },
+    {
+      "id": "fbbd3d0e959c5ebd",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/Validation & Moderation System：敏感词违禁词过滤.md",
+      "styleAttributes": {},
+      "x": 100,
+      "y": -621,
+      "width": 400,
+      "height": 221
+    },
+    {
+      "id": "6ee3324511ea99dc",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/Logging & LLMops： 对映兔AIGC持续运维改进.md",
+      "styleAttributes": {},
+      "x": 620,
+      "y": -621,
+      "width": 400,
+      "height": 221
+    },
+    {
+      "id": "80606df4b2ba5114",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/Prompts Engine：提示词系统打造.md",
+      "styleAttributes": {},
+      "x": 100,
+      "y": -1360,
+      "width": 400,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "e73d2702a39eedd0",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/Embedding Model：OpenAI，文心或自建.md",
+      "styleAttributes": {},
+      "x": 100,
+      "y": -1760,
+      "width": 400,
+      "height": 234
+    },
+    {
+      "id": "967f4fbf789c40c9",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/Vector Database： 向量数据库建设.md",
+      "styleAttributes": {},
+      "x": 628,
+      "y": -1754,
+      "width": 400,
+      "height": 234
+    },
+    {
+      "id": "0291dc7f1b6c3fc8",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/Data Pipeline： 数据处理及清洗系统.md",
+      "styleAttributes": {},
+      "x": -420,
+      "y": -1760,
+      "width": 400,
+      "height": 234
+    },
+    {
+      "id": "eff1b2f9fc583a1b",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/LLM APIs and Hosting：调用知名api、云厂商、自建LLM.md",
+      "styleAttributes": {},
+      "x": -406,
+      "y": -621,
+      "width": 400,
+      "height": 221
+    },
+    {
+      "id": "270e9c32aaa7c9b0",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/Playground： 快速调试的原型工具.md",
+      "styleAttributes": {},
+      "x": -420,
+      "y": -1360,
+      "width": 400,
+      "height": 220
+    },
+    {
+      "id": "8caaaf1f7c7bec86",
+      "type": "file",
+      "file": "ingtube/Inbox/empty/App Hosting：快速部署、更新、发布系统.md",
+      "styleAttributes": {},
+      "x": -406,
+      "y": -918,
+      "width": 400,
+      "height": 221
+    },
+    {
+      "id": "1ec541e9aa9492fc",
+      "type": "file",
+      "file": "Spaces/1-Project/搞透 AI Agent 开发/Orchestration：基于langchain的LLM应用编排.md",
+      "styleAttributes": {},
+      "x": -880,
+      "y": -1800,
+      "width": 400,
+      "height": 1460,
+      "color": "6"
+    },
+    {
+      "id": "0790487ad248edc0",
+      "type": "link",
+      "url": "https://pub-pic.oldwinter.top/2024/12/286ddf7324f49c0d98f1e4dd4ec37722.png",
+      "styleAttributes": {},
+      "x": -2660,
+      "y": -1800,
+      "width": 1420,
+      "height": 1000
+    },
+    {
+      "id": "bbf84268f31c7fdb",
+      "type": "text",
+      "text": "- 规划一下2个月的一期迭代冲刺，分成4个阶段，每2-4个星期，测试环境演示一下当前进展。预期效果：\n\t- 2星期：测试环境的后端&AI端，搭建完成，手动请求后端接口，得到响应数据。\n\t- 2星期：测试环境的前端，对接完成，兔宝AI应能请求得到质量不错的响应数据。\n\t- 2星期：编辑器和兔宝AI，每个功能点的Prompts词应该已经比较完善，提示词质量较优，\n\t- 2星期：生产ready，性能、限流、吞吐等具备，整体稳定性可靠性。应能端到端完成用户使用全流程。",
+      "styleAttributes": {},
+      "x": -2660,
+      "y": -680,
+      "width": 1420,
+      "height": 340
+    }
+  ],
+  "edges": [],
+  "metadata": {}
+}

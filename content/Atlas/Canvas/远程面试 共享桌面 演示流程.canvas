@@ -1,0 +1,40 @@
+{
+	"edges":[
+		{"id":"a1396b143d05034e","fromNode":"af0d6e0678aa3715","fromSide":"right","toNode":"6ac1bd63c2882f34","toSide":"left"},
+		{"id":"5caec6dc0d926637","fromNode":"6ac1bd63c2882f34","fromSide":"right","toNode":"41d2b97885648df7","toSide":"left"},
+		{"id":"321389d10f3736fd","fromNode":"509107dd3a007192","fromSide":"right","toNode":"dcadade355652224","toSide":"left"},
+		{"id":"34de9a2d81a33369","fromNode":"6ac1bd63c2882f34","fromSide":"right","toNode":"28c3a7e9c2da8ee2","toSide":"left"},
+		{"id":"14443d13d6f6e1af","fromNode":"509107dd3a007192","fromSide":"right","toNode":"70a72476c5b90a7b","toSide":"left"},
+		{"id":"dc496f95e07c6d38","fromNode":"509107dd3a007192","fromSide":"right","toNode":"a29d0e45d6cf331a","toSide":"left"},
+		{"id":"7f607cd0b6676e32","fromNode":"509107dd3a007192","fromSide":"right","toNode":"8dc23c0d1b40c473","toSide":"left"},
+		{"id":"efc026bd17709d9e","fromNode":"509107dd3a007192","fromSide":"right","toNode":"0a2c7766b7edb9df","toSide":"left"},
+		{"id":"fa96c1a224f33fe9","fromNode":"509107dd3a007192","fromSide":"left","toNode":"a8678c24128e0bec","toSide":"top"},
+		{"id":"9eb95a7ed057be9e","fromNode":"a8678c24128e0bec","fromSide":"left","toNode":"44e22843f3fac1ba","toSide":"right"},
+		{"id":"b1b25435f135d40d","fromNode":"a8678c24128e0bec","fromSide":"left","toNode":"39171b0636e9c42c","toSide":"right"},
+		{"id":"e0e44ec4590b92da","fromNode":"345634922d734958","fromSide":"right","toNode":"533873ea28102477","toSide":"left"},
+		{"id":"30984695a3b7b98f","fromNode":"509107dd3a007192","fromSide":"bottom","toNode":"345634922d734958","toSide":"top"},
+		{"id":"3de49d39b8dc9ed5","fromNode":"af0d6e0678aa3715","fromSide":"bottom","toNode":"509107dd3a007192","toSide":"top"}
+	],
+	"metadata":{
+		"frontmatter":{},
+		"version":"1.0-1.0"
+	},
+	"nodes":[
+		{"id":"02874f9e43157523","type":"group","x":407,"y":-26,"width":798,"height":490,"label":"华为云产品开发经验"},
+		{"id":"af0d6e0678aa3715","text":"## 1.自我介绍","type":"text","x":-271,"y":-375,"width":250,"height":60},
+		{"id":"509107dd3a007192","text":"## 2.作品展示","type":"text","x":-271,"y":-47,"width":250,"height":50},
+		{"id":"6ac1bd63c2882f34","text":"毕业学校、公司和项目、擅长的3件事","type":"text","x":91,"y":-482,"width":250,"height":60},
+		{"file":"Spaces/4-Archive/2025下半年看看新机会/∑ 个人简历.md","id":"41d2b97885648df7","type":"file","x":439,"y":-1149,"width":792,"height":832},
+		{"id":"28c3a7e9c2da8ee2","text":"个人简历在线版，发送给面试官：","type":"text","x":435,"y":-282,"width":796,"height":104},
+		{"id":"345634922d734958","text":"## 3.反馈记录","type":"text","x":-271,"y":457,"width":250,"height":60},
+		{"id":"a8678c24128e0bec","text":"#### 近期作品","type":"text","x":-424,"y":77,"width":250,"height":60},
+		{"id":"44e22843f3fac1ba","type":"link","url":"https://notes.oldwinter.top/","x":-927,"y":-176,"width":400,"height":400},
+		{"id":"39171b0636e9c42c","type":"link","url":"https://github.com/oldwinter/knowledge-garden","x":-927,"y":285,"width":400,"height":405},
+		{"id":"533873ea28102477","text":"可能想问公司的问题：\n- ","type":"text","x":91,"y":553,"width":250,"height":115},
+		{"id":"70a72476c5b90a7b","text":"servicestage服务： https://console.huaweicloud.com/servicestage/  \n角色：前端开发，外包员工管理","type":"text","x":427,"y":-6,"width":758,"height":60},
+		{"id":"dcadade355652224","text":"AOS服务： https://console.huaweicloud.com/aos/  \n角色：前端负责人","type":"text","x":427,"y":95,"width":758,"height":60},
+		{"id":"a29d0e45d6cf331a","text":"ASM服务：[https://console.huaweicloud.com/asm/](https://console.huaweicloud.com/asm)  \n角色：研发负责人","type":"text","x":427,"y":204,"width":758,"height":50},
+		{"id":"0a2c7766b7edb9df","text":"IEF:  [https://console.huaweicloud.com/ief2.0/](https://console.huaweicloud.com/ief2.0/)  \n角色： 可信和安全负责人","type":"text","x":427,"y":384,"width":758,"height":60},
+		{"id":"8dc23c0d1b40c473","text":"cce敏捷版：[https://console.huaweicloud.com/cce-agile/](https://console.huaweicloud.com/cce-agile/  \n角色： 流量治理、流量监控2个大模块的owner、产品集成负责人。","type":"text","x":427,"y":272,"width":758,"height":85}
+	]
+}

@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Extras/Documents/Obsidian Bases syntax 规范.md","created":"2025-05-21","modified":"2025-08-19","cssclasses":""}
+publish: true
+permalink: /Extras/Documents/Obsidian Bases syntax 规范.md
+created: 2025-05-21
+modified: 2025-08-19
 ---
-
 
 When you [create a base](https://help.obsidian.md/bases/create-base) in Obsidian, it is saved as a `.base` file. Bases are typically edited using the app interface, but the syntax can also be edited manually, and embedded in a code block.
 
@@ -93,12 +95,12 @@ Formula properties support basic arithmetic operators and a variety of built-in 
 
 You can reference properties in different ways depending on their type:
 
-- **Note properties** are properties defined in the note’s frontmatter. For example `note.price` or `note["price"]`.  
-	If no prefix is specified, the property is assumed to be a `note` property.
-- **File properties** describe the file itself.  
-	For example `file.size` or `file.ext`. You can also reference the file object directly, e.g., `file.hasLink()`.
-- **Formula properties** are other formulas in the base.  
-	Example `formula.formatted_price`.
+- **Note properties** are properties defined in the note’s frontmatter. For example `note.price` or `note["price"]`.\
+  If no prefix is specified, the property is assumed to be a `note` property.
+- **File properties** describe the file itself.\
+  For example `file.size` or `file.ext`. You can also reference the file object directly, e.g., `file.hasLink()`.
+- **Formula properties** are other formulas in the base.\
+  Example `formula.formatted_price`.
 
 A formula can use values from other formula properties, as long as there’s no circular reference.
 
@@ -254,7 +256,7 @@ Boolean operators can be used to combine or invert logical values, resulting in 
 | --- | --- |
 | `!` | logical not |
 | `&&` | logical and |
-| \|\| | logical or |
+| || | logical or |
 
 ## Functions
 

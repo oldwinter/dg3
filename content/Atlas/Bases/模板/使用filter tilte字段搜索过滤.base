@@ -1,0 +1,6 @@
+filters:
+  and:
+    - if(this["filter title""],file.basename.lower().contains(this["filter title"].lower()), true)
+views:
+  - type: table
+    name: 使用filter title字段搜索过滤

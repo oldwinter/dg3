@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.path != this.file.path
+    - this.file.tags.length > 0
+formulas:
+  images: |-
+    if (cover, cover,
+    if(file.embeds[0].containsAny("jpg",
+    "gif", "webp", "jpeg", "avif"), file. embeds[0]))
+views:
+  - type: table
+    name: Has all same tags
+    filters:
+      and:
+        - list(file.tags).containsAll(this.file.tags)
+  - type: table
+    name: Has all same Properties tags
+    filters:
+      and:
+        - list(tags).containsAll(this.tags)
+  - type: table
+    name: Has any same tags
+    filters:
+      and:
+        - list(file.tags).containsAny(this.file.tags)
+  - type: table
+    name: Has any same Properties tags
+    filters:
+      and:
+        - list(tags).containsAny(this.tags)

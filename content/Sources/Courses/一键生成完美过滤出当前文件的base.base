@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Sources/Courses"
+        - file.hasTag("todo/持续迭代")
+        - publish == true
+        - title == "» 课程笔记工作流"
+        - file.hasLink("obsidian")
+        - note["date created"] == "2022-08-04"
+        - note["date modified"] == "2023-03-14"
+        - file.tags.containsAll("todo/持续迭代")
+        - file.links.containsAny(link("飞书妙记"))

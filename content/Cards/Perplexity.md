@@ -1,11 +1,16 @@
 ---
-{"publish":true,"permalink":"/Cards/Perplexity.md","aliases":"perplexity.ai pplx","created":"2024-02-04","modified":"2024-10-28","cssclasses":""}
+publish: true
+permalink: /Cards/Perplexity.md
+aliases:
+  - perplexity.ai
+  - pplx
+created: 2024-02-04
+modified: 2024-10-28
 ---
-
 
 ## Perplexity.ai
 
-[[Cards/perplexity.ai的工作机制背后原理]]
+[[perplexity.ai的工作机制背后原理]]
 
 ### 搜索重点选项
 
@@ -24,9 +29,8 @@
 | 网络  | 大概率使用谷歌搜索                   |
 | 学术  | www.semanticscholar.org 等网站 |
 
-
 ## 三星的pro会员掉了以后
 
 使用安卓虚拟机。卸载app后重装，第二个账号未生效，估计需要新建一个虚拟机，或者一个新的三星应用商店账号。
 
-![PixPin_2025-06-22_02-10-03.png](https://pub-pic.oldwinter.top/2025/06/ed073cb499f99b80b801cd9ffc694fa7.png)
+![PixPin\_2025-06-22\_02-10-03.png](https://pub-pic.oldwinter.top/2025/06/ed073cb499f99b80b801cd9ffc694fa7.png)

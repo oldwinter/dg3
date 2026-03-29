@@ -1,0 +1,43 @@
+filters:
+  or:
+    - file.folder == "🍀 花园导览/🧰 本库指南/Obsidian/Plugins"
+    - 分类.containsAny(link("obsidian插件 - fileclass"))
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+    sort:
+      - property: rating
+        direction: DESC
+      - property: date created
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: file.path
+        direction: DESC
+      - property: status
+        direction: ASC
+    columnSize:
+      note.tags: 155
+      note.status: 254
+  - type: cards
+    name: 卡片视图
+    order:
+      - file.name
+      - rating
+      - 一句话理由
+    sort:
+      - property: rating
+        direction: DESC
+      - property: file.name
+        direction: ASC
+      - property: file.path
+        direction: DESC
+      - property: status
+        direction: ASC
+    columnSize:
+      note.tags: 155
+      note.status: 254
+    imageFit: ""
+    cardSize: 170

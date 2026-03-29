@@ -1,0 +1,364 @@
+{
+  "nodes": [
+    {
+      "type": "group",
+      "id": "a5c5e8d244a97855",
+      "styleAttributes": {},
+      "x": -4600,
+      "y": -2140,
+      "width": 1420,
+      "height": 3000,
+      "color": "5",
+      "label": "IAAS - 补充文档"
+    },
+    {
+      "type": "group",
+      "id": "db1b619142009580",
+      "styleAttributes": {},
+      "x": -2700,
+      "y": -1120,
+      "width": 1820,
+      "height": 1280,
+      "color": "1",
+      "label": "VPC 0"
+    },
+    {
+      "type": "group",
+      "id": "e0c269bc44c34c3c",
+      "styleAttributes": {},
+      "x": -2700,
+      "y": 600,
+      "width": 1820,
+      "height": 1280,
+      "color": "2",
+      "label": "VPC 1"
+    },
+    {
+      "type": "group",
+      "id": "c1bf93560d0c4353",
+      "styleAttributes": {},
+      "x": -4600,
+      "y": 2560,
+      "width": 1420,
+      "height": 1520,
+      "color": "6",
+      "label": "SAAS"
+    },
+    {
+      "type": "group",
+      "id": "2b4782ec2ee9ad72",
+      "styleAttributes": {},
+      "x": -4600,
+      "y": 1040,
+      "width": 1420,
+      "height": 1280,
+      "color": "3",
+      "label": "PAAS"
+    },
+    {
+      "type": "group",
+      "id": "22070ad19b7bcb94",
+      "styleAttributes": {},
+      "x": -3620,
+      "y": -2040,
+      "width": 440,
+      "height": 2900,
+      "label": "网络 - VPC相关文档"
+    },
+    {
+      "type": "group",
+      "id": "3c6b102a8d11a6ef",
+      "styleAttributes": {},
+      "x": -4560,
+      "y": -590,
+      "width": 670,
+      "height": 1390,
+      "label": "存储 - 相关文档"
+    },
+    {
+      "type": "group",
+      "id": "a76a3b35d587012c",
+      "styleAttributes": {},
+      "x": -2632,
+      "y": -840,
+      "width": 902,
+      "height": 920,
+      "label": "交换机"
+    },
+    {
+      "type": "group",
+      "id": "eb750c6ad6312e46",
+      "styleAttributes": {},
+      "x": -2632,
+      "y": 880,
+      "width": 902,
+      "height": 920,
+      "label": "交换机"
+    },
+    {
+      "type": "group",
+      "id": "c3f99d0ae7c0ecaa",
+      "styleAttributes": {},
+      "x": -4560,
+      "y": -2000,
+      "width": 670,
+      "height": 1160,
+      "label": "计算 - ECS相关文档"
+    },
+    {
+      "type": "group",
+      "id": "59b182065f8dc80f",
+      "styleAttributes": {},
+      "x": -2581,
+      "y": -760,
+      "width": 791,
+      "height": 640,
+      "label": "ACK集群"
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/云虚拟机.md",
+      "id": "2560e911a0896121",
+      "styleAttributes": {},
+      "x": -4520,
+      "y": -1960,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/VPC.md",
+      "id": "5adab45d1b1e3b10",
+      "styleAttributes": {},
+      "x": -3600,
+      "y": -1320,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/NAT.md",
+      "id": "1da0d227512e2f69",
+      "styleAttributes": {},
+      "x": -3600,
+      "y": -1960,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "text",
+      "text": "# 公网NAT",
+      "id": "45836906a851352b",
+      "styleAttributes": {},
+      "x": -1960,
+      "y": -1080,
+      "width": 170,
+      "height": 80
+    },
+    {
+      "type": "text",
+      "text": "## 节点池",
+      "id": "e24146169a67486e",
+      "styleAttributes": {},
+      "x": -2530,
+      "y": -280,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/MySQL.md",
+      "id": "29335e42c96ae202",
+      "styleAttributes": {},
+      "x": -4520,
+      "y": -560,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "text",
+      "text": "## 路由表",
+      "id": "98572bab1f2b19bf",
+      "styleAttributes": {},
+      "x": -2280,
+      "y": 960,
+      "width": 160,
+      "height": 100
+    },
+    {
+      "type": "text",
+      "text": "## ingress",
+      "id": "23fdaedc06d2ecc0",
+      "styleAttributes": {},
+      "x": -2325,
+      "y": -720,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 路由表",
+      "id": "8b903c0f7e513159",
+      "styleAttributes": {},
+      "x": -2280,
+      "y": -80,
+      "width": 160,
+      "height": 100
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/redis.md",
+      "id": "10ccb7b16e87b158",
+      "styleAttributes": {},
+      "x": -4520,
+      "y": -120,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/rocketMQ.md",
+      "id": "b8eca76374ae6aba",
+      "styleAttributes": {},
+      "x": -4520,
+      "y": 360,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/阿里云的VPC、交换机、路由表的理解.md",
+      "id": "faeeac191a112cf5",
+      "styleAttributes": {},
+      "x": -3600,
+      "y": -560,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/对等连接.md",
+      "id": "fa64ff90cab7a49e",
+      "styleAttributes": {},
+      "x": -3600,
+      "y": 440,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "id": "78fb7b1fefb71dc6",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔-阿里云-IAAS.md",
+      "styleAttributes": {},
+      "x": -6400,
+      "y": -760,
+      "width": 1280,
+      "height": 416
+    },
+    {
+      "id": "796620a3ef70f7ca",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔-阿里云-PAAS.md",
+      "styleAttributes": {},
+      "x": -6400,
+      "y": 1442,
+      "width": 1280,
+      "height": 416
+    },
+    {
+      "id": "c6c0ad1ac9fd6791",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔-阿里云-SAAS.md",
+      "styleAttributes": {},
+      "x": -6400,
+      "y": 3104,
+      "width": 1280,
+      "height": 416
+    },
+    {
+      "type": "text",
+      "text": "## 对等连接",
+      "id": "7400b72d87c8400c",
+      "styleAttributes": {},
+      "x": -2325,
+      "y": 380,
+      "width": 250,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "a3962e9e3bd3658c",
+      "fromNode": "5adab45d1b1e3b10",
+      "fromSide": "right",
+      "toNode": "db1b619142009580",
+      "toSide": "left"
+    },
+    {
+      "id": "78ad97a0d878b814",
+      "fromNode": "faeeac191a112cf5",
+      "fromSide": "right",
+      "toNode": "a76a3b35d587012c",
+      "toSide": "left"
+    },
+    {
+      "id": "d2d45d8aff700a65",
+      "fromNode": "8b903c0f7e513159",
+      "fromSide": "bottom",
+      "toNode": "7400b72d87c8400c",
+      "toSide": "top",
+      "fromEnd": "arrow"
+    },
+    {
+      "id": "4697894843210085",
+      "fromNode": "1da0d227512e2f69",
+      "fromSide": "right",
+      "toNode": "45836906a851352b",
+      "toSide": "left"
+    },
+    {
+      "id": "7e06626b0b8beae7",
+      "fromNode": "7400b72d87c8400c",
+      "fromSide": "bottom",
+      "toNode": "98572bab1f2b19bf",
+      "toSide": "top",
+      "fromEnd": "arrow"
+    },
+    {
+      "id": "e403377badc2f7a9",
+      "fromNode": "fa64ff90cab7a49e",
+      "fromSide": "right",
+      "toNode": "7400b72d87c8400c",
+      "toSide": "left"
+    },
+    {
+      "id": "c73b74c563b27c34",
+      "fromNode": "23fdaedc06d2ecc0",
+      "fromSide": "top",
+      "toNode": "45836906a851352b",
+      "toSide": "bottom"
+    },
+    {
+      "id": "174c74bd164b7d81",
+      "fromNode": "78fb7b1fefb71dc6",
+      "fromSide": "right",
+      "toNode": "a5c5e8d244a97855",
+      "toSide": "left"
+    },
+    {
+      "id": "b17af34e3f0c607c",
+      "fromNode": "796620a3ef70f7ca",
+      "fromSide": "right",
+      "toNode": "2b4782ec2ee9ad72",
+      "toSide": "left"
+    },
+    {
+      "id": "9d44bd7791b0cb73",
+      "fromNode": "c6c0ad1ac9fd6791",
+      "fromSide": "right",
+      "toNode": "c1bf93560d0c4353",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {}
+}

@@ -1,5 +1,12 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Tutorials/» 本库非md的资源文件管理工作流.md","aliases":"非md资源文件管理 附件管理","title":"» 本库非md的资源文件管理工作流","created":"2022-08-07","modified":"2023-03-14","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/» 本库非md的资源文件管理工作流.md
+aliases:
+  - 非md资源文件管理
+  - 附件管理
+title: » 本库非md的资源文件管理工作流
+created: 2022-08-07
+modified: 2023-03-14
 ---
 
 # 非 MD 资源文件管理工作流
@@ -57,13 +64,13 @@
 **示例**：
 您有一个重要的图表文件 `2025-market-analysis.png`。
 
-1.  在它旁边创建一个 `2025-market-analysis.md` 文件。
-2.  在该 Markdown 文件中，您可以记录：
-    - 文件的来源、作者。
-    - 文件的简要描述。
-    - 相关的思考和评论。
-    - 使用 `tags` 和 `aliases` 增加可发现性。
-    - 最后，嵌入该图片 `![[2025-market-analysis.png]]`。
+1. 在它旁边创建一个 `2025-market-analysis.md` 文件。
+2. 在该 Markdown 文件中，您可以记录：
+   - 文件的来源、作者。
+   - 文件的简要描述。
+   - 相关的思考和评论。
+   - 使用 `tags` 和 `aliases` 增加可发现性。
+   - 最后，嵌入该图片 `![[2025-market-analysis.png]]`。
 
 ```markdown
 ---

@@ -1,11 +1,13 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/通用/chatgpt 与 可视化画图 mermaid.md","created":"2024-11-04","modified":"2025-08-27","cssclasses":""}
+publish: true
+permalink: /Extras/Prompts/通用/chatgpt 与 可视化画图 mermaid.md
+created: 2024-11-04
+modified: 2025-08-27
 ---
 
+如果要样式精美，最推荐的是[[chatgpt 与 svg画图]]
 
-如果要样式精美，最推荐的是[[Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatgpt 与 svg画图]]
-
-也可以用Graphviz画[[Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatgpt 可视化 Graphviz]]
+也可以用Graphviz画[[chatgpt 可视化 Graphviz]]
 
 ## 阅读材料可视化
 

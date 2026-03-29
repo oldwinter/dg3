@@ -7,7 +7,7 @@ title: Chronology
 rating: 5
 status: null
 publish: true
-分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
+分类: "[[obsidian插件 - fileclass]]"
 ---
 
 中文意思：年表、大事记、年代学

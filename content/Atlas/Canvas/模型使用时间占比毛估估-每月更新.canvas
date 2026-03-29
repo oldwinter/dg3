@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"e785c13d968141d8","type":"file","file":"Spaces/2-Area/思维工具与模块/模型使用时间占比毛估估-每月更新.md","subpath":"#各个模型的使用时间占比","x":-472,"y":-69,"width":926,"height":1281},
+		{
+			"id":"4a6bcdba4c489938",
+			"type":"file",
+			"file":"Spaces/2-Area/思维工具与模块/模型使用时间占比毛估估-每月更新.md",
+			"subpath":"#^0de996",
+			"styleAttributes":{"border":"invisible"},
+			"x":-472,
+			"y":1885,
+			"width":463,
+			"height":326
+		},
+		{
+			"id":"a191d5696637fc63",
+			"type":"file",
+			"file":"Spaces/2-Area/思维工具与模块/模型使用时间占比毛估估-每月更新.md",
+			"subpath":"#^39f2ee",
+			"styleAttributes":{"border":"invisible"},
+			"x":-9,
+			"y":1927,
+			"width":463,
+			"height":284
+		},
+		{"id":"dc5e2acc02d144ed","type":"file","file":"Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/LLM模型清单.base","subpath":"#画廊视图-在用的","x":-812,"y":-69,"width":246,"height":2293},
+		{"id":"c6b7466feb85c8fb","type":"file","file":"Spaces/2-Area/思维工具与模块/模型使用时间占比毛估估-每月更新.md","subpath":"#按客户端或产品视角的使用时间占比","x":-472,"y":1368,"width":926,"height":459}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

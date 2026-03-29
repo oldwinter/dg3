@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/2025下半年小红书探索/ACCESS笔记组织法，无压记录和整理.md","created":"2025-07-15","modified":"2025-07-15","cssclasses":""}
+publish: true
+permalink: /Spaces/1-Project/2025下半年小红书探索/ACCESS笔记组织法，无压记录和整理.md
+created: 2025-07-15
+modified: 2025-07-15
 ---
-
 
 ## 图片来源
 
@@ -11,6 +13,4 @@
 
 ## 最终发布
 
-
 ![ACCESS 笔记组织法-竖向.png](https://pub-pic.oldwinter.top/2025/07/8bd26bb482cbc3727c6aefd3b939cdb7.png)
-

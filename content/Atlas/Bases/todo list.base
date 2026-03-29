@@ -1,0 +1,36 @@
+filters:
+  and:
+    - |
+      file.hasTag("todo")
+views:
+  - type: table
+    name: 全部todo
+    order:
+      - file.name
+      - tags
+      - file.tags
+  - type: table
+    name: 文件todo
+    filters:
+      and:
+        - file.tags.containsAny("todo")
+    order:
+      - file.name
+      - tags
+      - file.tags
+    sort:
+      - property: tags
+        direction: DESC
+  - type: table
+    name: 行内todo
+    filters:
+      and:
+        - file.tags.containsAny("todo")
+        - file.hasTag("todo")
+    order:
+      - file.name
+      - file.tags
+      - tags
+    sort:
+      - property: tags
+        direction: ASC

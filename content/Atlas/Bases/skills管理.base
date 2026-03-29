@@ -1,0 +1,82 @@
+filters:
+  and:
+    - file.inFolder("Atlas/Skills")
+    - "!skill_name.isEmpty()"
+views:
+  - type: table
+    name: 技能总览
+    order:
+      - file.name
+      - 个人评分
+      - 个人状态
+      - 精选
+      - 个人标签
+      - 仓库分类
+      - 仓库子分类
+      - 作用描述
+      - 仓库路径
+      - file.mtime
+    sort:
+      - property: 个人评分
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 待评分
+    filters:
+      or:
+        - 个人评分.isEmpty()
+        - 个人状态 == "待评估"
+    order:
+      - file.name
+      - 个人状态
+      - 仓库分类
+      - 仓库子分类
+      - 作用描述
+      - 仓库路径
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 高分技能
+    filters:
+      and:
+        - "!个人评分.isEmpty()"
+        - 个人评分 >= 4
+    order:
+      - file.name
+      - 个人评分
+      - 个人状态
+      - 精选
+      - 仓库分类
+      - 作用描述
+      - 仓库路径
+    sort:
+      - property: 个人评分
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 常用 / 精选
+    filters:
+      or:
+        - 个人状态 == "常用"
+        - 精选 == true
+    order:
+      - file.name
+      - 个人评分
+      - 个人状态
+      - 精选
+      - 个人标签
+      - 仓库分类
+      - 作用描述
+      - 仓库路径
+      - file.mtime
+    sort:
+      - property: 精选
+        direction: DESC
+      - property: 个人评分
+        direction: DESC
+      - property: file.name
+        direction: ASC

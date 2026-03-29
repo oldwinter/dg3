@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/Cards/Gemini DeepResearch.md","created":"2025-04-28","modified":"2025-07-11","cssclasses":""}
+publish: true
+permalink: /Cards/Gemini DeepResearch.md
+created: 2025-04-28
+modified: 2025-07-11
 ---
 
+up:: [[∑ 大模型产品对比]]
+related:: [[gemini-cli]], [[gemini 模型列表]]
 
 让gemini深度研究过的一些例子，需要的时候，直接去gemini网址里面搜聊天记录，或者搜google drive中的转存。就不专门转存下来污染ob库了，篇幅太大。
 

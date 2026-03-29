@@ -5,10 +5,10 @@ publish: true
 是否已review: true
 ---
 
-[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian卡顿问题定位方法]]
+[[obsidian卡顿问题定位方法]]
 
-[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Settings profiles]]  
+[[Settings profiles]]
 
-[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Chronology]]
+[[Chronology]]
 
-[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Various Complements]]
+[[Various Complements]]

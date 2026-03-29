@@ -1,9 +1,8 @@
 ---
-date created: 2022-08-05
-date modified: 2025-07-12
 publish: true
-分类:
-- '[[Atlas/Categories/工作流workflow - fileclass]]'
+permalink: /Spaces/4-Archive/_ Archive Readme.md
+created: 2022-08-05
+modified: 2025-07-12
 ---
 
 定期归档，缓解焦虑。

@@ -1,14 +1,15 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian canvas 使用 cursor生成.md","created":"2025-06-08","modified":"2025-06-27","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian canvas 使用 cursor生成.md
+created: 2025-06-08
+modified: 2025-06-27
 ---
-
-
 
 > [!important] 显著优势
 > 相比于使用AI生成其他html、svg、ppt、mermaid等图表，生成obsidian canvas有2大好处：
+>
 > 1. 首次出图后，方便二次无痛编辑，再也不用被AI反复抽卡困扰。
 > 2. obsidian canvas 可引用库内已有文件，而非孤立卡片，从而形成知识网络。
-
 
 ## 示例一：无中生有，直接一句话让cursor生成canvas。
 
@@ -22,18 +23,18 @@
 
 生成效果：
 
-[[甄嬛传人物关系与时间线.canvas|甄嬛传人物关系与时间线]]  
+[[甄嬛传人物关系与时间线.canvas|甄嬛传人物关系与时间线]]\
 ![甄嬛传人物关系与时间线.png](https://pub-pic.oldwinter.top/2025/06/546bafe08ca13f470b6eda7878dde4ff.png)
 
 ## 示例二
 
-基于仓库内已存在的文档，让cursor分析汇总，并生成canvas，这样做的好处是，会引用仓库已有的文件，而不是单纯生成卡片。方便我们做二次修改和加工。详见[[Spaces/1-Project/Cursor/cursor 引用Obsidian 知识库文件生成 canvas的提示词]]。
+基于仓库内已存在的文档，让cursor分析汇总，并生成canvas，这样做的好处是，会引用仓库已有的文件，而不是单纯生成卡片。方便我们做二次修改和加工。详见[[cursor 引用Obsidian 知识库文件生成 canvas的提示词]]。
 
 ## 经验
 
 模型gemini-2.5-pro表现稳定，但会忘记text内的"引号转义。如果canvas打不开，提醒他转义既可。已经直接写到cursorrule中。
 
-cloude 4 sonnet 模型会用[[Extras/Documents/Obsidian advanced canvas 规范]]中的各种高级节点类型（菱形、圆形等），但显得不美观，审美一般。
+cloude 4 sonnet 模型会用[[Obsidian advanced canvas 规范]]中的各种高级节点类型（菱形、圆形等），但显得不美观，审美一般。
 
 o3模型生成的会比较简单，可能是提示词给的太简短。
 
@@ -98,7 +99,7 @@ o3模型生成的会比较简单，可能是提示词给的太简短。
 
 ### Obsidian advanced canvas 规范
 
-[[Extras/Documents/Obsidian advanced canvas 规范]]：
+[[Obsidian advanced canvas 规范]]：
 
 ```
 我的额外补充说明：

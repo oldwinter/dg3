@@ -1,0 +1,263 @@
+{
+  "nodes": [
+    {
+      "id": "fe64c3165cb53df2",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 40,
+      "y": -650,
+      "width": 290,
+      "height": 440,
+      "label": "同一个VPC内"
+    },
+    {
+      "id": "a76efd4f61cf8f9e",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 420,
+      "y": -210,
+      "width": 440,
+      "height": 260,
+      "label": "运维管理侧 - 内部"
+    },
+    {
+      "id": "034ef9f5f171628d",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 420,
+      "y": 120,
+      "width": 440,
+      "height": 260,
+      "color": "1",
+      "label": "运维管理侧 - 海外"
+    },
+    {
+      "id": "feb1124dde76ec37",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔AIGC - 前端.md",
+      "styleAttributes": {},
+      "x": -480,
+      "y": -880,
+      "width": 400,
+      "height": 160
+    },
+    {
+      "id": "33e0691d2b1de29b",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔AIGC - 后端.md",
+      "styleAttributes": {},
+      "x": -480,
+      "y": -660,
+      "width": 400,
+      "height": 120
+    },
+    {
+      "id": "e793f11bacc2909b",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔AIGC - AI端.md",
+      "styleAttributes": {},
+      "x": -480,
+      "y": -400,
+      "width": 400,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "e77f8c81bdece005",
+      "type": "text",
+      "text": "### Azure OpenAI\n目前还没被墙  \ntier1： 60 rpm",
+      "styleAttributes": {},
+      "x": -1000,
+      "y": -420,
+      "width": 250,
+      "height": 120
+    },
+    {
+      "id": "4f8cd514b8008878",
+      "type": "text",
+      "text": "### OpenAI\n流控限制：  \ntier1：  500 rpm  \ntier2： 5000 rpm\n",
+      "styleAttributes": {},
+      "x": -1000,
+      "y": -260,
+      "width": 250,
+      "height": 140
+    },
+    {
+      "id": "61db00aba7ce6610",
+      "type": "text",
+      "text": "### 文心一言",
+      "styleAttributes": {},
+      "x": -1000,
+      "y": -40,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "91d222553618a444",
+      "type": "file",
+      "file": "Cards/代理转发openai接口的方案.md",
+      "styleAttributes": {},
+      "x": -1540,
+      "y": -320,
+      "width": 400,
+      "height": 660
+    },
+    {
+      "id": "55fa693525307116",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/向量数据库Milvus - 前端.md",
+      "styleAttributes": {},
+      "x": 440,
+      "y": -130,
+      "width": 400,
+      "height": 160
+    },
+    {
+      "id": "5786ec06bbb939f5",
+      "type": "text",
+      "text": "OSS",
+      "styleAttributes": {},
+      "x": 60,
+      "y": -830,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "fc66a1408db23f20",
+      "type": "text",
+      "text": "阿里云kubernetes集群",
+      "styleAttributes": {},
+      "x": 60,
+      "y": -630,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "36c38e2448768874",
+      "type": "text",
+      "text": "阿里云Serverless服务\n[[2023-11-14]]修改：为了一个统一的应用视图，部署在后端统一集群的ai-namespace中。",
+      "styleAttributes": {},
+      "x": 60,
+      "y": -500,
+      "width": 250,
+      "height": 200
+    },
+    {
+      "id": "b8c4890c86a89a78",
+      "type": "text",
+      "text": "阿里云上Milvus数据库  \n- 杭州region，目前唯一选项\n- 公网https暴露url\n- token鉴权",
+      "styleAttributes": {},
+      "x": 40,
+      "y": -120,
+      "width": 290,
+      "height": 140
+    },
+    {
+      "id": "b7b3faaefcf70b00",
+      "type": "file",
+      "file": "Spaces/1-Project/搞透 AI Agent 开发/LangSmith.md",
+      "styleAttributes": {},
+      "x": 440,
+      "y": 160,
+      "width": 400,
+      "height": 160
+    }
+  ],
+  "edges": [
+    {
+      "id": "07dd4cb030bcaee7",
+      "fromNode": "feb1124dde76ec37",
+      "fromSide": "bottom",
+      "toNode": "33e0691d2b1de29b",
+      "toSide": "top"
+    },
+    {
+      "id": "765ec464f2200f30",
+      "fromNode": "33e0691d2b1de29b",
+      "fromSide": "bottom",
+      "toNode": "e793f11bacc2909b",
+      "toSide": "top",
+      "label": "HTTP，不鉴权"
+    },
+    {
+      "id": "116260ad2985c3d5",
+      "fromNode": "feb1124dde76ec37",
+      "fromSide": "right",
+      "toNode": "5786ec06bbb939f5",
+      "toSide": "left",
+      "label": "部署在"
+    },
+    {
+      "id": "bd018de2a82b85a8",
+      "fromNode": "33e0691d2b1de29b",
+      "fromSide": "right",
+      "toNode": "fc66a1408db23f20",
+      "toSide": "left",
+      "label": "部署在"
+    },
+    {
+      "id": "ac15347d5ad7fb7e",
+      "fromNode": "e793f11bacc2909b",
+      "fromSide": "right",
+      "toNode": "36c38e2448768874",
+      "toSide": "left",
+      "label": "部署在"
+    },
+    {
+      "id": "57fd12e7f6598a9f",
+      "fromNode": "e793f11bacc2909b",
+      "fromSide": "left",
+      "toNode": "e77f8c81bdece005",
+      "toSide": "right",
+      "label": "直接访问"
+    },
+    {
+      "id": "e2bbf511d442bcc4",
+      "fromNode": "e793f11bacc2909b",
+      "fromSide": "left",
+      "toNode": "4f8cd514b8008878",
+      "toSide": "right",
+      "color": "1",
+      "label": "代理转发请求"
+    },
+    {
+      "id": "1bafccc9322be28c",
+      "fromNode": "36c38e2448768874",
+      "fromSide": "bottom",
+      "toNode": "b8c4890c86a89a78",
+      "toSide": "top",
+      "label": "直接访问"
+    },
+    {
+      "id": "3e5163ecdd3cfbde",
+      "fromNode": "e793f11bacc2909b",
+      "fromSide": "left",
+      "toNode": "61db00aba7ce6610",
+      "toSide": "right",
+      "label": "直接访问"
+    },
+    {
+      "id": "2e639b65317aa5c3",
+      "fromNode": "55fa693525307116",
+      "fromSide": "left",
+      "toNode": "b8c4890c86a89a78",
+      "toSide": "right"
+    },
+    {
+      "id": "b4d28f216a4f8286",
+      "fromNode": "e793f11bacc2909b",
+      "fromSide": "bottom",
+      "toNode": "b7b3faaefcf70b00",
+      "toSide": "left",
+      "label": "数据上报"
+    },
+    {
+      "id": "c71d756c31058144",
+      "fromNode": "91d222553618a444",
+      "fromSide": "right",
+      "toNode": "4f8cd514b8008878",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {}
+}

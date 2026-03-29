@@ -1,8 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/滴答清单官方理解的ppv.md","created":"2025-07-23","modified":"2025-07-23","cssclasses":""}
+publish: true
+permalink: /Spaces/2-Area/知识管理/滴答清单官方理解的ppv.md
+created: 2025-07-23
+modified: 2025-07-23
 ---
-
-
 
 **人生支柱 + 行动路径！打造你的个人管理系统**
 

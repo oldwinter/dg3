@@ -44,9 +44,3 @@ python3 Extras/Scripts/frontmatter_validator.py .
 - 该脚本为零依赖实现，仅解析顶层 `key: value` 行，复杂嵌套将被忽略但不影响检查；
 - 可按需扩展校验规则（如私密信息扫描）；
 - 建议定期运行，保持元数据健康，提升 Bases/发布流效果。
-
-
-
-
-
-

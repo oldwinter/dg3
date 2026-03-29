@@ -1,0 +1,25 @@
+filters:
+  and:
+    - 分类.containsAny(link("好用网站 - fileclass"))
+formulas:
+  data: note["date created"]
+  Untitled: note["date created"]
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - 评价
+      - url
+      - formula.data
+    sort:
+      - property: 评价
+        direction: DESC
+  - type: cards
+    name: View
+    order:
+      - file.name
+      - file.links
+      - 评价
+  - type: table
+    name: View 2

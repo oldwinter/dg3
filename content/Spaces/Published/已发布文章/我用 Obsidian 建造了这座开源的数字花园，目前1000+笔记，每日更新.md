@@ -4,17 +4,18 @@ date modified: 2023-03-14 00:00:00+00:00
 title: 我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新
 publish: true
 分类:
-- '[[Atlas/Categories/文章-已完成 - fileclass]]'
+- '[[文章-已完成 - fileclass]]'
 ---
+
 ## 开门见山
 
 我用obsidian持续写了3个月的1000+双链笔记库，包含深度体验100+插件后，留存的30+插件和配置，全量开源：
 
-[https://github.com/oldwinter/knowledge-garden](https://github.com/oldwinter/knowledge-garden)
+<https://github.com/oldwinter/knowledge-garden>
 
 通过官方的20美元1个月的publish服务，发布后的地址：
 
-[https://publish.obsidian.md/oldwinter](https://publish.obsidian.md/oldwinter)
+<https://publish.obsidian.md/oldwinter>
 
 ## 一些废话
 
@@ -24,8 +25,8 @@ publish: true
 
 2个基于免费开源的数字花园链接如下（笔记数据都是用的那1000+笔记的开源库）：
 
-- [https://notes.oldwinter.top/](https://notes.oldwinter.top/)
-- [https://garden.oldwinter.top/](https://garden.oldwinter.top/)
+- <https://notes.oldwinter.top/>
+- <https://garden.oldwinter.top/>
 
 ## 欢迎已经深度用obsidian超1个月的朋友一起交流
 

@@ -4,7 +4,7 @@ date modified: 2025-07-12
 title: Obsidian 最优雅的多端同步插件LiveSync
 publish: true
 分类:
-- '[[Atlas/Categories/文章-已完成 - fileclass]]'
+- '[[文章-已完成 - fileclass]]'
 ---
 
 ## 目前各种同步方案的优缺点
@@ -37,34 +37,35 @@ publish: true
 ### 买一台云服务器并运行livesync的server端服务 - 耗时10到30分钟
 
 - 买服务器
-	- 为了访问速度，可以买[[Spaces/4-Archive/ingtube/交接/Inbox/阿里云]]，[[Spaces/2-Area/云服务和部署/腾讯云]]，[[Cards/华为云]]等国内服务器，虽然我的老东家是华为云，但纯便宜角度，我推荐腾讯云，首单一年45元，而且还可以先申请试用1个月，不满意就跑路换一家。
-		- 题外话：大家可能听过『即使不是程序猿，也推荐你学习一门编程语言』这种说法。具体原因，大家有兴趣可以去搜索。我这里想提一个自己的见解『即使不是程序猿，也推荐你学会使用云服务』。原因很简单：
-			- 你会发现很多厂商提供了docker的方式安装他们的软件server端，其实docker纯使用而言，就是执行几条固定的命令行，本质上和双击打开某个应用程序，没难太多。
-			- 当你会使用云服务后，能为你完善自己的工作流，提升效率，带来更多想象空间和可能性。
-			- 再比如，可以用docker一键式自建博客，自建科学上网，自建rss服务，自建内网穿透等等。都只需要几条docker命令行。
-	- 以腾讯云举例，写到这里，我还特地去申请了个推广链接，如果你后面花钱了，貌似能给我带来一点收入😃，先注册：[腾讯云](https://curl.qcloud.com/3ulU59pY)，再申请试用：[云产品免费试用_云服务免费体验_免费云产品试用 - 腾讯云 (tencent.com)](https://cloud.tencent.com/act/free?from=15048)，申请到1个月的『轻量应用服务器』试用（选装最常用的ubuntu系统最新版）
+  - 为了访问速度，可以买[[阿里云]]，[[腾讯云]]，[[华为云]]等国内服务器，虽然我的老东家是华为云，但纯便宜角度，我推荐腾讯云，首单一年45元，而且还可以先申请试用1个月，不满意就跑路换一家。
+    - 题外话：大家可能听过『即使不是程序猿，也推荐你学习一门编程语言』这种说法。具体原因，大家有兴趣可以去搜索。我这里想提一个自己的见解『即使不是程序猿，也推荐你学会使用云服务』。原因很简单：
+      - 你会发现很多厂商提供了docker的方式安装他们的软件server端，其实docker纯使用而言，就是执行几条固定的命令行，本质上和双击打开某个应用程序，没难太多。
+      - 当你会使用云服务后，能为你完善自己的工作流，提升效率，带来更多想象空间和可能性。
+      - 再比如，可以用docker一键式自建博客，自建科学上网，自建rss服务，自建内网穿透等等。都只需要几条docker命令行。
+  - 以腾讯云举例，写到这里，我还特地去申请了个推广链接，如果你后面花钱了，貌似能给我带来一点收入😃，先注册：[腾讯云](https://curl.qcloud.com/3ulU59pY)，再申请试用：[云产品免费试用\_云服务免费体验\_免费云产品试用 - 腾讯云 (tencent.com)](https://cloud.tencent.com/act/free?from=15048)，申请到1个月的『轻量应用服务器』试用（选装最常用的ubuntu系统最新版）
 - 装docker
-	- 申请试用后，他们界面会引导你如何ssh登陆。登陆上后，执行几步：
-		- 安装docker，[Install Docker Engine on Ubuntu | Docker Documentation](https://docs.docker.com/engine/install/ubuntu/)，就按照文档里面提供的一键式安装命令`curl -fsSL <https://get.docker.com> -o get-docker.sh && sudo sh get-docker.sh`
-		- 测试是否安装成功：`sudo docker run hello-world`
+  - 申请试用后，他们界面会引导你如何ssh登陆。登陆上后，执行几步：
+    - 安装docker，[Install Docker Engine on Ubuntu | Docker Documentation](https://docs.docker.com/engine/install/ubuntu/)，就按照文档里面提供的一键式安装命令`curl -fsSL <https://get.docker.com> -o get-docker.sh && sudo sh get-docker.sh`
+    - 测试是否安装成功：`sudo docker run hello-world`
 - 运行livesync的server服务
-	- 按照插件官方描述[obsidian-livesync/setup_own_server.md at main · vrtmrz/obsidian-livesync (github.com)](https://github.com/vrtmrz/obsidian-livesync/blob/main/docs/setup_own_server.md)，3步
-		- 新建一个local.ini，原样复制过来即可
-		- 运行`docker run --rm -it -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -v .local.ini:/opt/couchdb/etc/local.ini -p 5984:5984 couchdb`
-			- 注意下这条命令需要将.local.ini改成你上一步新建的文件路径及名字，比如`/home/local.ini`
-			- 如果你当前权限不足，docker前面加sudo
-		- 运行`docker run -d --restart always -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -v .local.ini:/opt/couchdb/etc/local.ini -p 5984:5984 couchdb`
-			- 注意事项同上一条，不赘述
-	- 测试是否运行成功：`sudo docker ps |grep couchdb`
+  - 按照插件官方描述[obsidian-livesync/setup\_own\_server.md at main · vrtmrz/obsidian-livesync (github.com)](https://github.com/vrtmrz/obsidian-livesync/blob/main/docs/setup_own_server.md)，3步
+    - 新建一个local.ini，原样复制过来即可
+    - 运行`docker run --rm -it -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -v .local.ini:/opt/couchdb/etc/local.ini -p 5984:5984 couchdb`
+      - 注意下这条命令需要将.local.ini改成你上一步新建的文件路径及名字，比如`/home/local.ini`
+      - 如果你当前权限不足，docker前面加sudo
+    - 运行`docker run -d --restart always -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -v .local.ini:/opt/couchdb/etc/local.ini -p 5984:5984 couchdb`
+      - 注意事项同上一条，不赘述
+  - 测试是否运行成功：`sudo docker ps |grep couchdb`
 
 ### 电脑端安装livesync插件作为client端，配置并连接至自己的server端 - 3到10分钟
 
 - 安装livesync插件，并打开配置项
-- 从上一步，找到自己申请的服务器的公网ip地址，比如121.111.173.186，按照如下填写，密码在上一步的命令行里面，默认是paasword。接着点击test，确认连通即可。  
-	![https://raw.githubusercontent.com/oldwinter/my-pics/master/202204041609451.png](https://img2.oldwinter.top/Obsidian%20最优雅的多端同步插件LiveSync_image_2.png)
-	
-- 接着配置一下同步策略，我的策略如下。livesync对于未限制后台的手机端而言，可能还是有点耗电，酌情使用。  
-	![https://raw.githubusercontent.com/oldwinter/my-pics/master/202204041613906.png](https://img2.oldwinter.top/Obsidian%20最优雅的多端同步插件LiveSync_image_3.png)
+
+- 从上一步，找到自己申请的服务器的公网ip地址，比如121.111.173.186，按照如下填写，密码在上一步的命令行里面，默认是paasword。接着点击test，确认连通即可。\
+  ![https://raw.githubusercontent.com/oldwinter/my-pics/master/202204041609451.png](https://img2.oldwinter.top/Obsidian%20最优雅的多端同步插件LiveSync_image_2.png)
+
+- 接着配置一下同步策略，我的策略如下。livesync对于未限制后台的手机端而言，可能还是有点耗电，酌情使用。\
+  ![https://raw.githubusercontent.com/oldwinter/my-pics/master/202204041613906.png](https://img2.oldwinter.top/Obsidian%20最优雅的多端同步插件LiveSync_image_3.png)
 
 ### 手机端新建空库安装client端，配置并连接至自己的server端，等待同步完成。 - 3到10分钟
 
@@ -74,12 +75,12 @@ publish: true
 
 ### 同步第三方插件及其配置 - 3到10分钟
 
-- 若要使用插件同步功能，则需要在电脑端按下图设置，将数据库加密存储  
-	![https://raw.githubusercontent.com/oldwinter/my-pics/master/202204041616069.png](https://img2.oldwinter.top/Obsidian%20最优雅的多端同步插件LiveSync_image_4.png)
-	
-- 接着打开同步插件的功能即可  
-	
+- 若要使用插件同步功能，则需要在电脑端按下图设置，将数据库加密存储\
+  ![https://raw.githubusercontent.com/oldwinter/my-pics/master/202204041616069.png](https://img2.oldwinter.top/Obsidian%20最优雅的多端同步插件LiveSync_image_4.png)
+
+- 接着打开同步插件的功能即可
+
 - 手机端同理，执行上面2步。不同之处如下：
-	- 手机端选择apply and receive，而不是apply and send
-	- 手机端的设备和仓库名，取一个和电脑端能区分开的名字即可。
-	- 手机端在第2步打开插件同步窗口后，选择性地从电脑端同步手机必要的插件和配置即可。
+  - 手机端选择apply and receive，而不是apply and send
+  - 手机端的设备和仓库名，取一个和电脑端能区分开的名字即可。
+  - 手机端在第2步打开插件同步窗口后，选择性地从电脑端同步手机必要的插件和配置即可。

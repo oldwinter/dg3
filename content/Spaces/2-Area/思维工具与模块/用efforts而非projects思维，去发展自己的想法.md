@@ -9,4 +9,4 @@ publish: true
 
 efforts思维，就是成长式思维。
 
-在[[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]中的具体体现就是：Calendar和Cards文件夹存放efforts，Spaces文件夹存放projects。
+在[[ACCESS 笔记组织法]]中的具体体现就是：Calendar和Cards文件夹存放efforts，Spaces文件夹存放projects。

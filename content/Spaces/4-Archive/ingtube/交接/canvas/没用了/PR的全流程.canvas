@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "id": "be721ead10e90744",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -7740,
+      "y": 720,
+      "width": 620,
+      "height": 540,
+      "label": "抖音"
+    },
+    {
+      "id": "d837ef6335f4b58b",
+      "type": "text",
+      "text": "## 3.表单提报",
+      "styleAttributes": {},
+      "x": -6200,
+      "y": 400,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "252f9e9855eae8f1",
+      "type": "text",
+      "text": "## 1. 找博主并建联",
+      "styleAttributes": {},
+      "x": -7040,
+      "y": 400,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "9113a6bc77b22200",
+      "type": "text",
+      "text": "## 2.微信联系",
+      "styleAttributes": {},
+      "x": -6620,
+      "y": 400,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "4083071241d54c5e",
+      "type": "text",
+      "text": "## 第一次打招呼",
+      "styleAttributes": {},
+      "x": -6845,
+      "y": 720,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "2eeb5baf9da7d86e",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": -6480,
+      "y": 720,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "95d61b5984ac3f86",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": -6845,
+      "y": 890,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "5102a8366374cdf0",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": -7720,
+      "y": 860,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "c0076a874b51b9b6",
+      "type": "text",
+      "text": "## 脚本自动私信",
+      "styleAttributes": {},
+      "x": -7520,
+      "y": 1180,
+      "width": 250,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "4d34bd956871157e",
+      "fromNode": "9113a6bc77b22200",
+      "fromSide": "bottom",
+      "toNode": "4083071241d54c5e",
+      "toSide": "top",
+      "label": "博主加我们"
+    },
+    {
+      "id": "1d4bbb905bce50d3",
+      "fromNode": "9113a6bc77b22200",
+      "fromSide": "bottom",
+      "toNode": "2eeb5baf9da7d86e",
+      "toSide": "top",
+      "label": "我们加博主"
+    },
+    {
+      "id": "c8b7bc2ba06b4840",
+      "fromNode": "252f9e9855eae8f1",
+      "fromSide": "bottom",
+      "toNode": "5102a8366374cdf0",
+      "toSide": "top",
+      "label": "素人 粉丝<1000"
+    },
+    {
+      "id": "105b1408990f2ae4",
+      "fromNode": "252f9e9855eae8f1",
+      "fromSide": "bottom",
+      "toNode": "c0076a874b51b9b6",
+      "toSide": "top",
+      "label": "KOC 粉丝<10000"
+    }
+  ],
+  "metadata": {}
+}

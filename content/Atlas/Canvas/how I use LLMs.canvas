@@ -1,0 +1,33 @@
+{
+	"edges":[
+		{"id":"multimodal_to_conclusion","fromNode":"multimodal","fromSide":"bottom","toNode":"conclusion","toSide":"right"}
+	],
+	"metadata":{
+		"frontmatter":{},
+		"version":"1.0-1.0"
+	},
+	"nodes":[
+		{
+			"id":"multimodal",
+			"styleAttributes":{},
+			"type":"group",
+			"x":450,
+			"y":1050,
+			"width":450,
+			"height":400,
+			"color":"4",
+			"label":"多模态能力"
+		},
+		{
+			"id":"conclusion",
+			"styleAttributes":{},
+			"text":"## 关键要点\n\n- LLM 作为互联网数据的\"压缩知识\"运作\n- 战略性使用可提高生产力和学习效果\n- 不同模型有不同的优势\n- 有效的提示工程可改善结果\n- 工具和上下文增强扩展了能力\n- 理解模型局限性至关重要\n\nKarpathy 的方法强调在考虑 LLM 局限性的同时利用其优势的实际应用。",
+			"type":"text",
+			"x":0,
+			"y":1500,
+			"width":500,
+			"height":200,
+			"color":"5"
+		}
+	]
+}

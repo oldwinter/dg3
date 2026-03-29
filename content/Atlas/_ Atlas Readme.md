@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/Atlas/_ Atlas Readme.md","title":"About Atlas","created":"2022-06-23","modified":"2023-10-09","cssclasses":"dashboard"}
+publish: true
+permalink: /Atlas/_ Atlas Readme.md
+title: About Atlas
+created: 2022-06-23
+modified: 2023-10-09
+cssclasses:
+  - dashboard
 ---
-
 
 # 🗺️ 知识图谱 (Atlas) 说明
 
@@ -34,13 +39,13 @@
 - 笔记应该原子化、概念化，并用自己的话来写。
 - 定期回顾和重构这里的知识。
 
-up:: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]
+up:: [[ACCESS 笔记组织法]]
 
 ## 我的理解
 
 Atlas意思是地图集。
 
-Dataviews专门放各类数据聚合查询的结果。其实有很多专门化定制化的插件可以做更多事儿，但由于笔记量少，现在对dataview的依赖度还没那么高，先用着，静观其变。  
+Dataviews专门放各类数据聚合查询的结果。其实有很多专门化定制化的插件可以做更多事儿，但由于笔记量少，现在对dataview的依赖度还没那么高，先用着，静观其变。\
 单个案例或项目的MOC，考虑直接放在对应文件夹里面，相当于起到一个个文件夹的readme和导览的作用。这里专门放这些MOC的MOC。目前我的笔记还不丰富，所以把某个子主题的MOC都直接放在对应文件夹里面了，这样也方便基于该MOC新建文件。随着规模扩大，这里的MOC的MOC应该会有用武之地。
 
 ## 原文解释

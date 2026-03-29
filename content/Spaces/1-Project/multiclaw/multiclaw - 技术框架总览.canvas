@@ -1,0 +1,351 @@
+{
+  "nodes": [
+    {
+      "id": "g1",
+      "type": "group",
+      "x": -2800,
+      "y": -960,
+      "width": 860,
+      "height": 620,
+      "label": "起点与总览",
+      "color": "5"
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "x": -1820,
+      "y": -960,
+      "width": 1040,
+      "height": 620,
+      "label": "主链路",
+      "color": "2"
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "x": -680,
+      "y": -960,
+      "width": 1760,
+      "height": 1440,
+      "label": "架构模块",
+      "color": "4"
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "x": 1180,
+      "y": -960,
+      "width": 1080,
+      "height": 1440,
+      "label": "数据与质量底座",
+      "color": "3"
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "x": -680,
+      "y": 620,
+      "width": 1040,
+      "height": 480,
+      "label": "执行路线",
+      "color": "6"
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "x": 500,
+      "y": 620,
+      "width": 900,
+      "height": 480,
+      "label": "治理与风控",
+      "color": "1"
+    },
+    {
+      "id": "n_prd",
+      "type": "file",
+      "file": "multiclaw - 内部孵化 PRD 与 8 周执行方案.md",
+      "x": -2720,
+      "y": -860,
+      "width": 320,
+      "height": 400
+    },
+    {
+      "id": "n_moc",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/README.md",
+      "x": -2360,
+      "y": -860,
+      "width": 320,
+      "height": 400
+    },
+    {
+      "id": "n_p",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/00-定位与路线/技术框架设计原则.md",
+      "x": -1780,
+      "y": -860,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "id": "n_wf",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/01-主链路/Chat-Search-Enrich-Outreach-Follow 主链路.md",
+      "x": -1440,
+      "y": -860,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "id": "n_sys",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/02-架构与系统/系统架构总览.md",
+      "x": -600,
+      "y": -860,
+      "width": 300,
+      "height": 360
+    },
+    {
+      "id": "n_orch",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/02-架构与系统/编排层 anotherme 设计.md",
+      "x": -260,
+      "y": -860,
+      "width": 300,
+      "height": 360
+    },
+    {
+      "id": "n_search",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/02-架构与系统/Search 层设计.md",
+      "x": 80,
+      "y": -860,
+      "width": 300,
+      "height": 360
+    },
+    {
+      "id": "n_enrich",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/02-架构与系统/Enrich 层设计.md",
+      "x": 420,
+      "y": -860,
+      "width": 300,
+      "height": 360
+    },
+    {
+      "id": "n_out",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/02-架构与系统/Outreach 与审批层设计.md",
+      "x": -260,
+      "y": -420,
+      "width": 300,
+      "height": 360
+    },
+    {
+      "id": "n_follow",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/02-架构与系统/Follow 与 Watchlist 层设计.md",
+      "x": 80,
+      "y": -420,
+      "width": 300,
+      "height": 360
+    },
+    {
+      "id": "n_data",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/02-架构与系统/数据契约与存储设计.md",
+      "x": 1260,
+      "y": -860,
+      "width": 300,
+      "height": 360
+    },
+    {
+      "id": "n_art",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/02-架构与系统/运行工件与记忆设计.md",
+      "x": 1600,
+      "y": -860,
+      "width": 300,
+      "height": 360
+    },
+    {
+      "id": "n_eval",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/02-架构与系统/Eval 可观测性与质量门禁.md",
+      "x": 1940,
+      "y": -860,
+      "width": 300,
+      "height": 360
+    },
+    {
+      "id": "n_rm",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/03-运行与实验/8 周技术落地路线图.md",
+      "x": -600,
+      "y": 700,
+      "width": 300,
+      "height": 320
+    },
+    {
+      "id": "n_safe",
+      "type": "file",
+      "file": "Spaces/1-Project/multiclaw/04-风险与治理/安全、权限与人工兜底.md",
+      "x": 620,
+      "y": 700,
+      "width": 300,
+      "height": 320
+    },
+    {
+      "id": "t1",
+      "type": "text",
+      "x": 960,
+      "y": 700,
+      "width": 360,
+      "height": 320,
+      "text": "## 第一阶段底线\n- 外发默认人审\n- 无证据不高优先\n- 每次运行必须可回放\n- 先闭环，再平台化"
+    },
+    {
+      "id": "t2",
+      "type": "text",
+      "x": 1260,
+      "y": -420,
+      "width": 920,
+      "height": 220,
+      "text": "## 底座关键点\n- schema/template/rubric 都版本化\n- run artifacts 既服务人审，也服务 eval\n- 指标要能定位到具体阶段，不只看最终回复率"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n_prd",
+      "fromSide": "right",
+      "toNode": "n_moc",
+      "toSide": "left",
+      "label": "技术展开"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n_moc",
+      "fromSide": "right",
+      "toNode": "n_p",
+      "toSide": "left",
+      "label": "原则"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n_p",
+      "fromSide": "right",
+      "toNode": "n_wf",
+      "toSide": "left",
+      "label": "约束主链路"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n_wf",
+      "fromSide": "right",
+      "toNode": "n_sys",
+      "toSide": "left",
+      "label": "系统分层"
+    },
+    {
+      "id": "e5",
+      "fromNode": "n_sys",
+      "fromSide": "right",
+      "toNode": "n_orch",
+      "toSide": "left",
+      "label": "控制面"
+    },
+    {
+      "id": "e6",
+      "fromNode": "n_orch",
+      "fromSide": "right",
+      "toNode": "n_search",
+      "toSide": "left",
+      "label": "调度搜索"
+    },
+    {
+      "id": "e7",
+      "fromNode": "n_search",
+      "fromSide": "right",
+      "toNode": "n_enrich",
+      "toSide": "left",
+      "label": "候选->画像"
+    },
+    {
+      "id": "e8",
+      "fromNode": "n_enrich",
+      "fromSide": "bottom",
+      "toNode": "n_out",
+      "toSide": "top",
+      "label": "高置信候选"
+    },
+    {
+      "id": "e9",
+      "fromNode": "n_out",
+      "fromSide": "right",
+      "toNode": "n_follow",
+      "toSide": "left",
+      "label": "发送后跟进"
+    },
+    {
+      "id": "e10",
+      "fromNode": "n_orch",
+      "fromSide": "right",
+      "toNode": "n_data",
+      "toSide": "left",
+      "label": "统一契约"
+    },
+    {
+      "id": "e11",
+      "fromNode": "n_data",
+      "fromSide": "right",
+      "toNode": "n_art",
+      "toSide": "left",
+      "label": "落地工件"
+    },
+    {
+      "id": "e12",
+      "fromNode": "n_art",
+      "fromSide": "right",
+      "toNode": "n_eval",
+      "toSide": "left",
+      "label": "驱动评估"
+    },
+    {
+      "id": "e13",
+      "fromNode": "n_eval",
+      "fromSide": "bottom",
+      "toNode": "n_rm",
+      "toSide": "top",
+      "label": "指导迭代"
+    },
+    {
+      "id": "e14",
+      "fromNode": "n_out",
+      "fromSide": "bottom",
+      "toNode": "n_safe",
+      "toSide": "top",
+      "label": "审批风控"
+    },
+    {
+      "id": "e15",
+      "fromNode": "n_follow",
+      "fromSide": "bottom",
+      "toNode": "n_safe",
+      "toSide": "top",
+      "label": "提醒边界"
+    },
+    {
+      "id": "e16",
+      "fromNode": "n_rm",
+      "fromSide": "right",
+      "toNode": "n_safe",
+      "toSide": "left",
+      "label": "执行受治理约束"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

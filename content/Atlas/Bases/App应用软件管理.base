@@ -1,0 +1,208 @@
+formulas:
+  image: icon
+  反向链接: file.backlinks.map(value.asFile())
+  评价new: if(note["max"], if(note["value"], note["value"], 0) + "/" + note["max"], " ")
+  icon行内显示: icon
+properties:
+  note.brew 安装命令:
+    displayName: brew安装命令
+  formula.评价new:
+    displayName: pp_progress-评价new
+views:
+  - type: cards
+    name: macos软件画廊视图
+    filters:
+      and:
+        - 分类.containsAny(link("macOS软件 - fileclass"))
+    groupBy:
+      property: 评价
+      direction: DESC
+    order:
+      - file.name
+      - 评价
+    sort:
+      - property: 评价
+        direction: DESC
+      - property: file.name
+        direction: ASC
+      - property: property.评价
+        direction: DESC
+      - property: property.订阅费用（年）
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.分类: 97
+    image: icon
+    imageAspectRatio: 1
+    imageFit: contain
+    cardSize: 170
+  - type: cards
+    name: macos软件画廊视图-3d果冻
+    filters:
+      and:
+        - 分类.containsAny(link("macOS软件 - fileclass"))
+        - '!note["icon-3d"].isEmpty()'
+    order: []
+    sort:
+      - property: 评价
+        direction: DESC
+      - property: file.name
+        direction: ASC
+      - property: property.评价
+        direction: DESC
+      - property: property.订阅费用（年）
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.分类: 97
+    image: note.icon-3d
+    imageAspectRatio: 1
+    imageFit: contain
+    cardSize: 290
+  - type: table
+    name: macos软件
+    filters:
+      and:
+        - 分类.containsAny(link("macOS软件 - fileclass"))
+    order:
+      - file.name
+      - formula.icon行内显示
+      - 评价
+      - file.ctime
+      - 设置同步
+      - 跨平台技术栈
+      - brew安装命令
+      - 是否有破解版
+      - 是否已重装
+      - 当前是否还在使用
+      - 是否已备份
+      - formula.反向链接
+    sort:
+      - property: formula.评价new
+        direction: DESC
+      - property: 评价
+        direction: DESC
+      - property: file.name
+        direction: ASC
+      - property: brew安装命令
+        direction: ASC
+      - property: 当前是否还在使用
+        direction: DESC
+    columnSize:
+      file.name: 173
+      formula.icon行内显示: 50
+      note.评价: 77
+      file.ctime: 119
+      note.设置同步: 150
+  - type: cards
+    name: windows软件画廊视图
+    filters:
+      and:
+        - 分类.containsAny(link("windows软件 - fileclass"))
+        - "!icon.isEmpty()"
+    groupBy:
+      property: 评价
+      direction: DESC
+    order:
+      - file
+      - 评价
+    sort:
+      - property: 评价
+        direction: DESC
+      - property: file.name
+        direction: ASC
+      - property: property.评价
+        direction: DESC
+      - property: property.当前状态
+        direction: ASC
+    image: icon
+    imageFit: contain
+  - type: table
+    name: window软件
+    filters:
+      and:
+        - 分类.containsAny(link("windows软件 - fileclass"))
+    order:
+      - file.name
+      - 评价
+      - file.ctime
+      - 设置同步
+      - 是否通过UniGetUI安装
+    sort:
+      - property: 评价
+        direction: DESC
+      - property: brew安装命令
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: brew 安装命令
+        direction: ASC
+    columnSize:
+      file.name: 121
+      note.评价: 85
+      file.ctime: 98
+      note.设置同步: 150
+      note.是否通过UniGetUI安装: 128
+  - type: cards
+    name: macos + win软件画廊视图
+    filters:
+      and:
+        - 分类.containsAll(link("macOS软件 - fileclass"), link("windows软件 - fileclass"))
+        - 跨平台技术栈.containsAny(link("Electron"))
+    order:
+      - file.name
+      - 评价
+      - 跨平台技术栈
+    columnSize:
+      file.name: 129
+    image: note.icon
+    imageFit: contain
+  - type: table
+    name: macos + win软件
+    filters:
+      and:
+        - 分类.containsAll(link("windows软件 - fileclass"), link("macOS软件 - fileclass"))
+        - 跨平台技术栈 == link("Electron")
+    order:
+      - file.name
+      - 分类
+      - 跨平台技术栈
+    columnSize:
+      file.name: 129
+      note.分类: 242
+  - type: cards
+    name: 安卓软件画廊视图
+    filters:
+      and:
+        - 分类.containsAny(link("安卓软件 - fileclass"))
+    image: icon
+  - type: table
+    name: 安卓软件
+    filters:
+      and:
+        - 分类.containsAny(link("安卓软件 - fileclass"))
+    order:
+      - file.name
+      - 评价
+      - file.ctime
+      - 分类
+    sort:
+      - property: 评价
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 108
+      file.ctime: 115
+  - type: table
+    name: 命令行工具
+    filters:
+      and:
+        - 分类.containsAny(link("linux命令 - fileclass"), link("windows命令行 - fileclass"))
+    order:
+      - file.name
+      - aliases
+    columnSize:
+      file.name: 129

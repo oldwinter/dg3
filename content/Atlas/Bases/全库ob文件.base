@@ -1,0 +1,121 @@
+filters:
+  and:
+    - file.ext.containsAny("md", "canvas", "base")
+formulas:
+  fo: ""
+  Untitled: file.links.map(value.asFile())
+  反链数量: ""
+  Untitled 2: file.backlinks.length
+properties:
+  formula.fo:
+    displayName: backlinks
+  formula.Untitled:
+    displayName: 出链（排除空文件）
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.size
+      - aliases
+      - file.ext
+      - file.backlinks
+      - file.links
+      - formula.Untitled
+    sort:
+      - property: formula.反链数量
+        direction: DESC
+      - property: file.size
+        direction: DESC
+      - property: file.ext
+        direction: ASC
+    columnSize:
+      file.name: 454
+      note.aliases: 92
+      file.backlinks: 221
+  - type: table
+    name: 没有反链的孤立文件
+    order:
+      - file.name
+      - file.size
+      - aliases
+      - file.ext
+      - file.backlinks
+      - file.links
+    sort:
+      - property: file.size
+        direction: DESC
+      - property: file.ext
+        direction: ASC
+    columnSize:
+      file.name: 454
+      note.aliases: 92
+      file.backlinks: 221
+  - type: table
+    name: 没有反链的孤立文件
+    order:
+      - file.name
+      - file.size
+      - aliases
+      - file.ext
+      - file.backlinks
+      - file.links
+    sort:
+      - property: file.size
+        direction: DESC
+      - property: file.ext
+        direction: ASC
+    columnSize:
+      file.name: 454
+      note.aliases: 92
+      file.backlinks: 221
+  - type: table
+    name: 没有出链和反链的完全孤立文件
+    filters:
+      and:
+        - file.links.isEmpty()
+    order:
+      - file.name
+      - file.size
+      - aliases
+      - file.ext
+      - file.backlinks
+      - formula.fo
+      - file.links
+    sort:
+      - property: formula.fo
+        direction: ASC
+      - property: file.size
+        direction: DESC
+      - property: file.ext
+        direction: ASC
+    columnSize:
+      file.name: 454
+      note.aliases: 92
+      file.backlinks: 221
+      formula.fo: 212
+  - type: table
+    name: 没有出链和反链的完全孤立文件
+    filters:
+      and:
+        - file.links.isEmpty()
+    order:
+      - file.name
+      - file.size
+      - aliases
+      - file.ext
+      - file.backlinks
+      - formula.fo
+      - file.links
+    sort:
+      - property: formula.fo
+        direction: ASC
+      - property: file.size
+        direction: DESC
+      - property: file.ext
+        direction: ASC
+    columnSize:
+      file.name: 454
+      note.aliases: 92
+      file.backlinks: 221
+      formula.fo: 212

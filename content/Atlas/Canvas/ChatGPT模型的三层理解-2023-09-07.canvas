@@ -1,0 +1,177 @@
+{
+	"edges":[
+		{
+			"id":"edge_title_to_train",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"node_title",
+			"fromSide":"bottom",
+			"toNode":"label_train",
+			"toSide":"top"
+		},
+		{
+			"id":"edge_title_to_impl",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"node_title",
+			"fromSide":"bottom",
+			"toNode":"label_impl",
+			"toSide":"top"
+		},
+		{
+			"id":"edge_title_to_history",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"node_title",
+			"fromSide":"bottom",
+			"toNode":"label_history",
+			"toSide":"top"
+		},
+		{
+			"id":"edge_title_to_last",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"node_title",
+			"fromSide":"bottom",
+			"toNode":"label_last",
+			"toSide":"top"
+		},
+		{"id":"edge_title_to_source_file","fromNode":"node_title","fromSide":"left","toNode":"node_source_file","toSide":"right"},
+		{"id":"edge_title_to_original","fromNode":"node_title","fromSide":"left","toNode":"node_original_link","toSide":"right"},
+		{
+			"id":"edge_train_label_to_11",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"label_train",
+			"fromSide":"bottom",
+			"toNode":"node_11_pretrain",
+			"toSide":"top"
+		},
+		{
+			"id":"edge_train_label_to_12",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"label_train",
+			"fromSide":"bottom",
+			"toNode":"node_12_sft",
+			"toSide":"top"
+		},
+		{
+			"id":"edge_train_label_to_13",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"label_train",
+			"fromSide":"bottom",
+			"toNode":"node_13_rm",
+			"toSide":"top"
+		},
+		{
+			"id":"edge_train_label_to_14",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"label_train",
+			"fromSide":"bottom",
+			"toNode":"node_14_rlhf",
+			"toSide":"top"
+		},
+		{"id":"edge_11_to_12","fromNode":"node_11_pretrain","fromSide":"right","toNode":"node_12_sft","toSide":"left","label":"在此基础上微调"},
+		{"id":"edge_12_to_13","fromNode":"node_12_sft","fromSide":"bottom","toNode":"node_13_rm","toSide":"top","label":"偏好建模"},
+		{"id":"edge_13_to_14","fromNode":"node_13_rm","fromSide":"right","toNode":"node_14_rlhf","toSide":"left","label":"作为奖励"},
+		{"id":"edge_impl_label_to_arch","fromNode":"label_impl","fromSide":"bottom","toNode":"node_impl_arch","toSide":"top"},
+		{"id":"edge_impl_label_to_data","fromNode":"label_impl","fromSide":"bottom","toNode":"node_impl_data","toSide":"top"},
+		{"id":"edge_impl_label_to_sft","fromNode":"label_impl","fromSide":"bottom","toNode":"node_impl_sft","toSide":"top"},
+		{"id":"edge_impl_label_to_rm","fromNode":"label_impl","fromSide":"bottom","toNode":"node_impl_rm","toSide":"top"},
+		{"id":"edge_impl_label_to_rlhf","fromNode":"label_impl","fromSide":"bottom","toNode":"node_impl_rlhf","toSide":"top"},
+		{"id":"edge_impl_label_to_safety","fromNode":"label_impl","fromSide":"bottom","toNode":"node_impl_safety","toSide":"top"},
+		{"id":"edge_history_label_to_gpt1","fromNode":"label_history","fromSide":"bottom","toNode":"node_hist_gpt1","toSide":"top"},
+		{"id":"edge_history_label_to_gpt2","fromNode":"label_history","fromSide":"bottom","toNode":"node_hist_gpt2","toSide":"top"},
+		{"id":"edge_history_label_to_gpt3","fromNode":"label_history","fromSide":"bottom","toNode":"node_hist_gpt3","toSide":"top"},
+		{"id":"edge_history_label_to_instr","fromNode":"label_history","fromSide":"bottom","toNode":"node_hist_instruction","toSide":"top"},
+		{"id":"edge_history_label_to_igpt","fromNode":"label_history","fromSide":"bottom","toNode":"node_hist_instructgpt","toSide":"top"},
+		{"id":"edge_history_label_to_cgpt","fromNode":"label_history","fromSide":"bottom","toNode":"node_hist_chatgpt","toSide":"top"},
+		{
+			"id":"edge_history_label_to_ziegler",
+			"styleAttributes":{"path":"dotted"},
+			"fromNode":"label_history",
+			"fromSide":"bottom",
+			"toNode":"node_link_ziegler",
+			"toSide":"top"
+		},
+		{
+			"id":"edge_history_label_to_stiennon",
+			"styleAttributes":{"path":"dotted"},
+			"fromNode":"label_history",
+			"fromSide":"bottom",
+			"toNode":"node_link_stiennon",
+			"toSide":"top"
+		},
+		{"id":"edge_last_label_to_safety","fromNode":"label_last","fromSide":"bottom","toNode":"node_final_safety","toSide":"top"},
+		{"id":"edge_last_label_to_cost","fromNode":"label_last","fromSide":"bottom","toNode":"node_final_cost","toSide":"top"}
+	],
+	"nodes":[
+		{"id":"group_last","type":"group","x":-600,"y":120,"width":2000,"height":460,"label":"写在最后"},
+		{"id":"group_impl","type":"group","x":400,"y":-560,"width":1000,"height":580,"label":"第二层：模型实现"},
+		{"id":"group_history","type":"group","x":1400,"y":-560,"width":1000,"height":580,"label":"第三层：发展脉络"},
+		{"id":"group_train","type":"group","x":-600,"y":-560,"width":1000,"height":580,"label":"第一层：训练流程"},
+		{
+			"id":"label_train",
+			"type":"text",
+			"text":"训练流程（概览）",
+			"styleAttributes":{"border":"invisible","textAlign":"center"},
+			"x":-300,
+			"y":-520,
+			"width":280,
+			"height":40
+		},
+		{"id":"node_title","type":"text","text":"## ChatGPT模型的三层理解\n\n[[Sources/CuboxSync/ChatGPT模型的三层理解 - 张浩在路上-2023-09-07.md]]","x":-200,"y":-800,"width":520,"height":120},
+		{"id":"node_11_pretrain","type":"text","text":"### 1.1 文字接龙（预训练）\n- 目标：预测下一个词/子词\n- 数据：海量未标注文本\n- 输出：概率分布，多样且不稳定\n- 问题：如何引导更有用的输出","x":-560,"y":-480,"width":460,"height":180},
+		{"id":"node_12_sft","type":"text","text":"### 1.2 SFT：人类示范微调\n- 人类编写指令-答案对\n- 让模型学习偏好与风格\n- 输出更聚焦、更有用","x":-60,"y":-480,"width":460,"height":160},
+		{"id":"node_source_file","type":"file","file":"Sources/CuboxSync/ChatGPT模型的三层理解 - 张浩在路上-2023-09-07.md","x":-840,"y":-840,"width":300,"height":180},
+		{"id":"node_original_link","type":"link","url":"https://imzhanghao.com/2023/02/24/chatgpt/","x":-840,"y":-620,"width":300,"height":60},
+		{
+			"id":"label_impl",
+			"type":"text",
+			"text":"模型实现（关键细节）",
+			"styleAttributes":{"border":"invisible","textAlign":"center"},
+			"x":700,
+			"y":-520,
+			"width":280,
+			"height":40
+		},
+		{"id":"node_impl_arch","type":"text","text":"### 架构要点\n- Transformer（decoder-only）\n- 位置编码/注意力机制\n- 大规模分布式训练","x":440,"y":-480,"width":460,"height":160},
+		{"id":"node_impl_sft","type":"text","text":"### SFT 细节\n- 高质量指令-响应集\n- 交叉熵微调\n- 提示模板化","x":440,"y":-300,"width":460,"height":150},
+		{"id":"node_impl_rlhf","type":"text","text":"### 强化学习细节\n- PPO + KL 惩罚\n- 探索与稳定性的权衡\n- 采样-评价-更新流水线","x":440,"y":-120,"width":460,"height":160},
+		{"id":"node_final_safety","type":"text","text":"### 4.1 安全\n- 微软 Tay、FB 标签事故\n- 语言模型灵活但风险更高\n- 护栏与红队至关重要","x":-560,"y":200,"width":460,"height":160},
+		{"id":"node_14_rlhf","type":"text","text":"### 1.4 RLHF（PPO）\n- 策略：语言模型\n- 奖励：RM − KL(约束偏离SFT)\n- 循环：采样→打分→更新\n- 目标：更对齐、更稳健","x":-60,"y":-260,"width":460,"height":180},
+		{"id":"node_13_rm","type":"text","text":"### 1.3 奖励模型（RM）\n- 人类对多个候选排序\n- 学习偏好评分函数\n- 高分>低分，捕捉质量差异","x":-560,"y":-260,"width":460,"height":160},
+		{
+			"id":"label_last",
+			"type":"text",
+			"text":"写在最后",
+			"styleAttributes":{"border":"invisible","textAlign":"center"},
+			"x":-300,
+			"y":160,
+			"width":280,
+			"height":40
+		},
+		{"id":"node_final_cost","type":"text","text":"### 4.2 成本\n- 数据：GPT‑3 级别TB量级\n- 算力：数千 PF‑days\n- 训练/推理成本巨大，单位交互有成本","x":-60,"y":200,"width":800,"height":200},
+		{"id":"node_train_image","type":"link","url":"https://oss.imzhanghao.com/img/202302240527749.png","x":40,"y":300,"width":400,"height":220},
+		{"id":"node_hist_gpt1","type":"text","text":"### GPT‑1（2018）\n- 无监督预训练 + 监督微调\n- 提出预训练迁移范式","x":1440,"y":-480,"width":460,"height":140},
+		{"id":"node_hist_gpt3","type":"text","text":"### GPT‑3（2020）\n- 175B 参数\n- few‑shot / In‑context","x":1440,"y":-300,"width":460,"height":140},
+		{"id":"node_hist_instructgpt","type":"text","text":"### InstructGPT（2022）\n- 指令学习 + 人类反馈\n- 对齐至人类偏好","x":1440,"y":-120,"width":460,"height":140},
+		{
+			"id":"label_history",
+			"type":"text",
+			"text":"发展脉络（演进）",
+			"styleAttributes":{"border":"invisible","textAlign":"center"},
+			"x":1700,
+			"y":-520,
+			"width":280,
+			"height":40
+		},
+		{"id":"node_hist_gpt2","type":"text","text":"### GPT‑2（2019）\n- 更大规模与多任务\n- 强 zero‑shot 能力","x":1940,"y":-480,"width":460,"height":140},
+		{"id":"node_hist_instruction","type":"text","text":"### Instruction Tuning（FLAN等）\n- 多任务指令微调\n- zero‑shot 提升显著","x":1940,"y":-300,"width":460,"height":140},
+		{"id":"node_hist_chatgpt","type":"text","text":"### ChatGPT\n- 训练方式与InstructGPT一致\n- 数据采集与交互形态差异","x":1940,"y":-120,"width":460,"height":140},
+		{"id":"node_link_ziegler","type":"link","url":"https://arxiv.org/abs/1909.08593","x":1440,"y":60,"width":460,"height":501},
+		{"id":"node_link_stiennon","type":"link","url":"https://arxiv.org/abs/2009.01325","x":1940,"y":60,"width":460,"height":501},
+		{"id":"node_impl_data","type":"text","text":"### 数据与分词\n- Web/书籍/代码混合数据\n- BPE/Tokenizer\n- 清洗去噪与去重","x":940,"y":-480,"width":460,"height":160},
+		{"id":"node_impl_rm","type":"text","text":"### RM 细节\n- Pairwise 排序/BT模型\n- 负对数似然目标\n- 质量信号更稳定","x":940,"y":-300,"width":460,"height":150},
+		{"id":"node_impl_safety","type":"text","text":"### 安全与对齐\n- 毒性/偏见过滤\n- 拒答/护栏策略\n- 系统提示与政策","x":940,"y":-120,"width":460,"height":160}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

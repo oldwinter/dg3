@@ -1,17 +1,18 @@
 ---
-{"publish":true,"permalink":"/Sources/CuboxSync/「内容农场」属实在玷污 Google 搜索结果 - ChrAlpha's Blog-2022-05-31.md","created":"2025-03-28T23:56:57.625+08:00","modified":"2025-08-15T22:00:01.732+08:00","cssclasses":""}
+publish: true
+permalink: /Sources/CuboxSync/「内容农场」属实在玷污 Google 搜索结果 - ChrAlpha's Blog-2022-05-31.md
+created: 2025-03-28T23:56:57.625+08:00
+modified: 2025-08-15T22:00:01.732+08:00
 ---
-
 
 # 「内容农场」属实在玷污 Google 搜索结果 | ChrAlpha's Blog
 
 「内容农场」不仅不愿自己耕种作物，还窃取他人果实，最终展现内容的质量往往不敢恭维，甚至内容都不堪入目。这种网站属实是毫无价值却又恶心至极。 - ChrAlpha -- ChrAlpha's Blog
 
-[Read in Cubox](https://cubox.pro/my/card?id=6931199829393539348)  
-[Read Original](https://blog.ichr.me/post/evil-content-farm/)  
+[Read in Cubox](https://cubox.pro/my/card?id=6931199829393539348)\
+[Read Original](https://blog.ichr.me/post/evil-content-farm/)
 
 ---
-
 
 ---
 
@@ -29,11 +30,12 @@
 
 无独有偶，曾经臭名昭著的「兰州养生网」，再到最近简直疯狂的「小XXX网」。V2EX 论坛上就在这周冒出许多吐槽的帖子，据说收集到的分身域名有多达 2500 个，后续又更新到 5 千、6 千个，丧心病狂。
 
-![](https://cubox.pro/c/filters:no_upscale()?imageUrl=https%3A%2F%2Fnpm.elemecdn.com%2Fhlg%400.0.2%2Fcontent-farm.jpg%3Fq%3D100)
+![](https://cubox.pro/c/filters:no_upscale\(\)?imageUrl=https%3A%2F%2Fnpm.elemecdn.com%2Fhlg%400.0.2%2Fcontent-farm.jpg%3Fq%3D100)
 
 ## 它叫「内容农场」
 
 这种充斥着劣质信息的采集站，有个专门的名字------内容农场，[Wikipedia 就有一个词条专门介绍它](https://zh.wikipedia.org/zh-cn/%E5%85%A7%E5%AE%B9%E8%BE%B2%E5%A0%B4)。
+
 > 「内容农场」是指为了牟取广告费等商业利益或出于控制舆论、带风向等特殊目的，快速生产大量网络文章来吸引流量的网站。此类网站通常找不到作者、管理者、网站负责人，也不会主动管理产出的内容，对侵权或错误内容投诉的处理也很消极。其产出内容多半都是**缺乏原创性** 且**真实性无法保证** 的内容，且有极高比例是**盗用、盗译** 自他人的原创图文，或由非专业写手**胡乱拼凑** 网络文章而来，因而多半**缺乏可靠来源、质量低劣、不具参考价值、传播误导讯息**，也经常掺杂大量广告或恶意程序。
 
 这些网站偏偏抓住搜索引擎无法自行衡量内容价值，单用及其频繁的更新速度来套取搜索引擎的青睐并给到一个比较高的权重，甚至不用太关注 SEO，只要更新频繁 Google 自己就会主动会来爬取。由于真人一眼就能看出这是垃圾桶，所以内容农场也不会自讨没趣通过社交媒体转播，而单单扣住搜索引擎获取流量并走到极致。而且这种行为是有利可图的，身处流量时代，流量变现的门槛实在不高，接入广告平台就可以躺着收钱了。
@@ -42,8 +44,8 @@
 
 如果你搜索内容所在的领域恰有大量爱好者、从业者自发聚集并创建了领域内的论坛、博客等，被采集的概率也会更大。比如程序员社区，各种机翻 Stackoverflow、爬 GitHub 的 gitMemory 等网站层出不穷，许多「面向 Google 编程」的 Coder 没有太多精力甄别便为其送上流量。某些互联网大厂还带头干过这种事。
 
-其实不仅中文搜索结果被下毒，其它语言的搜索结果也会时不时冒出内容农场来。但是开放精神不同程度缺失的中文互联网，各大公司迫切地将流量盘在一个个信息孤岛内。比如说公众号，不仅禁止搜索引擎爬取、不提供 RSS 输出、不允许文章聚合工具整理。想要发现更多优秀的公众号？请在社群中随缘相遇吧。对全局检索、发现新内容极不友好。  
-而事实上，公众号还是有不少不错的内容的，既然搜索引擎直接检索是检索不到的，那用点别的手段骗过公众号拿到内容，然后再整理放到一个网站开放给谷歌检索，补齐公众号文章本应从搜索引擎进来的这部分流量，然后借这些流量变现。  
+其实不仅中文搜索结果被下毒，其它语言的搜索结果也会时不时冒出内容农场来。但是开放精神不同程度缺失的中文互联网，各大公司迫切地将流量盘在一个个信息孤岛内。比如说公众号，不仅禁止搜索引擎爬取、不提供 RSS 输出、不允许文章聚合工具整理。想要发现更多优秀的公众号？请在社群中随缘相遇吧。对全局检索、发现新内容极不友好。\
+而事实上，公众号还是有不少不错的内容的，既然搜索引擎直接检索是检索不到的，那用点别的手段骗过公众号拿到内容，然后再整理放到一个网站开放给谷歌检索，补齐公众号文章本应从搜索引擎进来的这部分流量，然后借这些流量变现。\
 这类想法甚至还有点自然。所以，从某种程度上来说，**国内互联网生态封闭的特点倒是在给内容农场筑势**。
 
 除了往你的搜索结果中倾倒垃圾内容，这种网站有时甚至不满足于你贡献的点击流量，还在页面中植入恶意代码......它们百害而无一利。
@@ -64,7 +66,7 @@
 
 同时，你也可以点击上面的「显示」来暂时显示已经屏蔽的域名下的条目，这些条目还会被显眼的颜色标注。
 
-![](https://cubox.pro/c/filters:no_upscale()?imageUrl=https%3A%2F%2Fnpm.elemecdn.com%2Fhlg%400.0.2%2Fublacklist-temp-show.jpg%3Fq%3D100) ![](https://image.cubox.pro/article/20220712151400/88087?imageMogr2/quality/90/ignore-error/1)
+![](https://cubox.pro/c/filters:no_upscale\(\)?imageUrl=https%3A%2F%2Fnpm.elemecdn.com%2Fhlg%400.0.2%2Fublacklist-temp-show.jpg%3Fq%3D100) ![](https://image.cubox.pro/article/20220712151400/88087?imageMogr2/quality/90/ignore-error/1)
 
 加入你有多态设备，也无需在每台设备中配置一次，可以在插件选项中设置同步选项。
 
@@ -76,9 +78,9 @@
 
 关于规则订阅，我暂且只推荐几个，欢迎各位路过大佬评论给出更多。
 
-* [中文搜索结果黑名单](https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist)：一个维护了 4 年的规则，截止本文写作时 GitHub 已拥有 4.4k Star。
-* [「小 X 知识百科网」清单](https://github.com/dallaslu/penzai-list)：针对 `g.penzai.com` 及其数千个分身域名的规则，可以用于处理最近突然爆发的「小XXX网」。
-* 针对 [机翻 Stack Overflow](https://github.com/arosh/ublacklist-stackoverflow-translation) 和 [GitHub](https://github.com/arosh/ublacklist-github-translation) 采集站的规则。
+- [中文搜索结果黑名单](https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist)：一个维护了 4 年的规则，截止本文写作时 GitHub 已拥有 4.4k Star。
+- [「小 X 知识百科网」清单](https://github.com/dallaslu/penzai-list)：针对 `g.penzai.com` 及其数千个分身域名的规则，可以用于处理最近突然爆发的「小XXX网」。
+- 针对 [机翻 Stack Overflow](https://github.com/arosh/ublacklist-stackoverflow-translation) 和 [GitHub](https://github.com/arosh/ublacklist-github-translation) 采集站的规则。
 
 这种方案的缺点也很明显，除了 iOS 15 的 Safari 目前已经支持插件，其它移动端主流浏览器几乎都**不支持插件** ，在移动设备中搜索可能还是只能忍受劣质内容充斥首页。哦不，[Firefox](https://www.mozilla.org/zh-CN/firefox/browsers/mobile/android/)、[Kiwi Browser](https://kiwibrowser.com/) 等浏览器支持安装扩展，如果你舍得抛弃 Chrome 及其背后的谷歌生态，拥抱可能割裂的移动端浏览器体验，倒也不失为一种选择。
 
@@ -113,6 +115,7 @@
 有人说，要养成使用英文搜索的习惯。诚然，编程上遇到问题我确实也更倾向于使用英文搜索，那很大程度上也是被 CSDN、阿里云社区、腾讯云社区逼的。而如今，随便搜个饮食、医疗相关的词条都有许多内容农场「从善如登，从恶如崩」般冒出。受限于地方差异，中文下对饮食的理解、描述很难被其它语言中的**替代**------下位替代都称不上。难道这方面的内容也要养成使用英文搜索的习惯？「开水白菜」怎么用英文说？
 
 每次中文环境下出了问题，总是自然而然地切换到别的语言。我不知道这算不算一种背叛，但或多或少算得上逃避。从一开始互联网上完全没有中文内容，竭尽一代人努力后让中文成为互联网上第二多内容的载体，而如今却又不得不纷纷逃离。兴衰更迭，不禁唏嘘。
+
 > （简体）中文搜索会好起来吗？
 
 不知道，但希望如此。

@@ -1,0 +1,111 @@
+filters:
+  and: []
+views:
+  - type: table
+    name: 最近更新（全库）
+    order:
+      - file.name
+      - file.folder
+      - file.mtime
+      - status
+      - publish
+    sort:
+      - property: status
+        direction: ASC
+      - property: file.mtime
+        direction: DESC
+    columnSize: {}
+  - type: table
+    name: 发布中心｜已标记发布（publish=true）
+    filters:
+      and:
+        - publish
+    order:
+      - file.name
+      - file.folder
+      - publish
+      - status
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 发布中心｜候选发布（status 包含 review）
+    filters:
+      and:
+        - status.contains("review")
+    order:
+      - file.name
+      - file.folder
+      - status
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 清理面板｜缺少 type 属性
+    filters:
+      and:
+        - type.isEmpty()
+    order:
+      - file.name
+      - file.folder
+      - type
+  - type: table
+    name: 清理面板｜publish=true 且 status 为空
+    filters:
+      and:
+        - publish
+        - status.isEmpty()
+    order:
+      - file.name
+      - file.folder
+      - publish
+      - status
+  - type: table
+    name: 健康面板｜Cards 最近更新
+    filters:
+      and:
+        - file.inFolder("Cards")
+    order:
+      - file.name
+      - file.mtime
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 健康面板｜Spaces/1-Project 最近更新
+    filters:
+      and:
+        - file.inFolder("Spaces/1-Project")
+    order:
+      - file.name
+      - file.mtime
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 健康面板｜Atlas/MOCs 最近更新
+    filters:
+      and:
+        - file.inFolder("Atlas/MOCs")
+    order:
+      - file.name
+      - file.mtime
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: dynamic-views-masonry
+    name: View
+    id: 1754592832541-q9aexc-View
+  - type: timeline
+    name: View 2
+    filters:
+      and:
+        - file.path == "Clippings"
+    startDate: note.created_date
+    endDate: note.updated_date
+    timeScale: quarter

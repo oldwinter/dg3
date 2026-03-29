@@ -1,0 +1,7 @@
+filters:
+  and:
+    - '!file.inFolder("Spaces/1-Project/拓扑灵犀")'
+    - file.ctime > "2025-09-18T23:08:00"
+views:
+  - type: table
+    name: Table

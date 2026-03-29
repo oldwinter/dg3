@@ -1,0 +1,42 @@
+filters:
+  and: []
+views:
+  - type: table
+    name: 已标记发布（publish=true）
+    filters:
+      and:
+        - publish
+    order:
+      - file.name
+      - file.folder
+      - publish
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    columnSize:
+      note.status: 152
+  - type: table
+    name: 候选发布（status 包含 review）
+    filters:
+      and:
+        - status.contains("review")
+    order:
+      - file.name
+      - file.folder
+      - status
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 最近 7 天更新
+    order:
+      - file.name
+      - file.folder
+      - file.mtime
+      - status
+      - publish
+    sort:
+      - property: file.mtime
+        direction: DESC

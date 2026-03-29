@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/Cards/DOMS.md","aliases":"运动后延迟性肌肉疼痛","title":"DOMS","created":"2022-09-04","modified":"2023-03-14","cssclasses":""}
+publish: true
+permalink: /Cards/DOMS.md
+aliases:
+  - 运动后延迟性肌肉疼痛
+title: DOMS
+created: 2022-09-04
+modified: 2023-03-14
 ---
-
 
 delayed onset muscle soreness
 

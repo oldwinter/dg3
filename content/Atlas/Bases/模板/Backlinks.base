@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.hasLink(this)
+properties:
+  property.category:
+    displayName: Category
+  file.name:
+    displayName: Name
+  property.created:
+    displayName: Created
+views:
+  - type: table
+    name: Backlinks
+    order:
+      - file.name
+      - category
+      - created
+    columnSize:
+      file.name: 183

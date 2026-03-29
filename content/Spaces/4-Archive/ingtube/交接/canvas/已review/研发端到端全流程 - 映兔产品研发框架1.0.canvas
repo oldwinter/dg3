@@ -1,0 +1,611 @@
+{
+  "edges": [
+    {
+      "fromNode": "6b4fc454a1ba1df8",
+      "fromSide": "bottom",
+      "id": "57a244b626d208c7",
+      "toNode": "1d71b18b9e2232d2",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "1d71b18b9e2232d2",
+      "fromSide": "right",
+      "id": "a9b4be1a60cd1e8f",
+      "toNode": "dfbd80c4e4f8a138",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "b3bab578d6541a6d",
+      "fromSide": "bottom",
+      "id": "9e9d304d383bb7c5",
+      "toNode": "0d960be6981e77e9",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "0d960be6981e77e9",
+      "fromSide": "right",
+      "id": "580858f4facec4ba",
+      "toNode": "9035a110db37a491",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "08cb68ddfbdd6397",
+      "fromSide": "right",
+      "id": "8b24255c2e272b63",
+      "toNode": "6b4fc454a1ba1df8",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6b4fc454a1ba1df8",
+      "fromSide": "right",
+      "id": "4fa725b75ddeeaf1",
+      "toNode": "dfbd80c4e4f8a138",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "dfbd80c4e4f8a138",
+      "fromSide": "right",
+      "id": "acaf814916bd8810",
+      "toNode": "b3bab578d6541a6d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "b3bab578d6541a6d",
+      "fromSide": "right",
+      "id": "ea0fe6dc82dde0d3",
+      "toNode": "9035a110db37a491",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9035a110db37a491",
+      "fromSide": "right",
+      "id": "0a34765f8982846a",
+      "toNode": "16f76028b0e5ef7c",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "94099288ec7216ae",
+      "fromSide": "bottom",
+      "id": "c3c70ee2ede013f9",
+      "toNode": "2db0a1a0b09c4184",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "08cb68ddfbdd6397",
+      "fromSide": "bottom",
+      "id": "677bc2487032ab65",
+      "toNode": "08d64791c3fa2be4",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "1bfd3f2e25f26341",
+      "fromSide": "top",
+      "id": "e888ade891493f3d",
+      "toNode": "9035a110db37a491",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "94099288ec7216ae",
+      "fromSide": "right",
+      "id": "44e3d90d35dbea0e",
+      "toNode": "779a691515cba2fe",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "779a691515cba2fe",
+      "fromSide": "right",
+      "id": "93dc135abff34173",
+      "toNode": "08cb68ddfbdd6397",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "86753584dd4f39fe",
+      "fromSide": "top",
+      "id": "1da172658d0177b6",
+      "toNode": "6b4fc454a1ba1df8",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "c2486816b6bba08f",
+      "fromSide": "top",
+      "id": "5fe9886324225236",
+      "toNode": "dfbd80c4e4f8a138",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "3255242079145cda",
+      "fromSide": "top",
+      "id": "a67ed284f58123b3",
+      "toNode": "b3bab578d6541a6d",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "69f61fbb67a65ab4",
+      "fromSide": "top",
+      "id": "4f194167f5a6f204",
+      "toNode": "9035a110db37a491",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "895902c2470f62cf",
+      "fromSide": "top",
+      "id": "0c07fa55717cae89",
+      "toNode": "08cb68ddfbdd6397",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "d62d5f40c79f7450",
+      "fromSide": "top",
+      "id": "8a482285af2385c6",
+      "toNode": "94099288ec7216ae",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "6f030ca974836b74",
+      "fromSide": "top",
+      "id": "073d434cbe4aedb2",
+      "toNode": "94099288ec7216ae",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "6d66ef06396dfc3e",
+      "fromSide": "top",
+      "id": "5aaf5844703b6f30",
+      "toNode": "dfbd80c4e4f8a138",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "163e8d91d2a21c8d",
+      "fromSide": "bottom",
+      "id": "928644aef2ee1258",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "toNode": "3b1b3330de3250fc",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "163e8d91d2a21c8d",
+      "fromSide": "right",
+      "id": "341b325cc3c14f3e",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "toNode": "080c6236eecfa6d3",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "080c6236eecfa6d3",
+      "fromSide": "right",
+      "id": "1c9f823701220fc7",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "toNode": "b9863c5848fdb43f",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "color": "1",
+      "height": 2400,
+      "id": "aae9f242a98d98b3",
+      "label": "实际执行案例 - 6.19真人露脸",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 3320,
+      "x": -2280,
+      "y": 80
+    },
+    {
+      "color": "5",
+      "height": 2400,
+      "id": "c1a8521832c531e2",
+      "label": "实际执行案例 - 6.21 返利升级",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 2720,
+      "x": -2160,
+      "y": 13840
+    },
+    {
+      "height": 1080,
+      "id": "ee772dc72339a2c1",
+      "label": "映兔产品研发框架1.0",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 3320,
+      "x": -2280,
+      "y": -1120
+    },
+    {
+      "color": "1",
+      "height": 154,
+      "id": "46efdc417231df3c",
+      "label": "关键节点输出材料",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 2720,
+      "x": -2160,
+      "y": -534
+    },
+    {
+      "color": "4",
+      "height": 140,
+      "id": "d76185051c0d88bc",
+      "label": "软件研发端到端流程",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 2720,
+      "x": -2160,
+      "y": -780
+    },
+    {
+      "color": "3",
+      "height": 140,
+      "id": "07b459e3776ca305",
+      "label": "关键动作或模块",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 2720,
+      "x": -2160,
+      "y": -260
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/真人露脸 - 需求串讲.md",
+      "height": 720,
+      "id": "3b1b3330de3250fc",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 705,
+      "x": -2240,
+      "y": 1360
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/真人露脸 - 风险点管理.md",
+      "height": 720,
+      "id": "697a6e5bd2beb61b",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 825,
+      "x": -1387,
+      "y": 1360
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/真人露脸 - 测试用例.md",
+      "height": 720,
+      "id": "f8073235bfa715ea",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 800,
+      "x": -440,
+      "y": 1360
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "86753584dd4f39fe",
+      "styleAttributes": {},
+      "text": "## Code Review",
+      "type": "text",
+      "width": 320,
+      "x": -1415,
+      "y": -240
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "c2486816b6bba08f",
+      "styleAttributes": {},
+      "text": "## [[CICD]]",
+      "type": "text",
+      "width": 320,
+      "x": -1030,
+      "y": -240
+    },
+    {
+      "color": "5",
+      "height": 100,
+      "id": "895902c2470f62cf",
+      "styleAttributes": {},
+      "text": "## 风险管理",
+      "type": "text",
+      "width": 320,
+      "x": -1760,
+      "y": -240
+    },
+    {
+      "color": "5",
+      "height": 100,
+      "id": "6f030ca974836b74",
+      "styleAttributes": {},
+      "text": "## 需求串讲",
+      "type": "text",
+      "width": 320,
+      "x": -2120,
+      "y": -240
+    },
+    {
+      "color": "5",
+      "height": 100,
+      "id": "3255242079145cda",
+      "styleAttributes": {},
+      "text": "## 用户or产品验收测试（UAT）\n纯软件的话，可能没有什么必要性",
+      "type": "text",
+      "width": 420,
+      "x": -260,
+      "y": -240
+    },
+    {
+      "height": 100,
+      "id": "69f61fbb67a65ab4",
+      "styleAttributes": {},
+      "text": "## 监控、日志、告警",
+      "type": "text",
+      "width": 320,
+      "x": 220,
+      "y": -240
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/真人露脸 - 需求分析.md",
+      "height": 800,
+      "id": "080c6236eecfa6d3",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 825,
+      "x": -1387,
+      "y": 280
+    },
+    {
+      "height": 800,
+      "id": "163e8d91d2a21c8d",
+      "styleAttributes": {},
+      "type": "link",
+      "url": "https://lopegz.axshare.com/#id=1zhy89&p=%E6%80%BB%E4%BD%93%E6%A1%86%E6%9E%B6&g=1",
+      "width": 705,
+      "x": -2240,
+      "y": 280
+    },
+    {
+      "color": "5",
+      "height": 100,
+      "id": "e318f57db591607e",
+      "styleAttributes": {},
+      "text": "## 每周过进展和风险",
+      "type": "text",
+      "width": 350,
+      "x": -670,
+      "y": -240
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/真人露脸 - 技术方案.md",
+      "height": 800,
+      "id": "b9863c5848fdb43f",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 800,
+      "x": -440,
+      "y": 280
+    },
+    {
+      "height": 100,
+      "id": "9e2f357856c39d72",
+      "styleAttributes": {},
+      "text": "## 文档索引维护",
+      "type": "text",
+      "width": 320,
+      "x": 640,
+      "y": -457
+    },
+    {
+      "color": "1",
+      "height": 100,
+      "id": "08d64791c3fa2be4",
+      "styleAttributes": {},
+      "text": "## 技术方案细节\n工作量预估、风险点评估",
+      "type": "text",
+      "width": 280,
+      "x": -1440,
+      "y": -507
+    },
+    {
+      "color": "5",
+      "height": 100,
+      "id": "d62d5f40c79f7450",
+      "styleAttributes": {},
+      "text": "## PRD文档",
+      "type": "text",
+      "width": 280,
+      "x": -1760,
+      "y": -507
+    },
+    {
+      "color": "5",
+      "height": 100,
+      "id": "2db0a1a0b09c4184",
+      "styleAttributes": {},
+      "text": "## 产品原型+高保真",
+      "type": "text",
+      "width": 320,
+      "x": -2120,
+      "y": -507
+    },
+    {
+      "color": "4",
+      "height": 100,
+      "id": "6d66ef06396dfc3e",
+      "styleAttributes": {},
+      "text": "## 测试用例",
+      "type": "text",
+      "width": 255,
+      "x": -1095,
+      "y": -507
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "1d71b18b9e2232d2",
+      "styleAttributes": {},
+      "text": "## 转测邮件\n版本、环境准备\n转测范围",
+      "type": "text",
+      "width": 290,
+      "x": -815,
+      "y": -507
+    },
+    {
+      "color": "4",
+      "height": 100,
+      "id": "0d960be6981e77e9",
+      "styleAttributes": {},
+      "text": "## 验收报告 && 上线风险评估",
+      "type": "text",
+      "width": 320,
+      "x": -480,
+      "y": -507
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "1bfd3f2e25f26341",
+      "styleAttributes": {},
+      "text": "## 上线指导手册",
+      "type": "text",
+      "width": 240,
+      "x": -80,
+      "y": -507
+    },
+    {
+      "height": 100,
+      "id": "16f76028b0e5ef7c",
+      "styleAttributes": {},
+      "text": "## 复盘\n- 产品，验证功能是否符合预期\n- 研发，回顾复盘研发流程改进点\n- ",
+      "type": "text",
+      "width": 320,
+      "x": 220,
+      "y": -514
+    },
+    {
+      "height": 100,
+      "id": "464388ed3d525ab7",
+      "styleAttributes": {},
+      "text": "## 团队知识管理",
+      "type": "text",
+      "width": 320,
+      "x": 640,
+      "y": -593
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "08cb68ddfbdd6397",
+      "styleAttributes": {},
+      "text": "## 技术方案\n架构设计 ",
+      "type": "text",
+      "width": 240,
+      "x": -1440,
+      "y": -760
+    },
+    {
+      "color": "5",
+      "height": 100,
+      "id": "779a691515cba2fe",
+      "styleAttributes": {},
+      "text": "## 需求分析",
+      "type": "text",
+      "width": 240,
+      "x": -1720,
+      "y": -760
+    },
+    {
+      "color": "5",
+      "height": 100,
+      "id": "94099288ec7216ae",
+      "styleAttributes": {},
+      "text": "## 产品设计（原始需求） \n\n技术预研，告诉产品这样设计的可行性，工作量，代价等",
+      "type": "text",
+      "width": 320,
+      "x": -2120,
+      "y": -760
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "6b4fc454a1ba1df8",
+      "styleAttributes": {},
+      "text": "## 编码",
+      "type": "text",
+      "width": 240,
+      "x": -1095,
+      "y": -760
+    },
+    {
+      "color": "4",
+      "height": 100,
+      "id": "dfbd80c4e4f8a138",
+      "styleAttributes": {},
+      "text": "## 测试",
+      "type": "text",
+      "width": 180,
+      "x": -800,
+      "y": -760
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "b3bab578d6541a6d",
+      "styleAttributes": {},
+      "text": "## 修bug & 回归测试",
+      "type": "text",
+      "width": 260,
+      "x": -510,
+      "y": -760
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "9035a110db37a491",
+      "styleAttributes": {},
+      "text": "## 上线 or 发布",
+      "type": "text",
+      "width": 440,
+      "x": -120,
+      "y": -760
+    },
+    {
+      "color": "2",
+      "height": 100,
+      "id": "287719c7f9761447",
+      "styleAttributes": {},
+      "text": "# 橙色框 研发负责",
+      "type": "text",
+      "width": 360,
+      "x": -1735,
+      "y": -1040
+    },
+    {
+      "color": "4",
+      "height": 100,
+      "id": "b3f43e59048034d8",
+      "styleAttributes": {},
+      "text": "# 绿色框 测试负责",
+      "type": "text",
+      "width": 380,
+      "x": -1300,
+      "y": -1040
+    },
+    {
+      "color": "5",
+      "height": 100,
+      "id": "4fad847318e14b90",
+      "styleAttributes": {},
+      "text": "# 蓝色框 产品负责",
+      "type": "text",
+      "width": 335,
+      "x": -2150,
+      "y": -1040
+    }
+  ]
+}

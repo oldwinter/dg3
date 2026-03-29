@@ -1,13 +1,16 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/安卓软件/ChatGPT.md","title":"chatGPT","created":"2023-02-15","modified":"2024-11-15","cssclasses":""}
+publish: true
+permalink: /Spaces/3-Resource/软件梳理/安卓软件/ChatGPT.md
+title: chatGPT
+created: 2023-02-15
+modified: 2024-11-15
 ---
 
+[[chatgpt windows 下载]]
 
-[[Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatgpt windows 下载]]
+[[claude 伪多模态]]
 
-[[Cards/claude 伪多模态]]
-
-[[Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatGPT web页面的自带提示词破解]]
+[[chatGPT web页面的自带提示词破解]]
 
 ## 参考文献
 

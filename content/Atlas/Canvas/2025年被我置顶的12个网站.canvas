@@ -1,0 +1,86 @@
+{
+	"nodes":[
+		{"id":"3ad3c3072c3cbdad","type":"group","x":-420,"y":-437,"width":1760,"height":497,"color":"1","label":"看书不如刷视频\\(^o^)/~"},
+		{"id":"3c6b47b199588f2e","type":"group","x":-420,"y":100,"width":1760,"height":494,"color":"2","label":"使用网页版是为了沉浸式翻译"},
+		{"id":"ca6f31a4a03c7610","type":"group","x":-420,"y":640,"width":1760,"height":491,"color":"3","label":"小红书是刚换上来的，我这该死的求生欲"},
+		{
+			"id":"eb0210a4e4b330fb",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":1003,
+			"y":759,
+			"width":221,
+			"height":211
+		},
+		{"id":"e019c5333905016b","type":"file","file":"Spaces/1-Project/2025下半年小红书探索/2025年被我置顶的12个网站.md","subpath":"#小众社区，但很有料","x":1432,"y":707,"width":422,"height":401},
+		{"id":"978f9c0880d16d7e","type":"link","url":"https://www.reddit.com/","x":34,"y":173,"width":400,"height":400},
+		{"id":"e6ad683147d57043","type":"link","url":"https://www.youtube.com/","x":34,"y":-359,"width":400,"height":400},
+		{"id":"f8fb1c0622d937e4","type":"link","url":"https://mail.google.com/","x":-406,"y":-359,"width":400,"height":400},
+		{
+			"id":"2a5a24b48eb57dbe",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":1004,
+			"y":-264,
+			"width":221,
+			"height":211
+		},
+		{"id":"5eac29591e5a3e41","type":"link","url":"https://x.com/kiwiflysky/status/1950036230428836342 ","x":-406,"y":173,"width":400,"height":400},
+		{"id":"461d8e4fc6068870","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/2025-07-29 arc侧边栏截图.png","x":-1080,"y":-439,"width":587,"height":1568},
+		{"id":"e641ffb810805fef","type":"file","file":"Spaces/1-Project/2025下半年小红书探索/2025年被我置顶的12个网站.md","subpath":"#看书不如刷视频","x":1432,"y":-359,"width":422,"height":400},
+		{"id":"85979307744ed1fc","type":"link","url":"https://www.bilibili.com/","x":474,"y":-359,"width":400,"height":400},
+		{"id":"a2173e5e39f10911","type":"link","url":"https://www.douyin.com/discover ","x":914,"y":-359,"width":400,"height":400},
+		{"id":"e5e26f315c285124","type":"link","url":"https://www.v2ex.com/","x":34,"y":707,"width":400,"height":400},
+		{"id":"bc3f836990a89ca3","type":"link","url":"https://www.xiaohongshu.com/explore","x":914,"y":707,"width":400,"height":400},
+		{"id":"ceaea161e31ccfbe","type":"link","url":"https://discord.com/channels/686053708261228577/1286754583846064138 ","x":914,"y":173,"width":400,"height":400},
+		{"id":"a31dc563c7cd40a2","type":"link","url":"https://linux.do/top ","x":-406,"y":707,"width":400,"height":400},
+		{"id":"3951b492924d656a","type":"link","url":"https://app.slack.com/","x":474,"y":173,"width":400,"height":400},
+		{"id":"dd0fdb07c91c1fe1","type":"link","url":"https://web.okjike.com/","x":474,"y":707,"width":400,"height":400},
+		{
+			"id":"3fd22d57c0193ef7",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":564,
+			"y":828,
+			"width":221,
+			"height":211
+		},
+		{"id":"63672e7840398069","type":"file","file":"Spaces/1-Project/2025下半年小红书探索/2025年被我置顶的12个网站.md","subpath":"#使用网页版是为了沉浸式翻译","x":1432,"y":173,"width":422,"height":400}
+	],
+	"edges":[
+		{
+			"id":"3628470cbe83a8f3",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3ad3c3072c3cbdad",
+			"fromSide":"right",
+			"toNode":"e641ffb810805fef",
+			"toSide":"left"
+		},
+		{
+			"id":"d62f804532fd263e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"3c6b47b199588f2e",
+			"fromSide":"right",
+			"toNode":"63672e7840398069",
+			"toSide":"left"
+		},
+		{
+			"id":"4171d12a03bc14fe",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ca6f31a4a03c7610",
+			"fromSide":"right",
+			"toNode":"e019c5333905016b",
+			"toSide":"left"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

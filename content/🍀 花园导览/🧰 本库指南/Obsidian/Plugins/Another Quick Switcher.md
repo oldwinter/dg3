@@ -7,14 +7,14 @@ status: null
 title: Another Quicker Switcher
 rating: 5
 publish: true
-分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
+分类: "[[obsidian插件 - fileclass]]"
 ---
 
 ## Another Quick Switcher
 
-可以搜标签。这样也就意味着，使用标签管理笔记的话，这个必不可少了。现在还没有发现 [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Quick Switcher++]] 有根据标签 + 文件名搜索的功能。
+可以搜标签。这样也就意味着，使用标签管理笔记的话，这个必不可少了。现在还没有发现 [[Quick Switcher++]] 有根据标签 + 文件名搜索的功能。
 
-2025-05-25，标签搜索可以使用[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Better Command Palette\|Better Command Palette]]平替，所以暂时可以不用这个插件了。
+2025-05-25，标签搜索可以使用[[Better Command Palette|Better Command Palette]]平替，所以暂时可以不用这个插件了。
 
 ![Pasted image 20240523010147](https://pub-pic.oldwinter.top/2025/06/86824f6050a0baa60d1cb9e083ea5489.png)
 

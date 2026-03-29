@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/alfred插件 - shimmering-obsidian.md","title":"alfred插件 - shimmering-obsidian","created":"2022-08-07","modified":"2023-03-14","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/alfred插件 - shimmering-obsidian.md
+title: alfred插件 - shimmering-obsidian
+created: 2022-08-07
+modified: 2023-03-14
 ---
-
 
 alfred能和obsidian产生联动的任何方式，这个插件都有，太tm顶了。
 

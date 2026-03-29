@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - actor.contains(if(this.file.ext.endsWith("base"), "胡歌", this.file.basename))
+    order:
+      - file.name
+      - file.backlinks

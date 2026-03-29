@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/base 使用技巧.md","created":"2025-06-27","modified":"2025-08-28","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/base 使用技巧.md
+created: 2025-06-27
+modified: 2025-08-28
 ---
-
 
 ##
 
@@ -11,7 +13,7 @@
 
 ## 使用formula
 
-from [[Spaces/3-Resource/人/Moy]]
+from [[Moy]]
 
 ![b1eadc6ce11c1c9ed2367df4949ef880.png](https://pub-pic.oldwinter.top/2025/06/423370140ae432c8b1b8e2f0fb08f1cc.png)
 
@@ -25,13 +27,13 @@ deadline 是 DDL 属性，先用日期相减算出“相对日期”
 
 【死线状态】
 
-if(formula["距死线"].isEmpty(),"❔ 无", if(formula["距死线"]>= 15, "🟠 长期", if(formula["距死线"] < 1 && formula["距死线"] >= 0, "🚨 今天截止", (if(formula["距死线"]< 0, "🔴 逾期 ",if(formula["距死线"]<= 5, "🟡 只剩 ", "🟢 尚有 "))) + (date(deadline)-today()))))
+if(formula\["距死线"].isEmpty(),"❔ 无", if(formula\["距死线"]>= 15, "🟠 长期", if(formula\["距死线"] < 1 && formula\["距死线"] >= 0, "🚨 今天截止", (if(formula\["距死线"]< 0, "🔴 逾期 ",if(formula\["距死线"]<= 5, "🟡 只剩 ", "🟢 尚有 "))) + (date(deadline)-today()))))
 
 这个比较复杂……但可以拆解出来，主要是用 if(条件, 真值结果, 否则显示) 这个三元判断做了一大堆日期条件分支，然后显示不同的结果
 
 【进度条】
 
-if(formula.prog_percent * 10 > 0, "▰▰▰▰▰▰▰▰▰▰".slice( 0, (formula.prog_percent * 10).floor()), "").toString() + if((formula.prog_percent * 10).floor() < 10, "▱▱▱▱▱▱▱▱▱▱".slice( 0, 10 - (formula.prog_percent * 10).floor()), "").toString()
+if(formula.prog\_percent \* 10 > 0, "▰▰▰▰▰▰▰▰▰▰".slice( 0, (formula.prog\_percent \* 10).floor()), "").toString() + if((formula.prog\_percent \* 10).floor() < 10, "▱▱▱▱▱▱▱▱▱▱".slice( 0, 10 - (formula.prog\_percent \* 10).floor()), "").toString()
 
 也类似，先计算出 progress 属性的百分比，然后用这个比值去截取两个代表“完成”和“未完成”的字符串
 
@@ -47,7 +49,7 @@ if(formula.prog_percent * 10 > 0, "▰▰▰▰▰▰▰▰▰▰".slice( 0, (fo
 
 中间是原始backlink面板，右边拆成了多个base中展示的backlink，具备更多上下文和限定条件
 
-![PixPin_2025-08-23_15-23-30.png](https://pub-pic.oldwinter.top/2025/08/b917fd9f1e025a39c7477401bb479b4d.png)
+![PixPin\_2025-08-23\_15-23-30.png](https://pub-pic.oldwinter.top/2025/08/b917fd9f1e025a39c7477401bb479b4d.png)
 
 ## 利用当前文件的某个属性值，进行搜索过滤
 

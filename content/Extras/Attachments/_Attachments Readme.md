@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Extras/Attachments/_Attachments Readme.md","created":"2025-06-24","modified":"2025-07-09","cssclasses":""}
+publish: true
+permalink: /Extras/Attachments/_Attachments Readme.md
+created: 2025-06-24
+modified: 2025-07-09
 ---
-
 
 定期整理，批量上传到图床。
 

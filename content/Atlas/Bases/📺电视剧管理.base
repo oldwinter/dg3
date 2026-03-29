@@ -1,0 +1,45 @@
+filters:
+  and:
+    - type == "teleplay"
+views:
+  - type: cards
+    name: 画廊视图
+    order:
+      - file.name
+      - myRatingStar
+      - url
+      - director
+      - desc
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: property.IMDb
+        direction: ASC
+    columnSize:
+      note.score: 161
+      note.country: 93
+      note.url: 79
+      note.desc: 206
+    image: cover
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - scoreStar
+      - score
+      - myRatingStar
+      - country
+      - datePublished
+      - url
+      - director
+      - desc
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: property.IMDb
+        direction: ASC
+    columnSize:
+      note.score: 161
+      note.country: 93
+      note.url: 79
+      note.desc: 206

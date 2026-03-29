@@ -5,7 +5,7 @@ title: wikilink
 publish: true
 ---
 
-x:: [[Cards/mdlink]]
+x:: [[mdlink]]
 
 即`[[]]`格式的超链接语法。
 

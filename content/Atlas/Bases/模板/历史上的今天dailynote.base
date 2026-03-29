@@ -1,0 +1,10 @@
+filters:
+  and:
+    - date(this.file.name).month == date(file.name).month && date(this.file.name).day == date(file.name).day
+    - date(this.file.name).year != date(file.ctime).year
+views:
+  - type: table
+    name: 历史上的今天Dailynote
+    order:
+      - file.name
+      - file.ctime

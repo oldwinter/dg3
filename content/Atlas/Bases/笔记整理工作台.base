@@ -1,0 +1,220 @@
+filters:
+  or:
+    - file.inFolder("Cards")
+    - file.inFolder("Spaces")
+    - file.inFolder("Sources")
+    - file.inFolder("Calendar")
+    - file.inFolder("Atlas")
+    - file.inFolder("Extras/Attachments")
+formulas:
+  最近修改距今天数: ((now() - file.mtime) / 86400000).round(0)
+  无出链: file.ext == "md" && file.links.isEmpty()
+  小文件: file.size < 350
+  任务镜像: file.inFolder("Calendar/Tasks/Linear")
+  同步来源: (file.inFolder("Sources/CuboxSync") && !file.inFolder("Sources/CuboxSync/Archive")) || file.inFolder("Sources/GithubStarsSync")
+  双阅读源: file.inFolder("Sources/Books/多看阅读同步") || file.inFolder("Sources/Books/微信读书同步")
+  附件副本命名: file.ext != "md" && (file.name.contains(" 1.") || file.name.contains(" 2.") || file.name.contains(" copy.") || file.name.contains(" 副本."))
+  可疑卡片: file.inFolder("Cards") && file.ext == "md" && file.size < 350
+  可疑空白日记: file.inFolder("Calendar/Daily notes") && file.ext == "md" && file.size < 250
+  知识层文件: file.inFolder("Cards") || file.inFolder("Spaces") || file.inFolder("Atlas") || file.inFolder("🍀 花园导览")
+  知识层小而无出链: formula.知识层文件 && formula.无出链 && formula.小文件
+  清理类型: if(formula.任务镜像, "任务镜像", if(formula.附件副本命名, "附件副本", if(formula.可疑卡片, "可疑卡片", if(formula.同步来源, "同步来源", if(formula.双阅读源, "双阅读源", if(formula.可疑空白日记, "超短日记", if(formula.知识层小而无出链, "知识层无出链", if(formula.无出链, "无出链", "观察"))))))))
+  清理优先级: if(formula.任务镜像, 95, if(formula.附件副本命名, 90, if(formula.可疑卡片, 86, if(formula.双阅读源, 80, if(formula.同步来源, 78, if(formula.可疑空白日记, 75, if(formula.知识层小而无出链, 66, if(formula.无出链 && formula.知识层文件, 48, 20))))))))
+properties:
+  formula.清理类型:
+    displayName: 清理类型
+  formula.清理优先级:
+    displayName: 优先级
+  formula.最近修改距今天数:
+    displayName: 距今天数
+  formula.无出链:
+    displayName: 无出链
+  formula.任务镜像:
+    displayName: 任务镜像
+  formula.同步来源:
+    displayName: 同步来源
+  formula.双阅读源:
+    displayName: 双阅读源
+  formula.附件副本命名:
+    displayName: 附件副本
+  formula.可疑卡片:
+    displayName: 可疑卡片
+  formula.可疑空白日记:
+    displayName: 超短日记
+  formula.知识层小而无出链:
+    displayName: 知识层小而无出链
+  ai-organized:
+    displayName: 已处理
+  ai-organized-kind:
+    displayName: 处理方式
+  ai-organized-at:
+    displayName: 处理时间
+  file.name:
+    displayName: 文件名
+  file.folder:
+    displayName: 文件夹
+  file.size:
+    displayName: 大小
+  file.mtime:
+    displayName: 最近修改
+  file.links:
+    displayName: 出链
+views:
+  - type: table
+    name: 总览｜高优先候选
+    filters:
+      and:
+        - formula.清理优先级 >= 70
+    order:
+      - file.name
+      - formula.清理类型
+      - formula.清理优先级
+      - file.folder
+      - file.size
+      - file.mtime
+      - ai-organized
+      - ai-organized-kind
+      - ai-organized-at
+    sort:
+      - property: formula.清理优先级
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+    limit: 300
+  - type: table
+    name: 知识层｜Cards 可疑空壳
+    filters:
+      and:
+        - formula.可疑卡片
+    order:
+      - file.name
+      - file.size
+      - formula.无出链
+      - file.links
+      - file.mtime
+      - ai-organized
+      - ai-organized-kind
+    sort:
+      - property: file.size
+        direction: ASC
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 知识层｜小而无出链 Markdown
+    filters:
+      and:
+        - formula.知识层小而无出链
+    order:
+      - file.name
+      - file.folder
+      - file.size
+      - file.links
+      - file.mtime
+      - formula.清理优先级
+      - ai-organized
+      - ai-organized-kind
+      - ai-organized-at
+    sort:
+      - property: formula.清理优先级
+        direction: DESC
+      - property: file.size
+        direction: ASC
+  - type: table
+    name: 输入层｜同步来源池
+    filters:
+      and:
+        - formula.同步来源
+    order:
+      - file.name
+      - file.folder
+      - cubox_url
+      - repo_name
+      - file.links
+      - file.mtime
+      - ai-organized
+      - ai-organized-kind
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 来源层｜双阅读源
+    filters:
+      and:
+        - formula.双阅读源
+    order:
+      - file.name
+      - author
+      - bookId
+      - file.folder
+      - file.size
+      - file.mtime
+      - ai-organized
+      - ai-organized-kind
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 任务层｜Linear 镜像
+    filters:
+      and:
+        - formula.任务镜像
+    order:
+      - file.name
+      - linearIssueId
+      - status
+      - priority
+      - file.mtime
+      - ai-organized
+      - ai-organized-kind
+      - ai-organized-at
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 附件层｜命名副本
+    filters:
+      and:
+        - formula.附件副本命名
+    order:
+      - file.name
+      - file.folder
+      - file.size
+      - file.mtime
+      - ai-organized
+      - ai-organized-kind
+      - ai-organized-at
+    sort:
+      - property: file.size
+        direction: DESC
+  - type: table
+    name: 日历层｜超短日记
+    filters:
+      and:
+        - formula.可疑空白日记
+    order:
+      - file.name
+      - file.folder
+      - file.size
+      - file.mtime
+      - ai-organized
+      - ai-organized-kind
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 已标记｜整理完成
+    filters:
+      and:
+        - ai-organized
+    order:
+      - file.name
+      - formula.清理类型
+      - ai-organized-kind
+      - ai-organized-at
+      - file.folder
+      - file.mtime
+    sort:
+      - property: ai-organized-at
+        direction: DESC
+      - property: file.mtime
+        direction: DESC

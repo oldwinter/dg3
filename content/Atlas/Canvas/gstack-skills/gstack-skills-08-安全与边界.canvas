@@ -1,0 +1,298 @@
+{
+	"nodes": [
+		{
+			"id": "g_nav001",
+			"type": "group",
+			"x": -1560,
+			"y": -280,
+			"width": 3440,
+			"height": 240,
+			"label": "gstack-skills-08｜安全与边界",
+			"color": "1"
+		},
+		{
+			"id": "g_arch002",
+			"type": "group",
+			"x": -1560,
+			"y": 20,
+			"width": 1900,
+			"height": 1480,
+			"label": "架构区｜按角色分层",
+			"color": "2"
+		},
+		{
+			"id": "g_flow003",
+			"type": "group",
+			"x": 420,
+			"y": 20,
+			"width": 1460,
+			"height": 1480,
+			"label": "流程区｜常见使用顺序",
+			"color": "3"
+		},
+		{
+			"id": "g_note004",
+			"type": "group",
+			"x": -1560,
+			"y": 1560,
+			"width": 3440,
+			"height": 420,
+			"label": "注意事项｜相邻域、误用提醒、跳转",
+			"color": "5"
+		},
+		{
+			"id": "t_title005",
+			"type": "text",
+			"text": "安全与边界\n给危险命令和编辑范围上护栏，是横切能力层。",
+			"x": -1480,
+			"y": -220,
+			"width": 920,
+			"height": 140,
+			"color": "1"
+		},
+		{
+			"id": "t_count006",
+			"type": "text",
+			"text": "覆盖 skills：4\n定位：给危险命令和编辑范围上护栏，是横切能力层。",
+			"x": -520,
+			"y": -220,
+			"width": 620,
+			"height": 140,
+			"color": "1"
+		},
+		{
+			"id": "f_home007",
+			"type": "file",
+			"file": "gstack-skills-00-总览.canvas",
+			"x": 700,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "1"
+		},
+		{
+			"id": "f_index008",
+			"type": "file",
+			"file": "gstack-skills-总索引.md",
+			"x": 1180,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "1"
+		},
+		{
+			"id": "t_nav009",
+			"type": "text",
+			"text": "导航\n左：总览\n右：文字索引",
+			"x": 1620,
+			"y": -220,
+			"width": 180,
+			"height": 160,
+			"color": "1"
+		},
+		{
+			"id": "t_head010",
+			"type": "text",
+			"text": "危险操作保护",
+			"x": -1480,
+			"y": 100,
+			"width": 860,
+			"height": 90,
+			"color": "2"
+		},
+		{
+			"id": "t_skill011",
+			"type": "text",
+			"text": "careful\n给危险命令加提醒，降低误删误改风险。\n触发：碰生产环境、共享环境或 destructive 命令时。",
+			"x": -1480,
+			"y": 220,
+			"width": 860,
+			"height": 170,
+			"color": "2"
+		},
+		{
+			"id": "t_skill012",
+			"type": "text",
+			"text": "guard\n最高安全模式，同时限制危险命令和编辑范围。\n触发：你想“全上护栏”时。",
+			"x": -1480,
+			"y": 420,
+			"width": 860,
+			"height": 170,
+			"color": "2"
+		},
+		{
+			"id": "t_head013",
+			"type": "text",
+			"text": "编辑范围控制",
+			"x": -580,
+			"y": 100,
+			"width": 860,
+			"height": 90,
+			"color": "2"
+		},
+		{
+			"id": "t_skill014",
+			"type": "text",
+			"text": "freeze\n把本次编辑范围锁到指定目录。\n触发：你只想允许 agent 改某个模块，避免误触别处时。",
+			"x": -580,
+			"y": 220,
+			"width": 860,
+			"height": 170,
+			"color": "2"
+		},
+		{
+			"id": "t_skill015",
+			"type": "text",
+			"text": "unfreeze\n解除 freeze，恢复全局可编辑。\n触发：需要扩大编辑范围或结束限制时。",
+			"x": -580,
+			"y": 420,
+			"width": 860,
+			"height": 170,
+			"color": "2"
+		},
+		{
+			"id": "t_ftitle016",
+			"type": "text",
+			"text": "本域主线\ncareful → freeze → guard → unfreeze",
+			"x": 500,
+			"y": 100,
+			"width": 1300,
+			"height": 200,
+			"color": "3"
+		},
+		{
+			"id": "t_flow017",
+			"type": "text",
+			"text": "careful\n给危险命令加提醒",
+			"x": 520,
+			"y": 360,
+			"width": 1140,
+			"height": 110,
+			"color": "3"
+		},
+		{
+			"id": "t_flow018",
+			"type": "text",
+			"text": "freeze\n把本次编辑范围锁到指定目录。",
+			"x": 520,
+			"y": 500,
+			"width": 1140,
+			"height": 110,
+			"color": "3"
+		},
+		{
+			"id": "t_flow020",
+			"type": "text",
+			"text": "guard\n最高安全模式",
+			"x": 520,
+			"y": 640,
+			"width": 1140,
+			"height": 110,
+			"color": "3"
+		},
+		{
+			"id": "t_flow022",
+			"type": "text",
+			"text": "unfreeze\n解除 freeze",
+			"x": 520,
+			"y": 780,
+			"width": 1140,
+			"height": 110,
+			"color": "3"
+		},
+		{
+			"id": "t_decision024",
+			"type": "text",
+			"text": "何时选 A / B\n- 共享环境或高风险：careful / guard\n- 只允许改一块目录：freeze\n- 做完再 unfreeze",
+			"x": 500,
+			"y": 1180,
+			"width": 1300,
+			"height": 220,
+			"color": "3"
+		},
+		{
+			"id": "t_adj025",
+			"type": "text",
+			"text": "相邻域推荐\n- 实现与调试\n- 发布与收尾",
+			"x": -1480,
+			"y": 1640,
+			"width": 820,
+			"height": 240,
+			"color": "5"
+		},
+		{
+			"id": "t_warn026",
+			"type": "text",
+			"text": "常见误用提醒\n- 这是保护层，不是主流程。\n- guard = careful + freeze。",
+			"x": -620,
+			"y": 1640,
+			"width": 980,
+			"height": 240,
+			"color": "5"
+		},
+		{
+			"id": "f_adj027",
+			"type": "file",
+			"file": "gstack-skills-04-实现与调试.canvas",
+			"x": 500,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "5"
+		},
+		{
+			"id": "f_adj028",
+			"type": "file",
+			"file": "gstack-skills-07-发布与收尾.canvas",
+			"x": 980,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "5"
+		},
+		{
+			"id": "t_jump029",
+			"type": "text",
+			"text": "跳转建议\n需要更完整的文字说明时，打开总索引；\n遇到跨域问题时，优先沿相邻域跳转。",
+			"x": 1460,
+			"y": 1640,
+			"width": 320,
+			"height": 240,
+			"color": "5"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_flow019",
+			"fromNode": "t_flow017",
+			"fromSide": "bottom",
+			"toNode": "t_flow018",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"label": "主线",
+			"color": "3"
+		},
+		{
+			"id": "e_flow021",
+			"fromNode": "t_flow018",
+			"fromSide": "bottom",
+			"toNode": "t_flow020",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "3"
+		},
+		{
+			"id": "e_flow023",
+			"fromNode": "t_flow020",
+			"fromSide": "bottom",
+			"toNode": "t_flow022",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "3"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}

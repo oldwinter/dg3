@@ -1,0 +1,68 @@
+{
+	"edges":[
+		{"id":"edge_1","fromNode":"0421e4ed3c4c8405","fromSide":"bottom","toNode":"354f1567a0cad766","toSide":"top"},
+		{"id":"edge_2","fromNode":"0421e4ed3c4c8405","fromSide":"bottom","toNode":"536cfc520706e5ff","toSide":"top"},
+		{"id":"edge_3","fromNode":"0421e4ed3c4c8405","fromSide":"bottom","toNode":"f7732db9caf11777","toSide":"top"},
+		{"id":"edge_4","fromNode":"354f1567a0cad766","fromSide":"bottom","toNode":"536cfc520706e5ff","toSide":"left"},
+		{"id":"edge_5","fromNode":"536cfc520706e5ff","fromSide":"bottom","toNode":"f7732db9caf11777","toSide":"left"},
+		{"id":"edge_6","fromNode":"354f1567a0cad766","fromSide":"bottom","toNode":"c3153f239dc887d4","toSide":"top"},
+		{"id":"edge_7","fromNode":"536cfc520706e5ff","fromSide":"bottom","toNode":"c3153f239dc887d4","toSide":"top"},
+		{"id":"edge_8","fromNode":"f7732db9caf11777","fromSide":"bottom","toNode":"c3153f239dc887d4","toSide":"top"}
+	],
+	"metadata":{
+		"frontmatter":{},
+		"version":"1.0-1.0"
+	},
+	"nodes":[
+		{
+			"id":"354f1567a0cad766",
+			"styleAttributes":{"color":"1"},
+			"text":"## 🥇 基础篇 (2-4周)\n\n### 环境搭建\n- Go 安装配置\n- IDE 选择和配置\n- GOPATH 和 Go Modules\n\n### 基础语法\n- 变量声明和类型系统\n- 控制结构\n- 函数定义和调用\n\n### 数据类型\n- 基本类型和复合类型\n- 结构体和指针\n- 包管理和导入",
+			"type":"text",
+			"x":100,
+			"y":280,
+			"width":250,
+			"height":297
+		},
+		{
+			"id":"536cfc520706e5ff",
+			"styleAttributes":{"color":"2"},
+			"text":"## 🥈 进阶篇 (1-2月)\n\n### 并发编程\n- Goroutine 创建和管理\n- Channel 通信机制\n- Select 多路复用\n- 并发安全和同步\n\n### 面向接口编程\n- 接口定义和实现\n- 类型断言和类型开关\n- 空接口和反射基础\n\n### 错误处理\n- Error 接口和错误处理模式\n- Panic 和 Recover 机制\n- 自定义错误类型",
+			"type":"text",
+			"x":400,
+			"y":280,
+			"width":250,
+			"height":297
+		},
+		{
+			"id":"f7732db9caf11777",
+			"styleAttributes":{"color":"3"},
+			"text":"## 🥉 高级篇 (3-6月)\n\n### Web 开发\n- HTTP 服务器开发\n- RESTful API 设计\n- 中间件开发\n- 数据库操作\n\n### 微服务开发\n- gRPC 服务开发\n- 服务发现和注册\n- 配置管理\n- 日志和监控\n\n### 性能优化\n- 内存管理和 GC 调优\n- CPU 性能分析\n- 并发性能优化",
+			"type":"text",
+			"x":700,
+			"y":280,
+			"width":250,
+			"height":297
+		},
+		{
+			"id":"c3153f239dc887d4",
+			"styleAttributes":{"color":"5"},
+			"text":"## 📚 资源推荐\n\n### 官方资源\n- Go 官方文档和教程\n- Go by Example\n- Effective Go\n\n### 推荐书籍\n- 《Go 程序设计语言》\n- 《Go 语言实战》\n- 《Go 语言高级编程》\n\n### 实践项目\n- 命令行工具\n- Web 爬虫\n- RESTful API\n- 微服务架构",
+			"type":"text",
+			"x":400,
+			"y":718,
+			"width":250,
+			"height":150
+		},
+		{
+			"id":"0421e4ed3c4c8405",
+			"styleAttributes":{"color":"4"},
+			"text":"# 🐹 Golang 学习路线\n\n从基础语法到高级特性\n\n基于 [[∑ Golang 入门到精通 MOC]]",
+			"type":"text",
+			"x":100,
+			"y":17,
+			"width":250,
+			"height":120
+		}
+	]
+}

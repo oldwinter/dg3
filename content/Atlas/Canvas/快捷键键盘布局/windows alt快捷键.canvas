@@ -1,0 +1,447 @@
+{
+	"nodes":[
+		{
+			"id":"d0eb1ee66c0f3cbc",
+			"styleAttributes":{
+				"border":null
+			},
+			"type":"group",
+			"x":-952,
+			"y":-525,
+			"width":2016,
+			"height":200
+		},
+		{
+			"id":"b488e3c891437a09",
+			"styleAttributes":{},
+			"type":"group",
+			"x":-872,
+			"y":-245,
+			"width":1420,
+			"height":200,
+			"label":"resoning"
+		},
+		{"id":"9eeb8865268084e8","type":"group","x":-512,"y":175,"width":608,"height":200,"label":"Untitled group"},
+		{"id":"857737071a4b38e2","type":"group","x":-612,"y":-45,"width":590,"height":200,"label":"Untitled group"},
+		{
+			"id":"efed4ddf29a4ed99",
+			"styleAttributes":{},
+			"text":"## Y",
+			"type":"text",
+			"x":162,
+			"y":-235,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"e369012a3b614524",
+			"styleAttributes":{},
+			"text":"## H\nask about selection (网络用语化)",
+			"type":"text",
+			"x":221,
+			"y":-28,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"89ed1fc23112b40a",
+			"styleAttributes":{},
+			"text":"## N\n",
+			"type":"text",
+			"x":325,
+			"y":185,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"857f4fceaa8010a4",
+			"styleAttributes":{},
+			"text":"## M",
+			"type":"text",
+			"x":529,
+			"y":185,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"1f6b7030801dc10d",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 2\nclaude-3.7-sonnet",
+			"type":"text",
+			"x":-736,
+			"y":-505,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"363d45b7e595b1b1",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 3\ngemini-2.0-flash-thinking-exp\n",
+			"type":"text",
+			"x":-534,
+			"y":-505,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"89309435cebc9128",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 1\ngpt-4o",
+			"type":"text",
+			"x":-932,
+			"y":-505,
+			"width":156,
+			"height":160
+		},
+		{
+			"id":"1309982dabaf785b",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## \\`\ngpt-o3",
+			"type":"text",
+			"x":-1132,
+			"y":-505,
+			"width":160,
+			"height":160
+		},
+		{
+			"id":"06816b8c6b0fe87d",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 0\ngpt-image-1",
+			"type":"text",
+			"x":876,
+			"y":-505,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"d594b2baa2273beb",
+			"styleAttributes":{},
+			"text":"## Z\n[[voiceink]]开启脱手语音输入",
+			"type":"text",
+			"x":-689,
+			"y":185,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"44fc5d9fef97b24b",
+			"styleAttributes":{},
+			"text":"## J",
+			"type":"text",
+			"x":428,
+			"y":-28,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"34d61f5df5271ba3",
+			"styleAttributes":{},
+			"text":"## U",
+			"type":"text",
+			"x":366,
+			"y":-235,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"2f1afd996cc2f32e",
+			"styleAttributes":{},
+			"text":"## X\nsend selection to ai chat",
+			"type":"text",
+			"x":-486,
+			"y":185,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"c5c6e3ad66fdc333",
+			"styleAttributes":{},
+			"text":"## S\nask about selection in critical thinking（批判性思维反驳。自定义 ai command）",
+			"type":"text",
+			"x":-590,
+			"y":-28,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"651b9f98ec4196bf",
+			"styleAttributes":{},
+			"text":"## D \n滴答清单添加任务",
+			"type":"text",
+			"x":-388,
+			"y":-28,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"0622eac3253b1b06",
+			"styleAttributes":{},
+			"text":"## F\nask about web （翻译总结。自定义 ai comman）",
+			"type":"text",
+			"x":-202,
+			"y":-28,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"3b5d3396edcf948e",
+			"styleAttributes":{},
+			"text":"## A\n沉浸式翻译/显示原文",
+			"type":"text",
+			"x":-793,
+			"y":-28,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"e3e65b8f8df37579",
+			"styleAttributes":{},
+			"text":"## G\n\n谷歌搜索",
+			"type":"text",
+			"x":19,
+			"y":-28,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"67aadc9ec6ef7857",
+			"styleAttributes":{},
+			"text":"## K",
+			"type":"text",
+			"x":626,
+			"y":-28,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"c8129acc9df306cf",
+			"styleAttributes":{},
+			"text":"## 空格",
+			"type":"text",
+			"x":-446,
+			"y":385,
+			"width":992,
+			"height":140
+		},
+		{
+			"id":"b12659d9c9f3d95b",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 6",
+			"type":"text",
+			"x":72,
+			"y":-505,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"33050eafaad10531",
+			"styleAttributes":{},
+			"text":"## B\n[[Bob]] 显示翻译输入框\n+shift = send selection to bob",
+			"type":"text",
+			"x":123,
+			"y":185,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"6e8734503d3e6136",
+			"styleAttributes":{},
+			"text":"## C\nsend captured area to ai chat",
+			"type":"text",
+			"x":-283,
+			"y":185,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"0a12c36a006ec37a",
+			"styleAttributes":{},
+			"text":"## V\nsend screen to ai chat",
+			"type":"text",
+			"x":-80,
+			"y":185,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"dccf28488949a004",
+			"styleAttributes":{},
+			"text":"## ,",
+			"type":"text",
+			"x":729,
+			"y":185,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"42dbd73e62c9737a",
+			"styleAttributes":{},
+			"text":"## L\n\n锁屏",
+			"type":"text",
+			"x":826,
+			"y":-28,
+			"width":162,
+			"height":160
+		},
+		{
+			"dynamicHeight":true,
+			"file":"Cards/。.md",
+			"id":"b54f13ce05fa2b3d",
+			"styleAttributes":{},
+			"type":"file",
+			"x":928,
+			"y":185,
+			"width":160,
+			"height":160
+		},
+		{
+			"id":"c03c769ee6f1d7e1",
+			"styleAttributes":{},
+			"text":"## I",
+			"type":"text",
+			"x":570,
+			"y":-235,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"a267acf18e820d49",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 5\ngrok-3",
+			"type":"text",
+			"x":-130,
+			"y":-505,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"ca61248df5127e09",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 7",
+			"type":"text",
+			"x":274,
+			"y":-505,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"5d0107251ff896b2",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 8",
+			"type":"text",
+			"x":476,
+			"y":-505,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"262c0c0fc040a616",
+			"styleAttributes":{},
+			"text":"## R\ndeepseek-r1",
+			"type":"text",
+			"x":-243,
+			"y":-235,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"77080606033119cf",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 9",
+			"type":"text",
+			"x":678,
+			"y":-505,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"41c2e57d1cd933ed",
+			"styleAttributes":{"border":"dashed"},
+			"text":"## 4\ndeepseek-v3",
+			"type":"text",
+			"x":-332,
+			"y":-505,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"99991284840a200d",
+			"styleAttributes":{},
+			"text":"## T\ngrok-3-mini",
+			"type":"text",
+			"x":-40,
+			"y":-235,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"fbb1d1663ae7bbd5",
+			"styleAttributes":{},
+			"text":"## Q\ngpt-o4-mini",
+			"type":"text",
+			"x":-852,
+			"y":-235,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"c6fbc3e80e096304",
+			"styleAttributes":{},
+			"text":"## E\ngemini-2.5-pro",
+			"type":"text",
+			"x":-446,
+			"y":-235,
+			"width":162,
+			"height":160
+		},
+		{
+			"id":"5572c33cd6d9c792",
+			"styleAttributes":{},
+			"text":"## W\nclaude-3.7-sonnet-thinking",
+			"type":"text",
+			"x":-649,
+			"y":-235,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"38c9dfbcddcca507",
+			"styleAttributes":{},
+			"text":"## O",
+			"type":"text",
+			"x":770,
+			"y":-235,
+			"width":162,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"5bdd67149b6b546c",
+			"styleAttributes":{},
+			"text":"## P\n隐私和安全设置\n取Privacy首字母",
+			"type":"text",
+			"x":970,
+			"y":-235,
+			"width":162,
+			"height":160
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"edges":[],
+	"metadata":{
+		"frontmatter":{},
+		"version":"1.0-1.0"
+	},
+	"nodes":[
+		{"id":"2626a9422dda354d","type":"group","x":290,"y":860,"width":1281,"height":1302,"color":"1","label":"Projects"},
+		{"id":"e93e41bd07128ce2","type":"group","x":1640,"y":611,"width":808,"height":1741,"label":"Areas"},
+		{"id":"63f637d2b4678fba","type":"group","x":687,"y":2162,"width":714,"height":1076,"label":"Resources"},
+		{"file":"Atlas/Bases/PARA/📥 Inbox.base","id":"57e19a7b8055d398","type":"file","x":-1200,"y":320,"width":400,"height":880},
+		{"file":"Atlas/Bases/PARA/Projects.base","id":"b31b8a39c3365fb6","type":"file","x":-700,"y":320,"width":400,"height":400},
+		{"file":"Atlas/Bases/PARA/Areas.base","id":"14420a55f83fe158","type":"file","x":-200,"y":320,"width":400,"height":400},
+		{"id":"a2bd5d08b6346a53","type":"file","file":"Cards/github cli.md","x":707,"y":2372,"width":400,"height":458},
+		{"id":"7e5c7dcc6a4542eb","type":"file","file":"Cards/GitOps.md","x":1067,"y":1627,"width":400,"height":400},
+		{"file":"Atlas/Bases/PARA/Resources.base","id":"593a711b5f7b81ef","type":"file","x":320,"y":320,"width":400,"height":400},
+		{"file":"Atlas/Bases/PARA/Archive.base","id":"9801d24895da19d4","type":"file","x":840,"y":320,"width":400,"height":400},
+		{"id":"da9c39a018c76c8c","type":"file","file":"Cards/Project.md","x":855,"y":2790,"width":400,"height":428},
+		{"id":"3edd0e60b5d4e49c","type":"file","file":"Cards/Loop.md","x":1695,"y":885,"width":490,"height":506}
+	]
+}

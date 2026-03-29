@@ -1,0 +1,21 @@
+filters:
+  or:
+    - file.folder == "Atlas/Categories"
+    - file.tags.containsAny("categories")
+formulas:
+  数量: file.backlinks.length
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - '!file.name.contains("categories")'
+    order:
+      - file.name
+      - tags
+      - formula.数量
+    sort:
+      - property: formula.数量
+        direction: ASC
+    columnSize:
+      file.name: 159

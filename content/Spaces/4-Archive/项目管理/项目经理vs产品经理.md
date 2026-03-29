@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/4-Archive/项目管理/项目经理vs产品经理.md","created":"2025-04-04T01:13:48.536+08:00","modified":"2025-10-12T18:37:36.470+08:00","cssclasses":""}
+publish: true
+permalink: /Spaces/4-Archive/项目管理/项目经理vs产品经理.md
+created: 2025-04-04T01:13:48.536+08:00
+modified: 2025-10-12T18:37:36.470+08:00
 ---
-
 
 有些公司有职能重合。
 

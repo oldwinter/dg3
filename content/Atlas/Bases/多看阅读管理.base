@@ -1,0 +1,29 @@
+filters:
+  and:
+    - "!epub.isEmpty()"
+views:
+  - type: cards
+    name: 画廊视图
+    order:
+      - file.name
+      - authors
+      - creation_time
+    sort:
+      - property: property.cover
+        direction: ASC
+      - property: creation_time
+        direction: ASC
+    columnSize:
+      file.name: 420
+    image: cover
+    imageAspectRatio: 1.3
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - authors
+    sort:
+      - property: property.cover
+        direction: DESC
+    columnSize:
+      file.name: 420

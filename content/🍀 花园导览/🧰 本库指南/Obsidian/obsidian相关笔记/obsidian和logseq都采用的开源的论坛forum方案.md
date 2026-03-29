@@ -1,7 +1,12 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian和logseq都采用的开源的论坛forum方案.md","title":"obsidian和logseq都采用的开源的论坛forum方案","created":"2022-07-30","modified":"2023-03-14","tags":["todo/某天"],"cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian和logseq都采用的开源的论坛forum方案.md
+title: obsidian和logseq都采用的开源的论坛forum方案
+created: 2022-07-30
+modified: 2023-03-14
+tags:
+  - todo/某天
 ---
-
 
 [GitHub - discourse/discourse: A platform for community discussion. Free, open, simple.](https://github.com/discourse/discourse)
 

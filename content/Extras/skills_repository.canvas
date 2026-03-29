@@ -1,0 +1,1274 @@
+{
+  "nodes": [
+    {
+      "id": "aaafb446aace",
+      "x": -150,
+      "y": -50,
+      "width": 300,
+      "height": 100,
+      "type": "text",
+      "text": "# Skills Repository\nOverview of all available skills",
+      "color": "1"
+    },
+    {
+      "id": "fda2ff414a5d",
+      "x": -1470.0,
+      "y": -690.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "changelog-generator",
+      "color": "4"
+    },
+    {
+      "id": "4c466488fe18",
+      "x": -1190.0,
+      "y": -690.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "justfile",
+      "color": "4"
+    },
+    {
+      "id": "1355dbb8ba80",
+      "x": -1470.0,
+      "y": -610.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "skill-creator",
+      "color": "4"
+    },
+    {
+      "id": "2ea673cede13",
+      "x": -1190.0,
+      "y": -610.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "skills-readme-updater",
+      "color": "4"
+    },
+    {
+      "id": "94250d62dfed",
+      "x": -1470.0,
+      "y": -530.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "vercel-react-best-practices",
+      "color": "4"
+    },
+    {
+      "id": "7a7297e4c32b",
+      "x": -1190.0,
+      "y": -530.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "web-design-guidelines",
+      "color": "4"
+    },
+    {
+      "id": "644e16606985",
+      "x": -1490.0,
+      "y": -750.0,
+      "width": 580,
+      "height": 300,
+      "type": "group",
+      "label": "Coding Common Skills",
+      "color": "4"
+    },
+    {
+      "id": "8b9a672c6dd6",
+      "x": 650.0,
+      "y": -690.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "api-billing-service-onboarding",
+      "color": "2"
+    },
+    {
+      "id": "adae91eb3d83",
+      "x": 930.0,
+      "y": -690.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "argocd-cli",
+      "color": "2"
+    },
+    {
+      "id": "76408992106c",
+      "x": 1210.0,
+      "y": -690.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "aws-cli",
+      "color": "2"
+    },
+    {
+      "id": "649f35768bf0",
+      "x": 1490.0,
+      "y": -690.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "aws-cost-explorer",
+      "color": "2"
+    },
+    {
+      "id": "e91c6379d57f",
+      "x": 650.0,
+      "y": -610.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "aws-support-case",
+      "color": "2"
+    },
+    {
+      "id": "e5e29428a955",
+      "x": 930.0,
+      "y": -610.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "eksctl",
+      "color": "2"
+    },
+    {
+      "id": "dcd02fddc458",
+      "x": 1210.0,
+      "y": -610.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "github-cli",
+      "color": "2"
+    },
+    {
+      "id": "754923a5c0e2",
+      "x": 1490.0,
+      "y": -610.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "gitlab-cli",
+      "color": "2"
+    },
+    {
+      "id": "997b3d78aa5d",
+      "x": 650.0,
+      "y": -530.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "kargo-cli",
+      "color": "2"
+    },
+    {
+      "id": "ca43d7367f29",
+      "x": 930.0,
+      "y": -530.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "kubectl",
+      "color": "2"
+    },
+    {
+      "id": "328849ba40e1",
+      "x": 1210.0,
+      "y": -530.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "sync-to-prod",
+      "color": "2"
+    },
+    {
+      "id": "58797d26e8aa",
+      "x": 630.0,
+      "y": -750.0,
+      "width": 1140,
+      "height": 300,
+      "type": "group",
+      "label": "DevOps Skills",
+      "color": "2"
+    },
+    {
+      "id": "9a81086d72c5",
+      "x": 930.0,
+      "y": 550.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "github-to-skills",
+      "color": "1"
+    },
+    {
+      "id": "48621b76772c",
+      "x": 1210.0,
+      "y": 550.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "skill-evolution-manager",
+      "color": "1"
+    },
+    {
+      "id": "9c238ec95328",
+      "x": 930.0,
+      "y": 630.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "skill-manager",
+      "color": "1"
+    },
+    {
+      "id": "aaea7d405d6f",
+      "x": 910.0,
+      "y": 490.0,
+      "width": 580,
+      "height": 220,
+      "type": "group",
+      "label": "Khazix Skills",
+      "color": "1"
+    },
+    {
+      "id": "7698cf57b72e",
+      "x": -1470.0,
+      "y": 510.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "json-canvas",
+      "color": "5"
+    },
+    {
+      "id": "137472025e9a",
+      "x": -1190.0,
+      "y": 510.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "obsidian-bases",
+      "color": "5"
+    },
+    {
+      "id": "55550130eba1",
+      "x": -1470.0,
+      "y": 590.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "obsidian-dashboard",
+      "color": "5"
+    },
+    {
+      "id": "51b9e5f600e7",
+      "x": -1190.0,
+      "y": 590.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "obsidian-markdown",
+      "color": "5"
+    },
+    {
+      "id": "4a8bbdc11da7",
+      "x": -1470.0,
+      "y": 670.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "tasknotes",
+      "color": "5"
+    },
+    {
+      "id": "39694314b2cb",
+      "x": -1490.0,
+      "y": 450.0,
+      "width": 580,
+      "height": 300,
+      "type": "group",
+      "label": "Obsidian Skills",
+      "color": "5"
+    },
+    {
+      "id": "ede7c84eaf7b",
+      "x": -130.0,
+      "y": -910.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "humanizer-zh",
+      "color": "3"
+    },
+    {
+      "id": "3a4ea1d8610e",
+      "x": -150.0,
+      "y": -970.0,
+      "width": 300,
+      "height": 140,
+      "type": "group",
+      "label": "Writing Skills",
+      "color": "3"
+    },
+    {
+      "id": "8e031111697c",
+      "x": -550.0,
+      "y": 310.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "ai-evaluation-evals",
+      "color": "6"
+    },
+    {
+      "id": "c96f8b175779",
+      "x": -270.0,
+      "y": 310.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "ai-product-strategy",
+      "color": "6"
+    },
+    {
+      "id": "36f5aaf6f03b",
+      "x": 10.0,
+      "y": 310.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "analyzing-user-feedback",
+      "color": "6"
+    },
+    {
+      "id": "86b72a37d404",
+      "x": 290.0,
+      "y": 310.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "behavioral-product-design",
+      "color": "6"
+    },
+    {
+      "id": "495b8e5a6d9a",
+      "x": -550.0,
+      "y": 390.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "brand-storytelling",
+      "color": "6"
+    },
+    {
+      "id": "1210be140ff6",
+      "x": -270.0,
+      "y": 390.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "building-a-promotion-case",
+      "color": "6"
+    },
+    {
+      "id": "d28d9b65fc86",
+      "x": 10.0,
+      "y": 390.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "building-sales-team",
+      "color": "6"
+    },
+    {
+      "id": "4de3b2ac5ba8",
+      "x": 290.0,
+      "y": 390.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "building-team-culture",
+      "color": "6"
+    },
+    {
+      "id": "d266f18d19f3",
+      "x": -550.0,
+      "y": 470.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "building-with-llms",
+      "color": "6"
+    },
+    {
+      "id": "ff6c04b37dc0",
+      "x": -270.0,
+      "y": 470.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "career-transitions",
+      "color": "6"
+    },
+    {
+      "id": "82b1fb39fc71",
+      "x": 10.0,
+      "y": 470.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "coaching-product-managers",
+      "color": "6"
+    },
+    {
+      "id": "16f87816b652",
+      "x": 290.0,
+      "y": 470.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "community-building",
+      "color": "6"
+    },
+    {
+      "id": "9c1c75e7b267",
+      "x": -550.0,
+      "y": 550.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "competitive-analysis",
+      "color": "6"
+    },
+    {
+      "id": "5b7823e5f9e7",
+      "x": -270.0,
+      "y": 550.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "conducting-interviews",
+      "color": "6"
+    },
+    {
+      "id": "75d5079da359",
+      "x": 10.0,
+      "y": 550.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "conducting-user-interviews",
+      "color": "6"
+    },
+    {
+      "id": "a55a4ca95eca",
+      "x": 290.0,
+      "y": 550.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "content-marketing",
+      "color": "6"
+    },
+    {
+      "id": "885bb61c71f4",
+      "x": -550.0,
+      "y": 630.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "cross-functional-collaboration",
+      "color": "6"
+    },
+    {
+      "id": "3e56482bc333",
+      "x": -270.0,
+      "y": 630.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "defining-product-vision",
+      "color": "6"
+    },
+    {
+      "id": "5f0c223a75da",
+      "x": 10.0,
+      "y": 630.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "delegating-work",
+      "color": "6"
+    },
+    {
+      "id": "246a0c5ac5ed",
+      "x": 290.0,
+      "y": 630.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "design-engineering",
+      "color": "6"
+    },
+    {
+      "id": "13e40bf9f21d",
+      "x": -550.0,
+      "y": 710.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "designing-growth-loops",
+      "color": "6"
+    },
+    {
+      "id": "cc1faeb20c3f",
+      "x": -270.0,
+      "y": 710.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "designing-surveys",
+      "color": "6"
+    },
+    {
+      "id": "c6978439ea67",
+      "x": 10.0,
+      "y": 710.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "designing-team-rituals",
+      "color": "6"
+    },
+    {
+      "id": "ef4b3e655510",
+      "x": 290.0,
+      "y": 710.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "design-systems",
+      "color": "6"
+    },
+    {
+      "id": "99d766d2729a",
+      "x": -550.0,
+      "y": 790.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "developing-product-taste",
+      "color": "6"
+    },
+    {
+      "id": "7cd1780e712d",
+      "x": -270.0,
+      "y": 790.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "dogfooding",
+      "color": "6"
+    },
+    {
+      "id": "bf5b0b366c10",
+      "x": 10.0,
+      "y": 790.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "energy-management",
+      "color": "6"
+    },
+    {
+      "id": "b6046164bbb4",
+      "x": 290.0,
+      "y": 790.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "engineering-culture",
+      "color": "6"
+    },
+    {
+      "id": "de47a0d333fa",
+      "x": -550.0,
+      "y": 870.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "enterprise-sales",
+      "color": "6"
+    },
+    {
+      "id": "ce3de2199405",
+      "x": -270.0,
+      "y": 870.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "evaluating-candidates",
+      "color": "6"
+    },
+    {
+      "id": "e16672069859",
+      "x": 10.0,
+      "y": 870.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "evaluating-new-technology",
+      "color": "6"
+    },
+    {
+      "id": "8fc95ecf83fd",
+      "x": 290.0,
+      "y": 870.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "evaluating-trade-offs",
+      "color": "6"
+    },
+    {
+      "id": "683996b9f8bb",
+      "x": -550.0,
+      "y": 950.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "excalidraw-diagram",
+      "color": "6"
+    },
+    {
+      "id": "3476148a99a6",
+      "x": -270.0,
+      "y": 950.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "finding-mentors-and-sponsors",
+      "color": "6"
+    },
+    {
+      "id": "6b31d64893c2",
+      "x": 10.0,
+      "y": 950.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "founder-sales",
+      "color": "6"
+    },
+    {
+      "id": "c2df9fe40c0f",
+      "x": 290.0,
+      "y": 950.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "fundraising-strategy",
+      "color": "6"
+    },
+    {
+      "id": "fd0aa9e58d2f",
+      "x": -550.0,
+      "y": 1030.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "giving-presentations",
+      "color": "6"
+    },
+    {
+      "id": "dc335695e6ab",
+      "x": -270.0,
+      "y": 1030.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "having-difficult-conversations",
+      "color": "6"
+    },
+    {
+      "id": "efb31e3bed36",
+      "x": 10.0,
+      "y": 1030.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "launch-marketing",
+      "color": "6"
+    },
+    {
+      "id": "010141a56ca6",
+      "x": 290.0,
+      "y": 1030.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "managing-imposter-syndrome",
+      "color": "6"
+    },
+    {
+      "id": "5a5174a2f596",
+      "x": -550.0,
+      "y": 1110.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "managing-tech-debt",
+      "color": "6"
+    },
+    {
+      "id": "02adb5aaa6ac",
+      "x": -270.0,
+      "y": 1110.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "managing-timelines",
+      "color": "6"
+    },
+    {
+      "id": "f6fcdf2e8d06",
+      "x": 10.0,
+      "y": 1110.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "managing-up",
+      "color": "6"
+    },
+    {
+      "id": "395c8f874533",
+      "x": 290.0,
+      "y": 1110.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "marketplace-liquidity-management",
+      "color": "6"
+    },
+    {
+      "id": "3fec440e5d73",
+      "x": -550.0,
+      "y": 1190.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "measuring-product-market-fit",
+      "color": "6"
+    },
+    {
+      "id": "5d73fa23264f",
+      "x": -270.0,
+      "y": 1190.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "media-relations",
+      "color": "6"
+    },
+    {
+      "id": "bfa870144f49",
+      "x": 10.0,
+      "y": 1190.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "mermaid-visualizer",
+      "color": "6"
+    },
+    {
+      "id": "ae6ffaa510bd",
+      "x": 290.0,
+      "y": 1190.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "negotiating-offers",
+      "color": "6"
+    },
+    {
+      "id": "0db7c9c1b0c7",
+      "x": -550.0,
+      "y": 1270.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "notebooklm",
+      "color": "6"
+    },
+    {
+      "id": "719907f1980a",
+      "x": -270.0,
+      "y": 1270.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "onboarding-new-hires",
+      "color": "6"
+    },
+    {
+      "id": "e453e363b47e",
+      "x": 10.0,
+      "y": 1270.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "organizational-design",
+      "color": "6"
+    },
+    {
+      "id": "d65e29bbbb8a",
+      "x": 290.0,
+      "y": 1270.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "organizational-transformation",
+      "color": "6"
+    },
+    {
+      "id": "c15799ef14a8",
+      "x": -550.0,
+      "y": 1350.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "partnership-and-bd",
+      "color": "6"
+    },
+    {
+      "id": "1064941339e1",
+      "x": -270.0,
+      "y": 1350.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "personal-productivity",
+      "color": "6"
+    },
+    {
+      "id": "484e49ebc023",
+      "x": 10.0,
+      "y": 1350.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "planning-under-uncertainty",
+      "color": "6"
+    },
+    {
+      "id": "9a2991a026f4",
+      "x": 290.0,
+      "y": 1350.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "platform-and-infrastructure",
+      "color": "6"
+    },
+    {
+      "id": "12e402d89f98",
+      "x": -550.0,
+      "y": 1430.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "platform-strategy",
+      "color": "6"
+    },
+    {
+      "id": "d3f754c383ec",
+      "x": -270.0,
+      "y": 1430.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "positioning-and-messaging",
+      "color": "6"
+    },
+    {
+      "id": "cd04c80699a5",
+      "x": 10.0,
+      "y": 1430.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "post-mortems-and-retrospectives",
+      "color": "6"
+    },
+    {
+      "id": "5656f0d935d8",
+      "x": 290.0,
+      "y": 1430.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "pricing-strategy",
+      "color": "6"
+    },
+    {
+      "id": "3d86b83e4394",
+      "x": -550.0,
+      "y": 1510.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "prioritizing-roadmap",
+      "color": "6"
+    },
+    {
+      "id": "1d00e699dc12",
+      "x": -270.0,
+      "y": 1510.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "problem-definition",
+      "color": "6"
+    },
+    {
+      "id": "40a1a276d59e",
+      "x": 10.0,
+      "y": 1510.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "product-led-sales-strategy",
+      "color": "6"
+    },
+    {
+      "id": "7e7ca14a1709",
+      "x": 290.0,
+      "y": 1510.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "product-operations",
+      "color": "6"
+    },
+    {
+      "id": "6c65b59d6693",
+      "x": -550.0,
+      "y": 1590.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "retention-and-engagement",
+      "color": "6"
+    },
+    {
+      "id": "c80591174ee1",
+      "x": -270.0,
+      "y": 1590.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "running-decision-processes",
+      "color": "6"
+    },
+    {
+      "id": "515ce9663a8f",
+      "x": 10.0,
+      "y": 1590.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "running-design-reviews",
+      "color": "6"
+    },
+    {
+      "id": "fd0406c25fd1",
+      "x": 290.0,
+      "y": 1590.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "running-effective-11s",
+      "color": "6"
+    },
+    {
+      "id": "bf41a88e1d22",
+      "x": -550.0,
+      "y": 1670.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "running-effective-meetings",
+      "color": "6"
+    },
+    {
+      "id": "ea0d2e7b1680",
+      "x": -270.0,
+      "y": 1670.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "running-offsites",
+      "color": "6"
+    },
+    {
+      "id": "c9297b31f53b",
+      "x": 10.0,
+      "y": 1670.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "sales-compensation-design",
+      "color": "6"
+    },
+    {
+      "id": "17e936a55168",
+      "x": 290.0,
+      "y": 1670.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "sales-qualification",
+      "color": "6"
+    },
+    {
+      "id": "8afbbd8e8881",
+      "x": -550.0,
+      "y": 1750.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "scoping-and-cutting",
+      "color": "6"
+    },
+    {
+      "id": "021685e3ec41",
+      "x": -270.0,
+      "y": 1750.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "setting-okrs-and-goals",
+      "color": "6"
+    },
+    {
+      "id": "a1e17ca3f8a2",
+      "x": 10.0,
+      "y": 1750.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "shipping-products",
+      "color": "6"
+    },
+    {
+      "id": "c7cdcee43251",
+      "x": 290.0,
+      "y": 1750.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "stakeholder-alignment",
+      "color": "6"
+    },
+    {
+      "id": "72740d10d5ed",
+      "x": -550.0,
+      "y": 1830.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "startup-ideation",
+      "color": "6"
+    },
+    {
+      "id": "2d416c3c6f6a",
+      "x": -270.0,
+      "y": 1830.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "startup-pivoting",
+      "color": "6"
+    },
+    {
+      "id": "9255ba3df5ae",
+      "x": 10.0,
+      "y": 1830.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "systems-thinking",
+      "color": "6"
+    },
+    {
+      "id": "3240a3386d19",
+      "x": 290.0,
+      "y": 1830.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "technical-roadmaps",
+      "color": "6"
+    },
+    {
+      "id": "7ae9de1c56d6",
+      "x": -550.0,
+      "y": 1910.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "usability-testing",
+      "color": "6"
+    },
+    {
+      "id": "6a5aeb9d97a4",
+      "x": -270.0,
+      "y": 1910.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "user-onboarding",
+      "color": "6"
+    },
+    {
+      "id": "5d22d21a75d1",
+      "x": 10.0,
+      "y": 1910.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "vibe-coding",
+      "color": "6"
+    },
+    {
+      "id": "f958b7118e24",
+      "x": 290.0,
+      "y": 1910.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "working-backwards",
+      "color": "6"
+    },
+    {
+      "id": "6b25396602ec",
+      "x": -550.0,
+      "y": 1990.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "writing-job-descriptions",
+      "color": "6"
+    },
+    {
+      "id": "2bb2c01c9e79",
+      "x": -270.0,
+      "y": 1990.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "writing-north-star-metrics",
+      "color": "6"
+    },
+    {
+      "id": "54e2ddd0010d",
+      "x": 10.0,
+      "y": 1990.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "writing-prds",
+      "color": "6"
+    },
+    {
+      "id": "ca9c0bc527da",
+      "x": 290.0,
+      "y": 1990.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "writing-specs-and-designs",
+      "color": "6"
+    },
+    {
+      "id": "d512b89d6480",
+      "x": -550.0,
+      "y": 2070.0,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "written-communication",
+      "color": "6"
+    },
+    {
+      "id": "7db6ec6b53ca",
+      "x": -570.0,
+      "y": 250.0,
+      "width": 1140,
+      "height": 1900,
+      "type": "group",
+      "label": "Lenny Skills (Product & Mgmt)",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "14aa7ac571e5",
+      "fromNode": "aaafb446aace",
+      "fromSide": "top",
+      "toNode": "644e16606985",
+      "toSide": "bottom",
+      "color": "4"
+    },
+    {
+      "id": "3f55e629c173",
+      "fromNode": "aaafb446aace",
+      "fromSide": "top",
+      "toNode": "58797d26e8aa",
+      "toSide": "bottom",
+      "color": "2"
+    },
+    {
+      "id": "d7cd6111cbc8",
+      "fromNode": "aaafb446aace",
+      "fromSide": "bottom",
+      "toNode": "aaea7d405d6f",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "ed55c41ca5b1",
+      "fromNode": "aaafb446aace",
+      "fromSide": "bottom",
+      "toNode": "39694314b2cb",
+      "toSide": "top",
+      "color": "5"
+    },
+    {
+      "id": "b67d84821e17",
+      "fromNode": "aaafb446aace",
+      "fromSide": "top",
+      "toNode": "3a4ea1d8610e",
+      "toSide": "bottom",
+      "color": "3"
+    },
+    {
+      "id": "f7d91ad025bf",
+      "fromNode": "aaafb446aace",
+      "fromSide": "bottom",
+      "toNode": "7db6ec6b53ca",
+      "toSide": "top",
+      "color": "6"
+    }
+  ]
+}

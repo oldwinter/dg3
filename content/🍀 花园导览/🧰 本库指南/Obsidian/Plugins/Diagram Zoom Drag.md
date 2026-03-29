@@ -4,12 +4,12 @@ date modified: 2025-07-10
 rating: 5
 status: null
 publish: true
-分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
+分类: "[[obsidian插件 - fileclass]]"
 ---
 
-给自带的[[Sources/GithubStarsSync/mermaid]]加上方便查看的按钮，以及给其他几个常用图形工具也加上查看按钮。
+给自带的[[mermaid]]加上方便查看的按钮，以及给其他几个常用图形工具也加上查看按钮。
 
-让ai频繁地生成mermaid的话，还是非常有用的。比如[[Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/让cursor把各种流程用mermaid画一遍]]中花的各种流程图，用原生ob自带的，压根儿看不了。
+让ai频繁地生成mermaid的话，还是非常有用的。比如[[让cursor把各种流程用mermaid画一遍]]中花的各种流程图，用原生ob自带的，压根儿看不了。
 
 ##
 
@@ -26,7 +26,7 @@ graph TD
 
 ##
 
-需要插件[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/PlantUML]]
+需要插件[[PlantUML]]
 
 ```plantuml
 @startuml
@@ -43,7 +43,7 @@ App -> User : 显示 UML 图
 
 ##
 
-需要安装[[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Graphviz]]插件，并安装dot命令行，配置`C:\Program Files\Graphviz\bin\dot.exe`
+需要安装[[Graphviz]]插件，并安装dot命令行，配置`C:\Program Files\Graphviz\bin\dot.exe`
 
 ```dot
 digraph G {
@@ -59,4 +59,4 @@ digraph G {
 
 ##
 
-需要 [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Mehrmaid]]插件，让mermaid支持内嵌markdown。
+需要 [[Mehrmaid]]插件，让mermaid支持内嵌markdown。

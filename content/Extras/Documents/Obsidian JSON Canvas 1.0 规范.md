@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Extras/Documents/Obsidian JSON Canvas 1.0 规范.md","created":"2025-04-25T22:49:37.291+08:00","modified":"2025-08-15T21:59:59.696+08:00","cssclasses":""}
+publish: true
+permalink: /Extras/Documents/Obsidian JSON Canvas 1.0 规范.md
+created: 2025-04-25T22:49:37.291+08:00
+modified: 2025-08-15T21:59:59.696+08:00
 ---
-
 
 # JSON Canvas Spec | Obsidian Canvas Spec
 
@@ -26,10 +28,10 @@ All nodes include the following attributes:
 
 - `id` (required, string) is a unique ID for the node.
 - `type` (required, string) is the node type.
-	- `text`
-	- `file`
-	- `link`
-	- `group`
+  - `text`
+  - `file`
+  - `link`
+  - `group`
 - `x` (required, integer) is the `x` position of the node in pixels.
 - `y` (required, integer) is the `y` position of the node in pixels.
 - `width` (required, integer) is the width of the node in pixels.
@@ -62,9 +64,9 @@ Group type nodes are used as a visual container for nodes within it. Along with 
 - `label` (optional, string) is a text label for the group.
 - `background` (optional, string) is the path to the background image.
 - `backgroundStyle` (optional, string) is the rendering style of the background image. Valid values:
-	- `cover` fills the entire width and height of the node.
-	- `ratio` maintains the aspect ratio of the background image.
-	- `repeat` repeats the image as a pattern in both x/y directions.
+  - `cover` fills the entire width and height of the node.
+  - `ratio` maintains the aspect ratio of the background image.
+  - `repeat` repeats the image as a pattern in both x/y directions.
 
 ## Edges
 
@@ -73,22 +75,22 @@ Edges are lines that connect one node to another.
 - `id` (required, string) is a unique ID for the edge.
 - `fromNode` (required, string) is the node `id` where the connection starts.
 - `fromSide` (optional, string) is the side where this edge starts. Valid values:
-	- `top`
-	- `right`
-	- `bottom`
-	- `left`
+  - `top`
+  - `right`
+  - `bottom`
+  - `left`
 - `fromEnd` (optional, string) is the shape of the endpoint at the edge start. Defaults to `none` if not specified. Valid values:
-	- `none`
-	- `arrow`
+  - `none`
+  - `arrow`
 - `toNode` (required, string) is the node `id` where the connection ends.
 - `toSide` (optional, string) is the side where this edge ends. Valid values:
-	- `top`
-	- `right`
-	- `bottom`
-	- `left`
+  - `top`
+  - `right`
+  - `bottom`
+  - `left`
 - `toEnd` (optional, string) is the shape of the endpoint at the edge end. Defaults to `arrow` if not specified. Valid values:
-	- `none`
-	- `arrow`
+  - `none`
+  - `arrow`
 - `color` (optional, `canvasColor`) is the color of the line, see the Color section.
 - `label` (optional, string) is a text label for the edge.
 

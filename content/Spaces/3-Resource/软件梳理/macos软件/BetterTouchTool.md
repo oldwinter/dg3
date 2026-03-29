@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/BetterTouchTool.md","title":"BetterTouchTool","created":"2022-06-09","modified":"2025-06-18","cssclasses":""}
+publish: true
+permalink: /Spaces/3-Resource/软件梳理/macos软件/BetterTouchTool.md
+title: BetterTouchTool
+created: 2022-06-09
+modified: 2025-06-18
 ---
-
 
 2025-07-29 目前在macOS 26 beta上面还有bug，设置hyper键，会让屏幕突然失效，无法点击，或者左键变成了右键的效果。
 
@@ -11,10 +14,11 @@
 
 ##
 
-[[Cards/BetterTouchTool 高级使用技巧]]
+[[BetterTouchTool 高级使用技巧]]
 
 ##
-相似的国产竞品：[[Spaces/3-Resource/软件梳理/macos软件/BetterAndBetter]]
+
+相似的国产竞品：[[BetterAndBetter]]
 
 相似的其他竞品：[[multitouch]]
 
@@ -24,11 +28,11 @@
 
 闲鱼59元购买的终身版：蜜蜂软件小店。
 
-激活链接：[https://folivora.ai/retrievelicense/?id=312588002-chre4fd9122060b-6b38c08cc4&email=enjyukehan%40outlook.com](https://folivora.ai/retrievelicense/?id=312588002-chre4fd9122060b-6b38c08cc4&email=enjyukehan%40outlook.com) 
+激活链接：<https://folivora.ai/retrievelicense/?id=312588002-chre4fd9122060b-6b38c08cc4&email=enjyukehan%40outlook.com> 
 
 官方下载地址：
 
-[https://folivora.ai/](https://folivora.ai/)
+<https://folivora.ai/>
 
 使用说明：
 
@@ -38,9 +42,8 @@
 
 ## 默认配置
 
-3指灵敏度默认没有[[Spaces/3-Resource/软件梳理/macos软件/BetterAndBetter]]高，用着不跟手，调整一下：
+3指灵敏度默认没有[[BetterAndBetter]]高，用着不跟手，调整一下：
 触摸板- 轻扫 里面设置。设置界面不响应截图快捷键，无法截图。
-
 
 ## s神手势参考
 

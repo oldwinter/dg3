@@ -7,7 +7,7 @@ title: local first
 publish: true
 ---
 
-x:: [[Cards/本地优先的特点]]
+x:: [[本地优先的特点]]
 
 与现在各类软件动不动上云完全相反，local first强调软件的数据优先保存在本地硬盘。
 

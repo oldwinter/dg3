@@ -1,0 +1,6 @@
+filters:
+  and:
+    - 分类.containsAny(link("raycast插件 - fileclass"))
+views:
+  - type: table
+    name: Table

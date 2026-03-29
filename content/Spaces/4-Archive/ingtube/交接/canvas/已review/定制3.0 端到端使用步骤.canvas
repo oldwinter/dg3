@@ -1,0 +1,340 @@
+{
+  "nodes": [
+    {
+      "id": "592c9fb8c87638ae",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 300,
+      "y": -300,
+      "width": 1880,
+      "height": 2540,
+      "label": "刊例表订单 - 进行中"
+    },
+    {
+      "id": "22e74ed98742a10d",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 280,
+      "y": 2480,
+      "width": 1900,
+      "height": 1760,
+      "label": "阶梯悬赏金额"
+    },
+    {
+      "id": "e4c72a153747dae5",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -880,
+      "y": -300,
+      "width": 1060,
+      "height": 2540,
+      "label": "刊例表订单 - 发布活动阶段"
+    },
+    {
+      "id": "8296dabf9a5927e4",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -880,
+      "y": 2640,
+      "width": 1040,
+      "height": 1600,
+      "label": "阶梯悬赏金额"
+    },
+    {
+      "id": "631b7ee67851aa30",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 360,
+      "y": 1220,
+      "width": 1660,
+      "height": 900,
+      "label": "联盟后台"
+    },
+    {
+      "id": "cf7a89a634796825",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 360,
+      "y": -200,
+      "width": 1660,
+      "height": 700,
+      "label": "博主操作"
+    },
+    {
+      "id": "37dc07e29b1dc14f",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 300,
+      "y": 2640,
+      "width": 1660,
+      "height": 700,
+      "label": "博主操作"
+    },
+    {
+      "id": "ed75e34ffcefe6e9",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 360,
+      "y": 580,
+      "width": 1660,
+      "height": 590,
+      "label": "小二操作"
+    },
+    {
+      "id": "eeed87cee2ebae41",
+      "type": "group",
+      "styleAttributes": {},
+      "x": 2340,
+      "y": -300,
+      "width": 720,
+      "height": 760,
+      "label": "活动售后"
+    },
+    {
+      "id": "5c48020155dc277f",
+      "type": "text",
+      "text": "## 新版\nhttps://qtdl-test.ingtube.com/#/customize/create",
+      "styleAttributes": {},
+      "x": -320,
+      "y": -260,
+      "width": 460,
+      "height": 100
+    },
+    {
+      "id": "d12f4fad679ab7ef",
+      "type": "text",
+      "text": "## 旧版\nhttps://qtdl-test.ingtube.com/test1/index.html#/customize/create",
+      "styleAttributes": {},
+      "x": -860,
+      "y": -260,
+      "width": 500,
+      "height": 100
+    },
+    {
+      "id": "f371a19032f0e3b0",
+      "type": "text",
+      "text": "待发货",
+      "styleAttributes": {},
+      "x": 940,
+      "y": 1240,
+      "width": 380,
+      "height": 440
+    },
+    {
+      "id": "ec0f73abfb55f801",
+      "type": "text",
+      "text": "待审核：\n![](https://pub-pic.oldwinter.top/2024/11/fe7d4149c86e66b8229967ad5aa8c198.png)\n\n商家审核，选报备订单。则此时订单流转到『授权押金』，这里的押金金额 = （博主申请时，填写的返点比例，如 10%） \\* 报备合作金额 。\n",
+      "styleAttributes": {},
+      "x": 420,
+      "y": 1240,
+      "width": 420,
+      "height": 520
+    },
+    {
+      "id": "dd33310601f992d9",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/定制合作 旧版新版UI和设置的变化.png",
+      "styleAttributes": {},
+      "x": -860,
+      "y": -80,
+      "width": 1000,
+      "height": 994
+    },
+    {
+      "id": "4ee79ef0c8690f0a",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/wecom-temp-293369-607430b6e877769c1a20fa0924a728bd.jpg",
+      "styleAttributes": {},
+      "x": 445,
+      "y": 2730,
+      "width": 185,
+      "height": 400
+    },
+    {
+      "id": "55d4fc40df548ba8",
+      "type": "file",
+      "file": "Extras/Media/wecom-temp-123109-a60b8da7e69575713c796272cacbb101.jpg",
+      "styleAttributes": {},
+      "x": -760,
+      "y": 2810,
+      "width": 640,
+      "height": 480
+    },
+    {
+      "id": "92b29cfeb86697ea",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/wecom-temp-154879-8c5e15a636588b9dd0fb4fa5fe73b527.jpg",
+      "styleAttributes": {},
+      "x": 775,
+      "y": 2730,
+      "width": 185,
+      "height": 400
+    },
+    {
+      "id": "c9ae0039fb62ad72",
+      "type": "text",
+      "text": "100报价，钊鸿说之前没有。 #todo",
+      "styleAttributes": {},
+      "x": 740,
+      "y": -540,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "874783598ee1c0a1",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/小二后台 - 定制合作 - 待核价.png",
+      "styleAttributes": {},
+      "x": 420,
+      "y": 680,
+      "width": 400,
+      "height": 170
+    },
+    {
+      "id": "551ee72f8ee07ff1",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/小红书报备返点-订单确认.png",
+      "styleAttributes": {},
+      "x": 420,
+      "y": -150,
+      "width": 360,
+      "height": 598
+    },
+    {
+      "id": "dbd8aa8bceb39746",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/定制 ，博主授权押金.png",
+      "styleAttributes": {},
+      "x": 960,
+      "y": -150,
+      "width": 360,
+      "height": 598
+    },
+    {
+      "id": "cc858d62a8ea18ca",
+      "type": "text",
+      "text": "## 待发布",
+      "styleAttributes": {},
+      "x": 1420,
+      "y": -140,
+      "width": 460,
+      "height": 260
+    },
+    {
+      "id": "e3ffad8d5266e873",
+      "type": "text",
+      "text": "## 待结算\n也会超时自动结算\n可以提前关单\n",
+      "styleAttributes": {},
+      "x": 1460,
+      "y": 665,
+      "width": 320,
+      "height": 100
+    }
+  ],
+  "edges": [
+    {
+      "id": "c4c9a1fee420619b",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "e4c72a153747dae5",
+      "fromSide": "right",
+      "toNode": "551ee72f8ee07ff1",
+      "toSide": "left"
+    },
+    {
+      "id": "34ff21afe8c09ae7",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "551ee72f8ee07ff1",
+      "fromSide": "bottom",
+      "toNode": "874783598ee1c0a1",
+      "toSide": "top"
+    },
+    {
+      "id": "190d2dce9bb027b7",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "874783598ee1c0a1",
+      "fromSide": "bottom",
+      "toNode": "ec0f73abfb55f801",
+      "toSide": "top"
+    },
+    {
+      "id": "04689a60f20004f5",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "dbd8aa8bceb39746",
+      "fromSide": "bottom",
+      "toNode": "f371a19032f0e3b0",
+      "toSide": "top"
+    },
+    {
+      "id": "0e1a894d1f8dbe80",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "551ee72f8ee07ff1",
+      "fromSide": "right",
+      "toNode": "c9ae0039fb62ad72",
+      "toSide": "left"
+    },
+    {
+      "id": "a0bcda66ac1aaf88",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "ec0f73abfb55f801",
+      "fromSide": "right",
+      "toNode": "dbd8aa8bceb39746",
+      "toSide": "left"
+    },
+    {
+      "id": "ccb2b1d737970cef",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "f371a19032f0e3b0",
+      "fromSide": "right",
+      "toNode": "cc858d62a8ea18ca",
+      "toSide": "left"
+    },
+    {
+      "id": "3ae318ea764b3bb7",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "cc858d62a8ea18ca",
+      "fromSide": "bottom",
+      "toNode": "e3ffad8d5266e873",
+      "toSide": "top"
+    },
+    {
+      "id": "6fe678bc3d49b6ef",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "55d4fc40df548ba8",
+      "fromSide": "right",
+      "toNode": "4ee79ef0c8690f0a",
+      "toSide": "left",
+      "label": "博主拍单，app只显示博主报价"
+    },
+    {
+      "id": "4989aec2b5b1a413",
+      "styleAttributes": {
+        "pathfindingMethod": "a-star"
+      },
+      "fromNode": "4ee79ef0c8690f0a",
+      "fromSide": "right",
+      "toNode": "92b29cfeb86697ea",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  }
+}

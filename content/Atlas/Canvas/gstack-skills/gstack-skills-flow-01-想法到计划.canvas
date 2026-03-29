@@ -1,0 +1,272 @@
+{
+	"nodes": [
+		{
+			"id": "g_nav001",
+			"type": "group",
+			"x": -220,
+			"y": -280,
+			"width": 5030,
+			"height": 220,
+			"label": "主流程｜想法到计划",
+			"color": "4"
+		},
+		{
+			"id": "g_main002",
+			"type": "group",
+			"x": -220,
+			"y": 20,
+			"width": 5030,
+			"height": 700,
+			"label": "主线步骤",
+			"color": "5"
+		},
+		{
+			"id": "g_side003",
+			"type": "group",
+			"x": -220,
+			"y": 780,
+			"width": 5030,
+			"height": 520,
+			"label": "说明与相关子图",
+			"color": "2"
+		},
+		{
+			"id": "t_title004",
+			"type": "text",
+			"text": "想法到计划\n把模糊想法变成可执行计划，不急着直接写代码。",
+			"x": -120,
+			"y": -220,
+			"width": 900,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "f_home005",
+			"type": "file",
+			"file": "gstack-skills-00-总览.canvas",
+			"x": 4010,
+			"y": -220,
+			"width": 360,
+			"height": 150,
+			"color": "4"
+		},
+		{
+			"id": "f_index006",
+			"type": "file",
+			"file": "gstack-skills-总索引.md",
+			"x": 4410,
+			"y": -220,
+			"width": 360,
+			"height": 150,
+			"color": "4"
+		},
+		{
+			"id": "t_step007",
+			"type": "text",
+			"text": "using-superpowers\n总入口\n触发：会话开始、还没想好怎么借力 skills 时。",
+			"x": -100,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step008",
+			"type": "text",
+			"text": "find-skills\n帮你发现有没有现成 skill 可用。\n触发：不知道某类需求该用什么 skill 时。",
+			"x": 330,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step010",
+			"type": "text",
+			"text": "office-hours\n像 YC Office Hours 一样追问想法值不值得做、从哪切。\n触发：有产品点子、side project、brainstorm 需求时。",
+			"x": 760,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step012",
+			"type": "text",
+			"text": "brainstorming\n在动手前先把想法和范围聊清楚。\n触发：要新建功能、组件或改行为时。",
+			"x": 1190,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step014",
+			"type": "text",
+			"text": "plan-ceo-review\n从产品和战略视角挑战方案\n触发：想重新思考方案边界和 ambition 时。",
+			"x": 1620,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step016",
+			"type": "text",
+			"text": "plan-design-review\n从设计和体验角度审方案本身。\n触发：计划里有明显 UI/UX 成分，想在实现前打磨时。",
+			"x": 2050,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step018",
+			"type": "text",
+			"text": "plan-eng-review\n从工程视角锁定架构、数据流和测试方案。\n触发：计划已经成形，想在编码前做工程评审时。",
+			"x": 2480,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step020",
+			"type": "text",
+			"text": "writing-plans\n把需求整理成高质量实现计划。\n触发：已经有方向，准备把任务拆清楚时。",
+			"x": 2910,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step022",
+			"type": "text",
+			"text": "executing-plans\n拿现成计划分阶段执行并在检查点推进。\n触发：已经有实现计划，准备按步骤落地时。",
+			"x": 3340,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_note024",
+			"type": "text",
+			"text": "流程说明\n- plan-* 三个节点是并行审视，不是先后强绑定。\n- 到 writing-plans 说明 scope 已经基本稳定。",
+			"x": -120,
+			"y": 860,
+			"width": 1020,
+			"height": 180,
+			"color": "2"
+		},
+		{
+			"id": "f_rel025",
+			"type": "file",
+			"file": "gstack-skills-01-元技能与规划协作.canvas",
+			"x": 980,
+			"y": 860,
+			"width": 360,
+			"height": 180,
+			"color": "2"
+		},
+		{
+			"id": "f_rel026",
+			"type": "file",
+			"file": "gstack-skills-03-产品与设计.canvas",
+			"x": 1400,
+			"y": 860,
+			"width": 360,
+			"height": 180,
+			"color": "2"
+		},
+		{
+			"id": "t_gate027",
+			"type": "text",
+			"text": "使用建议\n先沿主线找入口，再跳到相关能力域看更细的架构与注意事项。",
+			"x": 3950,
+			"y": 860,
+			"width": 780,
+			"height": 180,
+			"color": "2"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_step009",
+			"fromNode": "t_step007",
+			"fromSide": "right",
+			"toNode": "t_step008",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step011",
+			"fromNode": "t_step008",
+			"fromSide": "right",
+			"toNode": "t_step010",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step013",
+			"fromNode": "t_step010",
+			"fromSide": "right",
+			"toNode": "t_step012",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step015",
+			"fromNode": "t_step012",
+			"fromSide": "right",
+			"toNode": "t_step014",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step017",
+			"fromNode": "t_step014",
+			"fromSide": "right",
+			"toNode": "t_step016",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step019",
+			"fromNode": "t_step016",
+			"fromSide": "right",
+			"toNode": "t_step018",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step021",
+			"fromNode": "t_step018",
+			"fromSide": "right",
+			"toNode": "t_step020",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step023",
+			"fromNode": "t_step020",
+			"fromSide": "right",
+			"toNode": "t_step022",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}

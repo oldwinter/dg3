@@ -5,15 +5,15 @@ title: dailynote
 aliases:
   - 每日笔记
 相关笔记:
-  - "[[Spaces/2-Area/数字花园建设与维护/» Daily notes工作流]]"
+  - "[[» Daily notes工作流]]"
 publish: true
 ---
 
 每日笔记（dailynote）不是每日日记。
 
-[[Sources/Movies + TV/豆瓣影音导入/movie/让子弹飞]] 里有一句：正经人谁写日记啊？
+[[让子弹飞]] 里有一句：正经人谁写日记啊？
 
-每日笔记不是[[Cards/间歇式日记]]。
+每日笔记不是[[间歇式日记]]。
 
 每日笔记不是工作日志。
 

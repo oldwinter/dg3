@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.name != this.file.name
+formulas:
+  fm_out: this.file.properties.values() .map(list(value)).flat() .map(value.toString()) .filter(value.contains("[[")) .map(link(value)) .map(file(value)) .contains(file)
+  in_any: file.links.contains(this.file)
+  out_any: this.file.links.contains(file)
+  rank: if(formula.fm_out, -1, if(formula.in_any && formula.out_any, 0, if(formula.in_any, 1, 2)))
+  icon: if(formula.fm_out, "📋️", if(formula.in_any && formula.out_any, "🖇️", if(formula.in_any, "🔽", "⬆️")))
+properties:
+  formula.icon:
+    displayName: 🔗
+  file.name:
+    displayName: 🔤 title
+views:
+  - type: table
+    name: 🔗 links
+    filters:
+      or:
+        - formula.in_any
+        - formula.out_any
+        - formula.fm_out
+    order:
+      - formula.icon
+      - file.name
+    sort:
+      - property: formula.rank
+        direction: ASC
+    columnSize:
+      formula.link: 20

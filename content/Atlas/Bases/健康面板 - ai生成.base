@@ -1,0 +1,63 @@
+filters:
+  and: []
+views:
+  - type: table
+    name: Cards｜最近更新
+    filters:
+      and:
+        - file.inFolder("Cards")
+    order:
+      - file.name
+      - file.mtime
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: Spaces/1-Project｜最近更新
+    filters:
+      and:
+        - file.inFolder("Spaces/1-Project")
+    order:
+      - file.name
+      - file.mtime
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: Spaces/2-Area｜最近更新
+    filters:
+      and:
+        - file.inFolder("Spaces/2-Area")
+    order:
+      - file.name
+      - file.mtime
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: Atlas/MOCs｜最近更新
+    filters:
+      and:
+        - file.inFolder("Atlas/MOCs")
+    order:
+      - file.name
+      - file.mtime
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: Sources/Clippings｜最近更新
+    filters:
+      and:
+        - file.inFolder("Sources/Clippings")
+    order:
+      - file.name
+      - file.mtime
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC

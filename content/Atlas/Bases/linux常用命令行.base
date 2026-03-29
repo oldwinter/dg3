@@ -1,0 +1,9 @@
+filters:
+  and:
+    - 分类.containsAny(link("linux命令 - fileclass"))
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - tags

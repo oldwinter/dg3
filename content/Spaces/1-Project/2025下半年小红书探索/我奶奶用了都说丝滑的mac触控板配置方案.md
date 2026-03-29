@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/2025下半年小红书探索/我奶奶用了都说丝滑的mac触控板配置方案.md","created":"2025-07-22","modified":"2025-07-24","cssclasses":""}
+publish: true
+permalink: /Spaces/1-Project/2025下半年小红书探索/我奶奶用了都说丝滑的mac触控板配置方案.md
+created: 2025-07-22
+modified: 2025-07-24
 ---
-
 
 ## 来源
 

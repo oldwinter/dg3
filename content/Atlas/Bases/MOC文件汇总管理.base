@@ -1,0 +1,11 @@
+filters:
+  and:
+    - 分类.containsAny(link("MOC内容地图 - fileclass"))
+views:
+  - type: table
+    name: Table
+  - type: cards
+    name: 画廊视图
+    order:
+      - file.name
+      - file.links

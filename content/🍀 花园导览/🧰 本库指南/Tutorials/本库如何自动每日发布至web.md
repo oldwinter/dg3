@@ -4,9 +4,10 @@ date modified: 2023-03-14
 title: 本库如何自动每日发布至web
 publish: true
 ---
-将obsidian的笔记库以类似博客的方式发布至网络，目前本库采用了2个第三方免费方案，详见[[Spaces/Published/已发布文章/obsidian 目前最完美的免费发布方案 - 渐进式教程]]。
 
-在执行完[[🍀 花园导览/🧰 本库指南/Tutorials/本库如何自动每日同步至github]]的笔记库同步命令后，接着执行从笔记库拉取最新笔记，并自动同步至git仓库的命令，注意这边我的2个方案的仓库，均采用了[[Spaces/2-Area/计算机知识/git submodule]]的方式：
+将obsidian的笔记库以类似博客的方式发布至网络，目前本库采用了2个第三方免费方案，详见[[obsidian 目前最完美的免费发布方案 - 渐进式教程]]。
+
+在执行完[[本库如何自动每日同步至github]]的笔记库同步命令后，接着执行从笔记库拉取最新笔记，并自动同步至git仓库的命令，注意这边我的2个方案的仓库，均采用了[[git submodule]]的方式：
 
 - [GitHub - oldwinter/dg: 数字花园的最完美免费方案](https://github.com/oldwinter/dg)
 - [GitHub - oldwinter/dg3: 🌱 host your own second brain and digital garden for free](https://github.com/oldwinter/dg3)
@@ -35,4 +36,4 @@ git commit -m "auto publish3 by keyboard"
 git push
 ```
 
-当push至github后，将会自动触发后续的构建和发布流程。目前我的dg方案托管在，我的dg3方案托管在[[Spaces/2-Area/云服务和部署/Vercel]]。
+当push至github后，将会自动触发后续的构建和发布流程。目前我的dg方案托管在，我的dg3方案托管在[[Vercel]]。

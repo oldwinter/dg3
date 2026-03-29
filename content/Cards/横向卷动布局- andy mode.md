@@ -1,12 +1,15 @@
 ---
-{"publish":true,"permalink":"/Cards/横向卷动布局- andy mode.md","aliases":"obsidian stack tabs","created":"2025-07-10","modified":"2025-07-10","cssclasses":""}
+publish: true
+permalink: /Cards/横向卷动布局- andy mode.md
+aliases:
+  - obsidian stack tabs
+created: 2025-07-10
+modified: 2025-07-10
 ---
-
 
 某个版本后，obsidian内置了。
 
 ![CleanShot 2025-07-10 at 22.09.29@2x.png](https://pub-pic.oldwinter.top/2025/07/b34c33ee3dc070b23fadb912883ec86f.png)
-
 
 ## 应用场合
 
@@ -25,9 +28,9 @@
 | 课堂/会议速记             | 按“议题1/议题2/议题3”拆笔记，现场实时追加，滑动即可回到上一议题补内容             | TopicA → TopicB → TopicC                           |
 | 语言学习                | 把今天要背的 20 张单词卡做成 20 条笔记，堆叠后像抽认卡，上下滑复习              | `word1.md` → `word2.md` → …                        |
 
-一句话判断标准：  
+一句话判断标准：\
 如果你发现自己在「多份内容之间频繁来回翻看、但又不需要并排对比」——别用传统分屏，用 Stack-tab 就对了；反之，如果你要左右对照（比如表格 vs 图表），就继续用传统左右分栏。
 
-小提示：  
-• 打开方式：设置 → 核心插件 → 打开「Stacked Tabs」；随后 Ctrl/Cmd+Click 连续开多条笔记即可。  
+小提示：\
+• 打开方式：设置 → 核心插件 → 打开「Stacked Tabs」；随后 Ctrl/Cmd+Click 连续开多条笔记即可。\
 • 快捷键：Ctrl/Cmd+Shift+↑/↓ 上下卷动；Ctrl+W 关闭当前层。

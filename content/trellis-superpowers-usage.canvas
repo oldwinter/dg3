@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"n1","type":"text","text":"Trellis + Superpowers 模板","x":-1080,"y":-120,"width":320,"height":120},
+		{"id":"n2","type":"text","text":"1) 创建 fixture 项目\npython3 scripts/create_fixture_project.py /tmp/ts-demo","x":-680,"y":-280,"width":380,"height":150},
+		{"id":"n3","type":"text","text":"2) 安装模板\npython3 scripts/install_template.py --target /tmp/ts-demo --developer <name> --platform codex --platform claude","x":-220,"y":-280,"width":460,"height":170},
+		{"id":"n4","type":"text","text":"3) 验证\npython3 scripts/validate_template.py --mode quick","x":320,"y":-280,"width":360,"height":140},
+		{"id":"n5","type":"text","text":"quick 通过？","x":760,"y":-280,"width":200,"height":120},
+		{"id":"n6","type":"text","text":"可以投入使用\n在目标仓库用 codex/claude 执行 strict-dev-workflow","x":1040,"y":-440,"width":360,"height":140},
+		{"id":"n7","type":"text","text":"失败分支（当前仓库实测）\n2026-03-15: Trellis pin commit checkout 失败\nfatal: unable to read tree ...","x":1040,"y":-120,"width":420,"height":170},
+		{"id":"n8","type":"text","text":"修复后重试\nA. 更新 versions.lock.json 的 trellis commit\nB. 或调整 clone 逻辑支持检出 pin commit","x":1520,"y":-120,"width":420,"height":170},
+		{"id":"n9","type":"text","text":"工作流执行阶段\nPRD -> Diagnose -> Plan -> Execute(TDD) -> Verify -> Commit -> Record","x":1040,"y":-640,"width":520,"height":150},
+		{"id":"n10","type":"text","text":"关键产物\nprd.md\n diagnose.md\n plan-path.txt\n verification.md\n docs/plans/*.md","x":1620,"y":-640,"width":320,"height":190}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"n1","fromSide":"right","toNode":"n2","toSide":"left"},
+		{"id":"e2","fromNode":"n2","fromSide":"right","toNode":"n3","toSide":"left"},
+		{"id":"e3","fromNode":"n3","fromSide":"right","toNode":"n4","toSide":"left"},
+		{"id":"e4","fromNode":"n4","fromSide":"right","toNode":"n5","toSide":"left"},
+		{"id":"e5","fromNode":"n5","fromSide":"top","toNode":"n6","toSide":"left","label":"是"},
+		{"id":"e6","fromNode":"n5","fromSide":"bottom","toNode":"n7","toSide":"left","label":"否"},
+		{"id":"e7","fromNode":"n7","fromSide":"right","toNode":"n8","toSide":"left"},
+		{"id":"e8","fromNode":"n8","fromSide":"top","toNode":"n4","toSide":"right","label":"重跑 quick"},
+		{"id":"e9","fromNode":"n6","fromSide":"top","toNode":"n9","toSide":"bottom"},
+		{"id":"e10","fromNode":"n9","fromSide":"right","toNode":"n10","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,19 @@
+filters:
+  and:
+    - 分类.containsAny(link("提示词prompts - fileclass"))
+formulas:
+  Untitled: file.file
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+    sort:
+      - property: formula.Untitled
+        direction: ASC
+      - property: file.name
+        direction: DESC
+      - property: property.tags
+        direction: DESC
+    columnSize:
+      formula.Untitled: 239

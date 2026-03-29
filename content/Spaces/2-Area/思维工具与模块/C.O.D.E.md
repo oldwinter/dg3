@@ -6,7 +6,7 @@ aliases:
 - CODE流程
 publish: true
 分类:
-- '[[Atlas/Categories/思维模型 - fileclass]]'
+- '[[思维模型 - fileclass]]'
 ---
 
-[[Cards/building your second brain读书笔记 - CODE方法]]
+[[building your second brain读书笔记 - CODE方法]]

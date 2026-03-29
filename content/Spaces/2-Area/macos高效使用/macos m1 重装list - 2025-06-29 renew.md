@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macos m1 重装list - 2025-06-29 renew.md","created":"2023-09-02","modified":"2025-07-04","cssclasses":""}
+publish: true
+permalink: /Spaces/2-Area/macos高效使用/macos m1 重装list - 2025-06-29 renew.md
+created: 2023-09-02
+modified: 2025-07-04
 ---
-
 
 > 要注意，有arm或通用版本，则尽量不要使用intel版本，卡顿且耗电。
 
@@ -9,35 +11,35 @@
 
 从[[App应用软件管理.base]]筛选7分和6分必装。5分选装。
 
-- [[Spaces/3-Resource/软件梳理/macos软件/搜狗输入法]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Arc浏览器]]
-	- 目前还不支持profile同步，所以需要重新手动弄一遍插件和账号登录等等。
-	- [[Spaces/3-Resource/chrome插件/arc浏览器插件重装list]]
-- [[Spaces/3-Resource/软件梳理/macos软件/夸克网盘]]
-- [[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]
-- [[Spaces/3-Resource/软件梳理/安卓软件/Notion]]
-- [[Sources/GithubStarsSync/Bob]]
-- [[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Cursor]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Clash Verge]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Warp App]]
-- [[Sources/GithubStarsSync/Ice]]
-- [[Spaces/3-Resource/软件梳理/macos软件/CleanShot X]]
-- [[Spaces/3-Resource/软件梳理/macos软件/istat Menus]]
-- [[Spaces/3-Resource/软件梳理/macos软件/BetterAndBetter]]
-- [[Spaces/3-Resource/软件梳理/macos软件/BetterTouchTool]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Latest - MacOS软件]]
-- [[Spaces/3-Resource/软件梳理/安卓软件/微信]]
-- [[Spaces/3-Resource/软件梳理/安卓软件/微信读书]]
-- [[Spaces/3-Resource/软件梳理/macos软件/AlDente]]
-- [[Spaces/3-Resource/软件梳理/macos软件/CotEditor]]
-- [[Spaces/3-Resource/软件梳理/macos软件/IINA]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Input source pro]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Keka]]
-- [[Spaces/3-Resource/软件梳理/macos软件/OrbStack]]
-- [[Spaces/3-Resource/软件梳理/macos软件/PearCleaner]]
-- [[Cards/QuickRecorder]]
+- [[搜狗输入法]]
+- [[Arc浏览器]]
+  - 目前还不支持profile同步，所以需要重新手动弄一遍插件和账号登录等等。
+  - [[arc浏览器插件重装list]]
+- [[夸克网盘]]
+- [[Obsidian]]
+- [[Notion]]
+- [[Bob]]
+- [[滴答清单]]
+- [[Cursor]]
+- [[Raycast]]
+- [[Clash Verge]]
+- [[Warp App]]
+- [[Ice]]
+- [[CleanShot X]]
+- [[istat Menus]]
+- [[BetterAndBetter]]
+- [[BetterTouchTool]]
+- [[Latest - MacOS软件]]
+- [[微信]]
+- [[微信读书]]
+- [[AlDente]]
+- [[CotEditor]]
+- [[IINA]]
+- [[Input source pro]]
+- [[Keka]]
+- [[OrbStack]]
+- [[PearCleaner]]
+- [[QuickRecorder]]
 
 ### 可以通过homebrew一键安装
 
@@ -122,7 +124,7 @@ views:
 
 ## 破解版
 
-> 从[[Spaces/1-Project/2025年ack和k8s学习回顾/Macked]]下载。
+> 从[[Macked]]下载。
 
 1. iStat Menus
 2. CleanShot X
@@ -170,7 +172,6 @@ views:
 
 ## 软件配置设置同步
 
-
 ```base
 formulas:
   image: image(icon)
@@ -214,16 +215,16 @@ views:
 ### 账号自动云同步
 
 - 搜狗输入法
-	- 个人词库同步可能有bug，要多等一段时间。目前有30万条，如果没显示这么多，证明还没同步。
+  - 个人词库同步可能有bug，要多等一段时间。目前有30万条，如果没显示这么多，证明还没同步。
 
 ### 手动导出导入
 
-- [[Spaces/3-Resource/软件梳理/macos软件/Raycast]]，等app装完了再导入。
+- [[Raycast]]，等app装完了再导入。
 
 ### 其他云同步
 
- - chrome 各个插件的配置
- - 油猴脚本的配置
+- chrome 各个插件的配置
+- 油猴脚本的配置
 
 ```base
 filters:
@@ -243,24 +244,22 @@ views:
     limit: 20
 
 ```
- 
 
 ## 命令行工具
 
-- [[Spaces/3-Resource/软件梳理/linux常用命令/Homebrew]]
-	- [[Spaces/3-Resource/软件梳理/linux常用命令/kubectl]]
-	- [[Cards/podman]]
-	- [[Cards/pandoc]]
-	- [[Sources/GithubStarsSync/zoxide\|zoxide]]
-	- [[Cards/ffmpeg]]
-	- brew install fd rg fzf
-		- [[Cards/fd命令]]
-		- [[Spaces/3-Resource/软件梳理/linux常用命令/rg\|rg命令]]
-		- [[Spaces/3-Resource/软件梳理/linux常用命令/fzf]]
+- [[Homebrew]]
+  - [[kubectl]]
+  - [[podman]]
+  - [[pandoc]]
+  - [[zoxide|zoxide]]
+  - [[ffmpeg]]
+  - brew install fd rg fzf
+    - [[fd命令]]
+    - [[rg|rg命令]]
+    - [[fzf]]
 - 官方脚本安装
-	- [[Sources/GithubStarsSync/ohmyzsh\|ohmyzsh]]
-	- [[Cards/gemini-cli]]
-
+  - [[ohmyzsh|ohmyzsh]]
+  - [[gemini-cli]]
 
 ![[App应用软件管理.base#命令行工具]]
 
@@ -268,43 +267,38 @@ views:
 
 ### 通用环境和命令行
 
-- [[Spaces/2-Area/计算机知识/git 命令本机权限配置]]
-- [[Spaces/2-Area/windows高效使用/mise\|mise]]
-- [[Cards/dot文件配置同步仓库]]
+- [[git 命令本机权限配置]]
+- [[mise|mise]]
+- [[dot文件配置同步仓库]]
 
 ### 开发类型app
 
 #### 后端用app
 
-- [[Spaces/3-Resource/软件梳理/macos软件/Navicat]]
-	- [[Cards/DataGrip]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Proxyman]]
-	- [[Spaces/3-Resource/软件梳理/macos软件/reqable]]
-- [[Spaces/3-Resource/软件梳理/macos软件/Goland]]
-- [[Spaces/3-Resource/软件梳理/macos软件/OrbStack]]
-
+- [[Navicat]]
+  - [[DataGrip]]
+- [[Proxyman]]
+  - [[reqable]]
+- [[Goland]]
+- [[OrbStack]]
 
 #### 安卓
 
-- [[Spaces/4-Archive/ingtube/交接/Inbox/360 加固助手]]
-- [[Spaces/4-Archive/ingtube/交接/Inbox/Android Studio]]
+- [[360 加固助手]]
+- [[Android Studio]]
 
 #### ios开发
 
-- [[Cards/Developer]]
-- [[Cards/xcode]]
-
+- [[Developer]]
+- [[xcode]]
 
 #### 前端
 
-- [[Cards/微信开发者工具]]
-- [[Cards/webstorm]]
+- [[微信开发者工具]]
+- [[webstorm]]
 
 #### 运维
 
-
-
-
 ## MacOS系统配置
 
-[[Spaces/2-Area/macos高效使用/macos 使用体验优化配置]]
+[[macos 使用体验优化配置]]

@@ -1,0 +1,10 @@
+filters:
+  and:
+    - file.folder.contains("🍀 花园导览")
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.folder
+    sort: []

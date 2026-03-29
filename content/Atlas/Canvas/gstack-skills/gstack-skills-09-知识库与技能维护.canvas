@@ -1,0 +1,327 @@
+{
+	"nodes": [
+		{
+			"id": "g_nav001",
+			"type": "group",
+			"x": -1560,
+			"y": -280,
+			"width": 3440,
+			"height": 240,
+			"label": "gstack-skills-09｜知识库与技能维护",
+			"color": "3"
+		},
+		{
+			"id": "g_arch002",
+			"type": "group",
+			"x": -1560,
+			"y": 20,
+			"width": 1900,
+			"height": 1480,
+			"label": "架构区｜按角色分层",
+			"color": "2"
+		},
+		{
+			"id": "g_flow003",
+			"type": "group",
+			"x": 420,
+			"y": 20,
+			"width": 1460,
+			"height": 1480,
+			"label": "流程区｜常见使用顺序",
+			"color": "5"
+		},
+		{
+			"id": "g_note004",
+			"type": "group",
+			"x": -1560,
+			"y": 1560,
+			"width": 3440,
+			"height": 420,
+			"label": "注意事项｜相邻域、误用提醒、跳转",
+			"color": "4"
+		},
+		{
+			"id": "t_title005",
+			"type": "text",
+			"text": "知识库与技能维护\n把知识写进 Obsidian，也让 skill 体系持续演化。",
+			"x": -1480,
+			"y": -220,
+			"width": 920,
+			"height": 140,
+			"color": "3"
+		},
+		{
+			"id": "t_count006",
+			"type": "text",
+			"text": "覆盖 skills：5\n定位：把知识写进 Obsidian，也让 skill 体系持续演化。",
+			"x": -520,
+			"y": -220,
+			"width": 620,
+			"height": 140,
+			"color": "3"
+		},
+		{
+			"id": "f_home007",
+			"type": "file",
+			"file": "gstack-skills-00-总览.canvas",
+			"x": 700,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "3"
+		},
+		{
+			"id": "f_index008",
+			"type": "file",
+			"file": "gstack-skills-总索引.md",
+			"x": 1180,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "3"
+		},
+		{
+			"id": "t_nav009",
+			"type": "text",
+			"text": "导航\n左：总览\n右：文字索引",
+			"x": 1620,
+			"y": -220,
+			"width": 180,
+			"height": 160,
+			"color": "3"
+		},
+		{
+			"id": "t_head010",
+			"type": "text",
+			"text": "Obsidian 知识整合",
+			"x": -1480,
+			"y": 100,
+			"width": 860,
+			"height": 90,
+			"color": "2"
+		},
+		{
+			"id": "t_skill011",
+			"type": "text",
+			"text": "obsidian-note-integrator\n把笔记补双链、挂靠现有知识网络。\n触发：要把新笔记融进 Obsidian vault 时。",
+			"x": -1480,
+			"y": 220,
+			"width": 860,
+			"height": 170,
+			"color": "2"
+		},
+		{
+			"id": "t_head012",
+			"type": "text",
+			"text": "Skill 生命周期",
+			"x": -580,
+			"y": 100,
+			"width": 860,
+			"height": 90,
+			"color": "2"
+		},
+		{
+			"id": "t_skill013",
+			"type": "text",
+			"text": "skill-creator\n设计新的 skill，定义用途、触发词和流程。\n触发：现有 skill 不够，需要扩展能力时。",
+			"x": -580,
+			"y": 220,
+			"width": 860,
+			"height": 170,
+			"color": "2"
+		},
+		{
+			"id": "t_skill014",
+			"type": "text",
+			"text": "writing-skills\n编写、编辑并验证 skill 本身。\n触发：要维护 skill 内容、流程或质量时。",
+			"x": -580,
+			"y": 420,
+			"width": 860,
+			"height": 170,
+			"color": "2"
+		},
+		{
+			"id": "t_skill015",
+			"type": "text",
+			"text": "skill-installer\n把 skill 安装到本地环境。\n触发：要从仓库或技能市场装 skill 时。",
+			"x": -580,
+			"y": 620,
+			"width": 860,
+			"height": 170,
+			"color": "2"
+		},
+		{
+			"id": "t_skill016",
+			"type": "text",
+			"text": "sync-skills-manager\n管理 repo 与本地 skill 目录之间的同步。\n触发：你维护一套技能仓库，想保持本地与仓库一致时。",
+			"x": -580,
+			"y": 820,
+			"width": 860,
+			"height": 170,
+			"color": "2"
+		},
+		{
+			"id": "t_ftitle017",
+			"type": "text",
+			"text": "本域主线\nobsidian-note-integrator → skill-creator → writing-skills → skill-installer → sync-skills-manager",
+			"x": 500,
+			"y": 100,
+			"width": 1300,
+			"height": 200,
+			"color": "5"
+		},
+		{
+			"id": "t_flow018",
+			"type": "text",
+			"text": "obsidian-note-integrator\n把笔记补双链、挂靠现有知识网络。",
+			"x": 520,
+			"y": 360,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_flow019",
+			"type": "text",
+			"text": "skill-creator\n设计新的 skill",
+			"x": 520,
+			"y": 500,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_flow021",
+			"type": "text",
+			"text": "writing-skills\n编写、编辑并验证 skill 本身。",
+			"x": 520,
+			"y": 640,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_flow023",
+			"type": "text",
+			"text": "skill-installer\n把 skill 安装到本地环境。",
+			"x": 520,
+			"y": 780,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_flow025",
+			"type": "text",
+			"text": "sync-skills-manager\n管理 repo 与本地 skill 目录之间的同步。",
+			"x": 520,
+			"y": 920,
+			"width": 1140,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "t_decision027",
+			"type": "text",
+			"text": "何时选 A / B\n- 补双链/融入 vault：obsidian-note-integrator\n- 新建 skill：skill-creator\n- 分发安装：skill-installer",
+			"x": 500,
+			"y": 1180,
+			"width": 1300,
+			"height": 220,
+			"color": "5"
+		},
+		{
+			"id": "t_adj028",
+			"type": "text",
+			"text": "相邻域推荐\n- 发布与收尾\n- 元技能与规划协作",
+			"x": -1480,
+			"y": 1640,
+			"width": 820,
+			"height": 240,
+			"color": "4"
+		},
+		{
+			"id": "t_warn029",
+			"type": "text",
+			"text": "常见误用提醒\n- 先找现有锚点，再新增卡片。\n- 技能维护类更像系统运营，而不是单次开发。",
+			"x": -620,
+			"y": 1640,
+			"width": 980,
+			"height": 240,
+			"color": "4"
+		},
+		{
+			"id": "f_adj030",
+			"type": "file",
+			"file": "gstack-skills-01-元技能与规划协作.canvas",
+			"x": 500,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "4"
+		},
+		{
+			"id": "f_adj031",
+			"type": "file",
+			"file": "gstack-skills-07-发布与收尾.canvas",
+			"x": 980,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "4"
+		},
+		{
+			"id": "t_jump032",
+			"type": "text",
+			"text": "跳转建议\n需要更完整的文字说明时，打开总索引；\n遇到跨域问题时，优先沿相邻域跳转。",
+			"x": 1460,
+			"y": 1640,
+			"width": 320,
+			"height": 240,
+			"color": "4"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_flow020",
+			"fromNode": "t_flow018",
+			"fromSide": "bottom",
+			"toNode": "t_flow019",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"label": "主线",
+			"color": "5"
+		},
+		{
+			"id": "e_flow022",
+			"fromNode": "t_flow019",
+			"fromSide": "bottom",
+			"toNode": "t_flow021",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_flow024",
+			"fromNode": "t_flow021",
+			"fromSide": "bottom",
+			"toNode": "t_flow023",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_flow026",
+			"fromNode": "t_flow023",
+			"fromSide": "bottom",
+			"toNode": "t_flow025",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "5"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}

@@ -1,10 +1,12 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/GTD.md","title":"GTD","created":"2022-12-11","modified":"2024-06-21","cssclasses":""}
+publish: true
+permalink: /Spaces/2-Area/知识管理/GTD.md
+title: GTD
+created: 2022-12-11
+modified: 2024-06-21
 ---
 
-
 ##
-
 
 ## 一张图描述GTD流程
 

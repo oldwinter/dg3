@@ -1,9 +1,12 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/运动健康/绿茶提取物EGCG.md","title":"绿茶提取物EGCG","created":"2022-12-09","modified":"2023-03-14","cssclasses":""}
+publish: true
+permalink: /Spaces/2-Area/运动健康/绿茶提取物EGCG.md
+title: 绿茶提取物EGCG
+created: 2022-12-09
+modified: 2023-03-14
 ---
 
-
-x:: [[Spaces/2-Area/运动健康/茶的分类]]
+x:: [[茶的分类]]
 
 EGCG是[[儿茶素]]中的成分之一。儿茶素又是[[茶多酚]]中的主要物质。
 

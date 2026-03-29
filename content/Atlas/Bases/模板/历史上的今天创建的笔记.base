@@ -1,0 +1,11 @@
+filters:
+  and:
+    - date(this.file.name).month == date(file.ctime).month && date(this.file.name).day == date(file.ctime).day
+    - date(this.file.name).year != date(file.ctime).year
+views:
+  - type: table
+    name: 历史上的今天创建
+    order:
+      - file.name
+      - file.ctime
+    limit: 10

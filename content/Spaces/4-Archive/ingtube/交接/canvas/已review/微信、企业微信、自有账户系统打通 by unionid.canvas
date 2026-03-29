@@ -1,0 +1,87 @@
+{
+  "nodes": [
+    {
+      "id": "958bd79e1063fc72",
+      "type": "text",
+      "text": "## 映兔小程序",
+      "styleAttributes": {},
+      "x": -540,
+      "y": 100,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "e83778056762efaa",
+      "type": "text",
+      "text": "## 映兔APP",
+      "styleAttributes": {},
+      "x": -540,
+      "y": 320,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "2c51d9b0fcfa81eb",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/已review/映兔 - 微信用户和自有用户打通.canvas",
+      "styleAttributes": {},
+      "x": -340,
+      "y": 920,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "id": "c9e337832ae6e13c",
+      "type": "text",
+      "text": "## 微信APP",
+      "styleAttributes": {},
+      "x": -540,
+      "y": 760,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "b33a5147dd38e0a4",
+      "type": "text",
+      "text": "## 企业微信 \n开发者文档： \nhttps://developer.work.weixin.qq.com/document/path/90664",
+      "styleAttributes": {},
+      "x": -540,
+      "y": 540,
+      "width": 320,
+      "height": 100
+    },
+    {
+      "id": "db02ae10361108b0",
+      "type": "text",
+      "text": "app调用接口： /app/tools/v1/wechat_kf_link\n\n接口里面，存储customid，手机系统等信息",
+      "styleAttributes": {},
+      "x": -1080,
+      "y": 480,
+      "width": 320,
+      "height": 160
+    }
+  ],
+  "edges": [
+    {
+      "id": "6bc2b7e1a912be59",
+      "styleAttributes": {},
+      "fromNode": "958bd79e1063fc72",
+      "fromSide": "left",
+      "toNode": "c9e337832ae6e13c",
+      "toSide": "left",
+      "label": "拉起微信客服"
+    },
+    {
+      "id": "1fa171c8139c89a9",
+      "styleAttributes": {},
+      "fromNode": "e83778056762efaa",
+      "fromSide": "left",
+      "toNode": "c9e337832ae6e13c",
+      "toSide": "left",
+      "label": "拉起微信客服"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  }
+}

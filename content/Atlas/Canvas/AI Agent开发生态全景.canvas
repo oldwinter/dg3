@@ -1,0 +1,348 @@
+{
+	"nodes":[
+		{"id":"core_frameworks_group","type":"group","x":950,"y":400,"width":500,"height":800,"label":"核心框架 & 工具"},
+		{"id":"development_workflow_group","type":"group","x":700,"y":1100,"width":750,"height":500,"label":"开发工作流"},
+		{"id":"agent_categories_group","type":"group","x":50,"y":400,"width":400,"height":600,"label":"AI Agent 分类体系"},
+		{"id":"model_providers_group","type":"group","x":50,"y":1100,"width":600,"height":300,"label":"模型提供商"},
+		{"id":"learning_resources_group","type":"group","x":50,"y":1450,"width":600,"height":300,"label":"学习资源"},
+		{"id":"agent_types_group","type":"group","x":500,"y":400,"width":400,"height":400,"label":"Agent 类型"},
+		{"id":"use_cases_group","type":"group","x":1100,"y":1350,"width":400,"height":400,"label":"应用场景"},
+		{"id":"ai_fundamentals_group","type":"group","x":50,"y":150,"width":400,"height":200,"label":"AI基础概念"},
+		{
+			"id":"ai_terminology",
+			"type":"text",
+			"text":"📖 AI术语体系 [[普通人需要知道的AI常见术语列表]]\n• LLM：大语言模型\n• Prompt：提示词\n• Agents：智能体\n• Hallucination：幻觉\n• MultiModal：多模态",
+			"styleAttributes":{"textAlign":"left"},
+			"x":100,
+			"y":180,
+			"width":300,
+			"height":160,
+			"color":"1"
+		},
+		{
+			"id":"custom_frameworks",
+			"type":"text",
+			"text":"🔧 自定义为主\n• [[Dify]]\n• [[n8n]]\n• [[Coze]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":100,
+			"y":580,
+			"width":300,
+			"height":80,
+			"color":"2"
+		},
+		{
+			"id":"web_programming_agents",
+			"type":"text",
+			"text":"💻 网页版编程Agent\n• [[Lovable]]\n• [[Bolt.new]]\n• [[v0.dev]]\n• [[Replit]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":100,
+			"y":710,
+			"width":300,
+			"height":120,
+			"color":"3"
+		},
+		{
+			"id":"openai_models",
+			"type":"text",
+			"text":"🔵 [[OpenAI]]\n• [[GPT-4]]\n• [[GPT-3.5]]\n• Function Calling\n• Assistant API\n• [[Chat Models 模型]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":100,
+			"y":1150,
+			"width":250,
+			"height":100,
+			"color":"1"
+		},
+		{
+			"id":"google_models",
+			"type":"text",
+			"text":"🟢 [[Google]]\n• [[Gemini]]\n• [[PaLM]]\n• [[Vertex AI]]\n• [[Google AI Studio]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":100,
+			"y":1280,
+			"width":250,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"web_super_agents",
+			"type":"text",
+			"text":"🌐 网页版超级智能体\n• [[Mamus]]\n• [[Genspark]]\n• [[Flowith]]\n• [[Refly]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":100,
+			"y":430,
+			"width":300,
+			"height":80,
+			"color":"1"
+		},
+		{
+			"id":"maps_framework",
+			"type":"text",
+			"text":"🗺️ MAPS协作框架 [[AI使用的MAPS框架]]\nM-Mindset 心态转变\nA-Architect 架构设计\nP-Prompt 提示工程\nS-System 系统化",
+			"styleAttributes":{"textAlign":"left"},
+			"x":500,
+			"y":180,
+			"width":300,
+			"height":160,
+			"color":"2"
+		},
+		{
+			"id":"autonomous_agents",
+			"type":"text",
+			"text":"🎯 Autonomous Agents\n自主执行任务\n• [[AutoGPT]]\n• [[Agentiverse]]\n• [[MetaGPT]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":550,
+			"y":450,
+			"width":300,
+			"height":80,
+			"color":"1"
+		},
+		{
+			"id":"generative_agents",
+			"type":"text",
+			"text":"🎭 Generative Agents\n生成式协作\n• [[Stanford小镇]]\n• [[多Agent对话]]\n• [[角色扮演]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":550,
+			"y":580,
+			"width":300,
+			"height":80,
+			"color":"4"
+		},
+		{
+			"id":"model_evaluation",
+			"type":"text",
+			"text":"📊 模型评价体系 [[一句话评价现在的大模型产品]]\n• ChatGPT：廉颇老矣\n• Claude：跑分没赢过，实际没输过\n• Gemini：赛博菩萨\n• DeepSeek：天下何人不识君",
+			"styleAttributes":{"textAlign":"left"},
+			"x":550,
+			"y":700,
+			"width":300,
+			"height":80,
+			"color":"5"
+		},
+		{
+			"id":"tutorials_docs",
+			"type":"text",
+			"text":"📚 教程文档\n• 官方文档\n• 入门指南\n• API参考\n• 示例代码\n• [[AI学习资源推荐]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":100,
+			"y":1500,
+			"width":250,
+			"height":100,
+			"color":"1"
+		},
+		{
+			"id":"courses_books",
+			"type":"text",
+			"text":"🎓 课程书籍\n• 在线课程\n• 技术书籍\n• 论文研究\n• 认证考试\n• [[Deep Dive into LLMs like ChatGPT]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":100,
+			"y":1630,
+			"width":250,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"tools_platforms",
+			"type":"text",
+			"text":"🔧 工具平台\n• [[Cursor]]\n• [[VSCode]]\n• [[Jupyter]]\n• [[Colab]]\n• [[excalidraw 生成prompts]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":400,
+			"y":1630,
+			"width":250,
+			"height":80,
+			"color":"4"
+		},
+		{
+			"id":"anthropic_models",
+			"type":"text",
+			"text":"🟣 [[Anthropic]]\n• [[Claude 3]]\n• Tool Use\n• 代码生成\n• 分析推理\n• [[claude app]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":400,
+			"y":1150,
+			"width":250,
+			"height":100,
+			"color":"2"
+		},
+		{
+			"id":"open_source_models",
+			"type":"text",
+			"text":"🟠 开源模型\n• [[LLaMA]]\n• [[Mixtral]]\n• [[Qwen]]\n• [[DeepSeek]]\n• 本地部署",
+			"styleAttributes":{"textAlign":"center"},
+			"x":400,
+			"y":1280,
+			"width":250,
+			"height":80,
+			"color":"4"
+		},
+		{
+			"id":"deployment_monitoring",
+			"type":"text",
+			"text":"🚀 部署运维\n• 环境配置\n• 性能监控\n• 错误处理\n• 版本管理\n• 安全防护\n• [[APIs & Plugins]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":750,
+			"y":1400,
+			"width":300,
+			"height":100,
+			"color":"3"
+		},
+		{
+			"id":"community_resources",
+			"type":"text",
+			"text":"🌍 社区资源\n• GitHub项目\n• Discord社区\n• 技术博客\n• 开源贡献\n• [[Andrej Karpathy]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":400,
+			"y":1500,
+			"width":250,
+			"height":100,
+			"color":"2"
+		},
+		{
+			"id":"main_title",
+			"type":"text",
+			"text":"🤖 AI Agent 开发生态全景",
+			"styleAttributes":{"textAlign":"center","border":"invisible"},
+			"x":800,
+			"y":50,
+			"width":400,
+			"height":80
+		},
+		{
+			"id":"langchain_ecosystem",
+			"type":"text",
+			"text":"🔗 LangChain 生态\n• LangChain核心\n• [[LangGraph]]\n• [[LangSmith]]\n• LCEL表达式\n• [[Chains]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":1000,
+			"y":450,
+			"width":400,
+			"height":120,
+			"color":"2"
+		},
+		{
+			"id":"crewai_framework",
+			"type":"text",
+			"text":"👥 CrewAI\n• 角色定义\n• 任务分配\n• 协作流程\n• [[Multi Agent]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":1000,
+			"y":620,
+			"width":400,
+			"height":80,
+			"color":"3"
+		},
+		{
+			"id":"autogen_framework",
+			"type":"text",
+			"text":"🤖 AutoGen\n• 多Agent对话\n• 工具集成\n• 代码执行\n• [[autoGen]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":1000,
+			"y":750,
+			"width":400,
+			"height":80,
+			"color":"5"
+		},
+		{
+			"id":"planning_design",
+			"type":"text",
+			"text":"📋 规划设计\n• 需求分析\n• Agent架构设计\n• 任务分解\n• 角色定义\n• [[AI Native]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":750,
+			"y":1150,
+			"width":300,
+			"height":80,
+			"color":"1"
+		},
+		{
+			"id":"implementation",
+			"type":"text",
+			"text":"⚙️ 实现开发\n• 框架选择\n• 工具集成\n• [[Prompt工程]]\n• 代码编写\n• 测试验证\n• [[AI Code 编程 - moc]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":750,
+			"y":1270,
+			"width":300,
+			"height":100,
+			"color":"2"
+		},
+		{
+			"id":"personal_assistant",
+			"type":"text",
+			"text":"👤 个人助手\n• 任务管理\n• 信息整理\n• 自动化工作流\n• [[AI assistant：AI辅助小二进行优质博主识别]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":1150,
+			"y":1400,
+			"width":300,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"business_automation",
+			"type":"text",
+			"text":"💼 企业自动化\n• 数据分析\n• 报告生成\n• 客户服务\n• 流程优化\n• [[Content Marketing Graph]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":1150,
+			"y":1480,
+			"width":300,
+			"height":80,
+			"color":"2"
+		},
+		{
+			"id":"development_tools",
+			"type":"text",
+			"text":"🛠️ 开发工具\n• 代码生成\n• 代码审查\n• 文档编写\n• 测试辅助\n• [[AI Assisted Coding]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":1150,
+			"y":1580,
+			"width":300,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"research_analysis",
+			"type":"text",
+			"text":"🔬 研究分析\n• 文献综述\n• 数据挖掘\n• 趋势分析\n• 知识图谱\n• [[AI科研助手-scispace]]",
+			"styleAttributes":{"textAlign":"center"},
+			"x":1150,
+			"y":1660,
+			"width":300,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"llamaindex_framework",
+			"type":"text",
+			"text":"📚 LlamaIndex\n• 数据索引\n• RAG检索\n• 知识库管理\n• [[llama_index]]",
+			"styleAttributes":{"textAlign":"left"},
+			"x":1000,
+			"y":880,
+			"width":400,
+			"height":80,
+			"color":"6"
+		},
+		{
+			"id":"llm_training_group",
+			"type":"text",
+			"text":"🧠 LLM训练全流程 [[LLM训练全流程详解 - 从基础到DeepSeek创新]]\n• 预训练 → 监督微调 → 强化学习\n• DeepSeek-R1创新：纯RL方法\n• GRPO算法，无需奖励模型",
+			"styleAttributes":{"textAlign":"left"},
+			"x":1000,
+			"y":1010,
+			"width":400,
+			"height":120,
+			"color":"4"
+		}
+	],
+	"edges":[
+		{"id":"categories_to_types","fromNode":"agent_categories_group","fromSide":"right","toNode":"agent_types_group","toSide":"left","label":"分类映射"},
+		{"id":"types_to_frameworks","fromNode":"agent_types_group","fromSide":"right","toNode":"core_frameworks_group","toSide":"left","label":"技术实现"},
+		{"id":"frameworks_to_models","fromNode":"core_frameworks_group","fromSide":"left","toNode":"model_providers_group","toSide":"right","label":"模型支持"},
+		{"id":"models_to_workflow","fromNode":"model_providers_group","fromSide":"right","toNode":"development_workflow_group","toSide":"left","label":"开发流程"},
+		{"id":"workflow_to_usecases","fromNode":"development_workflow_group","fromSide":"right","toNode":"use_cases_group","toSide":"left","label":"应用落地"},
+		{"id":"resources_to_main","fromNode":"learning_resources_group","fromSide":"top","toNode":"main_title","toSide":"bottom","label":"学习路径"},
+		{"id":"fundamentals_to_categories","fromNode":"ai_fundamentals_group","fromSide":"bottom","toNode":"agent_categories_group","toSide":"top","label":"基础概念"},
+		{"id":"maps_to_categories","fromNode":"maps_framework","fromSide":"bottom","toNode":"agent_categories_group","toSide":"top","label":"协作框架"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{
+			"tags":["AI生成","AI Agent","知识图谱","双链笔记"],
+			"date created":"2024-12-19",
+			"description":"基于个人笔记库创建的AI Agent开发生态全景图，包含丰富的双链引用"
+		}
+	}
+}

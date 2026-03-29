@@ -1,0 +1,53 @@
+filters:
+  and:
+    - 分类.containsAny(link("AI产品 - fileclass"), link("AI产品-编程 - fileclass"), link("AI产品-视频生成 - fileclass"), link("AI产品-图片生成 - fileclass"), link("AI产品-Agent - fileclass"))
+properties:
+  note.订阅费用（年）:
+    displayName: 订阅费用（每年）
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - 分类
+      - 订阅费用（年）
+    sort:
+      - property: 订阅费用（年）
+        direction: ASC
+      - property: property.tags
+        direction: ASC
+    columnSize:
+      note.分类: 411
+  - type: cards
+    name: 画廊视图
+    order:
+      - file.name
+      - file.folder
+      - tags
+      - 订阅费用（年）
+    sort:
+      - property: 订阅费用（年）
+        direction: ASC
+      - property: property.tags
+        direction: ASC
+    image: icon
+  - type: map-view-plugin
+    name: View
+    mapCenter: 56.876747970736446,-106.89834594726564
+    mapZoom: 2
+  - type: table
+    name: Table 2
+    groupBy:
+      property: 分类
+      direction: ASC
+    order:
+      - file.name
+      - 分类
+      - 订阅费用（年）
+    sort:
+      - property: 订阅费用（年）
+        direction: ASC
+      - property: property.tags
+        direction: ASC
+    columnSize:
+      note.分类: 411

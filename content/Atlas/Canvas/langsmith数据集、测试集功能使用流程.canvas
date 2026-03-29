@@ -1,0 +1,342 @@
+{
+  "edges": [
+    {
+      "fromNode": "42cd21e7d3c2121a",
+      "fromSide": "right",
+      "id": "cc4b351a4200360d",
+      "toNode": "217296383e17a12c",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6c0d1c7c9d319058",
+      "fromSide": "right",
+      "id": "2a8a26f187ce890c",
+      "toNode": "01bd0a82d4eeee06",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6c0d1c7c9d319058",
+      "fromSide": "right",
+      "id": "d5d03140862a5e12",
+      "toNode": "ba8436913d3f6b22",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6c0d1c7c9d319058",
+      "fromSide": "right",
+      "id": "d511250d3b31a91c",
+      "toNode": "bc41e0de2575d922",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "217296383e17a12c",
+      "fromSide": "bottom",
+      "id": "cfa88b0d9e537357",
+      "toNode": "5a5f876d252385da",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f41ac0c2a0e0a26c",
+      "fromSide": "left",
+      "id": "3f2f2b505dee94b6",
+      "toNode": "5a5f876d252385da",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "0177eedf58c35a94",
+      "fromSide": "left",
+      "id": "6991c8415195bb34",
+      "toNode": "5a5f876d252385da",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "5a5f876d252385da",
+      "fromSide": "left",
+      "id": "1c84f4345f08a049",
+      "toNode": "475cddb4ac7fd42c",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "01bd0a82d4eeee06",
+      "fromSide": "right",
+      "id": "727e344d8eb3fbcf",
+      "label": "好的提示词，纳为己用",
+      "toNode": "42cd21e7d3c2121a",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "2dfd1cf48bcd800f",
+      "fromSide": "bottom",
+      "id": "cb2d98eef6096120",
+      "toNode": "42cd21e7d3c2121a",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "bc41e0de2575d922",
+      "fromSide": "right",
+      "id": "e1407cb521faf5b1",
+      "toNode": "9498492876bfc1e2",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "ef3e819c3fa01041",
+      "fromSide": "bottom",
+      "id": "2025c9f5ed182e4f",
+      "toNode": "42cd21e7d3c2121a",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "2aab15bc36a464ed",
+      "fromSide": "bottom",
+      "id": "4fae9eda0415e735",
+      "toNode": "01bd0a82d4eeee06",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "2ba0e7c641d48f3c",
+      "fromSide": "bottom",
+      "id": "bae2f856b6e397c1",
+      "toNode": "01bd0a82d4eeee06",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "475cddb4ac7fd42c",
+      "fromSide": "bottom",
+      "id": "6b39100b8d7549eb",
+      "label": "筛选优质Run，继续打分",
+      "toNode": "17f1420485bb5020",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "17f1420485bb5020",
+      "fromSide": "left",
+      "id": "f873c403cd835382",
+      "toNode": "42cd21e7d3c2121a",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "ba8436913d3f6b22",
+      "fromSide": "right",
+      "id": "ebc174b300c04905",
+      "toNode": "17f1420485bb5020",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "color": "4",
+      "height": 420,
+      "id": "9498492876bfc1e2",
+      "label": "Datasets & Testing LLM自动评估 全生命周期",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 1405,
+      "x": 405,
+      "y": 320
+    },
+    {
+      "color": "1",
+      "height": 880,
+      "id": "0d6c4aecc14fe9b1",
+      "label": "LLMOps - prompts持续改进",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 600,
+      "x": -380,
+      "y": 120
+    },
+    {
+      "height": 495,
+      "id": "6c0d1c7c9d319058",
+      "label": "Chains",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 440,
+      "x": -880,
+      "y": 430
+    },
+    {
+      "height": 80,
+      "id": "5a5f876d252385da",
+      "styleAttributes": {},
+      "text": "## 基于数据集，选择chain，执行测试用例",
+      "type": "text",
+      "width": 480,
+      "x": 920,
+      "y": 580
+    },
+    {
+      "height": 120,
+      "id": "217296383e17a12c",
+      "styleAttributes": {},
+      "text": "## 添加测试用例 add example\nuser的提示词",
+      "type": "text",
+      "width": 460,
+      "x": 940,
+      "y": 340
+    },
+    {
+      "height": 60,
+      "id": "f41ac0c2a0e0a26c",
+      "styleAttributes": {},
+      "text": "### 预设的评估",
+      "type": "text",
+      "width": 250,
+      "x": 1540,
+      "y": 520
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/兔宝ai.md",
+      "height": 130,
+      "id": "3532aaeadc7f566e",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -860,
+      "y": 460
+    },
+    {
+      "file": "Atlas/Spaces/ingtube/Inbox/映兔aigc - AI编辑器.md",
+      "height": 100,
+      "id": "92039f6e173a1778",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -860,
+      "y": 645
+    },
+    {
+      "file": "Cards/单次提问-无上下文.md",
+      "height": 80,
+      "id": "a67a9a8e7add45ff",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -860,
+      "y": 825
+    },
+    {
+      "height": 60,
+      "id": "42cd21e7d3c2121a",
+      "styleAttributes": {},
+      "text": "## 创建数据集 Datasets",
+      "type": "text",
+      "width": 340,
+      "x": 460,
+      "y": 370
+    },
+    {
+      "height": 60,
+      "id": "0177eedf58c35a94",
+      "styleAttributes": {},
+      "text": "### 自定义评估",
+      "type": "text",
+      "width": 250,
+      "x": 1540,
+      "y": 660
+    },
+    {
+      "height": 125,
+      "id": "be79399cb1869c1f",
+      "styleAttributes": {},
+      "text": "# 以上形式，本质均是对一次chain 的Run 进行打分",
+      "type": "text",
+      "width": 560,
+      "x": -360,
+      "y": 865
+    },
+    {
+      "height": 60,
+      "id": "2aab15bc36a464ed",
+      "styleAttributes": {},
+      "text": "### 显式反馈",
+      "type": "text",
+      "width": 250,
+      "x": -360,
+      "y": 170
+    },
+    {
+      "height": 60,
+      "id": "01bd0a82d4eeee06",
+      "styleAttributes": {},
+      "text": "## 用户反馈",
+      "type": "text",
+      "width": 250,
+      "x": -175,
+      "y": 400
+    },
+    {
+      "height": 100,
+      "id": "475cddb4ac7fd42c",
+      "styleAttributes": {},
+      "text": "## 对比不同chain的Output",
+      "type": "text",
+      "width": 340,
+      "x": 460,
+      "y": 500
+    },
+    {
+      "height": 140,
+      "id": "ef3e819c3fa01041",
+      "styleAttributes": {},
+      "text": "## 翻查Projects日志记录，筛选优质提示词",
+      "type": "text",
+      "width": 250,
+      "x": 280,
+      "y": 0
+    },
+    {
+      "height": 102,
+      "id": "17f1420485bb5020",
+      "styleAttributes": {},
+      "text": "## Annotation Queues",
+      "type": "text",
+      "width": 365,
+      "x": 575,
+      "y": 865
+    },
+    {
+      "height": 60,
+      "id": "bc41e0de2575d922",
+      "styleAttributes": {},
+      "text": "## LLM自动评估",
+      "type": "text",
+      "width": 250,
+      "x": -175,
+      "y": 560
+    },
+    {
+      "height": 60,
+      "id": "ba8436913d3f6b22",
+      "styleAttributes": {},
+      "text": "## 人工标注\n",
+      "type": "text",
+      "width": 250,
+      "x": -175,
+      "y": 765
+    },
+    {
+      "height": 80,
+      "id": "2dfd1cf48bcd800f",
+      "styleAttributes": {},
+      "text": "## 自研提示词",
+      "type": "text",
+      "width": 340,
+      "x": 600,
+      "y": 0
+    },
+    {
+      "height": 60,
+      "id": "2ba0e7c641d48f3c",
+      "styleAttributes": {},
+      "text": "### 隐式反馈",
+      "type": "text",
+      "width": 250,
+      "x": -50,
+      "y": 140
+    }
+  ]
+}

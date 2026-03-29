@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"394d15863188e4d4","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/四分屏浏览-vibe browsing.png","x":300,"y":282,"width":1480,"height":954},
+		{"id":"8fe3ce76a4e1b5f2","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/四分屏编程-vibe coding.png","x":300,"y":1290,"width":1480,"height":954},
+		{"id":"b713f1a1abd414ec","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/四分屏写作-vibe writing.png","x":300,"y":2293,"width":1480,"height":954}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,18 @@
+filters:
+  or:
+    - file.folder == "Spaces/1-Project/2025下半年小红书探索"
+    - 分类.containsAny(link("小红书笔记 - fileclass"))
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - 小红书标题
+      - 小红书描述
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: 小红书描述
+        direction: ASC
+    columnSize:
+      note.小红书标题: 306

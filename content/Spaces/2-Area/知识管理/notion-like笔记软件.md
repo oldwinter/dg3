@@ -7,9 +7,9 @@ publish: true
 
 3 个重要特征:
 
-- [[Cards/block]]
-- [[Cards/folder first]]
-- [[Cards/database]]
+- [[block]]
+- [[folder first]]
+- [[database]]
 
 常见产品:
 
@@ -19,7 +19,7 @@ publish: true
 - notion
 - wolai
 - flowus
-- [[Cards/思源笔记]]
+- [[思源笔记]]
 - anytype
 
-[[Spaces/2-Area/知识管理/roam-like笔记软件]]
+[[roam-like笔记软件]]

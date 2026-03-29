@@ -1,0 +1,88 @@
+filters:
+  and:
+    - '!file.ext.containsAny("md", "canvas", "base", "ts", "js", "py", "sh", "u8")'
+formulas:
+  Untitled: file.links.map(value.asFile())
+views:
+  - type: table
+    name: 全库资源文件包括图片
+    order:
+      - file.name
+      - file.ext
+      - file.size
+      - file.backlinks
+      - formula.Untitled
+    sort:
+      - property: file.ext
+        direction: ASC
+      - property: file.name
+        direction: DESC
+      - property: formula.Untitled
+        direction: DESC
+      - property: file.size
+        direction: DESC
+      - property: file.links
+        direction: DESC
+    columnSize:
+      formula.file.extension: 175
+  - type: table
+    name: View
+    order:
+      - file.name
+      - file.size
+      - file.folder
+      - file.mtime
+      - file.ctime
+      - file.ext
+      - formula.Untitled
+    columnSize:
+      file.mtime: 195
+      file.ctime: 188
+  - type: table
+    name: 存在反链的资源文件
+    filters:
+      and:
+        - '!file.ext.containsAny("png", "jpg", "gif", "webp", "jpeg", "svg", "publish")'
+    order:
+      - file.name
+      - file.ext
+      - file.size
+      - file.backlinks
+    sort:
+      - property: file.ext
+        direction: ASC
+      - property: file.name
+        direction: DESC
+      - property: formula.Untitled
+        direction: DESC
+      - property: file.size
+        direction: DESC
+      - property: file.links
+        direction: DESC
+    columnSize:
+      file.name: 396
+  - type: table
+    name: 存在反链的资源文件
+    filters:
+      and:
+        - '!file.ext.containsAny("png", "jpg", "gif", "webp")'
+    order:
+      - file.name
+      - file.ext
+      - file.size
+      - file.backlinks
+    sort:
+      - property: file.ext
+        direction: ASC
+      - property: file.name
+        direction: DESC
+      - property: formula.Untitled
+        direction: DESC
+      - property: file.size
+        direction: DESC
+      - property: file.links
+        direction: DESC
+    columnSize:
+      formula.file.extension: 175
+  - type: table
+    name: json文件

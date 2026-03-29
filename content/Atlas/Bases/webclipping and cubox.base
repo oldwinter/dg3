@@ -1,0 +1,23 @@
+filters:
+  or:
+    - file.folder.startsWith("Sources/Clippings")
+    - "!cubox_url.isEmpty()"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.size
+      - cubox_url
+      - source
+      - 作者
+      - file.ctime
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: cubox_url
+        direction: ASC
+      - property: file.size
+        direction: DESC
+    columnSize:
+      file.name: 502

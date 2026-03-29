@@ -1,20 +1,27 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Warp App.md","aliases":"Warp","title":"Warp","created":"2023-01-06","modified":"2025-09-02","cssclasses":""}
+publish: true
+permalink: /Spaces/3-Resource/软件梳理/macos软件/Warp App.md
+aliases:
+  - Warp
+title: Warp
+created: 2023-01-06
+modified: 2025-09-02
 ---
 
+[[warp token]]
 
-Warp官方优惠码，新开账号或续费用得上  
+Warp官方优惠码，新开账号或续费用得上\
 花5刀买一个月Pro优惠码：5DOLLARGPT5 花1刀买一个月Pro优惠码：DELTA
 
-[[Cards/warp preview 内测版]]
+[[warp preview 内测版]]
 
 ## 3大使用场景
 
 - 直接输入terminal，开箱即用，不用配置各种fish之类的东西
 - 输入# ，跟着自然语言，生成命令，比如：# 使用kubectl命令进入到pod的容器a
 - cmd +i 切换到ai agent模式。
-	- 目前自动识别对中文不友好，先用不了，只能通过cmd i手动切换
-	- 2025-09-15：现在自然识别效果很强，不需要自己切换了
+  - 目前自动识别对中文不友好，先用不了，只能通过cmd i手动切换
+  - 2025-09-15：现在自然识别效果很强，不需要自己切换了
 
 ## 最牛逼的特性
 
@@ -24,16 +31,15 @@ Warp官方优惠码，新开账号或续费用得上
 
 ## warp ai agent的平替
 
-[[Cards/aichat]]
+[[aichat]]
 
-[[Cards/aider]]
+[[aider]]
 
-[[Cards/claude code]]
+[[claude code]]
 
-[[Cards/codex cli]]
+[[codex cli]]
 
-[[Cards/gemini-cli]]
-
+[[gemini-cli]]
 
 ## warp使用截图
 
@@ -41,20 +47,20 @@ Warp官方优惠码，新开账号或续费用得上
 
 ##
 
-最近新出的[[Spaces/2-Area/计算机知识/ghostty]]，有空试试好使不
+最近新出的[[ghostty]]，有空试试好使不
 
 ![Pasted image 20240713181946](https://pub-pic.oldwinter.top/2025/06/dc4788ce9c6dd1b53fc4b406154a6cc9.png)
 
 ##
 
-设置同步:: 不需要  
+设置同步:: 不需要\
 作用:: AI赋能的iTerm终端
 
-目前无法适配source <(kubectl completion zsh) 自动补全，这个时候只能换回普通terminal使用了。[[Spaces/3-Resource/软件梳理/linux常用命令/kubectl]]
+目前无法适配source <(kubectl completion zsh) 自动补全，这个时候只能换回普通terminal使用了。[[kubectl]]
 
 主打AI智能提示的命令行终端工具。目前用起来感觉非常不错。
 
-例如，输入 # 批量替换，就能给出sed完整命令。可以算是[[Spaces/3-Resource/软件梳理/安卓软件/ChatGPT]]的细分领域了。
+例如，输入 # 批量替换，就能给出sed完整命令。可以算是[[ChatGPT]]的细分领域了。
 
 ![image.png](https://img.oldwinter.top/202302151815008.png)
 
@@ -68,7 +74,7 @@ Warp官方优惠码，新开账号或续费用得上
 
 配置文件：
 
-/Users/oldwinter/.warp/launch_configurations/k8s.yaml
+/Users/oldwinter/.warp/launch\_configurations/k8s.yaml
 
 ```yaml
 # Warp Launch Configuration

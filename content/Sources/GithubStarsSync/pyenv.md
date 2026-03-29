@@ -20,9 +20,8 @@ date created: 2023-12-06
 date modified: 2024-11-05
 publish: true
 分类:
-- '[[Atlas/Categories/github开源 - fileclass]]'
+- '[[github开源 - fileclass]]'
 ---
-
 
 # pyenv/pyenv
 
@@ -58,11 +57,9 @@ Simple Python version management
 - 🔀 是否Fork: 否
 - ⚖️ 开源协议: MIT License
 
-
 ---
 
 ## 合并内容
-
 
 ## 安装命令
 
@@ -72,7 +69,7 @@ Simple Python version management
 brew install pyenv
 ```
 
-也需要配置 [[Cards/zshrc文件备份\|zsh]]
+也需要配置 [[zshrc文件备份|zsh]]
 
 ```
 pyenv install 3.12.0

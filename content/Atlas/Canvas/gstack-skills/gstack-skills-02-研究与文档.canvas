@@ -1,0 +1,464 @@
+{
+	"nodes": [
+		{
+			"id": "g_nav001",
+			"type": "group",
+			"x": -1560,
+			"y": -280,
+			"width": 3440,
+			"height": 240,
+			"label": "gstack-skills-02｜研究与文档",
+			"color": "2"
+		},
+		{
+			"id": "g_arch002",
+			"type": "group",
+			"x": -1560,
+			"y": 20,
+			"width": 1900,
+			"height": 1480,
+			"label": "架构区｜按角色分层",
+			"color": "5"
+		},
+		{
+			"id": "g_flow003",
+			"type": "group",
+			"x": 420,
+			"y": 20,
+			"width": 1460,
+			"height": 1480,
+			"label": "流程区｜常见使用顺序",
+			"color": "4"
+		},
+		{
+			"id": "g_note004",
+			"type": "group",
+			"x": -1560,
+			"y": 1560,
+			"width": 3440,
+			"height": 420,
+			"label": "注意事项｜相邻域、误用提醒、跳转",
+			"color": "3"
+		},
+		{
+			"id": "t_title005",
+			"type": "text",
+			"text": "研究与文档\n查官方文档、搜网页、抓页面、抽结构化数据。",
+			"x": -1480,
+			"y": -220,
+			"width": 920,
+			"height": 140,
+			"color": "2"
+		},
+		{
+			"id": "t_count006",
+			"type": "text",
+			"text": "覆盖 skills：12\n定位：查官方文档、搜网页、抓页面、抽结构化数据。",
+			"x": -520,
+			"y": -220,
+			"width": 620,
+			"height": 140,
+			"color": "2"
+		},
+		{
+			"id": "f_home007",
+			"type": "file",
+			"file": "gstack-skills-00-总览.canvas",
+			"x": 700,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "2"
+		},
+		{
+			"id": "f_index008",
+			"type": "file",
+			"file": "gstack-skills-总索引.md",
+			"x": 1180,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "2"
+		},
+		{
+			"id": "t_nav009",
+			"type": "text",
+			"text": "导航\n左：总览\n右：文字索引",
+			"x": 1620,
+			"y": -220,
+			"width": 180,
+			"height": 160,
+			"color": "2"
+		},
+		{
+			"id": "t_head010",
+			"type": "text",
+			"text": "官方与库文档",
+			"x": -1480,
+			"y": 100,
+			"width": 560,
+			"height": 90,
+			"color": "5"
+		},
+		{
+			"id": "t_skill011",
+			"type": "text",
+			"text": "documentation-lookup\n查框架、库和 API 参考与代码示例。\n触发：用户问某个技术怎么用、需要示例时。",
+			"x": -1480,
+			"y": 220,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill012",
+			"type": "text",
+			"text": "context7\n获取更新鲜的库和框架文档。\n触发：要查 API、SDK、官方示例且担心知识过时时。",
+			"x": -1480,
+			"y": 420,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill013",
+			"type": "text",
+			"text": "openai-docs\n专门查 OpenAI 官方文档和产品能力。\n触发：问题涉及 OpenAI API、模型、限制或官方用法时。",
+			"x": -1480,
+			"y": 620,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill014",
+			"type": "text",
+			"text": "research\n做系统化调研、分析和资料提炼。\n触发：需求本身还需要事实和背景支撑时。",
+			"x": -1480,
+			"y": 820,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_head015",
+			"type": "text",
+			"text": "网页搜索与抓取",
+			"x": -880,
+			"y": 100,
+			"width": 560,
+			"height": 90,
+			"color": "5"
+		},
+		{
+			"id": "t_skill016",
+			"type": "text",
+			"text": "firecrawl\nFirecrawl 总入口，负责搜索、抓取、浏览器交互。\n触发：用户要上网查、抓网页或抽内容时。",
+			"x": -880,
+			"y": 220,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill017",
+			"type": "text",
+			"text": "firecrawl-search\n做网页搜索并带回可读正文。\n触发：要找相关文章、最新信息、网页资料时。",
+			"x": -880,
+			"y": 420,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill018",
+			"type": "text",
+			"text": "firecrawl-scrape\n把网页提取成干净 markdown。\n触发：用户给了 URL，要读正文或提取页面内容时。",
+			"x": -880,
+			"y": 620,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill019",
+			"type": "text",
+			"text": "firecrawl-map\n先把网站 URL 地图列出来。\n触发：知道站点但不知道具体页面在哪时。",
+			"x": -880,
+			"y": 820,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill020",
+			"type": "text",
+			"text": "firecrawl-crawl\n批量爬取整个网站或某个 docs 区域。\n触发：要抓一整片文档、多页内容时。",
+			"x": -880,
+			"y": 1020,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill021",
+			"type": "text",
+			"text": "firecrawl-download\n把网站批量下载成离线文件。\n触发：要保存整站、离线看 docs 或做本地资料库时。",
+			"x": -880,
+			"y": 1220,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_head022",
+			"type": "text",
+			"text": "交互式提取",
+			"x": -280,
+			"y": 100,
+			"width": 560,
+			"height": 90,
+			"color": "5"
+		},
+		{
+			"id": "t_skill023",
+			"type": "text",
+			"text": "firecrawl-browser\n云端浏览器抓取，支持点击、登录、分页。\n触发：普通 scrape 拿不到内容，需要互动后再抓时。",
+			"x": -280,
+			"y": 220,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill024",
+			"type": "text",
+			"text": "firecrawl-agent\n按 schema 从网页抽结构化 JSON 数据。\n触发：要批量抓商品、价格、目录等结构化信息时。",
+			"x": -280,
+			"y": 420,
+			"width": 560,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_ftitle025",
+			"type": "text",
+			"text": "本域主线\nresearch → documentation-lookup → context7 → openai-docs → firecrawl-search → firecrawl-scrape → firecrawl-browser → firecrawl-agent",
+			"x": 500,
+			"y": 100,
+			"width": 1300,
+			"height": 200,
+			"color": "4"
+		},
+		{
+			"id": "t_flow026",
+			"type": "text",
+			"text": "research\n做系统化调研、分析和资料提炼。",
+			"x": 520,
+			"y": 360,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow027",
+			"type": "text",
+			"text": "documentation-lookup\n查框架、库和 API 参考与代码示例。",
+			"x": 520,
+			"y": 500,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow029",
+			"type": "text",
+			"text": "context7\n获取更新鲜的库和框架文档。",
+			"x": 520,
+			"y": 640,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow031",
+			"type": "text",
+			"text": "openai-docs\n专门查 OpenAI 官方文档和产品能力。",
+			"x": 520,
+			"y": 780,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow033",
+			"type": "text",
+			"text": "firecrawl-search\n做网页搜索并带回可读正文。",
+			"x": 520,
+			"y": 920,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow035",
+			"type": "text",
+			"text": "firecrawl-scrape\n把网页提取成干净 markdown。",
+			"x": 520,
+			"y": 1060,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow037",
+			"type": "text",
+			"text": "firecrawl-browser\n云端浏览器抓取",
+			"x": 520,
+			"y": 1200,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow039",
+			"type": "text",
+			"text": "firecrawl-agent\n按 schema 从网页抽结构化 JSON 数据。",
+			"x": 520,
+			"y": 1340,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_decision041",
+			"type": "text",
+			"text": "何时选 A / B\n- 找 API 用法：documentation-lookup / context7\n- 知道 URL：firecrawl-scrape\n- 需要点击登录：firecrawl-browser",
+			"x": 500,
+			"y": 1180,
+			"width": 1300,
+			"height": 220,
+			"color": "4"
+		},
+		{
+			"id": "t_adj042",
+			"type": "text",
+			"text": "相邻域推荐\n- 元技能与规划协作\n- 实现与调试",
+			"x": -1480,
+			"y": 1640,
+			"width": 820,
+			"height": 240,
+			"color": "3"
+		},
+		{
+			"id": "t_warn043",
+			"type": "text",
+			"text": "常见误用提醒\n- 官方文档优先于二手博客。\n- 普通 scrape 不够时再升级到 browser/agent。",
+			"x": -620,
+			"y": 1640,
+			"width": 980,
+			"height": 240,
+			"color": "3"
+		},
+		{
+			"id": "f_adj044",
+			"type": "file",
+			"file": "gstack-skills-01-元技能与规划协作.canvas",
+			"x": 500,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "3"
+		},
+		{
+			"id": "f_adj045",
+			"type": "file",
+			"file": "gstack-skills-04-实现与调试.canvas",
+			"x": 980,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "3"
+		},
+		{
+			"id": "t_jump046",
+			"type": "text",
+			"text": "跳转建议\n需要更完整的文字说明时，打开总索引；\n遇到跨域问题时，优先沿相邻域跳转。",
+			"x": 1460,
+			"y": 1640,
+			"width": 320,
+			"height": 240,
+			"color": "3"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_flow028",
+			"fromNode": "t_flow026",
+			"fromSide": "bottom",
+			"toNode": "t_flow027",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"label": "主线",
+			"color": "4"
+		},
+		{
+			"id": "e_flow030",
+			"fromNode": "t_flow027",
+			"fromSide": "bottom",
+			"toNode": "t_flow029",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "e_flow032",
+			"fromNode": "t_flow029",
+			"fromSide": "bottom",
+			"toNode": "t_flow031",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "e_flow034",
+			"fromNode": "t_flow031",
+			"fromSide": "bottom",
+			"toNode": "t_flow033",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "e_flow036",
+			"fromNode": "t_flow033",
+			"fromSide": "bottom",
+			"toNode": "t_flow035",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "e_flow038",
+			"fromNode": "t_flow035",
+			"fromSide": "bottom",
+			"toNode": "t_flow037",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "e_flow040",
+			"fromNode": "t_flow037",
+			"fromSide": "bottom",
+			"toNode": "t_flow039",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}

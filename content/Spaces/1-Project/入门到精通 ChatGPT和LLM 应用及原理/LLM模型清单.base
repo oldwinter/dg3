@@ -1,0 +1,37 @@
+filters:
+  and:
+    - 分类 == link("LLM Models")
+    - 发明地 != "法国"
+views:
+  - type: cards
+    name: 画廊视图
+    order:
+      - file.name
+      - 一句话评价
+    sort:
+      - property: 发明地
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    image: note.icon
+    imageFit: contain
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - icon
+      - 一句话评价
+      - 发明地
+      - 是否在用
+    sort:
+      - property: 发明地
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: cards
+    name: 画廊视图-在用的
+    filters:
+      and:
+        - 是否在用 == true
+    image: note.icon
+    imageFit: contain

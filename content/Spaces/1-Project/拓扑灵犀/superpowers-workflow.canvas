@@ -1,0 +1,341 @@
+{
+  "nodes": [
+    {
+      "id": "group-core",
+      "type": "group",
+      "x": -60,
+      "y": 7,
+      "width": 3743,
+      "height": 896,
+      "color": "4",
+      "label": "核心工作流（7 步）"
+    },
+    {
+      "id": "group-aux",
+      "type": "group",
+      "x": -60,
+      "y": 1041,
+      "width": 1498,
+      "height": 414,
+      "color": "2",
+      "label": "辅助技能（随时触发）"
+    },
+    {
+      "id": "group-exec",
+      "type": "group",
+      "x": 1599,
+      "y": 41,
+      "width": 321,
+      "height": 827,
+      "color": "5",
+      "label": "4️⃣ 执行（二选一）"
+    },
+    {
+      "id": "group-review",
+      "type": "group",
+      "x": 2478,
+      "y": 41,
+      "width": 300,
+      "height": 827,
+      "color": "3",
+      "label": "6️⃣ 代码审查"
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# Superpowers 工作流全景图\n14 个技能 · 7 步核心流程 · 结构化开发",
+      "x": 1500,
+      "y": -200,
+      "width": 535,
+      "height": 138,
+      "color": "6"
+    },
+    {
+      "id": "step0",
+      "type": "text",
+      "text": "## 🎯 入口\n### Using Superpowers\n\n**调度器**：检查每条消息是否有匹配技能\n\n> 哪怕只有 1% 的可能性，也必须调用技能",
+      "x": -39,
+      "y": 75,
+      "width": 235,
+      "height": 275,
+      "color": "6"
+    },
+    {
+      "id": "step4a",
+      "type": "text",
+      "text": "### 方式 A：执行计划\n#### Executing Plans\n\n**独立会话**\n- 批量执行（每批 3 个任务）\n- 批间暂停等待反馈\n- 人工检查点\n\n适合：需要人工介入的场景",
+      "x": 1620,
+      "y": 110,
+      "width": 278,
+      "height": 310,
+      "color": "5"
+    },
+    {
+      "id": "aux-debug",
+      "type": "text",
+      "text": "## 🔍 系统化调试\n### Systematic Debugging\n\n4 阶段循环：\n1. **观察** — 收集症状和证据\n2. **假设** — 基于证据推断根因\n3. **验证** — 设计实验验证假设\n4. **修复** — TDD 修复 + 回归测试\n\n**触发**：遇到 bug、测试失败、异常行为",
+      "x": -39,
+      "y": 1110,
+      "width": 342,
+      "height": 310,
+      "color": "1"
+    },
+    {
+      "id": "aux-parallel",
+      "type": "text",
+      "text": "## ⚡ 并行代理调度\n### Dispatching Parallel Agents\n\n- 识别独立问题域\n- 每个问题派一个代理\n- 并行执行，互不干扰\n- 汇总结果，检查冲突\n\n**触发**：2+ 个独立任务/故障\n**禁用**：问题相关、共享状态",
+      "x": 347,
+      "y": 1110,
+      "width": 342,
+      "height": 310,
+      "color": "2"
+    },
+    {
+      "id": "aux-skills",
+      "type": "text",
+      "text": "## ✍️ 编写技能\n### Writing Skills\n\n用 TDD 方法创建新技能：\n- 先写技能的验证标准\n- 再写技能内容\n- 测试技能是否按预期工作\n\n**触发**：创建/编辑自定义技能",
+      "x": 732,
+      "y": 1110,
+      "width": 321,
+      "height": 310,
+      "color": "6"
+    },
+    {
+      "id": "aux-superpowers",
+      "type": "text",
+      "text": "## 📋 技能使用原则\n### Using Superpowers\n\n- 刚性技能（TDD、调试）：严格遵循\n- 弹性技能（模式）：适应上下文\n- 优先级：流程技能 > 实现技能\n- 有 checklist → 创建 Todo 逐项完成\n\n> 1% 可能适用 = 必须调用",
+      "x": 1096,
+      "y": 1110,
+      "width": 321,
+      "height": 310,
+      "color": "6"
+    },
+    {
+      "id": "step2",
+      "type": "text",
+      "text": "## 2️⃣ 隔离工作区\n### Git Worktrees\n\n- 检测/创建工作树目录\n- 验证 .gitignore\n- 安装依赖\n- 跑基线测试\n\n**原则**：不影响主分支",
+      "x": 780,
+      "y": 75,
+      "width": 257,
+      "height": 275,
+      "color": "2"
+    },
+    {
+      "id": "step3",
+      "type": "text",
+      "text": "## 3️⃣ 编写计划\n### Writing Plans\n\n- 拆成 2-5 分钟小任务\n- 每个任务完整 TDD 循环\n- 精确文件路径\n- 完整代码片段\n\n**原则**：DRY · YAGNI · TDD",
+      "x": 1200,
+      "y": 75,
+      "width": 257,
+      "height": 275,
+      "color": "3"
+    },
+    {
+      "id": "step4b",
+      "type": "text",
+      "text": "### 方式 B：子代理驱动\n#### Subagent-Driven Dev\n\n**同一会话**\n- 每任务派独立子代理\n- 双重审查：\n  - ① 规格合规审查\n  - ② 代码质量审查\n- 审查不过 → 修复 → 重审\n\n适合：快速迭代",
+      "x": 1620,
+      "y": 490,
+      "width": 278,
+      "height": 346,
+      "color": "5"
+    },
+    {
+      "id": "step5",
+      "type": "text",
+      "text": "## 5️⃣ 测试驱动开发\n### TDD\n\n**铁律**：没有失败测试就不写代码\n\n🔴 RED → 写失败测试\n🟢 GREEN → 最小代码通过\n🔵 REFACTOR → 清理\n\n违反？删除代码，重来。",
+      "x": 2040,
+      "y": 75,
+      "width": 257,
+      "height": 275,
+      "color": "1"
+    },
+    {
+      "id": "step6a",
+      "type": "text",
+      "text": "### 请求审查\n#### Requesting Code Review\n\n- 获取 git diff\n- 派发审查子代理\n- 审查规格合规 + 代码质量\n- 按严重度分级：\n  Critical / Important / Minor",
+      "x": 2500,
+      "y": 110,
+      "width": 257,
+      "height": 310,
+      "color": "3"
+    },
+    {
+      "id": "step6b",
+      "type": "text",
+      "text": "### 接收审查\n#### Receiving Code Review\n\n**禁止**：\n❌ \"你说得对！\"\n❌ \"好建议！\"\n\n**正确做法**：\n✅ 技术验证后直接修\n✅ 不对就推回（附理由）\n✅ 不确定就问\n\n**原则**：技术正确 > 社交客套",
+      "x": 2500,
+      "y": 490,
+      "width": 257,
+      "height": 346,
+      "color": "3"
+    },
+    {
+      "id": "step7-verify",
+      "type": "text",
+      "text": "## ✅ 完成前验证\n### Verification\n\n**铁律**：没跑验证就不能说完成\n\n- 跑测试 → 看输出\n- 跑构建 → 看退出码\n- 逐项核对需求\n\n❌ \"应该没问题\"\n✅ 证据 → 结论",
+      "x": 3010,
+      "y": 75,
+      "width": 235,
+      "height": 275,
+      "color": "1"
+    },
+    {
+      "id": "step7-finish",
+      "type": "text",
+      "text": "## 7️⃣ 完成分支\n### Finishing Branch\n\n4 个选项：\n1. 合并到 main\n2. 创建 PR\n3. 保持现状\n4. 丢弃\n\n清理工作树",
+      "x": 3430,
+      "y": 75,
+      "width": 193,
+      "height": 275,
+      "color": "4"
+    },
+    {
+      "id": "step1",
+      "type": "text",
+      "text": "## 1️⃣ 头脑风暴\n### Brainstorming\n\n- 逐个提问理解需求\n- 提出 2-3 种方案\n- 获得用户批准\n- 写入设计文档\n\n**硬门禁**：设计未批准前不写代码",
+      "x": 360,
+      "y": 75,
+      "width": 278,
+      "height": 275,
+      "color": "1"
+    },
+    {
+      "id": "9136f55530268019",
+      "x": -122,
+      "y": -378,
+      "width": 260,
+      "height": 60,
+      "type": "text",
+      "text": "搜索"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0-1",
+      "fromNode": "step0",
+      "fromSide": "right",
+      "toNode": "step1",
+      "toSide": "left",
+      "label": "新功能/创意"
+    },
+    {
+      "id": "e1-2",
+      "fromNode": "step1",
+      "fromSide": "right",
+      "toNode": "step2",
+      "toSide": "left",
+      "label": "设计批准"
+    },
+    {
+      "id": "e2-3",
+      "fromNode": "step2",
+      "fromSide": "right",
+      "toNode": "step3",
+      "toSide": "left",
+      "label": "工作区就绪"
+    },
+    {
+      "id": "e3-4a",
+      "fromNode": "step3",
+      "fromSide": "right",
+      "toNode": "step4a",
+      "toSide": "left",
+      "label": "独立会话"
+    },
+    {
+      "id": "e3-4b",
+      "fromNode": "step3",
+      "fromSide": "right",
+      "toNode": "step4b",
+      "toSide": "left",
+      "label": "同一会话"
+    },
+    {
+      "id": "e4a-5",
+      "fromNode": "step4a",
+      "fromSide": "right",
+      "toNode": "step5",
+      "toSide": "left"
+    },
+    {
+      "id": "e4b-5",
+      "fromNode": "step4b",
+      "fromSide": "right",
+      "toNode": "step5",
+      "toSide": "left"
+    },
+    {
+      "id": "e5-6a",
+      "fromNode": "step5",
+      "fromSide": "right",
+      "toNode": "step6a",
+      "toSide": "left",
+      "label": "实现完成"
+    },
+    {
+      "id": "e6a-6b",
+      "fromNode": "step6a",
+      "fromSide": "bottom",
+      "toNode": "step6b",
+      "toSide": "top",
+      "label": "收到反馈"
+    },
+    {
+      "id": "e6b-5",
+      "fromNode": "step6b",
+      "fromSide": "left",
+      "toNode": "step5",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "需要修复"
+    },
+    {
+      "id": "e6a-7v",
+      "fromNode": "step6a",
+      "fromSide": "right",
+      "toNode": "step7-verify",
+      "toSide": "left",
+      "label": "审查通过"
+    },
+    {
+      "id": "e7v-7f",
+      "fromNode": "step7-verify",
+      "fromSide": "right",
+      "toNode": "step7-finish",
+      "toSide": "left",
+      "label": "验证通过"
+    },
+    {
+      "id": "e7v-5",
+      "fromNode": "step7-verify",
+      "fromSide": "bottom",
+      "toNode": "step5",
+      "toSide": "right",
+      "color": "1",
+      "label": "验证失败"
+    },
+    {
+      "id": "e-debug-5",
+      "fromNode": "aux-debug",
+      "fromSide": "top",
+      "toNode": "step5",
+      "toSide": "bottom",
+      "color": "1",
+      "label": "bug 触发"
+    },
+    {
+      "id": "e-parallel-4",
+      "fromNode": "aux-parallel",
+      "fromSide": "top",
+      "toNode": "step4a",
+      "toSide": "bottom",
+      "color": "2",
+      "label": "独立任务并行"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

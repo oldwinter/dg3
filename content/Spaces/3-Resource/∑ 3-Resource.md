@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/∑ 3-Resource.md","created":"2025-07-06","modified":"2025-07-12","tags":["categories"],"cssclasses":""}
+publish: true
+permalink: /Spaces/3-Resource/∑ 3-Resource.md
+created: 2025-07-06
+modified: 2025-07-12
+tags:
+  - categories
 ---
-
 
 # ∑ Resources MOC
 
@@ -11,9 +15,9 @@
 
 ## 资源主题
 
-![[Spaces/3-Resource/chrome插件/∑ chrome插件]]
+![[∑ Chrome插件]]
 
-![[Cards/VSCode 插件]]
+![[VSCode 插件]]
 
 ![[账号与安全]]
 
@@ -21,8 +25,8 @@
 
 ## 相关卡片
 
-- [[Spaces/3-Resource/个人成长/个人查找搜索系统]]
-- [[Spaces/3-Resource/个人成长/切换最近标签页]]
-- [[Cards/数据结构与算法]]
-- [[Cards/ALL Properties]]
-- [[Spaces/2-Area/计算机知识/IAAS层面的云端运维和管理]]
+- [[个人查找搜索系统]]
+- [[切换最近标签页]]
+- [[数据结构与算法]]
+- [[ALL Properties]]
+- [[IAAS层面的云端运维和管理]]

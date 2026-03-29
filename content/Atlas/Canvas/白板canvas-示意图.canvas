@@ -1,0 +1,342 @@
+{
+  "edges": [
+    {
+      "id": "5bcef365a2b84737",
+      "fromNode": "e4aa1d313cd8295b",
+      "fromSide": "right",
+      "toNode": "980be8c5714534aa",
+      "toSide": "left",
+      "label": "如何玩转obsidian"
+    },
+    {
+      "id": "b33213b1ae6c76d1",
+      "fromNode": "e4aa1d313cd8295b",
+      "fromSide": "right",
+      "toNode": "75d5664df89464ef",
+      "toSide": "left",
+      "label": "如何发布数字花园"
+    },
+    {
+      "id": "02a0b5839492b2e3",
+      "fromNode": "e4aa1d313cd8295b",
+      "fromSide": "right",
+      "toNode": "20398665774bf658",
+      "toSide": "left",
+      "label": "如何进行知识管理"
+    },
+    {
+      "id": "a0eef411bcc0188c",
+      "fromNode": "e4aa1d313cd8295b",
+      "fromSide": "left",
+      "toNode": "0bcdcdcf8ca248e0",
+      "toSide": "bottom",
+      "label": "本库开源地址"
+    },
+    {
+      "id": "7bea45c4497abab4",
+      "fromNode": "75d5664df89464ef",
+      "fromSide": "bottom",
+      "toNode": "6a65eeadcbcbb216",
+      "toSide": "top",
+      "label": "本库在线发布地址"
+    },
+    {
+      "id": "3917d2686b82fac2",
+      "fromNode": "20398665774bf658",
+      "fromSide": "right",
+      "toNode": "149c94c0246aa099",
+      "toSide": "left",
+      "label": "本库的设计理念"
+    },
+    {
+      "id": "b5644fcc1537b9b9",
+      "fromNode": "20398665774bf658",
+      "fromSide": "right",
+      "toNode": "fbf175f5f080c8d6",
+      "toSide": "left",
+      "label": "用obsidian做什么不做什么"
+    },
+    {
+      "id": "70ee32b6f6e7d5e6",
+      "fromNode": "611375aac5140859",
+      "fromSide": "right",
+      "toNode": "e1a342c1f4d93aa6",
+      "toSide": "left"
+    },
+    {
+      "id": "1cc2de9080b77ae0",
+      "fromNode": "611375aac5140859",
+      "fromSide": "right",
+      "toNode": "bbe6bfb0b85f1643",
+      "toSide": "left"
+    },
+    {
+      "id": "e3376baaa2f5df88",
+      "fromNode": "611375aac5140859",
+      "fromSide": "right",
+      "toNode": "52730784d4d7d4fe",
+      "toSide": "left"
+    },
+    {
+      "fromFloating": false,
+      "id": "28b8de0ff9a21bcd",
+      "toFloating": false,
+      "fromNode": "20398665774bf658",
+      "fromSide": "right",
+      "toNode": "611375aac5140859",
+      "toSide": "left"
+    },
+    {
+      "id": "c99d2a9420c757b7",
+      "fromNode": "980be8c5714534aa",
+      "fromSide": "right",
+      "toNode": "a1826455825fb9dd",
+      "toSide": "left",
+      "label": "双链笔记千千万，为啥选obsidian"
+    },
+    {
+      "id": "3e912a74ff6fe438",
+      "fromNode": "980be8c5714534aa",
+      "fromSide": "right",
+      "toNode": "ceede98a4a3693ff",
+      "toSide": "left",
+      "label": "光速入门obsidian"
+    },
+    {
+      "id": "27ca292cdc419aa6",
+      "fromNode": "980be8c5714534aa",
+      "fromSide": "right",
+      "toNode": "7314be9cb9a09291",
+      "toSide": "left",
+      "label": "有些出厂默认配置还是要改的"
+    },
+    {
+      "id": "a340c57b5e65411d",
+      "fromNode": "980be8c5714534aa",
+      "fromSide": "right",
+      "toNode": "ba40b020cf17623c",
+      "toSide": "left",
+      "label": "工具+工作流形成组合拳"
+    },
+    {
+      "id": "4e3ba8087418e91d",
+      "styleAttributes": {},
+      "fromNode": "bbe6bfb0b85f1643",
+      "fromSide": "bottom",
+      "toNode": "52730784d4d7d4fe",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "frontmatter": {},
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "id": "2db547754b6d0f20",
+      "styleAttributes": {},
+      "type": "group",
+      "x": 700,
+      "y": 326,
+      "width": 440,
+      "height": 1174,
+      "color": "5",
+      "label": "Untitled group"
+    },
+    {
+      "id": "0305b98cf26f047c",
+      "styleAttributes": {},
+      "type": "group",
+      "x": 700,
+      "y": -724,
+      "width": 440,
+      "height": 806,
+      "color": "1",
+      "label": "Untitled group"
+    },
+    {
+      "id": "a4eeec39ec2b1576",
+      "styleAttributes": {},
+      "type": "group",
+      "x": -418,
+      "y": -183,
+      "width": 440,
+      "height": 727,
+      "color": "4",
+      "label": "Untitled group"
+    },
+    {
+      "id": "0bcdcdcf8ca248e0",
+      "styleAttributes": {},
+      "type": "link",
+      "url": "https://github.com/oldwinter/knowledge-garden",
+      "x": -1860,
+      "y": -420,
+      "width": 520,
+      "height": 340
+    },
+    {
+      "file": "🍀 花园导览/🍀 花园导览.md",
+      "id": "e4aa1d313cd8295b",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -1380,
+      "y": 82,
+      "width": 484,
+      "height": 336,
+      "color": "#ff1744"
+    },
+    {
+      "file": "🍀 花园导览/🧰 本库指南/🧰 本库使用指南.md",
+      "id": "980be8c5714534aa",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -398,
+      "y": -163,
+      "width": 400,
+      "height": 205,
+      "color": "#ff9100"
+    },
+    {
+      "file": "🍀 花园导览/🧰 本库指南/🍫 本库方法论指南.md",
+      "id": "20398665774bf658",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -398,
+      "y": 82,
+      "width": 400,
+      "height": 188,
+      "color": "#ff9100"
+    },
+    {
+      "file": "🍀 花园导览/🧰 本库指南/🌏 本库发布指南.md",
+      "id": "75d5664df89464ef",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -398,
+      "y": 310,
+      "width": 400,
+      "height": 214,
+      "color": "#ff9100"
+    },
+    {
+      "file": "🍀 花园导览/🧰 本库指南/Tutorials/众多双链笔记中我选obsidian的核心原因.md",
+      "id": "a1826455825fb9dd",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 720,
+      "y": -704,
+      "width": 400,
+      "height": 137,
+      "color": "#ffd600"
+    },
+    {
+      "file": "🍀 花园导览/🧰 本库指南/Tutorials/本库推荐的obsidian入门路线及资源.md",
+      "id": "ceede98a4a3693ff",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 720,
+      "y": -540,
+      "width": 400,
+      "height": 156,
+      "color": "#ffd600"
+    },
+    {
+      "file": "🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库obsidian基本配置及原因.md",
+      "id": "7314be9cb9a09291",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 720,
+      "y": -331,
+      "width": 400,
+      "height": 154,
+      "color": "#ffd600"
+    },
+    {
+      "file": "Sources/Articles/常青笔记阅读笔记/常青笔记.md",
+      "id": "e1a342c1f4d93aa6",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 720,
+      "y": 760,
+      "width": 400,
+      "height": 160,
+      "color": "3"
+    },
+    {
+      "file": "🍀 花园导览/🧰 本库指南/Tutorials/本库使用时遵守的核心原则.md",
+      "id": "fbf175f5f080c8d6",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 720,
+      "y": 560,
+      "width": 400,
+      "height": 160,
+      "color": "3"
+    },
+    {
+      "file": "Spaces/2-Area/知识管理/∑ PKM.md",
+      "id": "bbe6bfb0b85f1643",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 720,
+      "y": 960,
+      "width": 400,
+      "height": 163,
+      "color": "3"
+    },
+    {
+      "file": "Spaces/2-Area/数字花园建设与维护/LYT 笔记框架.md",
+      "id": "52730784d4d7d4fe",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 720,
+      "y": 1163,
+      "width": 400,
+      "height": 233,
+      "color": "3"
+    },
+    {
+      "file": "🍀 花园导览/🧰 本库指南/Tutorials/本库设计哲学及理念.md",
+      "id": "149c94c0246aa099",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 720,
+      "y": 346,
+      "width": 400,
+      "height": 174,
+      "color": "3"
+    },
+    {
+      "id": "6a65eeadcbcbb216",
+      "styleAttributes": {},
+      "type": "link",
+      "url": "https://garden.oldwinter.top",
+      "x": -411,
+      "y": 824,
+      "width": 400,
+      "height": 500
+    },
+    {
+      "id": "611375aac5140859",
+      "styleAttributes": {},
+      "text": "我用到的笔记方法论",
+      "type": "text",
+      "x": 267,
+      "y": 881,
+      "width": 200,
+      "height": 60
+    },
+    {
+      "file": "🍀 花园导览/🧰 本库指南/Tutorials/∑ 本库 ACCESS 工作流汇总.md",
+      "id": "ba40b020cf17623c",
+      "styleAttributes": {},
+      "type": "file",
+      "x": 720,
+      "y": -140,
+      "width": 400,
+      "height": 166,
+      "color": "#ffd600"
+    }
+  ]
+}

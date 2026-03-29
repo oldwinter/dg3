@@ -1,0 +1,6 @@
+filters:
+  and:
+    - file.tags.containsAny("想法")
+views:
+  - type: table
+    name: Table

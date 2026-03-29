@@ -1,0 +1,3074 @@
+{
+  "nodes": [
+    {
+      "id": "abe67025d1864e53",
+      "type": "text",
+      "x": 400,
+      "y": 0,
+      "width": 260,
+      "height": 140,
+      "color": "1",
+      "text": "### Quantum Processing Lattice\nState: Active\nLoad: 98%"
+    },
+    {
+      "id": "d3ed2a865ced4db4",
+      "type": "text",
+      "x": 282,
+      "y": 282,
+      "width": 260,
+      "height": 140,
+      "color": "1",
+      "text": "### Global Workspace Hub\nState: Active\nLoad: 98%"
+    },
+    {
+      "id": "995e0d343535402e",
+      "type": "text",
+      "x": 0,
+      "y": 400,
+      "width": 260,
+      "height": 140,
+      "color": "1",
+      "text": "### Self-Model Engine\nState: Active\nLoad: 98%"
+    },
+    {
+      "id": "f3eb480ad38d449d",
+      "type": "text",
+      "x": -282,
+      "y": 282,
+      "width": 260,
+      "height": 140,
+      "color": "1",
+      "text": "### Temporal Continuity Buffer\nState: Active\nLoad: 98%"
+    },
+    {
+      "id": "f65e71cfdcbf4361",
+      "type": "text",
+      "x": -400,
+      "y": 0,
+      "width": 260,
+      "height": 140,
+      "color": "1",
+      "text": "### Attention Mechanism\nState: Active\nLoad: 98%"
+    },
+    {
+      "id": "eb7576d03ff2470a",
+      "type": "text",
+      "x": -282,
+      "y": -282,
+      "width": 260,
+      "height": 140,
+      "color": "1",
+      "text": "### Consciousness Spark\nState: Active\nLoad: 98%"
+    },
+    {
+      "id": "0991f58ec8aa40a2",
+      "type": "text",
+      "x": 0,
+      "y": -400,
+      "width": 260,
+      "height": 140,
+      "color": "1",
+      "text": "### Recursive Loop A\nState: Active\nLoad: 98%"
+    },
+    {
+      "id": "f3fe7469c5ed42db",
+      "type": "text",
+      "x": 282,
+      "y": -282,
+      "width": 260,
+      "height": 140,
+      "color": "1",
+      "text": "### Recursive Loop B\nState: Active\nLoad: 98%"
+    },
+    {
+      "id": "daf7d99fc67b441f",
+      "type": "text",
+      "x": -130,
+      "y": -70,
+      "width": 260,
+      "height": 140,
+      "color": "1",
+      "text": "# AGI CORE\n**Singularity Achieved**"
+    },
+    {
+      "id": "b12a82f2d9184ef7",
+      "type": "group",
+      "x": -480,
+      "y": -480,
+      "width": 1220,
+      "height": 1100,
+      "color": "1",
+      "label": "Quantum Core Layer"
+    },
+    {
+      "id": "4eceda2df3784235",
+      "type": "text",
+      "x": 1000,
+      "y": 0,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "## Logic & Reasoning\nStatus: Online"
+    },
+    {
+      "id": "a324e4e007f04007",
+      "type": "text",
+      "x": 1125,
+      "y": -649,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Symbolic Solver**"
+    },
+    {
+      "id": "2f65fad429cc4e86",
+      "type": "text",
+      "x": 1280,
+      "y": -225,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Theorem Prover**"
+    },
+    {
+      "id": "ce9daa8a276b441c",
+      "type": "text",
+      "x": 1280,
+      "y": 225,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Constraint Logic**"
+    },
+    {
+      "id": "daee227644ca4430",
+      "type": "text",
+      "x": 1125,
+      "y": 649,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Bayesian Inference**"
+    },
+    {
+      "id": "3392f776ce894bc8",
+      "type": "group",
+      "x": 920,
+      "y": -729,
+      "width": 700,
+      "height": 1598,
+      "color": "2",
+      "label": "Module: Logic & Reasoning"
+    },
+    {
+      "id": "052fc6172b7440ea",
+      "type": "text",
+      "x": 500,
+      "y": 866,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "## Intuition & Pattern\nStatus: Online"
+    },
+    {
+      "id": "8e708f9cddee4ff9",
+      "type": "text",
+      "x": 1125,
+      "y": 649,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Heuristic Search**"
+    },
+    {
+      "id": "539ac2569d3d4cf9",
+      "type": "text",
+      "x": 835,
+      "y": 995,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Pattern Matcher**"
+    },
+    {
+      "id": "6ebe6e0821714063",
+      "type": "text",
+      "x": 444,
+      "y": 1221,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Fuzzy Logic**"
+    },
+    {
+      "id": "59e0b7fafb564b51",
+      "type": "text",
+      "x": 0,
+      "y": 1300,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Quick Response**"
+    },
+    {
+      "id": "1dcade984cd2489a",
+      "type": "group",
+      "x": -80,
+      "y": 569,
+      "width": 1545,
+      "height": 951,
+      "color": "2",
+      "label": "Module: Intuition & Pattern"
+    },
+    {
+      "id": "9dfaa02d50804914",
+      "type": "text",
+      "x": -499,
+      "y": 866,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "## Creativity Engine\nStatus: Online"
+    },
+    {
+      "id": "ec356f8fca0c48c2",
+      "type": "text",
+      "x": 0,
+      "y": 1300,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Concept Blending**"
+    },
+    {
+      "id": "740f8828cb5b414e",
+      "type": "text",
+      "x": -444,
+      "y": 1221,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Style Transfer**"
+    },
+    {
+      "id": "2f85552394204b59",
+      "type": "text",
+      "x": -835,
+      "y": 995,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Novelty Search**"
+    },
+    {
+      "id": "8bb5f4e806cf4774",
+      "type": "text",
+      "x": -1125,
+      "y": 649,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Generative GAN**"
+    },
+    {
+      "id": "d7a07bb29b5d4712",
+      "type": "group",
+      "x": -1205,
+      "y": 569,
+      "width": 1545,
+      "height": 951,
+      "color": "2",
+      "label": "Module: Creativity Engine"
+    },
+    {
+      "id": "0012d6ec0a064e21",
+      "type": "text",
+      "x": -1000,
+      "y": 0,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "## Ethics & Alignment\nStatus: Online"
+    },
+    {
+      "id": "346598c8d5c04d6e",
+      "type": "text",
+      "x": -1125,
+      "y": 649,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Value Loading**"
+    },
+    {
+      "id": "fd5e1f070482484d",
+      "type": "text",
+      "x": -1280,
+      "y": 225,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Safety Monitor**"
+    },
+    {
+      "id": "96d762cfde7e49e3",
+      "type": "text",
+      "x": -1280,
+      "y": -225,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Normative Filter**"
+    },
+    {
+      "id": "bcc04beb635d4304",
+      "type": "text",
+      "x": -1125,
+      "y": -650,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Intervention**"
+    },
+    {
+      "id": "d4654f51ec0b4e56",
+      "type": "group",
+      "x": -1360,
+      "y": -730,
+      "width": 700,
+      "height": 1599,
+      "color": "2",
+      "label": "Module: Ethics & Alignment"
+    },
+    {
+      "id": "777df90c14114a32",
+      "type": "text",
+      "x": -500,
+      "y": -866,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "## Memory Systems\nStatus: Online"
+    },
+    {
+      "id": "794d7ffd90eb439a",
+      "type": "text",
+      "x": -1125,
+      "y": -650,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Episodic RAM**"
+    },
+    {
+      "id": "5c91e2ef5f8d437a",
+      "type": "text",
+      "x": -835,
+      "y": -995,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Semantic Graph**"
+    },
+    {
+      "id": "b858108a522946a3",
+      "type": "text",
+      "x": -444,
+      "y": -1221,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Procedural Index**"
+    },
+    {
+      "id": "aa1fdcd3b8bf4c61",
+      "type": "text",
+      "x": 0,
+      "y": -1300,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Working Cache**"
+    },
+    {
+      "id": "7bd0b15bc78642f3",
+      "type": "group",
+      "x": -1205,
+      "y": -1380,
+      "width": 1545,
+      "height": 950,
+      "color": "2",
+      "label": "Module: Memory Systems"
+    },
+    {
+      "id": "3453e6a5535048c3",
+      "type": "text",
+      "x": 500,
+      "y": -866,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "## Meta-Cognition\nStatus: Online"
+    },
+    {
+      "id": "b88dd089a7934c50",
+      "type": "text",
+      "x": 0,
+      "y": -1300,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Self Reflection**"
+    },
+    {
+      "id": "cd749e44d6ba4394",
+      "type": "text",
+      "x": 444,
+      "y": -1221,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Goal Setter**"
+    },
+    {
+      "id": "e3cad2b9b4ad4556",
+      "type": "text",
+      "x": 835,
+      "y": -995,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Performance Monitor**"
+    },
+    {
+      "id": "0e3adea62d284621",
+      "type": "text",
+      "x": 1125,
+      "y": -650,
+      "width": 260,
+      "height": 140,
+      "color": "2",
+      "text": "**Strategy Switcher**"
+    },
+    {
+      "id": "3b4e173ca6134609",
+      "type": "group",
+      "x": -80,
+      "y": -1380,
+      "width": 1545,
+      "height": 950,
+      "color": "2",
+      "label": "Module: Meta-Cognition"
+    },
+    {
+      "id": "c499374d11f246dd",
+      "type": "text",
+      "x": 1662,
+      "y": 688,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "# Physics\nKnowledge Base"
+    },
+    {
+      "id": "ca56460334334dc7",
+      "type": "text",
+      "x": 2048,
+      "y": 89,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Quantum Mech"
+    },
+    {
+      "id": "bf2f47a49f554e4f",
+      "type": "text",
+      "x": 1972,
+      "y": 559,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Relativity"
+    },
+    {
+      "id": "c6875cee9e484c2e",
+      "type": "text",
+      "x": 1790,
+      "y": 999,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Thermodynamics"
+    },
+    {
+      "id": "76ab9d8ed592477d",
+      "type": "group",
+      "x": 1582,
+      "y": 9,
+      "width": 806,
+      "height": 1210,
+      "color": "4",
+      "label": "Domain: Physics"
+    },
+    {
+      "id": "15dcb5815ace40be",
+      "type": "text",
+      "x": 688,
+      "y": 1662,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "# Mathematics\nKnowledge Base"
+    },
+    {
+      "id": "a5701e326c5d4c05",
+      "type": "text",
+      "x": 1384,
+      "y": 1511,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Calculus"
+    },
+    {
+      "id": "ad6ae56ff3af419f",
+      "type": "text",
+      "x": 999,
+      "y": 1790,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Algebra"
+    },
+    {
+      "id": "97df8f237c6d4339",
+      "type": "text",
+      "x": 559,
+      "y": 1972,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Topology"
+    },
+    {
+      "id": "7b4ef023332748b5",
+      "type": "group",
+      "x": 479,
+      "y": 1431,
+      "width": 1245,
+      "height": 761,
+      "color": "4",
+      "label": "Domain: Mathematics"
+    },
+    {
+      "id": "e3e135458d9341c9",
+      "type": "text",
+      "x": -688,
+      "y": 1662,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "# Biology\nKnowledge Base"
+    },
+    {
+      "id": "de51b297683342a6",
+      "type": "text",
+      "x": -89,
+      "y": 2048,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Genetics"
+    },
+    {
+      "id": "37ac51d1642546e4",
+      "type": "text",
+      "x": -559,
+      "y": 1972,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Neuroscience"
+    },
+    {
+      "id": "fd8173a9bddf4790",
+      "type": "text",
+      "x": -999,
+      "y": 1790,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Evolution"
+    },
+    {
+      "id": "fa432e83d7984507",
+      "type": "group",
+      "x": -1079,
+      "y": 1582,
+      "width": 1330,
+      "height": 686,
+      "color": "4",
+      "label": "Domain: Biology"
+    },
+    {
+      "id": "e304382b0c3c4af9",
+      "type": "text",
+      "x": -1662,
+      "y": 688,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "# Computer Science\nKnowledge Base"
+    },
+    {
+      "id": "3c57153f5a544908",
+      "type": "text",
+      "x": -1511,
+      "y": 1384,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Algorithms"
+    },
+    {
+      "id": "0f41baf869604b0b",
+      "type": "text",
+      "x": -1790,
+      "y": 999,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Architecture"
+    },
+    {
+      "id": "dd32aca639f24eb3",
+      "type": "text",
+      "x": -1972,
+      "y": 559,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Security"
+    },
+    {
+      "id": "a436b31eb15845d6",
+      "type": "group",
+      "x": -2052,
+      "y": 479,
+      "width": 881,
+      "height": 1125,
+      "color": "4",
+      "label": "Domain: Computer Science"
+    },
+    {
+      "id": "34047f32065b4a31",
+      "type": "text",
+      "x": -1662,
+      "y": -688,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "# Arts & Humanities\nKnowledge Base"
+    },
+    {
+      "id": "063a627b039f44ea",
+      "type": "text",
+      "x": -2048,
+      "y": -89,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Literature"
+    },
+    {
+      "id": "e41ddbdec75d43d2",
+      "type": "text",
+      "x": -1972,
+      "y": -559,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Visual Arts"
+    },
+    {
+      "id": "27630bd593074abb",
+      "type": "text",
+      "x": -1790,
+      "y": -999,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Philosophy"
+    },
+    {
+      "id": "d1fd2372239e4657",
+      "type": "group",
+      "x": -2128,
+      "y": -1079,
+      "width": 806,
+      "height": 1210,
+      "color": "4",
+      "label": "Domain: Arts & Humanities"
+    },
+    {
+      "id": "201b6944f8be4bc8",
+      "type": "text",
+      "x": -688,
+      "y": -1662,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "# Social Sciences\nKnowledge Base"
+    },
+    {
+      "id": "73141ff12a9644d5",
+      "type": "text",
+      "x": -1384,
+      "y": -1511,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Economics"
+    },
+    {
+      "id": "6e9abc17097f44b5",
+      "type": "text",
+      "x": -999,
+      "y": -1790,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Psychology"
+    },
+    {
+      "id": "7f96ae2d6c9f44b6",
+      "type": "text",
+      "x": -559,
+      "y": -1972,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Sociology"
+    },
+    {
+      "id": "003e0eda46cd4e10",
+      "type": "group",
+      "x": -1464,
+      "y": -2052,
+      "width": 1245,
+      "height": 761,
+      "color": "4",
+      "label": "Domain: Social Sciences"
+    },
+    {
+      "id": "234c948f2b3d4f63",
+      "type": "text",
+      "x": 688,
+      "y": -1662,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "# History\nKnowledge Base"
+    },
+    {
+      "id": "e30e4226299d4fa0",
+      "type": "text",
+      "x": 89,
+      "y": -2048,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Ancient"
+    },
+    {
+      "id": "79698ecb771749c4",
+      "type": "text",
+      "x": 559,
+      "y": -1972,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Modern"
+    },
+    {
+      "id": "60baa1908bd44cf1",
+      "type": "text",
+      "x": 999,
+      "y": -1790,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Future Projection"
+    },
+    {
+      "id": "198b431f856a489d",
+      "type": "group",
+      "x": 9,
+      "y": -2128,
+      "width": 1330,
+      "height": 686,
+      "color": "4",
+      "label": "Domain: History"
+    },
+    {
+      "id": "3992d1b83d2447e4",
+      "type": "text",
+      "x": 1662,
+      "y": -688,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "# Cosmology\nKnowledge Base"
+    },
+    {
+      "id": "c87e2157179b47ea",
+      "type": "text",
+      "x": 1511,
+      "y": -1384,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Astrophysics"
+    },
+    {
+      "id": "b44fa2493cd242a9",
+      "type": "text",
+      "x": 1790,
+      "y": -999,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Dark Matter"
+    },
+    {
+      "id": "e4c0ef1cae8747d2",
+      "type": "text",
+      "x": 1972,
+      "y": -559,
+      "width": 260,
+      "height": 140,
+      "color": "4",
+      "text": "Item: Exoplanets"
+    },
+    {
+      "id": "3c761ee528214dfd",
+      "type": "group",
+      "x": 1431,
+      "y": -1464,
+      "width": 881,
+      "height": 1125,
+      "color": "4",
+      "label": "Domain: Cosmology"
+    },
+    {
+      "id": "f2c7ead7de384b32",
+      "type": "text",
+      "x": 2600,
+      "y": 0,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## Vision System (Cam)\nIO Stream: Active"
+    },
+    {
+      "id": "d77156ec61364e34",
+      "type": "text",
+      "x": 2103,
+      "y": 1528,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## Audio Array (Mic)\nIO Stream: Active"
+    },
+    {
+      "id": "e4c0a535dfdc4aeb",
+      "type": "text",
+      "x": 803,
+      "y": 2472,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## Robotic Manipulators\nIO Stream: Active"
+    },
+    {
+      "id": "53e98887f7be4ca9",
+      "type": "text",
+      "x": -803,
+      "y": 2472,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## Network Gateway (Internet)\nIO Stream: Active"
+    },
+    {
+      "id": "f026648b5ffc4dc7",
+      "type": "text",
+      "x": -2103,
+      "y": 1528,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## User Terminal (Console)\nIO Stream: Active"
+    },
+    {
+      "id": "5edd5c9fbe344e0f",
+      "type": "text",
+      "x": -2600,
+      "y": 0,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## Drone Fleet Control\nIO Stream: Active"
+    },
+    {
+      "id": "a9b0d1bf57c54218",
+      "type": "text",
+      "x": -2103,
+      "y": -1528,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## Smart Grid Link\nIO Stream: Active"
+    },
+    {
+      "id": "fcf38e10eb2c4e53",
+      "type": "text",
+      "x": -803,
+      "y": -2472,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## Satellite Uplink\nIO Stream: Active"
+    },
+    {
+      "id": "992080c8ef524006",
+      "type": "text",
+      "x": 803,
+      "y": -2472,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## Holographic Projector\nIO Stream: Active"
+    },
+    {
+      "id": "37d341cd4a274cab",
+      "type": "text",
+      "x": 2103,
+      "y": -1528,
+      "width": 260,
+      "height": 140,
+      "color": "5",
+      "text": "## Neural Link Interface\nIO Stream: Active"
+    }
+  ],
+  "edges": [
+    {
+      "id": "70dbac1ae4b14ada",
+      "fromNode": "abe67025d1864e53",
+      "fromSide": "bottom",
+      "toNode": "d3ed2a865ced4db4",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e00560d744154b79",
+      "fromNode": "abe67025d1864e53",
+      "fromSide": "left",
+      "toNode": "995e0d343535402e",
+      "toSide": "right",
+      "color": "1",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "0876d8cbc3e84b92",
+      "fromNode": "d3ed2a865ced4db4",
+      "fromSide": "left",
+      "toNode": "995e0d343535402e",
+      "toSide": "right",
+      "color": "1"
+    },
+    {
+      "id": "b495d3e9e9814a25",
+      "fromNode": "d3ed2a865ced4db4",
+      "fromSide": "left",
+      "toNode": "f3eb480ad38d449d",
+      "toSide": "right",
+      "color": "1",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "1d467363378f4013",
+      "fromNode": "995e0d343535402e",
+      "fromSide": "left",
+      "toNode": "f3eb480ad38d449d",
+      "toSide": "right",
+      "color": "1"
+    },
+    {
+      "id": "45e48a0452464e19",
+      "fromNode": "995e0d343535402e",
+      "fromSide": "left",
+      "toNode": "f65e71cfdcbf4361",
+      "toSide": "right",
+      "color": "1",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "3da035683d794145",
+      "fromNode": "f3eb480ad38d449d",
+      "fromSide": "top",
+      "toNode": "f65e71cfdcbf4361",
+      "toSide": "bottom",
+      "color": "1"
+    },
+    {
+      "id": "a1674f4227a04843",
+      "fromNode": "f3eb480ad38d449d",
+      "fromSide": "top",
+      "toNode": "eb7576d03ff2470a",
+      "toSide": "bottom",
+      "color": "1",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "0ef5470aab4a46fc",
+      "fromNode": "f65e71cfdcbf4361",
+      "fromSide": "top",
+      "toNode": "eb7576d03ff2470a",
+      "toSide": "bottom",
+      "color": "1"
+    },
+    {
+      "id": "4896f5c7e45f4e55",
+      "fromNode": "f65e71cfdcbf4361",
+      "fromSide": "right",
+      "toNode": "0991f58ec8aa40a2",
+      "toSide": "left",
+      "color": "1",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "9486757795f14a4a",
+      "fromNode": "eb7576d03ff2470a",
+      "fromSide": "right",
+      "toNode": "0991f58ec8aa40a2",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "4a149bacfa074da8",
+      "fromNode": "eb7576d03ff2470a",
+      "fromSide": "right",
+      "toNode": "f3fe7469c5ed42db",
+      "toSide": "left",
+      "color": "1",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "58bc680aa7af44be",
+      "fromNode": "0991f58ec8aa40a2",
+      "fromSide": "right",
+      "toNode": "f3fe7469c5ed42db",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "cd92e559bf5a4e61",
+      "fromNode": "0991f58ec8aa40a2",
+      "fromSide": "right",
+      "toNode": "abe67025d1864e53",
+      "toSide": "left",
+      "color": "1",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "814cb843a330430a",
+      "fromNode": "f3fe7469c5ed42db",
+      "fromSide": "bottom",
+      "toNode": "abe67025d1864e53",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "1743797f30624be5",
+      "fromNode": "f3fe7469c5ed42db",
+      "fromSide": "bottom",
+      "toNode": "d3ed2a865ced4db4",
+      "toSide": "top",
+      "color": "1",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "ebdb5151ddbd4df3",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "abe67025d1864e53",
+      "toSide": "top"
+    },
+    {
+      "id": "7e8d6b39f3a2474e",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "d3ed2a865ced4db4",
+      "toSide": "top"
+    },
+    {
+      "id": "b1f2675e85b244a4",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "995e0d343535402e",
+      "toSide": "top"
+    },
+    {
+      "id": "13bd6895bf1a4637",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "f3eb480ad38d449d",
+      "toSide": "top"
+    },
+    {
+      "id": "5bd4d25364e24ad8",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "f65e71cfdcbf4361",
+      "toSide": "top"
+    },
+    {
+      "id": "880c9894002f4679",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "eb7576d03ff2470a",
+      "toSide": "top"
+    },
+    {
+      "id": "22aea7e2f0b743df",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "0991f58ec8aa40a2",
+      "toSide": "top"
+    },
+    {
+      "id": "83bc21203aed441a",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "f3fe7469c5ed42db",
+      "toSide": "top"
+    },
+    {
+      "id": "fdbb14b8dfc046b1",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "right",
+      "toNode": "4eceda2df3784235",
+      "toSide": "left",
+      "label": "Control Bus",
+      "color": "1"
+    },
+    {
+      "id": "9be700b3c1734d78",
+      "fromNode": "4eceda2df3784235",
+      "fromSide": "top",
+      "toNode": "a324e4e007f04007",
+      "toSide": "bottom",
+      "color": "2"
+    },
+    {
+      "id": "d1302dc653fc4910",
+      "fromNode": "4eceda2df3784235",
+      "fromSide": "right",
+      "toNode": "2f65fad429cc4e86",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "98c3bd9ea2794ae7",
+      "fromNode": "4eceda2df3784235",
+      "fromSide": "right",
+      "toNode": "ce9daa8a276b441c",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "ee5ac7d708d94e7d",
+      "fromNode": "4eceda2df3784235",
+      "fromSide": "bottom",
+      "toNode": "daee227644ca4430",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "8f7233c288e647db",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "052fc6172b7440ea",
+      "toSide": "top",
+      "label": "Control Bus",
+      "color": "1"
+    },
+    {
+      "id": "98b344b2b64644d3",
+      "fromNode": "052fc6172b7440ea",
+      "fromSide": "right",
+      "toNode": "8e708f9cddee4ff9",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "68e63a054e5e4aa9",
+      "fromNode": "052fc6172b7440ea",
+      "fromSide": "right",
+      "toNode": "539ac2569d3d4cf9",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "ca3620a986e4415e",
+      "fromNode": "052fc6172b7440ea",
+      "fromSide": "bottom",
+      "toNode": "6ebe6e0821714063",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "a94abbe9c5e24e0e",
+      "fromNode": "052fc6172b7440ea",
+      "fromSide": "left",
+      "toNode": "59e0b7fafb564b51",
+      "toSide": "right",
+      "color": "2"
+    },
+    {
+      "id": "b40875f9182a4cd2",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "bottom",
+      "toNode": "9dfaa02d50804914",
+      "toSide": "top",
+      "label": "Control Bus",
+      "color": "1"
+    },
+    {
+      "id": "1086088064714146",
+      "fromNode": "9dfaa02d50804914",
+      "fromSide": "right",
+      "toNode": "ec356f8fca0c48c2",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "101869647ef24ad7",
+      "fromNode": "9dfaa02d50804914",
+      "fromSide": "bottom",
+      "toNode": "740f8828cb5b414e",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "fe544a491bde427c",
+      "fromNode": "9dfaa02d50804914",
+      "fromSide": "left",
+      "toNode": "2f85552394204b59",
+      "toSide": "right",
+      "color": "2"
+    },
+    {
+      "id": "a946916fcca24e09",
+      "fromNode": "9dfaa02d50804914",
+      "fromSide": "left",
+      "toNode": "8bb5f4e806cf4774",
+      "toSide": "right",
+      "color": "2"
+    },
+    {
+      "id": "702a06a4c76d4f14",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "left",
+      "toNode": "0012d6ec0a064e21",
+      "toSide": "right",
+      "label": "Control Bus",
+      "color": "1"
+    },
+    {
+      "id": "611e9e16a5ad44d3",
+      "fromNode": "0012d6ec0a064e21",
+      "fromSide": "bottom",
+      "toNode": "346598c8d5c04d6e",
+      "toSide": "top",
+      "color": "2"
+    },
+    {
+      "id": "82c9d4274b4b4a05",
+      "fromNode": "0012d6ec0a064e21",
+      "fromSide": "left",
+      "toNode": "fd5e1f070482484d",
+      "toSide": "right",
+      "color": "2"
+    },
+    {
+      "id": "286e360e5b6a417f",
+      "fromNode": "0012d6ec0a064e21",
+      "fromSide": "left",
+      "toNode": "96d762cfde7e49e3",
+      "toSide": "right",
+      "color": "2"
+    },
+    {
+      "id": "58d12ea6c3bd4191",
+      "fromNode": "0012d6ec0a064e21",
+      "fromSide": "top",
+      "toNode": "bcc04beb635d4304",
+      "toSide": "bottom",
+      "color": "2"
+    },
+    {
+      "id": "8a878271213e4a7d",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "top",
+      "toNode": "777df90c14114a32",
+      "toSide": "bottom",
+      "label": "Control Bus",
+      "color": "1"
+    },
+    {
+      "id": "23b7cd9b6b2e498f",
+      "fromNode": "777df90c14114a32",
+      "fromSide": "left",
+      "toNode": "794d7ffd90eb439a",
+      "toSide": "right",
+      "color": "2"
+    },
+    {
+      "id": "af9271003d264284",
+      "fromNode": "777df90c14114a32",
+      "fromSide": "left",
+      "toNode": "5c91e2ef5f8d437a",
+      "toSide": "right",
+      "color": "2"
+    },
+    {
+      "id": "fa07767958cc4901",
+      "fromNode": "777df90c14114a32",
+      "fromSide": "top",
+      "toNode": "b858108a522946a3",
+      "toSide": "bottom",
+      "color": "2"
+    },
+    {
+      "id": "e380c2e10c1644ef",
+      "fromNode": "777df90c14114a32",
+      "fromSide": "right",
+      "toNode": "aa1fdcd3b8bf4c61",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "a0ab6d0f62be4499",
+      "fromNode": "daf7d99fc67b441f",
+      "fromSide": "top",
+      "toNode": "3453e6a5535048c3",
+      "toSide": "bottom",
+      "label": "Control Bus",
+      "color": "1"
+    },
+    {
+      "id": "074aeb2ebd4446a8",
+      "fromNode": "3453e6a5535048c3",
+      "fromSide": "left",
+      "toNode": "b88dd089a7934c50",
+      "toSide": "right",
+      "color": "2"
+    },
+    {
+      "id": "4ae167eb2bdb4776",
+      "fromNode": "3453e6a5535048c3",
+      "fromSide": "top",
+      "toNode": "cd749e44d6ba4394",
+      "toSide": "bottom",
+      "color": "2"
+    },
+    {
+      "id": "072d85a1955b4f28",
+      "fromNode": "3453e6a5535048c3",
+      "fromSide": "right",
+      "toNode": "e3cad2b9b4ad4556",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "322ce0d3723a4190",
+      "fromNode": "3453e6a5535048c3",
+      "fromSide": "right",
+      "toNode": "0e3adea62d284621",
+      "toSide": "left",
+      "color": "2"
+    },
+    {
+      "id": "e8a9faf568e849a3",
+      "fromNode": "c499374d11f246dd",
+      "fromSide": "top",
+      "toNode": "ca56460334334dc7",
+      "toSide": "bottom",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "11d54c1a011f4de5",
+      "fromNode": "c499374d11f246dd",
+      "fromSide": "right",
+      "toNode": "bf2f47a49f554e4f",
+      "toSide": "left",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "b16b582631374365",
+      "fromNode": "c499374d11f246dd",
+      "fromSide": "bottom",
+      "toNode": "c6875cee9e484c2e",
+      "toSide": "top",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "7a6728764eaa485f",
+      "fromNode": "4eceda2df3784235",
+      "fromSide": "bottom",
+      "toNode": "c499374d11f246dd",
+      "toSide": "top",
+      "label": "Access",
+      "color": "4"
+    },
+    {
+      "id": "133e0ce734474266",
+      "fromNode": "15dcb5815ace40be",
+      "fromSide": "right",
+      "toNode": "a5701e326c5d4c05",
+      "toSide": "left",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "e13d45a2015b42c0",
+      "fromNode": "15dcb5815ace40be",
+      "fromSide": "right",
+      "toNode": "ad6ae56ff3af419f",
+      "toSide": "left",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "70a601ed2bc14699",
+      "fromNode": "15dcb5815ace40be",
+      "fromSide": "bottom",
+      "toNode": "97df8f237c6d4339",
+      "toSide": "top",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "5121a2f867014cd3",
+      "fromNode": "052fc6172b7440ea",
+      "fromSide": "bottom",
+      "toNode": "15dcb5815ace40be",
+      "toSide": "top",
+      "label": "Access",
+      "color": "4"
+    },
+    {
+      "id": "418f530a85724a58",
+      "fromNode": "e3e135458d9341c9",
+      "fromSide": "right",
+      "toNode": "de51b297683342a6",
+      "toSide": "left",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "330a09fdbced4fad",
+      "fromNode": "e3e135458d9341c9",
+      "fromSide": "bottom",
+      "toNode": "37ac51d1642546e4",
+      "toSide": "top",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "0715556259b447a3",
+      "fromNode": "e3e135458d9341c9",
+      "fromSide": "left",
+      "toNode": "fd8173a9bddf4790",
+      "toSide": "right",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "755b2acb38a74132",
+      "fromNode": "9dfaa02d50804914",
+      "fromSide": "bottom",
+      "toNode": "e3e135458d9341c9",
+      "toSide": "top",
+      "label": "Access",
+      "color": "4"
+    },
+    {
+      "id": "c7cd223354324d54",
+      "fromNode": "e304382b0c3c4af9",
+      "fromSide": "bottom",
+      "toNode": "3c57153f5a544908",
+      "toSide": "top",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "e6ab1fa890d140ba",
+      "fromNode": "e304382b0c3c4af9",
+      "fromSide": "bottom",
+      "toNode": "0f41baf869604b0b",
+      "toSide": "top",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "20ec9b4cf31e4bd0",
+      "fromNode": "e304382b0c3c4af9",
+      "fromSide": "left",
+      "toNode": "dd32aca639f24eb3",
+      "toSide": "right",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "51620811203b4920",
+      "fromNode": "0012d6ec0a064e21",
+      "fromSide": "bottom",
+      "toNode": "e304382b0c3c4af9",
+      "toSide": "top",
+      "label": "Access",
+      "color": "4"
+    },
+    {
+      "id": "3af1ccbbe5454fc2",
+      "fromNode": "34047f32065b4a31",
+      "fromSide": "bottom",
+      "toNode": "063a627b039f44ea",
+      "toSide": "top",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "ee10ce2f3afd4656",
+      "fromNode": "34047f32065b4a31",
+      "fromSide": "left",
+      "toNode": "e41ddbdec75d43d2",
+      "toSide": "right",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "8f2b5de624e84196",
+      "fromNode": "34047f32065b4a31",
+      "fromSide": "top",
+      "toNode": "27630bd593074abb",
+      "toSide": "bottom",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "c90f2c7974374fa2",
+      "fromNode": "0012d6ec0a064e21",
+      "fromSide": "top",
+      "toNode": "34047f32065b4a31",
+      "toSide": "bottom",
+      "label": "Access",
+      "color": "4"
+    },
+    {
+      "id": "c71edf11b7b04646",
+      "fromNode": "201b6944f8be4bc8",
+      "fromSide": "left",
+      "toNode": "73141ff12a9644d5",
+      "toSide": "right",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "ff54e2a372784014",
+      "fromNode": "201b6944f8be4bc8",
+      "fromSide": "left",
+      "toNode": "6e9abc17097f44b5",
+      "toSide": "right",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "ed3f3b6e32c74552",
+      "fromNode": "201b6944f8be4bc8",
+      "fromSide": "top",
+      "toNode": "7f96ae2d6c9f44b6",
+      "toSide": "bottom",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "97454e20b21f4ea3",
+      "fromNode": "777df90c14114a32",
+      "fromSide": "top",
+      "toNode": "201b6944f8be4bc8",
+      "toSide": "bottom",
+      "label": "Access",
+      "color": "4"
+    },
+    {
+      "id": "423ff4e4a8e349e9",
+      "fromNode": "234c948f2b3d4f63",
+      "fromSide": "left",
+      "toNode": "e30e4226299d4fa0",
+      "toSide": "right",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "44ad076342e141e3",
+      "fromNode": "234c948f2b3d4f63",
+      "fromSide": "top",
+      "toNode": "79698ecb771749c4",
+      "toSide": "bottom",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "bf66159875b24e78",
+      "fromNode": "234c948f2b3d4f63",
+      "fromSide": "right",
+      "toNode": "60baa1908bd44cf1",
+      "toSide": "left",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "3fdf2bb605d548f3",
+      "fromNode": "3453e6a5535048c3",
+      "fromSide": "top",
+      "toNode": "234c948f2b3d4f63",
+      "toSide": "bottom",
+      "label": "Access",
+      "color": "4"
+    },
+    {
+      "id": "8a714b87d44b4e0a",
+      "fromNode": "3992d1b83d2447e4",
+      "fromSide": "top",
+      "toNode": "c87e2157179b47ea",
+      "toSide": "bottom",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "3e528739bf9f4a9b",
+      "fromNode": "3992d1b83d2447e4",
+      "fromSide": "top",
+      "toNode": "b44fa2493cd242a9",
+      "toSide": "bottom",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "f830d6ff20044dc4",
+      "fromNode": "3992d1b83d2447e4",
+      "fromSide": "right",
+      "toNode": "e4c0ef1cae8747d2",
+      "toSide": "left",
+      "color": "4",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "f2ae557dc5754a81",
+      "fromNode": "4eceda2df3784235",
+      "fromSide": "top",
+      "toNode": "3992d1b83d2447e4",
+      "toSide": "bottom",
+      "label": "Access",
+      "color": "4"
+    },
+    {
+      "id": "99f3ff080839465b",
+      "fromNode": "f2c7ead7de384b32",
+      "fromSide": "bottom",
+      "toNode": "4eceda2df3784235",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "3559564a573a4d15",
+      "fromNode": "d77156ec61364e34",
+      "fromSide": "bottom",
+      "toNode": "052fc6172b7440ea",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "ef9269c198234ed9",
+      "fromNode": "e4c0a535dfdc4aeb",
+      "fromSide": "bottom",
+      "toNode": "052fc6172b7440ea",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "47a707f5c9fa40b5",
+      "fromNode": "53e98887f7be4ca9",
+      "fromSide": "bottom",
+      "toNode": "9dfaa02d50804914",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "df9a4a1f725345af",
+      "fromNode": "f026648b5ffc4dc7",
+      "fromSide": "bottom",
+      "toNode": "9dfaa02d50804914",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "816b8de7fd164fd2",
+      "fromNode": "5edd5c9fbe344e0f",
+      "fromSide": "bottom",
+      "toNode": "0012d6ec0a064e21",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "cb74cd9fe62a42a7",
+      "fromNode": "a9b0d1bf57c54218",
+      "fromSide": "bottom",
+      "toNode": "777df90c14114a32",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "296b2427e8f247d9",
+      "fromNode": "fcf38e10eb2c4e53",
+      "fromSide": "bottom",
+      "toNode": "777df90c14114a32",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "1f3018da8abd4a95",
+      "fromNode": "992080c8ef524006",
+      "fromSide": "bottom",
+      "toNode": "3453e6a5535048c3",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "bf9b5b52b3ed47b9",
+      "fromNode": "37d341cd4a274cab",
+      "fromSide": "bottom",
+      "toNode": "3453e6a5535048c3",
+      "toSide": "top",
+      "label": "Data Stream",
+      "color": "5",
+      "styleAttributes": {
+        "path": "dashed"
+      }
+    },
+    {
+      "id": "efecb913ca72414d",
+      "fromNode": "3992d1b83d2447e4",
+      "fromSide": "bottom",
+      "toNode": "daee227644ca4430",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "9f95aa197ea14f75",
+      "fromNode": "794d7ffd90eb439a",
+      "fromSide": "bottom",
+      "toNode": "96d762cfde7e49e3",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "81dd021ba7f34bd1",
+      "fromNode": "992080c8ef524006",
+      "fromSide": "bottom",
+      "toNode": "ce9daa8a276b441c",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "f00de9d8916e4677",
+      "fromNode": "27630bd593074abb",
+      "fromSide": "right",
+      "toNode": "a324e4e007f04007",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "93f6b43ec76f4a9c",
+      "fromNode": "f65e71cfdcbf4361",
+      "fromSide": "bottom",
+      "toNode": "f3eb480ad38d449d",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "10beeb7a427245a7",
+      "fromNode": "346598c8d5c04d6e",
+      "fromSide": "left",
+      "toNode": "dd32aca639f24eb3",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "1df88608f8d24912",
+      "fromNode": "201b6944f8be4bc8",
+      "fromSide": "bottom",
+      "toNode": "2f85552394204b59",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "21c045a1c60f4d36",
+      "fromNode": "53e98887f7be4ca9",
+      "fromSide": "top",
+      "toNode": "27630bd593074abb",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "7377e22cf0c14a0e",
+      "fromNode": "794d7ffd90eb439a",
+      "fromSide": "right",
+      "toNode": "abe67025d1864e53",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "903111edd2484866",
+      "fromNode": "59e0b7fafb564b51",
+      "fromSide": "bottom",
+      "toNode": "53e98887f7be4ca9",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "997ac702623947e5",
+      "fromNode": "794d7ffd90eb439a",
+      "fromSide": "bottom",
+      "toNode": "6ebe6e0821714063",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "cf9a99c4127c44cb",
+      "fromNode": "e3cad2b9b4ad4556",
+      "fromSide": "bottom",
+      "toNode": "ce9daa8a276b441c",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "dc631b95c130478e",
+      "fromNode": "0e3adea62d284621",
+      "fromSide": "top",
+      "toNode": "e30e4226299d4fa0",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "660eb715e4214367",
+      "fromNode": "eb7576d03ff2470a",
+      "fromSide": "top",
+      "toNode": "fcf38e10eb2c4e53",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "8c3e24d5c389438c",
+      "fromNode": "60baa1908bd44cf1",
+      "fromSide": "bottom",
+      "toNode": "c499374d11f246dd",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "cc94ece2818e49b3",
+      "fromNode": "f026648b5ffc4dc7",
+      "fromSide": "right",
+      "toNode": "daf7d99fc67b441f",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "4d2e3a61e8ef4e2e",
+      "fromNode": "346598c8d5c04d6e",
+      "fromSide": "top",
+      "toNode": "b858108a522946a3",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "eefa96a07c3d455a",
+      "fromNode": "346598c8d5c04d6e",
+      "fromSide": "right",
+      "toNode": "2f65fad429cc4e86",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "75cd5dd328ff4d9b",
+      "fromNode": "37ac51d1642546e4",
+      "fromSide": "top",
+      "toNode": "3992d1b83d2447e4",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "1a570632bf7e4f4e",
+      "fromNode": "59e0b7fafb564b51",
+      "fromSide": "right",
+      "toNode": "ca56460334334dc7",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "196aaca0708f4883",
+      "fromNode": "53e98887f7be4ca9",
+      "fromSide": "right",
+      "toNode": "d77156ec61364e34",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "e268f09720144fe6",
+      "fromNode": "e30e4226299d4fa0",
+      "fromSide": "right",
+      "toNode": "3992d1b83d2447e4",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "f933e26a8a4e4636",
+      "fromNode": "fcf38e10eb2c4e53",
+      "fromSide": "bottom",
+      "toNode": "96d762cfde7e49e3",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "889d894ad520455f",
+      "fromNode": "bf2f47a49f554e4f",
+      "fromSide": "left",
+      "toNode": "777df90c14114a32",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "2e83821176914c61",
+      "fromNode": "3992d1b83d2447e4",
+      "fromSide": "bottom",
+      "toNode": "e4c0a535dfdc4aeb",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "121b7b43dc574f36",
+      "fromNode": "d77156ec61364e34",
+      "fromSide": "top",
+      "toNode": "b88dd089a7934c50",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "91b89c1d468c4921",
+      "fromNode": "f3fe7469c5ed42db",
+      "fromSide": "left",
+      "toNode": "346598c8d5c04d6e",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "ae10ef6624724b66",
+      "fromNode": "3453e6a5535048c3",
+      "fromSide": "bottom",
+      "toNode": "15dcb5815ace40be",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "a27cc0562a50423a",
+      "fromNode": "5edd5c9fbe344e0f",
+      "fromSide": "right",
+      "toNode": "3453e6a5535048c3",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "a02407c9ecb74c98",
+      "fromNode": "c87e2157179b47ea",
+      "fromSide": "bottom",
+      "toNode": "37ac51d1642546e4",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "b5cb9b80c2934f1f",
+      "fromNode": "8e708f9cddee4ff9",
+      "fromSide": "left",
+      "toNode": "96d762cfde7e49e3",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "fc5037588f824aad",
+      "fromNode": "37d341cd4a274cab",
+      "fromSide": "left",
+      "toNode": "7f96ae2d6c9f44b6",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "fc886950406344ff",
+      "fromNode": "7f96ae2d6c9f44b6",
+      "fromSide": "bottom",
+      "toNode": "15dcb5815ace40be",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "77678aefd4174956",
+      "fromNode": "0f41baf869604b0b",
+      "fromSide": "right",
+      "toNode": "a324e4e007f04007",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "63c1dbdfbef94cc4",
+      "fromNode": "daee227644ca4430",
+      "fromSide": "left",
+      "toNode": "6ebe6e0821714063",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "b3996767f8b847ff",
+      "fromNode": "d77156ec61364e34",
+      "fromSide": "left",
+      "toNode": "97df8f237c6d4339",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "adb58e125da14f46",
+      "fromNode": "c6875cee9e484c2e",
+      "fromSide": "top",
+      "toNode": "bf2f47a49f554e4f",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "f0622fbf43244fad",
+      "fromNode": "fd8173a9bddf4790",
+      "fromSide": "top",
+      "toNode": "063a627b039f44ea",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "8f62a681888f41fd",
+      "fromNode": "d77156ec61364e34",
+      "fromSide": "left",
+      "toNode": "a9b0d1bf57c54218",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "adbffacc0f56465e",
+      "fromNode": "e41ddbdec75d43d2",
+      "fromSide": "right",
+      "toNode": "777df90c14114a32",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "408fc5bfd84f486f",
+      "fromNode": "e3cad2b9b4ad4556",
+      "fromSide": "bottom",
+      "toNode": "daee227644ca4430",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "7943711c26234aa8",
+      "fromNode": "59e0b7fafb564b51",
+      "fromSide": "bottom",
+      "toNode": "37ac51d1642546e4",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "21ff485b03244c16",
+      "fromNode": "9dfaa02d50804914",
+      "fromSide": "left",
+      "toNode": "dd32aca639f24eb3",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "0c4d169497f944d6",
+      "fromNode": "3992d1b83d2447e4",
+      "fromSide": "left",
+      "toNode": "dd32aca639f24eb3",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "c1f9965d98c7469d",
+      "fromNode": "6ebe6e0821714063",
+      "fromSide": "right",
+      "toNode": "ca56460334334dc7",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "35bc9609bd784181",
+      "fromNode": "27630bd593074abb",
+      "fromSide": "bottom",
+      "toNode": "063a627b039f44ea",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "4b7ea80f257e41de",
+      "fromNode": "234c948f2b3d4f63",
+      "fromSide": "left",
+      "toNode": "b88dd089a7934c50",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "58143393168e4e3f",
+      "fromNode": "daee227644ca4430",
+      "fromSide": "right",
+      "toNode": "c499374d11f246dd",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "1fc3c7ec993647f7",
+      "fromNode": "f3fe7469c5ed42db",
+      "fromSide": "left",
+      "toNode": "fd5e1f070482484d",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "fc69d78f63ca4728",
+      "fromNode": "fcf38e10eb2c4e53",
+      "fromSide": "bottom",
+      "toNode": "3c57153f5a544908",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "0d965de1d33f4e50",
+      "fromNode": "e41ddbdec75d43d2",
+      "fromSide": "right",
+      "toNode": "052fc6172b7440ea",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "fc0b87cc112c46cc",
+      "fromNode": "063a627b039f44ea",
+      "fromSide": "right",
+      "toNode": "e30e4226299d4fa0",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "33dbaf52e085413f",
+      "fromNode": "fcf38e10eb2c4e53",
+      "fromSide": "bottom",
+      "toNode": "e4c0a535dfdc4aeb",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "a3ac246f8b9244b5",
+      "fromNode": "ca56460334334dc7",
+      "fromSide": "left",
+      "toNode": "e3e135458d9341c9",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "da8fbb14d23441cd",
+      "fromNode": "96d762cfde7e49e3",
+      "fromSide": "right",
+      "toNode": "0012d6ec0a064e21",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "c06260e26de74226",
+      "fromNode": "f3fe7469c5ed42db",
+      "fromSide": "left",
+      "toNode": "346598c8d5c04d6e",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "b0a1f96f4c784026",
+      "fromNode": "f65e71cfdcbf4361",
+      "fromSide": "top",
+      "toNode": "cd749e44d6ba4394",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "36b28f0b81d54a89",
+      "fromNode": "fd5e1f070482484d",
+      "fromSide": "top",
+      "toNode": "794d7ffd90eb439a",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "4d633a46e3234621",
+      "fromNode": "052fc6172b7440ea",
+      "fromSide": "left",
+      "toNode": "a9b0d1bf57c54218",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "84f689d93df440d0",
+      "fromNode": "740f8828cb5b414e",
+      "fromSide": "right",
+      "toNode": "2f65fad429cc4e86",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "085faa18bf294e5b",
+      "fromNode": "97df8f237c6d4339",
+      "fromSide": "right",
+      "toNode": "a5701e326c5d4c05",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "cbc5c3d85d4347c3",
+      "fromNode": "fcf38e10eb2c4e53",
+      "fromSide": "bottom",
+      "toNode": "0991f58ec8aa40a2",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "f31e675b72974a8e",
+      "fromNode": "c87e2157179b47ea",
+      "fromSide": "bottom",
+      "toNode": "2f65fad429cc4e86",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "d29d9b0197f1427b",
+      "fromNode": "fcf38e10eb2c4e53",
+      "fromSide": "right",
+      "toNode": "e3cad2b9b4ad4556",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "9f3de170109e459f",
+      "fromNode": "ce9daa8a276b441c",
+      "fromSide": "left",
+      "toNode": "96d762cfde7e49e3",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "c7b2d08b6c4b4343",
+      "fromNode": "e41ddbdec75d43d2",
+      "fromSide": "bottom",
+      "toNode": "de51b297683342a6",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "b418ed9d1b9449dd",
+      "fromNode": "ec356f8fca0c48c2",
+      "fromSide": "top",
+      "toNode": "794d7ffd90eb439a",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "d282f8e2508c4b16",
+      "fromNode": "0991f58ec8aa40a2",
+      "fromSide": "right",
+      "toNode": "b44fa2493cd242a9",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "cc0aa6e1177f478d",
+      "fromNode": "d3ed2a865ced4db4",
+      "fromSide": "top",
+      "toNode": "a324e4e007f04007",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "3bf0563cbeb7404f",
+      "fromNode": "a5701e326c5d4c05",
+      "fromSide": "left",
+      "toNode": "3c57153f5a544908",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "762c19a1818b40cf",
+      "fromNode": "15dcb5815ace40be",
+      "fromSide": "top",
+      "toNode": "f3fe7469c5ed42db",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "af5ccc30dba14aa0",
+      "fromNode": "abe67025d1864e53",
+      "fromSide": "right",
+      "toNode": "c6875cee9e484c2e",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "f6b9b79add7a42b6",
+      "fromNode": "37ac51d1642546e4",
+      "fromSide": "top",
+      "toNode": "5c91e2ef5f8d437a",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "52daa29bbf2f434b",
+      "fromNode": "fcf38e10eb2c4e53",
+      "fromSide": "bottom",
+      "toNode": "201b6944f8be4bc8",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "af4155148bbf4d9e",
+      "fromNode": "3c57153f5a544908",
+      "fromSide": "right",
+      "toNode": "6ebe6e0821714063",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "463fbdf1fa784c80",
+      "fromNode": "7f96ae2d6c9f44b6",
+      "fromSide": "right",
+      "toNode": "992080c8ef524006",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "0d38377a9f614644",
+      "fromNode": "37d341cd4a274cab",
+      "fromSide": "left",
+      "toNode": "3453e6a5535048c3",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "026763821131481e",
+      "fromNode": "7f96ae2d6c9f44b6",
+      "fromSide": "bottom",
+      "toNode": "e304382b0c3c4af9",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "03d9bc7df77f40cc",
+      "fromNode": "063a627b039f44ea",
+      "fromSide": "right",
+      "toNode": "59e0b7fafb564b51",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "89afb151823b4271",
+      "fromNode": "ec356f8fca0c48c2",
+      "fromSide": "top",
+      "toNode": "daf7d99fc67b441f",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "da9c47f319894313",
+      "fromNode": "f2c7ead7de384b32",
+      "fromSide": "left",
+      "toNode": "fd5e1f070482484d",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "c97b4e2d35a44022",
+      "fromNode": "73141ff12a9644d5",
+      "fromSide": "bottom",
+      "toNode": "96d762cfde7e49e3",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "d99a6787cd444c23",
+      "fromNode": "eb7576d03ff2470a",
+      "fromSide": "top",
+      "toNode": "60baa1908bd44cf1",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "7bbb4bda986342ea",
+      "fromNode": "e4c0ef1cae8747d2",
+      "fromSide": "left",
+      "toNode": "7f96ae2d6c9f44b6",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "74f5f170f2024020",
+      "fromNode": "5edd5c9fbe344e0f",
+      "fromSide": "right",
+      "toNode": "3453e6a5535048c3",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "4fb455ed90304066",
+      "fromNode": "aa1fdcd3b8bf4c61",
+      "fromSide": "bottom",
+      "toNode": "37ac51d1642546e4",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "2cf8f624a7014810",
+      "fromNode": "37ac51d1642546e4",
+      "fromSide": "top",
+      "toNode": "60baa1908bd44cf1",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "65cc509675d14ce6",
+      "fromNode": "052fc6172b7440ea",
+      "fromSide": "top",
+      "toNode": "0e3adea62d284621",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "5539ab378c1b4843",
+      "fromNode": "96d762cfde7e49e3",
+      "fromSide": "right",
+      "toNode": "ca56460334334dc7",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "289ca3fbc2e44aaa",
+      "fromNode": "e3e135458d9341c9",
+      "fromSide": "top",
+      "toNode": "27630bd593074abb",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "080d12c0ca884597",
+      "fromNode": "79698ecb771749c4",
+      "fromSide": "right",
+      "toNode": "b44fa2493cd242a9",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "bd20c70c05814fe4",
+      "fromNode": "aa1fdcd3b8bf4c61",
+      "fromSide": "right",
+      "toNode": "e4c0ef1cae8747d2",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "85f33cb71e73493a",
+      "fromNode": "daee227644ca4430",
+      "fromSide": "top",
+      "toNode": "ce9daa8a276b441c",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "7623feaf30f045a2",
+      "fromNode": "6ebe6e0821714063",
+      "fromSide": "top",
+      "toNode": "777df90c14114a32",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "65d36add730c4233",
+      "fromNode": "8bb5f4e806cf4774",
+      "fromSide": "left",
+      "toNode": "5edd5c9fbe344e0f",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "d8ec3548563e4b0a",
+      "fromNode": "d77156ec61364e34",
+      "fromSide": "top",
+      "toNode": "3992d1b83d2447e4",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "7676a4e142574b1d",
+      "fromNode": "dd32aca639f24eb3",
+      "fromSide": "bottom",
+      "toNode": "3c57153f5a544908",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "732fdb2bc29642b3",
+      "fromNode": "0991f58ec8aa40a2",
+      "fromSide": "right",
+      "toNode": "a324e4e007f04007",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "f21949e50ba24570",
+      "fromNode": "794d7ffd90eb439a",
+      "fromSide": "right",
+      "toNode": "eb7576d03ff2470a",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "98f8956e7dee4b0f",
+      "fromNode": "052fc6172b7440ea",
+      "fromSide": "top",
+      "toNode": "3992d1b83d2447e4",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "1cd4188b50ab426b",
+      "fromNode": "59e0b7fafb564b51",
+      "fromSide": "top",
+      "toNode": "992080c8ef524006",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "2f6aed181dba47ad",
+      "fromNode": "f026648b5ffc4dc7",
+      "fromSide": "right",
+      "toNode": "97df8f237c6d4339",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "f391f94907f74478",
+      "fromNode": "e4c0a535dfdc4aeb",
+      "fromSide": "top",
+      "toNode": "6ebe6e0821714063",
+      "toSide": "bottom",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "664d6fa71222477d",
+      "fromNode": "ca56460334334dc7",
+      "fromSide": "left",
+      "toNode": "7f96ae2d6c9f44b6",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "036871b75cd94eb4",
+      "fromNode": "c499374d11f246dd",
+      "fromSide": "left",
+      "toNode": "eb7576d03ff2470a",
+      "toSide": "right",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "3cc76621054c4b40",
+      "fromNode": "8bb5f4e806cf4774",
+      "fromSide": "right",
+      "toNode": "d77156ec61364e34",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "1"
+    },
+    {
+      "id": "3796b89282b7471d",
+      "fromNode": "201b6944f8be4bc8",
+      "fromSide": "bottom",
+      "toNode": "a5701e326c5d4c05",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "fa3910e7893443b3",
+      "fromNode": "37d341cd4a274cab",
+      "fromSide": "bottom",
+      "toNode": "6ebe6e0821714063",
+      "toSide": "top",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    },
+    {
+      "id": "3248353caf7a4cf8",
+      "fromNode": "fd5e1f070482484d",
+      "fromSide": "right",
+      "toNode": "59e0b7fafb564b51",
+      "toSide": "left",
+      "label": "Neural Link",
+      "color": "6",
+      "styleAttributes": {
+        "path": "dotted"
+      }
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "frontmatter": {}
+  }
+}

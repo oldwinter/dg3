@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.inFolder("Spaces/4-Archive/剪藏归档/WuCaiSync")
+    - file.name.contains("wucai-")
+views:
+  - type: table
+    name: WuCaiSync
+    order:
+      - file.name
+      - file.mtime
+      - file.folder
+    sort:
+      - property: file.mtime
+        direction: DESC

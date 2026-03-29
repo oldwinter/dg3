@@ -4,7 +4,7 @@ date modified: 2024-05-17
 publish: true
 ---
 
-用 [[🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Linter\|Linter]] 格式化以后，一个内容块儿，前后有空格，则这个内容块整体是一个 block
+用 [[Linter|Linter]] 格式化以后，一个内容块儿，前后有空格，则这个内容块整体是一个 block
 
 ## 标题块 ^e15e02
 
@@ -17,11 +17,11 @@ publish: true
 
 如果上面^ee158f 后面紧接着 header 标题，则会有块引用 bug。
 
-标题块 + 列表块  
+标题块 + 列表块\
 标题块 + 列表块 1
 
-- 这个被识别为 block 的起点，上面 2 行不会显示  
-fds
+- 这个被识别为 block 的起点，上面 2 行不会显示\
+  fds
 
 ^015269
 
@@ -29,10 +29,10 @@ fds
 
 ## 显示效果
 
-![[Spaces/2-Area/知识管理/markdown 中如何界定一个块block#^e15e02]]
+![[markdown 中如何界定一个块block#^e15e02]]
 
-![[Spaces/2-Area/知识管理/markdown 中如何界定一个块block#^1f0124]]
+![[markdown 中如何界定一个块block#^1f0124]]
 
-![[Spaces/2-Area/知识管理/markdown 中如何界定一个块block#^ee158f]]
+![[markdown 中如何界定一个块block#^ee158f]]
 
-![[Spaces/2-Area/知识管理/markdown 中如何界定一个块block#^015269]]
+![[markdown 中如何界定一个块block#^015269]]

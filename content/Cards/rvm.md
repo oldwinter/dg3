@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Cards/rvm.md","created":"2024-03-21","modified":"2024-07-15","cssclasses":""}
+publish: true
+permalink: /Cards/rvm.md
+created: 2024-03-21
+modified: 2024-07-15
 ---
-
 
 安装
 

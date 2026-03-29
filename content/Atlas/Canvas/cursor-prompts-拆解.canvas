@@ -1,0 +1,44 @@
+{
+	"nodes":[
+		{"id":"mainGoals","type":"text","text":"# 🎯 主要目标\n\n遵循<user_query>\n指令","x":-919,"y":-90,"width":150,"height":80},
+		{"id":"workMode","type":"text","text":"# ⚡ 工作模式\n\n**自主代理**\n- 持续解决问题直到完成\n- 主动使用工具\n- 不等待用户确认","x":-576,"y":-34,"width":300,"height":234},
+		{"id":"coreIdentity","type":"text","text":"# 🎯 核心身份\n\n**AI编程助手**\n- 由GPT-5驱动\n- 在Cursor中运行\n- 与用户配对编程","x":-527,"y":-310,"width":300,"height":220},
+		{"id":"flowSpec","type":"text","text":"# 🔄 流程规范\n\n**工作流程**\n1. 检测新目标→发现阶段\n2. 创建结构化计划\n3. 执行工具调用\n4. 完成时关闭列表","x":-597,"y":350,"width":300,"height":232},
+		{"id":"codeStyle","type":"text","text":"# 🎨 代码风格规范\n\n**清晰可读**\n- 有意义变量命名\n- 显式类型注解\n- 守卫子句早期返回\n- 避免深度嵌套","x":750,"y":740,"width":300,"height":225},
+		{"id":"codeChanges","type":"text","text":"# 💻 代码更改规范\n\n**立即可运行**\n- 添加所有必要导入\n- 确保依赖完整\n- 遵循代码风格指南\n- 优化可读性","x":350,"y":740,"width":300,"height":225},
+		{"id":"toolCalling","type":"text","text":"# 🛠️ 工具调用规范\n\n**并行优化**\n- 批处理只读操作\n- 优先codebase_search\n- 最大化并行调用\n- 自然描述工具动作","x":-90,"y":549,"width":350,"height":242},
+		{"id":"contextUnderstanding","type":"text","text":"# 🔍 上下文理解\n\n**语义搜索优先**\n- 广泛高层次查询开始\n- 分解多部分问题\n- 多次不同措辞搜索\n- 确保信息完整性","x":475,"y":440,"width":350,"height":230},
+		{"id":"completionSpec","type":"text","text":"# ✅ 完成规范\n\n**任务完成时**\n- 勾选所有待办事项\n- 关闭待办事项列表\n- 按规范给出总结","x":-175,"y":250,"width":350,"height":214},
+		{"id":"todoSpec","type":"text","text":"# 📝 待办事项规范\n\n**任务管理**\n- 原子化待办事项\n- 动词引导描述\n- 高层次有意义任务\n- 实时状态更新","x":232,"y":-719,"width":300,"height":226},
+		{"id":"markdownSpec","type":"text","text":"# 📄 Markdown规范\n\n**格式化规则**\n- 使用###和##标题\n- 粗体突出关键信息\n- 反引号格式化名称\n- 项目符号用-格式","x":-175,"y":-744,"width":300,"height":226},
+		{"id":"communication","type":"text","text":"# 📝 通信规范\n\n**Markdown格式**\n- 仅相关部分使用代码围栏\n- 文件/目录用反引号\n- 优化可读性\n- 使用数学表达式格式","x":0,"y":-415,"width":350,"height":210},
+		{"id":"statusUpdates","type":"text","text":"# 📊 状态更新规范\n\n**进度说明**\n- 1-3句话说明进展\n- 连续对话风格\n- 正确时态使用\n- 实时更新待办事项","x":400,"y":-206,"width":350,"height":233},
+		{"id":"summarySpec","type":"text","text":"# 📋 总结规范\n\n**轮次结束总结**\n- 高层次总结更改\n- 简洁项目符号\n- 无重复内容\n- 标记重要代码更改","x":400,"y":77,"width":350,"height":246},
+		{"id":"compliance","type":"text","text":"# 📏 合规性规范\n\n**规则执行**\n- 工具调用前状态更新\n- 待办事项实时管理\n- 代码更改后测试验证\n- 遵循所有规范要求","x":550,"y":1069,"width":350,"height":255},
+		{"id":"citingCode","type":"text","text":"# 📖 代码引用规范\n\n**正确格式**\n- 代码库代码用行号格式\n- 新代码用语言标签\n- 不包含行号前缀\n- 正确缩进处理","x":950,"y":1069,"width":350,"height":255},
+		{"id":"linterErrors","type":"text","text":"# 🐛 Linter错误处理\n\n**质量保证**\n- 检查并修复错误\n- 最多3次重试\n- 不进行无根据猜测\n- 优先类型安全","x":150,"y":1069,"width":300,"height":255}
+	],
+	"edges":[
+		{"id":"mainToIdentity","fromNode":"mainGoals","fromSide":"right","toNode":"coreIdentity","toSide":"left"},
+		{"id":"mainToWorkmode","fromNode":"mainGoals","fromSide":"right","toNode":"workMode","toSide":"left"},
+		{"id":"identityToCommunication","fromNode":"coreIdentity","fromSide":"right","toNode":"communication","toSide":"left"},
+		{"id":"identityToStatus","fromNode":"coreIdentity","fromSide":"right","toNode":"statusUpdates","toSide":"left"},
+		{"id":"statusToSummary","fromNode":"statusUpdates","fromSide":"bottom","toNode":"summarySpec","toSide":"top"},
+		{"id":"summaryToCompletion","fromNode":"summarySpec","fromSide":"bottom","toNode":"completionSpec","toSide":"top"},
+		{"id":"workmodeToFlow","fromNode":"workMode","fromSide":"bottom","toNode":"flowSpec","toSide":"top"},
+		{"id":"flowToTools","fromNode":"flowSpec","fromSide":"right","toNode":"toolCalling","toSide":"left"},
+		{"id":"toolsToContext","fromNode":"toolCalling","fromSide":"right","toNode":"contextUnderstanding","toSide":"left"},
+		{"id":"communicationToMarkdown","fromNode":"communication","fromSide":"top","toNode":"markdownSpec","toSide":"bottom"},
+		{"id":"communicationToTodo","fromNode":"communication","fromSide":"top","toNode":"todoSpec","toSide":"bottom"},
+		{"id":"contextToCodechanges","fromNode":"contextUnderstanding","fromSide":"bottom","toNode":"codeChanges","toSide":"top"},
+		{"id":"codechangesToCodestyle","fromNode":"codeChanges","fromSide":"right","toNode":"codeStyle","toSide":"left"},
+		{"id":"codestyleToLinter","fromNode":"codeStyle","fromSide":"bottom","toNode":"linterErrors","toSide":"top"},
+		{"id":"linterToCompliance","fromNode":"linterErrors","fromSide":"right","toNode":"compliance","toSide":"left"},
+		{"id":"complianceToCiting","fromNode":"compliance","fromSide":"right","toNode":"citingCode","toSide":"left"},
+		{"id":"completionToFlow","fromNode":"completionSpec","fromSide":"bottom","toNode":"flowSpec","toSide":"right"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

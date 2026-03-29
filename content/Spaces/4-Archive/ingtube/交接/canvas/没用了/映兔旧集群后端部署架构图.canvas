@@ -1,0 +1,754 @@
+{
+  "edges": [
+    {
+      "fromNode": "59d35e4b582b6087",
+      "fromSide": "left",
+      "id": "5aa8c3205355b0fc",
+      "toNode": "0415b36dcdc2d651",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "20c6c70a137325d4",
+      "fromSide": "top",
+      "id": "32312a967d2d3e7c",
+      "toNode": "a3d4f2db29e41c07",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "20c6c70a137325d4",
+      "fromSide": "bottom",
+      "id": "716e30870f9f3eae",
+      "toNode": "3677594f3392aab1",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "df6ca1ef36142755",
+      "fromSide": "left",
+      "id": "9585aa61e21bebea",
+      "toEnd": "none",
+      "toNode": "3677594f3392aab1",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "d61ec6317b5c32d0",
+      "fromSide": "right",
+      "id": "42bac5f90d461c99",
+      "toNode": "4a6d2cc6994aee23",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "684b4c342500a260",
+      "fromSide": "left",
+      "id": "a61f74e2291ea5c0",
+      "toNode": "5d2e0698c489fd82",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "684b4c342500a260",
+      "fromSide": "right",
+      "id": "c4124abe96bfdbdd",
+      "toNode": "e2f2d9c960af5c52",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "e2f2d9c960af5c52",
+      "fromSide": "top",
+      "id": "8ddf89310e45ab34",
+      "toEnd": "none",
+      "toNode": "adffa05aa1490384",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "e75447d51274996b",
+      "fromSide": "left",
+      "id": "07d946dea235d94e",
+      "toNode": "22345014a9d0f4d1",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "22345014a9d0f4d1",
+      "fromSide": "top",
+      "id": "8b36cf1f837b845e",
+      "toNode": "53060b7a6d98d296",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "3acc94419747bc10",
+      "fromSide": "right",
+      "id": "b787294feca4ea35",
+      "toNode": "d61ec6317b5c32d0",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "3acc94419747bc10",
+      "fromSide": "right",
+      "id": "157fd64091e5d6d5",
+      "toNode": "a3d4f2db29e41c07",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6b62fef661ac53a4",
+      "fromSide": "bottom",
+      "id": "338f2c47d475587a",
+      "toNode": "b2875085c7a79374",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "b2875085c7a79374",
+      "fromSide": "bottom",
+      "id": "a5651cbce0f1e7b5",
+      "toNode": "3acc94419747bc10",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f6c6d29f762c3f86",
+      "fromSide": "right",
+      "id": "757d8ed16787e914",
+      "toNode": "1814fc352eba55da",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "1814fc352eba55da",
+      "fromSide": "right",
+      "id": "0666d773bbd5b5ef",
+      "toNode": "f5646b442a66b056",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "1814fc352eba55da",
+      "fromSide": "right",
+      "id": "d65f87f78418dc2c",
+      "toNode": "99d3a6eb84780cc4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "f5646b442a66b056",
+      "fromSide": "right",
+      "id": "14b5bf07dc7e5bd8",
+      "toNode": "684b4c342500a260",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "99d3a6eb84780cc4",
+      "fromSide": "right",
+      "id": "a733b407821c8179",
+      "toNode": "684b4c342500a260",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "684b4c342500a260",
+      "fromSide": "right",
+      "id": "ad3339b06abc7ab7",
+      "toNode": "9c82bed7d7b53992",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9c82bed7d7b53992",
+      "fromSide": "top",
+      "id": "8c254079ac4e9ac7",
+      "toNode": "7a03d8fb5fff616e",
+      "toSide": "bottom"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "height": 1000,
+      "id": "a3016c22234e30ea",
+      "label": "VPC - 虚拟私有云",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 2360,
+      "x": -1240,
+      "y": -120
+    },
+    {
+      "color": "5",
+      "height": 920,
+      "id": "684b4c342500a260",
+      "label": "K8S集群",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 1580,
+      "x": -1220,
+      "y": -60
+    },
+    {
+      "color": "1",
+      "height": 770,
+      "id": "1f8dd903ac6363a9",
+      "label": "node节点",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 995,
+      "x": -680,
+      "y": 50
+    },
+    {
+      "color": "6",
+      "height": 540,
+      "id": "7a03d8fb5fff616e",
+      "label": "第三方api",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 880,
+      "x": 1040,
+      "y": -730
+    },
+    {
+      "color": "2",
+      "height": 400,
+      "id": "e2f2d9c960af5c52",
+      "label": "阿里云",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 790,
+      "x": -430,
+      "y": -590
+    },
+    {
+      "height": 220,
+      "id": "59d35e4b582b6087",
+      "label": "db-production",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 660,
+      "x": -420,
+      "y": 120
+    },
+    {
+      "color": "3",
+      "height": 440,
+      "id": "7988185b862924bc",
+      "label": "社媒渠道",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 290,
+      "x": 1060,
+      "y": -680
+    },
+    {
+      "height": 265,
+      "id": "99d3a6eb84780cc4",
+      "label": "istio-master节点- 托管",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 480,
+      "x": -1880,
+      "y": 935
+    },
+    {
+      "height": 210,
+      "id": "f5646b442a66b056",
+      "label": "k8s-master节点- 托管",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 360,
+      "x": -1880,
+      "y": 550
+    },
+    {
+      "height": 74,
+      "id": "6ea5964a614a33ef",
+      "label": "kube-system",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 280,
+      "x": -1840,
+      "y": 600
+    },
+    {
+      "color": "4",
+      "height": 320,
+      "id": "3677594f3392aab1",
+      "label": "es集群 - docker部署",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 880,
+      "x": -420,
+      "y": 1040
+    },
+    {
+      "height": 380,
+      "id": "20c6c70a137325d4",
+      "label": "production",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 660,
+      "x": -420,
+      "y": 400
+    },
+    {
+      "height": 100,
+      "id": "5d1e233717cb1185",
+      "label": "statefulset",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 590,
+      "x": -380,
+      "y": 450
+    },
+    {
+      "height": 100,
+      "id": "84134ba8969b6208",
+      "label": "deployment",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 590,
+      "x": -380,
+      "y": 590
+    },
+    {
+      "height": 160,
+      "id": "be459f5f246c7cca",
+      "label": "ingress-nginx",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 200,
+      "x": -660,
+      "y": 450
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/istio-system.md",
+      "height": 130,
+      "id": "7b81def8ec394e82",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -1840,
+      "y": 990
+    },
+    {
+      "height": 60,
+      "id": "a3d4f2db29e41c07",
+      "styleAttributes": {},
+      "text": "data-service\n数据服务api总入口",
+      "type": "text",
+      "width": 250,
+      "x": -60,
+      "y": 260
+    },
+    {
+      "height": 60,
+      "id": "22345014a9d0f4d1",
+      "styleAttributes": {},
+      "text": "PV",
+      "type": "text",
+      "width": 210,
+      "x": -650,
+      "y": 700
+    },
+    {
+      "height": 60,
+      "id": "d61ec6317b5c32d0",
+      "styleAttributes": {},
+      "text": "ingress-nginx",
+      "type": "text",
+      "width": 170,
+      "x": -650,
+      "y": 500
+    },
+    {
+      "height": 60,
+      "id": "e75447d51274996b",
+      "styleAttributes": {},
+      "text": "PVC",
+      "type": "text",
+      "width": 250,
+      "x": -360,
+      "y": 700
+    },
+    {
+      "height": 260,
+      "id": "2f16f57f809ecc8c",
+      "styleAttributes": {},
+      "text": "## 测试环境\n\nes-dev 1个节点\n\n## 线上环境\nes-new 3个节点\n",
+      "type": "text",
+      "width": 260,
+      "x": -400,
+      "y": 1060
+    },
+    {
+      "height": 60,
+      "id": "1347d69873337b99",
+      "styleAttributes": {},
+      "text": "Kibana",
+      "type": "text",
+      "width": 250,
+      "x": 190,
+      "y": 1060
+    },
+    {
+      "height": 60,
+      "id": "3499fc389b36e8eb",
+      "styleAttributes": {},
+      "text": "elasticsearch",
+      "type": "text",
+      "width": 250,
+      "x": -60,
+      "y": 1060
+    },
+    {
+      "height": 60,
+      "id": "4805d3f5e573a758",
+      "styleAttributes": {},
+      "text": "rocketmq（测试环境独有）",
+      "type": "text",
+      "width": 250,
+      "x": -60,
+      "y": 1160
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/ELK.md",
+      "height": 280,
+      "id": "df6ca1ef36142755",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 458,
+      "x": 733,
+      "y": 1060
+    },
+    {
+      "height": 60,
+      "id": "830f5466b8c7e70d",
+      "styleAttributes": {},
+      "text": "几十个grpc服务",
+      "type": "text",
+      "width": 250,
+      "x": -60,
+      "y": 610
+    },
+    {
+      "height": 60,
+      "id": "4a6d2cc6994aee23",
+      "styleAttributes": {},
+      "text": "apiserver",
+      "type": "text",
+      "width": 250,
+      "x": -360,
+      "y": 610
+    },
+    {
+      "height": 60,
+      "id": "1e86d7adf787d678",
+      "styleAttributes": {},
+      "text": "抖音",
+      "type": "text",
+      "width": 250,
+      "x": 1080,
+      "y": -570
+    },
+    {
+      "height": 160,
+      "id": "6235b514577e8b04",
+      "styleAttributes": {},
+      "text": "## 支付接口\n- 支付宝\n- 云账户\n- 微信",
+      "type": "text",
+      "width": 250,
+      "x": 1360,
+      "y": -390
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/NAT.md",
+      "height": 400,
+      "id": "9c82bed7d7b53992",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": 700,
+      "y": 360
+    },
+    {
+      "height": 60,
+      "id": "2fa674c36c7e9ddd",
+      "styleAttributes": {},
+      "text": "## istio-system",
+      "type": "text",
+      "width": 250,
+      "x": -1070,
+      "y": 610
+    },
+    {
+      "height": 60,
+      "id": "21f5002b851450d4",
+      "styleAttributes": {},
+      "text": "## kube-system",
+      "type": "text",
+      "width": 250,
+      "x": -1070,
+      "y": 410
+    },
+    {
+      "height": 60,
+      "id": "e728fc7a383605ae",
+      "styleAttributes": {},
+      "text": "友盟",
+      "type": "text",
+      "width": 250,
+      "x": 1360,
+      "y": -580
+    },
+    {
+      "height": 60,
+      "id": "b58f6188c017a35e",
+      "styleAttributes": {},
+      "text": "快递100",
+      "type": "text",
+      "width": 250,
+      "x": 1640,
+      "y": -580
+    },
+    {
+      "height": 60,
+      "id": "fbb23ddbf69c1bd4",
+      "styleAttributes": {},
+      "text": "b站",
+      "type": "text",
+      "width": 250,
+      "x": 1080,
+      "y": -480
+    },
+    {
+      "height": 60,
+      "id": "cdc046fbb99cbdf1",
+      "styleAttributes": {},
+      "text": "ERP",
+      "type": "text",
+      "width": 250,
+      "x": 1640,
+      "y": -490
+    },
+    {
+      "height": 60,
+      "id": "ac7a2aecdab93188",
+      "styleAttributes": {},
+      "text": "云片",
+      "type": "text",
+      "width": 250,
+      "x": 1360,
+      "y": -490
+    },
+    {
+      "height": 60,
+      "id": "8ced9547f50038f7",
+      "styleAttributes": {},
+      "text": "小红书",
+      "type": "text",
+      "width": 250,
+      "x": 1080,
+      "y": -320
+    },
+    {
+      "height": 60,
+      "id": "ed743156f7034bdb",
+      "styleAttributes": {},
+      "text": "快手",
+      "type": "text",
+      "width": 250,
+      "x": 1080,
+      "y": -400
+    },
+    {
+      "file": "ingtube/Inbox/empty/kubectl.md",
+      "height": 400,
+      "id": "f6c6d29f762c3f86",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -2760,
+      "y": 610
+    },
+    {
+      "height": 80,
+      "id": "1814fc352eba55da",
+      "styleAttributes": {},
+      "text": "## SLB\n\n6443 端口",
+      "type": "text",
+      "width": 250,
+      "x": -2280,
+      "y": 780
+    },
+    {
+      "height": 60,
+      "id": "cc512e7dcc8ba15e",
+      "styleAttributes": {},
+      "text": "微博",
+      "type": "text",
+      "width": 250,
+      "x": 1080,
+      "y": -660
+    },
+    {
+      "height": 60,
+      "id": "83ffbec42ee2d063",
+      "styleAttributes": {},
+      "text": "微信客服",
+      "type": "text",
+      "width": 250,
+      "x": 1360,
+      "y": -670
+    },
+    {
+      "height": 60,
+      "id": "3e91f2e8ade0d190",
+      "styleAttributes": {},
+      "text": "mail邮箱服务",
+      "type": "text",
+      "width": 250,
+      "x": 1640,
+      "y": -670
+    },
+    {
+      "height": 60,
+      "id": "60b7209f9c6ee04d",
+      "styleAttributes": {},
+      "text": "canal",
+      "type": "text",
+      "width": 250,
+      "x": -360,
+      "y": 470
+    },
+    {
+      "height": 60,
+      "id": "e8e3f71e10129ec7",
+      "styleAttributes": {},
+      "text": "snowflake",
+      "type": "text",
+      "width": 250,
+      "x": -60,
+      "y": 470
+    },
+    {
+      "height": 60,
+      "id": "13a159ac6008aef3",
+      "styleAttributes": {},
+      "text": "mongodb",
+      "type": "text",
+      "width": 250,
+      "x": -110,
+      "y": -560
+    },
+    {
+      "height": 60,
+      "id": "e4f251832e75d669",
+      "styleAttributes": {},
+      "text": "rocketmq",
+      "type": "text",
+      "width": 250,
+      "x": -110,
+      "y": -470
+    },
+    {
+      "height": 60,
+      "id": "63a756e41f2f024d",
+      "styleAttributes": {},
+      "text": "mysql",
+      "type": "text",
+      "width": 250,
+      "x": -410,
+      "y": -560
+    },
+    {
+      "height": 60,
+      "id": "53060b7a6d98d296",
+      "styleAttributes": {},
+      "text": "nas",
+      "type": "text",
+      "width": 250,
+      "x": -410,
+      "y": -270
+    },
+    {
+      "height": 60,
+      "id": "d4c1855ef4a08e53",
+      "styleAttributes": {},
+      "text": "oss",
+      "type": "text",
+      "width": 250,
+      "x": -410,
+      "y": -350
+    },
+    {
+      "height": 60,
+      "id": "59e7de9616268188",
+      "styleAttributes": {},
+      "text": "sls",
+      "type": "text",
+      "width": 250,
+      "x": -110,
+      "y": -350
+    },
+    {
+      "height": 60,
+      "id": "567429575292de41",
+      "styleAttributes": {},
+      "text": "redis",
+      "type": "text",
+      "width": 250,
+      "x": -410,
+      "y": -470
+    },
+    {
+      "file": "Atlas/Canvas/k8s技术架构图.canvas",
+      "height": 400,
+      "id": "5d2e0698c489fd82",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -1984,
+      "y": -226
+    },
+    {
+      "height": 50,
+      "id": "6b62fef661ac53a4",
+      "styleAttributes": {},
+      "text": "## 前端请求",
+      "type": "text",
+      "width": 250,
+      "x": -1070,
+      "y": -1640
+    },
+    {
+      "file": "Cards/WAF.md",
+      "height": 124,
+      "id": "b2875085c7a79374",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -1142,
+      "y": -1364
+    },
+    {
+      "file": "ingtube/canvas/映兔数据端部署架构图.canvas",
+      "height": 400,
+      "id": "0415b36dcdc2d651",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -1220,
+      "y": -626
+    },
+    {
+      "height": 60,
+      "id": "3acc94419747bc10",
+      "styleAttributes": {},
+      "text": "## 阿里云SLB",
+      "type": "text",
+      "width": 250,
+      "x": -1070,
+      "y": -1040
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔使用的阿里云全部服务.md",
+      "height": 400,
+      "id": "adffa05aa1490384",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 790,
+      "x": -430,
+      "y": -1180
+    }
+  ]
+}

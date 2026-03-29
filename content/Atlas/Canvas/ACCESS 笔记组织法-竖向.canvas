@@ -1,0 +1,95 @@
+{
+	"nodes":[
+		{"id":"spacesGroupNode","type":"group","x":-860,"y":340,"width":920,"height":380,"color":"6","label":"Spaces (P.A.R.A. 工作法)"},
+		{"id":"titleNode","type":"text","text":">[!cc-header-noborder] # ACCESS 笔记组织法","x":-1270,"y":-940,"width":440,"height":140},
+		{
+			"id":"extrasNode",
+			"type":"file",
+			"file":"Extras/_ Extras Readme.md",
+			"styleAttributes":{"border":"dashed"},
+			"x":-1270,
+			"y":-140,
+			"width":400,
+			"height":200
+		},
+		{"id":"atlasNode","type":"file","file":"Atlas/_ Atlas Readme.md","x":-1270,"y":-680,"width":400,"height":200,"color":"5"},
+		{
+			"id":"a160052d50d772b1",
+			"type":"text",
+			"text":"[[Heptabase]]",
+			"styleAttributes":{"shape":"predefined-process"},
+			"x":-894,
+			"y":-380,
+			"width":260,
+			"height":80
+		},
+		{"id":"inboxNode","type":"file","file":"📥 Inbox/_ 📥 Inbox Readme.md","x":-600,"y":-940,"width":400,"height":200,"color":"2"},
+		{"id":"cardsNode","type":"file","file":"Cards/_ Cards Readme.md","x":-600,"y":-240,"width":400,"height":200,"color":"4"},
+		{
+			"id":"b268d3d45ffdfb0a",
+			"type":"text",
+			"text":"[[AI预处理工作流]]",
+			"styleAttributes":{"shape":"predefined-process"},
+			"x":-355,
+			"y":-480,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"0c660ec4d7ac461d",
+			"type":"text",
+			"text":"[[闪念笔记]]  \n[[» Daily notes工作流]]",
+			"styleAttributes":{"shape":"predefined-process"},
+			"x":-169,
+			"y":-720,
+			"width":260,
+			"height":80
+		},
+		{
+			"id":"6e1ba67f2bcdcd66",
+			"type":"text",
+			"text":"[[文献笔记]]  \n[[C.O.D.E|CODE流程]]",
+			"styleAttributes":{"shape":"predefined-process"},
+			"x":-70,
+			"y":-140,
+			"width":260,
+			"height":80
+		},
+		{"id":"calendarNode","type":"file","file":"Calendar/_ Calendar Readme.md","x":35,"y":-540,"width":400,"height":200,"color":"1"},
+		{
+			"id":"c65b72c3d85877b0",
+			"type":"text",
+			"text":"[[项目笔记]]  \n[[P.A.R.A|PARA]]  \n[[如何使用Cursor管理Obsidian知识库|AI处理工作流]]",
+			"styleAttributes":{"shape":"predefined-process"},
+			"x":-355,
+			"y":180,
+			"width":260,
+			"height":80
+		},
+		{"id":"2620d1a58d287378","type":"file","file":"Spaces/3-Resource/_ Resource Readme.md","x":-820,"y":560,"width":371,"height":117},
+		{"id":"50c7aca801d76b16","type":"file","file":"Spaces/1-Project/_ Project Readme.md","x":-820,"y":380,"width":371,"height":120},
+		{"id":"9058671b3a71fe40","type":"file","file":"Spaces/2-Area/_ Area Readme.md","x":-355,"y":380,"width":371,"height":120},
+		{"id":"b88fd326aeac0fd1","type":"file","file":"Spaces/4-Archive/_ Archive Readme.md","x":-355,"y":560,"width":371,"height":117},
+		{"id":"sourcesNode","type":"file","file":"Sources/_ Sources Readme.md","x":35,"y":-20,"width":400,"height":200,"color":"3"}
+	],
+	"edges":[
+		{"id":"edgeInboxToCards","fromFloating":true,"toFloating":false,"fromNode":"inboxNode","fromSide":"bottom","toNode":"cardsNode","toSide":"top","label":"处理"},
+		{"id":"edgeCardsToAtlas","fromFloating":true,"fromNode":"cardsNode","fromSide":"left","toNode":"atlasNode","toSide":"bottom","label":"组织 & 连接"},
+		{"id":"edgeSourcesToCards","fromFloating":true,"toFloating":true,"fromNode":"sourcesNode","fromSide":"left","toNode":"cardsNode","toSide":"right","label":"提炼"},
+		{
+			"id":"edgeCalendarToInbox",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":true,
+			"fromNode":"calendarNode",
+			"fromSide":"top",
+			"toNode":"inboxNode",
+			"toSide":"right",
+			"label":"记录想法"
+		},
+		{"id":"edgeCardsToSpaces","toFloating":false,"fromFloating":false,"fromNode":"cardsNode","fromSide":"bottom","toNode":"spacesGroupNode","toSide":"top","label":"行动 & 应用"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

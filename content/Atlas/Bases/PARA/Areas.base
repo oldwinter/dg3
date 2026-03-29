@@ -1,0 +1,9 @@
+filters:
+  and:
+    - PARA == "Areas"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - PARA

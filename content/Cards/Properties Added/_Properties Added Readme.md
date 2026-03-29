@@ -4,12 +4,12 @@ date modified: 2025-06-17
 publish: true
 是否已review: true
 分类:
-- '[[Atlas/Categories/工作流workflow - fileclass]]'
+- '[[工作流workflow - fileclass]]'
 ---
 
 cards里面是经过简单link之后的卡片笔记。当符合某些分类properties的卡片越来越多，比如超过5张，超过10张，则可以考虑给他们加上专门的properties，同时养成新的习惯，以后新建这类笔记，直接用模板，或者手动添加properties。
 
-也可以理解为，进入这里，就可以开始初步有个[[Atlas/Bases/∑ BASE\|Bases]]承载了。
+也可以理解为，进入这里，就可以开始初步有个[[∑ BASE|Bases]]承载了。
 
 这与notion的使用思路不同的是，notion是先创建database，再往里添加笔记；而Obsidian是先有笔记，再动态按需创建database索引收纳。
 

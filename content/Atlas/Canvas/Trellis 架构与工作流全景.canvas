@@ -1,0 +1,50 @@
+{
+	"nodes":[
+		{"id":"g_runtime","type":"group","x":560,"y":-320,"width":1420,"height":1480,"color":"6","label":"日常开发运行流"},
+		{"id":"g_multi","type":"group","x":2100,"y":-320,"width":1160,"height":1480,"color":"3","label":"并行 Agent / Worktree"},
+		{"id":"g_core","type":"group","x":-1900,"y":-320,"width":1140,"height":1480,"color":"4","label":"核心架构"},
+		{"id":"g_bootstrap","type":"group","x":-640,"y":-320,"width":1080,"height":1480,"color":"2","label":"初始化与升级"},
+		{"id":"g_entry","type":"group","x":-2920,"y":-320,"width":900,"height":1480,"color":"5","label":"定位与来源"},
+		{"id":"n_title","type":"text","text":"## Trellis 架构与工作流全景\n把 AI 编码规范、任务、记忆和多平台入口统一到 `.trellis/` 的 repo-local 工作流框架","x":-2840,"y":-240,"width":740,"height":180},
+		{"id":"n_note","type":"file","file":"Spaces/3-Resource/账号密码/trellis - 自动注入和更改 claude code和cursor.md","x":-2840,"y":-20,"width":360,"height":520},
+		{"id":"n_sources","type":"text","text":"## 官方来源\n- GitHub README / package.json / 源码入口\n- docs.trytrellis.app 的 Quick Start、Task Workflow、Multi-Platform\n\n## 读取快照\n- 时间：2026-03-14\n- main 分支 `@mindfoldhq/trellis` 版本：`0.3.10`\n\n## 结论口径\n以下流程图优先依据源码和官方文档抽象，而不是二手解读。","x":-2420,"y":-20,"width":320,"height":420},
+		{"id":"n_positioning","type":"text","text":"## 它到底是什么\n- 不是模型，也不是 IDE 本体\n- 本质是“AI 编码工作流脚手架 + 规范分发系统”\n- 把团队规则、任务状态、个人记忆、多 agent 并发都放进仓库文件结构\n- 平台差异留在入口层；共享工作流收敛到 `.trellis/`\n\n换句话说：Trellis 想把上下文工程产品化。","x":-2840,"y":560,"width":740,"height":420},
+		{"id":"n_core","type":"text","text":"## 1. Trellis 共享内核：`.trellis/`\n- `spec/`：项目规范库\n- `tasks/`：任务目录，含 `task.json`、`prd.md`、`implement/check/debug.jsonl`\n- `workspace/`：按开发者隔离的 journal / index\n- `scripts/`：Python 运行时脚本\n- `workflow.md`：主工作流说明\n- `config.yaml`：session / hooks 配置\n- `worktree.yaml`：多 agent worktree 配置\n\n这里才是 Trellis 的“操作系统内核”。","x":-1820,"y":-220,"width":500,"height":620},
+		{"id":"n_platform","type":"text","text":"## 2. 平台适配层\n`AI_TOOLS` registry 维护单一事实源：\n- Claude Code\n- Cursor\n- OpenCode / iFlow\n- Codex\n- Kilo / Kiro\n- Gemini CLI\n- Antigravity\n- Qoder\n\n每个平台只负责把同一套 Trellis 语义映射到自己的命令/skills/hooks 目录。","x":-1240,"y":-220,"width":400,"height":520},
+		{"id":"n_core_takeaway","type":"text","text":"## 架构关键点\n- `.claude/`、`.cursor/`、`.agents/skills/` 只是入口壳\n- 真正跨工具复用的是 `.trellis/` 的任务模型、规范库、工作区记忆和脚本\n- 因此 Trellis 的核心设计不是“prompt 模板”，而是“文件系统 + CLI + 脚本约定”","x":-1820,"y":460,"width":980,"height":320},
+		{"id":"n_init","type":"text","text":"## 3. `trellis init`\n1. 解析平台 flags、developer、project type\n2. 创建 `.trellis/` 骨架\n3. 生成 spec 模板与 `workflow.md`\n4. 写 `.version`\n5. 为各平台拷贝命令 / skills / hooks\n6. 创建根目录 `AGENTS.md`\n7. 初始化 `.template-hashes.json`\n8. 运行 `init_developer.py`\n9. 自动创建 bootstrap task，引导你补齐规范\n\n结论：init 做的是“安装工作流运行时”。","x":-560,"y":-220,"width":440,"height":700},
+		{"id":"n_update","type":"text","text":"## 4. `trellis update`\n- 读取 `.version` 做 CLI / 项目版本比较\n- 用 `.template-hashes.json` 判断文件是否被用户改过\n- 未改过的模板可自动更新\n- 已改过的模板进入冲突处理\n- 默认保护：`spec/`、`tasks/`、`workspace/`、`.developer`、`.current-task`\n\n所以它不是盲目覆盖，而是“模板升级器”。","x":-40,"y":-220,"width":400,"height":560},
+		{"id":"n_marketplace","type":"text","text":"## 5. 模板与市场\n- `template-fetcher.ts` 支持从官方 marketplace 或自定义 registry 拉模板\n- 目前官方 `marketplace/index.json` 里至少有 spec template 和 `trellis-meta` skill\n- 这意味着 Trellis 不只分发流程，还想分发“可复用工作法”","x":-560,"y":560,"width":920,"height":220},
+		{"id":"n_session","type":"text","text":"## 6. 单 agent 日常启动流\n1. `init_developer.py <name>`\n   - 写 `.trellis/.developer`\n   - 建立 `workspace/<name>/`\n   - 创建 journal 与 index\n2. `get_context.py`\n   - 汇总 developer / git / current task / active tasks / journal 容量\n3. 读 `workflow.md`\n4. 读 `spec/*/index.md`\n5. 再按任务去读更细的 guideline\n\n它把“会话启动 checklist”显式化了。","x":660,"y":-220,"width":400,"height":720},
+		{"id":"n_task_model","type":"text","text":"## 7. 任务模型\n`task.py` 负责：\n- create / list / start / finish / archive\n- set-branch / set-scope / create-pr\n- parent / child task 关系\n\n`task.json` 里记录：\n- status\n- dev_type\n- branch / base_branch\n- current_phase\n- next_action\n- assignee / creator\n- children / parent\n\n任务目录是 Trellis 的执行单位。","x":1140,"y":-220,"width":380,"height":620},
+		{"id":"n_context","type":"text","text":"## 8. 上下文注入机制\n任务目录里的 `implement.jsonl` / `check.jsonl` / `debug.jsonl` 会列出：\n- 要读的 spec\n- 要读的命令 / skill 文档\n- 相关文件\n\n实现不是靠把所有规则都塞进一个大提示词，而是把“这次任务需要的上下文”单独编排出来。","x":1600,"y":-220,"width":300,"height":560},
+		{"id":"n_phase","type":"text","text":"## 9. 相位推进\n`phase.py` 维护统一相位机：\n`planning -> implement -> check -> finish -> create-pr`\n\n`start` / `brainstorm` / `finish-work` 这些平台命令，其实都在围绕这套 task + phase 模型运转。","x":1140,"y":460,"width":760,"height":280},
+		{"id":"n_runtime_takeaway","type":"text","text":"## 日常开发的本质\nTrellis 把“先读规范、再做任务、再检查、再记录”从口头习惯变成仓库里的硬结构。\n这样单 agent 会话不容易漂移，换工具时也不会把整个工作法推倒重来。","x":660,"y":820,"width":1240,"height":220},
+		{"id":"n_plan","type":"text","text":"## 10. `plan.py`\n- 根据 requirement 创建 task 目录\n- 启动 plan agent\n- 让 plan agent 先把 `prd.md` 和任务结构补完整\n\n也就是说：复杂任务先计划，再进入执行。","x":2180,"y":-220,"width":420,"height":620},
+		{"id":"n_worktree","type":"text","text":"## 11. `start.py` + `git worktree`\n- 为任务分支创建独立 worktree\n- 从 `worktree.yaml` 复制 `.trellis/.developer` 和必要环境文件\n- 在 worktree 内设置 `.current-task`\n- 启动 dispatch / implement agent\n- 记录 PID / session / registry\n\n并发不是靠一条分支里硬挤，而是靠物理隔离的 worktree。","x":2700,"y":-220,"width":460,"height":640},
+		{"id":"n_multi_ops","type":"text","text":"## 12. 监控与收尾\n- `status.py`：看任务摘要、registry、日志、progress\n- `create_pr.py`：stage / commit / push / `gh pr create`，并回写 `task.json`\n- `cleanup.py`：归档任务、删 worktree、清 registry、可选删 branch\n\n这让多 agent 流程不只“能跑起来”，还能有完整的收尾闭环。","x":2180,"y":500,"width":980,"height":360},
+		{"id":"n_conclusion","type":"text","text":"## 本质结论\nTrellis 可以理解成一个“repo-local AI development OS”。\n- 共享内核：`.trellis/`\n- 平台入口：各工具自己的 commands / skills / hooks\n- 运行对象：task + spec + workspace + phase\n- 并行扩展：git worktree + multi-agent scripts\n\n这是我基于官方源码和文档得出的核心抽象。","x":760,"y":1320,"width":1680,"height":260}
+	],
+	"edges":[
+		{"id":"e_title_core","fromNode":"n_title","fromSide":"right","toNode":"n_core","toSide":"left","label":"本体"},
+		{"id":"e_position_core","fromNode":"n_positioning","fromSide":"right","toNode":"n_core","toSide":"left","label":"定位落地"},
+		{"id":"e_core_platform","fromNode":"n_core","fromSide":"right","toNode":"n_platform","toSide":"left","label":"暴露到各平台"},
+		{"id":"e_platform_init","fromNode":"n_platform","fromSide":"right","toNode":"n_init","toSide":"left","label":"由 init 写入"},
+		{"id":"e_init_update","fromNode":"n_init","fromSide":"right","toNode":"n_update","toSide":"left","label":"版本升级"},
+		{"id":"e_update_runtime","fromNode":"n_update","fromSide":"right","toNode":"n_session","toSide":"left","label":"保证运行时模板可演进"},
+		{"id":"e_core_task","fromNode":"n_core","fromSide":"right","toNode":"n_task_model","toSide":"left","label":"共享任务模型"},
+		{"id":"e_session_task","fromNode":"n_session","fromSide":"right","toNode":"n_task_model","toSide":"left","label":"选择并激活任务"},
+		{"id":"e_task_context","fromNode":"n_task_model","fromSide":"right","toNode":"n_context","toSide":"left","label":"组织上下文"},
+		{"id":"e_context_phase","fromNode":"n_context","fromSide":"bottom","toNode":"n_phase","toSide":"top","label":"驱动 implement/check"},
+		{"id":"e_task_plan","fromNode":"n_task_model","fromSide":"right","toNode":"n_plan","toSide":"left","label":"复杂任务先计划"},
+		{"id":"e_plan_worktree","fromNode":"n_plan","fromSide":"right","toNode":"n_worktree","toSide":"left","label":"plan 完成后 start"},
+		{"id":"e_worktree_ops","fromNode":"n_worktree","fromSide":"bottom","toNode":"n_multi_ops","toSide":"top","label":"监控与收尾"},
+		{"id":"e_runtime_conclusion","fromNode":"n_runtime_takeaway","fromSide":"bottom","toNode":"n_conclusion","toSide":"top","label":"单 agent 视角"},
+		{"id":"e_multi_conclusion","fromNode":"n_multi_ops","fromSide":"bottom","toNode":"n_conclusion","toSide":"top","label":"多 agent 视角"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{},
+		"startNode":"n_title"
+	}
+}

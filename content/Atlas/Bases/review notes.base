@@ -1,0 +1,18 @@
+filters:
+  and:
+    - tags.contains("review")
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - sr-due
+      - sr-ease
+      - sr-interval
+      - tags
+      - notetoolbar
+    sort:
+      - property: sr-due
+        direction: ASC
+      - property: tags
+        direction: DESC

@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Cards/database.md","aliases":"多维表格","created":"2025-07-10","modified":"2025-07-10","cssclasses":""}
+publish: true
+permalink: /Cards/database.md
+aliases:
+  - 多维表格
+created: 2025-07-10
+modified: 2025-07-10
 ---
-
 
 不能简单地理解为数据库、或者表格。中文名倒是用飞书发明的多维表格比较合适。
 

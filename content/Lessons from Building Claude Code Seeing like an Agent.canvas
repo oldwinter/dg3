@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"g_overview","type":"group","x":-260,"y":-220,"width":1380,"height":760,"label":"1. 核心问题与总框架","color":"3"},
+		{"id":"g_cases_left","type":"group","x":-260,"y":620,"width":1600,"height":1040,"label":"2. 四个关键案例","color":"4"},
+		{"id":"g_cases_right","type":"group","x":1420,"y":620,"width":1080,"height":1040,"label":"3. 抽象原则与落地启发","color":"5"},
+		{"id":"g_refs","type":"group","x":1200,"y":-220,"width":1300,"height":760,"label":"4. 原文与参考","color":"2"},
+		{"id":"n_title","type":"text","x":-40,"y":-140,"width":940,"height":140,"text":"# Lessons from Building Claude Code: Seeing like an Agent\n\n**一句话：agent harness 的关键不是“工具越多越强”，而是把 action space 设计成与模型真实能力形状匹配。**","color":"5"},
+		{"id":"n_problem","type":"text","x":-180,"y":40,"width":380,"height":280,"text":"## 文章在回答什么\n\n- agent 的工具到底该怎么设计？\n- 只给一个通用工具够不够？\n- 给 50 个专用工具会不会更强？\n- 什么能力该做成 tool，什么该交给 search、skills、subagent？"},
+		{"id":"n_math","type":"text","x":250,"y":40,"width":400,"height":280,"text":"## 数学题比喻\n\n面对难题时，你想要的工具取决于自己的能力：\n\n- 纸：通用但效率低\n- 计算器：更强，但要会操作\n- 电脑：最强，但前提是会写代码并执行\n\n**工具必须贴合模型会不会用、愿不愿用、能不能稳定用。**"},
+		{"id":"n_thesis","type":"text","x":700,"y":40,"width":360,"height":280,"text":"## 核心命题\n\n设计 agent 时，要学会 **see like an agent**：\n\n- 观察模型输出\n- 看它在哪里卡住\n- 试验不同工具形状\n- 根据模型能力升级不断重估\n\n这不是一次性的 API 设计，而是持续的能力适配。"},
+		{"id":"n_article","type":"file","x":1300,"y":-120,"width":520,"height":160,"file":"Clippings/Lessons from Building Claude Code Seeing like an Agent.md"},
+		{"id":"n_source","type":"link","x":1880,"y":-120,"width":520,"height":160,"url":"https://x.com/trq212/status/2027463795355095314"},
+		{"id":"n_summary","type":"text","x":1300,"y":100,"width":1100,"height":280,"text":"## 读完后的总总结\n\n这篇文章不是在教你“发明更多工具”，而是在教你：\n\n1. 先观察模型的真实工作方式\n2. 只在 plain text / 通用原语不稳定时才加 tool\n3. 模型变强后，要敢于把旧脚手架撤掉\n4. 能靠 progressive disclosure、search、subagent 解决的能力，不要轻易做成常驻工具\n\n**本质上，action space 设计是模型能力观察 + 交互设计 + 工程权衡的混合体。**"},
+		{"id":"n_case1","type":"text","x":-180,"y":720,"width":480,"height":420,"text":"## 案例 1: AskUserQuestion\n\n目标：降低 Claude 向用户提问的摩擦，提高 elicitation 带宽。\n\n### 三次尝试\n1. 把问题塞进 ExitPlanTool\n   - 实现简单\n   - 但“给计划”和“问问题”语义打架\n\n2. 改 markdown 输出格式\n   - 最通用\n   - 但输出不稳定，容易漂移\n\n3. 单独做 AskUserQuestion tool\n   - 结构受控\n   - 能弹 UI、阻塞 loop\n   - Claude 也更愿意调用\n\n**结论：当 plain text 无法稳定产出结构时，才值得上 tool。**","color":"4"},
+		{"id":"n_case2","type":"text","x":360,"y":720,"width":460,"height":420,"text":"## 案例 2: Tasks vs Todos\n\n早期为了让模型不跑偏，Claude Code 用 TodoWrite + 每 5 turn 提醒。\n\n但模型变强后：\n- 提醒开始像束缚\n- Claude 以为 todo 不能改\n- subagent 也很难共用一个 todo list\n\n后来改成 Task Tool：\n- 有依赖关系\n- 能跨 subagent 共享更新\n- 可以修改和删除\n\n**结论：模型升级以后，旧工具可能会从脚手架变成枷锁。**","color":"4"},
+		{"id":"n_case3","type":"text","x":900,"y":720,"width":380,"height":420,"text":"## 案例 3: Search Interface\n\n最早用 RAG / 向量库给 Claude 找上下文。\n\n后来发现更重要的是：\n- 不只是“给它上下文”\n- 而是让它 **自己建上下文**\n\n于是加入 Grep 等搜索工具，让 Claude 自己搜代码库。\n\n再往前一步，Agent Skills 把 progressive disclosure 形式化：\n- 先暴露入口\n- 再按需读 skill 文件\n- 再递归发现更多上下文\n\n**结论：强模型更应该获得“找上下文的能力”，而不是被动喂上下文。**","color":"4"},
+		{"id":"n_case4","type":"text","x":-180,"y":1180,"width":1460,"height":340,"text":"## 案例 4: Claude Code Guide Subagent\n\n问题：Claude 不够懂“Claude Code 自己怎么用”。\n\n直觉方案：\n- 把所有文档塞进 system prompt\n- 或者继续加一个新工具\n\n实际方案：\n- 先给 docs 入口\n- 发现 Claude 会为了找答案把太多文档拉进上下文\n- 再做 Claude Code Guide subagent，让它专门查文档、压缩结果、只返回答案\n\n**结论：扩展 action space 不一定靠加 tool，很多时候靠 progressive disclosure + 专用 subagent 更优。**","color":"4"},
+		{"id":"n_principles","type":"text","x":1520,"y":720,"width":820,"height":420,"text":"## 从四个案例抽象出的原则\n\n1. 工具要匹配模型能力，而不是匹配工程师想象中的完美接口\n2. 少量高杠杆原语通常优于很多专用工具\n3. 新工具加入门槛要高，因为每多一个工具，模型就多一个决策分支\n4. plain text、prompt、文档入口能稳定解决的问题，不要急着工具化\n5. 好工具的标准之一是：模型会主动、稳定、正确调用它\n6. 模型升级后，旧工具必须重新评估\n7. action space 设计没有固定公式，它更像实验科学"},
+		{"id":"n_apply","type":"text","x":1520,"y":1180,"width":820,"height":340,"text":"## 如果你自己做 agent harness\n\n推荐默认顺序：\n\n- 先给最小原语：执行、搜索、读写、问用户、协作\n- 再观察真实失败模式：格式漂移？上下文找错？协作混乱？\n- 只有失败反复出现时才加新 tool\n- 能靠 skills、docs、guide subagent 解决的问题，不优先加 tool\n- 每换一个模型版本，都重测一遍 action space\n\n**目标不是“工具最多”，而是让模型以最低认知负担拿到最合适的能力。**"},
+		{"id":"n_final","type":"text","x":1520,"y":1560,"width":820,"height":120,"text":"## 最终方法论\n\n**See like an agent = 持续观察模型如何真正工作，再用最小但合适的 action space 去顺着它的能力形状设计。**","color":"3"}
+	],
+	"edges":[
+		{"id":"e_overview_1","fromNode":"n_title","fromSide":"bottom","toNode":"n_problem","toSide":"top"},
+		{"id":"e_overview_2","fromNode":"n_problem","fromSide":"right","toNode":"n_math","toSide":"left"},
+		{"id":"e_overview_3","fromNode":"n_math","fromSide":"right","toNode":"n_thesis","toSide":"left"},
+		{"id":"e_ref_1","fromNode":"n_article","fromSide":"right","toNode":"n_source","toSide":"left"},
+		{"id":"e_ref_2","fromNode":"n_article","fromSide":"bottom","toNode":"n_summary","toSide":"top"},
+		{"id":"e_cases_1","fromNode":"n_thesis","fromSide":"bottom","toNode":"n_case1","toSide":"top"},
+		{"id":"e_cases_2","fromNode":"n_case1","fromSide":"right","toNode":"n_case2","toSide":"left"},
+		{"id":"e_cases_3","fromNode":"n_case2","fromSide":"right","toNode":"n_case3","toSide":"left"},
+		{"id":"e_cases_4","fromNode":"n_case3","fromSide":"left","toNode":"n_case4","toSide":"top"},
+		{"id":"e_to_principles_1","fromNode":"n_case1","fromSide":"right","toNode":"n_principles","toSide":"left"},
+		{"id":"e_to_principles_2","fromNode":"n_case4","fromSide":"right","toNode":"n_apply","toSide":"left"},
+		{"id":"e_principles_final","fromNode":"n_principles","fromSide":"bottom","toNode":"n_apply","toSide":"top"},
+		{"id":"e_apply_final","fromNode":"n_apply","fromSide":"bottom","toNode":"n_final","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

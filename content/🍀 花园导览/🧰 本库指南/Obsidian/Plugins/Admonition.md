@@ -7,7 +7,7 @@ title: Admonition
 rating: 3
 status: null
 publish: true
-分类: "[[Atlas/Categories/obsidian插件 - fileclass]]"
+分类: "[[obsidian插件 - fileclass]]"
 ---
 
 > 应该算是被obsidian官方的callout功能淘汰了，其他功能我也用不上。

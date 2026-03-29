@@ -1,0 +1,208 @@
+{
+  "edges": [
+    {
+      "fromNode": "6307ac4677134d8d",
+      "fromSide": "right",
+      "id": "e513ae461800560c",
+      "label": "方案二",
+      "toNode": "4df192dba93ad9ec",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "4df192dba93ad9ec",
+      "fromSide": "right",
+      "id": "fbcb7ff94971d3ac",
+      "label": "好物分享",
+      "toNode": "ac54e86844bfe9d7",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "4df192dba93ad9ec",
+      "fromSide": "right",
+      "id": "39690885845ac90d",
+      "label": "默认通用",
+      "toNode": "f53c1175dcc91d23",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "4df192dba93ad9ec",
+      "fromSide": "right",
+      "id": "e30ad9c09422d84a",
+      "label": "探店相关",
+      "toNode": "fed34c630cba1d68",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6307ac4677134d8d",
+      "fromSide": "right",
+      "id": "4af1ad71d22f227b",
+      "label": "方案一",
+      "toNode": "c1e047bc68cce675",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6307ac4677134d8d",
+      "fromSide": "right",
+      "id": "c0e55e272eb55cb0",
+      "label": "方案三",
+      "toNode": "a0b0627408529690",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "a0b0627408529690",
+      "fromSide": "right",
+      "id": "cd305d7ace1da35a",
+      "toNode": "bfea2908ce7bfed9",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "216bea4473ad01c0",
+      "fromSide": "right",
+      "id": "3a6c365603b4c151",
+      "label": "持久化存储",
+      "toNode": "6b287abf55261431",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "a0b0627408529690",
+      "fromSide": "top",
+      "id": "b8c1b609bb58cf7e",
+      "label": "可选",
+      "toNode": "4df192dba93ad9ec",
+      "toSide": "bottom"
+    }
+  ],
+  "metadata": {},
+  "nodes": [
+    {
+      "height": 1260,
+      "id": "216bea4473ad01c0",
+      "label": "Untitled group",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 1100,
+      "x": -260,
+      "y": -520
+    },
+    {
+      "height": 440,
+      "id": "a0b0627408529690",
+      "label": "Untitled group",
+      "styleAttributes": {},
+      "type": "group",
+      "width": 370,
+      "x": -240,
+      "y": 280
+    },
+    {
+      "height": 160,
+      "id": "4df192dba93ad9ec",
+      "styleAttributes": {},
+      "text": "## 第一次 调用openai 接口\n调用embedding接口。\n根据用户输入内容，判断属于哪一类问题或需求，用不同的提示词模板",
+      "type": "text",
+      "width": 330,
+      "x": -220,
+      "y": -80
+    },
+    {
+      "height": 260,
+      "id": "ac54e86844bfe9d7",
+      "styleAttributes": {},
+      "text": "## 调用openai接口\n```json\n(\n            \"system\",\n            \" \",\n        ),\n```",
+      "type": "text",
+      "width": 420,
+      "x": 300,
+      "y": -400
+    },
+    {
+      "height": 60,
+      "id": "fed34c630cba1d68",
+      "styleAttributes": {},
+      "text": "## 调用openai接口",
+      "type": "text",
+      "width": 420,
+      "x": 300,
+      "y": -60
+    },
+    {
+      "height": 60,
+      "id": "f53c1175dcc91d23",
+      "styleAttributes": {},
+      "text": "## 调用openai接口",
+      "type": "text",
+      "width": 420,
+      "x": 300,
+      "y": 140
+    },
+    {
+      "height": 60,
+      "id": "6307ac4677134d8d",
+      "styleAttributes": {},
+      "text": "用户输入。",
+      "type": "text",
+      "width": 250,
+      "x": -720,
+      "y": -30
+    },
+    {
+      "height": 100,
+      "id": "c1e047bc68cce675",
+      "styleAttributes": {},
+      "text": "## 调用openai接口\n使用默认通用模板",
+      "type": "text",
+      "width": 480,
+      "x": -220,
+      "y": -500
+    },
+    {
+      "height": 120,
+      "id": "4357e6497e8c6fef",
+      "styleAttributes": {},
+      "text": "## 调用openai 接口\n并行调用chat接口，返回指定小范围的内容。",
+      "type": "text",
+      "width": 330,
+      "x": -220,
+      "y": 300
+    },
+    {
+      "height": 340,
+      "id": "bfea2908ce7bfed9",
+      "styleAttributes": {},
+      "text": "## 调用openai接口\n结合上一次结果，进行回答\n\n```mermaid\ngraph TD\n    A[Input] -->|Branch1| B((Combine))\n    A -->|Branch2| B\n\n```",
+      "type": "text",
+      "width": 440,
+      "x": 300,
+      "y": 360
+    },
+    {
+      "height": 100,
+      "id": "76a179905d6491e3",
+      "styleAttributes": {},
+      "text": "",
+      "type": "text",
+      "width": 330,
+      "x": -220,
+      "y": 460
+    },
+    {
+      "height": 80,
+      "id": "670452f56ee49b5f",
+      "styleAttributes": {},
+      "text": "",
+      "type": "text",
+      "width": 330,
+      "x": -220,
+      "y": 620
+    },
+    {
+      "height": 150,
+      "id": "6b287abf55261431",
+      "styleAttributes": {},
+      "text": "## 只存储最终输出的内容。中间过程丢弃。",
+      "type": "text",
+      "width": 250,
+      "x": 1200,
+      "y": 20
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+filters:
+  and:
+    - PARA == "Projects"
+views:
+  - type: table
+    name: Projects
+    order:
+      - file.name
+      - PARA

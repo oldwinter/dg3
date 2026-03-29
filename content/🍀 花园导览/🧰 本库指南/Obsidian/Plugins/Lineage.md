@@ -1,9 +1,14 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Lineage.md","aliases":"类似gingko的插件 lineage","created":"2025-04-28","modified":"2025-07-09","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Lineage.md
+aliases:
+  - 类似gingko的插件
+  - lineage
+created: 2025-04-28
+modified: 2025-07-09
 ---
 
-
-相比使用[[Spaces/2-Area/计算机知识/gingko]]的优势：
+相比使用[[gingko]]的优势：
 
 1. 免费，开源
 2. 和obsidian知识库完美集成，可以引用嵌入链接，也可以看到反向链接。

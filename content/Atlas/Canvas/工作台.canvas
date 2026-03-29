@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"N1755953296671540030","type":"file","file":"🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/base 使用技巧.md","x":-420,"y":740,"width":400,"height":400},
+		{"id":"N1755953296672258859","type":"file","file":"Sources/GithubStarsSync/obsidian-extended-graph.md","x":-420,"y":1180,"width":400,"height":400},
+		{"id":"6a2819d6dc6a01e2","type":"file","file":"🍀 花园导览/🧀 个人知识管理.md","x":-420,"y":2060,"width":400,"height":400},
+		{"id":"bdf49fcec40878c2","type":"file","file":"Sources/Movies + TV/豆瓣影音导入/teleplay/龙门镖局.md","x":-420,"y":1620,"width":400,"height":400},
+		{"id":"N1756365303342267151","type":"file","file":"Spaces/3-Resource/人/Moy.md","x":60,"y":740,"width":480,"height":300},
+		{"id":"N1756365303343347461","type":"file","file":"Atlas/Bases/模板/使用filter tilte字段搜索过滤.base","x":60,"y":1120,"width":480,"height":300},
+		{"id":"46cfaa6e421d5004","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-fractalize-azul.png","x":260,"y":1900,"width":400,"height":302},
+		{"id":"cae87f35106fa636","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-fractalize-ember_spark.png","x":240,"y":2420,"width":400,"height":302},
+		{"id":"b68b17fa88ce24ea","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-fractalize-ruby_garden.png","x":820,"y":2480,"width":400,"height":302},
+		{"id":"3583137c3e4b9df5","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-fractalize-tropical_salad.png","x":280,"y":3200,"width":400,"height":302},
+		{"id":"afe0139e005503e8","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-gradient-cucumber.png","x":40,"y":3900,"width":400,"height":225},
+		{"id":"2b9951e349af3d7d","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-gradient-disco.png","x":820,"y":3170,"width":1182,"height":665},
+		{"id":"ca9fe8f42c92e171","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-topography-micron.svg","x":-499,"y":4480,"width":1698,"height":955},
+		{"id":"1a5fde7920775469","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-topography-palms.svg","x":-693,"y":5720,"width":1632,"height":918},
+		{"id":"2ee64f1a232b440b","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-unsplash-bean.jpg","x":1140,"y":5660,"width":400,"height":267},
+		{"id":"57e4fbe317fb9289","type":"file","file":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-unsplash-zeller.jpg","x":-306,"y":7079,"width":2252,"height":1501}
+	],
+	"edges":[
+		{"id":"E1756365303342472526","fromNode":"N1755953296671540030","fromSide":"right","toNode":"N1756365303342267151","toSide":"left"},
+		{"id":"E1756365303343204288","fromNode":"N1755953296671540030","fromSide":"right","toNode":"N1756365303343347461","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,168 @@
+{
+    "nodes": [
+        {
+            "id": "b77037a984a04847",
+            "type": "text",
+            "x": -250,
+            "y": -100,
+            "width": 500,
+            "height": 200,
+            "text": "# The Evolution of Artificial Intelligence\n\nA journey from the first mechanical dreams to the digital singularity.",
+            "color": "6"
+        },
+        {
+            "id": "b97f37d2d7e94c24",
+            "type": "group",
+            "x": 700.0,
+            "y": -400.0,
+            "width": 1000,
+            "height": 800,
+            "label": "The Origins",
+            "color": "1"
+        },
+        {
+            "id": "101f0e506c78494a",
+            "type": "file",
+            "x": 750.0,
+            "y": -300.0,
+            "width": 600,
+            "height": 400,
+            "file": "ai_origins.png",
+            "color": "1"
+        },
+        {
+            "id": "13619b2b02224194",
+            "type": "text",
+            "x": 1400.0,
+            "y": -300.0,
+            "width": 250,
+            "height": 400,
+            "text": "## The Origins\n\nFrom Babbage's engines to Turing's logic. The dream of thinking machines.\n\n---\n\nAda Lovelace wrote the first algorithm.\nAlan Turing defined the universal machine.",
+            "color": "1"
+        },
+        {
+            "id": "b767faa37e5c4eac",
+            "type": "group",
+            "x": -499.99999999999994,
+            "y": 800.0,
+            "width": 1000,
+            "height": 800,
+            "label": "The Neural Revolution",
+            "color": "5"
+        },
+        {
+            "id": "6d6dfcc3043d41ff",
+            "type": "file",
+            "x": -449.99999999999994,
+            "y": 900.0,
+            "width": 600,
+            "height": 400,
+            "file": "neural_network.png",
+            "color": "5"
+        },
+        {
+            "id": "b00b3a6d5b764ddc",
+            "type": "text",
+            "x": 200.00000000000006,
+            "y": 900.0,
+            "width": 250,
+            "height": 400,
+            "text": "## The Neural Revolution\n\nThe rise of connectionism. Perceptrons, backpropagation, and deep learning.\n\n---\n\nGeoffrey Hinton and the AI Winter.\nThe AlexNet breakthrough in 2012.",
+            "color": "5"
+        },
+        {
+            "id": "65bb7c5d787940f5",
+            "type": "group",
+            "x": -1700.0,
+            "y": -399.99999999999983,
+            "width": 1000,
+            "height": 800,
+            "label": "Generative Era",
+            "color": "3"
+        },
+        {
+            "id": "f76f5c7e58df4927",
+            "type": "file",
+            "x": -1650.0,
+            "y": -299.99999999999983,
+            "width": 600,
+            "height": 400,
+            "file": "generative_ai.png",
+            "color": "3"
+        },
+        {
+            "id": "492ed0bfa5f643d2",
+            "type": "text",
+            "x": -1000.0,
+            "y": -299.99999999999983,
+            "width": 250,
+            "height": 400,
+            "text": "## Generative Era\n\nMachines that create. Transformers, diffusion models, and large language models.\n\n---\n\nAttention is All You Need.\nChatGPT and Stable Diffusion change the world.",
+            "color": "3"
+        },
+        {
+            "id": "108c3746e2994845",
+            "type": "group",
+            "x": -500.0000000000002,
+            "y": -1600.0,
+            "width": 1000,
+            "height": 800,
+            "label": "The Future: AGI",
+            "color": "6"
+        },
+        {
+            "id": "fbd93d3c72104b5d",
+            "type": "file",
+            "x": -450.0000000000002,
+            "y": -1500.0,
+            "width": 600,
+            "height": 400,
+            "file": "future_agi.png",
+            "color": "6"
+        },
+        {
+            "id": "46fee3573dc74148",
+            "type": "text",
+            "x": 199.99999999999977,
+            "y": -1500.0,
+            "width": 250,
+            "height": 400,
+            "text": "## The Future: AGI\n\nBeyond human capability. Singularity, superintelligence, and the unknown.\n\n---\n\nWill AI possess consciousness?\nThe alignment problem and safety.",
+            "color": "6"
+        }
+    ],
+    "edges": [
+        {
+            "id": "dfe6d9e61d28461a",
+            "fromNode": "b77037a984a04847",
+            "fromSide": "right",
+            "toNode": "b97f37d2d7e94c24",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "38336d2852bc4d1b",
+            "fromNode": "b97f37d2d7e94c24",
+            "fromSide": "right",
+            "toNode": "b767faa37e5c4eac",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "79bf9b21b4784519",
+            "fromNode": "b767faa37e5c4eac",
+            "fromSide": "right",
+            "toNode": "65bb7c5d787940f5",
+            "toSide": "left",
+            "color": "3"
+        },
+        {
+            "id": "dd0cb06de23648af",
+            "fromNode": "65bb7c5d787940f5",
+            "fromSide": "right",
+            "toNode": "108c3746e2994845",
+            "toSide": "left",
+            "color": "6"
+        }
+    ]
+}

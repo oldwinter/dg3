@@ -1,0 +1,43 @@
+filters:
+  and: []
+views:
+  - type: table
+    name: 缺少 type 属性
+    filters:
+      and:
+        - type.isEmpty()
+    order:
+      - file.name
+      - file.folder
+      - type
+  - type: table
+    name: publish=true 且 status 为空
+    filters:
+      and:
+        - publish
+        - status.isEmpty()
+    order:
+      - file.name
+      - file.folder
+      - publish
+      - status
+  - type: table
+    name: 缺少 title 属性
+    filters:
+      and:
+        - title.isEmpty()
+    order:
+      - file.name
+      - file.folder
+      - title
+  - type: table
+    name: 缺少 created/modified 属性
+    filters:
+      and:
+        - created.isEmpty()
+        - modified.isEmpty()
+    order:
+      - file.name
+      - file.folder
+      - created
+      - modified

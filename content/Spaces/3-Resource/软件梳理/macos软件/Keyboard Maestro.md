@@ -9,7 +9,7 @@ date created: 2023-02-28
 date modified: 2023-03-14
 icon: '[[icon-cc-image-Keyboard_Maestro.png]]'
 publish: true
-分类: '[[Atlas/Categories/macOS软件 - fileclass]]'
+分类: '[[macOS软件 - fileclass]]'
 ---
 
 [Keyboard Maestro Macros.kmsync](https://drive.google.com/open?id=1-r3o2LSws9LDivT5cWcQ6poKF8fFM5iJ)

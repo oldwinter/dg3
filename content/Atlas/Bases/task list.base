@@ -1,0 +1,61 @@
+summaries:
+  new summary: ""
+filters:
+  or:
+    - file.tags.contains("task")
+formulas:
+  Untitled: status
+  Untitled 2: ""
+views:
+  - type: table
+    name: Table
+    groupBy:
+      property: projects
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - file.tags
+    sort:
+      - property: status
+        direction: ASC
+    summaries: {}
+    columnSize:
+      note.status: 141
+  - type: list
+    name: list view
+    order:
+      - file.name
+      - file.backlinks
+      - file.ctime
+      - file.ext
+      - file.folder
+    markers: number
+    nestedProperties: true
+    separator: ｜
+  - type: feed
+    name: View
+    calendarView: dayGridMonth
+  - type: map
+    name: View 2
+    groupBy:
+      property: status
+      direction: ASC
+  - type: map-view-plugin
+    name: View 3
+    mapCenter: 26.104887637199948,118.88477325439455
+    mapZoom: 11
+  - type: table
+    name: View 4
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+    sort:
+      - property: formula.Untitled 2
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: View 5

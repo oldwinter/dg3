@@ -4,7 +4,7 @@ date modified: 2025-05-06
 publish: true
 ---
 
-x: [[Cards/bob 翻译提示词]]
+x: [[bob 翻译提示词]]
 
 ```
 # System Prompt

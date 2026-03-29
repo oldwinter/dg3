@@ -1,0 +1,507 @@
+{
+  "edges": [],
+  "metadata": {
+    "frontmatter": {},
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "id": "a28375d76130c169",
+      "styleAttributes": {},
+      "type": "group",
+      "x": -1260,
+      "y": -540,
+      "width": 2600,
+      "height": 1050,
+      "label": "Command"
+    },
+    {
+      "id": "9f2a1a48e4b7a125",
+      "styleAttributes": {
+        "border": null
+      },
+      "type": "group",
+      "x": -1200,
+      "y": -507,
+      "width": 2460,
+      "height": 192,
+      "label": "一般是应用的tab标签页切换"
+    },
+    {
+      "id": "5e3e2b98b5e79176",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 1",
+      "type": "text",
+      "x": -1166,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "8023c46af89ab6c1",
+      "styleAttributes": {},
+      "text": "## Q\n退出应用程序（Quit）",
+      "type": "text",
+      "x": -1080,
+      "y": -290,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "3ebe0d62e53593f7",
+      "styleAttributes": {},
+      "text": "## W\n关闭当前窗口（Window）",
+      "type": "text",
+      "x": -877,
+      "y": -290,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "bdbdd2aea69ac729",
+      "styleAttributes": {},
+      "text": "## S\n保存（Save）",
+      "type": "text",
+      "x": -818,
+      "y": -83,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "8614022a06809ed3",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 2",
+      "type": "text",
+      "x": -964,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "9eddb5c5b86bce79",
+      "styleAttributes": {},
+      "text": "## T\n新标签（New Tab）",
+      "type": "text",
+      "x": -268,
+      "y": -290,
+      "width": 162,
+      "height": 160,
+      "color": "6"
+    },
+    {
+      "id": "0edc50f430a8bffc",
+      "styleAttributes": {},
+      "text": "## 空格",
+      "type": "text",
+      "x": -674,
+      "y": 330,
+      "width": 992,
+      "height": 140
+    },
+    {
+      "id": "0ce614f58180b26b",
+      "styleAttributes": {},
+      "text": "## ]\n前进",
+      "type": "text",
+      "x": 1141,
+      "y": -290,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "8771e0f5f48a72d1",
+      "styleAttributes": {},
+      "text": "## Z\n撤销（Undo）",
+      "type": "text",
+      "x": -917,
+      "y": 130,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "b911295437308099",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 5",
+      "type": "text",
+      "x": -358,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "b1efa305ac7d037b",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 3",
+      "type": "text",
+      "x": -762,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "5353908ea8f793fd",
+      "styleAttributes": {},
+      "text": "## A\n全选（All）",
+      "type": "text",
+      "x": -1021,
+      "y": -83,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "acdccacea11918a4",
+      "styleAttributes": {},
+      "text": "## R\n刷新（Refresh）",
+      "type": "text",
+      "x": -471,
+      "y": -290,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "a466b33753fde3e0",
+      "styleAttributes": {},
+      "text": "## X\n剪切（Cut）",
+      "type": "text",
+      "x": -714,
+      "y": 130,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "9f38461274a87293",
+      "styleAttributes": {},
+      "text": "## D",
+      "type": "text",
+      "x": -616,
+      "y": -83,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "3b3bd72d38a1511c",
+      "styleAttributes": {},
+      "text": "## F\n查找",
+      "type": "text",
+      "x": -413,
+      "y": -83,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "519295fe9c971d49",
+      "styleAttributes": {},
+      "text": "## E\n导出（Export）",
+      "type": "text",
+      "x": -674,
+      "y": -290,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "f76b4cdf23be5cc6",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 4",
+      "type": "text",
+      "x": -560,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "ebcab9f0753bb013",
+      "styleAttributes": {},
+      "text": "🔴红色：系统级通用  \n🟢绿色：各种文本编辑器中默认快捷键  \n🔵蓝色：各种工具中的搜索或命令行快捷键",
+      "type": "text",
+      "x": -1223,
+      "y": 370,
+      "width": 404,
+      "height": 100
+    },
+    {
+      "id": "294d38b695c78d9f",
+      "styleAttributes": {},
+      "text": "## Y",
+      "type": "text",
+      "x": -66,
+      "y": -290,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "d658a7689bf5347a",
+      "styleAttributes": {},
+      "text": "## U",
+      "type": "text",
+      "x": 138,
+      "y": -290,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "87c7243776373b5f",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 8",
+      "type": "text",
+      "x": 248,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "b1b5f1d430d4b26d",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 6",
+      "type": "text",
+      "x": -156,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "eeb8af7b554c5342",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 7",
+      "type": "text",
+      "x": 46,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "9807977c960c7e9c",
+      "styleAttributes": {},
+      "text": "## I\nFinder 里查询文件的属性信息（Information）",
+      "type": "text",
+      "x": 342,
+      "y": -290,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "0070e5264e7be64e",
+      "styleAttributes": {},
+      "text": "## M\n窗口最小化（Minimize）",
+      "type": "text",
+      "x": 301,
+      "y": 130,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "9816e8d311c68030",
+      "styleAttributes": {},
+      "text": "## N\n新建（New）",
+      "type": "text",
+      "x": 97,
+      "y": 130,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "e00c9d18699043af",
+      "styleAttributes": {},
+      "text": "## J",
+      "type": "text",
+      "x": 180,
+      "y": -83,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "6800665d475af7dc",
+      "styleAttributes": {},
+      "text": "## ,\n打开当前应用偏好设置",
+      "type": "text",
+      "x": 501,
+      "y": 130,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "31aaaa17eb6cf456",
+      "styleAttributes": {},
+      "text": "## O\n打开（Open）",
+      "type": "text",
+      "x": 542,
+      "y": -290,
+      "width": 162,
+      "height": 160,
+      "color": "6"
+    },
+    {
+      "id": "26146d15048c546a",
+      "styleAttributes": {},
+      "text": "## L\n无序列表（List）",
+      "type": "text",
+      "x": 598,
+      "y": -83,
+      "width": 162,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "24b76b833c4f792f",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 9",
+      "type": "text",
+      "x": 450,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "f3bc330fdd1aa1c6",
+      "styleAttributes": {},
+      "text": "## K\nLauncher功能",
+      "type": "text",
+      "x": 398,
+      "y": -83,
+      "width": 162,
+      "height": 160,
+      "color": "6"
+    },
+    {
+      "id": "43c0e7c865ce7b9a",
+      "styleAttributes": {},
+      "text": "## C\n复制（Copy）",
+      "type": "text",
+      "x": -511,
+      "y": 130,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "395c587776781221",
+      "styleAttributes": {},
+      "text": "## V\n粘贴（Paste）",
+      "type": "text",
+      "x": -308,
+      "y": 130,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "98755e3bd434789e",
+      "styleAttributes": {},
+      "text": "## B\n加粗（Bold）",
+      "type": "text",
+      "x": -105,
+      "y": 130,
+      "width": 162,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "df4be3d42e32664f",
+      "styleAttributes": {},
+      "text": "## G",
+      "type": "text",
+      "x": -209,
+      "y": -83,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "20f8f939bbe4d16a",
+      "styleAttributes": {},
+      "text": "## H\n隐藏（Hide）",
+      "type": "text",
+      "x": -7,
+      "y": -83,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "39d0eef0a89f4580",
+      "styleAttributes": {},
+      "text": "## =\n放大",
+      "type": "text",
+      "x": 1060,
+      "y": -490,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "83a74d35017f74da",
+      "styleAttributes": {},
+      "text": "## -\n缩小",
+      "type": "text",
+      "x": 860,
+      "y": -490,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "f50675ce3dc01300",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "text": "## 0\n大小还原",
+      "type": "text",
+      "x": 648,
+      "y": -490,
+      "width": 162,
+      "height": 160
+    },
+    {
+      "id": "f9cab3237b10d5e9",
+      "styleAttributes": {},
+      "text": "## P\n命令行或切换",
+      "type": "text",
+      "x": 742,
+      "y": -290,
+      "width": 162,
+      "height": 160,
+      "color": "6"
+    },
+    {
+      "id": "0a1df56f097f28e7",
+      "styleAttributes": {},
+      "text": "## [\n后退",
+      "type": "text",
+      "x": 941,
+      "y": -290,
+      "width": 162,
+      "height": 160,
+      "color": "1"
+    }
+  ]
+}

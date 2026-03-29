@@ -4,9 +4,8 @@ date created: 2022-08-06
 date modified: 2025-07-12
 title: README
 分类:
-- '[[Atlas/Categories/本库教程 - fileclass]]'
+- '[[本库教程 - fileclass]]'
 ---
-
 
 # Extras/Other 工具脚本说明
 
@@ -17,9 +16,11 @@ title: README
 ### 1. Frontmatter 处理工具
 
 #### `frontmatter_processor.py` - 单文件 Frontmatter 重排序
+
 **功能**：将单个Markdown文件中的 `sr-due`、`sr-interval`、`sr-ease` 字段移动到frontmatter末尾。
 
 **使用方法**：
+
 ```bash
 # 预览模式（推荐先预览）
 python frontmatter_processor.py "文件路径.md"
@@ -29,6 +30,7 @@ python frontmatter_processor.py "文件路径.md" --apply
 ```
 
 **示例**：
+
 ```bash
 # 预览单个文件的处理结果
 python frontmatter_processor.py "Sources/Articles/示例文章.md"
@@ -38,9 +40,11 @@ python frontmatter_processor.py "Sources/Articles/示例文章.md" --apply
 ```
 
 #### `batch_frontmatter_processor.py` - 批量 Frontmatter 重排序
+
 **功能**：批量处理整个目录树中所有包含sr-字段的Markdown文件。
 
 **使用方法**：
+
 ```bash
 # 预览模式（处理当前目录及子目录）
 python batch_frontmatter_processor.py .
@@ -59,6 +63,7 @@ python batch_frontmatter_processor.py . --exclude .git .obsidian node_modules
 ```
 
 **示例**：
+
 ```bash
 # 预览整个知识库的处理结果
 python batch_frontmatter_processor.py ../..
@@ -68,6 +73,7 @@ python batch_frontmatter_processor.py ../.. --apply --verbose
 ```
 
 **处理效果**：
+
 ```yaml
 # 处理前
 ---
@@ -95,9 +101,11 @@ sr-ease: 310
 ```
 
 #### `clean_frontmatter.py` - Frontmatter 清理工具
+
 **功能**：移除frontmatter中的指定无用字段（如externalRoot、internalRoot等）。
 
 **使用方法**：
+
 ```bash
 # 处理单个文件
 python clean_frontmatter.py "文件路径.md"
@@ -109,6 +117,7 @@ python clean_frontmatter.py all
 ## 🔧 依赖要求
 
 所有脚本都需要以下Python包：
+
 ```bash
 pip install pyyaml
 ```
@@ -128,6 +137,7 @@ pip install pyyaml
 ## 📊 处理统计
 
 批量处理脚本会提供详细的统计信息：
+
 - ✅ 已处理的文件数量
 - ⏭️ 跳过的文件数量（无sr-字段或无frontmatter）
 - ❌ 出错的文件数量
@@ -142,8 +152,9 @@ pip install pyyaml
 ## 🤝 贡献
 
 如需改进脚本或添加新功能，请遵循以下原则：
+
 - 保持向后兼容性
 - 添加充分的错误处理
 - 支持预览模式
 - 保持UTF-8编码兼容性
-- 添加详细的使用说明 
+- 添加详细的使用说明

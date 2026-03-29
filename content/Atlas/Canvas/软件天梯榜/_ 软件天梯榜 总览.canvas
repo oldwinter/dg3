@@ -1,0 +1,55 @@
+{
+	"nodes":[
+		{"id":"c2de6367788583fb","type":"group","x":-795,"y":-207,"width":1891,"height":479,"label":"纯图标"},
+		{"id":"0c65852ff7b5b1bc","type":"group","x":-795,"y":323,"width":1891,"height":465,"label":"文字版"},
+		{"id":"9b084c2954ba2290","type":"group","x":-795,"y":837,"width":1891,"height":459,"label":"all in 版"},
+		{"id":"8d9386b69b5a256d","type":"group","x":618,"y":-234,"width":455,"height":1563,"label":"Android自用软件天梯榜"},
+		{"id":"3cab9d751ab0f762","type":"group","x":-355,"y":-234,"width":440,"height":1563,"label":"macOS自用软件天梯榜"},
+		{"id":"95180653a854370d","type":"group","x":134,"y":-234,"width":440,"height":1563,"label":"Windows自用软件天梯榜"},
+		{"id":"893bc9ef47e837a3","type":"file","file":"Atlas/Canvas/软件天梯榜/2025我的Android软件天梯榜.canvas","x":649,"y":-160,"width":400,"height":400},
+		{"id":"041457ee0646fad8","type":"file","file":"Atlas/Canvas/软件天梯榜/2025年我的Windows软件天梯榜.canvas","x":154,"y":-160,"width":400,"height":400},
+		{"id":"df8a7c9cb131dd45","type":"file","file":"Atlas/Bases/App应用软件管理.base","subpath":"#window软件","x":154,"y":880,"width":400,"height":400},
+		{
+			"id":"ce45f805e410f6ea",
+			"type":"text",
+			"text":"## ==右边的看板，从这则笔记的合集点进去哦==\n\n## 整体原则是，别的博主已经介绍过的特性或功能，我就不多言了，只展示我认为的*==杀手级功能==*。\n\n## 图标对应的软件名，猜不出来的话，见下面的==文字版==",
+			"styleAttributes":{},
+			"x":-760,
+			"y":-160,
+			"width":363,
+			"height":400
+		},
+		{
+			"id":"80de1fc87ca2deeb",
+			"type":"text",
+			"text":"##  这里是对上面纯图标榜单的软件名及其一句话介绍。\n\n## 没用过的软件，但你第一眼如果产生心动的感觉，可以先去其官网预览一下，再去搜其他博主做的介绍视频。\n\n## 软件名带有的🏹图标，代表我已经将这则笔记*==开源到我的数字花园==*，可以在我主页置顶笔记关注找到链接。",
+			"styleAttributes":{},
+			"x":-760,
+			"y":364,
+			"width":363,
+			"height":400
+		},
+		{
+			"id":"e2bb26dd3c68ec3b",
+			"type":"text",
+			"text":"## 这里是我==所有==安装深度体验过并做过笔记的软件集合，所以叫==all in榨干版==。\n\n## 我还没实现软件自由，有些用的河蟹版。但愿关注我的宝子们，咱都能早日*==实现软件自由🗽==*。\n\n## ==接下来还会陆续挨个儿更新S和A级软件的一图流笔记。敬请期待。==",
+			"styleAttributes":{},
+			"x":-760,
+			"y":880,
+			"width":363,
+			"height":400
+		},
+		{"id":"0dd54d7bb3866546","type":"file","file":"Atlas/Bases/App应用软件管理.base","subpath":"#安卓软件","x":649,"y":880,"width":400,"height":400},
+		{"id":"83d4124448074586","type":"file","file":"Atlas/Canvas/软件天梯榜/2025年我的macOS软件天梯榜.canvas","x":-335,"y":-160,"width":400,"height":400},
+		{"id":"7520ceb7991f574b","type":"file","file":"Atlas/Bases/App应用软件管理.base","subpath":"#macos软件","x":-335,"y":880,"width":400,"height":400},
+		{"id":"4690a7fcb6ffc940","type":"file","file":"Atlas/Canvas/软件天梯榜/2025年macos软件天梯榜-文字版本.canvas","x":-335,"y":364,"width":400,"height":400},
+		{"id":"6fdb91697537a547","type":"file","file":"Atlas/Canvas/软件天梯榜/2025年Windows软件天梯榜-文字版本.canvas","x":154,"y":364,"width":400,"height":400},
+		{"id":"b3897cca28503c92","type":"file","file":"Atlas/Canvas/软件天梯榜/2025Android软件天梯榜-文字版本.canvas","x":649,"y":364,"width":400,"height":400}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{},
+		"startNode":"b28e56e5056747f6"
+	}
+}

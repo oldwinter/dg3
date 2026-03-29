@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/2025下半年小红书探索/2025我的macOS软件天梯榜-文字版.md","created":"2025-07-15","modified":"2025-07-15","cssclasses":""}
+publish: true
+permalink: /Spaces/1-Project/2025下半年小红书探索/2025我的macOS软件天梯榜-文字版.md
+created: 2025-07-15
+modified: 2025-07-15
 ---
-
 
 ## 图片来源
 
@@ -11,7 +13,7 @@
 
 参考：
 
-- [[Spaces/3-Resource/软件梳理/macos软件/∑ macOS 必备软件]]
+- [[∑ macOS 必备软件]]
 
 ## 最终图片
 

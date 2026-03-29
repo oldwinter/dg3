@@ -1,0 +1,172 @@
+{
+	"nodes":[
+		{"id":"39aae6e15cd3fc6b","type":"group","ratio":1.7777777777777777,"x":-1060,"y":400,"width":1200,"height":675,"label":"New Slide","background":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-unsplash-zeller.jpg"},
+		{"id":"c6732d39899e031c","type":"group","ratio":1.7777777777777777,"backgroundStyle":"ratio","x":200,"y":-130,"width":1195,"height":675,"label":"New Slide","background":"Extras/Attachments/Images/raycast的背景图/autumnal-peach-preview.png"},
+		{"id":"9a2535b548c165f3","type":"group","ratio":1.7777777777777777,"backgroundStyle":"ratio","x":-1000,"y":-940,"width":945,"height":675,"label":"New Slide","background":"Extras/Attachments/11111_transparent.png"},
+		{
+			"id":"practice_group",
+			"type":"group",
+			"style":{"backgroundColor":"#f5f5f5","borderColor":"#757575"},
+			"x":-1786,
+			"y":514,
+			"width":600,
+			"height":600,
+			"label":"实践应用"
+		},
+		{
+			"id":"theory_group",
+			"type":"group",
+			"style":{"backgroundColor":"#fafafa","borderColor":"#9e9e9e"},
+			"x":-1656,
+			"y":-201,
+			"width":500,
+			"height":600,
+			"label":"理论基础"
+		},
+		{
+			"id":"title",
+			"type":"text",
+			"text":"## AI工具赋能个体经验交流分享 - 演示PPT\n\n[[AI工具赋能个体经验交流分享.md]]",
+			"style":{"backgroundColor":"#e1f5fe","borderColor":"#01579b"},
+			"x":-774,
+			"y":-1322,
+			"width":500,
+			"height":120
+		},
+		{"id":"c9311a7e2c8f5752","type":"file","file":"Extras/Attachments/4444_transparent.png","x":680,"y":-1280,"width":400,"height":286},
+		{
+			"id":"ai_products",
+			"type":"text",
+			"text":"### 🛠️ 推荐AI产品\n\n**核心工具：**\n- ChatGPT 4.0\n- Kimi.ai（长文档处理）\n- Perplexity（AI搜索）\n- 沉浸式翻译\n\n**特色功能：**\n- 多模态能力\n- 实时总结\n- 智能搜索",
+			"style":{"backgroundColor":"#fff3e0","borderColor":"#e65100"},
+			"x":871,
+			"y":-127,
+			"width":350,
+			"height":200
+		},
+		{"id":"493683880744a0f6","type":"file","file":"Extras/Attachments/3333_transparent.png","x":1120,"y":-1280,"width":400,"height":286},
+		{
+			"id":"kimi_demo",
+			"type":"link",
+			"url":"https://kimi.moonshot.cn/chat/cmtt2vo3r077er6phqp0",
+			"style":{"backgroundColor":"#e0f2f1","borderColor":"#004d40"},
+			"x":1020,
+			"y":410,
+			"width":250,
+			"height":100
+		},
+		{
+			"id":"learning_resources",
+			"type":"text",
+			"text":"### 📖 AI学习资源\n\n**入门资源：**\n- ChatGPT从0到1（李佳芮）\n- AIGC个人生存指南\n- 通往AGI之路\n\n**进阶内容：**\n- YouTube教程\n- B站视频课程\n- 实践案例分享",
+			"style":{"backgroundColor":"#f1f8e9","borderColor":"#33691e"},
+			"x":575,
+			"y":585,
+			"width":350,
+			"height":180
+		},
+		{"id":"e3e0313ee2a3dfb2","type":"file","file":"Extras/Attachments/55555_transparent.png","x":1560,"y":-1280,"width":400,"height":286},
+		{"id":"5f43166156ed6b7f","type":"file","file":"Extras/Attachments/22222_transparent.png","x":2000,"y":-1280,"width":400,"height":286},
+		{
+			"id":"introduction",
+			"type":"text",
+			"text":"### 🎤 引言\n\n**演讲者背景：**\n- 华为云运维工程师\n- 映兔运维工程师\n- AI工程师 → Prompts提示词工程师\n\n**核心观点：** AI能为各岗位带来效率提升",
+			"style":{"backgroundColor":"#f3e5f5","borderColor":"#4a148c"},
+			"x":-399,
+			"y":-564,
+			"width":500,
+			"height":278
+		},
+		{"id":"outline","type":"text","text":"### 📋 大纲\n\n- ChatGPT 10x效率提升\n- AI产品推荐\n- 使用原则\n- 基本原理\n- 程序员姿势\n- 学习资源","x":-750,"y":-857,"width":500,"height":257},
+		{
+			"id":"llm_principles",
+			"type":"text",
+			"text":"### 🧠 LLM基本原理\n\n**核心机制：**\nContext上下文 + Prompts提示词 = Inference推理结果\n\n**关键概念：**\n- Token生成过程\n- 概率预测原理\n- RAG检索增强\n- Function Calling\n\n**技术本质：** 字一个字蹦出是因为对下一个字的概率预测",
+			"style":{"backgroundColor":"#f3e5f5","borderColor":"#4a148c"},
+			"x":-774,
+			"y":180,
+			"width":350,
+			"height":200
+		},
+		{
+			"id":"ai_principles",
+			"type":"text",
+			"text":"### 📚 AI使用原则\n\n**核心原则：**\n- 理解AI边界\n- 善用提示词\n- 多轮对话优化\n- 结合实际场景\n\n**最佳实践：**\n- 从简单问题开始\n- 逐步深入复杂任务\n- 持续学习和适应",
+			"style":{"backgroundColor":"#fce4ec","borderColor":"#880e4f"},
+			"x":-1506,
+			"y":-101,
+			"width":350,
+			"height":180
+		},
+		{
+			"id":"efficiency_boost",
+			"type":"text",
+			"text":"### ⚡ ChatGPT 10x效率提升\n\n**核心对比：**\n- 常规工作流 vs AI赋能工作流\n- Prompts提示词的重要性\n- AI搜索 vs 传统搜索\n\n**关键洞见：** AI不仅是工具，更是思维方式的转变",
+			"style":{"backgroundColor":"#e8f5e8","borderColor":"#1b5e20"},
+			"x":395,
+			"y":-127,
+			"width":400,
+			"height":200
+		},
+		{"id":"d90f5c4b39005f6f","type":"file","file":"Extras/Attachments/11111_transparent.png","x":220,"y":-1280,"width":400,"height":286},
+		{
+			"id":"programmer_tools",
+			"type":"text",
+			"text":"### 👨‍💻 程序员AI姿势\n\n**核心工具：**\n- Cursor（代码生成）\n- GitHub Copilot（代码补全）\n- ChatGPT（复杂任务）\n- Warp App（终端AI）\n\n**理念转变：**\n从 \"Talk is cheap, show me the code\"\n到 \"Code is cheap, show me your prompts\"",
+			"style":{"backgroundColor":"#e3f2fd","borderColor":"#0d47a1"},
+			"x":220,
+			"y":220,
+			"width":400,
+			"height":180
+		},
+		{
+			"id":"chatgpt_summary",
+			"type":"text",
+			"text":"### 🤖 ChatGPT全文总结\n\n**会议核心要点：**\n1. AI会议纪要自动化\n2. 多模态能力展示\n3. 创意规划辅助\n4. 智能搜索与翻译\n5. 学习使用建议\n\n**关键洞见：** AI已成基础设施，人人可用自然语言编程",
+			"style":{"backgroundColor":"#fff8e1","borderColor":"#f57f17"},
+			"x":0,
+			"y":600,
+			"width":500,
+			"height":150
+		}
+	],
+	"edges":[
+		{"id":"title_to_outline","toFloating":false,"fromNode":"title","fromSide":"bottom","toNode":"9a2535b548c165f3","toSide":"top","label":"内容概览"},
+		{"id":"outline_to_introduction","fromFloating":false,"toFloating":false,"fromNode":"outline","fromSide":"bottom","toNode":"introduction","toSide":"top","label":"开始"},
+		{"id":"introduction_to_efficiency","fromNode":"introduction","fromSide":"right","toNode":"efficiency_boost","toSide":"left","label":"核心论证"},
+		{"id":"efficiency_to_products","fromNode":"efficiency_boost","fromSide":"right","toNode":"ai_products","toSide":"left","label":"工具展示"},
+		{"id":"products_to_kimi","fromNode":"ai_products","fromSide":"bottom","toNode":"kimi_demo","toSide":"top","label":"Kimi演示"},
+		{"id":"efficiency_to_principles","fromNode":"efficiency_boost","fromSide":"bottom","toNode":"ai_principles","toSide":"top","label":"使用原则"},
+		{"id":"principles_to_llm","fromNode":"ai_principles","fromSide":"bottom","toNode":"llm_principles","toSide":"top","label":"深入原理"},
+		{"id":"efficiency_to_programmer","toFloating":false,"fromNode":"efficiency_boost","fromSide":"bottom","toNode":"programmer_tools","toSide":"top","label":"专业应用"},
+		{"id":"programmer_to_resources","fromNode":"programmer_tools","fromSide":"right","toNode":"learning_resources","toSide":"left","label":"学习资源"},
+		{"id":"resources_to_summary","fromNode":"learning_resources","fromSide":"bottom","toNode":"chatgpt_summary","toSide":"top","label":"总结升华"},
+		{"id":"llm_to_summary","fromNode":"llm_principles","fromSide":"bottom","toNode":"chatgpt_summary","toSide":"left","color":"1","label":"技术本质"},
+		{
+			"id":"1b258755285968ce",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9a2535b548c165f3",
+			"fromSide":"bottom",
+			"toNode":"39aae6e15cd3fc6b",
+			"toSide":"top"
+		},
+		{
+			"id":"7c940616a552238e",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"39aae6e15cd3fc6b",
+			"fromSide":"bottom",
+			"toNode":"c6732d39899e031c",
+			"toSide":"bottom"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{},
+		"startNode":"title"
+	}
+}
+
+
+

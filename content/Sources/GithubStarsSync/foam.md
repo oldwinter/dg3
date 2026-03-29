@@ -28,9 +28,8 @@ date modified: 2025-06-15 - VSCode插件
 评价: 6
 publish: true
 分类:
-- '[[Atlas/Categories/github开源 - fileclass]]'
+- '[[github开源 - fileclass]]'
 ---
-
 
 # foambubble/foam
 

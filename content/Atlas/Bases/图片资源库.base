@@ -1,0 +1,15 @@
+filters:
+  and:
+    - file.ext.containsAny("png", "jpg", "svg", "webp", "jpeg")
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.ext
+    sort:
+      - property: file.ext
+        direction: ASC
+  - type: cards
+    name: View
+    image: file.file

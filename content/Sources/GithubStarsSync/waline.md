@@ -34,7 +34,7 @@ size_kb: 65531
 issues: 61
 publish: true
 分类:
-- '[[Atlas/Categories/github开源 - fileclass]]'
+- '[[github开源 - fileclass]]'
 ---
 
 # walinejs/waline

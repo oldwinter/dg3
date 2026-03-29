@@ -1,7 +1,11 @@
 ---
-{"publish":true,"permalink":"/Cards/Obsidian Flight School.md","created":"2025-08-01","modified":"2025-08-01","cssclasses":""}
+publish: true
+permalink: /Cards/Obsidian Flight School.md
+created: 2025-08-01
+modified: 2025-08-01
 ---
 
+up:: [[∑ Obsidian Explorer]]
 
 官网，卖129美元。[Obsidian Flight School - Online course](https://www.linkingyourthinking.com/obsidian-flight-school)
 

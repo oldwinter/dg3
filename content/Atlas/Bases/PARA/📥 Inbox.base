@@ -1,0 +1,9 @@
+filters:
+  and:
+    - file.folder.startsWith("📥 Inbox")
+views:
+  - type: table
+    name: Table
+    limit: 10
+  - type: table
+    name: View

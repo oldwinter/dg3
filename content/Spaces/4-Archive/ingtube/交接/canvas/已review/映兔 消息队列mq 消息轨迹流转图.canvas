@@ -1,0 +1,152 @@
+{
+  "edges": [
+    {
+      "fromNode": "cd606d8461c7a611",
+      "fromSide": "right",
+      "id": "1dfb61e5aa602368",
+      "styleAttributes": {},
+      "toNode": "311916ec5285efdc",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "311916ec5285efdc",
+      "fromSide": "right",
+      "id": "e6c9a686f49ebb2a",
+      "styleAttributes": {},
+      "toNode": "07d93ce37d8ce8b5",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "845ac24cd4e3e183",
+      "fromSide": "top",
+      "id": "b5f2c615ab360b7c",
+      "styleAttributes": {},
+      "toNode": "07d93ce37d8ce8b5",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "07d93ce37d8ce8b5",
+      "fromSide": "right",
+      "id": "bc3dff60651e9438",
+      "styleAttributes": {},
+      "toNode": "b4663d9563375f1b",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "1e9b792f1ab20262",
+      "fromSide": "top",
+      "id": "38e222aaefb6ae69",
+      "styleAttributes": {},
+      "toNode": "8d9fd369acb2470e",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "b4663d9563375f1b",
+      "fromSide": "right",
+      "id": "452a718e91fb28c9",
+      "styleAttributes": {},
+      "toNode": "8d9fd369acb2470e",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "displayOverride": false,
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/canal_consumer.md",
+      "height": 380,
+      "id": "845ac24cd4e3e183",
+      "role": "",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -420,
+      "y": -100
+    },
+    {
+      "color": "4",
+      "displayOverride": false,
+      "file": "Atlas/Cards/MySQL.md",
+      "height": 160,
+      "id": "cd606d8461c7a611",
+      "role": "",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 380,
+      "x": -1620,
+      "y": -360
+    },
+    {
+      "displayOverride": false,
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/binlog.md",
+      "height": 160,
+      "id": "311916ec5285efdc",
+      "role": "",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -1080,
+      "y": -360
+    },
+    {
+      "displayOverride": false,
+      "height": 160,
+      "id": "07d93ce37d8ce8b5",
+      "role": "",
+      "styleAttributes": {},
+      "text": "## 生产者\n\n> canal_consumer服务\n\n\n通过截取[[MySQL]]的[[binlog]]日志，以监测数据库表中的字段变化。当字段变化，则会生产一条mq消息。",
+      "type": "text",
+      "width": 400,
+      "x": -420,
+      "y": -360
+    },
+    {
+      "displayOverride": false,
+      "height": 100,
+      "id": "b4663d9563375f1b",
+      "role": "",
+      "styleAttributes": {},
+      "text": "## Topic",
+      "type": "text",
+      "width": 320,
+      "x": 180,
+      "y": -330
+    },
+    {
+      "displayOverride": false,
+      "height": 100,
+      "id": "8d9fd369acb2470e",
+      "role": "",
+      "styleAttributes": {},
+      "text": "## 消费者",
+      "type": "text",
+      "width": 320,
+      "x": 660,
+      "y": -330
+    },
+    {
+      "displayOverride": false,
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/后端 event 事件代码.md",
+      "height": 400,
+      "id": "1e9b792f1ab20262",
+      "role": "",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 320,
+      "x": 660,
+      "y": -120
+    },
+    {
+      "height": 100,
+      "id": "f6234953629f84e9",
+      "styleAttributes": {},
+      "text": "整体架构 mysql->canal->canal-conumser->rocketmq->消费者\n",
+      "type": "text",
+      "width": 620,
+      "x": -800,
+      "y": -580
+    }
+  ]
+}

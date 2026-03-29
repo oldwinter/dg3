@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/Extras/Documents/Obsidian Base 规范 - moc.md","created":"2025-07-25","modified":"2025-08-19","cssclasses":""}
+publish: true
+permalink: /Extras/Documents/Obsidian Base 规范 - moc.md
+created: 2025-07-25
+modified: 2025-08-19
 ---
-
 
 ## 更新记录
 
@@ -17,10 +19,9 @@ Bases is a [core plugin](https://help.obsidian.md/plugins) that lets you turn 
 
 Data displayed in Obsidian Bases is stored in your local [Markdown](https://help.obsidian.md/syntax) files and their [properties](https://help.obsidian.md/properties). The views are described by the [Bases syntax](https://help.obsidian.md/bases/syntax), which can be saved as a `.base` file or embedded in code blocks within your Markdown files.
 
-- [[Extras/Documents/Obsidian Bases View 视图]]
-- [[Extras/Documents/Obsidian Bases Function 语法]]
-- [[Extras/Documents/Obsidian Bases syntax 规范]]
-
+- [[Obsidian Bases View 视图]]
+- [[Obsidian Bases Function 语法]]
+- [[Obsidian Bases syntax 规范]]
 
 ## base文件格式补充说明
 

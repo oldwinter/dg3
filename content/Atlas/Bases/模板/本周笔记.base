@@ -1,0 +1,25 @@
+views:
+  - type: table
+    name: 本周新建笔记
+    filters:
+      and:
+        - file.ctime.format("YYYY-MM-[W]WW") == this.file.name
+    order:
+      - file.name
+      - file.ctime
+    limit: 50
+  - type: table
+    name: 本周修改笔记
+    filters:
+      and:
+        - file.mtime.format("YYYY-MM-[W]WW") == this.file.name
+    order:
+      - file.name
+      - file.ctime
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: ASC
+      - property: file.ctime
+        direction: ASC
+    limit: 50

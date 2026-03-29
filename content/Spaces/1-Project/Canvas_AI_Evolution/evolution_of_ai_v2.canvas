@@ -1,0 +1,1180 @@
+{
+    "nodes": [
+        {
+            "id": "88691a2485ea46f3",
+            "type": "file",
+            "x": -400,
+            "y": -400,
+            "width": 800,
+            "height": 533,
+            "file": "future_agi.png",
+            "color": "4"
+        },
+        {
+            "id": "37abef1d7db94b96",
+            "type": "text",
+            "x": -400,
+            "y": 266,
+            "width": 800,
+            "height": 200,
+            "text": "# The Singularity\nThe event horizon of intelligence.",
+            "color": "4"
+        },
+        {
+            "id": "028feb84ec484acc",
+            "type": "group",
+            "x": 1100,
+            "y": -900,
+            "width": 1800,
+            "height": 1800,
+            "color": "1",
+            "label": "The Origins"
+        },
+        {
+            "id": "78a9d7b54bf942c9",
+            "type": "file",
+            "x": 1700,
+            "y": -300,
+            "width": 600,
+            "height": 400,
+            "file": "ai_origins.png",
+            "color": "1"
+        },
+        {
+            "id": "4750b62cbd2d4f96",
+            "type": "text",
+            "x": 2632,
+            "y": 0,
+            "width": 250,
+            "height": 120,
+            "text": "**Ada Lovelace**",
+            "color": "1"
+        },
+        {
+            "id": "a91179306d4d4ff2",
+            "type": "text",
+            "x": 1500,
+            "y": 457,
+            "width": 250,
+            "height": 120,
+            "text": "**Charles Babbage**",
+            "color": "1"
+        },
+        {
+            "id": "0b5833e06c864b12",
+            "type": "text",
+            "x": 2053,
+            "y": -608,
+            "width": 250,
+            "height": 120,
+            "text": "**Analytical Engine**",
+            "color": "1"
+        },
+        {
+            "id": "0cb8ecd6a94c4cd8",
+            "type": "text",
+            "x": 2412,
+            "y": 538,
+            "width": 250,
+            "height": 120,
+            "text": "**Alan Turing**",
+            "color": "1"
+        },
+        {
+            "id": "4149d631e4de4139",
+            "type": "text",
+            "x": 1246,
+            "y": -133,
+            "width": 250,
+            "height": 120,
+            "text": "**Turing Machine**",
+            "color": "1"
+        },
+        {
+            "id": "3898fa37a0314b86",
+            "type": "text",
+            "x": 2624,
+            "y": -397,
+            "width": 250,
+            "height": 120,
+            "text": "**Enigma**",
+            "color": "1"
+        },
+        {
+            "id": "735fbbaf0458430d",
+            "type": "text",
+            "x": 1799,
+            "y": 745,
+            "width": 250,
+            "height": 120,
+            "text": "**Logic Theorist**",
+            "color": "1"
+        },
+        {
+            "id": "b9b0fdfbca084b2c",
+            "type": "text",
+            "x": 1638,
+            "y": -696,
+            "width": 250,
+            "height": 120,
+            "text": "**Dartmouth 1956**",
+            "color": "1"
+        },
+        {
+            "id": "859d35d597734371",
+            "type": "text",
+            "x": 2807,
+            "y": 294,
+            "width": 250,
+            "height": 120,
+            "text": "**Symbolic AI**",
+            "color": "1"
+        },
+        {
+            "id": "75452264c0134d5f",
+            "type": "text",
+            "x": 1185,
+            "y": 336,
+            "width": 250,
+            "height": 120,
+            "text": "**LISP**",
+            "color": "1"
+        },
+        {
+            "id": "9e9b6fb9a1e54666",
+            "type": "text",
+            "x": 2367,
+            "y": -786,
+            "width": 250,
+            "height": 120,
+            "text": "**Expert Systems**",
+            "color": "1"
+        },
+        {
+            "id": "d48119a04b084e24",
+            "type": "text",
+            "x": 2264,
+            "y": 842,
+            "width": 250,
+            "height": 120,
+            "text": "**ELIZA**",
+            "color": "1"
+        },
+        {
+            "id": "e15a8c0c7fde46bb",
+            "type": "text",
+            "x": 1155,
+            "y": -489,
+            "width": 250,
+            "height": 120,
+            "text": "**John McCarthy**",
+            "color": "1"
+        },
+        {
+            "id": "898571712d57438c",
+            "type": "text",
+            "x": 3007,
+            "y": -221,
+            "width": 250,
+            "height": 120,
+            "text": "**Marvin Minsky**",
+            "color": "1"
+        },
+        {
+            "id": "6cc8cd20706d44c9",
+            "type": "text",
+            "x": 1390,
+            "y": 866,
+            "width": 250,
+            "height": 120,
+            "text": "**GOFAI**",
+            "color": "1"
+        },
+        {
+            "id": "293412d7431f49fc",
+            "type": "text",
+            "x": 1867,
+            "y": -1022,
+            "width": 250,
+            "height": 120,
+            "text": "**Chess Engines**",
+            "color": "1"
+        },
+        {
+            "id": "bb78fd77506140e1",
+            "type": "text",
+            "x": 2791,
+            "y": 666,
+            "width": 250,
+            "height": 120,
+            "text": "**Deep Blue**",
+            "color": "1"
+        },
+        {
+            "id": "40750327f4c44183",
+            "type": "group",
+            "x": -1899,
+            "y": 832,
+            "width": 1800,
+            "height": 1800,
+            "color": "5",
+            "label": "Neural Revolution"
+        },
+        {
+            "id": "5161dbf76f974821",
+            "type": "file",
+            "x": -1299,
+            "y": 1432,
+            "width": 600,
+            "height": 400,
+            "file": "neural_network.png",
+            "color": "5"
+        },
+        {
+            "id": "2dad7ed9e9524aa7",
+            "type": "text",
+            "x": -366,
+            "y": 1732,
+            "width": 250,
+            "height": 120,
+            "text": "**Perceptron**",
+            "color": "5"
+        },
+        {
+            "id": "c98248a950b14eaa",
+            "type": "text",
+            "x": -1487,
+            "y": 2178,
+            "width": 250,
+            "height": 120,
+            "text": "**Frank Rosenblatt**",
+            "color": "5"
+        },
+        {
+            "id": "d28f39aeea4c43f4",
+            "type": "text",
+            "x": -939,
+            "y": 1043,
+            "width": 250,
+            "height": 120,
+            "text": "**XOR Problem**",
+            "color": "5"
+        },
+        {
+            "id": "afcdfca6cd744552",
+            "type": "text",
+            "x": -602,
+            "y": 2250,
+            "width": 250,
+            "height": 120,
+            "text": "**AI Winter**",
+            "color": "5"
+        },
+        {
+            "id": "df26136d6f1d43da",
+            "type": "text",
+            "x": -1709,
+            "y": 1606,
+            "width": 250,
+            "height": 120,
+            "text": "**Backpropagation**",
+            "color": "5"
+        },
+        {
+            "id": "68fc94bdc70d44b4",
+            "type": "text",
+            "x": -373,
+            "y": 1333,
+            "width": 250,
+            "height": 120,
+            "text": "**Geoffrey Hinton**",
+            "color": "5"
+        },
+        {
+            "id": "8ea309df080f42de",
+            "type": "text",
+            "x": -1212,
+            "y": 2522,
+            "width": 250,
+            "height": 120,
+            "text": "**Yann LeCun**",
+            "color": "5"
+        },
+        {
+            "id": "d73e15fba4eb4c88",
+            "type": "text",
+            "x": -1393,
+            "y": 974,
+            "width": 250,
+            "height": 120,
+            "text": "**CNNs**",
+            "color": "5"
+        },
+        {
+            "id": "00921ce51d844f1c",
+            "type": "text",
+            "x": -255,
+            "y": 2004,
+            "width": 250,
+            "height": 120,
+            "text": "**MNIST**",
+            "color": "5"
+        },
+        {
+            "id": "4e5fb7853dbc466f",
+            "type": "text",
+            "x": -1795,
+            "y": 2060,
+            "width": 250,
+            "height": 120,
+            "text": "**ImageNet**",
+            "color": "5"
+        },
+        {
+            "id": "fc70ed5bdabc4c26",
+            "type": "text",
+            "x": -623,
+            "y": 927,
+            "width": 250,
+            "height": 120,
+            "text": "**AlexNet**",
+            "color": "5"
+        },
+        {
+            "id": "3f0e59dfe35b474c",
+            "type": "text",
+            "x": -733,
+            "y": 2582,
+            "width": 250,
+            "height": 120,
+            "text": "**GPU Computing**",
+            "color": "5"
+        },
+        {
+            "id": "60e913d085324765",
+            "type": "text",
+            "x": -1816,
+            "y": 1258,
+            "width": 250,
+            "height": 120,
+            "text": "**DeepMind**",
+            "color": "5"
+        },
+        {
+            "id": "a520b31654de4fd0",
+            "type": "text",
+            "x": -57,
+            "y": 1524,
+            "width": 250,
+            "height": 120,
+            "text": "**AlphaGo**",
+            "color": "5"
+        },
+        {
+            "id": "6cf4213290984f5c",
+            "type": "text",
+            "x": -1593,
+            "y": 2576,
+            "width": 250,
+            "height": 120,
+            "text": "**Reinforcement Learning**",
+            "color": "5"
+        },
+        {
+            "id": "af211ab4beb343e4",
+            "type": "text",
+            "x": -1134,
+            "y": 693,
+            "width": 250,
+            "height": 120,
+            "text": "**TensorFlow**",
+            "color": "5"
+        },
+        {
+            "id": "28d33e5f5eb340ce",
+            "type": "text",
+            "x": -138,
+            "y": 2458,
+            "width": 250,
+            "height": 120,
+            "text": "**PyTorch**",
+            "color": "5"
+        },
+        {
+            "id": "e97f2ce63ace4d0e",
+            "type": "group",
+            "x": -1900,
+            "y": -2632,
+            "width": 1800,
+            "height": 1800,
+            "color": "6",
+            "label": "Generative Era"
+        },
+        {
+            "id": "36a340c3096a4d4c",
+            "type": "file",
+            "x": -1300,
+            "y": -2032,
+            "width": 600,
+            "height": 400,
+            "file": "generative_ai.png",
+            "color": "6"
+        },
+        {
+            "id": "cd0942548bbc4313",
+            "type": "text",
+            "x": -382,
+            "y": -1732,
+            "width": 250,
+            "height": 120,
+            "text": "**Attention Mechanism**",
+            "color": "6"
+        },
+        {
+            "id": "a2a8c5dfd2484df1",
+            "type": "text",
+            "x": -1435,
+            "y": -1332,
+            "width": 250,
+            "height": 120,
+            "text": "**Transformers**",
+            "color": "6"
+        },
+        {
+            "id": "3b6c4dec81f94239",
+            "type": "text",
+            "x": -938,
+            "y": -2438,
+            "width": 250,
+            "height": 120,
+            "text": "**BERT**",
+            "color": "6"
+        },
+        {
+            "id": "6c4336102e2549a0",
+            "type": "text",
+            "x": -569,
+            "y": -1170,
+            "width": 250,
+            "height": 120,
+            "text": "**GPT-1**",
+            "color": "6"
+        },
+        {
+            "id": "23c2e8ddbfdb463f",
+            "type": "text",
+            "x": -1737,
+            "y": -1862,
+            "width": 250,
+            "height": 120,
+            "text": "**GPT-3**",
+            "color": "6"
+        },
+        {
+            "id": "0d28587f1c8240e3",
+            "type": "text",
+            "x": -379,
+            "y": -2126,
+            "width": 250,
+            "height": 120,
+            "text": "**OpenAI**",
+            "color": "6"
+        },
+        {
+            "id": "2539a679c3834807",
+            "type": "text",
+            "x": -1198,
+            "y": -995,
+            "width": 250,
+            "height": 120,
+            "text": "**Large Language Models**",
+            "color": "6"
+        },
+        {
+            "id": "8a01ab83066f4314",
+            "type": "text",
+            "x": -1392,
+            "y": -2487,
+            "width": 250,
+            "height": 120,
+            "text": "**Diffusion Models**",
+            "color": "6"
+        },
+        {
+            "id": "ac1ece776fcc47d6",
+            "type": "text",
+            "x": -173,
+            "y": -1430,
+            "width": 250,
+            "height": 120,
+            "text": "**DALL-E**",
+            "color": "6"
+        },
+        {
+            "id": "ae695b678e344e36",
+            "type": "text",
+            "x": -1803,
+            "y": -1400,
+            "width": 250,
+            "height": 120,
+            "text": "**Midjourney**",
+            "color": "6"
+        },
+        {
+            "id": "cd30dc9eea154cbe",
+            "type": "text",
+            "x": -632,
+            "y": -2516,
+            "width": 250,
+            "height": 120,
+            "text": "**Stable Diffusion**",
+            "color": "6"
+        },
+        {
+            "id": "90f58de26ef04a09",
+            "type": "text",
+            "x": -733,
+            "y": -881,
+            "width": 250,
+            "height": 120,
+            "text": "**Prompt Engineering**",
+            "color": "6"
+        },
+        {
+            "id": "7b3aee7484e844eb",
+            "type": "text",
+            "x": -1831,
+            "y": -2213,
+            "width": 250,
+            "height": 120,
+            "text": "**Chain of Thought**",
+            "color": "6"
+        },
+        {
+            "id": "a21b6e98d7d84089",
+            "type": "text",
+            "x": -8,
+            "y": -1950,
+            "width": 250,
+            "height": 120,
+            "text": "**Multimodal AI**",
+            "color": "6"
+        },
+        {
+            "id": "e263d3e1eb1d45de",
+            "type": "text",
+            "x": -1562,
+            "y": -931,
+            "width": 250,
+            "height": 120,
+            "text": "**Copilot**",
+            "color": "6"
+        },
+        {
+            "id": "30e6856a6a904819",
+            "type": "text",
+            "x": -1141,
+            "y": -2822,
+            "width": 250,
+            "height": 120,
+            "text": "**Agents**",
+            "color": "6"
+        },
+        {
+            "id": "002a3c29f9d44514",
+            "type": "text",
+            "x": -158,
+            "y": -1023,
+            "width": 250,
+            "height": 120,
+            "text": "**RAG**",
+            "color": "6"
+        }
+    ],
+    "edges": [
+        {
+            "id": "68c853d563a54f5a",
+            "fromNode": "88691a2485ea46f3",
+            "fromSide": "right",
+            "toNode": "78a9d7b54bf942c9",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "109b9c9cc8a54245",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "4750b62cbd2d4f96",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "5436fb7f5f10461e",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "a91179306d4d4ff2",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "c37711a0e5a048df",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "0b5833e06c864b12",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "6006f821cd064e9f",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "0cb8ecd6a94c4cd8",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "d6c47389caa941c1",
+            "fromNode": "0b5833e06c864b12",
+            "fromSide": "right",
+            "toNode": "0cb8ecd6a94c4cd8",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "e68608dd1a4849a7",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "4149d631e4de4139",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "f35750ddc8aa4ee7",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "3898fa37a0314b86",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "295557721be5442e",
+            "fromNode": "4149d631e4de4139",
+            "fromSide": "right",
+            "toNode": "3898fa37a0314b86",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "6c8c3ccaf6c5402e",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "735fbbaf0458430d",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "c659f531a1374319",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "b9b0fdfbca084b2c",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "47b12c5b56b84451",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "859d35d597734371",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "6596e95872034def",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "75452264c0134d5f",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "01ddcea7b1fd4d31",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "9e9b6fb9a1e54666",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "58302f4aadd547b7",
+            "fromNode": "75452264c0134d5f",
+            "fromSide": "right",
+            "toNode": "9e9b6fb9a1e54666",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "dd500481091c47ed",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "d48119a04b084e24",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "e8c61c857d9d4a11",
+            "fromNode": "9e9b6fb9a1e54666",
+            "fromSide": "right",
+            "toNode": "d48119a04b084e24",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "e60e815077ef4c1d",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "e15a8c0c7fde46bb",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "a7e32d3a43ab483f",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "898571712d57438c",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "7a6a09e6bff84694",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "6cc8cd20706d44c9",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "6702c051484a481c",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "293412d7431f49fc",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "7a27328f588a4b31",
+            "fromNode": "6cc8cd20706d44c9",
+            "fromSide": "right",
+            "toNode": "293412d7431f49fc",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "9c66d1555a524899",
+            "fromNode": "78a9d7b54bf942c9",
+            "fromSide": "right",
+            "toNode": "bb78fd77506140e1",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "55285133631b47ec",
+            "fromNode": "293412d7431f49fc",
+            "fromSide": "right",
+            "toNode": "bb78fd77506140e1",
+            "toSide": "left",
+            "color": "1"
+        },
+        {
+            "id": "e6d7490230294649",
+            "fromNode": "88691a2485ea46f3",
+            "fromSide": "right",
+            "toNode": "5161dbf76f974821",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "7c4ce919a3fa4468",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "2dad7ed9e9524aa7",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "ebc0d052a409481e",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "c98248a950b14eaa",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "1a3b1101bc3448c1",
+            "fromNode": "2dad7ed9e9524aa7",
+            "fromSide": "right",
+            "toNode": "c98248a950b14eaa",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "888c15304f984b59",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "d28f39aeea4c43f4",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "adcaf0812a7247d9",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "afcdfca6cd744552",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "6405da44b6ac4495",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "df26136d6f1d43da",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "ea7ad479839546ff",
+            "fromNode": "afcdfca6cd744552",
+            "fromSide": "right",
+            "toNode": "df26136d6f1d43da",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "e8f395dc6729477f",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "68fc94bdc70d44b4",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "53db4f4ad86c43ac",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "8ea309df080f42de",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "39d2c174aab04f7c",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "d73e15fba4eb4c88",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "4d866fea9e3a4696",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "00921ce51d844f1c",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "000933abc8984bad",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "4e5fb7853dbc466f",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "165cb418b57a4395",
+            "fromNode": "00921ce51d844f1c",
+            "fromSide": "right",
+            "toNode": "4e5fb7853dbc466f",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "754b1795de56446c",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "fc70ed5bdabc4c26",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "b60969478fd44262",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "3f0e59dfe35b474c",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "426bacabfd514138",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "60e913d085324765",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "24efc7f3ecb34f28",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "a520b31654de4fd0",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "aad3c311b84d46eb",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "6cf4213290984f5c",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "c57a9ff02261458d",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "af211ab4beb343e4",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "622436b67c0f4fb0",
+            "fromNode": "6cf4213290984f5c",
+            "fromSide": "right",
+            "toNode": "af211ab4beb343e4",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "e554d5a5caeb4006",
+            "fromNode": "5161dbf76f974821",
+            "fromSide": "right",
+            "toNode": "28d33e5f5eb340ce",
+            "toSide": "left",
+            "color": "5"
+        },
+        {
+            "id": "853c7e8c8cf84ef8",
+            "fromNode": "88691a2485ea46f3",
+            "fromSide": "right",
+            "toNode": "36a340c3096a4d4c",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "4cfb5f17437b4d41",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "cd0942548bbc4313",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "03e6582b2c054ea9",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "a2a8c5dfd2484df1",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "8cc651b2d7454987",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "3b6c4dec81f94239",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "c7e4e116d6054b14",
+            "fromNode": "a2a8c5dfd2484df1",
+            "fromSide": "right",
+            "toNode": "3b6c4dec81f94239",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "308635f95b3a4b92",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "6c4336102e2549a0",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "375dae461b354d9e",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "23c2e8ddbfdb463f",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "4db3c58920664da4",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "0d28587f1c8240e3",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "4fa2f1d0307e446e",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "2539a679c3834807",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "45c80ea1acb54869",
+            "fromNode": "0d28587f1c8240e3",
+            "fromSide": "right",
+            "toNode": "2539a679c3834807",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "96d2789a355843a6",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "8a01ab83066f4314",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "d949e08e5a374bbf",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "ac1ece776fcc47d6",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "857b68b688ca4f52",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "ae695b678e344e36",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "2b217077b97e4493",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "cd30dc9eea154cbe",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "e750c1fb3840496f",
+            "fromNode": "ae695b678e344e36",
+            "fromSide": "right",
+            "toNode": "cd30dc9eea154cbe",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "2f20f3392f4c4be8",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "90f58de26ef04a09",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "e6bfe89d02564fc1",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "7b3aee7484e844eb",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "0ec832dac9b94aae",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "a21b6e98d7d84089",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "c53bfec12efe40a5",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "e263d3e1eb1d45de",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "ba86d9f1ba0546a7",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "30e6856a6a904819",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "e97839bb6a454c9e",
+            "fromNode": "36a340c3096a4d4c",
+            "fromSide": "right",
+            "toNode": "002a3c29f9d44514",
+            "toSide": "left",
+            "color": "6"
+        },
+        {
+            "id": "0cf93707940c443f",
+            "fromNode": "0cb8ecd6a94c4cd8",
+            "fromSide": "right",
+            "toNode": "4e5fb7853dbc466f",
+            "toSide": "left",
+            "color": "2"
+        },
+        {
+            "id": "36dda6e368054a2d",
+            "fromNode": "898571712d57438c",
+            "fromSide": "right",
+            "toNode": "af211ab4beb343e4",
+            "toSide": "left",
+            "color": "2"
+        },
+        {
+            "id": "6e5a3547f33d4653",
+            "fromNode": "e15a8c0c7fde46bb",
+            "fromSide": "right",
+            "toNode": "00921ce51d844f1c",
+            "toSide": "left",
+            "color": "2"
+        },
+        {
+            "id": "d5eeaabd805a4fd5",
+            "fromNode": "2dad7ed9e9524aa7",
+            "fromSide": "right",
+            "toNode": "7b3aee7484e844eb",
+            "toSide": "left",
+            "color": "2"
+        },
+        {
+            "id": "5d314309f5074032",
+            "fromNode": "6cf4213290984f5c",
+            "fromSide": "right",
+            "toNode": "ac1ece776fcc47d6",
+            "toSide": "left",
+            "color": "2"
+        },
+        {
+            "id": "05ddfd558f364793",
+            "fromNode": "df26136d6f1d43da",
+            "fromSide": "right",
+            "toNode": "a21b6e98d7d84089",
+            "toSide": "left",
+            "color": "2"
+        }
+    ]
+}

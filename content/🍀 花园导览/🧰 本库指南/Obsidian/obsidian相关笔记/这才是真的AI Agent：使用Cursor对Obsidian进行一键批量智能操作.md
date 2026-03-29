@@ -1,7 +1,9 @@
 ---
-{"publish":true,"permalink":"/🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/这才是真的AI Agent：使用Cursor对Obsidian进行一键批量智能操作.md","created":"2025-06-27","modified":"2025-06-27","cssclasses":""}
+publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/这才是真的AI Agent：使用Cursor对Obsidian进行一键批量智能操作.md
+created: 2025-06-27
+modified: 2025-06-27
 ---
-
 
 ## 本次目标
 
@@ -38,15 +40,14 @@
 
 - 先用manus批量下载icon。
 - 然后让cursor批量根据这些已有icon，进行md源文件修改。
-![PixPin_2025-06-28_00-31-16.png](https://pub-pic.oldwinter.top/2025/06/1335a647e695c1718abc191de061c2a2.png)
+  ![PixPin\_2025-06-28\_00-31-16.png](https://pub-pic.oldwinter.top/2025/06/1335a647e695c1718abc191de061c2a2.png)
 
-![PixPin_2025-06-28_00-29-36.png](https://pub-pic.oldwinter.top/2025/06/ad706ff3e37547ba64d488a2fa6b3903.png)
-
+![PixPin\_2025-06-28\_00-29-36.png](https://pub-pic.oldwinter.top/2025/06/ad706ff3e37547ba64d488a2fa6b3903.png)
 
 ## 实现细节详细拆分讲解
 
 > 由于现在缺少真正的能获取以及修改Obsidian的tag、properties等数据的mcp，所以使用cursor直接打开Obsidian vault，让其完整获取目录及文件，是赋予AI上下文最有效的方式了。
-> 同时，由于ai针对某个文件内的文件进行批量操作，是非常稳定可靠的，所以这里考虑新建一个文件夹，把相关笔记挪进来。[[Cards/使用File Cooker插件批量高效、不丢失双链地移动Obsidian笔记]]，可以一键将符合特定特征的笔记挪到指定文件夹中。
+> 同时，由于ai针对某个文件内的文件进行批量操作，是非常稳定可靠的，所以这里考虑新建一个文件夹，把相关笔记挪进来。[[使用File Cooker插件批量高效、不丢失双链地移动Obsidian笔记]]，可以一键将符合特定特征的笔记挪到指定文件夹中。
 
 ### 0. 任何批量操作之前，先备份
 
@@ -71,13 +72,13 @@
 ```
 
 - @/macos软件 分析当前文件夹的全部文件，有些文件的frontmatter yaml区缺少icon，你帮我去下载这些icon到该文件夹，并命名为`icon-cc-image-软件名`。
-	- // 这一句清晰地表达了任务目标，要求指定操作某个文件夹。
+  - // 这一句清晰地表达了任务目标，要求指定操作某个文件夹。
 - 类似 @Arc浏览器.md 中的 `icon: "[[icon-cc-image-Arc浏览器.png]]"`这种字段的方式，引用。
-	- // 这一句是使用few prompts的方式，让ai完全理解我上一句话表达的意思。当然如果前面表达清晰，很可能就不需要补充这个示例了。
+  - // 这一句是使用few prompts的方式，让ai完全理解我上一句话表达的意思。当然如果前面表达清晰，很可能就不需要补充这个示例了。
 - 请新建一个md todo list维护你的任务完成情况，直到全部文件配套的软件名，都配好了icon。
-	- // 维护一个todo list，是让ai agent执行一个耗时分钟级别的批量任务的时候的最佳实践，这在manus和Genspark中均有体现。
+  - // 维护一个todo list，是让ai agent执行一个耗时分钟级别的批量任务的时候的最佳实践，这在manus和Genspark中均有体现。
 - 如果没找到合适的，你就用一个默认的接近的icon。
-	- // 预料到有些应用软件偏冷门，ai如果没搜到，可能会停下来问用户，导致全自动化流程中断，所以我这里提前跟它说，我接受不完美，你全自动化搞好，直接给我看结果就行了。
+  - // 预料到有些应用软件偏冷门，ai如果没搜到，可能会停下来问用户，导致全自动化流程中断，所以我这里提前跟它说，我接受不完美，你全自动化搞好，直接给我看结果就行了。
 
 #### 3.2 不出意外的话，要出意外了
 
@@ -87,7 +88,7 @@
 
 ![CleanShot 2025-06-27-j81a7a.png](https://pub-pic.oldwinter.top/2025/06/3b629dd0f71d4cc7993843f39c9ce70e.png)
 
-但仔细观察，会发现使用curl命令下载的很多图片，都是无法正常打开的。这证明了触发了网站的反爬虫策略（试想一下如果随便几个curl命令就能批量下载网站的图片等资源，那网站的cdn费用不是爆炸）。所以这里我们需要转换思路，使用带有图片搜索和下载功能的mcp，让cursor间接地通过mcp来干活。同时可以顺便问一下，cursor有哪些内置的tools，以便让我们更了解能力边界，不会提出过份的要求，比如让它生成一个视频之类的。（我这里启用了一个 使用浏览器的 playwright mcp）：之前的备忘录[[Spaces/1-Project/Cursor/cursor 1.0 有的全部tools]]
+但仔细观察，会发现使用curl命令下载的很多图片，都是无法正常打开的。这证明了触发了网站的反爬虫策略（试想一下如果随便几个curl命令就能批量下载网站的图片等资源，那网站的cdn费用不是爆炸）。所以这里我们需要转换思路，使用带有图片搜索和下载功能的mcp，让cursor间接地通过mcp来干活。同时可以顺便问一下，cursor有哪些内置的tools，以便让我们更了解能力边界，不会提出过份的要求，比如让它生成一个视频之类的。（我这里启用了一个 使用浏览器的 playwright mcp）：之前的备忘录[[cursor 1.0 有的全部tools]]
 
 ![CleanShot 2025-06-27-w9932m.png](https://pub-pic.oldwinter.top/2025/06/105907c72fdec24b76962f5696503e57.png)
 
@@ -113,11 +114,11 @@
 
 ## 其他相关笔记
 
-- [[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian 笔记文件批量重命名 - 千万别在外部用脚本实施]]
+- [[obsidian 笔记文件批量重命名 - 千万别在外部用脚本实施]]
 - Cursor还可用于批量生成canvas或修改canvas：
-	- 教程：[[🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian canvas 使用 cursor生成]]
-	- 自动一键生成的canvas：
-		- [[甄嬛传人物关系与时间线.canvas|甄嬛传人物关系与时间线]]
-		- ![甄嬛传人物关系与时间线.png](https://pub-pic.oldwinter.top/2025/06/546bafe08ca13f470b6eda7878dde4ff.png)
-		- [[三体全书核心人物与事件.canvas|三体全书核心人物与事件]]
-		- [[权力的游戏-人物关系图和事件时间线.canvas|权力的游戏-人物关系图和事件时间线]]
+  - 教程：[[Obsidian canvas 使用 cursor生成]]
+  - 自动一键生成的canvas：
+    - [[甄嬛传人物关系与时间线.canvas|甄嬛传人物关系与时间线]]
+    - ![甄嬛传人物关系与时间线.png](https://pub-pic.oldwinter.top/2025/06/546bafe08ca13f470b6eda7878dde4ff.png)
+    - [[三体全书核心人物与事件.canvas|三体全书核心人物与事件]]
+    - [[权力的游戏-人物关系图和事件时间线.canvas|权力的游戏-人物关系图和事件时间线]]

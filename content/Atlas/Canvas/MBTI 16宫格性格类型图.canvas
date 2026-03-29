@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"entj","type":"text","text":"### ENTJ 👑\n**指挥官**\n\n适合工种:\n• 班组长/主管\n• 快递站长\n• 餐厅店长\n• 工地班长\n\n特点:\n天生领导\n目标导向\n执行力强","x":-150,"y":-150,"width":150,"height":180,"color":"6"},
+		{"id":"enfj","type":"text","text":"### ENFJ 🌅\n**主人公**\n\n适合工种:\n• 培训师/讲师\n• 导游\n• 客服经理\n• 社工\n\n特点:\n善于激励\n组织协调\n人际关系好","x":50,"y":-150,"width":150,"height":180,"color":"5"},
+		{"id":"intj","type":"text","text":"### INTJ 🏗️\n**建筑师**\n\n适合工种:\n• 夜班保安\n• 仓库管理员\n• 数据录入员\n• 质检员\n\n特点:\n独立思考\n长远规划\n系统优化","x":250,"y":-150,"width":150,"height":180,"color":"6"},
+		{"id":"infj","type":"text","text":"### INFJ 🌟\n**提倡者**\n\n适合工种:\n• 社区工作者\n• 护工/陪护\n• 幼儿园老师\n• 客服专员\n\n特点:\n有耐心\n善于倾听\n责任心强","x":450,"y":-150,"width":150,"height":180,"color":"5"},
+		{"id":"entp","type":"text","text":"### ENTP 🚀\n**辩论家**\n\n适合工种:\n• 销售员\n• 直播带货\n• 房产中介\n• 导购员\n\n特点:\n口才好\n思路活跃\n适应能力强","x":-150,"y":50,"width":150,"height":180,"color":"6"},
+		{"id":"enfp","type":"text","text":"### ENFP 🎪\n**活动家**\n\n适合工种:\n• 活动主持人\n• 销售代表\n• 儿童乐园工作\n• 市场推广员\n\n特点:\n热情活力\n社交能力强\n创意丰富","x":50,"y":50,"width":150,"height":180,"color":"5"},
+		{"id":"intp","type":"text","text":"### INTP 🔬\n**思想家**\n\n适合工种:\n• 电脑维修员\n• 网管/IT支持\n• 实验室助理\n• 手机维修\n\n特点:\n喜欢研究\n逻辑思维强\n能自学技能","x":250,"y":50,"width":150,"height":180,"color":"6"},
+		{"id":"infp","type":"text","text":"### INFP 🎨\n**调停者**\n\n适合工种:\n• 花店员工\n• 宠物店员\n• 图书馆员\n• 手工艺制作\n\n特点:\n有审美眼光\n工作认真\n善良有爱心","x":450,"y":50,"width":150,"height":180,"color":"5"},
+		{"id":"estj","type":"text","text":"### ESTJ 📊\n**总经理**\n\n适合工种:\n• 保安队长\n• 工厂班长\n• 物业经理\n• 餐厅经理\n\n特点:\n组织管理\n执行力强\n目标导向","x":-150,"y":250,"width":150,"height":180,"color":"4"},
+		{"id":"esfj","type":"text","text":"### ESFJ 🎉\n**执政官**\n\n适合工种:\n• 前台接待\n• 客服代表\n• 导购员\n• 活动组织\n\n特点:\n待人热情\n协调能力强\n服务意识好","x":50,"y":250,"width":150,"height":180,"color":"4"},
+		{"id":"istj","type":"text","text":"### ISTJ 📋\n**物流师**\n\n适合工种:\n• 会计/出纳\n• 银行柜员\n• 收银员\n• 仓库管理\n\n特点:\n工作踏实\n按章办事\n细致不出错","x":250,"y":250,"width":150,"height":180,"color":"4"},
+		{"id":"isfj","type":"text","text":"### ISFJ 🤗\n**守护者**\n\n适合工种:\n• 护士/护工\n• 餐厅服务员\n• 保洁员\n• 月嫂/育儿嫂\n\n特点:\n服务意识强\n细心体贴\n任劳任怨","x":450,"y":250,"width":150,"height":180,"color":"4"},
+		{"id":"estp","type":"text","text":"### ESTP ⚡\n**企业家**\n\n适合工种:\n• 外卖员\n• 快递员\n• 出租车司机\n• 销售员\n\n特点:\n行动力强\n适应环境快\n敢闯敢拼","x":-150,"y":450,"width":150,"height":180,"color":"3"},
+		{"id":"esfp","type":"text","text":"### ESFP 🎭\n**娱乐家**\n\n适合工种:\n• 餐厅服务员\n• 导购员\n• 娱乐场所服务\n• 儿童培训\n\n特点:\n热情开朗\n善于交际\n带动气氛","x":50,"y":450,"width":150,"height":180,"color":"3"},
+		{"id":"istp","type":"text","text":"### ISTP 🔧\n**鉴赏家**\n\n适合工种:\n• 汽修师傅\n• 水电工\n• 机械维修\n• 装修工人\n\n特点:\n动手能力强\n解决实际问题\n独立工作","x":250,"y":450,"width":150,"height":180,"color":"3"},
+		{"id":"isfp","type":"text","text":"### ISFP 🌸\n**探险家**\n\n适合工种:\n• 美容师/理发师\n• 糕点师\n• 花艺师\n• 服装裁缝\n\n特点:\n有艺术天赋\n工作细致\n温和友善","x":450,"y":450,"width":150,"height":180,"color":"3"}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

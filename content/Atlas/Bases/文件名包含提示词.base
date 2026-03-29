@@ -1,0 +1,15 @@
+filters:
+  and:
+    - file.ext.containsAny("md")
+    - file.name.contains("提示词")
+views:
+  - type: table
+    name: 文件名包含“提示词”的笔记
+    order:
+      - file.name
+      - file.size
+      - aliases
+      - file.ext
+    sort:
+      - property: file.name
+        direction: ASC

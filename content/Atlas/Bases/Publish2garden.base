@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - publish == true || publish == "true"
+    order:
+      - file.name
+      - publish
+      - 是否已review
+    columnSize:
+      file.name: 229

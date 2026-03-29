@@ -1,19 +1,16 @@
 ---
-date created: 2022-07-01
-date modified: 2023-03-14
-title: CloudFlare
-url: https://dash.cloudflare.com/
-评价: 7
 publish: true
-分类:
-- '[[Atlas/Categories/好用网站 - fileclass]]'
+permalink: /Spaces/2-Area/云服务和部署/CloudFlare.md
+title: CloudFlare
+created: 2022-07-01
+modified: 2023-03-14
 ---
 
-日常使用考虑配合ai生成命令行，用[[Cards/wrangler]]进行操作
+日常使用考虑配合ai生成命令行，用[[wrangler]]进行操作
 
 另外2个赛博菩萨：
-[[Cards/supabase]]和[[Sources/GithubStarsSync/neon]]，都基于[[Cards/PostgreSQL]]提供开箱即用的[[Cards/无服务器计算服务\|serverless]]
+[[supabase]]和[[neon]]，都基于[[PostgreSQL]]提供开箱即用的[[无服务器计算服务|serverless]]
 
-[[Spaces/2-Area/云服务和部署/cloudflare资源汇聚]]
+[[cloudflare资源汇聚]]
 
-[[Spaces/3-Resource/账号密码/cloudflare token]]
+[[cloudflare token 公司账号包括]]

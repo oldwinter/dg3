@@ -1,0 +1,45 @@
+filters:
+  and:
+    - type == "movie"
+views:
+  - type: cards
+    name: 画廊视图
+    filters:
+      and:
+        - state == "wish"
+    order:
+      - file.name
+      - url
+      - datePublished
+      - director
+      - score
+      - state
+    sort:
+      - property: score
+        direction: DESC
+      - property: datePublished
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: property.type
+        direction: ASC
+      - property: property.IMDb
+        direction: ASC
+    columnSize:
+      note.myRatingStar: 91
+      note.director: 85
+      note.url: 77
+      note.country: 178
+    image: cover
+    imageAspectRatio: 1.65
+  - type: cards
+    name: View
+  - type: feed
+    name: View 2
+  - type: dynamic-views-grid
+    name: View 3
+    id: up36f8-View 3
+    imageProperty: note.cover
+    imageFormat: poster
+    imageRatio: 1.45
+    propertyLabels: inline

@@ -1,0 +1,139 @@
+{
+	"nodes":[
+		{"id":"64252557ad8ecbcc","type":"group","x":160,"y":-1000,"width":1411,"height":256,"label":"agent 编排层"},
+		{"id":"5f54c6fea65e19df","type":"group","x":-640,"y":-1000,"width":769,"height":225,"label":"Untitled group"},
+		{
+			"id":"31ff253aedfe5e3b",
+			"type":"text",
+			"text":"## 目前已有的各种agent盘点\n\n- 结构化动态表格输出\n\t- TableAgent\n- 外网检索，站点深挖\n\t- SearchAgent\n- 网页交互，表单、下载、翻页\n\t- BrowserUse\n\t- RPA-Agent\n- ",
+			"styleAttributes":{},
+			"x":1660,
+			"y":-1000,
+			"width":397,
+			"height":374
+		},
+		{
+			"id":"cda595c0c20efff1",
+			"type":"text",
+			"text":"## 大数据 -处理与预处理\n胡晏铭\n\nes普通数据+embedding数据组合后，提供查询服务",
+			"styleAttributes":{},
+			"x":-255,
+			"y":-985,
+			"width":354,
+			"height":159
+		},
+		{"id":"885be72a65e72a23","type":"file","file":"Spaces/1-Project/拓扑灵犀/思考一下我的施展点 - 偏infra基础设施建设.md","x":100,"y":-700,"width":824,"height":452},
+		{
+			"id":"8fe9e9cbf5bde4ef",
+			"type":"text",
+			"text":"## 大数据和 AI算法\n张攀\n\nembedding 优化相关",
+			"styleAttributes":{},
+			"x":-622,
+			"y":-985,
+			"width":260,
+			"height":159
+		},
+		{
+			"id":"f38e2fca03091e21",
+			"type":"text",
+			"text":"## 前端\n孙琦林",
+			"styleAttributes":{},
+			"x":180,
+			"y":-1420,
+			"width":260,
+			"height":106
+		},
+		{
+			"id":"63358351a6538d12",
+			"type":"text",
+			"text":"## ai agent - deep search\n> deep research\n\n\n蒋景伟\n\n- 联网搜索\n- rerank重排",
+			"styleAttributes":{},
+			"x":180,
+			"y":-985,
+			"width":356,
+			"height":210
+		},
+		{
+			"id":"4526aea098befe90",
+			"type":"text",
+			"text":"## 后端 server服务\n> 接口与通信\n\n\n郑守迪",
+			"styleAttributes":{},
+			"x":180,
+			"y":-1248,
+			"width":260,
+			"height":173
+		},
+		{
+			"id":"39ec886100aee895",
+			"type":"text",
+			"text":"## ai agent - 推理模块 - 决策和控制？\n刑哲宁\n\n- ReAct\n- [[litellm]]？",
+			"styleAttributes":{},
+			"x":620,
+			"y":-985,
+			"width":403,
+			"height":210
+		},
+		{
+			"id":"c28adaa4ee807d7f",
+			"type":"text",
+			"text":"## ai agent\n\n各种sub agent？",
+			"styleAttributes":{},
+			"x":1120,
+			"y":-980,
+			"width":377,
+			"height":205
+		}
+	],
+	"edges":[
+		{
+			"id":"7ce896b393977121",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f38e2fca03091e21",
+			"fromSide":"bottom",
+			"toNode":"4526aea098befe90",
+			"toSide":"top"
+		},
+		{
+			"id":"5e238098c9a5be51",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"4526aea098befe90",
+			"fromSide":"bottom",
+			"toNode":"64252557ad8ecbcc",
+			"toSide":"top"
+		},
+		{
+			"id":"176a6cc9aa52ee54",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8fe9e9cbf5bde4ef",
+			"fromSide":"right",
+			"toNode":"cda595c0c20efff1",
+			"toSide":"left"
+		},
+		{
+			"id":"ee4473ad52d79bc0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"cda595c0c20efff1",
+			"fromSide":"right",
+			"toNode":"63358351a6538d12",
+			"toSide":"left"
+		},
+		{
+			"id":"410656687a0716a1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"885be72a65e72a23",
+			"fromSide":"left",
+			"toNode":"cda595c0c20efff1",
+			"toSide":"bottom",
+			"label":"云上pipeline数据处理"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

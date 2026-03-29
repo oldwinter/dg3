@@ -1,9 +1,19 @@
 ---
-{"publish":true,"permalink":"/Extras/Prompts/通用/CFF法则 - 夸奖别人的方法.md","aliases":"CFF","title":"CFF法则 - 夸奖别人的方法","created":"2022-08-14","modified":"2024-05-30","cssclasses":""}
+aliases:
+- CFF
+date created: 2022-08-14
+date modified: 2024-05-30
+notetoolbar: SpacedRepetition
+title: CFF法则 - 夸奖别人的方法
+publish: true
+分类:
+- '[[提示词prompts - fileclass]]'
+sr-due: 2033-05-27
+sr-interval: 2902
+sr-ease: 290
 ---
 
-
-相似：[[Cards/高级彩虹屁]]
+相似：[[高级彩虹屁]]
 
 真诚是第一位。
 

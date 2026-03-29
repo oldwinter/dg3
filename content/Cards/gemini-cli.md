@@ -1,19 +1,31 @@
 ---
-{"publish":true,"permalink":"/Cards/gemini-cli.md","created":"2025-06-25","modified":"2025-07-10","cssclasses":""}
+publish: true
+permalink: /Cards/gemini-cli.md
+created: 2025-06-25
+modified: 2025-07-10
 ---
 
+up:: [[∑ 大模型产品对比]]
+up:: [[AI Code 编程 - moc]]
+related:: [[gemini cli 使用经验]], [[gemini 模型列表]]
 
 ![CleanShot 2025-07-10 at 17.50.48@2x.png](https://pub-pic.oldwinter.top/2025/07/d7bbeeb0693c3a6118a7a252a8e6ecdc.png)
 
 运行了20分钟还没结束，是不是快被我榨干了。
 
+## 绕过permission不停
+
+```
+gemini --yolo
+```
+
 ## 使用教程
 
-[Title Unavailable \| Site Unreachable](https://github.com/google-gemini/gemini-cli/blob/main/docs/index.md)
+[Title Unavailable | Site Unreachable](https://github.com/google-gemini/gemini-cli/blob/main/docs/index.md)
 
 ## 个人使用经验
 
-[[Cards/gemini cli 使用经验]]
+[[gemini cli 使用经验]]
 
 ## 快速迭代中，定期执行更新
 
@@ -36,20 +48,22 @@ gemini
 
 ## 目前的tools
 
-    - ReadFolder
-    - ReadFile
-    - SearchText
-    - FindFiles
-    - Edit
-    - WriteFile
-    - WebFetch
-    - ReadManyFiles
-    - Shell
-    - Save Memory
+```
+- ReadFolder
+- ReadFile
+- SearchText
+- FindFiles
+- Edit
+- WriteFile
+- WebFetch
+- ReadManyFiles
+- Shell
+- Save Memory
+```
 
 和cursor对比一下，目前主要缺少向量化嵌入，然后进行语义化搜索代码的功能。以及这些cursor多的功能，其实可有可无：
 
 - 创建mermaid。
 - 编辑 jupyter notebook
 
-![[Spaces/1-Project/Cursor/cursor 1.0 有的全部tools]]
+![[cursor 1.0 有的全部tools]]

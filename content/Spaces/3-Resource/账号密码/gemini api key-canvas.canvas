@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"N1756734962956694482","type":"file","file":"Spaces/3-Resource/账号密码/gemini api key.md","x":0,"y":0,"width":480,"height":300},
+		{"id":"N1756734962983259679","type":"file","file":"Cards/gemini balance 配置.md","x":-560,"y":0,"width":480,"height":300},
+		{"id":"N1756734962984151100","type":"file","file":"Spaces/3-Resource/软件梳理/安卓软件/Gemini App.md","x":-560,"y":380,"width":480,"height":300},
+		{"id":"N1756734962984736468","type":"file","file":"Atlas/Categories/secrets重要 - fileclass.md","x":560,"y":0,"width":480,"height":300},
+		{"id":"N1756734962984369364","type":"file","file":"Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/gemini balance.md","x":560,"y":380,"width":480,"height":300}
+	],
+	"edges":[
+		{"id":"E1756734962983649304","fromNode":"N1756734962983259679","fromSide":"right","toNode":"N1756734962956694482","toSide":"left"},
+		{"id":"E1756734962984761056","fromNode":"N1756734962984151100","fromSide":"right","toNode":"N1756734962956694482","toSide":"left"},
+		{"id":"E1756734962984329126","fromNode":"N1756734962956694482","fromSide":"right","toNode":"N1756734962984736468","toSide":"left"},
+		{"id":"E1756734962984151882","fromNode":"N1756734962956694482","fromSide":"right","toNode":"N1756734962984369364","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

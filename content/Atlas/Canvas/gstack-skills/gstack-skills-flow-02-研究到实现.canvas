@@ -1,0 +1,377 @@
+{
+	"nodes": [
+		{
+			"id": "g_nav001",
+			"type": "group",
+			"x": -220,
+			"y": -280,
+			"width": 7380,
+			"height": 220,
+			"label": "主流程｜研究到实现",
+			"color": "4"
+		},
+		{
+			"id": "g_main002",
+			"type": "group",
+			"x": -220,
+			"y": 20,
+			"width": 7380,
+			"height": 700,
+			"label": "主线步骤",
+			"color": "5"
+		},
+		{
+			"id": "g_side003",
+			"type": "group",
+			"x": -220,
+			"y": 780,
+			"width": 7380,
+			"height": 520,
+			"label": "说明与相关子图",
+			"color": "2"
+		},
+		{
+			"id": "t_title004",
+			"type": "text",
+			"text": "研究到实现\n先用资料和网页抓取补事实，再进入实现、调试和浏览器验证。",
+			"x": -120,
+			"y": -220,
+			"width": 900,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "f_home005",
+			"type": "file",
+			"file": "gstack-skills-00-总览.canvas",
+			"x": 6360,
+			"y": -220,
+			"width": 360,
+			"height": 150,
+			"color": "4"
+		},
+		{
+			"id": "f_index006",
+			"type": "file",
+			"file": "gstack-skills-总索引.md",
+			"x": 6760,
+			"y": -220,
+			"width": 360,
+			"height": 150,
+			"color": "4"
+		},
+		{
+			"id": "t_step007",
+			"type": "text",
+			"text": "research\n做系统化调研、分析和资料提炼。\n触发：需求本身还需要事实和背景支撑时。",
+			"x": -100,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step008",
+			"type": "text",
+			"text": "documentation-lookup\n查框架、库和 API 参考与代码示例。\n触发：用户问某个技术怎么用、需要示例时。",
+			"x": 330,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step010",
+			"type": "text",
+			"text": "context7\n获取更新鲜的库和框架文档。\n触发：要查 API、SDK、官方示例且担心知识过时时。",
+			"x": 760,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step012",
+			"type": "text",
+			"text": "openai-docs\n专门查 OpenAI 官方文档和产品能力。\n触发：问题涉及 OpenAI API、模型、限制或官方用法时。",
+			"x": 1190,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step014",
+			"type": "text",
+			"text": "firecrawl-search\n做网页搜索并带回可读正文。\n触发：要找相关文章、最新信息、网页资料时。",
+			"x": 1620,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step016",
+			"type": "text",
+			"text": "firecrawl-scrape\n把网页提取成干净 markdown。\n触发：用户给了 URL，要读正文或提取页面内容时。",
+			"x": 2050,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step018",
+			"type": "text",
+			"text": "firecrawl-browser\n云端浏览器抓取\n触发：普通 scrape 拿不到内容，需要互动后再抓时。",
+			"x": 2480,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step020",
+			"type": "text",
+			"text": "test-driven-development\n先写失败测试\n触发：做新功能、修 bug、重构时。",
+			"x": 2910,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step022",
+			"type": "text",
+			"text": "justfile\n创建或管理 Justfile\n触发：有一组常用命令要标准化、简化时。",
+			"x": 3340,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step024",
+			"type": "text",
+			"text": "systematic-debugging\n按步骤定位 bug\n触发：遇到 test failure、异常行为或未知 bug 时。",
+			"x": 3770,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step026",
+			"type": "text",
+			"text": "investigate\n系统查根因\n触发：用户报 bug、异常或行为不对时。",
+			"x": 4200,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step028",
+			"type": "text",
+			"text": "playwright\n通过 Playwright 驱动真实浏览器。\n触发：需要稳定重放浏览器动作、调试 UI 流程时。",
+			"x": 4630,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step030",
+			"type": "text",
+			"text": "webapp-testing\n用 Playwright 测本地 Web 应用。\n触发：要验证前端交互、浏览器日志或截图时。",
+			"x": 5060,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_step032",
+			"type": "text",
+			"text": "browse\n快速无头浏览器\n触发：要快速打开页面、验证按钮或观察 DOM 状态时。",
+			"x": 5490,
+			"y": 160,
+			"width": 360,
+			"height": 230,
+			"color": "5"
+		},
+		{
+			"id": "t_note034",
+			"type": "text",
+			"text": "流程说明\n- 资料不足先 research / docs，网页复杂再升到 firecrawl-browser。\n- 实现后用 playwright / browse 做真实行为确认。",
+			"x": -120,
+			"y": 860,
+			"width": 1020,
+			"height": 180,
+			"color": "2"
+		},
+		{
+			"id": "f_rel035",
+			"type": "file",
+			"file": "gstack-skills-02-研究与文档.canvas",
+			"x": 980,
+			"y": 860,
+			"width": 360,
+			"height": 180,
+			"color": "2"
+		},
+		{
+			"id": "f_rel036",
+			"type": "file",
+			"file": "gstack-skills-04-实现与调试.canvas",
+			"x": 1400,
+			"y": 860,
+			"width": 360,
+			"height": 180,
+			"color": "2"
+		},
+		{
+			"id": "f_rel037",
+			"type": "file",
+			"file": "gstack-skills-05-浏览器与网页自动化.canvas",
+			"x": 1820,
+			"y": 860,
+			"width": 360,
+			"height": 180,
+			"color": "2"
+		},
+		{
+			"id": "t_gate038",
+			"type": "text",
+			"text": "使用建议\n先沿主线找入口，再跳到相关能力域看更细的架构与注意事项。",
+			"x": 6300,
+			"y": 860,
+			"width": 780,
+			"height": 180,
+			"color": "2"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_step009",
+			"fromNode": "t_step007",
+			"fromSide": "right",
+			"toNode": "t_step008",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step011",
+			"fromNode": "t_step008",
+			"fromSide": "right",
+			"toNode": "t_step010",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step013",
+			"fromNode": "t_step010",
+			"fromSide": "right",
+			"toNode": "t_step012",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step015",
+			"fromNode": "t_step012",
+			"fromSide": "right",
+			"toNode": "t_step014",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step017",
+			"fromNode": "t_step014",
+			"fromSide": "right",
+			"toNode": "t_step016",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step019",
+			"fromNode": "t_step016",
+			"fromSide": "right",
+			"toNode": "t_step018",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step021",
+			"fromNode": "t_step018",
+			"fromSide": "right",
+			"toNode": "t_step020",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step023",
+			"fromNode": "t_step020",
+			"fromSide": "right",
+			"toNode": "t_step022",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step025",
+			"fromNode": "t_step022",
+			"fromSide": "right",
+			"toNode": "t_step024",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step027",
+			"fromNode": "t_step024",
+			"fromSide": "right",
+			"toNode": "t_step026",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step029",
+			"fromNode": "t_step026",
+			"fromSide": "right",
+			"toNode": "t_step028",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step031",
+			"fromNode": "t_step028",
+			"fromSide": "right",
+			"toNode": "t_step030",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		},
+		{
+			"id": "e_step033",
+			"fromNode": "t_step030",
+			"fromSide": "right",
+			"toNode": "t_step032",
+			"toSide": "left",
+			"toEnd": "arrow",
+			"color": "5"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}

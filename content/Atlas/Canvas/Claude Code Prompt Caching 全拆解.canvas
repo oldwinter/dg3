@@ -1,0 +1,42 @@
+{
+	"edges":[
+		{"id":"title_to_conclusion","fromNode":"title","fromSide":"bottom","toNode":"conclusion","toSide":"top"},
+		{"id":"conclusion_to_model","fromNode":"conclusion","fromSide":"bottom","toNode":"mental_model","toSide":"top"},
+		{"id":"conclusion_to_why","fromNode":"conclusion","fromSide":"right","toNode":"why_everything","toSide":"left"},
+		{"id":"why_to_lessons_a","fromNode":"why_everything","fromSide":"right","toNode":"lessons_a","toSide":"left"},
+		{"id":"lessons_a_to_b","fromNode":"lessons_a","fromSide":"bottom","toNode":"lessons_b","toSide":"top"},
+		{"id":"lessons_b_to_c","fromNode":"lessons_b","fromSide":"bottom","toNode":"lessons_c","toSide":"top"},
+		{"id":"model_to_design","fromNode":"mental_model","fromSide":"bottom","toNode":"design_rules","toSide":"top"},
+		{"id":"why_to_misunderstand","fromNode":"why_everything","fromSide":"bottom","toNode":"misunderstandings","toSide":"top"},
+		{"id":"design_to_actions","fromNode":"design_rules","fromSide":"bottom","toNode":"action_items","toSide":"top"},
+		{"id":"mis_to_actions","fromNode":"misunderstandings","fromSide":"bottom","toNode":"action_items","toSide":"top"},
+		{"id":"actions_to_note","fromNode":"action_items","fromSide":"right","toNode":"detail_note","toSide":"bottom"},
+		{"id":"note_to_source_x","fromNode":"detail_note","fromSide":"bottom","toNode":"source_x","toSide":"top"},
+		{"id":"note_to_source_mirror","fromNode":"detail_note","fromSide":"bottom","toNode":"source_mirror","toSide":"top"},
+		{"id":"note_to_source_camp","fromNode":"detail_note","fromSide":"bottom","toNode":"source_camp","toSide":"top"}
+	],
+	"metadata":{
+		"frontmatter":{},
+		"version":"1.0-1.0"
+	},
+	"nodes":[
+		{"id":"group_core","type":"group","x":-80,"y":-520,"width":1220,"height":1420,"color":"4","label":"核心理解"},
+		{"id":"group_lessons","type":"group","x":1140,"y":-80,"width":520,"height":1210,"color":"1","label":"7 个关键教训"},
+		{"id":"group_apply","type":"group","x":-80,"y":920,"width":1220,"height":470,"color":"3","label":"怎么落地"},
+		{"id":"group_sources","type":"group","x":1140,"y":1160,"width":980,"height":220,"color":"5","label":"来源"},
+		{"id":"title","type":"text","x":0,"y":-460,"width":1080,"height":160,"color":"5","text":"# Claude Code Prompt Caching 全拆解\n\n**核心不是“省钱小优化”，而是：Prompt caching 直接决定 agent 的成本、速度和产品形态。**"},
+		{"id":"conclusion","type":"text","x":0,"y":-250,"width":500,"height":230,"color":"3","text":"## 一句话结论\n\n- 缓存的是稳定前缀，不是回答结果\n- Claude Code 的很多设计都在保护这段前缀\n- 改前缀 = 同时伤害成本和延迟\n- 所以 prompt caching 不是 infra 细节，而是产品约束"},
+		{"id":"detail_note","type":"file","x":560,"y":-250,"width":460,"height":180,"file":"Cards/Claude Code Prompt Caching 为什么是一切.md"},
+		{"id":"mental_model","type":"text","x":0,"y":40,"width":500,"height":320,"color":"4","text":"## 心智模型\n\n### 缓存的是什么\n- system prompt\n- tool schema\n- 项目级上下文\n- 历史消息里的稳定前缀\n\n### 真正重要的事\n不是上下文越长越好，而是越多内容能重复复用越好。"},
+		{"id":"why_everything","type":"text","x":560,"y":40,"width":460,"height":320,"color":"4","text":"## 为什么说 is everything\n\n它同时决定：\n\n1. 成本\n2. 延迟\n3. 交互形态\n4. 工具设计\n5. session 状态表达\n6. 并行 / 串行执行方式\n\nClaude Code 本质上是在做“稳定前缀保护工程”。"},
+		{"id":"lessons_a","type":"text","x":1180,"y":0,"width":440,"height":330,"color":"1","text":"## Lesson 1-3\n\n### 1. 用追加消息，不要反复改 prompt\n把变化放到尾部。\n\n### 2. 工具有隐藏 token 税\n每个工具都让常驻前缀变胖。\n\n### 3. cache breakpoint 是控制面\n要主动把稳定层和变化层切开。"},
+		{"id":"lessons_b","type":"text","x":1180,"y":370,"width":440,"height":330,"color":"2","text":"## Lesson 4-5\n\n### 4. 长上下文编辑会自伤\n重写 todo、重写摘要、重排旧消息，都会伤缓存。\n\n### 5. 图片是缓存杀手\n图片重、贵，而且很容易把稳定前缀打碎。"},
+		{"id":"lessons_c","type":"text","x":1180,"y":740,"width":440,"height":330,"color":"6","text":"## Lesson 6-7\n\n### 6. 不要中途增删工具\n工具菜单变化，等于世界规则变化。\n\n### 7. 并行更容易保住缓存\n共享稳定前缀的分支越多，缓存收益越高。"},
+		{"id":"design_rules","type":"text","x":0,"y":960,"width":500,"height":300,"color":"5","text":"## 设计原则\n\n- 稳定内容前置，尽量冻结\n- 变化内容后置，允许追加\n- 工具数受控\n- 会话规则别漂移\n- 能延迟展开的内容，不要常驻注入"},
+		{"id":"misunderstandings","type":"text","x":560,"y":960,"width":460,"height":300,"color":"2","text":"## 常见误解\n\n- 不是说 prompt 绝对不能改\n- 不是说工具越少越好\n- 也不只适用于 Claude Code\n\n真正的重点是：谨慎改前缀，管理常驻上下文税。"},
+		{"id":"action_items","type":"text","x":0,"y":1280,"width":1020,"height":180,"color":"3","text":"## 你可以立刻用的 6 个动作\n\n1. 把缓存命中率当成一级指标\n2. 冻结 system prompt 与 tool schema\n3. 用 append-only message 记状态\n4. 少在会话中途改工具拓扑\n5. 图片和长文档按高 token 资产管理\n6. 做并行设计时把缓存收益一起算进去"},
+		{"id":"source_x","type":"link","x":1180,"y":1200,"width":280,"height":120,"url":"https://x.com/trq212/status/2024574133011673516"},
+		{"id":"source_mirror","type":"link","x":1480,"y":1200,"width":280,"height":120,"url":"https://www.techtwitter.com/tweet/63f4ba5f-ba18-4616-97f5-28d0f28bf64d"},
+		{"id":"source_camp","type":"link","x":1780,"y":1200,"width":280,"height":120,"url":"https://www.claudecodecamp.com/p/how-prompt-caching-actually-works-in-claude-code"}
+	]
+}

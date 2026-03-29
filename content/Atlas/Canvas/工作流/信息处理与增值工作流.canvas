@@ -1,0 +1,278 @@
+{
+  "nodes": [
+    {
+      "id": "h8c9d0e1f2g3h4i5",
+      "type": "group",
+      "x": 0,
+      "y": -1100,
+      "width": 500,
+      "height": 1800,
+      "color": "2",
+      "label": "🤖 AI 增强节点"
+    },
+    {
+      "id": "b7e9feabfa862ed6",
+      "type": "group",
+      "x": -1200,
+      "y": -1440,
+      "width": 1000,
+      "height": 580,
+      "label": "阶段一：初步处理 (Triage)"
+    },
+    {
+      "id": "ee53926129facf00",
+      "type": "group",
+      "x": -1200,
+      "y": -780,
+      "width": 1000,
+      "height": 580,
+      "label": "阶段二：精深加工 (Deep Processing)"
+    },
+    {
+      "id": "9f08e258a6dfce9e",
+      "type": "group",
+      "x": -1200,
+      "y": -120,
+      "width": 1000,
+      "height": 580,
+      "label": "阶段三：整合关联 (Integration & Synthesis)"
+    },
+    {
+      "id": "be8017f84a023d54",
+      "type": "group",
+      "x": -1200,
+      "y": 540,
+      "width": 1000,
+      "height": 580,
+      "label": "阶段四：输出创造 (Creation & Output)"
+    },
+    {
+      "id": "m3h4i5j6k7l8m9n0",
+      "type": "group",
+      "x": -2400,
+      "y": 540,
+      "width": 1000,
+      "height": 580,
+      "label": "知识输出与创造流程详情"
+    },
+    {
+      "id": "c3d4e5f6a7b8c9d0",
+      "type": "text",
+      "text": "深入阅读，划线，提炼核心观点。",
+      "x": -1150,
+      "y": -720,
+      "width": 400,
+      "height": 100
+    },
+    {
+      "id": "d4e5f6a7b8c9d0e1",
+      "type": "text",
+      "text": "将别人的语言转化为自己的语言。",
+      "x": -1150,
+      "y": -600,
+      "width": 400,
+      "height": 100
+    },
+    {
+      "id": "n4i5j6k7l8m9n0o1",
+      "type": "text",
+      "text": "1. 目标设定：明确输出目标和读者",
+      "x": -2350,
+      "y": 600,
+      "width": 400,
+      "height": 80
+    },
+    {
+      "id": "o5j6k7l8m9n0o1p2",
+      "type": "text",
+      "text": "2. 素材聚合：使用搜索、标签、反链汇集素材",
+      "x": -2350,
+      "y": 700,
+      "width": 400,
+      "height": 80
+    },
+    {
+      "id": "p6k7l8m9n0o1p2q3",
+      "type": "text",
+      "text": "3. 构建大纲：搭建逻辑框架",
+      "x": -2350,
+      "y": 800,
+      "width": 400,
+      "height": 80
+    },
+    {
+      "id": "e5f6a7b8c9d0e1f2",
+      "type": "text",
+      "text": "创建双向链接，与库中其他笔记、MOC关联。",
+      "x": -1150,
+      "y": -60,
+      "width": 400,
+      "height": 100
+    },
+    {
+      "id": "i9d0e1f2g3h4i5j6",
+      "type": "text",
+      "text": "AI自动摘要\nAI关键词提取与自动标签\nAI智能分类建议",
+      "x": 50,
+      "y": -1350,
+      "width": 400,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "j0e1f2g3h4i5j6k7",
+      "type": "text",
+      "text": "AI概念解释与深化理解\nAI内容重述与语言转换\nAI多角度提问",
+      "x": 50,
+      "y": -690,
+      "width": 400,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "k1f2g3h4i5j6k7l8",
+      "type": "text",
+      "text": "AI智能链接建议\nAI主题聚类与MOC草稿",
+      "x": 50,
+      "y": -30,
+      "width": 400,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "l2g3h4i5j6k7l8m9",
+      "type": "text",
+      "text": "AI头脑风暴与大纲生成\nAI草稿撰写与润色\nAI格式转换",
+      "x": 50,
+      "y": 630,
+      "width": 400,
+      "height": 150,
+      "color": "2"
+    },
+    {
+      "id": "q7l8m9n0o1p2q3r4",
+      "type": "text",
+      "text": "4. 草稿撰写：快速完成初稿",
+      "x": -2350,
+      "y": 900,
+      "width": 400,
+      "height": 80
+    },
+    {
+      "id": "r8m9n0o1p2q3r4s5",
+      "type": "text",
+      "text": "5. 修订与润色：精益求精",
+      "x": -2350,
+      "y": 1000,
+      "width": 400,
+      "height": 80
+    },
+    {
+      "id": "f6a7b8c9d0e1f2g3",
+      "type": "text",
+      "text": "形成知识网络，发现新的洞见。",
+      "x": -1150,
+      "y": 60,
+      "width": 400,
+      "height": 100
+    },
+    {
+      "id": "g7b8c9d0e1f2g3h4",
+      "type": "text",
+      "text": "主动输出，撰写文章、构思项目等。",
+      "x": -1150,
+      "y": 600,
+      "width": 400,
+      "height": 100
+    },
+    {
+      "id": "a1b2c3d4e5f6a7b8",
+      "type": "text",
+      "text": "从 [[Cards/一元化收集]] 过来的新笔记、剪藏和闪念。",
+      "x": -1150,
+      "y": -1380,
+      "width": 400,
+      "height": 100
+    },
+    {
+      "id": "b2c3d4e5f6a7b8c9",
+      "type": "text",
+      "text": "快速分类，打上状态标签，如 #status/toread, #status/processing",
+      "x": -1150,
+      "y": -1260,
+      "width": 400,
+      "height": 100
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "fromNode": "b7e9feabfa862ed6",
+      "fromSide": "bottom",
+      "toNode": "ee53926129facf00",
+      "toSide": "top"
+    },
+    {
+      "id": "edge2",
+      "fromNode": "ee53926129facf00",
+      "fromSide": "bottom",
+      "toNode": "9f08e258a6dfce9e",
+      "toSide": "top"
+    },
+    {
+      "id": "edge3",
+      "fromNode": "9f08e258a6dfce9e",
+      "fromSide": "bottom",
+      "toNode": "be8017f84a023d54",
+      "toSide": "top"
+    },
+    {
+      "id": "edge4",
+      "fromNode": "b7e9feabfa862ed6",
+      "fromSide": "right",
+      "toNode": "i9d0e1f2g3h4i5j6",
+      "toSide": "left",
+      "color": "2",
+      "label": "AI辅助"
+    },
+    {
+      "id": "edge5",
+      "fromNode": "ee53926129facf00",
+      "fromSide": "right",
+      "toNode": "j0e1f2g3h4i5j6k7",
+      "toSide": "left",
+      "color": "2",
+      "label": "AI辅助"
+    },
+    {
+      "id": "edge6",
+      "fromNode": "9f08e258a6dfce9e",
+      "fromSide": "right",
+      "toNode": "k1f2g3h4i5j6k7l8",
+      "toSide": "left",
+      "color": "2",
+      "label": "AI辅助"
+    },
+    {
+      "id": "edge7",
+      "fromNode": "be8017f84a023d54",
+      "fromSide": "right",
+      "toNode": "l2g3h4i5j6k7l8m9",
+      "toSide": "left",
+      "color": "2",
+      "label": "AI辅助"
+    },
+    {
+      "id": "edge8",
+      "fromNode": "be8017f84a023d54",
+      "fromSide": "left",
+      "toNode": "m3h4i5j6k7l8m9n0",
+      "toSide": "right",
+      "label": "具体流程"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

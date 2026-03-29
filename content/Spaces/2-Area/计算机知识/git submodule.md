@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/计算机知识/git submodule.md","title":"git submodule","created":"2022-06-23","modified":"2025-07-10","cssclasses":""}
+publish: true
+permalink: /Spaces/2-Area/计算机知识/git submodule.md
+title: git submodule
+created: 2022-06-23
+modified: 2025-07-10
 ---
-
 
 > AI时代，这些复杂git操作，统统交给ai自动化搞就行了。
 

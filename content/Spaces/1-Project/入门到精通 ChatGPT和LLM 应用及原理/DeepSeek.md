@@ -1,9 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/DeepSeek.md","created":"2025-01-16","modified":"2025-02-26","cssclasses":""}
+publish: true
+permalink: /Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/DeepSeek.md
+created: 2025-01-16
+modified: 2025-02-26
 ---
 
-
-[[Sources/Clippings/ChatGPT/deepseek 提示词技巧]]
+[[deepseek 提示词技巧]]
 
 ## 相关资料
 
@@ -15,22 +17,22 @@
 
 ## 官方
 
-[[Spaces/3-Resource/账号密码/deepseek 官方 api key]]
+[[deepseek 官方 api key]]
 
 ## 本地
 
-[[Sources/Clippings/ChatGPT/deepseek r1 本地部署越狱模式]]
+[[deepseek r1 本地部署越狱模式]]
 
 ## 测试是否满血版
 
-[[Sources/Clippings/ChatGPT/大模型 deepseek 测试是否满血版]]
+[[大模型 deepseek 测试是否满血版]]
 
 ## 第三方满血版
 
-- [[Spaces/3-Resource/账号密码/硅基流动\|deepseek 硅基流动]]
+- [[硅基流动|deepseek 硅基流动]]
 
 以上免费版用的人太多，有点卡。性能比较好的：
 
-- [[Spaces/3-Resource/账号密码/deepseek 腾讯云]]
-- [[Spaces/3-Resource/账号密码/deepseek 和 kimi 模型免费 - 火山引擎]]，最强，速度最快
-- [[Spaces/3-Resource/账号密码/deepseek 阿里云百炼（通义千问Qwen）]]
+- [[deepseek 腾讯云]]
+- [[deepseek 和 kimi 模型免费 - 火山引擎]]，最强，速度最快
+- [[deepseek 阿里云百炼（通义千问Qwen）]]

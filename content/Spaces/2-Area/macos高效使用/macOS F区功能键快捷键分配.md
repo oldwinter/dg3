@@ -1,8 +1,11 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/macos高效使用/macOS F区功能键快捷键分配.md","created":"2024-10-08","modified":"2024-10-22","cssclasses":""}
+publish: true
+permalink: /Spaces/2-Area/macos高效使用/macOS F区功能键快捷键分配.md
+created: 2024-10-08
+modified: 2024-10-22
 ---
 
-[[Spaces/2-Area/windows高效使用/Windows F区功能键快捷键分配]]
+[[Windows F区功能键快捷键分配]]
 
 ## macOS F1-F12 功能键列表
 

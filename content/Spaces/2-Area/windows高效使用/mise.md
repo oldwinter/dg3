@@ -1,23 +1,32 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/windows高效使用/mise.md","description":"dev tools, env vars, task runner","created":"2025-06-18","modified":"2025-07-04","cssclasses":""}
+publish: true
+permalink: /Spaces/2-Area/windows高效使用/mise.md
+description: dev tools, env vars, task runner
+created: 2025-06-18
+modified: 2025-11-03
 ---
 
-
-在macos和linux上，可以替换掉[[Sources/GithubStarsSync/goenv\|goenv]]、[[Cards/rvm]]、[[Sources/GithubStarsSync/vfox]]了。windows还是得继续用这些。
+在macos和linux上，可以替换掉[[goenv|goenv]]、[[rvm]]、[[vfox]]了。windows还是得继续用这些。
 
 https://github.com/jdx/mise
 
 这篇教程写得很好了：
 
-[[Sources/Clippings/Mise：跨语言开发环境的高效配置工具]]
+[[Mise：跨语言开发环境的高效配置工具]]
+
+## linux或macos安装
+
+```shell
+curl https://mise.run | sh
+```
 
 ## 配置文件
 
-[[Cards/dot文件配置同步仓库]] clone后，
+[[dot文件配置同步仓库]] clone后，
 
 进入到mise配置目录，直接执行，既可自动安装全部开发环境
 
-```
+```shell
 mise trust
 mise install
 ```
@@ -28,17 +37,11 @@ mise install
 bun --version && go version && java -version && node --version && python --version && ruby --version && rustc --version
 ```
 
-## linux或macos安装
-
-```
-curl https://mise.run | sh
-```
-
 ## windows上安装
 
 ### 使用powershell
 
-```
+```shell
 # https://github.com/ScoopInstaller/Main/pull/6374
 scoop install mise
 
@@ -62,13 +65,13 @@ mise use --global python@3.11
 
 如果新建terminal，不识别python命令，则可能需要配置$PROFILE
 
-```
+```shell
 Invoke-Expression (& { (mise activate pwsh | Out-String) })
 ```
 
 ### 使用wsl
 
-```
+```shell
 
 curl https://mise.run | sh
 
@@ -89,7 +92,5 @@ node -v
 
 ## mise ls
 
+```shell
 ```
-
-```
-

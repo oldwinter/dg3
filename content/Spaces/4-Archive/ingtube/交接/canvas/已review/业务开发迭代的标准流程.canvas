@@ -1,0 +1,179 @@
+{
+  "edges": [
+    {
+      "fromNode": "94a6c70663e608ff",
+      "fromSide": "right",
+      "id": "78f3a7800decd7b7",
+      "toNode": "5baad436b073dab5",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "5baad436b073dab5",
+      "fromSide": "right",
+      "id": "dfdc372a20797a49",
+      "toNode": "6ebc705d91c77960",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6ebc705d91c77960",
+      "fromSide": "right",
+      "id": "7a15bc49c10120ac",
+      "toNode": "3f117b9285afb9a5",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "6ebc705d91c77960",
+      "fromSide": "right",
+      "id": "a3840453c8a045f1",
+      "toNode": "ab6f1986ecd36dbe",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "ab6f1986ecd36dbe",
+      "fromSide": "top",
+      "id": "704920e12888b9a0",
+      "toNode": "3f117b9285afb9a5",
+      "toSide": "bottom"
+    },
+    {
+      "fromNode": "3f117b9285afb9a5",
+      "fromSide": "right",
+      "id": "79ee780ea9d9d6ca",
+      "toNode": "97f3a81928ec5e2d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "ab6f1986ecd36dbe",
+      "fromSide": "right",
+      "id": "a732317b6385c819",
+      "toNode": "97f3a81928ec5e2d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "97f3a81928ec5e2d",
+      "fromSide": "right",
+      "id": "95d931b22cd99e69",
+      "toNode": "2527ff62654701ad",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "2527ff62654701ad",
+      "fromSide": "left",
+      "id": "ee23fefcf14f841c",
+      "toNode": "d2016143d36b8577",
+      "toSide": "right"
+    },
+    {
+      "fromNode": "d2016143d36b8577",
+      "fromSide": "left",
+      "id": "a85f572f53846550",
+      "toNode": "94a6c70663e608ff",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/需求设计稿.md",
+      "height": 180,
+      "id": "94a6c70663e608ff",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 240,
+      "x": -600,
+      "y": -240
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/需求视觉稿.md",
+      "height": 180,
+      "id": "5baad436b073dab5",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -180,
+      "y": -240
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/api制定.md",
+      "height": 180,
+      "id": "6ebc705d91c77960",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": 360,
+      "y": -240
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/接口及功能开发.md",
+      "height": 180,
+      "id": "3f117b9285afb9a5",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": 920,
+      "y": -240
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/界面及app开发.md",
+      "height": 400,
+      "id": "ab6f1986ecd36dbe",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": 920,
+      "y": 20
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/部署及运维.md",
+      "height": 180,
+      "id": "97f3a81928ec5e2d",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": 1440,
+      "y": -240
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/需求管理.md",
+      "height": 400,
+      "id": "d2016143d36b8577",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -360,
+      "y": -1080
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/empty/运营.md",
+      "height": 400,
+      "id": "2527ff62654701ad",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": 1040,
+      "y": -1080
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔的员工角色列表.md",
+      "height": 600,
+      "id": "6fcd73cbac7f9a86",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 400,
+      "x": -1220,
+      "y": 20
+    },
+    {
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/业务开发迭代的典型流程和步骤.md",
+      "height": 400,
+      "id": "322b67729f260a05",
+      "styleAttributes": {},
+      "type": "file",
+      "width": 660,
+      "x": -1400,
+      "y": -1180
+    }
+  ]
+}

@@ -1,9 +1,12 @@
 ---
-{"publish":true,"permalink":"/Spaces/3-Resource/软件梳理/macos软件/Alfred.md","title":"Alfred","created":"2022-06-09","modified":"2023-03-14","cssclasses":""}
+publish: true
+permalink: /Spaces/3-Resource/软件梳理/macos软件/Alfred.md
+title: Alfred
+created: 2022-06-09
+modified: 2023-03-14
 ---
 
-
-其他竞品：[[Spaces/3-Resource/软件梳理/macos软件/uTools]]，[[Sources/GithubStarsSync/Go]]
+其他竞品：[[uTools]]，[[go]]
 
 ## workflow 调用过程
 
@@ -13,9 +16,9 @@
 
 ## alfred 的综合调教
 
-依据 [[Spaces/3-Resource/个人成长/个人查找搜索系统#搜索判断树]] 改造和聚合
+依据 [[个人查找搜索系统#搜索判断树]] 改造和聚合
 
-高速缓存聚合：[[Spaces/3-Resource/软件梳理/macos软件/Devonthink]]
+高速缓存聚合：[[Devonthink]]
 
 知识：谷歌
 
@@ -23,11 +26,11 @@
 
 翻译：谷歌翻译
 
-笔记：[[Spaces/3-Resource/软件梳理/安卓软件/Onenote]]
+笔记：[[Onenote]]
 
-todo：[[Spaces/3-Resource/软件梳理/安卓软件/滴答清单]]
+todo：[[滴答清单]]
 
-个人创作：[[Spaces/3-Resource/软件梳理/安卓软件/Obsidian]]
+个人创作：[[Obsidian]]
 
 文件：本地文件
 

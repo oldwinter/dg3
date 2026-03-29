@@ -1,0 +1,15 @@
+filters:
+  or:
+    - file.mtime.date() == this.file.name
+views:
+  - type: table
+    name: 今日修改笔记
+    order:
+      - file.name
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 30
+    columnSize:
+      file.name: 354

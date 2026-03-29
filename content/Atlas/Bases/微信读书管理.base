@@ -1,0 +1,33 @@
+filters:
+  and:
+    - "!bookId.isEmpty()"
+views:
+  - type: cards
+    name: 画廊视图
+    filters:
+      and:
+        - "!readingTime.isEmpty()"
+    order:
+      - file.name
+      - author
+      - readingTime
+    sort:
+      - property: file.mtime
+        direction: ASC
+      - property: property.cover
+        direction: DESC
+    columnSize:
+      file.name: 420
+    image: cover
+    imageAspectRatio: 1.45
+    imageFit: contain
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - author
+    sort:
+      - property: property.cover
+        direction: DESC
+    columnSize:
+      file.name: 420

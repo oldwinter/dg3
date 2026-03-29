@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"grp_core","type":"group","x":-460,"y":-220,"width":1540,"height":780,"label":"Serverless 控制与数据平面"},
+		{"id":"title","type":"text","text":"OpenSearch Serverless 架构","x":40,"y":-320,"width":520,"height":80,"color":"6"},
+		{"id":"collections","type":"text","text":"Collections（集合）\n- Search / Time series / Vector\n- 按需创建，逻辑边界","x":-420,"y":-180,"width":560,"height":300,"color":"4"},
+		{"id":"index_ocu","type":"text","text":"Indexing OCUs（索引计算单元）\n- 自动扩缩\n- 写入/索引构建","x":180,"y":-180,"width":420,"height":260,"color":"1"},
+		{"id":"search_ocu","type":"text","text":"Search OCUs（查询计算单元）\n- 自动扩缩\n- 搜索/聚合","x":640,"y":-180,"width":420,"height":260,"color":"1"},
+		{"id":"policies","type":"text","text":"Serverless 策略\n- 加密策略（KMS）\n- 网络策略（VPC/公网访问）\n- 数据访问策略（IAM 资源策略）","x":-420,"y":140,"width":1480,"height":160,"color":"5"},
+		{"id":"dash","type":"text","text":"Dashboards（Serverless）/ 应用\n- SigV4 / IAM 身份中心\n- VPC 私有或受控公网","x":-420,"y":340,"width":560,"height":180,"color":"2"},
+		{"id":"ingest","type":"text","text":"数据摄取\n- OpenSearch Ingestion（托管管道）\n- Firehose / Kafka / 自管 ETL / OTel","x":180,"y":340,"width":880,"height":180,"color":"2"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"dash","fromSide":"top","toNode":"search_ocu","toSide":"bottom","label":"查询"},
+		{"id":"e2","fromNode":"ingest","fromSide":"top","toNode":"index_ocu","toSide":"bottom","label":"写入"},
+		{"id":"e3","fromNode":"collections","fromSide":"right","toNode":"index_ocu","toSide":"left","label":"路由/索引"},
+		{"id":"e4","fromNode":"collections","fromSide":"right","toNode":"search_ocu","toSide":"left","label":"路由/查询"},
+		{"id":"e5","fromNode":"policies","fromSide":"top","toNode":"collections","toSide":"bottom","label":"约束/治理"},
+		{"id":"e6","fromNode":"policies","fromSide":"top","toNode":"index_ocu","toSide":"bottom"},
+		{"id":"e7","fromNode":"policies","fromSide":"top","toNode":"search_ocu","toSide":"bottom"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

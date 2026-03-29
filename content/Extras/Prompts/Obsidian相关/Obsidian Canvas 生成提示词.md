@@ -1,13 +1,13 @@
 ---
 publish: true
 分类:
-- '[[Atlas/Categories/提示词prompts - fileclass]]'
-- '[[Atlas/Categories/AI生成 - fileclass]]'
+- '[[提示词prompts - fileclass]]'
+- '[[AI生成 - fileclass]]'
 ---
 
 ### Obsidian Canvas 稳定生成提示词（Advanced Canvas 1.0-1.0）
 
-面向大模型的「一次成型、可直接导入」Canvas 生成规范与模板。严格遵循 [[Extras/Documents/Obsidian advanced canvas 规范]] 与本库规则，避免常见报错（如 `id` 出现短横杆 `-`、JSON 引号未转义、坐标与尺寸不为整数、文件路径不带后缀、非法字段、尾随逗号等）。
+面向大模型的「一次成型、可直接导入」Canvas 生成规范与模板。严格遵循 [[Obsidian advanced canvas 规范]] 与本库规则，避免常见报错（如 `id` 出现短横杆 `-`、JSON 引号未转义、坐标与尺寸不为整数、文件路径不带后缀、非法字段、尾随逗号等）。
 
 ---
 
@@ -129,10 +129,10 @@ publish: true
 ### 进阶提示（可选）
 
 - 若需 `metadata`：
+
 ```json
 { "metadata": { "version": "1.0-1.0", "frontmatter": { "title": "Canvas Title" } }, "nodes": [], "edges": [] }
 ```
+
 - 颜色风格：使用 `"1".."6"` 进行区域配色，与本库既有画布风格一致。
 - 与笔记互链：在 `text` 中自由使用 `[[双链]]`，渲染时按 Obsidian 规则显示。
-
-

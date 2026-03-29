@@ -1,0 +1,344 @@
+{
+  "edges": [
+    {
+      "id": "f6d3b8595ae0effd",
+      "fromNode": "e8075e699a01df50",
+      "fromSide": "right",
+      "toNode": "499774dfa0ddcea1",
+      "toSide": "left"
+    },
+    {
+      "id": "3c492f4c93f9c31c",
+      "fromNode": "442bf9d918cff917",
+      "fromSide": "right",
+      "toNode": "278ca980c80e8d8c",
+      "toSide": "left"
+    },
+    {
+      "id": "5728b203b721fe97",
+      "fromNode": "e8075e699a01df50",
+      "fromSide": "right",
+      "toNode": "278ca980c80e8d8c",
+      "toSide": "left"
+    },
+    {
+      "id": "8851e634093c937c",
+      "fromNode": "9618ada66aa8951c",
+      "fromSide": "right",
+      "toNode": "4f9ae61436f57af4",
+      "toSide": "left"
+    },
+    {
+      "id": "922dddfcafeb2dc8",
+      "fromNode": "4775d9cc241456c1",
+      "fromSide": "left",
+      "toNode": "278ca980c80e8d8c",
+      "toSide": "right"
+    },
+    {
+      "id": "f274768505ed7844",
+      "fromNode": "28ef5f33e4e6dcff",
+      "fromSide": "left",
+      "toNode": "4f9ae61436f57af4",
+      "toSide": "right"
+    },
+    {
+      "id": "dd8a43787e9b59ea",
+      "fromNode": "19196e2c0b5ba66a",
+      "fromSide": "left",
+      "toNode": "499774dfa0ddcea1",
+      "toSide": "right"
+    },
+    {
+      "id": "e1a88d9718a36274",
+      "fromNode": "8eb955d13bd7c14d",
+      "fromSide": "right",
+      "toNode": "4f9ae61436f57af4",
+      "toSide": "left"
+    },
+    {
+      "id": "d726cb10002e73e9",
+      "fromNode": "10edc983d01b86c5",
+      "fromSide": "right",
+      "toNode": "4f9ae61436f57af4",
+      "toSide": "left"
+    },
+    {
+      "id": "fa38a10cddb60d6a",
+      "fromNode": "6f0b406fd36ce102",
+      "fromSide": "right",
+      "toNode": "278ca980c80e8d8c",
+      "toSide": "left"
+    },
+    {
+      "id": "2cd5900dbfaa71e9",
+      "fromNode": "e8075e699a01df50",
+      "fromSide": "left",
+      "toNode": "7b293ddc0fb6c8ba",
+      "toSide": "right"
+    },
+    {
+      "id": "43bbee7ddc886109",
+      "fromNode": "10edc983d01b86c5",
+      "fromSide": "left",
+      "toNode": "079f2d8afb61acaa",
+      "toSide": "right"
+    },
+    {
+      "id": "64030af408ea4f10",
+      "fromNode": "10edc983d01b86c5",
+      "fromSide": "left",
+      "toNode": "5b0c08f3bf236fb5",
+      "toSide": "right"
+    },
+    {
+      "id": "fa2bd44e48c7688f",
+      "fromNode": "8eb955d13bd7c14d",
+      "fromSide": "left",
+      "toNode": "dd7722339204ad1a",
+      "toSide": "right"
+    },
+    {
+      "id": "9e783cf56deca7f1",
+      "fromNode": "8eb955d13bd7c14d",
+      "fromSide": "left",
+      "toNode": "5c5d1fffe2320fd6",
+      "toSide": "right"
+    },
+    {
+      "id": "b178d943d184ab46",
+      "fromNode": "442bf9d918cff917",
+      "fromSide": "left",
+      "toNode": "afc8ec1584db7d99",
+      "toSide": "right"
+    },
+    {
+      "id": "92603b77cb269362",
+      "fromNode": "442bf9d918cff917",
+      "fromSide": "left",
+      "toNode": "e516ab411f28d065",
+      "toSide": "right"
+    },
+    {
+      "id": "85a9614cac6184b1",
+      "fromNode": "5c5d1fffe2320fd6",
+      "fromSide": "left",
+      "toNode": "b480d2790337813d",
+      "toSide": "right"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "id": "ed4c18f3f9a3f868",
+      "type": "group",
+      "x": -660,
+      "y": -240,
+      "width": 315,
+      "height": 1215,
+      "label": "问题集举例"
+    },
+    {
+      "file": "Extras/Media/Pasted image 20240201232432.png",
+      "id": "7b293ddc0fb6c8ba",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -1560,
+      "y": -1040,
+      "width": 655,
+      "height": 400
+    },
+    {
+      "file": "Extras/Media/Pasted image 20240201230606.png",
+      "id": "079f2d8afb61acaa",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -1560,
+      "y": 850,
+      "width": 655,
+      "height": 400
+    },
+    {
+      "file": "Extras/Media/Pasted image 20240201231457.png",
+      "id": "5b0c08f3bf236fb5",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -1560,
+      "y": 300,
+      "width": 655,
+      "height": 400
+    },
+    {
+      "file": "Extras/Media/Pasted image 20240201232723.png",
+      "id": "dd7722339204ad1a",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -1060,
+      "y": -170,
+      "width": 189,
+      "height": 400
+    },
+    {
+      "file": "Extras/Media/Pasted image 20240201233241.png",
+      "id": "5c5d1fffe2320fd6",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -1460,
+      "y": -170,
+      "width": 290,
+      "height": 400
+    },
+    {
+      "file": "Extras/Media/Pasted image 20240201233942.png",
+      "id": "afc8ec1584db7d99",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -1560,
+      "y": -615,
+      "width": 655,
+      "height": 400
+    },
+    {
+      "file": "Extras/Media/Pasted image 20240201234205.png",
+      "id": "e516ab411f28d065",
+      "styleAttributes": {},
+      "type": "file",
+      "x": -2340,
+      "y": -627,
+      "width": 696,
+      "height": 425
+    },
+    {
+      "id": "b480d2790337813d",
+      "styleAttributes": {},
+      "text": "```mermaid\ngraph TD\n    Tencent[Tencent] -->|Majority Shareholder| Huya[Huya]\n    Tencent -->|Major Shareholder| Douyu[Douyu]\n    Tencent -->|Invested in| ByteDance[ByteDance]\n    ByteDance -->|Owns| TikTok[TikTok]\n\n```",
+      "type": "text",
+      "x": -2286,
+      "y": -90,
+      "width": 588,
+      "height": 380
+    },
+    {
+      "id": "499774dfa0ddcea1",
+      "styleAttributes": {},
+      "text": "### 传统google搜索\n- 微博搜索\n- 公众号搜索\n- bilibili搜索等\n- 小红书搜索",
+      "type": "text",
+      "x": -140,
+      "y": -280,
+      "width": 250,
+      "height": 200
+    },
+    {
+      "id": "4f9ae61436f57af4",
+      "styleAttributes": {},
+      "text": "### chatGPT",
+      "type": "text",
+      "x": -140,
+      "y": 0,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "e8075e699a01df50",
+      "styleAttributes": {},
+      "text": "新闻，1-2年内的新东西  \neg：小米汽车售价",
+      "type": "text",
+      "x": -640,
+      "y": -215,
+      "width": 270,
+      "height": 70
+    },
+    {
+      "id": "278ca980c80e8d8c",
+      "styleAttributes": {},
+      "text": "### AI搜索",
+      "type": "text",
+      "x": -140,
+      "y": 160,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "28ef5f33e4e6dcff",
+      "styleAttributes": {},
+      "text": "像一个不厌其烦24小时待命的万能打工人，什么问题问他，都能不厌其烦地回答",
+      "type": "text",
+      "x": 260,
+      "y": -50,
+      "width": 250,
+      "height": 150
+    },
+    {
+      "id": "19196e2c0b5ba66a",
+      "styleAttributes": {},
+      "text": "`关键字1 关键字2 `依然是传统搜索引擎以及小红书等垂直社区最有效的搜索方式之一。",
+      "type": "text",
+      "x": 260,
+      "y": -280,
+      "width": 250,
+      "height": 170
+    },
+    {
+      "id": "8eb955d13bd7c14d",
+      "styleAttributes": {},
+      "text": "除了搜索，你想要让它稍微帮你自动做一些事情的时候。  \neg：列举一些常见的新媒体网站，整理成markdown列表的形式发给我。  \neg：用mermaid画一张图。  ",
+      "type": "text",
+      "x": -640,
+      "y": 500,
+      "width": 260,
+      "height": 260
+    },
+    {
+      "id": "10edc983d01b86c5",
+      "styleAttributes": {},
+      "text": "临时起意想简单了解一下的问题  \neg：为什么说寒门难出贵子\neg：流量为王的时代",
+      "type": "text",
+      "x": -645,
+      "y": 820,
+      "width": 260,
+      "height": 140
+    },
+    {
+      "id": "442bf9d918cff917",
+      "styleAttributes": {},
+      "text": "可能带有图片、视频的内容\neg：酱香拿铁  \n酱香拿铁合作瑞幸和茅台谁赢了？",
+      "type": "text",
+      "x": -640,
+      "y": -120,
+      "width": 270,
+      "height": 120
+    },
+    {
+      "id": "9618ada66aa8951c",
+      "styleAttributes": {},
+      "text": "对目标内容知道一点，但又知道的不多，可能想要快速知道某个领域的概念，可能需要连续对话提问  \neg： 内容营销是什么；跟市场营销什么关系  \neg：GMV是什么；还有哪些指标用来评价一场带货直播的效果。\n",
+      "type": "text",
+      "x": -640,
+      "y": 130,
+      "width": 260,
+      "height": 340
+    },
+    {
+      "id": "4775d9cc241456c1",
+      "styleAttributes": {},
+      "text": "像是你的研究生，能帮你做文献综述，并能老老实实地给出结论的引用来源和出处。",
+      "type": "text",
+      "x": 260,
+      "y": 160,
+      "width": 250,
+      "height": 280
+    },
+    {
+      "id": "6f0b406fd36ce102",
+      "styleAttributes": {},
+      "text": "想要系统性地了解或深入某个领域\neg：抖音投流",
+      "type": "text",
+      "x": -640,
+      "y": 30,
+      "width": 250,
+      "height": 70
+    }
+  ]
+}

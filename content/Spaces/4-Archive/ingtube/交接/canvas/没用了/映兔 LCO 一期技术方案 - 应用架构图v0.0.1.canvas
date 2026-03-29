@@ -1,0 +1,229 @@
+{
+  "nodes": [
+    {
+      "id": "78847c86a9653fcc",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -275,
+      "y": 20,
+      "width": 355,
+      "height": 620,
+      "label": "Agents"
+    },
+    {
+      "id": "a398f0f2062fa6c9",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -780,
+      "y": 120,
+      "width": 340,
+      "height": 260,
+      "label": "Tools"
+    },
+    {
+      "id": "07f9f0143d9bf6de",
+      "type": "text",
+      "text": "",
+      "styleAttributes": {},
+      "x": 2147,
+      "y": -390,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "e00e2a6838a30d61",
+      "type": "text",
+      "text": "- 用户提问：当用户提出一个问题时。\n- 编码器处理问题：编码器将问题转化为上下文学习（ICL）问题，针对大型语言模型（LLM）。\n- LLM生成代码：大型语言模型接着生成代码以回答问题。\n- 安全保障检查：安全保障检查代码的有效性，如果发现错误则中止操作；否则，安全保障将代码送往特定应用组件，如数据库引擎或优化求解器（取决于查询类型）。\n- 应用特定组件处理：组件处理代码并产生结果，这些结果被记录在文件中。\n- 结果日志反馈给LLM：从应用特定组件得到的输出日志被反馈给LLM。\n- LLM分析日志并生成人类可读答案：LLM分析日志，并生成人类可读的答案。\n- 答案反馈给用户：生成的答案被发送回用户。",
+      "styleAttributes": {},
+      "x": 255,
+      "y": -740,
+      "width": 530,
+      "height": 590
+    },
+    {
+      "id": "e2edb60649c1cbf5",
+      "type": "text",
+      "text": "向量数据库",
+      "styleAttributes": {},
+      "x": 440,
+      "y": 40,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "1d4890823c5867da",
+      "type": "text",
+      "text": "## LLM",
+      "styleAttributes": {},
+      "x": 505,
+      "y": 265,
+      "width": 280,
+      "height": 60
+    },
+    {
+      "id": "074e1b2eb3a4c5af",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/整理跟LCO项目强相关的AIGC技术内容.md",
+      "styleAttributes": {},
+      "x": 880,
+      "y": -45,
+      "width": 400,
+      "height": 400
+    },
+    {
+      "id": "1d3ef72f44b8054c",
+      "type": "text",
+      "text": "## 完全体参考图",
+      "styleAttributes": {},
+      "x": -275,
+      "y": -620,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "2f52b2b7c00a44b0",
+      "type": "text",
+      "text": "Database 结构化数据库",
+      "styleAttributes": {},
+      "x": -740,
+      "y": 140,
+      "width": 290,
+      "height": 60
+    },
+    {
+      "id": "bcf0bc18b5472515",
+      "type": "text",
+      "text": "Document 非结构化数据",
+      "styleAttributes": {},
+      "x": -740,
+      "y": 255,
+      "width": 290,
+      "height": 60
+    },
+    {
+      "id": "8473e47c666dd209",
+      "type": "text",
+      "text": "## 编码器\n> 将用户问题，进行向量数据库查询",
+      "styleAttributes": {},
+      "x": -240,
+      "y": 70,
+      "width": 290,
+      "height": 170
+    },
+    {
+      "id": "d8e3dae9afae9c5e",
+      "type": "text",
+      "text": "## 🧑用户",
+      "styleAttributes": {},
+      "x": -200,
+      "y": -180,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "1757945a2f375802",
+      "type": "text",
+      "text": "## 判断器\n- 审核代码错误\n- 若正确，执行python查询数据库or其他操作",
+      "styleAttributes": {},
+      "x": -240,
+      "y": 250,
+      "width": 290,
+      "height": 210
+    },
+    {
+      "id": "4b5da5d543480fdd",
+      "type": "text",
+      "text": "## 解释器",
+      "styleAttributes": {},
+      "x": -240,
+      "y": 480,
+      "width": 290,
+      "height": 60
+    },
+    {
+      "id": "e4a5fb9684a9ab41",
+      "type": "text",
+      "text": "## 🧑用户",
+      "styleAttributes": {},
+      "x": -220,
+      "y": 840,
+      "width": 250,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "a6724eb426d7ece1",
+      "fromNode": "d8e3dae9afae9c5e",
+      "fromSide": "bottom",
+      "toNode": "8473e47c666dd209",
+      "toSide": "top",
+      "label": "①用户问题"
+    },
+    {
+      "id": "4befa4feaa3f99be",
+      "fromNode": "8473e47c666dd209",
+      "fromSide": "right",
+      "toNode": "e2edb60649c1cbf5",
+      "toSide": "left",
+      "label": "②in-context learning"
+    },
+    {
+      "id": "fa66fa1bed0a2b6d",
+      "fromNode": "1d4890823c5867da",
+      "fromSide": "bottom",
+      "toNode": "4b5da5d543480fdd",
+      "toSide": "right",
+      "label": "⑦LLL分析形成最终答案"
+    },
+    {
+      "id": "be62dba4250c6e86",
+      "fromNode": "1d4890823c5867da",
+      "fromSide": "left",
+      "toNode": "1757945a2f375802",
+      "toSide": "right",
+      "label": "③返回python代码（循环n）"
+    },
+    {
+      "id": "1bdc7089d1764db2",
+      "fromNode": "1757945a2f375802",
+      "fromSide": "left",
+      "toNode": "a398f0f2062fa6c9",
+      "toSide": "right",
+      "label": "④查询"
+    },
+    {
+      "id": "f05ee9c95a8206f1",
+      "fromNode": "a398f0f2062fa6c9",
+      "fromSide": "bottom",
+      "toNode": "78847c86a9653fcc",
+      "toSide": "left",
+      "label": "⑤结果存文件"
+    },
+    {
+      "id": "677d5b3122f40a2c",
+      "fromNode": "4b5da5d543480fdd",
+      "fromSide": "top",
+      "toNode": "1d4890823c5867da",
+      "toSide": "bottom",
+      "label": "⑥根据日志文件再提问"
+    },
+    {
+      "id": "f3cdbf4c456f2d2c",
+      "fromNode": "4b5da5d543480fdd",
+      "fromSide": "bottom",
+      "toNode": "e4a5fb9684a9ab41",
+      "toSide": "top",
+      "label": "⑧返回答案到chatbot界面"
+    },
+    {
+      "id": "27f6968aa46fc5a9",
+      "fromNode": "e2edb60649c1cbf5",
+      "fromSide": "bottom",
+      "toNode": "1d4890823c5867da",
+      "toSide": "top",
+      "label": "context+prompts请求生成python代码"
+    }
+  ],
+  "metadata": {}
+}

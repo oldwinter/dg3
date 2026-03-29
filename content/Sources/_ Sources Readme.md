@@ -1,9 +1,12 @@
 ---
-{"publish":true,"permalink":"/Sources/_ Sources Readme.md","title":"About Sources","created":"2022-06-22","modified":"2024-10-22","cssclasses":""}
+publish: true
+permalink: /Sources/_ Sources Readme.md
+title: About Sources
+created: 2022-06-22
+modified: 2024-10-22
 ---
 
-
-up:: [[Spaces/2-Area/知识管理/ACCESS 笔记组织法]]
+up:: [[ACCESS 笔记组织法]]
 
 ## 主要子文件夹说明
 
@@ -38,20 +41,20 @@ The beast-like Evernote Web Clipper approaches Gandalf trying to infect and corr
 
 **核心目的：**
 
-*   **理解与消化:** 用自己的话总结、转述原文的关键信息和论点。
-*   **记录思考:** 写下阅读过程中的疑问、评论、联想和启发。
-*   **建立连接:** 将文献中的观点与自己已有的知识卡片 (Permanent Notes) 联系起来。
-*   **方便溯源:** 记录完整的文献来源信息（作者、标题、年份、链接等）。
+- **理解与消化:** 用自己的话总结、转述原文的关键信息和论点。
+- **记录思考:** 写下阅读过程中的疑问、评论、联想和启发。
+- **建立连接:** 将文献中的观点与自己已有的知识卡片 (Permanent Notes) 联系起来。
+- **方便溯源:** 记录完整的文献来源信息（作者、标题、年份、链接等）。
 
 **与 Clippings 的区别：**
 
-*   Clippings 是原始内容的剪藏。
-*   Sources 是对原始内容进行**主动阅读和思考后**的产物，是用自己的话写成的笔记。
+- Clippings 是原始内容的剪藏。
+- Sources 是对原始内容进行**主动阅读和思考后**的产物，是用自己的话写成的笔记。
 
 **处理流程：**
 
-1.  阅读一篇文献（可能来自 Clippings 或其他地方）。
-2.  在此文件夹下创建对应的文献笔记。
-3.  在笔记中用自己的话总结要点，记录思考。
-4.  将文献笔记中提炼出的核心思想、新概念转化为 `Atlas/Cards/` 中的永久笔记。
-5.  在永久笔记和文献笔记之间建立链接。
+1. 阅读一篇文献（可能来自 Clippings 或其他地方）。
+2. 在此文件夹下创建对应的文献笔记。
+3. 在笔记中用自己的话总结要点，记录思考。
+4. 将文献笔记中提炼出的核心思想、新概念转化为 `Atlas/Cards/` 中的永久笔记。
+5. 在永久笔记和文献笔记之间建立链接。

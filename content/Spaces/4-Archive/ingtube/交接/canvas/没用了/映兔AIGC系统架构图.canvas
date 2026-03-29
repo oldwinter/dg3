@@ -1,0 +1,1008 @@
+{
+  "nodes": [
+    {
+      "type": "group",
+      "id": "3514c25ec69d74e5",
+      "styleAttributes": {},
+      "x": -920,
+      "y": 320,
+      "width": 1366,
+      "height": 2780,
+      "color": "3",
+      "label": "映兔AIGC技术架构"
+    },
+    {
+      "type": "group",
+      "id": "ca6551aecb63a38a",
+      "styleAttributes": {},
+      "x": -861,
+      "y": 940,
+      "width": 1242,
+      "height": 880,
+      "color": "5",
+      "label": "模型层"
+    },
+    {
+      "type": "group",
+      "id": "f1247e0a42fbe1b6",
+      "styleAttributes": {},
+      "x": -861,
+      "y": 2280,
+      "width": 1242,
+      "height": 780,
+      "color": "6",
+      "label": "数据层"
+    },
+    {
+      "type": "group",
+      "id": "9004589e0125f0b7",
+      "styleAttributes": {},
+      "x": -920,
+      "y": -300,
+      "width": 1366,
+      "height": 556,
+      "color": "#f98b8b",
+      "label": "映兔AIGC业务视图"
+    },
+    {
+      "type": "group",
+      "id": "ec8287b392ad9f25",
+      "styleAttributes": {},
+      "x": -843,
+      "y": 1016,
+      "width": 1193,
+      "height": 503,
+      "label": "Multimodal Input"
+    },
+    {
+      "type": "group",
+      "id": "182ef5bc74ef903b",
+      "styleAttributes": {},
+      "x": -861,
+      "y": 1860,
+      "width": 1242,
+      "height": 350,
+      "color": "#f57f7f",
+      "label": "算力层"
+    },
+    {
+      "type": "group",
+      "id": "6dc610e956f0b595",
+      "styleAttributes": {},
+      "x": -841,
+      "y": 2340,
+      "width": 1173,
+      "height": 360,
+      "label": "输入数据"
+    },
+    {
+      "type": "group",
+      "id": "b08ee58cc115315f",
+      "styleAttributes": {},
+      "x": -458,
+      "y": -240,
+      "width": 839,
+      "height": 454,
+      "label": "业务层"
+    },
+    {
+      "type": "group",
+      "id": "767b3ead044fa223",
+      "styleAttributes": {},
+      "x": -861,
+      "y": 392,
+      "width": 1242,
+      "height": 288,
+      "color": "2",
+      "label": "应用层"
+    },
+    {
+      "type": "group",
+      "id": "2e2e4fc161495b2b",
+      "styleAttributes": {},
+      "x": -861,
+      "y": 740,
+      "width": 1242,
+      "height": 141,
+      "color": "4",
+      "label": "框架层"
+    },
+    {
+      "type": "group",
+      "id": "41cd49ade263fb83",
+      "styleAttributes": {},
+      "x": -861,
+      "y": -240,
+      "width": 324,
+      "height": 454,
+      "label": "服务对象"
+    },
+    {
+      "type": "group",
+      "id": "b28fc6b3d7997254",
+      "styleAttributes": {},
+      "x": -841,
+      "y": 2760,
+      "width": 1173,
+      "height": 120,
+      "label": "数据中间件"
+    },
+    {
+      "type": "group",
+      "id": "cb3ce18f8ca9c068",
+      "styleAttributes": {},
+      "x": -843,
+      "y": 1914,
+      "width": 1193,
+      "height": 106,
+      "label": "云平台"
+    },
+    {
+      "type": "group",
+      "id": "622e37483b521e4b",
+      "styleAttributes": {},
+      "x": -405,
+      "y": 1077,
+      "width": 301,
+      "height": 416,
+      "label": "Image"
+    },
+    {
+      "type": "group",
+      "id": "26934e591dda1f38",
+      "styleAttributes": {},
+      "x": -841,
+      "y": 2075,
+      "width": 1191,
+      "height": 105,
+      "label": "硬件基础设施"
+    },
+    {
+      "type": "group",
+      "id": "71af4b6054b64892",
+      "styleAttributes": {},
+      "x": -820,
+      "y": 1077,
+      "width": 300,
+      "height": 416,
+      "label": "Text"
+    },
+    {
+      "type": "group",
+      "id": "bdf776df1a59e0c0",
+      "styleAttributes": {},
+      "x": -225,
+      "y": 1609,
+      "width": 575,
+      "height": 211,
+      "label": "LLM - 开源"
+    },
+    {
+      "type": "group",
+      "id": "7c137a46bb92d3f1",
+      "styleAttributes": {},
+      "x": -843,
+      "y": 2940,
+      "width": 1173,
+      "height": 100,
+      "label": "持久化"
+    },
+    {
+      "type": "group",
+      "id": "668ffba0a2f04604",
+      "styleAttributes": {},
+      "x": -841,
+      "y": 1609,
+      "width": 577,
+      "height": 191,
+      "label": "LLM - 商业版"
+    },
+    {
+      "type": "group",
+      "id": "fc734cf48ae9fe84",
+      "styleAttributes": {},
+      "x": -20,
+      "y": 2388,
+      "width": 316,
+      "height": 278,
+      "label": "AI相关"
+    },
+    {
+      "type": "group",
+      "id": "76564daeb572de4f",
+      "styleAttributes": {},
+      "x": -433,
+      "y": -142,
+      "width": 291,
+      "height": 295,
+      "label": "AI驱动产品智能化"
+    },
+    {
+      "type": "group",
+      "id": "1b1a2a20e2805930",
+      "styleAttributes": {},
+      "x": -403,
+      "y": 2393,
+      "width": 301,
+      "height": 268,
+      "label": "第三方"
+    },
+    {
+      "type": "group",
+      "id": "533b4c08d9e9741e",
+      "styleAttributes": {},
+      "x": -818,
+      "y": 2393,
+      "width": 300,
+      "height": 268,
+      "label": "自有数据"
+    },
+    {
+      "type": "group",
+      "id": "c94b8e05d5accce2",
+      "styleAttributes": {},
+      "x": -13,
+      "y": 1077,
+      "width": 314,
+      "height": 191,
+      "label": "Speech"
+    },
+    {
+      "type": "group",
+      "id": "66d76477444c7c99",
+      "styleAttributes": {},
+      "x": -43,
+      "y": -142,
+      "width": 291,
+      "height": 198,
+      "label": "内容营销AIGC"
+    },
+    {
+      "type": "group",
+      "id": "c5a522406c9191cd",
+      "styleAttributes": {},
+      "x": -13,
+      "y": 1311,
+      "width": 314,
+      "height": 182,
+      "label": "Other"
+    },
+    {
+      "type": "text",
+      "text": "## NVIDIA",
+      "id": "c848465f6130ef08",
+      "styleAttributes": {},
+      "x": -726,
+      "y": 2100,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## AMD",
+      "id": "94974257c83cf0dd",
+      "styleAttributes": {},
+      "x": -175,
+      "y": 2100,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Azure OpenAI",
+      "id": "63171190b35afa21",
+      "styleAttributes": {},
+      "x": -814,
+      "y": 1644,
+      "width": 250,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "f132efb777b9dc6e",
+      "type": "text",
+      "text": "## Claude 3.5",
+      "styleAttributes": {},
+      "x": -814,
+      "y": 1720,
+      "width": 252,
+      "height": 60
+    },
+    {
+      "type": "file",
+      "file": "ingtube/Inbox/empty/向量数据库 vectorstore 选型.md",
+      "id": "8fec33362a573354",
+      "styleAttributes": {},
+      "x": -2640,
+      "y": 2280,
+      "width": 400,
+      "height": 868
+    },
+    {
+      "type": "text",
+      "text": "## OSS对象存储",
+      "id": "a942ac96ee2d1519",
+      "styleAttributes": {},
+      "x": -386,
+      "y": 2960,
+      "width": 246,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Vector数据库",
+      "id": "66b894bad9408cb0",
+      "styleAttributes": {},
+      "x": 42,
+      "y": 2960,
+      "width": 252,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## MySQL数据库",
+      "id": "4566317e7ffbf374",
+      "styleAttributes": {},
+      "x": -814,
+      "y": 2960,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔AIGC技术架构-数据层.md",
+      "id": "684b331897878cf9",
+      "styleAttributes": {},
+      "x": -1960,
+      "y": 2280,
+      "width": 600,
+      "height": 868
+    },
+    {
+      "type": "text",
+      "text": "## 阿里云",
+      "id": "8a9de2c87568d5ff",
+      "styleAttributes": {},
+      "x": -726,
+      "y": 1940,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Azure",
+      "id": "05f8ba2dced60bdc",
+      "styleAttributes": {},
+      "x": -175,
+      "y": 1940,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "file",
+      "file": "ingtube/Inbox/empty/LangChain.md",
+      "id": "ddf1a6f89e96e327",
+      "styleAttributes": {},
+      "x": -2640,
+      "y": 710,
+      "width": 400,
+      "height": 230
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔AIGC技术架构-算力层.md",
+      "id": "81b4063a5916e60b",
+      "styleAttributes": {},
+      "x": -1960,
+      "y": 1800,
+      "width": 600,
+      "height": 400
+    },
+    {
+      "type": "file",
+      "file": "ingtube/Inbox/empty/大语言模型列表 - LLM.md",
+      "id": "b23908d9cb53562d",
+      "styleAttributes": {},
+      "x": -2640,
+      "y": 1088,
+      "width": 400,
+      "height": 586
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔AIGC技术架构-基础框架层.md",
+      "id": "891916bd02be3ee7",
+      "styleAttributes": {},
+      "x": -1967,
+      "y": 710,
+      "width": 607,
+      "height": 230
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔AIGC技术架构-应用层.md",
+      "id": "782239f13848ad62",
+      "styleAttributes": {},
+      "x": -1967,
+      "y": 305,
+      "width": 607,
+      "height": 313
+    },
+    {
+      "type": "text",
+      "text": "## 商家",
+      "id": "65266450d97a43ba",
+      "styleAttributes": {},
+      "x": -785,
+      "y": -167,
+      "width": 178,
+      "height": 60
+    },
+    {
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔AIGC技术架构-模型层.md",
+      "id": "1b7c37038c6093f4",
+      "styleAttributes": {},
+      "x": -1960,
+      "y": 1088,
+      "width": 600,
+      "height": 586
+    },
+    {
+      "type": "text",
+      "text": "# 图示图层说明\n\n## 连线代表一种广义的关系，可能是数据、网络、功能、解释等等各种意思\n\n## 红色方框，红色连线，代表当前[[2023-08-25]]业务聚焦的核心点\n\n## 绿色方框，代表展望，或等待官方发布后，再做持续的技术跟进。\n\n\n## 其他方框颜色：暂时没有实际意义，主要为了做视觉上的美化和区分。",
+      "id": "67c2a8ae6043b62c",
+      "styleAttributes": {},
+      "x": -2640,
+      "y": -307,
+      "width": 480,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "# 分层思路说明\n\n## 业务层：high level视角的描述，可以认为是一个可对外发布的核心feature描述。\n\n## 应用层：基于模型层的能力，概括出来的直观的『元功能』项，基于这些元功能，组成我们的业务层的特性\n\n## 模型层： 特指LLM大模型提供的API视角的models定义。\n\n## 算力层：当我们要自建LLM进行训练，需要耗费大量的GPU资源。\n\n## 数据层：业务功能角度的数据输入，及其使用的持久化存储。\n\n",
+      "id": "87118a6f36627bc4",
+      "styleAttributes": {},
+      "x": -1967,
+      "y": -307,
+      "width": 607,
+      "height": 560,
+      "color": "1"
+    },
+    {
+      "id": "1ef599aca09a5f88",
+      "type": "text",
+      "text": "## LangSmith",
+      "styleAttributes": {},
+      "x": 103,
+      "y": 778,
+      "width": 247,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 爬虫平台",
+      "id": "aec2b5abb5349d6e",
+      "styleAttributes": {},
+      "x": -369,
+      "y": 2438,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 达人平台",
+      "id": "07c6fd02cf5f6815",
+      "styleAttributes": {},
+      "x": -369,
+      "y": 2556,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Fine-tuning",
+      "id": "a26d051e4b218bd7",
+      "styleAttributes": {},
+      "x": -800,
+      "y": 1305,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Image generation",
+      "id": "760c88bbe7d6ead5",
+      "styleAttributes": {},
+      "x": -389,
+      "y": 1110,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Midjourney",
+      "id": "1b507c30dce38fab",
+      "styleAttributes": {},
+      "x": -389,
+      "y": 1208,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Embeddings",
+      "id": "6310d8c18e400084",
+      "styleAttributes": {},
+      "x": -800,
+      "y": 1208,
+      "width": 250,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## Embeddings数据",
+      "id": "52df1a5237947394",
+      "styleAttributes": {},
+      "x": 17,
+      "y": 2496,
+      "width": 258,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## odps",
+      "id": "251a39247d838490",
+      "styleAttributes": {},
+      "x": 44,
+      "y": 2790,
+      "width": 252,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Fine-tuning数据集",
+      "id": "a9be60bbc9e2cdd1",
+      "styleAttributes": {},
+      "x": 17,
+      "y": 2408,
+      "width": 258,
+      "height": 58
+    },
+    {
+      "type": "text",
+      "text": "## Prompts指令中心",
+      "id": "d1376d763a00115b",
+      "styleAttributes": {},
+      "x": 17,
+      "y": 2586,
+      "width": 258,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Moderation",
+      "id": "6fd974e4c3a37f22",
+      "styleAttributes": {},
+      "x": -800,
+      "y": 1403,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Plugins",
+      "id": "a11d01253757ff73",
+      "styleAttributes": {},
+      "x": 7,
+      "y": 1335,
+      "width": 250,
+      "height": 55,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## AutoGPT",
+      "id": "43e26ec1b3636f2a",
+      "styleAttributes": {},
+      "x": 7,
+      "y": 1417,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## LLaMA",
+      "id": "3394605810cd5d8a",
+      "styleAttributes": {},
+      "x": -205,
+      "y": 1644,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "bf99e077f48d1fb9",
+      "type": "text",
+      "text": "## QWEN",
+      "styleAttributes": {},
+      "x": -205,
+      "y": 1720,
+      "width": 249,
+      "height": 50,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## 文心大模型",
+      "id": "a11b8452698b7432",
+      "styleAttributes": {},
+      "x": -530,
+      "y": 1644,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## DALL·E 2",
+      "id": "1f5c3a9be005f17c",
+      "styleAttributes": {},
+      "x": -389,
+      "y": 1306,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## Chat - Prompts",
+      "id": "b3a7a9fcf4bd0eaf",
+      "styleAttributes": {},
+      "x": -800,
+      "y": 1111,
+      "width": 250,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## Stable Diffusion",
+      "id": "ee19bd9833eaf679",
+      "styleAttributes": {},
+      "x": -389,
+      "y": 1403,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "### 相似博主推荐",
+      "id": "e0d6099b115776b0",
+      "styleAttributes": {},
+      "x": -413,
+      "y": -117,
+      "width": 250,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## Whisper",
+      "id": "e72c36ca0bad346f",
+      "styleAttributes": {},
+      "x": 7,
+      "y": 1110,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## TTS",
+      "id": "0a4c6a5c26a0aa69",
+      "styleAttributes": {},
+      "x": 7,
+      "y": 1196,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 智能爬虫",
+      "id": "ee34577afd5514bd",
+      "styleAttributes": {},
+      "x": 66,
+      "y": 558,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 视频生成",
+      "id": "c53e88693582b067",
+      "styleAttributes": {},
+      "x": 66,
+      "y": 438,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "88882e45b45e59fb",
+      "type": "text",
+      "text": "## Gemma",
+      "styleAttributes": {},
+      "x": 80,
+      "y": 1720,
+      "width": 250,
+      "height": 50
+    },
+    {
+      "type": "text",
+      "text": "## ChatGLM",
+      "id": "fdec5d80fd0a6693",
+      "styleAttributes": {},
+      "x": 80,
+      "y": 1644,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "id": "a24fd8de6c1ef81b",
+      "type": "file",
+      "file": "Spaces/4-Archive/ingtube/交接/canvas/没用了/映兔AIGC应用架构图.canvas",
+      "styleAttributes": {},
+      "x": 600,
+      "y": 283,
+      "width": 920,
+      "height": 430
+    },
+    {
+      "type": "text",
+      "text": "## 博主",
+      "id": "6b8451713f65e8b5",
+      "styleAttributes": {},
+      "x": -785,
+      "y": -87,
+      "width": 178,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "### SEO优化",
+      "id": "38c192fe651b0a80",
+      "styleAttributes": {},
+      "x": -22,
+      "y": -24,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "### AIGC辅助创作",
+      "id": "d942f6d5fadfd914",
+      "styleAttributes": {},
+      "x": -23,
+      "y": -122,
+      "width": 250,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## 内部赋能",
+      "id": "b4d63e8b3f0af6f4",
+      "styleAttributes": {},
+      "x": -785,
+      "y": 73,
+      "width": 205,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "### AI辅助审核审稿",
+      "id": "acf227ebbf07dead",
+      "styleAttributes": {},
+      "x": -413,
+      "y": -22,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 小二",
+      "id": "99a2bf0a5a9ab24c",
+      "styleAttributes": {},
+      "x": -785,
+      "y": -7,
+      "width": 178,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "### AI智能客服机器人",
+      "id": "aa1a9236d40c9ecd",
+      "styleAttributes": {},
+      "x": -413,
+      "y": 73,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 总结概括",
+      "id": "f4225a6decd720b9",
+      "styleAttributes": {},
+      "x": -806,
+      "y": 558,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## [[文本生成]]",
+      "id": "332d2931923ffaf1",
+      "styleAttributes": {},
+      "x": -806,
+      "y": 438,
+      "width": 250,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## Langchain",
+      "id": "a9574982870487a7",
+      "styleAttributes": {},
+      "x": -163,
+      "y": 778,
+      "width": 250,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## Python & FASTAPI",
+      "id": "2f8ddd826167b089",
+      "styleAttributes": {},
+      "x": -809,
+      "y": 778,
+      "width": 333,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## llama_index",
+      "id": "a9f8dcf5a7530712",
+      "styleAttributes": {},
+      "x": -440,
+      "y": 778,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 推荐系统",
+      "id": "bc1bfbdd6f880e64",
+      "styleAttributes": {},
+      "x": -370,
+      "y": 558,
+      "width": 250,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "## 图片生成",
+      "id": "02ad955ea085f7d2",
+      "styleAttributes": {},
+      "x": -370,
+      "y": 438,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 用户上传",
+      "id": "bd370e56033ca770",
+      "styleAttributes": {},
+      "x": -779,
+      "y": 2556,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## flink",
+      "id": "7b9cee02bfc478a5",
+      "styleAttributes": {},
+      "x": -812,
+      "y": 2790,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "## 人工标注",
+      "id": "2d1a596057671f52",
+      "styleAttributes": {},
+      "x": -779,
+      "y": 2436,
+      "width": 250,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "bcb8bc91e2e03676",
+      "fromNode": "9004589e0125f0b7",
+      "fromSide": "bottom",
+      "toNode": "3514c25ec69d74e5",
+      "toSide": "top"
+    },
+    {
+      "id": "100ac32dc16f068a",
+      "fromNode": "767b3ead044fa223",
+      "fromSide": "bottom",
+      "toNode": "2e2e4fc161495b2b",
+      "toSide": "top"
+    },
+    {
+      "id": "216b1cc580d79a85",
+      "fromNode": "2e2e4fc161495b2b",
+      "fromSide": "bottom",
+      "toNode": "ca6551aecb63a38a",
+      "toSide": "top"
+    },
+    {
+      "id": "932798084e32730c",
+      "fromNode": "b23908d9cb53562d",
+      "fromSide": "right",
+      "toNode": "1b7c37038c6093f4",
+      "toSide": "left"
+    },
+    {
+      "id": "4e9593854587cdaa",
+      "fromNode": "ddf1a6f89e96e327",
+      "fromSide": "right",
+      "toNode": "891916bd02be3ee7",
+      "toSide": "left"
+    },
+    {
+      "id": "e837f5a3eb8e8034",
+      "fromNode": "67c2a8ae6043b62c",
+      "fromSide": "right",
+      "toNode": "87118a6f36627bc4",
+      "toSide": "left"
+    },
+    {
+      "id": "586206d6a9e2770e",
+      "fromNode": "8fec33362a573354",
+      "fromSide": "right",
+      "toNode": "684b331897878cf9",
+      "toSide": "left"
+    },
+    {
+      "id": "1d8a958e44bed3ee",
+      "fromNode": "ca6551aecb63a38a",
+      "fromSide": "bottom",
+      "toNode": "182ef5bc74ef903b",
+      "toSide": "top"
+    },
+    {
+      "id": "e2875988d6f9f50c",
+      "fromNode": "182ef5bc74ef903b",
+      "fromSide": "bottom",
+      "toNode": "f1247e0a42fbe1b6",
+      "toSide": "top"
+    },
+    {
+      "id": "66960a6c49e35613",
+      "styleAttributes": {},
+      "fromNode": "767b3ead044fa223",
+      "fromSide": "right",
+      "toNode": "a24fd8de6c1ef81b",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {}
+}

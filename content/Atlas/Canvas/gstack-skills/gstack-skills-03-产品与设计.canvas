@@ -1,0 +1,327 @@
+{
+	"nodes": [
+		{
+			"id": "g_nav001",
+			"type": "group",
+			"x": -1560,
+			"y": -280,
+			"width": 3440,
+			"height": 240,
+			"label": "gstack-skills-03｜产品与设计",
+			"color": "6"
+		},
+		{
+			"id": "g_arch002",
+			"type": "group",
+			"x": -1560,
+			"y": 20,
+			"width": 1900,
+			"height": 1480,
+			"label": "架构区｜按角色分层",
+			"color": "5"
+		},
+		{
+			"id": "g_flow003",
+			"type": "group",
+			"x": 420,
+			"y": 20,
+			"width": 1460,
+			"height": 1480,
+			"label": "流程区｜常见使用顺序",
+			"color": "4"
+		},
+		{
+			"id": "g_note004",
+			"type": "group",
+			"x": -1560,
+			"y": 1560,
+			"width": 3440,
+			"height": 420,
+			"label": "注意事项｜相邻域、误用提醒、跳转",
+			"color": "2"
+		},
+		{
+			"id": "t_title005",
+			"type": "text",
+			"text": "产品与设计\n在开工前审 scope、架构和设计质量，避免方向性返工。",
+			"x": -1480,
+			"y": -220,
+			"width": 920,
+			"height": 140,
+			"color": "6"
+		},
+		{
+			"id": "t_count006",
+			"type": "text",
+			"text": "覆盖 skills：5\n定位：在开工前审 scope、架构和设计质量，避免方向性返工。",
+			"x": -520,
+			"y": -220,
+			"width": 620,
+			"height": 140,
+			"color": "6"
+		},
+		{
+			"id": "f_home007",
+			"type": "file",
+			"file": "gstack-skills-00-总览.canvas",
+			"x": 700,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "6"
+		},
+		{
+			"id": "f_index008",
+			"type": "file",
+			"file": "gstack-skills-总索引.md",
+			"x": 1180,
+			"y": -220,
+			"width": 420,
+			"height": 160,
+			"color": "6"
+		},
+		{
+			"id": "t_nav009",
+			"type": "text",
+			"text": "导航\n左：总览\n右：文字索引",
+			"x": 1620,
+			"y": -220,
+			"width": 180,
+			"height": 160,
+			"color": "6"
+		},
+		{
+			"id": "t_head010",
+			"type": "text",
+			"text": "计划评审",
+			"x": -1480,
+			"y": 100,
+			"width": 860,
+			"height": 90,
+			"color": "5"
+		},
+		{
+			"id": "t_skill011",
+			"type": "text",
+			"text": "plan-ceo-review\n从产品和战略视角挑战方案，看看 scope 是否够大或该收。\n触发：想重新思考方案边界和 ambition 时。",
+			"x": -1480,
+			"y": 220,
+			"width": 860,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill012",
+			"type": "text",
+			"text": "plan-eng-review\n从工程视角锁定架构、数据流和测试方案。\n触发：计划已经成形，想在编码前做工程评审时。",
+			"x": -1480,
+			"y": 420,
+			"width": 860,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill013",
+			"type": "text",
+			"text": "plan-design-review\n从设计和体验角度审方案本身。\n触发：计划里有明显 UI/UX 成分，想在实现前打磨时。",
+			"x": -1480,
+			"y": 620,
+			"width": 860,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_head014",
+			"type": "text",
+			"text": "设计系统与视觉 QA",
+			"x": -580,
+			"y": 100,
+			"width": 860,
+			"height": 90,
+			"color": "5"
+		},
+		{
+			"id": "t_skill015",
+			"type": "text",
+			"text": "design-consultation\n建立设计系统、视觉语言和 DESIGN.md。\n触发：要从零规划产品视觉体系时。",
+			"x": -580,
+			"y": 220,
+			"width": 860,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_skill016",
+			"type": "text",
+			"text": "design-review\n做设计 QA，找视觉和交互问题并打磨。\n触发：页面已经有实现，想审美观、间距和一致性时。",
+			"x": -580,
+			"y": 420,
+			"width": 860,
+			"height": 170,
+			"color": "5"
+		},
+		{
+			"id": "t_ftitle017",
+			"type": "text",
+			"text": "本域主线\nplan-ceo-review → plan-design-review → plan-eng-review → design-consultation → design-review",
+			"x": 500,
+			"y": 100,
+			"width": 1300,
+			"height": 200,
+			"color": "4"
+		},
+		{
+			"id": "t_flow018",
+			"type": "text",
+			"text": "plan-ceo-review\n从产品和战略视角挑战方案",
+			"x": 520,
+			"y": 360,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow019",
+			"type": "text",
+			"text": "plan-design-review\n从设计和体验角度审方案本身。",
+			"x": 520,
+			"y": 500,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow021",
+			"type": "text",
+			"text": "plan-eng-review\n从工程视角锁定架构、数据流和测试方案。",
+			"x": 520,
+			"y": 640,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow023",
+			"type": "text",
+			"text": "design-consultation\n建立设计系统、视觉语言和 DESIGN.md。",
+			"x": 520,
+			"y": 780,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_flow025",
+			"type": "text",
+			"text": "design-review\n做设计 QA",
+			"x": 520,
+			"y": 920,
+			"width": 1140,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "t_decision027",
+			"type": "text",
+			"text": "何时选 A / B\n- 想扩 scope：plan-ceo-review\n- 想锁架构：plan-eng-review\n- 想看视觉一致性：plan-design-review / design-review",
+			"x": 500,
+			"y": 1180,
+			"width": 1300,
+			"height": 220,
+			"color": "4"
+		},
+		{
+			"id": "t_adj028",
+			"type": "text",
+			"text": "相邻域推荐\n- 元技能与规划协作\n- 实现与调试",
+			"x": -1480,
+			"y": 1640,
+			"width": 820,
+			"height": 240,
+			"color": "2"
+		},
+		{
+			"id": "t_warn029",
+			"type": "text",
+			"text": "常见误用提醒\n- plan-* 是开工前用，不是收尾时补。\n- design-review 偏验收，design-consultation 偏系统设计。",
+			"x": -620,
+			"y": 1640,
+			"width": 980,
+			"height": 240,
+			"color": "2"
+		},
+		{
+			"id": "f_adj030",
+			"type": "file",
+			"file": "gstack-skills-01-元技能与规划协作.canvas",
+			"x": 500,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "2"
+		},
+		{
+			"id": "f_adj031",
+			"type": "file",
+			"file": "gstack-skills-04-实现与调试.canvas",
+			"x": 980,
+			"y": 1650,
+			"width": 420,
+			"height": 180,
+			"color": "2"
+		},
+		{
+			"id": "t_jump032",
+			"type": "text",
+			"text": "跳转建议\n需要更完整的文字说明时，打开总索引；\n遇到跨域问题时，优先沿相邻域跳转。",
+			"x": 1460,
+			"y": 1640,
+			"width": 320,
+			"height": 240,
+			"color": "2"
+		}
+	],
+	"edges": [
+		{
+			"id": "e_flow020",
+			"fromNode": "t_flow018",
+			"fromSide": "bottom",
+			"toNode": "t_flow019",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"label": "主线",
+			"color": "4"
+		},
+		{
+			"id": "e_flow022",
+			"fromNode": "t_flow019",
+			"fromSide": "bottom",
+			"toNode": "t_flow021",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "e_flow024",
+			"fromNode": "t_flow021",
+			"fromSide": "bottom",
+			"toNode": "t_flow023",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		},
+		{
+			"id": "e_flow026",
+			"fromNode": "t_flow023",
+			"fromSide": "bottom",
+			"toNode": "t_flow025",
+			"toSide": "top",
+			"toEnd": "arrow",
+			"color": "4"
+		}
+	],
+	"metadata": {
+		"version": "1.0-1.0",
+		"frontmatter": {}
+	}
+}

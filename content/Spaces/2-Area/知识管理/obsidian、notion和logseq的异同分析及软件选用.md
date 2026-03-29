@@ -1,7 +1,10 @@
 ---
-{"publish":true,"permalink":"/Spaces/2-Area/知识管理/obsidian、notion和logseq的异同分析及软件选用.md","title":"obsidian、notion和logseq的异同分析及软件选用","created":"2023-02-18","modified":"2023-03-14","cssclasses":""}
+publish: true
+permalink: /Spaces/2-Area/知识管理/obsidian、notion和logseq的异同分析及软件选用.md
+title: obsidian、notion和logseq的异同分析及软件选用
+created: 2023-02-18
+modified: 2023-03-14
 ---
-
 
 - obsidian的第一公民，其实就是一个个带有metadata的md文件。
 - notion的第一公民，既有一个个block，也有一个个带有metadata的page组成的database。

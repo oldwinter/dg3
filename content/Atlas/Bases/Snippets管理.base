@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.ext.containsAny("md")
+    - file.name.contains("snippet")
+views:
+  - type: table
+    name: Snippets
+    order:
+      - file.name
+      - file.folder
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC

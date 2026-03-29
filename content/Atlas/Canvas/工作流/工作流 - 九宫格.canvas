@@ -1,0 +1,98 @@
+{
+  "edges": [],
+  "metadata": {
+    "version": "1.0-1.0"
+  },
+  "nodes": [
+    {
+      "id": "d553e1432024e80a",
+      "styleAttributes": {},
+      "text": "## 查找搜索\n\n[[个人查找搜索系统]]",
+      "type": "text",
+      "x": 228,
+      "y": -605,
+      "width": 400,
+      "height": 364
+    },
+    {
+      "id": "156e8a65ee3ca391",
+      "styleAttributes": {},
+      "text": "## 知识笔记\n\n[[个人知识笔记系统]]\n\n[[Obsidian]]\n",
+      "type": "text",
+      "x": 228,
+      "y": -186,
+      "width": 400,
+      "height": 364
+    },
+    {
+      "id": "bb9fb25085ee6d22",
+      "styleAttributes": {},
+      "text": "## 习惯与工作流\n\n[[∑ 工作流与SOP]]",
+      "type": "text",
+      "x": 228,
+      "y": 237,
+      "width": 400,
+      "height": 364
+    },
+    {
+      "id": "483436018044062f",
+      "styleAttributes": {},
+      "text": "## 信息输入\n\n[[个人信息管理系统]]\n\n[[滴答清单]]\n\n[[Cubox]]",
+      "type": "text",
+      "x": 687,
+      "y": -605,
+      "width": 400,
+      "height": 364
+    },
+    {
+      "id": "566dffeac5060028",
+      "styleAttributes": {},
+      "text": "## Inbox\n\n[[一元化收集]]\n\n[[滴答清单]]\n",
+      "type": "text",
+      "x": 687,
+      "y": -186,
+      "width": 400,
+      "height": 364
+    },
+    {
+      "id": "ec5ad58650429b9b",
+      "styleAttributes": {},
+      "text": "## 任务管理\n\n[[个人任务管理系统]]\n\n[[滴答清单]]",
+      "type": "text",
+      "x": 687,
+      "y": 237,
+      "width": 400,
+      "height": 364
+    },
+    {
+      "id": "f4aa50b45e25c39f",
+      "styleAttributes": {},
+      "text": "## 资源管理\n[[个人资源管理系统]]\n\n[[阿里云盘]]  \n[[夸克网盘]]  \n[[Google Drive]]",
+      "type": "text",
+      "x": 1154,
+      "y": -605,
+      "width": 400,
+      "height": 364
+    },
+    {
+      "id": "d4fde38535bcd8a4",
+      "styleAttributes": {},
+      "text": "## 共享输出\n[[个人输出发布系统]]\n\n[[Notion]]",
+      "type": "text",
+      "x": 1154,
+      "y": -186,
+      "width": 400,
+      "height": 364
+    },
+    {
+      "id": "9e90ea9868fc29e2",
+      "styleAttributes": {},
+      "text": "## 高效学习\n\n[[个人高效学习系统]]\n\n[[Anki]]",
+      "type": "text",
+      "x": 1154,
+      "y": 237,
+      "width": 400,
+      "height": 364
+    }
+  ]
+}

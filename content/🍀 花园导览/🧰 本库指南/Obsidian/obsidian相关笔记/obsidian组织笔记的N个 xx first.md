@@ -14,17 +14,17 @@ publish: true
 
 ##
 
-- [[🍀 花园导览/🧰 本库指南/Tutorials/链接优先\|link first]]
-	- 遵循原子化笔记的原则的时候，就会天然地产生很多link。
-- [[Cards/local first]]
-- [[Cards/folder first]]
-- [[Cards/dailynote first]]
-- [[Cards/topic first]]
-	- 白板[[Canvas]]的可能应用场景之一
-- [[Cards/architect first]]
-	- MOC文件的自上而下用法。
-- [[Cards/action first]]
-	- [[Cards/Spaces]]
+- [[链接优先|link first]]
+  - 遵循原子化笔记的原则的时候，就会天然地产生很多link。
+- [[local first]]
+- [[folder first]]
+- [[dailynote first]]
+- [[topic first]]
+  - 白板[[Canvas]]的可能应用场景之一
+- [[architect first]]
+  - MOC文件的自上而下用法。
+- [[action first]]
+  - [[Spaces]]
 
 **这些“first”理念并非相互排斥，而是可以融合的。**
 
