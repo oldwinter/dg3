@@ -143,6 +143,7 @@ async function startWatching(
   }
 
   const watcher = chokidar.watch(".", {
+    awaitWriteFinish: { stabilityThreshold: 250 },
     persistent: true,
     cwd: argv.directory,
     ignoreInitial: true,
@@ -151,16 +152,19 @@ async function startWatching(
   const changes: ChangeEvent[] = []
   watcher
     .on("add", (fp) => {
+      fp = toPosixPath(fp)
       if (buildData.ignored(fp)) return
       changes.push({ path: fp as FilePath, type: "add" })
       void rebuild(changes, clientRefresh, buildData)
     })
     .on("change", (fp) => {
+      fp = toPosixPath(fp)
       if (buildData.ignored(fp)) return
       changes.push({ path: fp as FilePath, type: "change" })
       void rebuild(changes, clientRefresh, buildData)
     })
     .on("unlink", (fp) => {
+      fp = toPosixPath(fp)
       if (buildData.ignored(fp)) return
       changes.push({ path: fp as FilePath, type: "delete" })
       void rebuild(changes, clientRefresh, buildData)

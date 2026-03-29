@@ -228,6 +228,29 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       \`
       document.head.appendChild(matomoScript);
     `)
+  } else if (cfg.analytics?.provider === "vercel") {
+    /**
+     * script from {@link https://vercel.com/docs/analytics/quickstart?framework=html#add-the-script-tag-to-your-site|Vercel Docs}
+     */
+    componentResources.beforeDOMLoaded.push(`
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    `)
+    componentResources.afterDOMLoaded.push(`
+      const vercelInsightsScript = document.createElement("script")
+      vercelInsightsScript.src = "/_vercel/insights/script.js"
+      vercelInsightsScript.defer = true
+      document.head.appendChild(vercelInsightsScript)
+    `)
+  } else if (cfg.analytics?.provider === "rybbit") {
+    componentResources.afterDOMLoaded.push(`
+      const rybbitScript = document.createElement("script");
+      rybbitScript.src = "${cfg.analytics.host ?? "https://app.rybbit.io"}/api/script.js";
+      rybbitScript.setAttribute("data-site-id", "${cfg.analytics.siteId}");
+      rybbitScript.async = true;
+      rybbitScript.defer = true;
+
+      document.head.appendChild(rybbitScript);
+    `)
   }
 
   if (cfg.enableSPA) {
