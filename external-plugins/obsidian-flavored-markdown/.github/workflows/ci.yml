@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+    tags: ["v*"]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run checks
+        run: npm run check
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify dist externals
+        run: |
+          node -e "
+          const fs = require('fs');
+          const dist = 'dist/index.js';
+          if (!fs.existsSync(dist)) process.exit(0);
+          const pkg = JSON.parse(fs.readFileSync('package.json', 'utf-8'));
+          const peerDeps = Object.keys(pkg.peerDependencies || {});
+          const builtins = new Set(['assert','buffer','child_process','cluster','console','constants','crypto','dgram','dns','domain','events','fs','http','http2','https','inspector','module','net','os','path','perf_hooks','process','punycode','querystring','readline','repl','stream','string_decoder','sys','timers','tls','trace_events','tty','url','util','v8','vm','wasi','worker_threads','zlib']);
+          const shared = ['@quartz-community/','preact','@jackyzha0/quartz','vfile'];
+          const content = fs.readFileSync(dist, 'utf-8');
+          const re = /^\s*(?:import\s+.*\s+from|export\s+.*\s+from)\s+[\"']([^\"'./][^\"']*)[\"']/gm;
+          const unexpected = new Set();
+          for (const m of content.matchAll(re)) {
+            const s = m[1];
+            if (s.startsWith('node:')) continue;
+            const bare = s.includes('/') && s.startsWith('@') ? s.split('/').slice(0,2).join('/') : s.split('/')[0];
+            if (builtins.has(bare)) continue;
+            if (shared.some(p => s.startsWith(p))) continue;
+            if (peerDeps.some(d => s === d || s.startsWith(d + '/'))) continue;
+            unexpected.add(s);
+          }
+          if (unexpected.size > 0) {
+            console.error('ERROR: dist/ has unbundled external imports that will fail at runtime:');
+            for (const u of unexpected) console.error('  - ' + u);
+            console.error('Move these from dependencies to devDependencies so tsup bundles them.');
+            process.exit(1);
+          }
+          console.log('dist/ externals verified: all imports are bundled or allowlisted.');
+          "
+
+  publish:
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    needs: [test]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Publish
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
