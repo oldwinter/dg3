@@ -36,7 +36,7 @@ Quartz is designed first and foremost as a tool for publishing [digital gardens]
 At its core, Quartz is designed to be easy to use enough for non-technical people to get going but also powerful enough that senior developers can tweak it to work how they'd like it to work.
 
 1. If you like the default configuration of Quartz and just want to change the content, the only thing that you need to change is the contents of the `content` folder.
-2. If you'd like to make basic configuration tweaks but don't want to edit source code, one can tweak the plugins and components in `quartz.config.ts` and `quartz.layout.ts` in a guided manner to their liking.
+2. If you'd like to make basic configuration tweaks but don't want to edit source code, one can tweak the plugins and components in `quartz.config.yaml` in a guided manner to their liking.
 3. If you'd like to tweak the actual source code of the underlying plugins, components, or even build process, Quartz purposefully ships its full source code to the end user to allow customization at this level too.
 
 Most software either confines you to either

@@ -4,7 +4,7 @@ import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/re
 import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { unescapeHTML } from "../util/escape"
-import { CustomOgImagesEmitterName } from "../plugins/emitters/ogImage"
+import { CustomOgImagesEmitterName } from "../../.quartz/plugins"
 export default (() => {
   const Head: QuartzComponent = ({
     cfg,
@@ -35,6 +35,44 @@ export default (() => {
       (e) => e.name === CustomOgImagesEmitterName,
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
+    const readerModePersistenceScript = `
+      (() => {
+        const storageKey = "reader-mode"
+
+        const applyStoredReaderMode = () => {
+          try {
+            const enabled = window.localStorage.getItem(storageKey) === "true"
+            document.documentElement.setAttribute("reader-mode", enabled ? "on" : "off")
+          } catch {}
+        }
+
+        const bindReaderModeToggle = () => {
+          const toggle = document.querySelector(".readermode")
+          if (!(toggle instanceof HTMLElement) || toggle.dataset.persistenceBound === "true") {
+            return
+          }
+
+          toggle.dataset.persistenceBound = "true"
+          toggle.addEventListener("click", () => {
+            window.setTimeout(() => {
+              try {
+                const enabled = document.documentElement.getAttribute("reader-mode") === "on"
+                window.localStorage.setItem(storageKey, String(enabled))
+              } catch {}
+            }, 0)
+          })
+        }
+
+        const syncReaderMode = () => {
+          applyStoredReaderMode()
+          bindReaderModeToggle()
+        }
+
+        document.addEventListener("nav", syncReaderMode)
+        document.addEventListener("DOMContentLoaded", syncReaderMode)
+        syncReaderMode()
+      })()
+    `
 
     return (
       <head>
@@ -97,6 +135,7 @@ export default (() => {
             return resource
           }
         })}
+        <script>{readerModePersistenceScript}</script>
       </head>
     )
   }

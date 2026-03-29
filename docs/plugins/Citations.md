@@ -1,7 +1,8 @@
 ---
-title: "Citations"
+title: Citations
 tags:
   - plugin/transformer
+image: https://images.unsplash.com/photo-1582079133805-43655f026448
 ---
 
 This plugin adds Citation support to Quartz.
@@ -20,5 +21,6 @@ This plugin accepts the following configuration options:
 ## API
 
 - Category: Transformer
-- Function name: `Plugin.Citations()`.
-- Source: [`quartz/plugins/transformers/citations.ts`](https://github.com/jackyzha0/quartz/blob/v4/quartz/plugins/transformers/citations.ts).
+- Function name: `ExternalPlugin.Citations()`.
+- Source: [`quartz-community/citations`](https://github.com/quartz-community/citations)
+- Install: `npx quartz plugin add github:quartz-community/citations`

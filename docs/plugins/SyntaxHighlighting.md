@@ -1,7 +1,8 @@
 ---
-title: "SyntaxHighlighting"
+title: SyntaxHighlighting
 tags:
   - plugin/transformer
+image: https://images.unsplash.com/photo-1580569214296-5cf2bffc5ccd
 ---
 
 This plugin is used to add syntax highlighting to code blocks in Quartz. See [[syntax highlighting]] for more information.
@@ -19,5 +20,6 @@ In addition, you can further override the colours in the `quartz/styles/syntax.s
 ## API
 
 - Category: Transformer
-- Function name: `Plugin.SyntaxHighlighting()`.
-- Source: [`quartz/plugins/transformers/syntax.ts`](https://github.com/jackyzha0/quartz/blob/v4/quartz/plugins/transformers/syntax.ts).
+- Function name: `ExternalPlugin.SyntaxHighlighting()`.
+- Source: [`quartz-community/syntax-highlighting`](https://github.com/quartz-community/syntax-highlighting)
+- Install: `npx quartz plugin add github:quartz-community/syntax-highlighting`

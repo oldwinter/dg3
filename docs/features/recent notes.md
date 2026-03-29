@@ -3,15 +3,20 @@ title: Recent Notes
 tags: component
 ---
 
-Quartz can generate a list of recent notes based on some filtering and sorting criteria. Though this component isn't included in any [[layout]] by default, you can add it by using `Component.RecentNotes` in `quartz.layout.ts`.
+Quartz can generate a list of recent notes based on some filtering and sorting criteria. Though this component isn't included in any [[layout]] by default, you can add it by installing the plugin and configuring it in `quartz.config.yaml`.
+
+> [!note]
+> For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
 
 ## Customization
 
-- Changing the title from "Recent notes": pass in an additional parameter to `Component.RecentNotes({ title: "Recent writing" })`
-- Changing the number of recent notes: pass in an additional parameter to `Component.RecentNotes({ limit: 5 })`
-- Display the note's tags (defaults to true): `Component.RecentNotes({ showTags: false })`
-- Show a 'see more' link: pass in an additional parameter to `Component.RecentNotes({ linkToMore: "tags/components" })`. This field should be a full slug to a page that exists.
-- Customize filtering: pass in an additional parameter to `Component.RecentNotes({ filter: someFilterFunction })`. The filter function should be a function that has the signature `(f: QuartzPluginData) => boolean`.
-- Customize sorting: pass in an additional parameter to `Component.RecentNotes({ sort: someSortFunction })`. By default, Quartz will sort by date and then tie break lexographically. The sort function should be a function that has the signature `(f1: QuartzPluginData, f2: QuartzPluginData) => number`. See `byDateAndAlphabetical` in `quartz/components/PageList.tsx` for an example.
-- Component: `quartz/components/RecentNotes.tsx`
-- Style: `quartz/components/styles/recentNotes.scss`
+Most options are configured in the `options` section of the plugin entry in `quartz.config.yaml`:
+
+- Changing the title from "Recent notes": set `title: "Recent writing"` in options
+- Changing the number of recent notes: set `limit: 5` in options
+- Display the note's tags (defaults to true): set `showTags: false` in options
+- Show a 'see more' link: set `linkToMore: "tags/components"` in options. This field should be a full slug to a page that exists.
+- Customize filtering: requires a TS override — pass `filter: someFilterFunction` to the plugin constructor in `quartz.ts`. The filter function should have the signature `(f: QuartzPluginData) => boolean`.
+- Customize sorting: requires a TS override — pass `sort: someSortFunction` to the plugin constructor in `quartz.ts`. By default, Quartz will sort by date and then tie break lexographically. The sort function should have the signature `(f1: QuartzPluginData, f2: QuartzPluginData) => number`.
+- Install: `npx quartz plugin add github:quartz-community/recent-notes`
+- Source: [`quartz-community/recent-notes`](https://github.com/quartz-community/recent-notes)

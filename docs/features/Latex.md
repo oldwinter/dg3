@@ -70,10 +70,9 @@ For example:
 
 ### Using mhchem
 
-Add the following import to the top of `quartz/plugins/transformers/latex.ts` (before all the other
-imports):
+If you are using the community Latex plugin, you can add `mhchem` support by forking the plugin repository and adding the following import to the top of `src/index.ts` (before all the other imports):
 
-```ts title="quartz/plugins/transformers/latex.ts"
+```ts title="src/index.ts"
 import "katex/contrib/mhchem"
 ```
 

@@ -1,4 +1,5 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
 // put your custom CSS here!
 
@@ -6,29 +7,29 @@
 .graph {
   & > .graph-outer {
     height: 400px; // 从默认的250px增加到400px
-    
+
     // 确保图谱容器内部元素填满整个高度
     & > .graph-container {
       width: 100%;
       height: 100%;
-      
+
       & > canvas {
         width: 100% !important;
         height: 100% !important;
       }
     }
   }
-  
+
   // 全局图谱容器高度调整
   & > .global-graph-outer > .global-graph-container {
     height: 85vh; // 从默认的80vh增加到85vh
-    width: 85vw;  // 从默认的80vw增加到85vw
-    
+    width: 85vw; // 从默认的80vw增加到85vw
+
     // 确保全局图谱内部元素填满容器
     & > .global-graph-container {
       width: 100%;
       height: 100%;
-      
+
       & > canvas {
         width: 100% !important;
         height: 100% !important;
@@ -43,7 +44,7 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-  
+
   .graph {
     margin-top: 1rem;
   }
@@ -59,7 +60,7 @@
     text-overflow: ellipsis;
     max-width: 100%;
     transition: all 0.2s ease;
-    
+
     // 悬停效果：提示用户可以查看完整名称
     &:hover {
       background-color: var(--lightgray);
@@ -67,15 +68,15 @@
       padding: 2px 4px;
       margin: -2px -4px;
       transform: translateX(2px);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
   }
-  
+
   // 文件夹按钮的长文本处理（只截断，不悬停显示）
   .folder-container div > button {
     width: 100%;
     max-width: 100%;
-    
+
     & span {
       white-space: nowrap;
       overflow: hidden;
@@ -84,7 +85,7 @@
       // 移除悬停效果，保持原样
     }
   }
-  
+
   // 文件夹链接的长文本处理（只截断，不悬停显示）
   .folder-container div > a {
     display: block;
@@ -93,6 +94,38 @@
     text-overflow: ellipsis;
     max-width: 100%;
     // 移除悬停效果，保持原样
+  }
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--lightgray);
+
+  > p {
+    display: none;
+  }
+}
+
+.readermode .readerIcon {
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+:root[reader-mode="on"] .readermode .readerIcon {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+:root[reader-mode="off"] .readermode .readerIcon,
+:root:not([reader-mode]) .readermode .readerIcon {
+  opacity: 0.65;
+}
+
+@media all and ($mobile) {
+  .readermode {
+    display: none !important;
   }
 }
 

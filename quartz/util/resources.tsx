@@ -47,7 +47,7 @@ export function JSResourceToScriptElement(resource: JSResource, preserve?: boole
 export function CSSResourceToStyleElement(resource: CSSResource, preserve?: boolean): JSX.Element {
   const spaPreserve = preserve ?? resource.spaPreserve
   if (resource.inline ?? false) {
-    return <style>{resource.content}</style>
+    return <style dangerouslySetInnerHTML={{ __html: resource.content }} />
   } else {
     return (
       <link

@@ -2,6 +2,8 @@
 title: TableOfContents
 tags:
   - plugin/transformer
+  - plugin/component
+image: https://images.unsplash.com/photo-1768527338896-3765921e992d
 ---
 
 This plugin generates a table of contents (TOC) for Markdown documents. See [[table of contents]] for more information.
@@ -17,10 +19,11 @@ This plugin accepts the following configuration options:
 - `collapseByDefault`: If `true`, the TOC will start in a collapsed state. Default is `false`.
 
 > [!warning]
-> This plugin needs the `Component.TableOfContents` component in `quartz.layout.ts` to determine where to display the TOC. Without it, nothing will be displayed. They should always be added or removed together.
+> This plugin needs the `Plugin.TableOfContents` component in `quartz.config.yaml` to determine where to display the TOC. Without it, nothing will be displayed. They should always be added or removed together.
 
 ## API
 
-- Category: Transformer
-- Function name: `Plugin.TableOfContents()`.
-- Source: [`quartz/plugins/transformers/toc.ts`](https://github.com/jackyzha0/quartz/blob/v4/quartz/plugins/transformers/toc.ts).
+- Category: Transformer, Component
+- Function name: `ExternalPlugin.TableOfContentsTransformer()`.
+- Source: [`quartz-community/table-of-contents`](https://github.com/quartz-community/table-of-contents)
+- Install: `npx quartz plugin add github:quartz-community/table-of-contents`

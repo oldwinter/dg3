@@ -2,6 +2,7 @@
 title: Description
 tags:
   - plugin/transformer
+image:
 ---
 
 This plugin generates descriptions that are used as metadata for the HTML `head`, the [[RSS Feed]] and in [[folder and tag listings]] if there is no main body content, the description is used as the text between the title and the listing.
@@ -19,5 +20,6 @@ This plugin accepts the following configuration options:
 ## API
 
 - Category: Transformer
-- Function name: `Plugin.Description()`.
-- Source: [`quartz/plugins/transformers/description.ts`](https://github.com/jackyzha0/quartz/blob/v4/quartz/plugins/transformers/description.ts).
+- Function name: `ExternalPlugin.Description()`.
+- Source: [`quartz-community/description`](https://github.com/quartz-community/description)
+- Install: `npx quartz plugin add github:quartz-community/description`

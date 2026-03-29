@@ -2,6 +2,7 @@
 title: RoamFlavoredMarkdown
 tags:
   - plugin/transformer
+image:
 ---
 
 This plugin provides support for [Roam Research](https://roamresearch.com) compatibility. See [[Roam Research Compatibility]] for more information.
@@ -22,5 +23,6 @@ This plugin accepts the following configuration options:
 ## API
 
 - Category: Transformer
-- Function name: `Plugin.RoamFlavoredMarkdown()`.
-- Source: [`quartz/plugins/transformers/roam.ts`](https://github.com/jackyzha0/quartz/blob/v4/quartz/plugins/transformers/roam.ts).
+- Function name: `ExternalPlugin.RoamFlavoredMarkdown()`.
+- Source: [`quartz-community/roam`](https://github.com/quartz-community/roam)
+- Install: `npx quartz plugin add github:quartz-community/roam`

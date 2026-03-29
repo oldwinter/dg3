@@ -8,8 +8,8 @@ import { styleText } from "util"
 import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
 import { emitContent } from "./processors/emit"
-import cfg from "../quartz.config"
-import { FilePath, joinSegments, slugifyFilePath } from "./util/path"
+import cfg from "../quartz"
+import { FilePath, FullSlug, joinSegments, slugifyFilePath } from "./util/path"
 import chokidar from "chokidar"
 import { ProcessedContent } from "./plugins/vfile"
 import { Argv, BuildCtx } from "./util/ctx"
@@ -19,8 +19,39 @@ import { options } from "./util/sourcemap"
 import { Mutex } from "async-mutex"
 import { getStaticResourcesFromPlugins } from "./plugins"
 import { randomIdNonSecure } from "./util/random"
-import { ChangeEvent } from "./plugins/types"
+import { ChangeEvent, QuartzPageTypePluginInstance } from "./plugins/types"
 import { minimatch } from "minimatch"
+
+function getPageTypeExtensions(ctx: BuildCtx): Set<string> {
+  const extensions = new Set<string>()
+  const pageTypes = (ctx.cfg.plugins.pageTypes ?? []) as unknown as QuartzPageTypePluginInstance[]
+  for (const pt of pageTypes) {
+    if (pt.fileExtensions) {
+      for (const ext of pt.fileExtensions) {
+        extensions.add(ext)
+      }
+    }
+  }
+  return extensions
+}
+
+// For files whose extensions are handled by PageType plugins (e.g. .canvas, .base),
+// add extension-stripped slug aliases so that wikilink resolution (CrawlLinks) maps
+// `![[file.canvas]]` to the virtual-page slug `file` instead of the raw `file.canvas`.
+function addVirtualPageSlugAliases(allSlugs: FullSlug[], extensions: Set<string>): FullSlug[] {
+  const extra: FullSlug[] = []
+  for (const slug of allSlugs) {
+    for (const ext of extensions) {
+      if (slug.endsWith(ext)) {
+        const stripped = slug.slice(0, -ext.length) as FullSlug
+        if (!allSlugs.includes(stripped) && !extra.includes(stripped)) {
+          extra.push(stripped)
+        }
+      }
+    }
+  }
+  return extra
+}
 
 type ContentMap = Map<
   FilePath,
@@ -50,19 +81,21 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
     allSlugs: [],
     allFiles: [],
     incremental: false,
+    virtualPages: [],
   }
 
   const perf = new PerfTimer()
   const output = argv.output
 
   const pluginCount = Object.values(cfg.plugins).flat().length
-  const pluginNames = (key: "transformers" | "filters" | "emitters") =>
-    cfg.plugins[key].map((plugin) => plugin.name)
+  const pluginNames = (key: "transformers" | "filters" | "emitters" | "pageTypes") =>
+    (cfg.plugins[key] ?? []).map((plugin) => plugin.name)
   if (argv.verbose) {
     console.log(`Loaded ${pluginCount} plugins`)
     console.log(`  Transformers: ${pluginNames("transformers").join(", ")}`)
     console.log(`  Filters: ${pluginNames("filters").join(", ")}`)
     console.log(`  Emitters: ${pluginNames("emitters").join(", ")}`)
+    console.log(`  PageTypes: ${pluginNames("pageTypes").join(", ")}`)
   }
 
   const release = await mut.acquire()
@@ -80,6 +113,14 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
   const filePaths = markdownPaths.map((fp) => joinSegments(argv.directory, fp) as FilePath)
   ctx.allFiles = allFiles
   ctx.allSlugs = allFiles.map((fp) => slugifyFilePath(fp as FilePath))
+
+  // Add extension-stripped slug aliases for PageType-registered extensions
+  // so that wikilinks like ![[file.canvas]] resolve to virtual page slugs
+  const ptExtensions = getPageTypeExtensions(ctx)
+  if (ptExtensions.size > 0) {
+    const aliases = addVirtualPageSlugAliases(ctx.allSlugs, ptExtensions)
+    ctx.allSlugs.push(...aliases)
+  }
 
   const parsedFiles = await parseMarkdown(ctx, filePaths)
   const filteredContent = filterContent(ctx, parsedFiles)
@@ -255,6 +296,13 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
   // update allFiles and then allSlugs with the consistent view of content map
   ctx.allFiles = Array.from(contentMap.keys())
   ctx.allSlugs = ctx.allFiles.map((fp) => slugifyFilePath(fp as FilePath))
+
+  // Add extension-stripped slug aliases for PageType-registered extensions
+  const ptExtensions = getPageTypeExtensions(ctx)
+  if (ptExtensions.size > 0) {
+    const aliases = addVirtualPageSlugAliases(ctx.allSlugs, ptExtensions)
+    ctx.allSlugs.push(...aliases)
+  }
   let processedFiles = filterContent(
     ctx,
     Array.from(contentMap.values())
@@ -263,10 +311,40 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
   )
 
   let emittedFiles = 0
+
+  // Phase 1: Run PageTypeDispatcher first so it populates ctx.virtualPages
+  const dispatcher = cfg.plugins.emitters.find((e) => e.name === "PageTypeDispatcher")
+  if (dispatcher) {
+    ctx.virtualPages = []
+    const emitFn = dispatcher.partialEmit ?? dispatcher.emit
+    const emitted = await emitFn(ctx, processedFiles, staticResources, changeEvents)
+    if (emitted !== null) {
+      if (Symbol.asyncIterator in emitted) {
+        for await (const file of emitted) {
+          emittedFiles++
+          if (ctx.argv.verbose) {
+            console.log(`[emit:${dispatcher.name}] ${file}`)
+          }
+        }
+      } else {
+        emittedFiles += emitted.length
+        if (ctx.argv.verbose) {
+          for (const file of emitted) {
+            console.log(`[emit:${dispatcher.name}] ${file}`)
+          }
+        }
+      }
+    }
+  }
+
+  // Phase 2: Run all other emitters with content extended by virtual pages
+  const contentWithVirtual =
+    ctx.virtualPages.length > 0 ? [...processedFiles, ...ctx.virtualPages] : processedFiles
   for (const emitter of cfg.plugins.emitters) {
+    if (emitter.name === "PageTypeDispatcher") continue
     // Try to use partialEmit if available, otherwise assume the output is static
     const emitFn = emitter.partialEmit ?? emitter.emit
-    const emitted = await emitFn(ctx, processedFiles, staticResources, changeEvents)
+    const emitted = await emitFn(ctx, contentWithVirtual, staticResources, changeEvents)
     if (emitted === null) {
       continue
     }

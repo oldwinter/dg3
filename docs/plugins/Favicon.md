@@ -2,6 +2,7 @@
 title: Favicon
 tags:
   - plugin/emitter
+image:
 ---
 
 This plugin emits a `favicon.ico` into the `public` folder. It creates the favicon from `icon.png` located in the `quartz/static` folder.
@@ -15,5 +16,6 @@ This plugin has no configuration options.
 ## API
 
 - Category: Emitter
-- Function name: `Plugin.Favicon()`.
-- Source: [`quartz/plugins/emitters/favicon.ts`](https://github.com/jackyzha0/quartz/blob/v4/quartz/plugins/emitters/favicon.ts).
+- Function name: `ExternalPlugin.Favicon()`.
+- Source: [`quartz-community/favicon`](https://github.com/quartz-community/favicon)
+- Install: `npx quartz plugin add github:quartz-community/favicon`

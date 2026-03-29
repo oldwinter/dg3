@@ -6,14 +6,27 @@ tags:
 
 Reader Mode is a feature that allows users to focus on the content by hiding the sidebars and other UI elements. When enabled, it provides a clean, distraction-free reading experience.
 
+> [!note]
+> For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
+
 ## Configuration
 
-Reader Mode is enabled by default. To disable it, you can remove the component from your layout configuration in `quartz.layout.ts`:
+Reader Mode is enabled by default. To disable it, set `enabled: false` in your `quartz.config.yaml`:
 
-```ts
-// Remove or comment out this line
-Component.ReaderMode(),
+```yaml title="quartz.config.yaml"
+plugins:
+  - source: github:quartz-community/reader-mode
+    enabled: false
 ```
+
+Or remove the plugin entirely:
+
+```bash
+npx quartz plugin remove github:quartz-community/reader-mode
+```
+
+- Install: `npx quartz plugin add github:quartz-community/reader-mode`
+- Source: [`quartz-community/reader-mode`](https://github.com/quartz-community/reader-mode)
 
 ## Usage
 

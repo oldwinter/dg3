@@ -8,28 +8,46 @@ Breadcrumbs provide a way to navigate a hierarchy of pages within your site usin
 
 By default, the element at the very top of your page is the breadcrumb navigation bar (can also be seen at the top on this page!).
 
+> [!note]
+> For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
+
 ## Customization
 
-Most configuration can be done by passing in options to `Component.Breadcrumbs()`.
+Most configuration can be done via the `options` section of the breadcrumbs plugin entry in `quartz.config.yaml`.
 
 For example, here's what the default configuration looks like:
 
-```typescript title="quartz.layout.ts"
-Component.Breadcrumbs({
-  spacerSymbol: "❯", // symbol between crumbs
-  rootName: "Home", // name of first/root element
-  resolveFrontmatterTitle: true, // whether to resolve folder names through frontmatter titles
-  showCurrentPage: true, // whether to display the current page in the breadcrumbs
+```yaml title="quartz.config.yaml"
+plugins:
+  - source: github:quartz-community/breadcrumbs
+    enabled: true
+    options:
+      spacerSymbol: "❯"
+      rootName: Home
+      resolveFrontmatterTitle: true
+      showCurrentPage: true
+    layout:
+      position: beforeBody
+      priority: 5
+```
+
+For the TS override approach:
+
+```ts title="quartz.ts (override)"
+ExternalPlugin.Breadcrumbs({
+  spacerSymbol: "❯",
+  rootName: "Home",
+  resolveFrontmatterTitle: true,
+  showCurrentPage: true,
 })
 ```
 
 When passing in your own options, you can omit any or all of these fields if you'd like to keep the default value for that field.
 
-You can also adjust where the breadcrumbs will be displayed by adjusting the [[layout]] (moving `Component.Breadcrumbs()` up or down)
+You can also adjust where the breadcrumbs will be displayed by changing the `layout.position` field in the plugin entry in `quartz.config.yaml` (see [[layout]]).
 
 Want to customize it even more?
 
-- Removing breadcrumbs: delete all usages of `Component.Breadcrumbs()` from `quartz.layout.ts`.
-- Component: `quartz/components/Breadcrumbs.tsx`
-- Style: `quartz/components/styles/breadcrumbs.scss`
-- Script: inline at `quartz/components/Breadcrumbs.tsx`
+- Removing breadcrumbs: remove the `breadcrumbs` entry from `quartz.config.yaml` or set `enabled: false`.
+- Install: `npx quartz plugin add github:quartz-community/breadcrumbs`
+- Source: [`quartz-community/breadcrumbs`](https://github.com/quartz-community/breadcrumbs)

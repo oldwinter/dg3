@@ -9,19 +9,31 @@ tags:
 Quartz supports transforming the special Markdown syntax from Roam Research (like `{{[[components]]}}` and other formatting) into
 regular Markdown via the [[RoamFlavoredMarkdown]] plugin.
 
-```typescript title="quartz.config.ts"
+```yaml title="quartz.config.yaml"
+plugins:
+  - source: github:quartz-community/roam
+    enabled: true
+    order: 25 # must come before obsidian-flavored-markdown
+  - source: github:quartz-community/obsidian-flavored-markdown
+    enabled: true
+    order: 30
+```
+
+For the TS override approach:
+
+```ts title="quartz.ts (override)"
 plugins: {
   transformers: [
     // ...
-    Plugin.RoamFlavoredMarkdown(),
-    Plugin.ObsidianFlavoredMarkdown(),
+    ExternalPlugin.RoamFlavoredMarkdown(),
+    ExternalPlugin.ObsidianFlavoredMarkdown(),
     // ...
   ],
-},
+}
 ```
 
 > [!warning]
-> As seen above placement of `Plugin.RoamFlavoredMarkdown()` within `quartz.config.ts` is very important. It must come before `Plugin.ObsidianFlavoredMarkdown()`.
+> In YAML, plugin execution order is controlled by the `order` field. Ensure `roam` has a lower `order` value than `obsidian-flavored-markdown` so it runs first.
 
 ## Customization
 

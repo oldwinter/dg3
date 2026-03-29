@@ -15,6 +15,12 @@ export const CommonArgv = {
 
 export const CreateArgv = {
   ...CommonArgv,
+  template: {
+    string: true,
+    alias: ["t"],
+    choices: ["default", "obsidian", "ttrpg", "blog"],
+    describe: "template to use for initial configuration",
+  },
   source: {
     string: true,
     alias: ["s"],
@@ -25,6 +31,11 @@ export const CreateArgv = {
     alias: ["X"],
     choices: ["new", "copy", "symlink"],
     describe: "strategy for content folder setup",
+  },
+  baseUrl: {
+    string: true,
+    alias: ["b"],
+    describe: "base URL for your Quartz site (e.g. mysite.github.io/quartz)",
   },
   links: {
     string: true,
@@ -104,5 +115,32 @@ export const BuildArgv = {
   concurrency: {
     number: true,
     describe: "how many threads to use to parse notes",
+  },
+}
+
+export const PluginInstallArgv = {
+  ...CommonArgv,
+  _: {
+    type: "string",
+    demandOption: true,
+    describe: "package names to install",
+  },
+}
+
+export const PluginUninstallArgv = {
+  ...CommonArgv,
+  _: {
+    type: "string",
+    demandOption: true,
+    describe: "package names to uninstall",
+  },
+}
+
+export const PluginSearchArgv = {
+  ...CommonArgv,
+  query: {
+    string: true,
+    alias: ["q"],
+    describe: "search query for plugins",
   },
 }

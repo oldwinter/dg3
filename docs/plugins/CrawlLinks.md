@@ -2,6 +2,7 @@
 title: CrawlLinks
 tags:
   - plugin/transformer
+image:
 ---
 
 This plugin parses links and processes them to point to the right places. It is also needed for embedded links (like images). See [[Obsidian compatibility]] for more information.
@@ -26,5 +27,6 @@ This plugin accepts the following configuration options:
 ## API
 
 - Category: Transformer
-- Function name: `Plugin.CrawlLinks()`.
-- Source: [`quartz/plugins/transformers/links.ts`](https://github.com/jackyzha0/quartz/blob/v4/quartz/plugins/transformers/links.ts).
+- Function name: `ExternalPlugin.CrawlLinks()`.
+- Source: [`quartz-community/crawl-links`](https://github.com/quartz-community/crawl-links)
+- Install: `npx quartz plugin add github:quartz-community/crawl-links`

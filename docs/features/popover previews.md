@@ -12,6 +12,6 @@ Similar to Obsidian, [[quartz-layout-desktop.png|images referenced using wikilin
 
 ## Configuration
 
-- Remove popovers: set the `enablePopovers` field in `quartz.config.ts` to be `false`.
+- Remove popovers: set the `enablePopovers` field in `quartz.config.yaml` to be `false`.
 - Style: `quartz/components/styles/popover.scss`
 - Script: `quartz/components/scripts/popover.inline.ts`
