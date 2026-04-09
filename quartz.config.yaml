@@ -215,6 +215,18 @@ plugins:
     options:
       provider: giscus
       options: {}
+  - source: github:quartz-community/stacked-pages
+    enabled: true
+    order: 50
+    options:
+      maxTabs: 8
+      mobileBreakpoint: 800
+      showSpines: true
+      animateTransitions: true
+  - source: github:quartz-community/canvas-page
+    enabled: true
+    order: 50
+    options: {}
 
 layout:
   groups:
