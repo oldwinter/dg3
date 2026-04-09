@@ -207,8 +207,8 @@
     "recent-notes": {
       "source": "github:quartz-community/recent-notes",
       "resolved": "https://github.com/quartz-community/recent-notes.git",
-      "commit": "89a8411e987f5abcbdc13001bb11ce3d42d4f7e2",
-      "installedAt": "2026-03-25T23:35:08.888Z"
+      "commit": "43da4722c5daeb01214fdac3cb93295a281d64c7",
+      "installedAt": "2026-04-09T17:11:36.484Z"
     },
     "remove-draft": {
       "source": "github:quartz-community/remove-draft",
