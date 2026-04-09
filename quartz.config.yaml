@@ -227,6 +227,14 @@ plugins:
     enabled: true
     order: 50
     options: {}
+  - source: github:quartz-community/bases-page
+    enabled: true
+    order: 50
+    options: {}
+  - source: github:quartz-community/og-image
+    enabled: true
+    order: 50
+    options: {}
 
 layout:
   groups:
