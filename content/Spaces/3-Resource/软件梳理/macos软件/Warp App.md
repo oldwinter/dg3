@@ -6,7 +6,7 @@ aliases:
 title: Warp
 created: 2023-01-06
 modified: 2025-09-02
-published: 2026-02-13T01:02:33.251+08:00
+published: 2026-03-14T19:57:58.449+08:00
 ---
 
 [[warp token]]

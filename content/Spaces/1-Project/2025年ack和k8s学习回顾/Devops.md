@@ -3,7 +3,7 @@ publish: true
 permalink: /Spaces/1-Project/2025年ack和k8s学习回顾/Devops.md
 created: 2025-07-09
 modified: 2025-07-09
-published: 2025-07-16T22:52:23.387+08:00
+published: 2025-08-15T22:00:03.544+08:00
 ---
 
 ## devops思考

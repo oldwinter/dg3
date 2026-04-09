@@ -4,7 +4,7 @@ permalink: /Cards/PPV.md
 title: PPV
 created: 2022-06-22
 modified: 2023-03-19
-published: 2025-07-29T23:24:26.582+08:00
+published: 2025-08-15T21:59:57.217+08:00
 ---
 
 相关：[[滴答清单官方理解的ppv]]

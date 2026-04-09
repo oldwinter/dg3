@@ -4,7 +4,7 @@ permalink: /Sources/AIGC/PARA_User_Journey.md
 title: PARA 管理流程详细工作流
 created: 2025-01-27
 modified: 2025-01-27
-published: 2025-08-15T03:43:12.433+08:00
+published: 2025-08-15T21:59:59.748+08:00
 ---
 
 # PARA 管理流程详细工作流

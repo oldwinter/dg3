@@ -2,8 +2,8 @@
 publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian 截图的时候，屏蔽文字，马赛克的方法.md
 created: 2025-06-13T22:58:00.344+08:00
-modified: 2025-07-07T17:10:23.996+08:00
-published: 2025-07-07T17:10:23.996+08:00
+modified: 2025-08-15T22:00:05.143+08:00
+published: 2025-08-15T22:00:05.143+08:00
 ---
 
 ## 方法一

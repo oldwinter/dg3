@@ -4,7 +4,7 @@ permalink: /Spaces/2-Area/知识管理/卡片盒笔记法 - Zettelkasten.md
 title: 卡片盒笔记法 - Zettelkasten
 created: 2022-06-09
 modified: 2023-03-14
-published: 2025-08-14T03:57:44.160+08:00
+published: 2025-08-15T22:00:03.772+08:00
 ---
 
 [[我的卡片盒笔记法实操]]

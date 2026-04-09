@@ -4,7 +4,7 @@ permalink: /Spaces/2-Area/知识管理/obsidian、notion和logseq的异同分析
 title: obsidian、notion和logseq的异同分析及软件选用
 created: 2023-02-18
 modified: 2023-03-14
-published: 2025-07-10T22:44:59.597+08:00
+published: 2025-08-15T22:00:03.768+08:00
 ---
 
 - obsidian的第一公民，其实就是一个个带有metadata的md文件。

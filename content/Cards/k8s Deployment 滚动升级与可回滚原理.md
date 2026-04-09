@@ -4,7 +4,7 @@ permalink: /Cards/k8s Deployment 滚动升级与可回滚原理.md
 title: k8s Deployment 滚动升级与可回滚原理
 created: 2025-12-11
 modified: 2025-12-11
-published: 2026-03-14T14:29:19.017+08:00
+published: 2026-03-14T16:16:05.982+08:00
 tags:
   - k8s
   - devops

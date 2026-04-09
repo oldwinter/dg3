@@ -4,7 +4,7 @@ permalink: /Cards/运动健康/增肌的最佳科学负重重量RM.md
 title: 增肌的最佳科学负重重量RM
 created: 2022-12-03
 modified: 2023-03-14
-published: 2026-03-14T14:49:15.769+08:00
+published: 2026-03-14T16:18:03.533+08:00
 ---
 
 RM（Repetition Maximum）定义：\

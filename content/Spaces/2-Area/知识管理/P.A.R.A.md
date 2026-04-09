@@ -7,7 +7,7 @@ aliases:
 title: PARA
 created: 2022-06-09
 modified: 2024-07-25
-published: 2025-08-13T16:40:50.082+08:00
+published: 2025-08-15T22:00:03.762+08:00
 ---
 
 读[[Building a Second Brain-Tiago Forte]]，恍然大悟。PARA应该是用来组织信息，而非组织笔记。不应该生搬硬套到我的[[个人知识笔记系统]]中，而是应该纳入[[个人信息管理系统]]。

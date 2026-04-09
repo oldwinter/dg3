@@ -4,7 +4,7 @@ permalink: /Spaces/2-Area/知识管理/GTD.md
 title: GTD
 created: 2022-12-11
 modified: 2024-06-21
-published: 2025-07-10T22:12:52.332+08:00
+published: 2025-08-15T22:00:03.760+08:00
 ---
 
 ##

@@ -4,7 +4,7 @@ permalink: /Spaces/2-Area/运动健康/EAA.md
 title: EAA
 created: 2022-10-05
 modified: 2023-03-18
-published: 2025-07-12T17:52:42.281+08:00
+published: 2025-08-15T22:00:03.808+08:00
 ---
 
 是[[支链氨基酸|BCAA]]的超集，还多包含了人体可以少量合成的一些必须氨基酸。\

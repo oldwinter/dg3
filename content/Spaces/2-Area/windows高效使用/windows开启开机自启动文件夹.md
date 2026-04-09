@@ -3,7 +3,7 @@ publish: true
 permalink: /Spaces/2-Area/windows高效使用/windows开启开机自启动文件夹.md
 created: 2025-06-19
 modified: 2025-06-19
-published: 2025-07-10T22:42:24.810+08:00
+published: 2025-08-15T22:00:03.701+08:00
 ---
 
 这里面的程序（快捷方式），开机会自动启动。

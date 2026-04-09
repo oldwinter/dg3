@@ -4,7 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/ob
 title: obsidian开箱即用示例库
 created: 2022-06-29
 modified: 2023-03-14
-published: 2025-07-12T02:37:28.552+08:00
+published: 2025-08-15T22:00:05.150+08:00
 ---
 
 > [!INFO] 提示\

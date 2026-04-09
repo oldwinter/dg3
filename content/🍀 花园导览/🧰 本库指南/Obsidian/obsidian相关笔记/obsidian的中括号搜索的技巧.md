@@ -4,7 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/ob
 title: obsidian的中括号搜索的技巧
 created: 2022-06-09
 modified: 2023-03-14
-published: 2025-07-09T15:46:19.186+08:00
+published: 2025-08-15T22:00:05.151+08:00
 ---
 
 - 中括号直接输入搜索项，连文件夹路径名都会搜索，有时候会有比较多的信息噪音

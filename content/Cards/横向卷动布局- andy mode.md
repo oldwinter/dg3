@@ -5,7 +5,7 @@ aliases:
   - obsidian stack tabs
 created: 2025-07-10
 modified: 2025-07-10
-published: 2025-08-07T02:44:55.308+08:00
+published: 2025-08-15T21:59:59.204+08:00
 ---
 
 某个版本后，obsidian内置了。

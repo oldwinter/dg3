@@ -4,7 +4,7 @@ permalink: /Spaces/4-Archive/项目管理/项目owner机制.md
 title: 项目owner机制
 created: 2022-05-13
 modified: 2023-03-14
-published: 2025-07-11T16:36:15.866+08:00
+published: 2025-10-12T18:37:40.410+08:00
 ---
 
 - 敏捷项目拆分成子项目后的运作问题：

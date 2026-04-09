@@ -2,8 +2,8 @@
 publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/写给大家的2025 Obsidian插件推荐指南.md
 created: 2025-04-23T14:10:57.183+08:00
-modified: 2025-07-29T23:24:26.576+08:00
-published: 2025-07-29T23:24:26.576+08:00
+modified: 2025-08-15T22:00:05.156+08:00
+published: 2025-08-15T22:00:05.156+08:00
 ---
 
 之前写过一篇[[2022年7月，obsidian 依然必装的 10 个插件]]
