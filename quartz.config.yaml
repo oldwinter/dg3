@@ -4,6 +4,8 @@
 
 #yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 
+#yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: 🌱 oldwinterの数字花园
@@ -76,7 +78,7 @@ plugins:
         dark: github-dark
       keepBackground: false
     order: 20
-  - source: ./external-plugins/obsidian-flavored-markdown
+  - source: github:quartz-community/obsidian-flavored-markdown
     enabled: true
     options:
       enableInHtmlEmbed: false
@@ -203,6 +205,10 @@ plugins:
     options:
       links:
         GitHub: https://github.com/oldwinter/dg3
+  - source: github:quartz-community/recent-notes
+    enabled: true
+    order: 50
+    options: {}
 
 layout:
   groups:
