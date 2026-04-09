@@ -3,7 +3,7 @@ publish: true
 permalink: /Spaces/2-Area/windows高效使用/Windows F区功能键快捷键分配.md
 created: 2024-10-08
 modified: 2024-10-08
-published: 2025-08-15T22:00:03.696+08:00
+published: 2025-07-10T22:42:44.343+08:00
 ---
 
 ## Windows F1-F12 功能键列表

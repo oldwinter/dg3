@@ -4,7 +4,7 @@ permalink: /Cards/运动健康/bodypump杠铃操.md
 title: bodypump杠铃操
 created: 2022-10-08
 modified: 2023-03-14
-published: 2026-03-14T16:18:03.022+08:00
+published: 2026-03-14T14:49:15.547+08:00
 ---
 
 up:: [[跳操团课]]

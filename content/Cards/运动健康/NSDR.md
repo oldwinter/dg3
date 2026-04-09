@@ -4,7 +4,7 @@ permalink: /Cards/运动健康/NSDR.md
 title: NSDR
 created: 2023-02-24
 modified: 2023-03-14
-published: 2026-03-14T21:57:29.553+08:00
+published: 2025-07-12T18:53:36.108+08:00
 ---
 
 Non-Sleep Deep Rest.

@@ -53,11 +53,14 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
-    columnOrder: '{"note.status":["open","deep-research","plan-mode","in-progress","done","pending"]}'
+      - file.tasks
+    sort:
+      - property: tasknotes_manual_order
+        direction: DESC
   - type: tasknotesTaskList
     name: Projects
     filters:
@@ -68,10 +71,11 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
   - type: tasknotesTaskList
     name: Blocked By
     filters:
@@ -83,10 +87,14 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
+    sort:
+      - property: tasknotes_manual_order
+        direction: DESC
   - type: tasknotesKanban
     name: Blocking
     filters:
@@ -101,7 +109,11 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
+    sort:
+      - property: tasknotes_manual_order
+        direction: DESC

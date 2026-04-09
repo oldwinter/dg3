@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"bfdf514b0017a5d6","x":-258,"y":-276,"width":657,"height":393,"type":"group","label":"传统office三件套 vs AI时代三件套 - 孤立视角"},
+		{"id":"af3b3cfaade794a1","x":421,"y":-282,"width":400,"height":497,"type":"group","label":"obsidian视角 - 双向链接"},
+		{"id":"e6360c6fac93e107","x":-238,"y":-256,"width":250,"height":60,"type":"text","text":"## docx"},
+		{"id":"1a2144252b6554bd","x":-238,"y":-107,"width":250,"height":60,"type":"text","text":"## excel"},
+		{"id":"e4c46569d5ba745c","x":-238,"y":37,"width":250,"height":60,"type":"text","text":"## ppt"},
+		{"id":"edfe3bc62328d9ac","x":129,"y":37,"width":250,"height":60,"type":"text","text":"## html"},
+		{"id":"9613c3ba729b02a0","x":129,"y":-107,"width":250,"height":60,"type":"text","text":"## csv"},
+		{"id":"3048e91637cd98bc","x":129,"y":-256,"width":250,"height":60,"type":"text","text":"## md"},
+		{"id":"9c589e72b088ff98","x":493,"y":-256,"width":250,"height":60,"type":"text","text":"## md"},
+		{"id":"51338f73d64f402c","x":493,"y":-107,"width":250,"height":60,"type":"text","text":"## base"},
+		{"id":"000f98f929d2704a","x":493,"y":37,"width":250,"height":60,"type":"text","text":"## canvas"},
+		{"id":"99b5c6b97b669495","x":493,"y":134,"width":250,"height":60,"type":"text","text":"## other file"}
+	],
+	"edges":[
+		{"id":"8bdba1c3a112c2e1","fromNode":"e4c46569d5ba745c","fromSide":"right","toNode":"edfe3bc62328d9ac","toSide":"left"},
+		{"id":"22221ae863e8658b","fromNode":"1a2144252b6554bd","fromSide":"right","toNode":"9613c3ba729b02a0","toSide":"left"},
+		{"id":"1c60a6fcb652245e","fromNode":"e6360c6fac93e107","fromSide":"right","toNode":"3048e91637cd98bc","toSide":"left"},
+		{"id":"cde67998b2d55933","fromNode":"9c589e72b088ff98","fromSide":"bottom","toNode":"51338f73d64f402c","toSide":"top"},
+		{"id":"2444aa3974cb7bd7","fromNode":"51338f73d64f402c","fromSide":"bottom","toNode":"000f98f929d2704a","toSide":"top"},
+		{"id":"1a0f1b4ad6d15869","fromNode":"000f98f929d2704a","fromSide":"left","toNode":"51338f73d64f402c","toSide":"left"},
+		{"id":"58dae874b2a0ffab","fromNode":"51338f73d64f402c","fromSide":"left","toNode":"9c589e72b088ff98","toSide":"left"},
+		{"id":"994e1bdb47a1f111","fromNode":"000f98f929d2704a","fromSide":"right","toNode":"9c589e72b088ff98","toSide":"right"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

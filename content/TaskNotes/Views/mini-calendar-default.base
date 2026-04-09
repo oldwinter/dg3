@@ -49,10 +49,11 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
     sort:
       - property: due
         direction: ASC

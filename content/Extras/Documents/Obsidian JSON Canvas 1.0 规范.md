@@ -2,8 +2,8 @@
 publish: true
 permalink: /Extras/Documents/Obsidian JSON Canvas 1.0 规范.md
 created: 2025-04-25T22:49:37.291+08:00
-modified: 2025-08-15T21:59:59.696+08:00
-published: 2025-08-15T21:59:59.696+08:00
+modified: 2025-08-19T18:52:53.431+08:00
+published: 2025-08-19T18:52:53.431+08:00
 ---
 
 # JSON Canvas Spec | Obsidian Canvas Spec

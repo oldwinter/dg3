@@ -4,7 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库不建议在obsi
 title: 本库不建议在obsidian中做Iframe嵌入
 created: 2022-09-02
 modified: 2023-03-14
-published: 2025-08-15T22:00:05.045+08:00
+published: 2025-08-15T15:55:02.886+08:00
 ---
 
 如[[本库不建议在obsidian中搞太多奇技淫巧]]所言，使用Iframe嵌入各种web网站到obsidian中，其实也算奇技淫巧的一种。

@@ -3,7 +3,7 @@ publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian 嵌入 bilibili 的iframe视频的方法.md
 created: 2025-04-20
 modified: 2025-04-20
-published: 2025-08-15T22:00:05.129+08:00
+published: 2025-07-07T17:10:24.430+08:00
 ---
 
 <iframe

@@ -5,7 +5,7 @@ aliases:
   - anyrouter
 created: 2025-07-06
 modified: 2025-08-01
-published: 2026-02-24T19:52:23.686+08:00
+published: 2026-03-31T19:59:42.795+08:00
 ---
 
 - [🚀 AnyRouter｜Claude Code 免费共享平台](https://anyrouter.top/)
@@ -14,3 +14,5 @@ published: 2026-02-24T19:52:23.686+08:00
 - [PackyCode - AI-Powered Code Assistant](https://www.packycode.com)
 
 [[claude code 中转站 可用性检测 linuxdo商家评价]]
+
+[[claude code 中转 直接用 curl 请求的命令]]

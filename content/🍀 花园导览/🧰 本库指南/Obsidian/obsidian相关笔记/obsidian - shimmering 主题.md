@@ -4,7 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/ob
 title: obsidian - shimmering 主题
 created: 2022-06-11
 modified: 2023-03-14
-published: 2025-08-15T22:00:05.140+08:00
+published: 2025-07-07T17:10:23.996+08:00
 ---
 
 [GitHub - chrisgrieser/shimmering-focus: A minimalistic Obsidian theme focused on readability and condensed information display](https://github.com/chrisgrieser/shimmering-focus)

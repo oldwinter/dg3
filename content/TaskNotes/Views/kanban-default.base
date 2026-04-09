@@ -25,9 +25,7 @@ formulas:
   timeEstimateCategory: if(!timeEstimate || timeEstimate == 0 || timeEstimate == null, "No estimate", if(timeEstimate < 30, "Quick (<30m)", if(timeEstimate <= 120, "Medium (30m-2h)", "Long (>2h)")))
   ageCategory: if(((number(now()) - number(file.ctime)) / 86400000) < 1, "Today", if(((number(now()) - number(file.ctime)) / 86400000) < 7, "This week", if(((number(now()) - number(file.ctime)) / 86400000) < 30, "This month", "Older")))
   createdMonth: file.ctime.format("YYYY-MM")
-  createdWeek: file.ctime.format("YYYY-[W]WW")
   modifiedMonth: file.mtime.format("YYYY-MM")
-  modifiedWeek: file.mtime.format("YYYY-[W]WW")
   priorityCategory: if(priority=="none","None",if(priority=="low","Low",if(priority=="normal","Normal",if(priority=="high","High","No priority"))))
   projectCount: if(!projects || list(projects).length == 0, "No projects", if(list(projects).length == 1, "Single project", "Multiple projects"))
   contextCount: if(!contexts || list(contexts).length == 0, "No contexts", if(list(contexts).length == 1, "Single context", "Multiple contexts"))
@@ -50,101 +48,19 @@ views:
       property: status
       direction: ASC
     order:
+      - priority
+      - status
       - file.ctime
       - contexts
-      - status
-      - priority
-      - formula.createdWeek
       - 🤖
+      - file.name
+      - recurrence
+      - complete_instances
+      - file.tasks
     sort:
-      - property: file.mtime
-        direction: DESC
-      - property: priority
-        direction: ASC
-      - property: formula.createdWeek
+      - property: tasknotes_manual_order
         direction: DESC
     options:
       columnWidth: 280
       hideEmptyColumns: false
-    enableSearch: true
-    columnOrder: '{"note.status":["open","deep-research","plan-mode","in-progress","done"]}'
-    maxSwimlaneHeight: 700
-    columnWidth: 320
-    consolidateStatusIcon: true
-  - type: tasknotesKanban
-    name: 按周，泳道
-    groupBy:
-      property: status
-      direction: ASC
-    order:
-      - file.ctime
-      - ai_agent
-      - contexts
-      - status
-      - priority
-      - formula.createdWeek
-    sort:
-      - property: formula.createdWeek
-        direction: DESC
-      - property: file.mtime
-        direction: DESC
-    options:
-      columnWidth: 280
-      hideEmptyColumns: false
-    enableSearch: true
-    columnOrder: '{"note.status":["open","deep-research","plan-mode","in-progress","done"]}'
-    maxSwimlaneHeight: 600
-    columnWidth: 280
-    swimLane: formula.createdWeek
-  - type: tasknotesKanban
-    name: 按project，泳道
-    groupBy:
-      property: status
-      direction: ASC
-    order:
-      - file.ctime
-      - ai_agent
-      - contexts
-      - status
-      - priority
-      - formula.createdWeek
-      - projects
-    sort:
-      - property: formula.createdWeek
-        direction: DESC
-      - property: file.mtime
-        direction: DESC
-    options:
-      columnWidth: 280
-      hideEmptyColumns: false
-    enableSearch: true
-    columnOrder: '{"note.status":["open","deep-research","plan-mode","in-progress","done"]}'
-    maxSwimlaneHeight: 600
-    columnWidth: 280
-    swimLane: note.projects
-  - type: tasknotesKanban
-    name: 昨天完成，今日待办
-    groupBy:
-      property: status
-      direction: ASC
-    order:
-      - file.ctime
-      - contexts
-      - status
-      - priority
-      - formula.createdWeek
-      - 🤖
-      - formula.daysSinceModified
-    sort:
-      - property: formula.createdWeek
-        direction: DESC
-      - property: file.mtime
-        direction: DESC
-    options:
-      columnWidth: 280
-      hideEmptyColumns: false
-    enableSearch: true
-    columnOrder: '{"note.status":["open","deep-research","plan-mode","in-progress","done"]}'
-    maxSwimlaneHeight: 600
-    columnWidth: 280
-    swimLane: formula.daysSinceModified
+    columnOrder: '{"note.status":["open","plan-mode","in-progress","done","pending"]}'

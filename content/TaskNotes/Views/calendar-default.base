@@ -49,10 +49,11 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
     options:
       showScheduled: true
       showDue: true
@@ -66,4 +67,3 @@ views:
       slotMinTime: 06:00:00
       slotMaxTime: 22:00:00
       slotDuration: 00:30:00
-    calendarView: dayGridMonth

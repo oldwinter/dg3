@@ -4,7 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库启用的obsidia
 title: 本库启用的obsidian核心插件及原因
 created: 2022-08-09
 modified: 2023-03-14
-published: 2025-08-15T22:00:05.050+08:00
+published: 2025-07-29T23:24:26.553+08:00
 ---
 
 ## 启用

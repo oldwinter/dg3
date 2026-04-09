@@ -1,0 +1,832 @@
+{
+  "nodes": [
+    {
+      "id": "g-overview",
+      "type": "group",
+      "x": -320,
+      "y": -220,
+      "width": 1380,
+      "height": 1020,
+      "label": "1. Overview and Shared Model",
+      "color": "3"
+    },
+    {
+      "id": "g-opencli",
+      "type": "group",
+      "x": 1120,
+      "y": -220,
+      "width": 1180,
+      "height": 1180,
+      "label": "2. opencli",
+      "color": "5"
+    },
+    {
+      "id": "g-webaccess",
+      "type": "group",
+      "x": 2360,
+      "y": -220,
+      "width": 1260,
+      "height": 1360,
+      "label": "3. web-access",
+      "color": "4"
+    },
+    {
+      "id": "g-agentbrowser",
+      "type": "group",
+      "x": 3680,
+      "y": -220,
+      "width": 1440,
+      "height": 1540,
+      "label": "4. agent-browser",
+      "color": "6"
+    },
+    {
+      "id": "g-compare",
+      "type": "group",
+      "x": -320,
+      "y": 900,
+      "width": 3000,
+      "height": 1320,
+      "label": "5. Detailed Comparison Matrix",
+      "color": "2"
+    },
+    {
+      "id": "g-decision",
+      "type": "group",
+      "x": 2740,
+      "y": 1380,
+      "width": 2380,
+      "height": 840,
+      "label": "6. Decision Flow and Composition",
+      "color": "1"
+    },
+    {
+      "id": "g-links",
+      "type": "group",
+      "x": -320,
+      "y": 2280,
+      "width": 5440,
+      "height": 320,
+      "label": "7. Sources",
+      "color": "5"
+    },
+    {
+      "id": "n-title",
+      "type": "text",
+      "x": -80,
+      "y": 0,
+      "width": 520,
+      "height": 330,
+      "text": "# Browser Agent Tools Architecture Comparison\n\n**对比对象**\n- `opencli`\n- `web-access`\n- `agent-browser`\n\n**一句话结论**\n- `opencli` 是 **站点命令产品层**。\n- `web-access` 是 **agent 联网策略层**。\n- `agent-browser` 是 **浏览器自动化 runtime 层**。\n\n它们不是简单替代关系，而是位于不同抽象层。"
+    },
+    {
+      "id": "n-axes",
+      "type": "text",
+      "x": -240,
+      "y": 380,
+      "width": 360,
+      "height": 260,
+      "text": "## 这张图的观察轴\n- **入口形态**：用户调用的是现成命令、skill，还是浏览器 runtime\n- **核心抽象**：站点适配、策略路由、还是 DOM/AX/ref\n- **状态模型**：一次性请求、浏览器代理态、还是强持久会话\n- **最强场景**：公开抓取、登录态探索、UI 自动化\n- **主要代价**：维护站点适配、依赖本机 Chrome、环境复杂度"
+    },
+    {
+      "id": "n-stack",
+      "type": "text",
+      "x": 180,
+      "y": 380,
+      "width": 420,
+      "height": 310,
+      "text": "## 共同分层模型\n`User / Agent intent`\n→ `Task framing`\n→ `Tool selection`\n→ `Browser or HTTP execution`\n→ `State persistence`\n→ `Result serialization`\n\n三者最大的区别，不是“能不能抓网页”，而是它们分别把复杂度放在哪一层。\n\n- `opencli`：把复杂度放在 **网站命令适配**\n- `web-access`：把复杂度放在 **agent 决策与浏览策略**\n- `agent-browser`：把复杂度放在 **本地浏览器控制内核**"
+    },
+    {
+      "id": "n-primitives",
+      "type": "text",
+      "x": 660,
+      "y": 40,
+      "width": 330,
+      "height": 290,
+      "text": "## 三者共享的基本原语\n- 页面打开\n- 页面等待\n- DOM / 内容读取\n- 点击 / 输入 / 滚动\n- 截图 / 证据采集\n- cookie / storage / 登录态\n- 多步任务串联\n\n但它们对这些原语的封装方式完全不同。"
+    },
+    {
+      "id": "n-tradeoffs",
+      "type": "text",
+      "x": 660,
+      "y": 380,
+      "width": 330,
+      "height": 300,
+      "text": "## 核心 trade-off\n- 抽象越高，上手越快，但可控性越低\n- 抽象越底层，表达力越强，但环境要求越高\n- 站点级产品抽象最适合稳定公开源\n- 浏览器 runtime 最适合交互和登录态\n- 策略 skill 最适合让 agent 自己选择路径\n\n所以这不是单维度“谁更强”，而是 **层级职责不同**。 "
+    },
+    {
+      "id": "n-opencli-core",
+      "type": "text",
+      "x": 1200,
+      "y": 0,
+      "width": 400,
+      "height": 320,
+      "text": "## opencli 的本体\n**本质**：`website -> subcommand` 的命令产品。\n\n用户看到的是：\n- `opencli hackernews top`\n- `opencli wikipedia summary OpenAI`\n- `opencli reddit ...`\n\n它把网站能力预先做成一个统一 CLI 面。\n\n重点不是“浏览器怎么控制”，而是“这个网站对外暴露什么命令最顺手”。"
+    },
+    {
+      "id": "n-opencli-runtime",
+      "type": "text",
+      "x": 1650,
+      "y": 0,
+      "width": 560,
+      "height": 340,
+      "text": "## opencli 的运行结构\n`CLI entry`\n→ 站点命令树\n→ 该站点的 provider / adapter\n→ 调用公开 API、抓公开页面，或在必要时接浏览器桥\n→ 返回结构化文本结果\n\n你测出来的关键现象：\n- 公开接口命令可以立刻工作\n- 内置 daemon 存在，但扩展未连接时浏览器型能力不可用\n- 也就是说它先是“命令产品”，其次才是“浏览器联机层”"
+    },
+    {
+      "id": "n-opencli-strengths",
+      "type": "text",
+      "x": 1200,
+      "y": 380,
+      "width": 450,
+      "height": 300,
+      "text": "## opencli 的强项\n- 开箱快，公共数据直接拿结果\n- 子命令面清晰，适合脚本和人工调用\n- 站点结果已经做过整理，输出很像“API 响应”\n- 对不想自己设计浏览策略的人很友好\n- 适合新闻、百科、社区、论文搜索这类公开信息入口\n\n在你的机器上：`HN`、`Wikipedia` 都直接跑通。"
+    },
+    {
+      "id": "n-opencli-limits",
+      "type": "text",
+      "x": 1700,
+      "y": 400,
+      "width": 500,
+      "height": 340,
+      "text": "## opencli 的限制\n- 能力边界取决于它有没有内置该站点命令\n- 对未适配站点，通用性不如浏览器 runtime\n- 真正的登录态交互依赖 Browser Bridge 扩展\n- 高度动态、复杂表单、连续 UI 流，不是它最自然的抽象层\n- 维护成本在“很多站点命令要持续跟站点变化”\n\n所以它最像一个“网站操作工具箱”，不是浏览器操作系统。 "
+    },
+    {
+      "id": "n-opencli-bestfit",
+      "type": "text",
+      "x": 1320,
+      "y": 760,
+      "width": 760,
+      "height": 120,
+      "text": "## 最佳定位\n**公开站点信息查询 + 结构化命令输出**。如果你的目标是“快速拿到 HN 热门、Wiki 摘要、某公开站搜索结果”，它通常是三个里阻力最小的。 "
+    },
+    {
+      "id": "n-web-core",
+      "type": "text",
+      "x": 2440,
+      "y": 0,
+      "width": 430,
+      "height": 340,
+      "text": "## web-access 的本体\n**本质**：一个要求 agent 接管所有联网任务的 skill。\n\n它不是命令产品，而是：\n- 规定 agent 在联网时如何思考\n- 让 agent 在 `WebSearch / WebFetch / curl / Jina / CDP` 间自己选\n- 提供一个轻量 CDP proxy 作为真实浏览器入口\n\n它卖点是 **决策框架**，不是命令树。"
+    },
+    {
+      "id": "n-web-routing",
+      "type": "text",
+      "x": 2920,
+      "y": 0,
+      "width": 620,
+      "height": 360,
+      "text": "## web-access 的决策流\n`用户目标`\n→ 先定义成功标准\n→ 判断静态抓取是否足够\n→ 不足时升级到真实浏览器\n→ 必要时处理登录、弹窗、滚动、媒体\n→ 结束后关闭自己开的 tab\n\n这个 skill 的核心哲学是：\n- 不迷信某一种工具\n- 不在错误方法上重复尝试\n- 像人一样在过程中不断修正路径"
+    },
+    {
+      "id": "n-web-cdp",
+      "type": "text",
+      "x": 2440,
+      "y": 400,
+      "width": 470,
+      "height": 360,
+      "text": "## web-access 的 CDP 层\n- 通过 `scripts/check-deps.mjs` 检查 Node 和 Chrome 调试端口\n- 用 `scripts/cdp-proxy.mjs` 暴露本地 HTTP API\n- API 是 `/new /eval /click /clickAt /setFiles /screenshot /scroll /close`\n- 直接连用户日常 Chrome，因此天然携带登录态\n\n也就是说，它的浏览器层很薄，主要职责是：\n**把 Chrome 变成 agent 可用的远程手和眼**。"
+    },
+    {
+      "id": "n-web-patterns",
+      "type": "text",
+      "x": 2960,
+      "y": 420,
+      "width": 560,
+      "height": 350,
+      "text": "## web-access 的附加能力\n- 按域名积累 site patterns\n- 鼓励并行子 agent 分治调研\n- 强调一手来源核实\n- 允许 DOM 直取媒体 URL、视频 seek + screenshot\n- 明确 GUI 交互和程序化操作各自的 trade-off\n\n这些都属于“agent 工作方法论”，不是底层浏览器内核创新。 "
+    },
+    {
+      "id": "n-web-strengths",
+      "type": "text",
+      "x": 2440,
+      "y": 820,
+      "width": 500,
+      "height": 240,
+      "text": "## web-access 的强项\n- 非常适合 agent 驱动的真实联网任务\n- 动态站、社交平台、登录后页面，比纯 WebFetch 更自然\n- skill 层把浏览哲学写清楚，能提升 agent 的联网决策质量\n- 用用户自己的 Chrome，很多站天然已经登录"
+    },
+    {
+      "id": "n-web-limits",
+      "type": "text",
+      "x": 2980,
+      "y": 820,
+      "width": 540,
+      "height": 280,
+      "text": "## web-access 的限制\n- 它不是一个完整 CLI 产品，更多依赖 agent 执行 skill 约定\n- 对环境有要求：Chrome remote debugging 必须可用\n- 浏览器代理功能有，但状态管理、元素抽象、稳定引用模型不如 `agent-browser` 深\n- 维护成本在“skill 提示词 + 脚本 + agent 行为一致性”\n\n所以它强在策略，不强在底层 runtime 丰富度。 "
+    },
+    {
+      "id": "n-agent-core",
+      "type": "text",
+      "x": 3760,
+      "y": 0,
+      "width": 460,
+      "height": 340,
+      "text": "## agent-browser 的本体\n**本质**：一个 Rust 写的本地浏览器自动化 runtime。\n\n核心不是 skill，而是原生二进制 `agent-browser`：\n- 启浏览器\n- 常驻 daemon\n- 通过 CDP 控制页面\n- 给页面生成 `@e1/@e2` refs\n- 维持 session / tab / storage / streaming\n\n这个项目的重点是 **浏览器控制内核**。"
+    },
+    {
+      "id": "n-agent-daemon",
+      "type": "text",
+      "x": 4270,
+      "y": 0,
+      "width": 760,
+      "height": 380,
+      "text": "## agent-browser 的 daemon 架构\n`CLI command`\n→ 连接 Unix socket / TCP\n→ 若无 daemon 则启动\n→ daemon 内部持有 `DaemonState`\n→ `BrowserManager` 持有 CDP client、页面列表、active tab、下载路径、访问过的 origin\n→ 后续每次命令复用同一会话\n\n重要含义：\n- 浏览器状态跨命令保留\n- CLI 看起来是一次一条命令，底层其实是长生命周期 runtime\n- 这比临时脚本式 CDP proxy 更接近“浏览器操作系统”"
+    },
+    {
+      "id": "n-agent-snapshot",
+      "type": "text",
+      "x": 3760,
+      "y": 420,
+      "width": 520,
+      "height": 420,
+      "text": "## agent-browser 的关键创新：snapshot refs\n- `snapshot -i` 读取 accessibility tree\n- 给可交互元素分配 `@e1/@e2/...`\n- ref 缓存 `backend_node_id + role + name + nth + frame context`\n- 后续 `click @e7`、`fill @e9` 直接用 ref 解析目标\n- 若 DOM 变化导致节点失效，会按 role/name/nth 再解析\n\n这大幅减少 token 消耗，也减少 selector 脆弱性。"
+    },
+    {
+      "id": "n-agent-frames",
+      "type": "text",
+      "x": 4330,
+      "y": 440,
+      "width": 680,
+      "height": 360,
+      "text": "## iframe / frame 处理\n- snapshot 会把 iframe 内容内联到输出里\n- ref 带 frame context\n- 交互时会自动切到正确 frame session\n\n这点很关键：\n在很多真实支付、登录、嵌入页面场景里，iframe 是主难点之一。`agent-browser` 把它做进了底层元素解析流程，而不是把 frame 复杂度丢给上层 agent。 "
+    },
+    {
+      "id": "n-agent-state",
+      "type": "text",
+      "x": 3760,
+      "y": 900,
+      "width": 540,
+      "height": 390,
+      "text": "## state / auth / persistence\n- `--profile` 复用用户浏览器 profile\n- `state save/load` 保存 cookie + origin-scoped localStorage + sessionStorage\n- `--session` 做多会话隔离\n- `--session-name` 做自动保存恢复\n- 支持 auth vault、加密 key、下载目录、代理、headers 等\n\n这已经不是“能不能登录”，而是把登录态作为 runtime 一等能力。 "
+    },
+    {
+      "id": "n-agent-stream",
+      "type": "text",
+      "x": 4340,
+      "y": 860,
+      "width": 680,
+      "height": 420,
+      "text": "## 附加 runtime 能力\n- stream server\n- network requests / HAR 记录\n- route interception\n- screenshot / annotated screenshot\n- diff snapshot / diff screenshot / diff url\n- dialog handling\n- clipboard\n- PDF\n- device emulation\n\n所以它不是只会点按钮，而是形成了完整的浏览器观测与控制面。 "
+    },
+    {
+      "id": "n-agent-strengths",
+      "type": "text",
+      "x": 3860,
+      "y": 1320,
+      "width": 1040,
+      "height": 140,
+      "text": "## 最佳定位\n**复杂真实 UI 自动化、稳定多步浏览器操作、登录态会话复用、QA 和测试执行**。如果你的任务核心是“操作浏览器本身”，它是三者里底层能力最完整的。 "
+    },
+    {
+      "id": "n-matrix-intro",
+      "type": "text",
+      "x": -220,
+      "y": 980,
+      "width": 500,
+      "height": 260,
+      "text": "## 比较方法\n下面不是泛泛而谈，而是按真正影响使用体验的维度拆开：\n- 用户入口\n- 最核心抽象\n- 浏览器依赖\n- 状态持久化\n- 站点覆盖方式\n- 最强用例\n- 主要风险\n- 组合关系\n\n你可以把这一块当成“选型基线”。"
+    },
+    {
+      "id": "n-matrix-entry",
+      "type": "text",
+      "x": 340,
+      "y": 980,
+      "width": 540,
+      "height": 310,
+      "text": "## 1. 用户入口\n**opencli**\n- 入口是子命令\n- 用户显式指定网站和动作\n\n**web-access**\n- 入口是 skill 语义请求\n- agent 负责决定怎么联网\n\n**agent-browser**\n- 入口是浏览器动作命令\n- 用户或 agent 显式编排页面交互\n\n结论：\n- `opencli` 最像产品\n- `web-access` 最像策略插件\n- `agent-browser` 最像引擎"
+    },
+    {
+      "id": "n-matrix-abstraction",
+      "type": "text",
+      "x": 940,
+      "y": 980,
+      "width": 560,
+      "height": 360,
+      "text": "## 2. 核心抽象单位\n**opencli**：站点命令\n- `hackernews top`\n- `wikipedia summary`\n\n**web-access**：任务导向策略\n- 搜索、抓取、升级到 CDP、处理站点障碍\n\n**agent-browser**：页面元素与会话状态\n- `@e1` refs\n- tab\n- session\n- storage\n- network log\n\n抽象越往右，越接近浏览器底层，也越适合复杂交互。 "
+    },
+    {
+      "id": "n-matrix-browser",
+      "type": "text",
+      "x": 1560,
+      "y": 980,
+      "width": 540,
+      "height": 340,
+      "text": "## 3. 对浏览器的依赖\n**opencli**\n- 公共命令可不依赖浏览器桥\n- 某些能力依赖 Browser Bridge 扩展\n\n**web-access**\n- 轻浏览器层，强依赖 Chrome remote debugging\n- 本质是给 agent 一条进 Chrome 的路\n\n**agent-browser**\n- 浏览器就是产品本体\n- 本地 Chrome / Chrome for Testing / CDP 都是一等依赖\n\n浏览器越居中，说明它越不是“附加功能”，而是主执行面。 "
+    },
+    {
+      "id": "n-matrix-state",
+      "type": "text",
+      "x": 2140,
+      "y": 980,
+      "width": 460,
+      "height": 380,
+      "text": "## 4. 状态管理深度\n**opencli**\n- 对公开命令，通常更像无状态调用\n- 浏览器态是附加层\n\n**web-access**\n- 使用用户现有 Chrome 登录态\n- 但状态管理更多靠浏览器本身，不是 skill 内部强建模\n\n**agent-browser**\n- daemon 持续存活\n- 多 session 隔离\n- state save/load\n- profile / auth vault / stream / tab list\n\n这一项 `agent-browser` 明显最深。"
+    },
+    {
+      "id": "n-matrix-coverage",
+      "type": "text",
+      "x": 340,
+      "y": 1440,
+      "width": 620,
+      "height": 340,
+      "text": "## 5. 覆盖面的来源\n**opencli**：覆盖面来自“支持了多少站点命令”\n- 优点：单站点体验好\n- 缺点：长尾站点要等适配\n\n**web-access**：覆盖面来自“agent 可把任意网站当任务处理”\n- 优点：长尾站点适配力强\n- 缺点：效果更依赖 agent 判断\n\n**agent-browser**：覆盖面来自“任何能在浏览器里操作的站点理论上都能处理”\n- 优点：通用性最强\n- 缺点：实现工作量要你自己编排"
+    },
+    {
+      "id": "n-matrix-strength",
+      "type": "text",
+      "x": 1020,
+      "y": 1440,
+      "width": 760,
+      "height": 360,
+      "text": "## 6. 各自的最强用例\n**opencli**\n- 公共信息抓取\n- 内容站、社区站、百科、榜单、搜索结果\n- 想快速拿结构化结果\n\n**web-access**\n- agent 研究类任务\n- 从搜索到网页再到登录态页面的混合流程\n- 需要让 agent 自己切换工具\n\n**agent-browser**\n- 表单自动化\n- 真实 UI 交互\n- 已登录后台操作\n- QA / E2E / 截图 / diff / network 证据采集"
+    },
+    {
+      "id": "n-matrix-risk",
+      "type": "text",
+      "x": 1840,
+      "y": 1440,
+      "width": 760,
+      "height": 360,
+      "text": "## 7. 主要风险和成本\n**opencli**\n- 站点命令漂移\n- 你依赖的是维护者的站点适配质量\n\n**web-access**\n- 环境配置不通就完全卡住\n- skill 强依赖 agent 是否真正遵守哲学和流程\n\n**agent-browser**\n- 环境和能力都最重\n- 需要更明确地编排交互步骤\n- 但一旦建好，长期复用价值最高\n\n换句话说：\n- 左边是“产品维护成本”\n- 中间是“skill 约束成本”\n- 右边是“runtime 工程成本”"
+    },
+    {
+      "id": "n-matrix-bottomline",
+      "type": "text",
+      "x": 660,
+      "y": 1880,
+      "width": 1280,
+      "height": 180,
+      "text": "## Bottom Line\n如果你把三者放到同一平面比较，会误判。更准确的看法是：\n- `opencli` 解决“我想立刻用命令拿到某站结果”\n- `web-access` 解决“我想让 agent 更聪明地联网”\n- `agent-browser` 解决“我需要一个稳定、可编排、可持久化的浏览器自动化内核”"
+    },
+    {
+      "id": "n-decision-flow",
+      "type": "text",
+      "x": 2860,
+      "y": 1480,
+      "width": 760,
+      "height": 560,
+      "text": "## 任务选型决策流\n1. **只是公开信息查询？**\n   - 是 → 先试 `opencli`\n2. **查询过程需要 agent 自己搜索、切换抓取方式、核实来源？**\n   - 是 → `web-access`\n3. **需要登录、点击、填表、下载、看 console/network、复用 session？**\n   - 是 → `agent-browser`\n4. **需要组合？**\n   - 先 `opencli` 找候选目标\n   - 再 `web-access` 做 research routing\n   - 最后 `agent-browser` 执行需要浏览器的重步骤\n\n这往往是最合理的分层组合。 "
+    },
+    {
+      "id": "n-composition",
+      "type": "text",
+      "x": 3700,
+      "y": 1480,
+      "width": 620,
+      "height": 520,
+      "text": "## 组合方式\n### 组合 A：Research first\n`opencli` → 快速发现公开信号\n`web-access` → 追一手来源和长尾页面\n\n### 组合 B：Execution first\n`web-access` → 判断何时必须进入浏览器\n`agent-browser` → 真正执行复杂交互\n\n### 组合 C：Operational stack\n`opencli` 作为公共信息入口\n`agent-browser` 作为浏览器 runtime\n上层再用 skill 或 agent policy 做编排\n\n这比“只押一个工具”更接近生产用法。 "
+    },
+    {
+      "id": "n-practical-advice",
+      "type": "text",
+      "x": 4380,
+      "y": 1480,
+      "width": 620,
+      "height": 520,
+      "text": "## 对你当前环境的实际建议\n- **立即可用性**：`opencli` 最强，因为你已经装好，公共命令跑通\n- **研究型任务**：把 `web-access` 保留为 skill 能力，但前提是 Chrome remote debugging 长期开着\n- **长期基础设施价值**：如果你要做大量 UI 自动化和浏览器验证，值得重点投入 `agent-browser`\n\n一句话：\n`opencli` 先解决“拿结果”\n`web-access` 解决“agent 如何联网”\n`agent-browser` 解决“浏览器如何稳定变成基础设施”"
+    },
+    {
+      "id": "l-opencli",
+      "type": "link",
+      "x": -200,
+      "y": 2360,
+      "width": 420,
+      "height": 90,
+      "url": "https://github.com/jackwener/opencli"
+    },
+    {
+      "id": "l-webaccess",
+      "type": "link",
+      "x": 300,
+      "y": 2360,
+      "width": 420,
+      "height": 90,
+      "url": "https://github.com/eze-is/web-access"
+    },
+    {
+      "id": "l-agentbrowser",
+      "type": "link",
+      "x": 800,
+      "y": 2360,
+      "width": 420,
+      "height": 90,
+      "url": "https://github.com/vercel-labs/agent-browser"
+    },
+    {
+      "id": "l-agentbrowser-skill",
+      "type": "link",
+      "x": 1300,
+      "y": 2360,
+      "width": 520,
+      "height": 90,
+      "url": "https://github.com/vercel-labs/agent-browser/blob/main/skills/agent-browser/SKILL.md"
+    },
+    {
+      "id": "l-agentbrowser-daemon",
+      "type": "link",
+      "x": 1900,
+      "y": 2360,
+      "width": 520,
+      "height": 90,
+      "url": "https://github.com/vercel-labs/agent-browser/blob/main/cli/src/native/daemon.rs"
+    },
+    {
+      "id": "l-agentbrowser-snapshot",
+      "type": "link",
+      "x": 2500,
+      "y": 2360,
+      "width": 520,
+      "height": 90,
+      "url": "https://github.com/vercel-labs/agent-browser/blob/main/cli/src/native/snapshot.rs"
+    },
+    {
+      "id": "l-agentbrowser-element",
+      "type": "link",
+      "x": 3100,
+      "y": 2360,
+      "width": 520,
+      "height": 90,
+      "url": "https://github.com/vercel-labs/agent-browser/blob/main/cli/src/native/element.rs"
+    },
+    {
+      "id": "l-webaccess-skill",
+      "type": "link",
+      "x": 3700,
+      "y": 2360,
+      "width": 520,
+      "height": 90,
+      "url": "https://github.com/eze-is/web-access/blob/main/SKILL.md"
+    },
+    {
+      "id": "l-opencli-npm",
+      "type": "link",
+      "x": 4300,
+      "y": 2360,
+      "width": 520,
+      "height": 90,
+      "url": "https://www.npmjs.com/package/@jackwener/opencli"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-title-stack",
+      "fromNode": "n-title",
+      "fromSide": "right",
+      "toNode": "n-stack",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "3",
+      "label": "layer model"
+    },
+    {
+      "id": "e-title-opencli",
+      "fromNode": "n-title",
+      "fromSide": "right",
+      "toNode": "n-opencli-core",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "5",
+      "label": "product layer"
+    },
+    {
+      "id": "e-title-web",
+      "fromNode": "n-title",
+      "fromSide": "right",
+      "toNode": "n-web-core",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "4",
+      "label": "strategy layer"
+    },
+    {
+      "id": "e-title-agent",
+      "fromNode": "n-title",
+      "fromSide": "right",
+      "toNode": "n-agent-core",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "6",
+      "label": "runtime layer"
+    },
+    {
+      "id": "e-stack-opencli",
+      "fromNode": "n-stack",
+      "fromSide": "right",
+      "toNode": "n-opencli-runtime",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "e-stack-web",
+      "fromNode": "n-stack",
+      "fromSide": "right",
+      "toNode": "n-web-routing",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "e-stack-agent",
+      "fromNode": "n-stack",
+      "fromSide": "right",
+      "toNode": "n-agent-daemon",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "6"
+    },
+    {
+      "id": "e-opencli-core-runtime",
+      "fromNode": "n-opencli-core",
+      "fromSide": "right",
+      "toNode": "n-opencli-runtime",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "e-opencli-runtime-strengths",
+      "fromNode": "n-opencli-runtime",
+      "fromSide": "bottom",
+      "toNode": "n-opencli-strengths",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "e-opencli-runtime-limits",
+      "fromNode": "n-opencli-runtime",
+      "fromSide": "bottom",
+      "toNode": "n-opencli-limits",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "e-opencli-summary",
+      "fromNode": "n-opencli-strengths",
+      "fromSide": "bottom",
+      "toNode": "n-opencli-bestfit",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "e-web-core-routing",
+      "fromNode": "n-web-core",
+      "fromSide": "right",
+      "toNode": "n-web-routing",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "e-web-routing-cdp",
+      "fromNode": "n-web-routing",
+      "fromSide": "bottom",
+      "toNode": "n-web-cdp",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4",
+      "label": "upgrade to browser"
+    },
+    {
+      "id": "e-web-routing-patterns",
+      "fromNode": "n-web-routing",
+      "fromSide": "bottom",
+      "toNode": "n-web-patterns",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4",
+      "label": "operating philosophy"
+    },
+    {
+      "id": "e-web-cdp-strengths",
+      "fromNode": "n-web-cdp",
+      "fromSide": "bottom",
+      "toNode": "n-web-strengths",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "e-web-patterns-limits",
+      "fromNode": "n-web-patterns",
+      "fromSide": "bottom",
+      "toNode": "n-web-limits",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "e-agent-core-daemon",
+      "fromNode": "n-agent-core",
+      "fromSide": "right",
+      "toNode": "n-agent-daemon",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "6"
+    },
+    {
+      "id": "e-agent-daemon-snapshot",
+      "fromNode": "n-agent-daemon",
+      "fromSide": "bottom",
+      "toNode": "n-agent-snapshot",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "6",
+      "label": "stateful interaction loop"
+    },
+    {
+      "id": "e-agent-daemon-frames",
+      "fromNode": "n-agent-daemon",
+      "fromSide": "bottom",
+      "toNode": "n-agent-frames",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "6"
+    },
+    {
+      "id": "e-agent-snapshot-state",
+      "fromNode": "n-agent-snapshot",
+      "fromSide": "bottom",
+      "toNode": "n-agent-state",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "6",
+      "label": "refs + sessions"
+    },
+    {
+      "id": "e-agent-frames-stream",
+      "fromNode": "n-agent-frames",
+      "fromSide": "bottom",
+      "toNode": "n-agent-stream",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "6",
+      "label": "runtime observability"
+    },
+    {
+      "id": "e-agent-state-summary",
+      "fromNode": "n-agent-state",
+      "fromSide": "bottom",
+      "toNode": "n-agent-strengths",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "6"
+    },
+    {
+      "id": "e-opencli-matrix",
+      "fromNode": "n-opencli-bestfit",
+      "fromSide": "left",
+      "toNode": "n-matrix-entry",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5",
+      "label": "compare"
+    },
+    {
+      "id": "e-web-matrix",
+      "fromNode": "n-web-strengths",
+      "fromSide": "left",
+      "toNode": "n-matrix-abstraction",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4",
+      "label": "compare"
+    },
+    {
+      "id": "e-agent-matrix",
+      "fromNode": "n-agent-strengths",
+      "fromSide": "left",
+      "toNode": "n-matrix-state",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "6",
+      "label": "compare"
+    },
+    {
+      "id": "e-matrix-entry-abs",
+      "fromNode": "n-matrix-entry",
+      "fromSide": "right",
+      "toNode": "n-matrix-abstraction",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "2"
+    },
+    {
+      "id": "e-matrix-abs-browser",
+      "fromNode": "n-matrix-abstraction",
+      "fromSide": "right",
+      "toNode": "n-matrix-browser",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "2"
+    },
+    {
+      "id": "e-matrix-browser-state",
+      "fromNode": "n-matrix-browser",
+      "fromSide": "right",
+      "toNode": "n-matrix-state",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "2"
+    },
+    {
+      "id": "e-matrix-coverage",
+      "fromNode": "n-matrix-intro",
+      "fromSide": "bottom",
+      "toNode": "n-matrix-coverage",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "2"
+    },
+    {
+      "id": "e-matrix-strength",
+      "fromNode": "n-matrix-abstraction",
+      "fromSide": "bottom",
+      "toNode": "n-matrix-strength",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "2"
+    },
+    {
+      "id": "e-matrix-risk",
+      "fromNode": "n-matrix-state",
+      "fromSide": "bottom",
+      "toNode": "n-matrix-risk",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "2"
+    },
+    {
+      "id": "e-matrix-bottom",
+      "fromNode": "n-matrix-strength",
+      "fromSide": "bottom",
+      "toNode": "n-matrix-bottomline",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "2",
+      "label": "synthesis"
+    },
+    {
+      "id": "e-matrix-to-decision",
+      "fromNode": "n-matrix-bottomline",
+      "fromSide": "right",
+      "toNode": "n-decision-flow",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "1",
+      "label": "how to choose"
+    },
+    {
+      "id": "e-decision-composition",
+      "fromNode": "n-decision-flow",
+      "fromSide": "right",
+      "toNode": "n-composition",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "1"
+    },
+    {
+      "id": "e-composition-practical",
+      "fromNode": "n-composition",
+      "fromSide": "right",
+      "toNode": "n-practical-advice",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "1"
+    },
+    {
+      "id": "e-links-opencli",
+      "fromNode": "n-opencli-core",
+      "fromSide": "bottom",
+      "toNode": "l-opencli",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "5"
+    },
+    {
+      "id": "e-links-webaccess",
+      "fromNode": "n-web-core",
+      "fromSide": "bottom",
+      "toNode": "l-webaccess",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "4"
+    },
+    {
+      "id": "e-links-agentbrowser",
+      "fromNode": "n-agent-core",
+      "fromSide": "bottom",
+      "toNode": "l-agentbrowser",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "6"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

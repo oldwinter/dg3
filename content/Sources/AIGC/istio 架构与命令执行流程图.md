@@ -4,7 +4,7 @@ permalink: /Sources/AIGC/istio 架构与命令执行流程图.md
 title: Istio 架构与命令执行流程图
 created: 2025-01-28
 modified: 2025-01-28
-published: 2025-09-12T22:16:01.807+08:00
+published: 2025-08-15T03:20:43.747+08:00
 ---
 
 # 🕸️ Istio 架构与命令执行流程图

@@ -1,0 +1,531 @@
+{
+  "nodes": [
+    {
+      "id": "title_main",
+      "type": "text",
+      "x": 220,
+      "y": -220,
+      "width": 760,
+      "height": 120,
+      "styleAttributes": {
+        "border": "invisible",
+        "textAlign": "center"
+      },
+      "text": "# LLM Knowledge Bases\n**把 LLM 从回答器，升级为个人研究知识库的编译器与运营者**"
+    },
+    {
+      "id": "title_sub",
+      "type": "text",
+      "x": 260,
+      "y": -100,
+      "width": 680,
+      "height": 100,
+      "styleAttributes": {
+        "border": "invisible",
+        "textAlign": "center"
+      },
+      "text": "[[Obsidian]] 作为前台，文件系统作为数据库，Agent 负责 ingest / compile / query / lint / evolve。"
+    },
+    {
+      "id": "group_method",
+      "type": "group",
+      "x": -300,
+      "y": 80,
+      "width": 1220,
+      "height": 760,
+      "color": "2",
+      "label": "方法论拆解"
+    },
+    {
+      "id": "method_define",
+      "type": "text",
+      "x": -240,
+      "y": 150,
+      "width": 320,
+      "height": 260,
+      "color": "4",
+      "text": "## 这套范式是什么\n\n不是把文档喂给聊天框。\n\n而是先把原始资料收进 `raw/`，再让 LLM 持续把它们编译成一个可链接、可检索、可回写的 wiki。\n\n核心对象不是单次回答，而是一个会持续演化的 [[数字花园]] / 研究知识库。"
+    },
+    {
+      "id": "method_judgment",
+      "type": "text",
+      "x": 120,
+      "y": 150,
+      "width": 340,
+      "height": 300,
+      "color": "5",
+      "text": "## 核心判断\n\n- LLM 的主要工作从操作代码，转向操作知识与文件。\n- 真正有价值的是累计可复用资产，而不是一次性问答。\n- 输出应默认落成文件，如 Markdown、Canvas、Marp、图表。\n- 个人探索产生的新结果，应尽量再回收入库。\n- 当 wiki 规模还在中小体量时，依靠摘要、索引、双链和 agent 搜索，往往就足够好。"
+    },
+    {
+      "id": "method_why",
+      "type": "text",
+      "x": 500,
+      "y": 150,
+      "width": 360,
+      "height": 300,
+      "color": "3",
+      "text": "## 为什么它在小规模上有效\n\n- 不是全靠长上下文硬吃，而是让 LLM 自己维护摘要页、索引页、主题页。\n- 关键上下文被压缩成更短的结构化入口，读取成本下降。\n- 文件系统天然支持渐进读取、局部改写、版本管理和可追溯。\n- [[Obsidian]] 让人类和 agent 看到的是同一套材料与产物。"
+    },
+    {
+      "id": "method_rag",
+      "type": "text",
+      "x": 120,
+      "y": 490,
+      "width": 340,
+      "height": 220,
+      "color": "2",
+      "text": "## 它和经典 [[RAG]] 的关系\n\n这不是先检索再回答的窄链路。\n\n更接近：\n- 文件化 memory\n- agent 自主搜集上下文\n- 持续编译知识结构\n- 回写产物并再利用\n\n也就是一种偏 [[上下文工程]] 与知识编译的系统。"
+    },
+    {
+      "id": "method_product",
+      "type": "text",
+      "x": 500,
+      "y": 490,
+      "width": 360,
+      "height": 220,
+      "color": "6",
+      "text": "## 产品机会\n\n原文最后那句很关键：\n\n现在像是一堆脚本的拼接，但它其实已经隐含一个新产品雏形：\n\n**AI Native Research OS**\n\n一个把 ingest、wiki compile、问答、可视化、健康检查、再沉淀统一起来的个人研究操作系统。"
+    },
+    {
+      "id": "group_loop",
+      "type": "group",
+      "x": 980,
+      "y": 80,
+      "width": 1260,
+      "height": 820,
+      "color": "4",
+      "label": "系统闭环"
+    },
+    {
+      "id": "loop_ingest",
+      "type": "text",
+      "x": 1040,
+      "y": 160,
+      "width": 210,
+      "height": 180,
+      "color": "1",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "## 1. Ingest\n\n`raw/`\n\n文章、论文、repo、dataset、图片先入库。\n\n目标是保留原始材料，而不是立刻过度加工。"
+    },
+    {
+      "id": "loop_compile",
+      "type": "text",
+      "x": 1330,
+      "y": 160,
+      "width": 210,
+      "height": 180,
+      "color": "2",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "## 2. Compile\n\n`wiki/`\n\nLLM 生成摘要页、概念页、关系页、主题页、索引页，并补 [[wikilink]]。"
+    },
+    {
+      "id": "loop_query",
+      "type": "text",
+      "x": 1620,
+      "y": 160,
+      "width": 210,
+      "height": 180,
+      "color": "3",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "## 3. Query\n\nAgent 不只回答问题。\n\n它会自己搜索 wiki、读取原文、整合证据、再生成结论。"
+    },
+    {
+      "id": "loop_output",
+      "type": "text",
+      "x": 1910,
+      "y": 160,
+      "width": 210,
+      "height": 180,
+      "color": "4",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "## 4. Output\n\n默认产出文件：\n\nMarkdown\nCanvas\nMarp\nMatplotlib 图\n报告与草稿"
+    },
+    {
+      "id": "loop_feedback",
+      "type": "text",
+      "x": 1910,
+      "y": 420,
+      "width": 210,
+      "height": 180,
+      "color": "5",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "## 5. File Back\n\n把有价值的问答产物重新归档进 wiki。\n\n这样每次研究都会增加未来可复用上下文。"
+    },
+    {
+      "id": "loop_lint",
+      "type": "text",
+      "x": 1620,
+      "y": 420,
+      "width": 210,
+      "height": 180,
+      "color": "6",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "## 6. Lint\n\n健康检查、缺失字段、事实冲突、候选新主题、待补证据、脏数据清理。"
+    },
+    {
+      "id": "loop_tools",
+      "type": "text",
+      "x": 1330,
+      "y": 420,
+      "width": 210,
+      "height": 180,
+      "color": "2",
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "## 7. Tools\n\n小型搜索引擎\nrepo CLI\n批处理脚本\n图表生成器\n外部搜索器"
+    },
+    {
+      "id": "loop_repo",
+      "type": "text",
+      "x": 1040,
+      "y": 420,
+      "width": 210,
+      "height": 220,
+      "color": "1",
+      "text": "## 8. Repo As OS\n\n```text\nraw/\nwiki/\noutputs/\nprompts/\ntools/\nreports/\n```\n\n文件系统就是数据库，也是 agent 的工作面。"
+    },
+    {
+      "id": "loop_thesis",
+      "type": "text",
+      "x": 1260,
+      "y": 700,
+      "width": 720,
+      "height": 120,
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "**闭环本质**：原始资料 -> 编译知识 -> 围绕知识提问 -> 生成新产物 -> 回收入库 -> 持续增强。"
+    },
+    {
+      "id": "group_practice",
+      "type": "group",
+      "x": -300,
+      "y": 940,
+      "width": 1600,
+      "height": 1120,
+      "color": "5",
+      "label": "如何全面实践"
+    },
+    {
+      "id": "practice_scope",
+      "type": "text",
+      "x": -240,
+      "y": 1020,
+      "width": 260,
+      "height": 320,
+      "color": "1",
+      "text": "## 阶段 1\n选题与边界\n\n- 先选一个研究主题，不要一上来全库总动员。\n- 明确原始资料类型、更新频率、核心问题。\n- 先做 30 到 100 份高质量材料的试验库。\n\n先证明闭环能跑，再扩大。"
+    },
+    {
+      "id": "practice_structure",
+      "type": "text",
+      "x": 60,
+      "y": 1020,
+      "width": 260,
+      "height": 320,
+      "color": "2",
+      "text": "## 阶段 2\n目录与规范\n\n至少分层：\n- `raw/`\n- `wiki/`\n- `outputs/`\n- `prompts/`\n- `tools/`\n- `reports/`\n\n原文、编译产物、查询产物不要混写。文件命名、frontmatter、链接规则要尽早固定。"
+    },
+    {
+      "id": "practice_compile",
+      "type": "text",
+      "x": 360,
+      "y": 1020,
+      "width": 260,
+      "height": 320,
+      "color": "3",
+      "text": "## 阶段 3\n编译流水线\n\n为 agent 设计几类稳定任务：\n- 单文档摘要\n- 多文档综述\n- 主题页更新\n- 索引页维护\n- 链接补全\n- 证据追溯\n\n重点不是大而全，而是可增量重跑。"
+    },
+    {
+      "id": "practice_query",
+      "type": "text",
+      "x": 660,
+      "y": 1020,
+      "width": 260,
+      "height": 320,
+      "color": "4",
+      "text": "## 阶段 4\n查询与输出\n\n把常见问题都文件化输出：\n- 问题回答\n- 研究备忘录\n- 决策对比\n- 幻灯片\n- 图表\n- 新候选主题页\n\n目标是让每次提问都留下结构化资产。"
+    },
+    {
+      "id": "practice_lint",
+      "type": "text",
+      "x": 960,
+      "y": 1020,
+      "width": 260,
+      "height": 320,
+      "color": "5",
+      "text": "## 阶段 5\n健康检查\n\n周期性让 agent 做：\n- 死链与孤儿页检查\n- frontmatter 缺项\n- 事实冲突与口径不一致\n- 高价值缺页候选\n- 需要 web 校验的陈旧信息\n\n知识库质量要靠巡检，而不是靠记忆。"
+    },
+    {
+      "id": "practice_scale",
+      "type": "text",
+      "x": 1260,
+      "y": 1020,
+      "width": 260,
+      "height": 320,
+      "color": "6",
+      "text": "## 阶段 6\n评估与扩容\n\n最后才考虑：\n- 搜索引擎增强\n- 向量索引\n- 合成数据\n- 微调\n\n判断标准是：当前文件化闭环是否已稳定，瓶颈是否真来自检索或模型记忆，而不是流程设计。"
+    },
+    {
+      "id": "practice_roles",
+      "type": "text",
+      "x": -240,
+      "y": 1420,
+      "width": 700,
+      "height": 240,
+      "color": "4",
+      "text": "## 建议拆成 5 类 agent 角色\n\n- Ingestor：把外部资料整理进 `raw/`\n- Compiler：把 raw 编译成 wiki 结构\n- Researcher：回答复杂问题并追证据\n- Librarian：维护索引、双链、目录与主题页\n- Linter：跑质量检查，产出修复建议\n\n这样比一个全能 agent 到处乱写更稳。"
+    },
+    {
+      "id": "practice_rhythm",
+      "type": "text",
+      "x": 520,
+      "y": 1420,
+      "width": 700,
+      "height": 240,
+      "color": "2",
+      "text": "## 建议节奏\n\n- 每次 ingest 后，只增量编译受影响主题。\n- 每天允许生成问答产物，但要有归档路径。\n- 每周至少跑一次 health check。\n- 每月回顾：哪些主题越来越强，哪些只是制造噪音。\n\n知识库不是一次性建成，而是持续运营。"
+    },
+    {
+      "id": "practice_principle",
+      "type": "text",
+      "x": 140,
+      "y": 1720,
+      "width": 820,
+      "height": 220,
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "### 实践原则\n先把“本地文件 + 可回写产物 + 增量编译 + 周期巡检”四件事做稳，再追求 fancy 的 RAG、知识图谱或微调。"
+    },
+    {
+      "id": "group_risk",
+      "type": "group",
+      "x": 1360,
+      "y": 940,
+      "width": 880,
+      "height": 1120,
+      "color": "1",
+      "label": "风险、边界与决策"
+    },
+    {
+      "id": "risk_failures",
+      "type": "text",
+      "x": 1420,
+      "y": 1020,
+      "width": 320,
+      "height": 320,
+      "color": "1",
+      "text": "## 常见失败模式\n\n- `raw/` 和 `wiki/` 混在一起，原文与推断无法区分。\n- Agent 可无边界改写全库，越跑越脏。\n- 问答只停留在聊天里，没有回写。\n- 索引页和摘要页不维护，导致规模一大就失控。\n- 过早上复杂 RAG，掩盖了真正的问题。"
+    },
+    {
+      "id": "risk_guardrails",
+      "type": "text",
+      "x": 1780,
+      "y": 1020,
+      "width": 320,
+      "height": 320,
+      "color": "2",
+      "text": "## 硬边界\n\n- 原文区只追加，不覆盖。\n- 编译区允许改写，但要区分事实、判断、待确认。\n- 最新事实默认要求可追溯来源。\n- 高风险批量操作先 dry-run。\n- 输出优先生成新文件，不直接重写核心常青页。"
+    },
+    {
+      "id": "risk_metrics",
+      "type": "text",
+      "x": 1420,
+      "y": 1420,
+      "width": 320,
+      "height": 260,
+      "color": "3",
+      "text": "## 先盯这些指标\n\n- 可回答问题的覆盖度\n- 主题页完整度\n- 死链/孤儿页数量\n- 关键概念是否有摘要与索引\n- 问答产物回收入库比例\n\n先衡量知识库是否越来越好用。"
+    },
+    {
+      "id": "risk_finetune",
+      "type": "text",
+      "x": 1780,
+      "y": 1420,
+      "width": 320,
+      "height": 260,
+      "color": "4",
+      "text": "## 何时考虑合成数据与微调\n\n当且仅当：\n- 高频问题稳定\n- 输出格式稳定\n- 文件化闭环已成熟\n- 检索和上下文成本成为真实瓶颈\n\n否则，多半是在把流程问题伪装成模型问题。"
+    },
+    {
+      "id": "risk_conclusion",
+      "type": "text",
+      "x": 1500,
+      "y": 1760,
+      "width": 520,
+      "height": 180,
+      "styleAttributes": {
+        "textAlign": "center"
+      },
+      "text": "### 最终结论\n这套方法论最强的地方，不是替代搜索，而是把研究过程本身沉淀成一个越来越聪明、越来越可操作的个人知识系统。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_method_1",
+      "fromNode": "method_define",
+      "fromSide": "right",
+      "toNode": "method_judgment",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_method_2",
+      "fromNode": "method_judgment",
+      "fromSide": "right",
+      "toNode": "method_why",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_method_3",
+      "fromNode": "method_judgment",
+      "fromSide": "bottom",
+      "toNode": "method_rag",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_method_4",
+      "fromNode": "method_why",
+      "fromSide": "bottom",
+      "toNode": "method_product",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_loop_1",
+      "fromNode": "loop_ingest",
+      "fromSide": "right",
+      "toNode": "loop_compile",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_loop_2",
+      "fromNode": "loop_compile",
+      "fromSide": "right",
+      "toNode": "loop_query",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_loop_3",
+      "fromNode": "loop_query",
+      "fromSide": "right",
+      "toNode": "loop_output",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_loop_4",
+      "fromNode": "loop_output",
+      "fromSide": "bottom",
+      "toNode": "loop_feedback",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_loop_5",
+      "fromNode": "loop_feedback",
+      "fromSide": "left",
+      "toNode": "loop_lint",
+      "toSide": "right"
+    },
+    {
+      "id": "edge_loop_6",
+      "fromNode": "loop_lint",
+      "fromSide": "left",
+      "toNode": "loop_tools",
+      "toSide": "right"
+    },
+    {
+      "id": "edge_loop_7",
+      "fromNode": "loop_tools",
+      "fromSide": "left",
+      "toNode": "loop_repo",
+      "toSide": "right"
+    },
+    {
+      "id": "edge_loop_8",
+      "fromNode": "loop_repo",
+      "fromSide": "top",
+      "toNode": "loop_ingest",
+      "toSide": "bottom"
+    },
+    {
+      "id": "edge_practice_1",
+      "fromNode": "practice_scope",
+      "fromSide": "right",
+      "toNode": "practice_structure",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_practice_2",
+      "fromNode": "practice_structure",
+      "fromSide": "right",
+      "toNode": "practice_compile",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_practice_3",
+      "fromNode": "practice_compile",
+      "fromSide": "right",
+      "toNode": "practice_query",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_practice_4",
+      "fromNode": "practice_query",
+      "fromSide": "right",
+      "toNode": "practice_lint",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_practice_5",
+      "fromNode": "practice_lint",
+      "fromSide": "right",
+      "toNode": "practice_scale",
+      "toSide": "left"
+    },
+    {
+      "id": "edge_top_to_method",
+      "fromNode": "title_sub",
+      "fromSide": "bottom",
+      "toNode": "group_method",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_top_to_loop",
+      "fromNode": "title_sub",
+      "fromSide": "bottom",
+      "toNode": "group_loop",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_loop_to_practice",
+      "fromNode": "loop_thesis",
+      "fromSide": "bottom",
+      "toNode": "group_practice",
+      "toSide": "top"
+    },
+    {
+      "id": "edge_practice_to_risk",
+      "fromNode": "practice_principle",
+      "fromSide": "right",
+      "toNode": "group_risk",
+      "toSide": "left"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {},
+    "startNode": "title_main"
+  }
+}

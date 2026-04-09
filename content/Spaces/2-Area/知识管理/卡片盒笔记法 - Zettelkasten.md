@@ -4,14 +4,14 @@ permalink: /Spaces/2-Area/知识管理/卡片盒笔记法 - Zettelkasten.md
 title: 卡片盒笔记法 - Zettelkasten
 created: 2022-06-09
 modified: 2023-03-14
-published: 2025-08-15T22:00:03.772+08:00
+published: 2025-08-14T03:57:44.160+08:00
 ---
 
 [[我的卡片盒笔记法实操]]
 
 ## 定义
 
-卡片盒笔记系统是一款个性化的，用于思考和写作的工具。它具有超文本 (hypertext) 的特点，让你的所思所想互相连接形成网络。与其他系统不同的是，你创造的是一张由你的想法、看法、灵感、或者遇到的具体的知识组成的思想之网 (web of thoughts)，而不是孤立的笔记。它强调笔记之间的连接关系，而非把所有笔记堆在一起\[^1]。
+卡片盒笔记系统是一款个性化的，用于思考和写作的工具。它具有超文本 (hypertext) 的特点，让你的所思所想互相连接形成网络。与其他系统不同的是，你创造的是一张由你的想法、看法、灵感、或者遇到的具体的知识组成的思想之网 (web of thoughts)，而不是孤立的笔记。它强调笔记之间的连接关系，而非把所有笔记堆在一起[^1]。
 
 跟卡片盒笔记法类似的，但更现代的方法：
 
@@ -54,4 +54,4 @@ published: 2025-08-15T22:00:03.772+08:00
     - 这里给自己挖个坑，计划实践半年后，再进行系统性地总结。
     - 挖坑[[如何一步步践行卡片笔记写作法]]
 
-\[^1]: [卢曼卡片盒笔记法介绍 (Introduction to the Zettelkasten Method) • Zettelkasten Method](https://zettelkasten.de/introduction/zh/)
+[^1]: [卢曼卡片盒笔记法介绍 (Introduction to the Zettelkasten Method) • Zettelkasten Method](https://zettelkasten.de/introduction/zh/)

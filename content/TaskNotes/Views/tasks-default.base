@@ -43,25 +43,38 @@ formulas:
   dueDateDisplay: if(!due, "", if(date(due).date() == today(), "Today", if(date(due).date() == today() + "1d", "Tomorrow", if(date(due).date() == today() - "1d", "Yesterday", if(date(due) < today(), formula.daysUntilDue * -1 + "d ago", if(date(due) <= today() + "7d", date(due).format("ddd"), date(due).format("MMM D")))))))
 views:
   - type: tasknotesTaskList
-    name: All Tasks
-    filters:
-      and:
-        - status != "done"
+    name: Manual Order
+    groupBy:
+      property: status
+      direction: ASC
     order:
       - priority
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
     sort:
-      - property: file.mtime
+      - property: tasknotes_manual_order
         direction: DESC
-      - property: priority
+  - type: tasknotesTaskList
+    name: All Tasks
+    order:
+      - priority
+      - status
+      - file.ctime
+      - contexts
+      - 🤖
+      - file.name
+      - recurrence
+      - complete_instances
+      - file.tasks
+    sort:
+      - property: due
         direction: ASC
-    enableSearch: true
   - type: tasknotesTaskList
     name: Not Blocked
     filters:
@@ -72,7 +85,9 @@ views:
                 - status != "done"
             - and:
                 - recurrence
-                - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
+                - or:
+                    - complete_instances.isEmpty()
+                    - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
         - or:
             - blockedBy.isEmpty()
             - list(blockedBy).filter(file(value.uid).properties.status != "done").isEmpty()
@@ -81,10 +96,11 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
     sort:
       - property: formula.urgencyScore
         direction: DESC
@@ -98,7 +114,9 @@ views:
                 - status != "done"
             - and:
                 - recurrence
-                - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
+                - or:
+                    - complete_instances.isEmpty()
+                    - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
         - or:
             - date(due) == today()
             - date(scheduled) == today()
@@ -107,10 +125,11 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
     sort:
       - property: formula.urgencyScore
         direction: DESC
@@ -124,17 +143,20 @@ views:
                 - status != "done"
             - and:
                 - recurrence
-                - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
+                - or:
+                    - complete_instances.isEmpty()
+                    - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
         - date(due) < today()
     order:
       - priority
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
     sort:
       - property: formula.urgencyScore
         direction: DESC
@@ -148,7 +170,9 @@ views:
                 - status != "done"
             - and:
                 - recurrence
-                - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
+                - or:
+                    - complete_instances.isEmpty()
+                    - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
         - or:
             - and:
                 - date(due) >= today()
@@ -161,10 +185,11 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
     sort:
       - property: formula.urgencyScore
         direction: DESC
@@ -178,7 +203,9 @@ views:
                 - status != "done"
             - and:
                 - recurrence
-                - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
+                - or:
+                    - complete_instances.isEmpty()
+                    - '!complete_instances.contains(today().format("yyyy-MM-dd"))'
         - date(due).isEmpty()
         - date(scheduled).isEmpty()
     order:
@@ -186,10 +213,11 @@ views:
       - status
       - file.ctime
       - contexts
-      - ai_agent
+      - 🤖
       - file.name
       - recurrence
       - complete_instances
+      - file.tasks
     sort:
       - property: status
         direction: ASC

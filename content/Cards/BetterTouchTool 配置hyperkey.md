@@ -3,7 +3,7 @@ publish: true
 permalink: /Cards/BetterTouchTool 配置hyperkey.md
 created: 2025-06-18
 modified: 2025-06-18
-published: 2025-08-15T21:59:56.890+08:00
+published: 2025-07-18T11:23:55.284+08:00
 ---
 
 [[Raycast 配置 hyperkey]]
