@@ -209,6 +209,12 @@ plugins:
     enabled: true
     order: 50
     options: {}
+  - source: github:quartz-community/comments
+    enabled: true
+    order: 50
+    options:
+      provider: giscus
+      options: {}
 
 layout:
   groups:
