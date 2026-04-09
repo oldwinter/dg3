@@ -235,6 +235,17 @@ plugins:
     enabled: true
     order: 50
     options: {}
+  - source: github:quartz-community/cname
+    enabled: true
+    order: 50
+    options: {}
+  - source:
+      name: quartz-themes
+      repo: github:saberzero1/quartz-themes
+      subdir: plugin
+    enabled: true
+    order: 50
+    options: {}
 
 layout:
   groups:
