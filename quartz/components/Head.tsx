@@ -144,7 +144,7 @@ export default (() => {
             return resource
           }
         })}
-        <script>{readerModePersistenceScript}</script>
+        <script dangerouslySetInnerHTML={{ __html: readerModePersistenceScript }}></script>
       </head>
     )
   }
