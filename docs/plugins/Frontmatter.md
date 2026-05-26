@@ -10,6 +10,9 @@ tags:
 publish: true
 enableToc: true
 image:
+repository: "[quartz-community/note-properties](https://github.com/quartz-community/note-properties)"
+enabled: true
+required: true
 ---
 
 This plugin parses the frontmatter of the page using the [gray-matter](https://github.com/jonschlinkert/gray-matter) library and optionally displays selected properties in a collapsible panel. See [[authoring content#Syntax]], [[Obsidian compatibility]] and [[OxHugo compatibility]] for more information.
@@ -52,7 +55,7 @@ This plugin accepts the following configuration options:
 
 When enabled, this plugin renders a collapsible "Properties" panel before the page body. The panel displays selected frontmatter fields in a table with automatic type rendering:
 
-- **Strings** are shown as plain text. [[Wikilinks]] and [markdown links](https://example.com) within strings are rendered as clickable links.
+- **Strings** are shown as plain text. [[wikilinks]] and [markdown links](https://example.com) within strings are rendered as clickable links. Wikilink targets are slugified the same way as body-content links (e.g. `[[My Note]]` resolves to `my-note`) and matching is case-insensitive to mirror Obsidian's behavior, so `[[MyNote]]`, `[[mynote]]`, and `[[MYNOTE]]` all point to the same page.
 - **Arrays** are rendered as comma-separated lists.
 - **Booleans** are rendered as disabled checkboxes.
 - **Numbers** are rendered in a monospace font.
@@ -81,24 +84,24 @@ quartz-properties-collapse: false
 
 Quartz supports the following frontmatter fields. Where multiple keys are listed, they are aliases — the first matching key is used.
 
-| Field              | Keys                                              | Description                                                        |
-| ------------------ | ------------------------------------------------- | ------------------------------------------------------------------ |
-| Title              | `title`                                           | Page title. Falls back to filename if empty.                       |
-| Description        | `description`                                     | Page description for metadata and search.                          |
-| Tags               | `tags`, `tag`                                     | Categorization tags. Automatically slugified.                      |
-| Aliases            | `aliases`, `alias`                                | Alternative names for the page, used for link resolution.          |
-| Permalink          | `permalink`                                       | Custom URL slug. Also added to aliases.                            |
-| CSS classes        | `cssclasses`, `cssclass`                          | CSS classes applied to the page body.                              |
-| Social image       | `socialImage`, `image`, `cover`                   | Image used for social media previews.                              |
-| Social description | `socialDescription`                               | Description used specifically for social media previews.           |
-| Created date       | `created`, `date`                                 | When the note was created.                                         |
-| Modified date      | `modified`, `lastmod`, `updated`, `last-modified` | When the note was last modified. Falls back to `created` if unset. |
-| Published date     | `published`, `publishDate`, `date`                | When the note was published.                                       |
-| Publish            | `publish`                                         | Whether the note should be published.                              |
-| Draft              | `draft`                                           | Whether the note is a draft.                                       |
-| Comments           | `comments`                                        | Whether comments are enabled for the note.                         |
-| Language           | `lang`                                            | Language code for the note.                                        |
-| Enable TOC         | `enableToc`                                       | Whether to show the table of contents.                             |
+| Field              | Keys                                              | Description                                                                                                                                                                                                                        |
+| ------------------ | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Title              | `title`                                           | Page title. Falls back to filename if empty.                                                                                                                                                                                       |
+| Description        | `description`                                     | Page description for metadata and search.                                                                                                                                                                                          |
+| Tags               | `tags`, `tag`                                     | Categorization tags. Slugified the same way as file paths: spaces become `-`, `&` becomes `-and-`, `%` becomes `-percent`, and tags are lowercased so that `#MyTag` and `#mytag` resolve to the same tag page (matching Obsidian). |
+| Aliases            | `aliases`, `alias`                                | Alternative names for the page, used for link resolution.                                                                                                                                                                          |
+| Permalink          | `permalink`                                       | Custom URL slug. Also added to aliases.                                                                                                                                                                                            |
+| CSS classes        | `cssclasses`, `cssclass`                          | CSS classes applied to the page body.                                                                                                                                                                                              |
+| Social image       | `socialImage`, `image`, `cover`                   | Image used for social media previews.                                                                                                                                                                                              |
+| Social description | `socialDescription`                               | Description used specifically for social media previews.                                                                                                                                                                           |
+| Created date       | `created`, `date`                                 | When the note was created.                                                                                                                                                                                                         |
+| Modified date      | `modified`, `lastmod`, `updated`, `last-modified` | When the note was last modified. Falls back to `created` if unset.                                                                                                                                                                 |
+| Published date     | `published`, `publishDate`, `date`                | When the note was published.                                                                                                                                                                                                       |
+| Publish            | `publish`                                         | Whether the note should be published.                                                                                                                                                                                              |
+| Draft              | `draft`                                           | Whether the note is a draft.                                                                                                                                                                                                       |
+| Comments           | `comments`                                        | Whether comments are enabled for the note.                                                                                                                                                                                         |
+| Language           | `lang`                                            | Language code for the note.                                                                                                                                                                                                        |
+| Enable TOC         | `enableToc`                                       | Whether to show the table of contents.                                                                                                                                                                                             |
 
 ## API
 

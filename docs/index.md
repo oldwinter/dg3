@@ -6,30 +6,52 @@ Quartz is a fast, batteries-included static-site generator that transforms Markd
 
 ## 🪴 Get Started
 
-Quartz requires **at least [Node](https://nodejs.org/) v22** and `npm` v10.9.2 to function correctly. Ensure you have this installed on your machine before continuing.
-
-Then, in your terminal of choice, enter the following commands line by line:
+Quartz requires **at least [Node](https://nodejs.org/) v22** and `npm` v10.9.2 to function correctly. Ensure you have these installed on your machine before continuing.
 
 ```shell
-git clone -b v5 https://github.com/jackyzha0/quartz.git
+# 1. Clone the Quartz repository
+git clone https://github.com/jackyzha0/quartz.git
 cd quartz
+
+# 2. Install dependencies
 npm i
-npx quartz plugin restore
+
+# 3. Initialize your site (choose a template, set your base URL, import content)
 npx quartz create
+
+# 4. Install plugins referenced by your chosen template
+npx quartz plugin install --from-config
+
+# 5. Preview your site locally
+npx quartz build --serve
 ```
 
-This will guide you through initializing your Quartz with content, including choosing a [[cli/create#templates|project template]] and configuring your site's base URL. Once you've done so, see how to:
+Your site is now running at `http://localhost:8080`. From here:
 
-1. [[authoring content|Writing content]] in Quartz
-2. [[configuration|Configure]] Quartz's behaviour
-3. Change Quartz's [[layout]]
-4. [[build|Build and preview]] Quartz
-5. Sync your changes with [[setting up your GitHub repository|GitHub]]
-6. [[hosting|Host]] Quartz online
+- **[[authoring-content|Write content]]** in the `content/` folder
+- **[[installation|Push to GitHub]]** with `npx quartz sync`
+- **[[hosting|Deploy]]** to GitHub Pages, Cloudflare, Netlify, or Vercel
+
+For the full walkthrough, see the [[getting-started/index|Getting Started]] guide.
+
+### Returning User?
+
+Already have a Quartz repository and cloning it on a new machine?
+
+```shell
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+npm ci
+npx quartz plugin install
+npx quartz build --serve
+```
+
+> [!tip]
+> If you hit build errors on a fresh clone, try `npx quartz plugin install --latest` to refresh plugins to their latest versions. See [[troubleshooting#Plugins fail to build on a fresh clone]] for details.
 
 ## 🔧 Features
 
-- [[Obsidian compatibility]], [[full-text search]], [[graph view]], [[wikilinks|wikilinks, transclusions]], [[backlinks]], [[features/Latex|Latex]], [[syntax highlighting]], [[popover previews]], [[Docker Support]], [[i18n|internationalization]], [[comments]] and [many more](./features/) right out of the box
+- [[Obsidian compatibility]], [[full-text search]], [[graph view]], [[wikilinks|wikilinks, transclusions]], [[plugins/Backlinks]], [[features/Latex|Latex]], [[syntax highlighting]], [[popover previews]], [[Docker Support]], [[i18n|internationalization]], [[features/comments|comments]] and [many more](./features/) right out of the box
 - Hot-reload on configuration edits and incremental rebuilds for content edits
 - Simple JSX layouts and [[creating components|page components]]
 - [[SPA Routing|Ridiculously fast page loads]] and tiny bundle sizes

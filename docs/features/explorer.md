@@ -63,10 +63,10 @@ For advanced options like custom sort, filter, and map functions, use the TS ove
 
 ```ts title="quartz.ts"
 import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/config-loader"
-import { Explorer } from "@quartz-community/explorer"
+import * as ExternalPlugin from "./.quartz/plugins"
 
 // Advanced: pass callback functions that can't be expressed in YAML
-Explorer({
+ExternalPlugin.Explorer({
   sortFn: (a, b) => {
     /* ... */
   },
@@ -83,6 +83,16 @@ const config = await loadQuartzConfig()
 export default config
 export const layout = await loadQuartzLayout()
 ```
+
+> [!info] How overrides work
+> When you call `ExternalPlugin.Explorer({...})` in `quartz.ts`, the options are recorded and merged with the YAML configuration when the component is instantiated during the build. Options set in `quartz.ts` take precedence over those in `quartz.config.yaml`, following this order: `plugin defaults < YAML options < quartz.ts overrides`.
+>
+> If you have two plugins that export the same name (e.g. two different Explorer plugins installed via `--name`), use the `plugins` map to disambiguate:
+>
+> ```ts title="quartz.ts"
+> import * as ExternalPlugin from "./.quartz/plugins"
+> ExternalPlugin.plugins["my-explorer"].Explorer({ mapFn: ... })
+> ```
 
 When passing in your own options, you can omit any or all of these fields if you'd like to keep the default value for that field.
 
@@ -119,7 +129,7 @@ Every function you can pass is optional. By default, only a `sort` function will
 
 ```ts title="Default sort function"
 // Sort order: folders first, then files. Sort folders and files alphabetically
-Explorer({
+ExternalPlugin.Explorer({
   sortFn: (a, b) => {
     if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
       return a.displayName.localeCompare(b.displayName, undefined, {
@@ -172,7 +182,7 @@ plugins:
 Custom sort functions require the TS override:
 
 ```ts title="quartz.ts (override)"
-Explorer({
+ExternalPlugin.Explorer({
   sortFn: (a, b) => {
     return a.displayName.localeCompare(b.displayName)
   },
@@ -184,7 +194,7 @@ Explorer({
 Using this example, the display names of all `FileNodes` (folders + files) will be converted to full upper case.
 
 ```ts title="quartz.ts (override)"
-Explorer({
+ExternalPlugin.Explorer({
   mapFn: (node) => {
     node.displayName = node.displayName.toUpperCase()
     return node
@@ -201,7 +211,7 @@ Using this example, you can remove elements from your explorer by providing an a
 Note that this example filters on the title but you can also do it via slug or any other field available on `FileTrieNode`.
 
 ```ts title="quartz.ts (override)"
-Explorer({
+ExternalPlugin.Explorer({
   filterFn: (node) => {
     // set containing names of everything you want to filter out
     const omit = new Set(["authoring content", "tags", "advanced"])
@@ -219,7 +229,7 @@ Explorer({
 You can access the tags of a file by `node.data.tags`.
 
 ```ts title="quartz.ts (override)"
-Explorer({
+ExternalPlugin.Explorer({
   filterFn: (node) => {
     // exclude files with the tag "explorerexclude"
     return node.data?.tags?.includes("explorerexclude") !== true
@@ -233,7 +243,7 @@ By default, the explorer will filter out the `tags` folder.
 To override the default filter function, you can set the filter function to `undefined`.
 
 ```ts title="quartz.ts (override)"
-Explorer({
+ExternalPlugin.Explorer({
   filterFn: undefined, // apply no filter function, every file and folder will visible
 })
 ```
@@ -246,19 +256,20 @@ Explorer({
 > and passing it in.
 >
 > ```ts title="quartz.ts"
-> import { ExplorerOptions } from "@quartz-community/explorer/components"
+> import * as ExternalPlugin from "./.quartz/plugins"
+> import type { ExplorerOptions } from "./.quartz/plugins"
 >
-> export const mapFn: ExplorerOptions["mapFn"] = (node) => {
+> const mapFn: ExplorerOptions["mapFn"] = (node) => {
 >   // implement your function here
 > }
-> export const filterFn: ExplorerOptions["filterFn"] = (node) => {
+> const filterFn: ExplorerOptions["filterFn"] = (node) => {
 >   // implement your function here
 > }
-> export const sortFn: ExplorerOptions["sortFn"] = (a, b) => {
+> const sortFn: ExplorerOptions["sortFn"] = (a, b) => {
 >   // implement your function here
 > }
 >
-> Explorer({
+> ExternalPlugin.Explorer({
 >   // ... your other options
 >   mapFn,
 >   filterFn,
@@ -271,7 +282,7 @@ Explorer({
 To add emoji prefixes (📁 for folders, 📄 for files), you could use a map function in `quartz.ts`:
 
 ```ts title="quartz.ts (override)"
-Explorer({
+ExternalPlugin.Explorer({
   mapFn: (node) => {
     if (node.isFolder) {
       node.displayName = "📁 " + node.displayName

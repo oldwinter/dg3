@@ -171,11 +171,6 @@ export async function parseMarkdown(ctx: BuildCtx, fps: FilePath[]): Promise<Pro
       maxWorkers: concurrency,
       workerType: "thread",
     })
-    const errorHandler = (err: any) => {
-      console.error(err)
-      process.exit(1)
-    }
-
     const serializableCtx: WorkerSerializableBuildCtx = {
       buildId: ctx.buildId,
       argv: ctx.argv,
@@ -185,37 +180,40 @@ export async function parseMarkdown(ctx: BuildCtx, fps: FilePath[]): Promise<Pro
       virtualPages: [],
     }
 
-    const textToMarkdownPromises: WorkerPromise<MarkdownContent[]>[] = []
-    let processedFiles = 0
-    for (const chunk of chunks(fps, CHUNK_SIZE)) {
-      textToMarkdownPromises.push(pool.exec("parseMarkdown", [serializableCtx, chunk]))
+    try {
+      const textToMarkdownPromises: WorkerPromise<MarkdownContent[]>[] = []
+      let processedFiles = 0
+      for (const chunk of chunks(fps, CHUNK_SIZE)) {
+        textToMarkdownPromises.push(pool.exec("parseMarkdown", [serializableCtx, chunk]))
+      }
+
+      const mdResults: Array<MarkdownContent[]> = await Promise.all(
+        textToMarkdownPromises.map(async (promise) => {
+          const result = await promise
+          processedFiles += result.length
+          log.updateText(`text->markdown ${styleText("gray", `${processedFiles}/${fps.length}`)}`)
+          return result
+        }),
+      )
+
+      const markdownToHtmlPromises: WorkerPromise<ProcessedContent[]>[] = []
+      processedFiles = 0
+      for (const mdChunk of mdResults) {
+        markdownToHtmlPromises.push(pool.exec("processHtml", [serializableCtx, mdChunk]))
+      }
+      const results: ProcessedContent[][] = await Promise.all(
+        markdownToHtmlPromises.map(async (promise) => {
+          const result = await promise
+          processedFiles += result.length
+          log.updateText(`markdown->html ${styleText("gray", `${processedFiles}/${fps.length}`)}`)
+          return result
+        }),
+      )
+
+      res = results.flat()
+    } finally {
+      await pool.terminate()
     }
-
-    const mdResults: Array<MarkdownContent[]> = await Promise.all(
-      textToMarkdownPromises.map(async (promise) => {
-        const result = await promise
-        processedFiles += result.length
-        log.updateText(`text->markdown ${styleText("gray", `${processedFiles}/${fps.length}`)}`)
-        return result
-      }),
-    ).catch(errorHandler)
-
-    const markdownToHtmlPromises: WorkerPromise<ProcessedContent[]>[] = []
-    processedFiles = 0
-    for (const mdChunk of mdResults) {
-      markdownToHtmlPromises.push(pool.exec("processHtml", [serializableCtx, mdChunk]))
-    }
-    const results: ProcessedContent[][] = await Promise.all(
-      markdownToHtmlPromises.map(async (promise) => {
-        const result = await promise
-        processedFiles += result.length
-        log.updateText(`markdown->html ${styleText("gray", `${processedFiles}/${fps.length}`)}`)
-        return result
-      }),
-    ).catch(errorHandler)
-
-    res = results.flat()
-    await pool.terminate()
   }
 
   log.end(`Parsed ${res.length} Markdown files in ${perf.timeSince()}`)

@@ -68,6 +68,13 @@ export interface StaticResources {
 }
 
 export type StringResource = string | string[] | undefined
+
+export function normalizeResource(resource: StringResource): string[] {
+  if (!resource) return []
+  if (Array.isArray(resource)) return resource
+  return [resource]
+}
+
 export function concatenateResources(...resources: StringResource[]): StringResource {
   return resources
     .filter((resource): resource is string | string[] => resource !== undefined)

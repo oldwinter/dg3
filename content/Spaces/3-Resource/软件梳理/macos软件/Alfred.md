@@ -13,7 +13,7 @@ published: 2025-08-25T17:46:39.151+08:00
 
 不同 workflow 可能用本地的/usr/local/php，python，python3 等二进制，所以需要再手动安装这些二进制依赖环境。
 
-##**alfred**搜索失败后的 fallback 需要搜索哪几个，优先级分别是什么
+## **alfred**搜索失败后的 fallback 需要搜索哪几个，优先级分别是什么
 
 ## alfred 的综合调教
 

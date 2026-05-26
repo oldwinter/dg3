@@ -1,8 +1,12 @@
 ---
 title: ObsidianFlavoredMarkdown
+description: Obsidian-specific Markdown extensions (wikilinks, callouts, highlights, tags, embeds).
 tags:
   - plugin/transformer
 image:
+repository: "[quartz-community/obsidian-flavored-markdown](https://github.com/quartz-community/obsidian-flavored-markdown)"
+enabled: true
+required: false
 ---
 
 This plugin provides support for [[Obsidian compatibility]].
@@ -25,7 +29,9 @@ This plugin accepts the following configuration options:
 - `enableVideoEmbed`: If `true` (default), enables the embedding of video files.
 - `enableCheckbox`: If `true`, adds support for interactive checkboxes in content, including custom task characters (e.g. `- [?]`, `- [!]`, `- [/]`). Defaults to `false`.
 - `enableObsidianUri`: If `true` (default), marks `obsidian://` protocol links with a CSS class and data attribute for custom styling.
-- `disableBrokenWikilinks`: If `true`, replaces links to non-existent notes with a dimmed, disabled link. Defaults to `false`.
+
+> [!note]
+> The `disableBrokenWikilinks` option previously lived on this plugin. It has moved to [[CrawlLinks]], which owns link resolution and can honor the configured `markdownLinkResolution` strategy when deciding whether a link is broken. Users upgrading from earlier Quartz v5 betas should move the option from `ObsidianFlavoredMarkdown` to `CrawlLinks`.
 
 > [!warning]
 > Don't remove this plugin if you're using [[Obsidian compatibility|Obsidian]] to author the content!

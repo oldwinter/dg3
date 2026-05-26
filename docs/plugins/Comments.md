@@ -1,8 +1,12 @@
 ---
 title: Comments
+description: Comment system integration (Giscus, Utterances, etc.).
 tags:
   - plugin/component
 image: "[[giscus-results.png]]"
+repository: "[quartz-community/comments](https://github.com/quartz-community/comments)"
+enabled: false
+required: false
 ---
 
 Comment system (giscus, utterances, etc.).
@@ -10,7 +14,7 @@ Comment system (giscus, utterances, etc.).
 > [!note]
 > For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
 
-See [[comments]] for detailed usage information.
+See [[plugins/Comments]] for detailed usage information.
 
 ## Configuration
 

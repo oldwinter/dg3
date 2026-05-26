@@ -1,8 +1,12 @@
 ---
 title: RecentNotes
+description: Displays a list of recently modified notes.
 tags:
   - plugin/component
 image:
+repository: "[quartz-community/recent-notes](https://github.com/quartz-community/recent-notes)"
+enabled: false
+required: false
 ---
 
 Shows recently modified notes.
@@ -17,9 +21,11 @@ See [[recent notes]] for detailed usage information.
 This plugin accepts the following configuration options:
 
 - `title`: The title of the recent notes section. Defaults to `Recent notes`.
-- `limit`: The maximum number of recent notes to display. Defaults to `5`.
+- `limit`: The maximum number of recent notes to display. Defaults to `3`.
 - `showTags`: Whether to display the tags for each note. Defaults to `true`.
-- `linkToMore`: A slug to a page that shows more notes. Defaults to `""`.
+- `linkToMore`: A slug to a page that shows more notes. Defaults to `false`.
+- `hideTagPages`: Whether to hide tag index pages from the list. Defaults to `false`.
+- `hideFolderPages`: Whether to hide folder index pages from the list. Defaults to `false`.
 
 ### Default options
 
@@ -27,10 +33,10 @@ This plugin accepts the following configuration options:
 - source: github:quartz-community/recent-notes
   enabled: true
   options:
-    title: Recent notes
-    limit: 5
+    limit: 3
     showTags: true
-    linkToMore: ""
+    hideTagPages: false
+    hideFolderPages: false
 ```
 
 ## API

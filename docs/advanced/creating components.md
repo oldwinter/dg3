@@ -109,6 +109,23 @@ Component.css = styles
 > [!warning]
 > Quartz does not use CSS modules so any styles you declare here apply _globally_. If you only want it to apply to your component, make sure you use specific class names and selectors.
 
+### Internationalization
+
+Component plugins should use the i18n pattern for any user-facing strings. See [[making plugins#Internationalization (i18n)]] for the full setup guide.
+
+Quick reference:
+
+```tsx
+import { i18n } from "../i18n"
+
+const MyComponent: QuartzComponent = ({ cfg }) => {
+  const t = i18n(cfg.locale ?? "en-US").components.myComponent
+  return <h2>{t.title}</h2>
+}
+```
+
+Always provide at least an `en-US` locale as the fallback. Additional locales are optional but encouraged for international reach.
+
 ### Scripts and Interactivity
 
 For interactivity, you can declare `.beforeDOMLoaded` and `.afterDOMLoaded` properties on the component. These should be strings containing the JavaScript to be executed in the browser.

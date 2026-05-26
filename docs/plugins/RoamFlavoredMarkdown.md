@@ -1,14 +1,18 @@
 ---
 title: RoamFlavoredMarkdown
+description: Compatibility for Roam Research export format.
 tags:
   - plugin/transformer
 image:
+repository: "[quartz-community/roam](https://github.com/quartz-community/roam)"
+enabled: false
+required: false
 ---
 
-This plugin provides support for [Roam Research](https://roamresearch.com) compatibility. See [[Roam Research Compatibility]] for more information.
+This plugin provides support for [Roam Research](https://roamresearch.com) compatibility. See [[Roam Research compatibility]] for more information.
 
 > [!note]
-> For information on how to add, remove or configure plugins, see the [[Configuration#Plugins|Configuration]] page.
+> For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
 
 This plugin accepts the following configuration options:
 
@@ -19,6 +23,8 @@ This plugin accepts the following configuration options:
 - `audioComponent`: If `true` (default), converts Roam `{{[[audio]]:URL}}` shortcodes into embeded HTML audio.
 - `pdfComponent`: If `true` (default), converts Roam `{{[[pdf]]:URL}}` shortcodes into embeded HTML PDF viewer.
 - `blockquoteComponent`: If `true` (default), converts Roam `{{[[>]]}}` shortcodes into Quartz blockquotes.
+- `tableComponent`: If `true` (default), converts Roam table syntax into HTML tables.
+- `attributeComponent`: If `true` (default), converts Roam attribute syntax into rendered attributes.
 
 ## API
 

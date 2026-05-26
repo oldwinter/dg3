@@ -9,12 +9,12 @@ Quartz comes with a wide variety of features out of the box. Most features are p
 - [[Obsidian compatibility]] — Full support for Obsidian-flavored Markdown
 - [[wikilinks]] — Link between notes using `[[wikilinks]]` syntax
 - [[callouts]] — Obsidian-style callout blocks
-- [[Latex]] — LaTeX math rendering
+- [[features/Latex|Latex]] — LaTeX math rendering
 - [[Mermaid diagrams]] — Diagram support via Mermaid
-- [[syntax highlighting]] — Code block highlighting with themes
+- [[syntax highlighting|Syntax highlighting]] — Code block highlighting with themes
 - [[OxHugo compatibility]] — Support for ox-hugo Markdown
 - [[Roam Research compatibility]] — Support for Roam Research syntax
-- [[Citations]] — Academic citation support
+- [[features/Citations|Citations]] — Academic citation support
 - [[Canvas]] — Render Obsidian Canvas files as interactive pages
 - [[Bases]] — Database-like views for your notes (tables, cards, galleries, and more)
 
@@ -22,9 +22,9 @@ Quartz comes with a wide variety of features out of the box. Most features are p
 
 - [[full-text search]] — Search across all your notes
 - [[graph view]] — Interactive graph visualization of note connections
-- [[backlinks]] — See which notes link to the current page
-- [[explorer]] — File tree sidebar for browsing notes
-- [[breadcrumbs]] — Breadcrumb navigation trail
+- [[features/backlinks]] — See which notes link to the current page
+- [[features/explorer]] — File tree sidebar for browsing notes
+- [[features/breadcrumbs]] — Breadcrumb navigation trail
 - [[table of contents]] — Per-page table of contents
 - [[folder and tag listings]] — Browse notes by folder or tag
 - [[recent notes]] — Display recently modified notes
@@ -34,9 +34,9 @@ Quartz comes with a wide variety of features out of the box. Most features are p
 
 ## Appearance & Reading
 
-- [[darkmode]] — Light and dark mode toggle
+- [[features/darkmode]] — Light and dark mode toggle
 - [[reader mode]] — Distraction-free reading experience
-- [[comments]] — Add comments via Giscus, Utterances, or other providers
+- [[features/comments|comments]] — Add comments via Giscus, Utterances, or other providers
 - [[social images]] — Auto-generated Open Graph images for social sharing
 
 ## Publishing & Deployment

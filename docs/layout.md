@@ -108,6 +108,29 @@ layout:
         right: []
 ```
 
+### Conditional Rendering
+
+Plugins can specify a `condition` in their layout block to control when they appear. This uses built-in presets:
+
+```yaml title="quartz.config.yaml"
+plugins:
+  - source: github:quartz-community/breadcrumbs
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 5
+      condition: not-index
+```
+
+Available conditions:
+
+| Condition   | Effect                                               |
+| ----------- | ---------------------------------------------------- |
+| `not-index` | Hidden on the root index page, shown everywhere else |
+| `has-tags`  | Only shown on pages that have tags in frontmatter    |
+
+See [[layout-components]] for more details on conditional rendering and display options.
+
 For advanced layout overrides using TypeScript (e.g. custom component wrappers or conditional logic), you can use the TS override in `quartz.ts`:
 
 ```ts title="quartz.ts"
@@ -178,7 +201,7 @@ Plugins can ship their own frames by declaring them in `package.json` and export
 
 **2. Core frames (for project-specific frames):**
 
-You can also create frames directly in `quartz/components/frames/` by implementing the `PageFrame` interface and registering the frame in `quartz/components/frames/index.ts`. See the [[advanced/architecture|architecture overview]] for the full `PageFrame` interface.
+You can also create frames directly in `quartz/components/frames/` by implementing the `PageFrame` interface and registering the frame in `quartz/components/frames/index.ts`. See the [[architecture|architecture overview]] for the full `PageFrame` interface.
 
 Frames are applied as a `data-frame` attribute on the `.page` element, which you can target in CSS:
 

@@ -50,6 +50,26 @@ This question is best answered by tracing what happens when a user (you!) runs `
    2. If it's not, we wire up the `"nav"` event to just be fired a single time after page load to allow for consistency across how state is setup across both SPA and non-SPA contexts.
    3. A separate `"render"` event can be dispatched when the DOM is updated in-place without a full navigation (e.g. after content decryption). Components that attach listeners to content elements should listen for both `"nav"` and `"render"`.
 
+## Community Package Layering
+
+Quartz v5 separates shared code into three community packages, each with a distinct responsibility:
+
+- **`@quartz-community/types`** — Type definitions, interfaces, and the canonical `vfile` DataMap augmentation. This is the "contract" between Quartz and plugins. It has no runtime dependencies.
+- **`@quartz-community/utils`** — Shared utility functions (path manipulation, DOM helpers, sorting, date formatting, JSX conversion, etc.). Depends on `@quartz-community/types`.
+- **`@quartz-community/runtime`** — Browser-only utilities for client-side scripts (event handling, navigation, storage, script loading). Depends on both `types` and `utils`.
+
+```
+types (no deps)
+  ↑
+utils (depends on types)
+  ↑
+runtime (depends on types + utils)
+  ↑
+plugins (depend on any combination)
+```
+
+Plugins should import types from `@quartz-community/types`, utility functions from `@quartz-community/utils`, and browser utilities from `@quartz-community/runtime`. This layering ensures plugins don't depend on Quartz core.
+
 ## Plugin System
 
 Page types define how a category of pages is rendered. They are configured in the `pageTypes` array in `quartz.config.yaml`.
@@ -64,6 +84,9 @@ There are now four plugin categories:
 - **Filters**: Filter content (remove drafts, explicit publish)
 - **Emitters**: Reduce over content (generate RSS, sitemaps, alias redirects, OG images)
 - **Page Types**: Define how pages are rendered. Each page type handles a specific kind of page (content notes, folder listings, tag listings, 404). The `PageTypeDispatcher` emitter routes pages to the appropriate page type plugin based on the content.
+- **Bases Views**: Custom view renderers for the `bases-page` plugin's database-like view system. Plugins can register new view types (e.g., timeline, kanban) via the `ViewRegistry`. See [[making plugins#Bases Views]] for details.
+
+Note that plugin types are **not mutually exclusive** — a single plugin can be a transformer AND provide components (e.g., `obsidian-flavored-markdown`), or be a page type AND provide custom frames (e.g., `canvas-page`).
 
 ### Plugin Resolution
 
@@ -77,8 +100,8 @@ When `npx quartz plugin add github:quartz-community/explorer` is run:
 ### Plugin CLI Commands
 
 - `npx quartz plugin add github:quartz-community/<name>` — Install a community plugin
-- `npx quartz plugin update` — Update all plugins to latest commits
-- `npx quartz plugin restore` — Restore plugins from locked commits in `quartz.lock.json` (used in CI/CD)
+- `npx quartz plugin install --latest` — Update all plugins to latest commits
+- `npx quartz plugin install --clean` — Restore plugins from locked commits in `quartz.lock.json` (used in CI/CD)
 - `npx quartz plugin remove <name>` — Remove an installed plugin
 
 ### Plugin Structure

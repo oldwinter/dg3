@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: v5.quartz-1h4.pages.dev
+  baseUrl: quartz.jzhao.xyz
   ignorePatterns:
     - private
     - templates
@@ -226,12 +226,17 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: github:quartz-community/unlisted-pages
+    enabled: true
+    options: {}
+    order: 45
   - source: github:quartz-community/encrypted-pages
     enabled: true
     options:
-      visibility: icon
       iterations: 600000
       passwordField: password
+      unlistWhenEncrypted: false
+      outputPath: static/encryptedContentIndex.json
     order: 900
     layout:
       position: body

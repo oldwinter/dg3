@@ -5,7 +5,7 @@ aliases:
 ---
 
 > [!note]
-> This is specifically a guide for upgrading your Quartz to a more recent update. If you are coming from Quartz 4 or Quartz 3, check out the [[getting-started/migrating|migration guide]] for more info.
+> This is specifically a guide for upgrading your Quartz to a more recent update. If you are coming from Quartz 4 or Quartz 3, check out the [[migrating|migration guide]] for more info.
 
 To fetch the latest Quartz updates, simply run
 
@@ -23,10 +23,10 @@ If you have the [GitHub desktop app](https://desktop.github.com/), this will aut
 To update your installed plugins separately, use:
 
 ```bash
-npx quartz update
+npx quartz plugin install --latest
 ```
 
-See the [[cli/update|CLI reference for update]] and [[cli/upgrade|CLI reference for upgrade]] for more details on available flags.
+See the [[upgrade|CLI reference for upgrade]] for more details on available flags.
 
 ### Cleaning Up Unused Plugins
 

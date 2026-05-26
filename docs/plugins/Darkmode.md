@@ -1,8 +1,12 @@
 ---
 title: Darkmode
+description: Toggle between light and dark themes.
 tags:
   - plugin/component
 image: "#0052cc"
+repository: "[quartz-community/darkmode](https://github.com/quartz-community/darkmode)"
+enabled: true
+required: false
 ---
 
 Dark mode toggle.
@@ -10,7 +14,7 @@ Dark mode toggle.
 > [!note]
 > For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
 
-See [[darkmode]] for detailed usage information.
+See [[plugins/Darkmode]] for detailed usage information.
 
 ## Configuration
 

@@ -8,6 +8,8 @@ Quartz supports Wikilinks by default and these links are resolved by Quartz usin
 
 This is enabled as a part of [[Obsidian compatibility]] and can be configured and enabled/disabled from that plugin.
 
+Wikilink matching is case-insensitive to mirror Obsidian: `[[My Note]]`, `[[my note]]`, and `[[MY NOTE]]` all resolve to the same file. The generated URL is lowercased (e.g. `my-note`).
+
 ## Syntax
 
 - `[[Path to file]]`: produces a link to `Path to file.md` (or `Path-to-file.md`) with the text `Path to file`

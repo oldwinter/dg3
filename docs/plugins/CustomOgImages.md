@@ -1,8 +1,12 @@
 ---
 title: Custom OG Images
+description: Generates Open Graph social preview images.
 tags:
   - feature/emitter
 image: "[[social-image-preview-dark.png]]"
+repository: "[quartz-community/og-image](https://github.com/quartz-community/og-image)"
+enabled: true
+required: false
 ---
 
 The Custom OG Images emitter plugin generates social media preview images for your pages. It uses [satori](https://github.com/vercel/satori) to convert HTML/CSS into images, allowing you to create beautiful and consistent social media preview cards for your content.
@@ -40,26 +44,30 @@ plugins:
 For the TS override approach (needed for custom `imageStructure`):
 
 ```ts title="quartz.ts (override)"
+import * as ExternalPlugin from "./.quartz/plugins"
 import { defaultImage } from "./quartz/plugins/emitters/ogImage"
 
-CustomOgImages({
+// Must be placed before loadQuartzConfig()
+ExternalPlugin.CustomOgImages({
   colorScheme: "lightMode",
   width: 1200,
   height: 630,
   excludeRoot: false,
-  imageStructure: defaultImage, // custom JSX component — requires TS
+  imageStructure: defaultImage,
 })
 ```
 
 ### Configuration Options
 
-| Option           | Type      | Default      | Description                                                       |
-| ---------------- | --------- | ------------ | ----------------------------------------------------------------- |
-| `colorScheme`    | string    | "lightMode"  | Theme to use for generating images ("darkMode" or "lightMode")    |
-| `width`          | number    | 1200         | Width of the generated image in pixels                            |
-| `height`         | number    | 630          | Height of the generated image in pixels                           |
-| `excludeRoot`    | boolean   | false        | Whether to exclude the root index page from auto-generated images |
-| `imageStructure` | component | defaultImage | Custom component to use for image generation                      |
+| Option               | Type      | Default                   | Description                                                       |
+| -------------------- | --------- | ------------------------- | ----------------------------------------------------------------- |
+| `colorScheme`        | string    | "lightMode"               | Theme to use for generating images ("darkMode" or "lightMode")    |
+| `width`              | number    | 1200                      | Width of the generated image in pixels                            |
+| `height`             | number    | 630                       | Height of the generated image in pixels                           |
+| `excludeRoot`        | boolean   | false                     | Whether to exclude the root index page from auto-generated images |
+| `defaultTitle`       | string    | "Untitled"                | Fallback title when a page has no title                           |
+| `defaultDescription` | string    | "No description provided" | Fallback description when a page has no description               |
+| `imageStructure`     | component | defaultImage              | Custom component to use for image generation                      |
 
 ## Frontmatter Properties
 

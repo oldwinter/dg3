@@ -86,6 +86,7 @@ plugins:
     enabled: true
     options:
       markdownLinkResolution: shortest
+      # disableBrokenWikilinks: false  # Set true to add a "broken" CSS class to internal links whose target is not in ctx.allSlugs.
     order: 60
   - source: github:quartz-community/description
     enabled: true
@@ -111,8 +112,17 @@ plugins:
     enabled: true
   - source: github:quartz-community/explicit-publish
     enabled: false
+  - source: github:quartz-community/unlisted-pages
+    enabled: true
+    options: {}
+    order: 45
   - source: github:quartz-community/encrypted-pages
     enabled: true
+    options:
+      iterations: 600000
+      passwordField: password
+      unlistWhenEncrypted: false
+      outputPath: static/encryptedContentIndex.json
   - source: github:quartz-community/stacked-pages
     enabled: false
     layout:
@@ -247,8 +257,10 @@ plugins:
       priority: 15
       display: all
   # TTRPG-specific plugins
-  - source: github:Requiae/quartz-leaflet-map-plugin
+  - source: github:Requiae/quartz-leaflet-bases-plugin
     enabled: true
+    options:
+      enableCopyTool: false
   - source:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
@@ -257,6 +269,13 @@ plugins:
     options:
       theme: its-theme
       variation: ttrpg-dnd
+  - source: github:quartz-community/obsidian-plugin-excalidraw
+    enabled: true
+    options:
+      enableInteraction: true
+      darkMode: auto
+      exportPadding: 20
+    order: 50
 layout:
   groups:
     toolbar:

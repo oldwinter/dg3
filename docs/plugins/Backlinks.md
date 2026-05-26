@@ -1,8 +1,12 @@
 ---
 title: Backlinks
+description: Shows pages that link to the current page.
 tags:
   - plugin/component
 image:
+repository: "[quartz-community/backlinks](https://github.com/quartz-community/backlinks)"
+enabled: true
+required: false
 ---
 
 Shows pages that link to the current page.
@@ -10,7 +14,7 @@ Shows pages that link to the current page.
 > [!note]
 > For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
 
-See [[backlinks]] for detailed usage information.
+See [[plugins/Backlinks]] for detailed usage information.
 
 ## Configuration
 

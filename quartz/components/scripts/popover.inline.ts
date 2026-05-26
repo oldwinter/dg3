@@ -30,11 +30,14 @@ async function mouseEnterHandler(
     setPosition(popoverElement as HTMLElement)
 
     if (hash !== "") {
-      const targetAnchor = `#popover-internal-${hash.slice(1)}`
-      const heading = popoverInner.querySelector(targetAnchor) as HTMLElement | null
-      if (heading) {
-        // leave ~12px of buffer when scrolling to a heading
-        popoverInner.scroll({ top: heading.offsetTop - 12, behavior: "instant" })
+      const inner = popoverElement.querySelector(".popover-inner") as HTMLElement | null
+      if (inner) {
+        const targetAnchor = `#popover-internal-${hash.slice(1)}`
+        const heading = inner.querySelector(targetAnchor) as HTMLElement | null
+        if (heading) {
+          // leave ~12px of buffer when scrolling to a heading
+          inner.scroll({ top: heading.offsetTop - 12, behavior: "instant" })
+        }
       }
     }
   }
@@ -57,7 +60,9 @@ async function mouseEnterHandler(
   })
 
   if (!response) return
-  const [contentType] = response.headers.get("Content-Type")!.split(";")
+  const rawContentType = response.headers.get("Content-Type")
+  if (!rawContentType) return
+  const [contentType] = rawContentType.split(";")
   const [contentTypeCategory, typeInfo] = contentType.split("/")
 
   const popoverElement = document.createElement("div")

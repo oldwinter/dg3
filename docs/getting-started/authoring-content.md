@@ -4,11 +4,11 @@ aliases:
   - "authoring content"
 ---
 
-All of the content in your Quartz should go in the `/content` folder. The content for the home page of your Quartz lives in `content/index.md`. If you've [[index#🪴 Get Started|setup Quartz]] already, this folder should already be initialized. Any Markdown in this folder will get processed by Quartz.
+All of the content in your Quartz should go in the `/content` folder. The content for the home page of your Quartz lives in `content/index.md`. If you've followed the [[installation|installation guide]], this folder should already be initialized. Any Markdown in this folder will get processed by Quartz.
 
 It is recommended that you use [Obsidian](https://obsidian.md/) as a way to edit and maintain your Quartz. It comes with a nice editor and graphical interface to preview, edit, and link your local files and attachments.
 
-Got everything setup? Let's [[build]] and preview your Quartz locally!
+Got everything set up? Preview your site locally with `npx quartz build --serve`, or see the [[build|build reference]] for more options.
 
 ## Syntax
 
@@ -42,7 +42,7 @@ See [[Frontmatter]] for a complete list of frontmatter.
 ## Syncing your Content
 
 When your Quartz is at a point you're happy with, you can save your changes to GitHub.
-First, make sure you've [[getting-started/installation|already setup your GitHub repository]] and then do `npx quartz sync`.
+First, make sure you've [[installation#Setting Up Your GitHub Repository|set up your GitHub repository]] and then run `npx quartz sync`.
 
 ## Customization
 

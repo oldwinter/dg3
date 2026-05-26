@@ -7,13 +7,13 @@ Quartz effectively turns your Markdown files and other resources into a bundle o
 However, if you'd like to publish your site to the world, you need a way to host it online. This guide will detail how to deploy with common hosting providers but any service that allows you to deploy static HTML should work as well.
 
 > [!warning]
-> The rest of this guide assumes that you've already created your own GitHub repository for Quartz. If you haven't already, [[setting up your GitHub repository|make sure you do so]].
+> The rest of this guide assumes that you've already created your own GitHub repository for Quartz. If you haven't already, follow the [[installation#Setting Up Your GitHub Repository|GitHub repository setup]] section of the installation guide.
 
 > [!hint]
 > Some Quartz features (like [[RSS Feed]] and sitemap generation) require `baseUrl` to be configured properly in your [[configuration]] to work properly. Make sure you set this before deploying!
 
 > [!tip] Keeping plugins in sync
-> All hosting examples below use `npx quartz plugin restore` to install plugins from the lockfile. If contributors may add plugins to `quartz.config.yaml` without updating the lockfile, add `npx quartz plugin resolve` after `restore` in your build command to install any missing plugins. See [[cli/plugin#resolve|plugin resolve]] for details.
+> All hosting examples below use `npx quartz plugin install` to install plugins from the lockfile. If contributors may add plugins to `quartz.config.yaml` without updating the lockfile, add `npx quartz plugin install --from-config` after `install` in your build command to install any missing plugins. See [[cli/plugin#install|plugin install]] for details.
 
 ## Cloudflare Pages
 
@@ -25,7 +25,7 @@ However, if you'd like to publish your site to the world, you need a way to host
 | ---------------------- | ----------------------------------------------- |
 | Production branch      | `v5`                                            |
 | Framework preset       | `None`                                          |
-| Build command          | `npx quartz plugin restore && npx quartz build` |
+| Build command          | `npx quartz plugin install && npx quartz build` |
 | Build output directory | `public`                                        |
 
 Press "Save and deploy" and Cloudflare should have a deployed version of your site in about a minute. Then, every time you sync your Quartz changes to GitHub, your site should be updated.
@@ -33,10 +33,10 @@ Press "Save and deploy" and Cloudflare should have a deployed version of your si
 To add a custom domain, check out [Cloudflare's documentation](https://developers.cloudflare.com/pages/platform/custom-domains/).
 
 > [!warning]
-> Cloudflare Pages performs a shallow clone by default, so if you rely on `git` for timestamps, it is recommended that you add `git fetch --unshallow &&` to the beginning of the build command (e.g., `git fetch --unshallow && npx quartz plugin restore && npx quartz build`).
+> Cloudflare Pages performs a shallow clone by default, so if you rely on `git` for timestamps, it is recommended that you add `git fetch --unshallow &&` to the beginning of the build command (e.g., `git fetch --unshallow && npx quartz plugin install && npx quartz build`).
 
 > [!note]
-> For more detailed CI/CD configuration including caching and plugin management, see [[ci-cd]].
+> For more detailed CI/CD configuration including caching and plugin management, see [[migrating#Updating Your CI/CD|the migration guide]].
 
 ## GitHub Pages
 
@@ -61,18 +61,32 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0 # Fetch all history for git info
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
+      - name: Cache dependencies
+        uses: actions/cache@v5
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Cache Quartz plugins
+        uses: actions/cache@v5
+        with:
+          path: .quartz/plugins
+          key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-plugins-
       - name: Install Dependencies
         run: npm ci
-      - name: Restore Quartz plugins
-        run: npx quartz plugin restore
+      - name: Install Quartz plugins
+        run: npx quartz plugin install
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
@@ -152,7 +166,7 @@ Before deploying to Vercel, a `vercel.json` file is required at the root of the 
 | ----------------------------------------- | ----------------------------------------------- |
 | Framework Preset                          | `Other`                                         |
 | Root Directory                            | `./`                                            |
-| Build and Output Settings > Build Command | `npx quartz plugin restore && npx quartz build` |
+| Build and Output Settings > Build Command | `npx quartz plugin install && npx quartz build` |
 
 5. Press Deploy. Once it's live, you'll have 2 `*.vercel.app` URLs to view the page.
 
@@ -183,7 +197,7 @@ Using `docs.example.com` is an example of a subdomain. They're a simple way of c
 
 1. Log in to the [Netlify dashboard](https://app.netlify.com/) and click "Add new site".
 2. Select your Git provider and repository containing your Quartz project.
-3. Under "Build command", enter `npx quartz plugin restore && npx quartz build`.
+3. Under "Build command", enter `npx quartz plugin install && npx quartz build`.
 4. Under "Publish directory", enter `public`.
 5. Press Deploy. Once it's live, you'll have a `*.netlify.app` URL to view the page.
 6. To add a custom domain, check "Domain management" in the left sidebar, just like with Vercel.
@@ -197,11 +211,14 @@ stages:
   - build
   - deploy
 
-image: node:22
-cache: # Cache modules in between jobs
-  key: $CI_COMMIT_REF_SLUG
-  paths:
-    - .npm/
+image: node:24
+cache:
+  - key: npm-$CI_COMMIT_REF_SLUG
+    paths:
+      - .npm/
+  - key: plugins-$CI_COMMIT_REF_SLUG
+    paths:
+      - .quartz/plugins/
 
 build:
   stage: build
@@ -211,13 +228,11 @@ build:
     - hash -r
     - npm ci --cache .npm --prefer-offline
   script:
-    - npx quartz plugin restore
+    - npx quartz plugin install
     - npx quartz build
   artifacts:
     paths:
       - public
-  tags:
-    - gitlab-org-docker
 
 pages:
   stage: deploy
@@ -294,4 +309,39 @@ example.com {
         file_server
     }
 }
+```
+
+## Caching
+
+Quartz emits CSS and JS files with content hashes in their filenames (e.g. `index-a3f2c1b.css`, `component-7d4e2f.css`). Since the filename changes whenever the content changes, these files can be cached indefinitely. HTML files should not be cached long-term since they reference the hashed filenames and need to stay fresh.
+
+### Cloudflare Pages / Vercel / Netlify
+
+These platforms handle caching automatically. No configuration is needed — hashed assets will be served with appropriate cache headers out of the box.
+
+### Nginx
+
+```nginx title="nginx.conf"
+# Immutable cache for hashed assets
+location ~* \.(css|js)$ {
+    if ($uri ~* "-[0-9a-f]{8}\.") {
+        add_header Cache-Control "public, max-age=31536000, immutable";
+    }
+}
+```
+
+### Caddy
+
+```caddy title="Caddyfile"
+@hashed path_regexp hashed -[0-9a-f]{8}\.(css|js)$
+header @hashed Cache-Control "public, max-age=31536000, immutable"
+```
+
+### Apache
+
+```apache title=".htaccess"
+# Immutable cache for content-hashed assets
+<FilesMatch "-[0-9a-f]{8}\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
 ```

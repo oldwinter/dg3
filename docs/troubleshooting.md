@@ -11,7 +11,7 @@ Common issues and solutions when working with Quartz.
 This usually means a plugin is not installed. Run:
 
 ```bash
-npx quartz plugin restore
+npx quartz plugin install
 ```
 
 This restores all plugins from your `quartz.lock.json` to `.quartz/plugins/`.
@@ -26,6 +26,8 @@ Try increasing concurrency:
 
 ```bash
 npx quartz build --concurrency 8
+# or the shorthand:
+npx quartz build -c 8
 ```
 
 The default uses all available CPU cores. If you're on a memory-constrained environment (CI), reducing concurrency may actually help.
@@ -37,7 +39,7 @@ The default uses all available CPU cores. If you're on a memory-constrained envi
 1. Verify the plugin appears in `quartz.config.yaml` under `plugins:`
 2. Check that `enabled: true` is set
 3. Run `npx quartz plugin list` to confirm it's installed
-4. Run `npx quartz plugin check` to verify plugin health
+4. Run `npx quartz plugin install --latest --dry-run` to verify plugin health
 
 ### Plugin options not taking effect
 
@@ -59,6 +61,48 @@ This means the plugin is referenced in `quartz.ts` but not installed. Either:
 
 - Install it: `npx quartz plugin add github:quartz-community/plugin-name`
 - Or remove the reference from `quartz.ts`
+
+### Plugins fail to build on a fresh clone
+
+> [!important]
+> Most community plugins now ship with a pre-built `dist/` directory and skip the build step entirely. The build failure scenario described below mainly applies to plugins in development or older plugins that haven't adopted pre-built distribution.
+
+On a brand-new clone, `npx quartz plugin install` (or the plugin step run automatically by `npx quartz create`) may report a handful of plugins failing to build — typically around 10–15 of them. The git clone and checkout still succeed, but `npm run build` inside the plugin errors out.
+
+This happens because `quartz.lock.json` pins each plugin to a specific commit, and those older plugin commits may have been authored against earlier versions of `@quartz-community/types` / `@quartz-community/utils` whose published artifacts are no longer shipped in the dependency's git repo. The plugin's `tsup`/`tsc` build then cannot resolve the expected type declarations.
+
+Fix it by refreshing all plugins to the latest commit on their default branch:
+
+```bash
+npx quartz plugin install --latest
+```
+
+This rewrites `quartz.lock.json` with the newest commits (which in turn pin newer `@quartz-community/*` versions whose built output is available), and rebuilds every plugin from scratch. After this step, subsequent `npx quartz plugin install` calls will restore cleanly from the refreshed lockfile.
+
+### `plugin install` hangs, OOMs, or fails on low-end hardware
+
+> [!note]
+> Pre-built plugins are much faster and lighter on resources because they skip the `npm install` and `npm run build` steps.
+
+By default, `npx quartz plugin install` clones, fetches, and builds plugins in parallel across all your CPU cores. Each parallel worker may run its own `npm install` and `npm run build`, which is memory-intensive. On low-end laptops, Raspberry Pi, small VPS instances, or restrictive CI runners this can exhaust RAM, trigger the OOM killer, or make the system appear to hang.
+
+Lower the parallelism with `--concurrency` / `-c`:
+
+```bash
+# Install one plugin at a time (safest, slowest)
+npx quartz plugin install --latest -c 1
+
+# Two at a time — usually works on 4 GB machines
+npx quartz plugin install --latest --concurrency 2
+```
+
+The same flag works for `plugin add` and the deprecated aliases (`plugin update`, `plugin restore`, `plugin check`, `plugin resolve`):
+
+```bash
+npx quartz plugin add github:quartz-community/some-plugin -c 1
+```
+
+If `plugin install` consistently fails near the same plugin with `-c 1`, the issue is likely with that specific plugin's build, not with concurrency — try running `--verbose` to get detailed error output, and check the plugin's own repository for known issues.
 
 ## Content Issues
 

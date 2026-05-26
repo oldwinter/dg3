@@ -12,7 +12,7 @@ Quartz has a vibrant community of users and contributors. This page highlights c
 Third-party plugins that extend Quartz functionality. Install them with the [[cli/plugin|plugin CLI]]:
 
 ```bash
-npx quartz plugin install <github-url>
+npx quartz plugin add <github-url>
 ```
 
 <!-- Add community plugins here as they become available -->

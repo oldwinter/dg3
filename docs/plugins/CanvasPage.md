@@ -1,8 +1,13 @@
 ---
 title: CanvasPage
+description: Renders JSON Canvas files as interactive, pannable pages.
 tags:
   - plugin/pageType
 image: "#7852ee"
+new-in-v5: true
+repository: "[quartz-community/canvas-page](https://github.com/quartz-community/canvas-page)"
+enabled: true
+required: false
 ---
 
 This plugin is a page type plugin that renders [JSON Canvas](https://jsoncanvas.org) (`.canvas`) files as interactive, pannable and zoomable canvas pages. It uses a custom `"canvas"` [[layout#Page Frames|page frame]] that provides a fullscreen, always-on canvas experience with a togglable left sidebar for navigation. It supports the full [JSON Canvas 1.0 spec](https://jsoncanvas.org/spec/1.0/), including text nodes with Markdown rendering, file nodes that link to other pages in your vault, link nodes for external URLs, and group nodes for visual organization. Edges between nodes are rendered as SVG paths with optional labels, arrow markers, and colors.

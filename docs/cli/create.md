@@ -22,7 +22,7 @@ When you run `quartz create`, you can choose a configuration template that pre-c
 
 - **Default**: A clean Quartz setup with sensible defaults. Best for starting from scratch.
 - **Obsidian**: Optimized for Obsidian vaults with full Obsidian Flavored Markdown support (wikilinks, callouts, mermaid diagrams, etc.). Automatically sets link resolution to `shortest` and skips the link resolution prompt.
-- **TTRPG**: Builds on the Obsidian template with the addition of the [Leaflet map plugin](https://github.com/Requiae/quartz-leaflet-map-plugin) and [ITS Theme](https://github.com/saberzero1/quartz-themes) (`its-theme.ttrpg-dnd`). Great for D&D and TTRPG wikis. Also skips the link resolution prompt.
+- **TTRPG**: Builds on the Obsidian template with the addition of the [Leaflet bases plugin](https://github.com/Requiae/quartz-leaflet-bases-plugin) and [ITS Theme](https://github.com/saberzero1/quartz-themes) (`its-theme.ttrpg-dnd`). Great for D&D and TTRPG wikis. Also skips the link resolution prompt.
 - **Blog**: A blog-focused setup with [recent notes](https://github.com/quartz-community/recent-notes) enabled (showing the 5 most recent posts with tags) and [comments](https://github.com/quartz-community/comments) enabled via giscus. You'll need to fill in the `TODO:` placeholder values in `quartz.config.yaml` with your own giscus repository details.
 
 ## Base URL
@@ -40,7 +40,6 @@ When you run `quartz create`, you must choose a strategy for your content:
 - **new**: Creates a fresh, empty content folder. Use this if you are starting a new project from scratch.
 - **copy**: Copies all files from your source directory into the Quartz content folder. This is the safest option for existing vaults as it doesn't touch your original files.
 - **symlink**: Creates a symbolic link from the Quartz content folder to your source directory. Any changes you make in your source directory (e.g. in Obsidian) will be immediately reflected in Quartz.
-- **move**: Moves your files from the source directory into the Quartz content folder.
 
 ## Link Resolution
 

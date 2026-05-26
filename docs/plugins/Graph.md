@@ -1,8 +1,12 @@
 ---
 title: Graph
+description: Interactive link graph visualization.
 tags:
   - plugin/component
 image:
+repository: "[quartz-community/graph](https://github.com/quartz-community/graph)"
+enabled: true
+required: false
 ---
 
 Interactive graph visualization.
@@ -24,16 +28,16 @@ Both `localGraph` and `globalGraph` accept the following options:
 - `drag`: Enable dragging nodes. Defaults to `true`.
 - `zoom`: Enable zooming. Defaults to `true`.
 - `depth`: The depth of the graph. Defaults to `1` for local and `-1` for global.
-- `scale`: The initial scale of the graph.
-- `repelForce`: The force that pushes nodes apart.
-- `centerForce`: The force that pulls nodes to the center.
-- `linkDistance`: The distance between linked nodes.
-- `fontSize`: The font size of node labels.
-- `opacityScale`: The scale of node opacity.
-- `removeTags`: Tags to exclude from the graph.
-- `showTags`: Whether to show tags in the graph.
-- `enableRadial`: Whether to enable radial layout.
-- `focusOnHover`: Whether to focus on the hovered node (global only).
+- `scale`: The initial scale of the graph. Defaults to `1.1` for local and `0.9` for global.
+- `repelForce`: The force that pushes nodes apart. Defaults to `0.5`.
+- `centerForce`: The force that pulls nodes to the center. Defaults to `0.3` for local and `0.2` for global.
+- `linkDistance`: The distance between linked nodes. Defaults to `30`.
+- `fontSize`: The font size of node labels. Defaults to `0.6`.
+- `opacityScale`: The scale of node opacity. Defaults to `1`.
+- `removeTags`: Tags to exclude from the graph. Defaults to `[]`.
+- `showTags`: Whether to show tags in the graph. Defaults to `true`.
+- `enableRadial`: Whether to enable radial layout. Defaults to `false` for local and `true` for global.
+- `focusOnHover`: Whether to focus on the hovered node. Defaults to `false` for local and `true` for global.
 
 ### Default options
 
@@ -53,6 +57,7 @@ Both `localGraph` and `globalGraph` accept the following options:
       opacityScale: 1
       removeTags: []
       showTags: true
+      focusOnHover: false
       enableRadial: false
     globalGraph:
       drag: true

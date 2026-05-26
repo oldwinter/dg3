@@ -58,7 +58,7 @@ export function writePluginsJson(data) {
   writeDataToFile(CONFIG_YAML_PATH, rest)
 }
 
-export function readDefaultPluginsJson() {
+function readDefaultPluginsJson() {
   const defaultPath = resolveDefaultConfigPath()
   return readFileAsData(defaultPath)
 }
@@ -99,7 +99,7 @@ export function getSourceUrl(source) {
 /**
  * Returns the subdir from an object source, or undefined for string sources.
  */
-export function getSourceSubdir(source) {
+function getSourceSubdir(source) {
   if (typeof source === "object" && source !== null && typeof source.subdir === "string") {
     return source.subdir
   }
@@ -201,118 +201,10 @@ export function getGitCommit(pluginDir) {
   }
 }
 
-export function getPluginDir(name) {
-  return path.join(PLUGINS_DIR, name)
-}
-
-export function pluginDirExists(name) {
-  return fs.existsSync(path.join(PLUGINS_DIR, name))
-}
-
-export function ensurePluginsDir() {
-  if (!fs.existsSync(PLUGINS_DIR)) {
-    fs.mkdirSync(PLUGINS_DIR, { recursive: true })
-  }
-}
-
-/**
- * Merges quartz.config.yaml, quartz.lock.json, and on-disk manifest data
- * into enriched plugin entries with: name, displayName, source, enabled,
- * options, order, layout, category, installed, locked, manifest,
- * currentCommit, modified.
- */
-export function getEnrichedPlugins() {
-  const pluginsJson = readPluginsJson()
-  const lockfile = readLockfile()
-
-  if (!pluginsJson?.plugins) return []
-
-  return pluginsJson.plugins.map((entry, index) => {
-    const name = extractPluginName(entry.source)
-    const pluginDir = path.join(PLUGINS_DIR, name)
-    const installed = fs.existsSync(pluginDir)
-    const locked = lockfile?.plugins?.[name] ?? null
-    const manifest = installed ? readManifestFromPackageJson(pluginDir) : null
-    const currentCommit = installed ? getGitCommit(pluginDir) : null
-    const modified = locked && currentCommit ? currentCommit !== locked.commit : false
-
-    return {
-      index,
-      name,
-      displayName: manifest?.displayName ?? name,
-      source: entry.source,
-      sourceDisplay: formatSource(entry.source),
-      subdir: getSourceSubdir(entry.source) ?? locked?.subdir ?? undefined,
-      enabled: entry.enabled ?? true,
-      options: entry.options ?? {},
-      order: entry.order ?? 50,
-      layout: entry.layout ?? null,
-      category: manifest?.category ?? "unknown",
-      installed,
-      locked,
-      manifest,
-      currentCommit,
-      modified,
-    }
-  })
-}
-
-export function getLayoutConfig() {
-  const pluginsJson = readPluginsJson()
-  return pluginsJson?.layout ?? null
-}
-
-export function getGlobalConfig() {
-  const pluginsJson = readPluginsJson()
-  return pluginsJson?.configuration ?? null
-}
-
-export function updatePluginEntry(index, updates) {
-  const json = readPluginsJson()
-  if (!json?.plugins?.[index]) return false
-  Object.assign(json.plugins[index], updates)
-  writePluginsJson(json)
-  return true
-}
-
 export function updateGlobalConfig(updates) {
   const json = readPluginsJson()
   if (!json) return false
   json.configuration = { ...json.configuration, ...updates }
-  writePluginsJson(json)
-  return true
-}
-
-export function updateLayoutConfig(layout) {
-  const json = readPluginsJson()
-  if (!json) return false
-  json.layout = layout
-  writePluginsJson(json)
-  return true
-}
-
-export function reorderPlugin(fromIndex, toIndex) {
-  const json = readPluginsJson()
-  if (!json?.plugins) return false
-  const [moved] = json.plugins.splice(fromIndex, 1)
-  json.plugins.splice(toIndex, 0, moved)
-  writePluginsJson(json)
-  return true
-}
-
-export function removePluginEntry(index) {
-  const json = readPluginsJson()
-  if (!json?.plugins?.[index]) return false
-  json.plugins.splice(index, 1)
-  writePluginsJson(json)
-  return true
-}
-
-export function addPluginEntry(entry) {
-  const json = readPluginsJson()
-  if (!json) return false
-  if (!json.plugins) json.plugins = []
-  json.plugins.push(entry)
   writePluginsJson(json)
   return true
 }

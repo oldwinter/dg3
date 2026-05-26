@@ -71,4 +71,4 @@ If you have a very large number of changes, Git might occasionally fail due to b
 
 Quartz uses `git pull --rebase --autostash` internally. This means if you have unstaged changes when you run `sync`, Quartz will temporarily hide them, pull the remote changes, and then bring your changes back. If a conflict occurs during this process, you will need to resolve it manually using standard Git tools.
 
-For more information on initial setup, see [[getting-started/installation]].
+For more information on initial setup, see [[installation]].

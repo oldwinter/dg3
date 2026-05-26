@@ -26,7 +26,6 @@ import {
 import {
   handlePluginRestore,
   handlePluginCheck,
-  handlePluginUpdate,
   handlePluginResolve,
 } from "./plugin-git-handlers.js"
 import {
@@ -321,6 +320,11 @@ See the [documentation](https://quartz.jzhao.xyz) for how to get started.
  * @param {*} argv arguments for `build`
  */
 export async function handleBuild(argv) {
+  if (argv.concurrency !== undefined && argv.concurrency < 1) {
+    console.error("Concurrency must be at least 1")
+    process.exit(1)
+  }
+
   if (argv.serve) {
     argv.watch = true
   }
@@ -409,11 +413,13 @@ export async function handleBuild(argv) {
       await cleanupBuild()
     }
 
-      const result = await ctx.rebuild().catch((err) => {
-        console.error(`${styleText("red", "Couldn't parse Quartz configuration:")} ${fp}`)
-        console.log(`Reason: ${styleText("gray", err.message ?? String(err))}`)
-        process.exit(1)
-      })
+    const result = await ctx.rebuild().catch((err) => {
+      console.error(
+        `${styleText("red", "Failed to build Quartz.")} Check for syntax errors in your configuration or plugins.`,
+      )
+      console.log(`Reason: ${styleText("gray", err.message ?? String(err))}`)
+      process.exit(1)
+    })
     release()
 
     if (argv.bundleInfo) {
@@ -546,8 +552,26 @@ export async function handleBuild(argv) {
       return serve()
     })
 
+    server.on("error", (err) => {
+      if (err.code === "EADDRINUSE") {
+        console.error(
+          `Port ${argv.port} is already in use. Try a different port with --port <number>`,
+        )
+        process.exit(1)
+      }
+      throw err
+    })
     server.listen(argv.port)
     const wss = new WebSocketServer({ port: argv.wsPort })
+    wss.on("error", (err) => {
+      if (err.code === "EADDRINUSE") {
+        console.error(
+          `WebSocket port ${argv.wsPort} is already in use. Try a different port with --wsPort <number>`,
+        )
+        process.exit(1)
+      }
+      throw err
+    })
     wss.on("connection", (ws) => connections.push(ws))
     console.log(
       styleText(
@@ -624,7 +648,10 @@ export async function handleUpgrade(argv) {
     }
 
     if (!pullOk) {
-      console.log(styleText("red", "An error occurred above while pulling updates."))
+      console.log(
+        styleText("red", "An error occurred while pulling updates.") +
+          "\nCheck your network connection and git credentials. If you see merge conflicts, resolve them manually and run `npx quartz sync --no-pull`.",
+      )
       await popContentFolder(contentFolder)
       if (fs.existsSync(lockfileBackup)) fs.unlinkSync(lockfileBackup)
       return
@@ -670,7 +697,10 @@ export async function handleUpgrade(argv) {
   if (res.status === 0) {
     console.log(styleText("green", "Dependencies updated!"))
   } else {
-    console.log(styleText("red", "An error occurred above while installing dependencies."))
+    console.log(
+      styleText("red", "An error occurred while installing dependencies.") +
+        "\nTry running `npm install` manually to see detailed errors.",
+    )
   }
 
   console.log("Restoring plugins from lockfile...")
@@ -680,16 +710,6 @@ export async function handleUpgrade(argv) {
   await handlePluginCheck()
 
   console.log(styleText("green", "Done!"))
-}
-
-/**
- * Handles `npx quartz update`
- * Shortcut for `npx quartz plugin update` — updates all installed plugins.
- * @param {*} argv arguments for `update`
- */
-export async function handleUpdate(argv) {
-  console.log(`\n${styleText(["bgGreen", "black"], ` Quartz v${version} `)} \n`)
-  await handlePluginUpdate(argv.names)
 }
 
 /**
@@ -749,7 +769,10 @@ export async function handleSync(argv) {
     try {
       gitPull(ORIGIN_NAME, QUARTZ_SOURCE_BRANCH)
     } catch {
-      console.log(styleText("red", "An error occurred above while pulling updates."))
+      console.log(
+        styleText("red", "An error occurred while pulling updates from your repository.") +
+          "\nCheck your network connection and git credentials.",
+      )
       await popContentFolder(contentFolder)
       return
     }
@@ -764,7 +787,8 @@ export async function handleSync(argv) {
     })
     if (res.status !== 0) {
       console.log(
-        styleText("red", `An error occurred above while pushing to remote ${ORIGIN_NAME}.`),
+        styleText("red", `An error occurred while pushing to remote ${ORIGIN_NAME}.`) +
+          "\nCheck that you have push access to the remote repository.",
       )
       return
     }

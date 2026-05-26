@@ -63,6 +63,25 @@ The plugin's `package.json` should declare dependencies on `@quartz-community/ty
 
 ## Plugin Types
 
+## Choosing a Plugin Type
+
+Quartz supports six plugin capabilities. A single plugin can combine multiple types.
+
+| I want to...                                     | Plugin Type |
+| ------------------------------------------------ | ----------- |
+| Transform Markdown/HTML content                  | Transformer |
+| Decide which pages to publish                    | Filter      |
+| Generate output files (RSS, sitemaps, manifests) | Emitter     |
+| Define how a category of pages renders           | Page Type   |
+| Add a UI component to the layout                 | Component   |
+| Add a custom view to the Bases database system   | Bases View  |
+
+These are **not mutually exclusive**. For example:
+
+- `obsidian-flavored-markdown` is both a **transformer** (processes OFM syntax) and provides **components** (mermaid rendering)
+- `canvas-page` is a **page type** that also provides a custom **frame**
+- A plugin could be a **transformer** that adds metadata AND a **component** that displays it
+
 ### Transformers
 
 Transformers **map** over content, taking a Markdown file and outputting modified content or adding metadata to the file itself.
@@ -466,7 +485,87 @@ When a user installs your plugin, Quartz automatically loads the frame from the 
 > [!tip]
 > See the [`canvas-page`](https://github.com/quartz-community/canvas-page) plugin for a complete real-world example of a plugin-provided frame.
 
-## Building and Testing
+### Bases Views
+
+The `bases-page` plugin provides a database-like view system similar to Obsidian Bases. Other plugins can register custom view types via the `ViewRegistry`:
+
+```ts
+import { viewRegistry } from "@quartz-community/bases-page";
+import type { ViewTypeRegistration } from "@quartz-community/bases-page";
+
+viewRegistry.register({
+  id: "timeline",
+  name: "Timeline",
+  icon: "git-branch",
+  render: ({ entries, view, slug, allSlugs }) => (
+    <div class="bases-timeline">
+      {entries.map(entry => <div>{entry.properties.title}</div>)}
+    </div>
+  ),
+  css: `.bases-timeline { display: flex; flex-direction: column; }`,
+  afterDOMLoaded: `document.addEventListener("nav", () => { /* setup */ })`,
+});
+```
+
+Each view registration includes:
+
+- `id`: Unique identifier (e.g., `"timeline"`, `"kanban"`)
+- `name`: Display name shown in the view selector
+- `icon`: Optional Lucide icon name
+- `render`: Function that receives `ViewRendererProps` and returns Preact JSX
+- `css`: Optional CSS string (deduplicated by view ID)
+- `afterDOMLoaded`: Optional client-side script (same lifecycle as component scripts)
+- `options`: Optional configuration passed to every render invocation
+
+The `ViewRegistry` is a global singleton (via `Symbol.for`) ensuring all copies of the module share the same registry.
+
+## Building and Distribution
+
+Quartz v5 plugins ship pre-built `dist/` in their repositories. When a user installs your plugin, Quartz detects the pre-built output and skips the install/build cycle entirely — making installation near-instant.
+
+### Build Configuration
+
+The plugin template's `tsup.config.ts` bundles all dependencies by default. Only **singleton externals** — packages that must be the same instance across all plugins — are left unbundled:
+
+```ts
+const SINGLETON_EXTERNALS = [
+  "preact",
+  "preact/hooks",
+  "preact/jsx-runtime",
+  "preact/compat",
+  "@jackyzha0/quartz",
+  "@jackyzha0/quartz/*",
+  "vfile",
+  "vfile/*",
+  "unified",
+]
+
+export default defineConfig({
+  // ...
+  noExternal: [/.*/], // Bundle everything
+  external: SINGLETON_EXTERNALS, // Except singletons
+})
+```
+
+This means your plugin's `dist/index.js` is self-contained — no `npm install` needed at install time.
+
+### Shipping Pre-built Output
+
+Your plugin's `dist/` directory should be committed to the repository:
+
+1. **Do NOT add `dist/` to `.gitignore`**
+2. Run `npm run build` before committing
+3. The CI workflow verifies `dist/` is up to date on every push
+
+If `dist/` is missing or gitignored, Quartz falls back to the full install/build cycle (useful during local development with symlinked plugins).
+
+### Plugins with Native Dependencies
+
+Plugins that require native packages (e.g. `sharp` for image processing) cannot bundle those. For these plugins:
+
+1. Set `"requiresInstall": true` in your `package.json` quartz manifest
+2. Declare the native package as a `peerDependency`
+3. Quartz will install it into the host project at build time
 
 ```shell
 # Build the plugin
@@ -475,6 +574,108 @@ npm run build
 npx tsup
 ```
 
+## What to Import from Where
+
+| You need...                                                            | Import from                                                       |
+| ---------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Type definitions (`QuartzTransformerPlugin`, `QuartzComponent`, etc.)  | `@quartz-community/types`                                         |
+| Path utilities (`simplifySlug`, `resolveRelative`, `pathToRoot`)       | `@quartz-community/utils/path`                                    |
+| DOM utilities (`removeAllChildren`, `registerEscapeHandler`)           | `@quartz-community/utils/dom`                                     |
+| JSX conversion (`htmlToJsx`)                                           | `@quartz-community/utils/jsx`                                     |
+| Language utilities (`classNames`, `capitalize`)                        | `@quartz-community/utils/lang`                                    |
+| Date/sort utilities (`formatDate`, `getDate`, `byDateAndAlphabetical`) | `@quartz-community/utils/date` and `@quartz-community/utils/sort` |
+| HTML escaping (`escapeHTML`, `unescapeHTML`)                           | `@quartz-community/utils/escape`                                  |
+| Emoji utilities (`getIconCode`)                                        | `@quartz-community/utils/emoji`                                   |
+| Browser runtime (`onNav`, `onRender`, `fetchContentIndex`)             | `@quartz-community/runtime`                                       |
+
+Do **not** import from `@jackyzha0/quartz` or from `vfile` directly. Use the community packages instead.
+
+## Internationalization (i18n)
+
+Plugins should provide their own translations for user-facing strings. Do **not** hardcode strings in components.
+
+### Setting Up i18n
+
+Create the following structure:
+
+```
+src/i18n/
+├── index.ts
+└── locales/
+    └── en-US.ts
+```
+
+**`src/i18n/locales/en-US.ts`** (required base locale):
+
+```ts
+export default {
+  components: {
+    myPlugin: {
+      title: "My Plugin",
+      description: "A description",
+      itemCount: ({ count }: { count: number }) => (count === 1 ? "1 item" : `${count} items`),
+    },
+  },
+}
+```
+
+**`src/i18n/index.ts`**:
+
+```ts
+import enUS from "./locales/en-US"
+
+const locales: Record<string, typeof enUS> = {
+  "en-US": enUS,
+}
+
+export function i18n(locale: string) {
+  return locales[locale] || enUS
+}
+```
+
+### Using i18n in Components
+
+```tsx
+import { i18n } from "../i18n"
+
+const MyComponent: QuartzComponent = ({ cfg }) => {
+  const locale = cfg.locale ?? "en-US"
+  const t = i18n(locale).components.myPlugin
+  return <h2>{t.title}</h2>
+}
+```
+
+### Adding Translations
+
+To add a new locale, copy `en-US.ts`, translate the strings, and register it:
+
+```ts
+// src/i18n/locales/fr-FR.ts
+export default {
+  components: {
+    myPlugin: {
+      title: "Mon Plugin",
+      description: "Une description",
+      itemCount: ({ count }: { count: number }) =>
+        count === 1 ? "1 élément" : `${count} éléments`,
+    },
+  },
+}
+```
+
+```ts
+// src/i18n/index.ts
+import enUS from "./locales/en-US"
+import frFR from "./locales/fr-FR"
+
+const locales: Record<string, typeof enUS> = {
+  "en-US": enUS,
+  "fr-FR": frFR,
+}
+```
+
+Use [BCP 47](https://en.wikipedia.org/wiki/IETF_language_tag) locale codes (e.g., `en-US`, `de-DE`, `ja-JP`, `zh-CN`). For dynamic content, use function-based translations as shown with `itemCount` above.
+
 ## Installing Your Plugin
 
 ```shell
@@ -482,7 +683,7 @@ npx tsup
 npx quartz plugin add github:your-username/my-plugin
 ```
 
-This clones the plugin, builds it, and adds it to both `quartz.config.yaml` and `quartz.lock.json`. You can then configure it in your config:
+This clones the plugin and adds it to both `quartz.config.yaml` and `quartz.lock.json`. If the plugin ships pre-built `dist/` (recommended), installation completes in seconds with no build step. You can then configure it in your config:
 
 ```yaml title="quartz.config.yaml"
 plugins:
@@ -490,13 +691,20 @@ plugins:
     enabled: true
 ```
 
-Or via TS override in `quartz.ts`:
+For options that require JavaScript callback functions (not expressible in YAML), use the TS override in `quartz.ts`:
 
 ```ts title="quartz.ts (override)"
 import * as ExternalPlugin from "./.quartz/plugins"
-// ...
-transformers: [ExternalPlugin.MyPlugin()]
+
+// Must be placed before loadQuartzConfig()
+ExternalPlugin.MyPlugin({
+  customFn: (data) => {
+    // ...
+  },
+})
 ```
+
+Options set via `quartz.ts` are merged with YAML options at instantiation time, with `quartz.ts` overrides taking precedence. These calls must be placed **before** `loadQuartzConfig()` in your `quartz.ts`.
 
 ### Development Workflow
 
@@ -514,10 +722,10 @@ If you've updated your `quartz.config.yaml` to reference a plugin that isn't ins
 
 ```shell
 # Install all config-referenced plugins missing from the lockfile
-npx quartz plugin resolve
+npx quartz plugin install --from-config
 
 # Preview first without making changes
-npx quartz plugin resolve --dry-run
+npx quartz plugin install --from-config --dry-run
 ```
 
 To clean up plugins that are installed but no longer referenced in your config:

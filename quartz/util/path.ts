@@ -21,6 +21,7 @@ export {
   slugTag,
   transformInternalLink,
   transformLink,
+  normalizeHastElement,
 } from "@quartz-community/utils"
 
 export type {
@@ -32,11 +33,6 @@ export type {
 } from "@quartz-community/utils"
 
 // --- v5-specific exports below ---
-
-import type { Element as HastElement } from "hast"
-import type { FullSlug } from "@quartz-community/utils"
-import { isRelativeURL, joinSegments, resolveRelative } from "@quartz-community/utils"
-import { clone } from "./clone"
 
 export const QUARTZ = "quartz"
 
@@ -53,33 +49,4 @@ export function normalizeRelativeURLs(el: Element | Document, destination: strin
   el.querySelectorAll('[src=""], [src^="./"], [src^="../"]').forEach((item) => {
     _rebaseHtmlElement(item, "src", destination)
   })
-}
-
-const _rebaseHastElement = (
-  el: HastElement,
-  attr: string,
-  curBase: FullSlug,
-  newBase: FullSlug,
-) => {
-  if (el.properties?.[attr]) {
-    if (!isRelativeURL(String(el.properties[attr]))) {
-      return
-    }
-
-    const rel = joinSegments(resolveRelative(curBase, newBase), "..", el.properties[attr] as string)
-    el.properties[attr] = rel
-  }
-}
-
-export function normalizeHastElement(rawEl: HastElement, curBase: FullSlug, newBase: FullSlug) {
-  const el = clone(rawEl) // clone so we dont modify the original page
-  _rebaseHastElement(el, "src", curBase, newBase)
-  _rebaseHastElement(el, "href", curBase, newBase)
-  if (el.children) {
-    el.children = el.children.map((child) =>
-      normalizeHastElement(child as HastElement, curBase, newBase),
-    )
-  }
-
-  return el
 }

@@ -1,8 +1,13 @@
 ---
 title: StackedPages
+description: Andy Matuschak-style stacked sliding panes.
 tags:
   - plugin/component
 image:
+new-in-v5: true
+repository: "[quartz-community/stacked-pages](https://github.com/quartz-community/stacked-pages)"
+enabled: true
+required: false
 ---
 
 Andy Matuschak-style stacked pages (sliding panes). Clicking internal links opens pages side by side in a horizontal stack, allowing you to trace your path through your notes. Each pane shows a full page and can be individually scrolled or closed.
@@ -27,11 +32,9 @@ Stacked pages are disabled on mobile by default (below 800px) since horizontal p
 
 This plugin accepts the following configuration options:
 
-- `paneWidth`: Width of each stacked pane in pixels. Defaults to `640`.
-- `maxPanes`: Maximum number of panes visible at once. Defaults to `5`.
-- `enableOnMobile`: Whether to enable stacked pages on mobile devices. Defaults to `false`.
-- `mobileBreakpoint`: Viewport width (in pixels) below which the mobile behavior applies. Matches the Quartz mobile breakpoint. Defaults to `800`.
-- `showSpines`: Whether to show collapsed spine headers when panes overflow. Defaults to `true`.
+- `maxTabs`: Maximum number of stacked panes visible at once. Defaults to `8`.
+- `mobileBreakpoint`: Viewport width (in pixels) below which stacked pages are disabled and links navigate normally. Defaults to `800`.
+- `showSpines`: Whether to show collapsed spine headers when panes overflow the viewport. Defaults to `true`.
 - `animateTransitions`: Whether to animate pane open/close transitions. Defaults to `true`.
 
 ### Default options
@@ -44,9 +47,7 @@ This plugin accepts the following configuration options:
     priority: 50
     display: all
   options:
-    paneWidth: 640
-    maxPanes: 5
-    enableOnMobile: false
+    maxTabs: 8
     mobileBreakpoint: 800
     showSpines: true
     animateTransitions: true
