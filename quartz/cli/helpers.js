@@ -3,6 +3,7 @@ import { styleText } from "util"
 import { contentCacheFolder } from "./constants.js"
 import { spawnSync } from "child_process"
 import fs from "fs"
+import path from "path"
 
 export function escapePath(fp) {
   return fp
@@ -51,4 +52,58 @@ export async function popContentFolder(contentFolder) {
     preserveTimestamps: true,
   })
   await fs.promises.rm(contentCacheFolder, { force: true, recursive: true })
+}
+
+/**
+ * Create a directory symlink with Windows fallback.
+ *
+ * On Windows, creating symlinks requires Developer Mode or admin privileges.
+ * When that fails (EPERM), we try a junction first (no elevation needed),
+ * then fall back to a recursive copy as a last resort.
+ *
+ * @param {string} target  Symlink target (may be relative)
+ * @param {string} linkPath  Path where the link is created
+ */
+export function symlinkOrCopySync(target, linkPath) {
+  try {
+    fs.symlinkSync(target, linkPath, "dir")
+  } catch (err) {
+    if (err.code === "EEXIST") return
+    if (err.code === "EPERM" && process.platform === "win32") {
+      try {
+        fs.symlinkSync(target, linkPath, "junction")
+        return
+      } catch {
+        const resolvedTarget = path.resolve(path.dirname(linkPath), target)
+        fs.cpSync(resolvedTarget, linkPath, { recursive: true })
+        return
+      }
+    }
+    throw err
+  }
+}
+
+/**
+ * Async version of {@link symlinkOrCopySync}.
+ *
+ * @param {string} target  Symlink target (may be relative)
+ * @param {string} linkPath  Path where the link is created
+ */
+export async function symlinkOrCopy(target, linkPath) {
+  try {
+    await fs.promises.symlink(target, linkPath, "dir")
+  } catch (err) {
+    if (err.code === "EEXIST") return
+    if (err.code === "EPERM" && process.platform === "win32") {
+      try {
+        await fs.promises.symlink(target, linkPath, "junction")
+        return
+      } catch {
+        const resolvedTarget = path.resolve(path.dirname(linkPath), target)
+        await fs.promises.cp(resolvedTarget, linkPath, { recursive: true })
+        return
+      }
+    }
+    throw err
+  }
 }

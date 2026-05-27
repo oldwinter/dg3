@@ -22,6 +22,7 @@ import {
   gitPull,
   popContentFolder,
   stashContentFolder,
+  symlinkOrCopy,
 } from "./helpers.js"
 import {
   handlePluginRestore,
@@ -210,7 +211,7 @@ export async function handleCreate(argv) {
         preserveTimestamps: true,
       })
     } else if (setupStrategy === "symlink") {
-      await fs.promises.symlink(originalFolder, contentFolder, "dir")
+      await symlinkOrCopy(originalFolder, contentFolder)
     }
   } else if (setupStrategy === "new") {
     await fs.promises.writeFile(
