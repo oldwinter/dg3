@@ -3,10 +3,10 @@ publish: true
 permalink: /Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatGPT web页面的自带提示词破解.md
 created: 2024-02-08
 modified: 2024-02-19
-published: 2025-08-15T22:00:03.620+08:00
+published: 2026-05-16T01:30:27.953+08:00
 ---
 
-[[raycast ai 的自带提示词破解]]
+raycast ai 的自带提示词破解
 
 提问：
 

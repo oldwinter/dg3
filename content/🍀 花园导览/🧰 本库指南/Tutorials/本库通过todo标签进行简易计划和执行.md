@@ -4,12 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库通过todo标签
 title: 本库通过todo标签进行简易计划和执行
 created: 2022-08-04
 modified: 2025-09-01
-published: 2025-09-01T17:47:33.390+08:00
-tags:
-  - todo/某天
-  - todo/now
-  - todo/本周
-  - todo/持续迭代
+published: 2026-05-16T01:35:26.660+08:00
 ---
 
 x:: [[滴答清单]]

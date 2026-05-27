@@ -8,17 +8,17 @@
       "width": 3743,
       "height": 896,
       "color": "4",
-      "label": "核心工作流（7 步）"
+      "label": "主流程（推荐链路）"
     },
     {
       "id": "group-aux",
       "type": "group",
       "x": -60,
       "y": 1041,
-      "width": 1498,
+      "width": 2560,
       "height": 414,
       "color": "2",
-      "label": "辅助技能（随时触发）"
+      "label": "旁路与元技能"
     },
     {
       "id": "group-exec",
@@ -43,11 +43,11 @@
     {
       "id": "title",
       "type": "text",
-      "text": "# Superpowers 工作流全景图\n14 个技能 · 7 步核心流程 · 结构化开发",
-      "x": 1500,
-      "y": -200,
-      "width": 535,
-      "height": 138,
+      "text": "# Superpowers 工作流全景图\n14 个核心 skills · 三层机制 · 主流程 + 旁路技能",
+      "x": 1180,
+      "y": -590,
+      "width": 1010,
+      "height": 150,
       "color": "6"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "step4a",
       "type": "text",
-      "text": "### 方式 A：执行计划\n#### Executing Plans\n\n**独立会话**\n- 批量执行（每批 3 个任务）\n- 批间暂停等待反馈\n- 人工检查点\n\n适合：需要人工介入的场景",
+      "text": "### 方式 A：执行计划\n#### Executing Plans\n\n**独立/顺序执行**\n- 先批判性读计划\n- 按任务逐个执行\n- 遇 blocker 立即停下\n- 保留更多人工检查点\n\n适合：无子代理或想更稳地推进",
       "x": 1620,
       "y": 110,
       "width": 278,
@@ -103,7 +103,7 @@
     {
       "id": "aux-superpowers",
       "type": "text",
-      "text": "## 📋 技能使用原则\n### Using Superpowers\n\n- 刚性技能（TDD、调试）：严格遵循\n- 弹性技能（模式）：适应上下文\n- 优先级：流程技能 > 实现技能\n- 有 checklist → 创建 Todo 逐项完成\n\n> 1% 可能适用 = 必须调用",
+      "text": "## 📋 技能使用原则\n### Using Superpowers\n\n- 不是普通技能，而是总调度器\n- 刚性技能（TDD、调试）：严格遵循\n- 优先级：流程技能 > 实现技能\n- 哪怕 1% 可能适用，也要先查 skill\n\n> 先查 skill，再行动",
       "x": 1096,
       "y": 1110,
       "width": 321,
@@ -153,7 +153,7 @@
     {
       "id": "step6a",
       "type": "text",
-      "text": "### 请求审查\n#### Requesting Code Review\n\n- 获取 git diff\n- 派发审查子代理\n- 审查规格合规 + 代码质量\n- 按严重度分级：\n  Critical / Important / Minor",
+      "text": "### 请求审查\n#### Requesting Code Review\n\n- 适合：任务完成、重大功能、merge 前\n- 获取 git diff / git range\n- 派发 reviewer 检查实现质量\n- 按严重度分级：\n  Critical / Important / Minor",
       "x": 2500,
       "y": 110,
       "width": 257,
@@ -202,12 +202,52 @@
     },
     {
       "id": "9136f55530268019",
-      "x": -122,
-      "y": -378,
-      "width": 260,
-      "height": 60,
+      "x": -100,
+      "y": -420,
+      "width": 470,
+      "height": 240,
       "type": "text",
-      "text": "搜索"
+      "text": "## 新版理解\n\n14 个核心 skills ≠ 只有 7 步流程\n\n更稳的心智模型：\n- 启动注入层\n- 流程技能层\n- 质量兜底层"
+    },
+    {
+      "id": "layer1",
+      "type": "text",
+      "text": "## 启动注入层\n\n- SessionStart hook 或原生 skill discovery\n- 把 `using-superpowers` 注入到会话入口\n- 先约束 agent，再谈具体技能",
+      "x": 440,
+      "y": -420,
+      "width": 360,
+      "height": 240,
+      "color": "6"
+    },
+    {
+      "id": "layer2",
+      "type": "text",
+      "text": "## 流程技能层\n\n`brainstorming -> worktree -> writing-plans -> execution -> finish`\n\n作用：把开发切成阶段，而不是让 agent 直接写代码",
+      "x": 860,
+      "y": -420,
+      "width": 430,
+      "height": 240,
+      "color": "4"
+    },
+    {
+      "id": "layer3",
+      "type": "text",
+      "text": "## 质量兜底层\n\n- TDD\n- systematic-debugging\n- code review\n- verification-before-completion\n\n作用：阻止猜测、跳步和虚假完成",
+      "x": 1350,
+      "y": -420,
+      "width": 430,
+      "height": 240,
+      "color": "1"
+    },
+    {
+      "id": "recent1",
+      "type": "text",
+      "text": "## 最近关键更新（v5.0.4-v5.0.7）\n\n- inline self-review 替代旧 spec/plan review loop\n- 恢复 `subagent-driven-development` / `executing-plans` 二选一\n- 补齐 Codex / Copilot CLI / OpenCode 适配\n- `subagent-driven-development` 强调两段审查：先 spec，后 quality",
+      "x": 1850,
+      "y": -420,
+      "width": 880,
+      "height": 240,
+      "color": "5"
     }
   ],
   "edges": [

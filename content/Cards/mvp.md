@@ -1,14 +1,16 @@
 ---
+publish: true
+permalink: /Cards/mvp.md
 aliases:
   - 最小可行性版本
   - MVP
   - Minimum Viable Product
-date created: 2023-09-03
-date modified: 2024-08-15
-publish: true
+created: 2023-09-03
+modified: 2024-08-15
+published: 2026-05-16T01:30:26.595+08:00
 ---
 
-[[快速试错]]\
+快速试错
 [[PMF]]
 
 概念 from [[精益创业-埃里克·莱斯]]

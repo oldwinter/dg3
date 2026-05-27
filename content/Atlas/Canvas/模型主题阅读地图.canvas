@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "id": "9a1b2c3d4e5f6071",
+      "type": "group",
+      "x": -120,
+      "y": -120,
+      "width": 2100,
+      "height": 1040,
+      "label": "Models Topic"
+    },
+    {
+      "id": "8b9c0d1e2f304152",
+      "type": "text",
+      "x": 40,
+      "y": -40,
+      "width": 560,
+      "height": 160,
+      "text": "# 模型主题阅读地图\n\n这条线不讲模型榜单，而讲为什么同样的 agent 工作面换模型后手感会差很多。"
+    },
+    {
+      "id": "7c8d9e0f10213243",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/模型主题阅读地图.md",
+      "label": "总阅读地图",
+      "x": 60,
+      "y": 220,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "6d7e8f9011223344",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/为什么同样是大模型，体感差异却会很大.md",
+      "label": "体感差异",
+      "x": 420,
+      "y": 220,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "5e6f708192a3b4c5",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/模型训练后半段决定用户体验 - 源摘要.md",
+      "label": "训练后半段",
+      "x": 800,
+      "y": 220,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "1c2d3e4f50617283",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Claude Code 阅读地图.md",
+      "label": "Claude Code",
+      "x": 1220,
+      "y": 220,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "0d1e2f3041526374",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Codex 阅读地图.md",
+      "label": "Codex",
+      "x": 1600,
+      "y": 220,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "4f5061728394a5b6",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/KV Cache 和 Prompt Cache 分别在解决什么问题.md",
+      "label": "KV vs Prompt Cache",
+      "x": 420,
+      "y": 560,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "3a4b5c6d7e8f9012",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/KV Caching in LLMs - 源摘要.md",
+      "label": "KV Cache",
+      "x": 820,
+      "y": 560,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "2b3c4d5e6f708192",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/Lessons from Building Claude Code Prompt Caching Is Everything - 源摘要.md",
+      "label": "Prompt Cache",
+      "x": 1220,
+      "y": 560,
+      "width": 360,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "1a2b3c4d5e6f7081",
+      "fromNode": "7c8d9e0f10213243",
+      "fromSide": "right",
+      "toNode": "6d7e8f9011223344",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "先理解体感差异"
+    },
+    {
+      "id": "2a3b4c5d6e7f8091",
+      "fromNode": "6d7e8f9011223344",
+      "fromSide": "right",
+      "toNode": "5e6f708192a3b4c5",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "训练后半段"
+    },
+    {
+      "id": "3a4b5c6d7e8f90a1",
+      "fromNode": "7c8d9e0f10213243",
+      "fromSide": "bottom",
+      "toNode": "4f5061728394a5b6",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "再理解 cache 约束"
+    },
+    {
+      "id": "4a5b6c7d8e9f0a1b",
+      "fromNode": "4f5061728394a5b6",
+      "fromSide": "right",
+      "toNode": "3a4b5c6d7e8f9012",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "推理内部"
+    },
+    {
+      "id": "5a6b7c8d9e0f1a2b",
+      "fromNode": "4f5061728394a5b6",
+      "fromSide": "right",
+      "toNode": "2b3c4d5e6f708192",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "产品前缀"
+    },
+    {
+      "id": "6a7b8c9d0e1f2a3b",
+      "fromNode": "6d7e8f9011223344",
+      "fromSide": "right",
+      "toNode": "1c2d3e4f50617283",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "落到 Claude Code"
+    },
+    {
+      "id": "7a8b9c0d1e2f3a4b",
+      "fromNode": "6d7e8f9011223344",
+      "fromSide": "right",
+      "toNode": "0d1e2f3041526374",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "落到 Codex"
+    }
+  ]
+}

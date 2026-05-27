@@ -1,8 +1,10 @@
 ---
-date created: 2022-07-26
-date modified: 2023-03-14
-title: 使用简悦对web文章进行渐进式总结
 publish: true
+permalink: /Cards/使用简悦对web文章进行渐进式总结.md
+title: 使用简悦对web文章进行渐进式总结
+created: 2022-07-26
+modified: 2023-03-14
+published: 2026-05-16T01:30:26.915+08:00
 ---
 
 ## 整体效果

@@ -6,9 +6,7 @@ aliases:
 title: obsidian publish 发布
 created: 2025-07-25
 modified: 2025-07-25
-published: 2025-08-15T22:00:05.143+08:00
-tags:
-  - todo/某天
+published: 2026-05-16T01:35:26.676+08:00
 ---
 
 ## 2022年6月新发现
@@ -19,7 +17,7 @@ tags:
 
 [[hugo和jekyll对比]]
 
-obsidian 的第三方发布能力，目前 [[决赛圈]]2 个，但都有点不尽人意，等一段时间再说吧。
+obsidian 的第三方发布能力，目前 决赛圈2 个，但都有点不尽人意，等一段时间再说吧。
 
 - [jackyzha0 (Jacky Zhao) · GitHub](https://github.com/jackyzha0)
 - [GitHub - Jekyll-Garden/jekyll-garden.github.io: A Digital Garden Theme for Jekyll. Jekyll Garden lets you create a static HTML version of your markdown notes and publish via Github pages. Made for Obsidian users!](https://github.com/Jekyll-Garden/jekyll-garden.github.io)

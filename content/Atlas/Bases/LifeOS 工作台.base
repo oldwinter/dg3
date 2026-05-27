@@ -1,0 +1,218 @@
+filters:
+  or:
+    - and:
+        - file.inFolder("Spaces/2-Area/运动健康")
+        - file.ext == "md"
+    - and:
+        - file.inFolder("Calendar/Plan & Review")
+        - file.ext == "md"
+        - '!file.inFolder("Calendar/Plan & Review/AI summaries")'
+        - or:
+            - file.name.contains("LifeOS")
+            - file.name.contains("健康")
+            - file.name.contains("运动")
+            - file.name.contains("训练")
+            - file.name.contains("睡眠")
+            - file.name.contains("饮食")
+            - file.name.contains("精力")
+            - file.hasTag("lifeos")
+            - file.hasTag("health")
+            - file.hasTag("fitness")
+    - and:
+        - file.inFolder("🍀 花园导览")
+        - file.ext == "md"
+        - or:
+            - file.name.contains("保持健康")
+            - file.name.contains("健康")
+formulas:
+  健康资料: file.inFolder("Spaces/2-Area/运动健康")
+  周期复盘: file.inFolder("Calendar/Plan & Review") && !file.inFolder("Calendar/Plan & Review/AI summaries") && (file.name.contains("LifeOS") || file.name.contains("健康") || file.name.contains("运动") || file.name.contains("训练") || file.name.contains("睡眠") || file.name.contains("饮食") || file.name.contains("精力") || file.hasTag("lifeos") || file.hasTag("health") || file.hasTag("fitness"))
+  入口页: file.inFolder("🍀 花园导览") || file.name.contains("∑") || file.name.contains("README") || file.name.contains("Readme")
+  力量训练: file.folder.contains("力量训练") || file.name.contains("力量训练") || file.name.contains("深蹲") || file.name.contains("卧推") || file.name.contains("硬拉")
+  有氧拉伸: file.folder.contains("有氧运动") || file.folder.contains("拉伸") || file.name.contains("有氧") || file.name.contains("拉伸") || file.name.contains("跑步")
+  饮食减脂: file.name.contains("饮食") || file.name.contains("减脂") || file.name.contains("减肥") || file.name.contains("控糖") || file.name.contains("营养") || file.name.contains("蛋白") || file.name.contains("碳水") || file.name.contains("脂肪") || file.name.contains("轻断食")
+  睡眠精力: file.name.contains("睡眠") || file.name.contains("午睡") || file.name.contains("精力") || file.name.contains("疲劳")
+  最近修改天数: ((number(now()) - number(file.mtime)) / 86400000).floor()
+  弱连接: file.backlinks.length < 2
+  非叶子健康主题: '!(file.folder.contains("力量训练动作库") || file.folder.contains("拉伸动作库") || file.folder.contains("有氧运动库") || file.folder.contains("肌肉库") || file.folder.contains("运动装备库")) && !file.name.contains("中文博客排版指南")'
+properties:
+  formula.健康资料:
+    displayName: 健康资料
+  formula.周期复盘:
+    displayName: 周期复盘
+  formula.入口页:
+    displayName: 入口页
+  formula.力量训练:
+    displayName: 力量训练
+  formula.有氧拉伸:
+    displayName: 有氧拉伸
+  formula.饮食减脂:
+    displayName: 饮食减脂
+  formula.睡眠精力:
+    displayName: 睡眠精力
+  formula.最近修改天数:
+    displayName: 最近修改天数
+  formula.弱连接:
+    displayName: 弱连接
+  formula.非叶子健康主题:
+    displayName: 非叶子健康主题
+  file.name:
+    displayName: 文件名
+  file.folder:
+    displayName: 文件夹
+  file.mtime:
+    displayName: 最近修改
+  file.backlinks:
+    displayName: 反链
+views:
+  - type: table
+    name: 入口｜健康与LifeOS
+    filters:
+      or:
+        - file.name.contains("保持健康")
+        - file.name.contains("∑ 运动健康")
+        - file.name.contains("力量训练动作库")
+        - file.name.contains("有氧运动库")
+        - file.name.contains("拉伸动作库")
+    order:
+      - file.name
+      - file.folder
+      - file.backlinks
+      - file.mtime
+      - formula.最近修改天数
+    sort:
+      - property: file.folder
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 健康｜全部运动健康
+    filters:
+      and:
+        - file.inFolder("Spaces/2-Area/运动健康")
+    order:
+      - file.name
+      - file.folder
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+      - formula.最近修改天数
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 训练｜力量动作库
+    filters:
+      or:
+        - file.folder.contains("力量训练动作库")
+        - file.name.contains("力量训练")
+        - file.name.contains("深蹲")
+        - file.name.contains("卧推")
+        - file.name.contains("硬拉")
+    order:
+      - file.name
+      - file.folder
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.folder
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 训练｜有氧与拉伸
+    filters:
+      or:
+        - file.folder.contains("有氧运动库")
+        - file.folder.contains("拉伸动作库")
+        - file.name.contains("有氧")
+        - file.name.contains("拉伸")
+        - file.name.contains("跑步")
+    order:
+      - file.name
+      - file.folder
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.folder
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 饮食｜减脂与营养
+    filters:
+      or:
+        - file.name.contains("饮食")
+        - file.name.contains("减脂")
+        - file.name.contains("减肥")
+        - file.name.contains("控糖")
+        - file.name.contains("营养")
+        - file.name.contains("蛋白")
+        - file.name.contains("碳水")
+        - file.name.contains("脂肪")
+        - file.name.contains("轻断食")
+    order:
+      - file.name
+      - file.folder
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 恢复｜睡眠与精力
+    filters:
+      or:
+        - file.name.contains("睡眠")
+        - file.name.contains("午睡")
+        - file.name.contains("精力")
+        - file.name.contains("疲劳")
+    order:
+      - file.name
+      - file.folder
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 复盘｜LifeOS显式复盘
+    filters:
+      and:
+        - formula.周期复盘
+    order:
+      - file.name
+      - file.folder
+      - file.mtime
+      - formula.最近修改天数
+      - file.backlinks
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 待补｜弱连接健康主题
+    filters:
+      and:
+        - file.inFolder("Spaces/2-Area/运动健康")
+        - file.backlinks.length < 2
+        - formula.非叶子健康主题
+    order:
+      - file.name
+      - file.folder
+      - file.backlinks
+      - file.mtime
+      - formula.最近修改天数
+      - formula.非叶子健康主题
+    sort:
+      - property: file.backlinks
+        direction: ASC
+      - property: file.mtime
+        direction: DESC

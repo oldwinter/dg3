@@ -1,6 +1,6 @@
 filters:
   and:
-    - 分类.containsAny(link("AI产品 - fileclass"), link("AI产品-编程 - fileclass"), link("AI产品-视频生成 - fileclass"), link("AI产品-图片生成 - fileclass"), link("AI产品-Agent - fileclass"))
+    - topics.containsAny(link("AI产品 - fileclass"), link("AI产品-编程 - fileclass"), link("AI产品-视频生成 - fileclass"), link("AI产品-图片生成 - fileclass"), link("AI产品-Agent - fileclass"))
 properties:
   note.订阅费用（年）:
     displayName: 订阅费用（每年）
@@ -9,7 +9,7 @@ views:
     name: Table
     order:
       - file.name
-      - 分类
+      - topics
       - 订阅费用（年）
     sort:
       - property: 订阅费用（年）
@@ -17,7 +17,7 @@ views:
       - property: property.tags
         direction: ASC
     columnSize:
-      note.分类: 411
+      note.topics: 411
   - type: cards
     name: 画廊视图
     order:
@@ -38,11 +38,11 @@ views:
   - type: table
     name: Table 2
     groupBy:
-      property: 分类
+      property: topics
       direction: ASC
     order:
       - file.name
-      - 分类
+      - topics
       - 订阅费用（年）
     sort:
       - property: 订阅费用（年）
@@ -50,4 +50,4 @@ views:
       - property: property.tags
         direction: ASC
     columnSize:
-      note.分类: 411
+      note.topics: 411

@@ -4,7 +4,7 @@ permalink: /Cards/让Cursor将Cards中的笔记，针对某个主题进行有机
 title: 让Cursor将Cards中的笔记，针对某个主题进行有机串联，然后统一归入PARA
 created: 2025-07-09
 modified: 2025-07-09
-published: 2026-03-07T20:32:32.610+08:00
+published: 2026-05-16T01:30:26.933+08:00
 ---
 
 ## 第一步：让cursor针对cards目录搜索，并基于某个主题创作moc
@@ -27,7 +27,7 @@ published: 2026-03-07T20:32:32.610+08:00
 
 - [[∑ 本库 ACCESS 工作流汇总]]
 - [[这条笔记该去哪]]
-- [[Obsidian CLI 快速入门（AI 可读版）]]
+- Obsidian CLI 快速入门（AI 可读版）
 - [[手动双向链接]]
 
 up:: [[∑ 本库 ACCESS 工作流汇总]]

@@ -3,7 +3,7 @@ publish: true
 permalink: /Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/Deep Dive into LLMs like ChatGPT.md
 created: 2025-04-03
 modified: 2025-04-09
-published: 2025-08-26T13:48:02.629+08:00
+published: 2026-05-16T01:30:27.945+08:00
 ---
 
 [Deep Dive into LLMs like ChatGPT - YouTube](https://www.youtube.com/watch?v=7xTGNNLPyMI\&list=WL\&index=1\&t=276s)
@@ -42,7 +42,7 @@ RL 让模型自己不断迭代进化，从而超越人类。
 
 可以简单粗暴地理解，4o等模型，着重的就是SFT，虽然它也带做了一些RL
 
-[[SFT - Supervised Fine Tuning]]
+SFT - Supervised Fine Tuning
 
 ### RL
 

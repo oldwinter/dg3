@@ -1,14 +1,14 @@
 {
     "nodes": [
         {
-            "id": "88691a2485ea46f3",
-            "type": "file",
-            "x": -400,
-            "y": -400,
-            "width": 800,
-            "height": 533,
-            "file": "future_agi.png",
-            "color": "4"
+          "id": "88691a2485ea46f3",
+          "type": "link",
+          "x": -400,
+          "y": -400,
+          "width": 800,
+          "height": 533,
+          "color": "4",
+          "url": "https://pub-pic.oldwinter.top/2026/05/f4dc383186628087729d9b19fcad2ecb.png"
         },
         {
             "id": "37abef1d7db94b96",
@@ -31,14 +31,14 @@
             "label": "The Origins"
         },
         {
-            "id": "78a9d7b54bf942c9",
-            "type": "file",
-            "x": 1700,
-            "y": -300,
-            "width": 600,
-            "height": 400,
-            "file": "ai_origins.png",
-            "color": "1"
+          "id": "78a9d7b54bf942c9",
+          "type": "link",
+          "x": 1700,
+          "y": -300,
+          "width": 600,
+          "height": 400,
+          "color": "1",
+          "url": "https://pub-pic.oldwinter.top/2026/05/a968d615f2f3aae41ddb74d8083cfc61.png"
         },
         {
             "id": "4750b62cbd2d4f96",
@@ -221,14 +221,14 @@
             "label": "Neural Revolution"
         },
         {
-            "id": "5161dbf76f974821",
-            "type": "file",
-            "x": -1299,
-            "y": 1432,
-            "width": 600,
-            "height": 400,
-            "file": "neural_network.png",
-            "color": "5"
+          "id": "5161dbf76f974821",
+          "type": "link",
+          "x": -1299,
+          "y": 1432,
+          "width": 600,
+          "height": 400,
+          "color": "5",
+          "url": "https://pub-pic.oldwinter.top/2026/05/9927f5d003cf1abf459a4e9aba3cd041.png"
         },
         {
             "id": "2dad7ed9e9524aa7",
@@ -411,14 +411,14 @@
             "label": "Generative Era"
         },
         {
-            "id": "36a340c3096a4d4c",
-            "type": "file",
-            "x": -1300,
-            "y": -2032,
-            "width": 600,
-            "height": 400,
-            "file": "generative_ai.png",
-            "color": "6"
+          "id": "36a340c3096a4d4c",
+          "type": "link",
+          "x": -1300,
+          "y": -2032,
+          "width": 600,
+          "height": 400,
+          "color": "6",
+          "url": "https://pub-pic.oldwinter.top/2026/05/bb11decd02a54ce5267ff36815171fc3.png"
         },
         {
             "id": "cd0942548bbc4313",

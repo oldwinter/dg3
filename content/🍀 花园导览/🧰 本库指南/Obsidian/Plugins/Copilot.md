@@ -1,12 +1,11 @@
 ---
-date created: 2024-05-11
-date modified: 2025-07-10
-aliases:
-- Copilot 插件
-status: null
-rating: 4
 publish: true
-分类: "[[obsidian插件 - fileclass]]"
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Copilot.md
+aliases:
+  - Copilot 插件
+created: 2024-05-11
+modified: 2025-07-10
+published: 2026-05-16T01:30:28.729+08:00
 ---
 
 停用所有ai插件了，比如[[Text Generator|Text Generator]]等等

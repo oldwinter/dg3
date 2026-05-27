@@ -1,10 +1,15 @@
 ---
-date created: 2025-07-12
-date modified: 2025-07-12
-title: Obsidian 最优雅的多端同步插件LiveSync
 publish: true
-分类:
-- '[[文章-已完成 - fileclass]]'
+permalink: /Spaces/Published/已发布文章/Obsidian 最优雅的多端同步插件LiveSync.md
+aliases:
+  - LiveSync
+  - Obsidian LiveSync
+title: Obsidian 最优雅的多端同步插件LiveSync
+created: 2025-07-12
+modified: 2026-05-01
+published: 2026-05-16T01:30:27.734+08:00
+tags:
+  - published
 ---
 
 ## 目前各种同步方案的优缺点
@@ -50,10 +55,11 @@ publish: true
 - 运行livesync的server服务
   - 按照插件官方描述[obsidian-livesync/setup\_own\_server.md at main · vrtmrz/obsidian-livesync (github.com)](https://github.com/vrtmrz/obsidian-livesync/blob/main/docs/setup_own_server.md)，3步
     - 新建一个local.ini，原样复制过来即可
-    - 运行`docker run --rm -it -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -v .local.ini:/opt/couchdb/etc/local.ini -p 5984:5984 couchdb`
-      - 注意下这条命令需要将.local.ini改成你上一步新建的文件路径及名字，比如`/home/local.ini`
-      - 如果你当前权限不足，docker前面加sudo
-    - 运行`docker run -d --restart always -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -v .local.ini:/opt/couchdb/etc/local.ini -p 5984:5984 couchdb`
+      - 运行`docker run --rm -it -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<change-me-couchdb-credential> -v .local.ini:/opt/couchdb/etc/local.ini -p 5984:5984 couchdb`
+        - 注意下这条命令需要将.local.ini改成你上一步新建的文件路径及名字，比如`/home/local.ini`
+        - `<change-me-couchdb-credential>` 要换成你自己的强口令，不要直接使用示例值。
+        - 如果你当前权限不足，docker前面加sudo
+      - 运行`docker run -d --restart always -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=<change-me-couchdb-credential> -v .local.ini:/opt/couchdb/etc/local.ini -p 5984:5984 couchdb`
       - 注意事项同上一条，不赘述
   - 测试是否运行成功：`sudo docker ps |grep couchdb`
 
@@ -61,10 +67,10 @@ publish: true
 
 - 安装livesync插件，并打开配置项
 
-- 从上一步，找到自己申请的服务器的公网ip地址，比如121.111.173.186，按照如下填写，密码在上一步的命令行里面，默认是paasword。接着点击test，确认连通即可。\
+- 从上一步，找到自己申请的服务器公网地址，按照如下填写；口令以命令行实际输出为准，发布示例统一写成 `<change-me-couchdb-credential>` 这类非真实占位值。接着点击 test，确认连通即可。
   ![https://raw.githubusercontent.com/oldwinter/my-pics/master/202204041609451.png](https://img2.oldwinter.top/Obsidian%20最优雅的多端同步插件LiveSync_image_2.png)
 
-- 接着配置一下同步策略，我的策略如下。livesync对于未限制后台的手机端而言，可能还是有点耗电，酌情使用。\
+- 接着配置一下同步策略，我的策略如下。livesync对于未限制后台的手机端而言，可能还是有点耗电，酌情使用。
   ![https://raw.githubusercontent.com/oldwinter/my-pics/master/202204041613906.png](https://img2.oldwinter.top/Obsidian%20最优雅的多端同步插件LiveSync_image_3.png)
 
 ### 手机端新建空库安装client端，配置并连接至自己的server端，等待同步完成。 - 3到10分钟
@@ -75,7 +81,7 @@ publish: true
 
 ### 同步第三方插件及其配置 - 3到10分钟
 
-- 若要使用插件同步功能，则需要在电脑端按下图设置，将数据库加密存储\
+- 若要使用插件同步功能，则需要在电脑端按下图设置，将数据库加密存储
   ![https://raw.githubusercontent.com/oldwinter/my-pics/master/202204041616069.png](https://img2.oldwinter.top/Obsidian%20最优雅的多端同步插件LiveSync_image_4.png)
 
 - 接着打开同步插件的功能即可

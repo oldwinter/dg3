@@ -1,0 +1,776 @@
+{
+  "nodes": [
+    {
+      "id": "0000000000000001",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 工具链 阅读地图.md",
+      "x": 0,
+      "y": 0,
+      "width": 420,
+      "height": 520,
+      "color": "1"
+    },
+    {
+      "id": "0000000000000002",
+      "type": "text",
+      "text": "# 阅读这篇长文的方法\n\n这篇不是线性文章，而是一个主题导航：\n\n1. 先看中心论点：AI 工具链不以 MCP 为中心，而以真实工作面为中心。\n2. 再按问题选择入口，不必从头读到尾。\n3. 每条分支先读 synthesis / query，再按需回 source summary。\n4. 最后把自己关心的问题回收到“当前最值得继续压的问题”。",
+      "x": -520,
+      "y": -160,
+      "width": 420,
+      "height": 360,
+      "color": "4"
+    },
+    {
+      "id": "0000000000000003",
+      "type": "text",
+      "text": "# 核心分层\n\n- 工作面：CLI / Browser / IDE / 表格 / App-native surface\n- 能力层：skills / prompts / local env / automations\n- 接口层：MCP / browser bridge / data connector\n- 编排层：subagent / worktree / orchestrator\n\n阅读时持续问：这条材料是在讲入口、能力、接口，还是编排？",
+      "x": 500,
+      "y": -160,
+      "width": 420,
+      "height": 360,
+      "color": "2"
+    },
+    {
+      "id": "0000000000000004",
+      "type": "text",
+      "text": "# 路线 A：抓当前主流方向\n\n关键词：CLI、browser-native surface、agent-ready interface、工作面位置。\n\n适合回答：\n- 为什么 CLI / browser-native 工作流更高频\n- 为什么工作面位置比模型名字更重要\n- 哪些工具其实在争同一个入口",
+      "x": -1040,
+      "y": 420,
+      "width": 360,
+      "height": 280,
+      "color": "3"
+    },
+    {
+      "id": "0000000000000005",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 工具链的分层：从工作面到编排层.md",
+      "x": -1040,
+      "y": 760,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "0000000000000006",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Agent-ready interface：从 CLI 到 Browser.md",
+      "x": -1040,
+      "y": 920,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "0000000000000007",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/CLI is All Agents Need - 源摘要.md",
+      "x": -1040,
+      "y": 1080,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "0000000000000008",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/The State of the CLI 2023 Edition - 源摘要.md",
+      "x": -1040,
+      "y": 1240,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "0000000000000009",
+      "type": "text",
+      "text": "# 路线 B：理解工具链为什么不是“模型 + 输入框”\n\n关键词：skills、runtime、接口层、orchestrator、文件系统、local context。\n\n适合回答：\n- 为什么会调模型不等于会搭工作系统\n- 为什么工具链会自然长出 runtime / 接口 / 编排\n- 为什么文件系统也可能成为 meta tool",
+      "x": -520,
+      "y": 420,
+      "width": 360,
+      "height": 300,
+      "color": "4"
+    },
+    {
+      "id": "000000000000000a",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/∑ MCP与AI工具链 - 源摘要.md",
+      "x": -520,
+      "y": 780,
+      "width": 360,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "000000000000000b",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/为什么 MCP、prompt、RAG、agent 和 coding tools 经常会挤在同一张 AI 工具链图里.md",
+      "x": -520,
+      "y": 940,
+      "width": 360,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "000000000000000c",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Skills 从能力包到开放标准与治理.md",
+      "x": -520,
+      "y": 1100,
+      "width": 360,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "000000000000000d",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Agent Orchestration 阅读地图.md",
+      "x": -520,
+      "y": 1260,
+      "width": 360,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "000000000000000e",
+      "type": "text",
+      "text": "# 路线 C：看接口层，但不把主题做成 MCP 专题\n\n关键词：Human / Agent 双模式、browser bridge、agent-friendly docs、discoverability。\n\n适合回答：\n- 接口层到底解决什么\n- MCP 为什么只是连接层选项之一\n- 为什么 browser / CLI / docs / output 都要变成 agent-ready surface",
+      "x": 0,
+      "y": 640,
+      "width": 360,
+      "height": 320,
+      "color": "5"
+    },
+    {
+      "id": "000000000000000f",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Agent-ready interface：从 CLI 到 Browser.md",
+      "x": 0,
+      "y": 1020,
+      "width": 360,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "0000000000000010",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/Browser Agent Tools Architecture Comparison - 源摘要.md",
+      "x": 0,
+      "y": 1180,
+      "width": 360,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "0000000000000011",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/浏览器 agent 工具应该按命令层、策略层和 runtime 层怎样分工.md",
+      "x": 0,
+      "y": 1340,
+      "width": 360,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "0000000000000012",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Agent-ready surface 的新要求：docs、CLI output、llms.txt、discoverability 与 Software 3.0 如何接起来.md",
+      "x": 0,
+      "y": 1500,
+      "width": 360,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "0000000000000013",
+      "type": "text",
+      "text": "# 路线 D：理解 MCP 的位置\n\n关键词：协议层、Client / Server、SDK、Registry、Security、成本反思。\n\n适合回答：\n- MCP 和 Function Calling 为什么不是同一层\n- MCP 的价值在哪些层稳定\n- MCP 何时该退回协议层，何时需要进入接口治理",
+      "x": 520,
+      "y": 420,
+      "width": 360,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "0000000000000014",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/MCP 协议完全指南 - 源摘要.md",
+      "x": 520,
+      "y": 780,
+      "width": 360,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "0000000000000015",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/MCP 和 Function Calling 为什么不是同一层.md",
+      "x": 520,
+      "y": 940,
+      "width": 360,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "0000000000000016",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/MCP-Security-Checklist - 源摘要.md",
+      "x": 520,
+      "y": 1100,
+      "width": 360,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "0000000000000017",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/MCP 的四层图景：协议、客户端、市场、安全与成本反思如何接起来.md",
+      "x": 520,
+      "y": 1260,
+      "width": 360,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "0000000000000018",
+      "type": "text",
+      "text": "# 路线 E：接口治理、局部自治、平台试错\n\n关键词：组织默认、repo-local 覆盖、runner 抽取、旁路登记、晋升与回收。\n\n适合回答：\n- 什么值得平台化\n- 什么应该留在 repo-local\n- 什么只是局部试验\n- 如何避免平台层反客为主",
+      "x": 1040,
+      "y": 420,
+      "width": 360,
+      "height": 320,
+      "color": "1"
+    },
+    {
+      "id": "0000000000000019",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 工具链的接口治理：从命令行拼装到平台化边界.md",
+      "x": 1040,
+      "y": 800,
+      "width": 360,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "000000000000001a",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 工具链主分工：接口治理、局部自治与平台试错如何接力.md",
+      "x": 1040,
+      "y": 960,
+      "width": 360,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "000000000000001b",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 工具链的晋升与覆盖边界：局部能力、组织默认与 repo-local 覆盖如何接力.md",
+      "x": 1040,
+      "y": 1120,
+      "width": 360,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "000000000000001c",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 工具链的平台试错边界：统一治理、局部旁路与可见试验如何并存.md",
+      "x": 1040,
+      "y": 1280,
+      "width": 360,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "000000000000001d",
+      "type": "text",
+      "text": "# 路线 F：现在该学哪些工具\n\n关键词：AI coding、Codex、Claude Code、IDE / CLI / app-builder / agent platform。\n\n适合回答：\n- 什么时候该学某个具体工具\n- 什么时候该按工作面分层学\n- 旧工具榜单怎样保留截面价值而不过期误导",
+      "x": -1040,
+      "y": 1600,
+      "width": 360,
+      "height": 300,
+      "color": "3"
+    },
+    {
+      "id": "000000000000001e",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 编程工具生态 阅读地图.md",
+      "x": -1040,
+      "y": 1960,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "000000000000001f",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Codex 阅读地图.md",
+      "x": -1040,
+      "y": 2120,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "0000000000000020",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Claude Code 阅读地图.md",
+      "x": -1040,
+      "y": 2280,
+      "width": 360,
+      "height": 120,
+      "color": "3"
+    },
+    {
+      "id": "0000000000000021",
+      "type": "text",
+      "text": "# 路线 G：GUI 和 CLI 怎么分工\n\n关键词：GUI 起步、CLI 压实、repo-local 配置、SOP -> CLI / workflow -> skill。\n\n适合回答：\n- 哪些场景适合 GUI 起步\n- 哪些流程应压回脚本和配置\n- 为什么团队有效不等于组织默认",
+      "x": -520,
+      "y": 1600,
+      "width": 360,
+      "height": 300,
+      "color": "4"
+    },
+    {
+      "id": "0000000000000022",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/AI 工作流，选图形界面，还是命令行 - 源摘要.md",
+      "x": -520,
+      "y": 1960,
+      "width": 360,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "0000000000000023",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/为什么现在 CLI 比 MCP 更像 AI 工具链的主工作面.md",
+      "x": -520,
+      "y": 2120,
+      "width": 360,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "0000000000000024",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 工具链的局部自治层：工作面自由度、文本资产与 repo-local runner.md",
+      "x": -520,
+      "y": 2280,
+      "width": 360,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "0000000000000025",
+      "type": "text",
+      "text": "# 路线 H：产品 / 应用实验面\n\n关键词：API、数据层、任务链路、RAG、eval、serving、网关。\n\n适合回答：\n- 为什么产品落地要先拆模型 API、数据层和任务链路\n- 为什么 RAG demo 不能只验收能回答问题\n- 为什么模型服务还需要 runtime / gateway / observability",
+      "x": 520,
+      "y": 1600,
+      "width": 360,
+      "height": 320,
+      "color": "5"
+    },
+    {
+      "id": "0000000000000026",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/AI 产品落地为什么要先拆模型 API、数据层和任务链路，而不是直接套 agent 概念.md",
+      "x": 520,
+      "y": 1980,
+      "width": 360,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "0000000000000027",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/Emerging Architectures for LLM Applications - 源摘要.md",
+      "x": 520,
+      "y": 2140,
+      "width": 360,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "0000000000000028",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/为什么 RAG 应用 demo 不能只验收能回答问题.md",
+      "x": 520,
+      "y": 2300,
+      "width": 360,
+      "height": 120,
+      "color": "5"
+    },
+    {
+      "id": "0000000000000029",
+      "type": "text",
+      "text": "# 最后回到问题池\n\n读完任一路线后，从原文的“当前最值得继续压的问题”里挑一个问题写 Query。\n\n优先挑这几类：\n- 主工作面 vs connector / 配件\n- 哪些能力适合 repo-local\n- 接口层何时反客为主\n- 哪些接口能力值得单独治理\n- GUI / CLI / 平台差异哪些该长期保留",
+      "x": 1040,
+      "y": 1600,
+      "width": 360,
+      "height": 320,
+      "color": "2"
+    },
+    {
+      "id": "000000000000002a",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/AI 工具链里，哪些东西是主工作面，哪些只是连接器或配件.md",
+      "x": 1040,
+      "y": 1980,
+      "width": 360,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "000000000000002b",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/AI 工具链里，哪些层最值得沉淀成 repo-local 能力.md",
+      "x": 1040,
+      "y": 2140,
+      "width": 360,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "000000000000002c",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/AI 工具链里，接口层什么时候会反客为主.md",
+      "x": 1040,
+      "y": 2300,
+      "width": 360,
+      "height": 120,
+      "color": "2"
+    },
+    {
+      "id": "000000000000002d",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/AI 工具链里，哪些接口能力值得单独治理.md",
+      "x": 1040,
+      "y": 2460,
+      "width": 360,
+      "height": 120,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "000000000000002e",
+      "fromNode": "0000000000000002",
+      "fromSide": "right",
+      "toNode": "0000000000000001",
+      "toSide": "left"
+    },
+    {
+      "id": "000000000000002f",
+      "fromNode": "0000000000000001",
+      "fromSide": "right",
+      "toNode": "0000000000000003",
+      "toSide": "left"
+    },
+    {
+      "id": "0000000000000030",
+      "fromNode": "0000000000000001",
+      "fromSide": "bottom",
+      "toNode": "0000000000000004",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000031",
+      "fromNode": "0000000000000001",
+      "fromSide": "bottom",
+      "toNode": "0000000000000009",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000032",
+      "fromNode": "0000000000000001",
+      "fromSide": "bottom",
+      "toNode": "000000000000000e",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000033",
+      "fromNode": "0000000000000001",
+      "fromSide": "bottom",
+      "toNode": "0000000000000013",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000034",
+      "fromNode": "0000000000000001",
+      "fromSide": "bottom",
+      "toNode": "0000000000000018",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000035",
+      "fromNode": "0000000000000004",
+      "fromSide": "bottom",
+      "toNode": "0000000000000005",
+      "toSide": "top",
+      "label": "先读"
+    },
+    {
+      "id": "0000000000000036",
+      "fromNode": "0000000000000005",
+      "fromSide": "bottom",
+      "toNode": "0000000000000006",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000037",
+      "fromNode": "0000000000000006",
+      "fromSide": "bottom",
+      "toNode": "0000000000000007",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000038",
+      "fromNode": "0000000000000007",
+      "fromSide": "bottom",
+      "toNode": "0000000000000008",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000039",
+      "fromNode": "0000000000000009",
+      "fromSide": "bottom",
+      "toNode": "000000000000000a",
+      "toSide": "top",
+      "label": "先读"
+    },
+    {
+      "id": "000000000000003a",
+      "fromNode": "000000000000000a",
+      "fromSide": "bottom",
+      "toNode": "000000000000000b",
+      "toSide": "top"
+    },
+    {
+      "id": "000000000000003b",
+      "fromNode": "000000000000000b",
+      "fromSide": "bottom",
+      "toNode": "000000000000000c",
+      "toSide": "top"
+    },
+    {
+      "id": "000000000000003c",
+      "fromNode": "000000000000000c",
+      "fromSide": "bottom",
+      "toNode": "000000000000000d",
+      "toSide": "top"
+    },
+    {
+      "id": "000000000000003d",
+      "fromNode": "000000000000000e",
+      "fromSide": "bottom",
+      "toNode": "000000000000000f",
+      "toSide": "top",
+      "label": "先读"
+    },
+    {
+      "id": "000000000000003e",
+      "fromNode": "000000000000000f",
+      "fromSide": "bottom",
+      "toNode": "0000000000000010",
+      "toSide": "top"
+    },
+    {
+      "id": "000000000000003f",
+      "fromNode": "0000000000000010",
+      "fromSide": "bottom",
+      "toNode": "0000000000000011",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000040",
+      "fromNode": "0000000000000011",
+      "fromSide": "bottom",
+      "toNode": "0000000000000012",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000041",
+      "fromNode": "0000000000000013",
+      "fromSide": "bottom",
+      "toNode": "0000000000000014",
+      "toSide": "top",
+      "label": "先读"
+    },
+    {
+      "id": "0000000000000042",
+      "fromNode": "0000000000000014",
+      "fromSide": "bottom",
+      "toNode": "0000000000000015",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000043",
+      "fromNode": "0000000000000015",
+      "fromSide": "bottom",
+      "toNode": "0000000000000016",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000044",
+      "fromNode": "0000000000000016",
+      "fromSide": "bottom",
+      "toNode": "0000000000000017",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000045",
+      "fromNode": "0000000000000018",
+      "fromSide": "bottom",
+      "toNode": "0000000000000019",
+      "toSide": "top",
+      "label": "先读"
+    },
+    {
+      "id": "0000000000000046",
+      "fromNode": "0000000000000019",
+      "fromSide": "bottom",
+      "toNode": "000000000000001a",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000047",
+      "fromNode": "000000000000001a",
+      "fromSide": "bottom",
+      "toNode": "000000000000001b",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000048",
+      "fromNode": "000000000000001b",
+      "fromSide": "bottom",
+      "toNode": "000000000000001c",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000049",
+      "fromNode": "000000000000001d",
+      "fromSide": "bottom",
+      "toNode": "000000000000001e",
+      "toSide": "top",
+      "label": "先读"
+    },
+    {
+      "id": "000000000000004a",
+      "fromNode": "000000000000001e",
+      "fromSide": "bottom",
+      "toNode": "000000000000001f",
+      "toSide": "top"
+    },
+    {
+      "id": "000000000000004b",
+      "fromNode": "000000000000001f",
+      "fromSide": "bottom",
+      "toNode": "0000000000000020",
+      "toSide": "top"
+    },
+    {
+      "id": "000000000000004c",
+      "fromNode": "0000000000000021",
+      "fromSide": "bottom",
+      "toNode": "0000000000000022",
+      "toSide": "top",
+      "label": "先读"
+    },
+    {
+      "id": "000000000000004d",
+      "fromNode": "0000000000000022",
+      "fromSide": "bottom",
+      "toNode": "0000000000000023",
+      "toSide": "top"
+    },
+    {
+      "id": "000000000000004e",
+      "fromNode": "0000000000000023",
+      "fromSide": "bottom",
+      "toNode": "0000000000000024",
+      "toSide": "top"
+    },
+    {
+      "id": "000000000000004f",
+      "fromNode": "0000000000000025",
+      "fromSide": "bottom",
+      "toNode": "0000000000000026",
+      "toSide": "top",
+      "label": "先读"
+    },
+    {
+      "id": "0000000000000050",
+      "fromNode": "0000000000000026",
+      "fromSide": "bottom",
+      "toNode": "0000000000000027",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000051",
+      "fromNode": "0000000000000027",
+      "fromSide": "bottom",
+      "toNode": "0000000000000028",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000052",
+      "fromNode": "0000000000000029",
+      "fromSide": "bottom",
+      "toNode": "000000000000002a",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000053",
+      "fromNode": "000000000000002a",
+      "fromSide": "bottom",
+      "toNode": "000000000000002b",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000054",
+      "fromNode": "000000000000002b",
+      "fromSide": "bottom",
+      "toNode": "000000000000002c",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000055",
+      "fromNode": "000000000000002c",
+      "fromSide": "bottom",
+      "toNode": "000000000000002d",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000056",
+      "fromNode": "0000000000000001",
+      "fromSide": "bottom",
+      "toNode": "000000000000001d",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000057",
+      "fromNode": "0000000000000001",
+      "fromSide": "bottom",
+      "toNode": "0000000000000021",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000058",
+      "fromNode": "0000000000000001",
+      "fromSide": "bottom",
+      "toNode": "0000000000000025",
+      "toSide": "top"
+    },
+    {
+      "id": "0000000000000059",
+      "fromNode": "0000000000000001",
+      "fromSide": "bottom",
+      "toNode": "0000000000000029",
+      "toSide": "top"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

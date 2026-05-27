@@ -1,0 +1,303 @@
+{
+  "nodes": [
+    {
+      "id": "0a1b2c3d4e5f6789",
+      "type": "group",
+      "x": -760,
+      "y": -520,
+      "width": 1580,
+      "height": 1040,
+      "label": "Kubernetes 网络全景：从身份、入口、策略到排障",
+      "color": "5"
+    },
+    {
+      "id": "1a2b3c4d5e6f7081",
+      "type": "file",
+      "x": -160,
+      "y": -470,
+      "width": 430,
+      "height": 240,
+      "file": "Spaces/2-Area/云服务和部署/Kubernetes 网络全景 - 从 Pod 到 Service、Ingress、Gateway 与 NetworkPolicy.md"
+    },
+    {
+      "id": "2a3b4c5d6e7f8091",
+      "type": "text",
+      "x": -700,
+      "y": -440,
+      "width": 390,
+      "height": 200,
+      "color": "4",
+      "text": "## 1. Pod 网络模型\n\n- 最小网络单元是 Pod\n- 同 Pod 容器共享 IP、端口空间、localhost\n- 每个 Pod 拿到集群内唯一 IP\n- 普通应用不应该依赖 Pod IP 的长期稳定性"
+    },
+    {
+      "id": "3a4b5c6d7e8f9012",
+      "type": "text",
+      "x": -700,
+      "y": -170,
+      "width": 390,
+      "height": 250,
+      "color": "3",
+      "text": "## 2. Pod 级端口\n\n`containerPort`：声明容器端口，不是防火墙。\n\n`hostPort`：把容器端口绑定到所在节点端口，适合 DaemonSet / node agent。\n\n`hostNetwork`：Pod 直接使用宿主网络，隔离最弱。"
+    },
+    {
+      "id": "4a5b6c7d8e9f0123",
+      "type": "text",
+      "x": -700,
+      "y": 170,
+      "width": 390,
+      "height": 230,
+      "color": "6",
+      "text": "## 3. CNI 数据面\n\nCNI 负责 IPAM、veth/路由/Overlay/ENI/eBPF、NetworkPolicy 执行。\n\n先确认：Pod CIDR、Service CIDR、MTU、是否支持策略、是否替代 kube-proxy。"
+    },
+    {
+      "id": "5a6b7c8d9e0f1234",
+      "type": "text",
+      "x": -170,
+      "y": -150,
+      "width": 430,
+      "height": 240,
+      "color": "5",
+      "text": "## 4. Service 抽象\n\nService = 稳定入口 + 动态后端。\n\n核心链路：\n\nDNS -> ClusterIP / Service VIP -> kube-proxy 或 eBPF -> EndpointSlice -> PodIP:targetPort"
+    },
+    {
+      "id": "6a7b8c9d0e1f2345",
+      "type": "text",
+      "x": 360,
+      "y": -440,
+      "width": 400,
+      "height": 250,
+      "color": "2",
+      "text": "## 5. 入口类型\n\n- ClusterIP：集群内部\n- NodePort：每节点固定端口\n- LoadBalancer：云 / 裸金属 LB\n- Ingress：HTTP/HTTPS host/path\n- Gateway API：新一代多协议路由"
+    },
+    {
+      "id": "7a8b9c0d1e2f3456",
+      "type": "text",
+      "x": 360,
+      "y": -110,
+      "width": 400,
+      "height": 230,
+      "color": "1",
+      "text": "## 6. 策略与安全\n\nNetworkPolicy 是 allow-list API。\n\n默认通常全通；Pod 被策略选中后，对应方向进入隔离。\n\n是否生效取决于 CNI。"
+    },
+    {
+      "id": "8a9b0c1d2e3f4567",
+      "type": "text",
+      "x": 360,
+      "y": 200,
+      "width": 400,
+      "height": 230,
+      "color": "4",
+      "text": "## 7. 排障入口\n\n按层定位：\n\nPod -> CNI -> DNS -> Service / EndpointSlice -> kube-proxy/eBPF -> LB / Ingress / Gateway -> NetworkPolicy / Mesh"
+    },
+    {
+      "id": "9a0b1c2d3e4f5678",
+      "type": "file",
+      "x": -160,
+      "y": 170,
+      "width": 430,
+      "height": 220,
+      "file": "Atlas/MOCs/∑ Kubernetes & K8s.md"
+    },
+    {
+      "id": "0b1c2d3e4f5a6789",
+      "type": "file",
+      "x": -160,
+      "y": 440,
+      "width": 430,
+      "height": 220,
+      "file": "Spaces/2-Area/云服务和部署/∑ 云计算与云原生.md"
+    },
+    {
+      "id": "1b2c3d4e5f6a7890",
+      "type": "file",
+      "x": -700,
+      "y": 470,
+      "width": 390,
+      "height": 200,
+      "file": "Spaces/1-Project/2025年ack和k8s学习回顾/kubernetes复习计划/CNI 基础与常见实现.md"
+    },
+    {
+      "id": "2b3c4d5e6f7a8901",
+      "type": "file",
+      "x": 360,
+      "y": 470,
+      "width": 400,
+      "height": 200,
+      "file": "Spaces/1-Project/2025年ack和k8s学习回顾/kubernetes复习计划/Service与网络基础（ClusterIP-NodePort-LoadBalancer）.md"
+    },
+    {
+      "id": "3b4c5d6e7f8a9012",
+      "type": "file",
+      "x": 820,
+      "y": -430,
+      "width": 380,
+      "height": 190,
+      "file": "Spaces/1-Project/2025年ack和k8s学习回顾/kubernetes复习计划/Ingress与网关.md"
+    },
+    {
+      "id": "4b5c6d7e8f9a0123",
+      "type": "file",
+      "x": 820,
+      "y": -170,
+      "width": 380,
+      "height": 190,
+      "file": "Spaces/1-Project/2025年ack和k8s学习回顾/kubernetes复习计划/网络策略与零信任.md"
+    },
+    {
+      "id": "5b6c7d8e9f0a1234",
+      "type": "file",
+      "x": 820,
+      "y": 90,
+      "width": 380,
+      "height": 190,
+      "file": "Spaces/1-Project/2025年ack和k8s学习回顾/kubernetes复习计划/DNS 与服务发现.md"
+    },
+    {
+      "id": "6b7c8d9e0f1a2345",
+      "type": "text",
+      "x": 820,
+      "y": 350,
+      "width": 380,
+      "height": 210,
+      "color": "3",
+      "text": "## hostPort 记忆钩子\n\nhostPort 是“这个节点上这个端口”的语义。\n\nService 是“这组 Pod 作为一个服务”的语义。\n\n业务入口默认先考虑 Service / Ingress / Gateway。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a0b1c2d3e4f56789",
+      "fromNode": "2a3b4c5d6e7f8091",
+      "fromSide": "right",
+      "toNode": "3a4b5c6d7e8f9012",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "Pod 内部到节点端口"
+    },
+    {
+      "id": "b0c1d2e3f4a56789",
+      "fromNode": "3a4b5c6d7e8f9012",
+      "fromSide": "bottom",
+      "toNode": "4a5b6c7d8e9f0123",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "真正接入网络"
+    },
+    {
+      "id": "c0d1e2f3a4b56789",
+      "fromNode": "4a5b6c7d8e9f0123",
+      "fromSide": "right",
+      "toNode": "5a6b7c8d9e0f1234",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "Pod 后端被抽象成 Service"
+    },
+    {
+      "id": "d0e1f2a3b4c56789",
+      "fromNode": "5a6b7c8d9e0f1234",
+      "fromSide": "right",
+      "toNode": "6a7b8c9d0e1f2345",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "暴露给集群内外"
+    },
+    {
+      "id": "e0f1a2b3c4d56789",
+      "fromNode": "6a7b8c9d0e1f2345",
+      "fromSide": "bottom",
+      "toNode": "7a8b9c0d1e2f3456",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "再加访问控制"
+    },
+    {
+      "id": "f0a1b2c3d4e56789",
+      "fromNode": "7a8b9c0d1e2f3456",
+      "fromSide": "bottom",
+      "toNode": "8a9b0c1d2e3f4567",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "出问题按层排"
+    },
+    {
+      "id": "0c1d2e3f4a5b6789",
+      "fromNode": "1a2b3c4d5e6f7081",
+      "fromSide": "left",
+      "toNode": "5a6b7c8d9e0f1234",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "主解释"
+    },
+    {
+      "id": "1c2d3e4f5a6b7890",
+      "fromNode": "1a2b3c4d5e6f7081",
+      "fromSide": "bottom",
+      "toNode": "9a0b1c2d3e4f5678",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "挂回 MOC"
+    },
+    {
+      "id": "2c3d4e5f6a7b8901",
+      "fromNode": "4a5b6c7d8e9f0123",
+      "fromSide": "bottom",
+      "toNode": "1b2c3d4e5f6a7890",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "CNI 专项"
+    },
+    {
+      "id": "3c4d5e6f7a8b9012",
+      "fromNode": "5a6b7c8d9e0f1234",
+      "fromSide": "bottom",
+      "toNode": "2b3c4d5e6f7a8901",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "Service 专项"
+    },
+    {
+      "id": "4c5d6e7f8a9b0123",
+      "fromNode": "6a7b8c9d0e1f2345",
+      "fromSide": "right",
+      "toNode": "3b4c5d6e7f8a9012",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "L7 入口"
+    },
+    {
+      "id": "5c6d7e8f9a0b1234",
+      "fromNode": "7a8b9c0d1e2f3456",
+      "fromSide": "right",
+      "toNode": "4b5c6d7e8f9a0123",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "策略专项"
+    },
+    {
+      "id": "6c7d8e9f0a1b2345",
+      "fromNode": "8a9b0c1d2e3f4567",
+      "fromSide": "right",
+      "toNode": "5b6c7d8e9f0a1234",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "DNS 专项"
+    },
+    {
+      "id": "7c8d9e0f1a2b3456",
+      "fromNode": "3a4b5c6d7e8f9012",
+      "fromSide": "right",
+      "toNode": "6b7c8d9e0f1a2345",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "避免混淆"
+    },
+    {
+      "id": "8c9d0e1f2a3b4567",
+      "fromNode": "9a0b1c2d3e4f5678",
+      "fromSide": "bottom",
+      "toNode": "0b1c2d3e4f5a6789",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "云原生总图"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ publish: true
 permalink: /Cards/Claude Code.md
 created: 2025-04-17
 modified: 2025-11-13
-published: 2026-02-08T13:48:34.002+08:00
+published: 2026-05-16T01:30:26.931+08:00
 ---
 
 up:: [[AI Code 编程 - moc]]
@@ -103,7 +103,7 @@ control + r展开被收缩的文本，以查看详情。
 
 ## 常用命令
 
-> 如果命令不适应，使用开源的可视化界面也不错[[Claudia]]
+> 如果命令不适应，使用开源的可视化界面也不错Claudia
 
 ###
 

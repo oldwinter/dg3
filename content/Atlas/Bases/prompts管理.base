@@ -1,6 +1,6 @@
 filters:
   and:
-    - 分类.containsAny(link("提示词prompts - fileclass"))
+    - topics.containsAny(link("提示词prompts - fileclass"))
 formulas:
   Untitled: file.file
 views:

@@ -1,10 +1,10 @@
 ---
-date created: 2022-06-22
-date modified: 2023-03-14
-title: 🧑Nick Milo
 publish: true
-分类:
-- '[[person人 - fileclass]]'
+permalink: /Spaces/3-Resource/人/Nick Milo.md
+title: 🧑Nick Milo
+created: 2022-06-22
+modified: 2023-03-14
+published: 2026-05-16T01:30:27.875+08:00
 ---
 
 LYT, linking your thinking 网站的创始人。[[∑ MOCs]] 的发明人。

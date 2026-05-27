@@ -1,7 +1,7 @@
 filters:
   or:
     - file.folder == "🍀 花园导览/🧰 本库指南/Obsidian/Plugins"
-    - 分类.containsAny(link("obsidian插件 - fileclass"))
+    - topics.containsAny(link("obsidian插件 - fileclass"))
 views:
   - type: table
     name: Table

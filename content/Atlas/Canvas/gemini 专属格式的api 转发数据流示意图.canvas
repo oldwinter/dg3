@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"564bde1230f7a98e","type":"file","file":"Cards/gemini balance 配合cloudflare worker，解决可能的断流问题.md","x":-180,"y":420,"width":423,"height":558},
-		{"id":"4ad1d0d62c795bb9","type":"file","file":"Cards/Google AI Studio.md","x":900,"y":-120,"width":400,"height":400},
+		{"id":"4ad1d0d62c795bb9","type":"text","text":"Google AI Studio","x":900,"y":-120,"width":400,"height":400},
 		{"id":"c52bc16d6740f624","type":"file","file":"Spaces/2-Area/云服务和部署/Cloudflare Worker.md","x":119,"y":-120,"width":400,"height":400},
 		{
 			"id":"4bf793a90b21d8ee",
@@ -13,7 +13,7 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"622d6dc7c1a46d64","type":"file","file":"Cards/gemini pool.md","x":-757,"y":-120,"width":400,"height":379},
+		{"id":"622d6dc7c1a46d64","type":"text","text":"gemini pool","x":-757,"y":-120,"width":400,"height":379},
 		{
 			"id":"73fef5b099d50207",
 			"type":"text",

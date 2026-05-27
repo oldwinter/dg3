@@ -1,6 +1,6 @@
 filters:
   and:
-    - 分类.containsAny(link("好用网站 - fileclass"))
+    - topics.containsAny(link("好用网站 - fileclass"))
 formulas:
   data: note["date created"]
   Untitled: note["date created"]
@@ -12,6 +12,7 @@ views:
       - 评价
       - url
       - formula.data
+      - 一句话评价
     sort:
       - property: 评价
         direction: DESC

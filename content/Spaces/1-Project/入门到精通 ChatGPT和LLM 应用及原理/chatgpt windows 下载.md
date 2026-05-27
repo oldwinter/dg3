@@ -1,7 +1,9 @@
 ---
-date created: 2024-11-15
-date modified: 2025-07-08
 publish: true
+permalink: /Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/chatgpt windows 下载.md
+created: 2024-11-15
+modified: 2025-07-08
+published: 2026-05-16T01:30:27.953+08:00
 ---
 
 ![](https://pub-pic.oldwinter.top/2024/11/aa5af18ceffdc0f715daa2fda3548cb2.png)

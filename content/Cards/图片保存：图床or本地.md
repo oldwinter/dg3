@@ -1,8 +1,10 @@
 ---
-date created: 2022-07-27
-date modified: 2023-03-14
-title: 图片保存：图床or本地
 publish: true
+permalink: /Cards/图片保存：图床or本地.md
+title: 图片保存：图床or本地
+created: 2022-07-27
+modified: 2023-03-14
+published: 2026-05-16T01:30:27.081+08:00
 ---
 
 x:: [[图床方案的选择]], [[图床和本地图片互相转换]]
@@ -12,4 +14,4 @@ x:: [[图床方案的选择]], [[图床和本地图片互相转换]]
 - 本地的图片，可以借助[[billfish]]等软件统一管理。
 - base64格式的图片会污染markdown，非常不利于编辑，只符合纯阅读而不是做笔记的场景，不采用。
 
-[[2022-08-09]]更新使用策略：统一使用本地，使用一段时间后，看是否能发掘出本地图片的反向链接的用处，需要配合[[clear unused images]]、[[Local images]]、[[attachment name formatting]]插件使用。要发别的平台的文章，还是使用继续图床。
+[[2022-08-09]]更新使用策略：统一使用本地，使用一段时间后，看是否能发掘出本地图片的反向链接的用处，需要配合clear unused images、[[Local images]]、[[attachment name formatting]]插件使用。要发别的平台的文章，还是使用继续图床。

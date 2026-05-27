@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"mmain","type":"group","x":-80,"y":0,"width":3540,"height":850},
+		{"id":"maux","type":"group","x":-80,"y":980,"width":3540,"height":610},
+		{"id":"title","type":"text","x":520,"y":-610,"width":1180,"height":150,"text":"# Matt Pocock Skills 工作流全景图\n小而可组合的工程技能 · 共享语言 · 垂直切片 · 保留人的控制权"},
+		{"id":"model","type":"text","x":-40,"y":-410,"width":420,"height":250,"text":"## 核心心智模型\n\n这是一个面向真实工程的 **skill library**，不是端到端软件工厂。\n\n它的态度：\n- 小技能\n- 可组合\n- 易改造\n- 不接管整个过程\n- 用工程基本功修正 agent 失败模式\n\n反面对象：过度流程化、让用户失去控制。"},
+		{"id":"failures","type":"text","x":440,"y":-410,"width":420,"height":250,"text":"## 它在修哪些失败模式\n\nREADME 明确列出四类：\n1. Agent 没理解用户要什么\n2. Agent 太啰嗦，缺少领域语言\n3. 代码没有真实反馈回路\n4. AI 加速制造大泥球\n\n对应解法：grilling、CONTEXT.md、TDD / diagnose、deep modules。"},
+		{"id":"substrate","type":"text","x":920,"y":-410,"width":420,"height":250,"text":"## 共享上下文基建\n\n`/setup-matt-pocock-skills` 只做一次 repo setup：\n- 选择 issue tracker\n- 映射 triage labels\n- 确认 domain docs 布局\n- 写 `docs/agents/*.md`\n- 在 `AGENTS.md` 或 `CLAUDE.md` 加 `## Agent skills`\n\n轻量、透明、可手改。"},
+		{"id":"sources","type":"text","x":1400,"y":-410,"width":840,"height":250,"text":"## 拆解依据\n\n来源仓库：[mattpocock/skills](https://github.com/mattpocock/skills)\n\n重点读取：\n- `README.md`：设计动机与技能目录\n- `CONTEXT.md`：该 repo 自己的领域语言示例\n- `.claude-plugin/plugin.json`：正式发布技能清单\n- `docs/adr/0001...`：hard / soft dependency 拆分\n- `skills/engineering/*/SKILL.md` 与 `skills/productivity/*/SKILL.md`"},
+		{"id":"install","type":"text","x":-40,"y":70,"width":310,"height":310,"text":"## 0. 安装\n\n`npx skills@latest add mattpocock/skills`\n\n用户选择要安装的 skills 和 coding agents。\n\n必须选择 `/setup-matt-pocock-skills`，因为工程技能需要知道 repo 的 issue tracker、labels 和 domain docs。"},
+		{"id":"setup","type":"text","x":330,"y":70,"width":310,"height":310,"text":"## 1. Repo Setup\n### `/setup-matt-pocock-skills`\n\n流程：\n1. 探测 remote、AGENTS/CLAUDE、CONTEXT、ADR、docs/agents\n2. 逐项询问 issue tracker、triage labels、domain docs\n3. 预览变更\n4. 写 `## Agent skills` 和三个 docs\n\n这是后续技能的契约层。"},
+		{"id":"grill","type":"text","x":700,"y":70,"width":310,"height":310,"text":"## 2. 对齐需求\n\n两张牌：\n- `/grill-me`：纯对话 grilling\n- `/grill-with-docs`：结合代码、`CONTEXT.md`、ADR\n\n规则：一次问一个问题；能从代码回答就查代码；边讨论边更新领域词汇，必要时补 ADR。"},
+		{"id":"prd","type":"text","x":1070,"y":70,"width":310,"height":310,"text":"## 3. 形成 PRD\n### `/to-prd`\n\n不再采访用户，而是综合当前上下文和代码理解。\n\n产物：\n- Problem statement\n- Solution\n- 大量 user stories\n- Implementation decisions\n- Testing decisions\n- Out of scope\n\n发布到 issue tracker，并打 `ready-for-agent`。"},
+		{"id":"issues","type":"text","x":1440,"y":70,"width":310,"height":310,"text":"## 4. 拆成 Issues\n### `/to-issues`\n\n把 plan / PRD 拆成 tracer bullet 垂直切片。\n\n每个 issue 要：\n- 端到端可验证\n- 不是水平层切分\n- 标明 HITL / AFK\n- 标明依赖关系\n\n用户批准粒度后再发布。"},
+		{"id":"triage","type":"text","x":1810,"y":70,"width":310,"height":310,"text":"## 5. Issue State Machine\n### `/triage`\n\n两个 category：bug / enhancement。\n\n五个 state：\n- needs-triage\n- needs-info\n- ready-for-agent\n- ready-for-human\n- wontfix\n\n对 bug 先尝试复现；ready-for-agent 需要 agent brief。"},
+		{"id":"tdd","type":"text","x":2180,"y":70,"width":310,"height":310,"text":"## 6. Build\n### `/tdd`\n\n核心：行为测试通过 public interface，不测实现细节。\n\n反模式：先写所有测试，再写所有代码。\n\n正确方式：\nRED -> GREEN 一条 vertical slice，再进入下一条。\n\nTracer bullet 先证明端到端路径。"},
+		{"id":"diagnose","type":"text","x":2550,"y":70,"width":310,"height":310,"text":"## 7. Debug\n### `/diagnose`\n\n顺序：\n1. Build feedback loop\n2. Reproduce\n3. 生成 3-5 个 ranked hypotheses\n4. Instrument\n5. Fix + regression test\n6. Cleanup + post-mortem\n\n没有 deterministic pass/fail signal，就明确停下要证据。"},
+		{"id":"handoff","type":"text","x":2920,"y":70,"width":310,"height":310,"text":"## 8. 交接与沉淀\n\n生产力技能：\n- `/handoff`：压缩当前会话，给下个 agent 接手\n- `/write-a-skill`：把可复用套路做成 skill\n- `/caveman`：极简沟通模式\n\n沉淀方式偏文档和 issue，而不是运行时记忆系统。"},
+		{"id":"context","type":"text","x":-40,"y":1060,"width":420,"height":400,"text":"## 横切机制 A：领域语言\n\n`CONTEXT.md` 不是 spec，不放实现细节，只放 glossary。\n\n用途：\n- 减少 agent 啰嗦\n- 统一变量、函数、文件命名\n- 让测试、issue、PRD 使用同一套业务词\n- 让 agent 少花 token 解释项目术语\n\n这是一种 DDD 风格的 agent compression layer。"},
+		{"id":"adr","type":"text","x":440,"y":1060,"width":420,"height":400,"text":"## 横切机制 B：ADR discipline\n\n只有同时满足三点才写 ADR：\n- 难以反悔\n- 没上下文会让未来读者困惑\n- 确实有 trade-off\n\n拒绝某个架构建议时，如果理由对未来有负载，也可以记录 ADR，避免以后反复建议同一件事。"},
+		{"id":"architecture","type":"text","x":920,"y":1060,"width":420,"height":400,"text":"## 横切机制 C：Architecture Deepening\n\n`/improve-codebase-architecture` 的目标不是泛泛重构，而是找 deepening opportunities。\n\n核心词：\n- Module\n- Interface\n- Implementation\n- Depth\n- Seam\n- Adapter\n- Leverage\n- Locality\n\n用 deletion test 判断模块是否只是 pass-through。"},
+		{"id":"zoom","type":"text","x":1400,"y":1060,"width":420,"height":400,"text":"## 横切机制 D：理解与原型\n\n`/zoom-out`：不懂某块代码时，让 agent 上升一层，画相关模块和 callers 的地图。\n\n`/prototype`：用 throwaway code 回答一个问题：\n- logic / state model -> 终端小程序\n- UI direction -> 多个可切换 UI variant\n\n原型回答完问题就删除或吸收到正式代码。"},
+		{"id":"dependency","type":"text","x":1880,"y":1060,"width":420,"height":400,"text":"## 横切机制 E：Hard vs Soft Dependency\n\nADR 0001 把技能依赖分成两类：\n\nHard dependency：\n- `/to-issues`\n- `/to-prd`\n- `/triage`\n\n缺 issue tracker / labels 会直接做错。\n\nSoft dependency：\n- `/diagnose`\n- `/tdd`\n- `/improve-codebase-architecture`\n- `/zoom-out`\n\n没有 domain docs 也能跑，只是不够锐利。"},
+		{"id":"buckets","type":"text","x":2360,"y":1060,"width":420,"height":400,"text":"## 技能分桶\n\n正式发布技能在 `.claude-plugin/plugin.json`：\n\nEngineering：setup、grill-with-docs、to-prd、to-issues、triage、tdd、diagnose、architecture、zoom-out、prototype。\n\nProductivity：grill-me、handoff、caveman、write-a-skill。\n\nMisc：git guardrails、pre-commit、exercise、shoehorn migration。"},
+		{"id":"risk","type":"text","x":2840,"y":1060,"width":420,"height":400,"text":"## 代价与风险\n\n优势：轻、透明、工程味很浓，可按需组合。\n\n代价：\n- 不提供完整端到端发布链路\n- 依赖用户主动选技能\n- 运行时反馈能力少，浏览器/部署/监控不是核心\n- 如果团队没有维护 CONTEXT/ADR/issue discipline，效果会变钝\n\n它更像工程肌肉训练卡组。"}
+	],
+	"edges":[
+		{"id":"e01","fromNode":"install","fromSide":"right","toNode":"setup","toSide":"left"},
+		{"id":"e02","fromNode":"setup","fromSide":"right","toNode":"grill","toSide":"left","label":"shared context ready"},
+		{"id":"e03","fromNode":"grill","fromSide":"right","toNode":"prd","toSide":"left","label":"understanding"},
+		{"id":"e04","fromNode":"prd","fromSide":"right","toNode":"issues","toSide":"left","label":"plan"},
+		{"id":"e05","fromNode":"issues","fromSide":"right","toNode":"triage","toSide":"left","label":"published slices"},
+		{"id":"e06","fromNode":"triage","fromSide":"right","toNode":"tdd","toSide":"left","label":"ready-for-agent"},
+		{"id":"e07","fromNode":"tdd","fromSide":"right","toNode":"diagnose","toSide":"left","color":"1","label":"bug / regression"},
+		{"id":"e08","fromNode":"diagnose","fromSide":"right","toNode":"handoff","toSide":"left","label":"post-mortem"},
+		{"id":"e09","fromNode":"context","fromSide":"top","toNode":"grill","toSide":"bottom","color":"3","label":"glossary"},
+		{"id":"e10","fromNode":"adr","fromSide":"top","toNode":"grill","toSide":"bottom","color":"3","label":"decisions"},
+		{"id":"e11","fromNode":"architecture","fromSide":"top","toNode":"tdd","toSide":"bottom","color":"2","label":"deep modules"},
+		{"id":"e12","fromNode":"zoom","fromSide":"top","toNode":"grill","toSide":"bottom","color":"2","label":"map before decision"},
+		{"id":"e13","fromNode":"dependency","fromSide":"top","toNode":"setup","toSide":"bottom","color":"2","label":"contract"},
+		{"id":"e14","fromNode":"issues","fromSide":"bottom","toNode":"architecture","toSide":"top","color":"3","label":"slice boundaries"}
+	]
+}

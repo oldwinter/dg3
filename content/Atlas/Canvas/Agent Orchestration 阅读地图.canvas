@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "8f7e6d5c4b3a2910",
+      "type": "group",
+      "x": -120,
+      "y": -120,
+      "width": 2180,
+      "height": 1060,
+      "label": "Agent Orchestration"
+    },
+    {
+      "id": "7e6d5c4b3a291018",
+      "type": "text",
+      "x": 40,
+      "y": -40,
+      "width": 600,
+      "height": 160,
+      "text": "# Agent Orchestration 阅读地图\n\n这条线讨论的是：什么时候单个 coding agent 不够了，为什么会长出 orchestrator。"
+    },
+    {
+      "id": "6d5c4b3a29101817",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Agent Orchestration 阅读地图.md",
+      "label": "总阅读地图",
+      "x": 60,
+      "y": 220,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "5c4b3a2910181716",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/为什么有些人会在 Claude Code 和 Codex 之上再加一层 orchestration.md",
+      "label": "为什么加一层",
+      "x": 440,
+      "y": 220,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "4b3a291018171615",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/OpenClaw 编排 Claude Code 与 Codex - 源摘要.md",
+      "label": "OpenClaw 编排",
+      "x": 860,
+      "y": 220,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "3a29101817161514",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/Parallel by Default Building with the Codex App - 源摘要.md",
+      "label": "并行工作面",
+      "x": 1280,
+      "y": 220,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "2910181716151413",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/Stripe Minions 企业级 coding agents - 源摘要.md",
+      "label": "企业骨架",
+      "x": 1680,
+      "y": 220,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "1817161514131211",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/大型项目 AI 编程分工秘籍 - 源摘要.md",
+      "label": "角色分工",
+      "x": 860,
+      "y": 560,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "1716151413121110",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/OpenClaw 高吞吐提交闭环 - 源摘要.md",
+      "label": "高吞吐闭环",
+      "x": 1280,
+      "y": 560,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "161514131211100f",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Claude Code 阅读地图.md",
+      "label": "Claude Code",
+      "x": 420,
+      "y": 560,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "1514131211100f0e",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Codex 阅读地图.md",
+      "label": "Codex",
+      "x": 420,
+      "y": 820,
+      "width": 300,
+      "height": 180
+    }
+  ],
+  "edges": [
+    {
+      "id": "0f1e2d3c4b5a6978",
+      "fromNode": "6d5c4b3a29101817",
+      "fromSide": "right",
+      "toNode": "5c4b3a2910181716",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "先理解为什么加一层"
+    },
+    {
+      "id": "1e2d3c4b5a697887",
+      "fromNode": "5c4b3a2910181716",
+      "fromSide": "right",
+      "toNode": "4b3a291018171615",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "典型 orchestrator"
+    },
+    {
+      "id": "2d3c4b5a69788796",
+      "fromNode": "4b3a291018171615",
+      "fromSide": "right",
+      "toNode": "3a29101817161514",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "并行工作面"
+    },
+    {
+      "id": "3c4b5a69788796a5",
+      "fromNode": "3a29101817161514",
+      "fromSide": "right",
+      "toNode": "2910181716151413",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "企业骨架"
+    },
+    {
+      "id": "4b5a69788796a5b4",
+      "fromNode": "4b3a291018171615",
+      "fromSide": "bottom",
+      "toNode": "1817161514131211",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "角色分工"
+    },
+    {
+      "id": "5a69788796a5b4c3",
+      "fromNode": "3a29101817161514",
+      "fromSide": "bottom",
+      "toNode": "1716151413121110",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "闭环执行"
+    },
+    {
+      "id": "6a798897a6b5c4d3",
+      "fromNode": "161514131211100f",
+      "fromSide": "right",
+      "toNode": "5c4b3a2910181716",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "从 Claude Code 继续往上"
+    },
+    {
+      "id": "7a8998a7b6c5d4e3",
+      "fromNode": "1514131211100f0e",
+      "fromSide": "right",
+      "toNode": "5c4b3a2910181716",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "从 Codex 继续往上"
+    }
+  ]
+}

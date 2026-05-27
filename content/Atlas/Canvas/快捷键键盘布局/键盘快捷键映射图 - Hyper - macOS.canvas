@@ -298,7 +298,15 @@
 			"width":162,
 			"height":160
 		},
-		{"id":"a5cd0d3f0a420ee4","type":"file","file":"Extras/Attachments/Images/Icons/obsidian-light-cc-image.svg","x":1140,"y":-116,"width":60,"height":60},
+		{
+		  "id": "a5cd0d3f0a420ee4",
+		  "type": "link",
+		  "x": 1140,
+		  "y": -116,
+		  "width": 60,
+		  "height": 60,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/3ef2cec9b242bb8281034eb398f70306.png"
+		},
 		{
 			"id":"cce083a24e3ae0dc",
 			"styleAttributes":{},
@@ -310,7 +318,15 @@
 			"height":160,
 			"color":"1"
 		},
-		{"id":"0e8bc08cbf38402b","type":"file","file":"Extras/Attachments/Images/Icons/icon-cc-image-folo icon-cc-image.png","x":932,"y":-116,"width":62,"height":62},
+		{
+		  "id": "0e8bc08cbf38402b",
+		  "type": "link",
+		  "x": 932,
+		  "y": -116,
+		  "width": 62,
+		  "height": 62,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/4bad4a3f8465088efe43f3fca9111d5d.png"
+		},
 		{
 			"id":"926d78e8f4ccd7ac",
 			"styleAttributes":{},
@@ -321,7 +337,15 @@
 			"width":162,
 			"height":160
 		},
-		{"id":"5a597e9ebf242a45","type":"file","file":"Extras/Attachments/Images/Icons/icon-cc-image-ChatGPT桌面端.png","x":381,"y":77,"width":72,"height":72},
+		{
+		  "id": "5a597e9ebf242a45",
+		  "type": "link",
+		  "x": 381,
+		  "y": 77,
+		  "width": 72,
+		  "height": 72,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/4175886e36f72d6dfccdee4b27d7382f.png"
+		},
 		{
 			"id":"309ec24c135c6046",
 			"styleAttributes":{},
@@ -353,7 +377,15 @@
 			"height":160,
 			"color":"1"
 		},
-		{"id":"71e81a6f127f4aa4","type":"file","file":"Extras/Attachments/Images/Icons/icon-cc-image-Raycast.png","x":291,"y":509,"width":112,"height":112},
+		{
+		  "id": "71e81a6f127f4aa4",
+		  "type": "link",
+		  "x": 291,
+		  "y": 509,
+		  "width": 112,
+		  "height": 112,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/33348c0941e82cc14b3a7b0ae4359807.png"
+		},
 		{
 			"id":"f9ab6d62e000b1e5",
 			"styleAttributes":{},
@@ -385,7 +417,15 @@
 			"height":160,
 			"color":"1"
 		},
-		{"id":"84ed84550fbac0d9","type":"file","file":"Extras/Attachments/Images/Icons/icon-cc-image-滴答清单.png","x":-20,"y":87,"width":61,"height":61},
+		{
+		  "id": "84ed84550fbac0d9",
+		  "type": "link",
+		  "x": -20,
+		  "y": 87,
+		  "width": 61,
+		  "height": 61,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/a4164ca8c8939b99afeaff65be614695.png"
+		},
 		{
 			"id":"fc462965062e745a",
 			"styleAttributes":{},
@@ -418,7 +458,15 @@
 			"height":160,
 			"color":"1"
 		},
-		{"id":"010dd824fafc660f","type":"file","file":"Extras/Attachments/Images/Icons/icon-cc-image-Arc浏览器.png","x":-437,"y":85,"width":77,"height":64},
+		{
+		  "id": "010dd824fafc660f",
+		  "type": "link",
+		  "x": -437,
+		  "y": 85,
+		  "width": 77,
+		  "height": 64,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/a536cd7a9ba2ecea841e8912d38ed5b4.png"
+		},
 		{
 			"id":"32d002efadc2d4f6",
 			"styleAttributes":{},
@@ -441,7 +489,16 @@
 			"height":160,
 			"color":"1"
 		},
-		{"id":"dbaeb2b9ed6a74fa","type":"file","file":"Extras/Attachments/Images/Icons/cursor-icon-cc-image.jpg","zIndex":146,"x":86,"y":299,"width":60,"height":60},
+		{
+		  "id": "dbaeb2b9ed6a74fa",
+		  "type": "link",
+		  "zIndex": 146,
+		  "x": 86,
+		  "y": 299,
+		  "width": 60,
+		  "height": 60,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/679c57e135df2b700c190e31559bf54b.png"
+		},
 		{
 			"id":"270bb2072bb208fb",
 			"styleAttributes":{},
@@ -482,7 +539,15 @@
 			"width":162,
 			"height":160
 		},
-		{"id":"63a523a14e686961","type":"file","file":"Extras/Attachments/Images/Icons/icon-cc-image-Warp.png","x":-286,"y":-126,"width":71,"height":71},
+		{
+		  "id": "63a523a14e686961",
+		  "type": "link",
+		  "x": -286,
+		  "y": -126,
+		  "width": 71,
+		  "height": 71,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/7837378655added0cb3068cecd39b9e0.png"
+		},
 		{
 			"id":"74b4f7e4e7636fd3",
 			"styleAttributes":{},
@@ -494,10 +559,10 @@
 			"height":140
 		},
 		{
-			"file":"Cards/F.md",
+			"text":"F",
 			"id":"55aa59025a7edacd",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":87,
 			"y":82,
 			"width":162,
@@ -536,7 +601,15 @@
 			"width":162,
 			"height":160
 		},
-		{"id":"942979894ee8a6f1","type":"file","file":"Extras/Attachments/Images/Icons/notion-icon-cc-image.png","x":689,"y":295,"width":60,"height":60},
+		{
+		  "id": "942979894ee8a6f1",
+		  "type": "link",
+		  "x": 689,
+		  "y": 295,
+		  "width": 60,
+		  "height": 60,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/1fdc44d561024e3cf9390e744d3764cc.png"
+		},
 		{
 			"id":"9f00e5e9465406b9",
 			"styleAttributes":{},
@@ -548,10 +621,10 @@
 			"height":160
 		},
 		{
-			"file":"Cards/J.md",
+			"text":"J",
 			"id":"ab7aa01ebdeb9564",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":697,
 			"y":82,
 			"width":162,
@@ -568,7 +641,15 @@
 			"height":160,
 			"color":"1"
 		},
-		{"id":"e9e35c8e02d9400c","type":"file","file":"Extras/Attachments/Images/Icons/icon-cc-image-ChatGPT桌面端.png","x":393,"y":82,"width":60,"height":60},
+		{
+		  "id": "e9e35c8e02d9400c",
+		  "type": "link",
+		  "x": 393,
+		  "y": 82,
+		  "width": 60,
+		  "height": 60,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/4175886e36f72d6dfccdee4b27d7382f.png"
+		},
 		{
 			"id":"e7ba5dbffe5a8acf",
 			"styleAttributes":{},
@@ -590,7 +671,15 @@
 			"height":160,
 			"color":"1"
 		},
-		{"id":"aecc58a0f6a9e43f","type":"file","file":"Extras/Attachments/Images/Icons/Gemini-icon-cc-image.png","x":461,"y":273,"width":113,"height":113},
+		{
+		  "id": "aecc58a0f6a9e43f",
+		  "type": "link",
+		  "x": 461,
+		  "y": 273,
+		  "width": 113,
+		  "height": 113,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/688a83f0cf58f6230b6e14c48294378a.png"
+		},
 		{
 			"id":"55a61843390a32b0",
 			"styleAttributes":{},
@@ -601,7 +690,15 @@
 			"width":162,
 			"height":160
 		},
-		{"id":"dc3ef46d236a033e","type":"file","file":"Extras/Attachments/Images/Icons/spotify-icon-cc-image.png","x":897,"y":300,"width":60,"height":60},
+		{
+		  "id": "dc3ef46d236a033e",
+		  "type": "link",
+		  "x": 897,
+		  "y": 300,
+		  "width": 60,
+		  "height": 60,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/c85484dd807e8edbfce2d5d08092b2e7.png"
+		},
 		{
 			"id":"91c7840577002a87",
 			"styleAttributes":{},
@@ -613,7 +710,15 @@
 			"height":160,
 			"color":"1"
 		},
-		{"id":"a6d23f0b85891322","type":"file","file":"Extras/Attachments/Images/Icons/icon-cc-image-Telegram.png","x":324,"y":-121,"width":65,"height":65},
+		{
+		  "id": "a6d23f0b85891322",
+		  "type": "link",
+		  "x": 324,
+		  "y": -121,
+		  "width": 65,
+		  "height": 65,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/5ed4c47fcd1a79e57f9cb386ac8de670.png"
+		},
 		{
 			"id":"cd9209bb22c47fc7",
 			"styleAttributes":{"border":"dashed"},
@@ -624,7 +729,15 @@
 			"width":162,
 			"height":160
 		},
-		{"id":"e4d273ec090c8a80","type":"file","file":"Extras/Attachments/Images/Icons/obsidian-dark icon-cc-image.svg","x":1139,"y":-117,"width":60,"height":60},
+		{
+		  "id": "e4d273ec090c8a80",
+		  "type": "link",
+		  "x": 1139,
+		  "y": -117,
+		  "width": 60,
+		  "height": 60,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/384d88083f9a4657cc8b1f7b912d27d4.png"
+		},
 		{
 			"id":"2e83f408e90d4762",
 			"styleAttributes":{"border":"dashed"},
@@ -646,8 +759,24 @@
 			"height":160,
 			"color":"1"
 		},
-		{"id":"8509f45d14a75f6a","type":"file","file":"Extras/Attachments/Images/Icons/cherry studio icon-cc-image.png","x":125,"y":-121,"width":62,"height":62},
-		{"id":"489b76cfbff03ff4","type":"file","file":"Extras/Attachments/Images/Icons/icon-cc-image-Warp.png","x":-284,"y":-127,"width":70,"height":70},
+		{
+		  "id": "8509f45d14a75f6a",
+		  "type": "link",
+		  "x": 125,
+		  "y": -121,
+		  "width": 62,
+		  "height": 62,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/bf3ccfd32a12e1fb00c5e6f7995221b9.png"
+		},
+		{
+		  "id": "489b76cfbff03ff4",
+		  "type": "link",
+		  "x": -284,
+		  "y": -127,
+		  "width": 70,
+		  "height": 70,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/7837378655added0cb3068cecd39b9e0.png"
+		},
 		{
 			"id":"ef4873622e1f2143",
 			"styleAttributes":{"border":"dashed"},
@@ -678,7 +807,15 @@
 			"width":162,
 			"height":160
 		},
-		{"id":"4d5bd43294d2fb5a","type":"file","file":"Extras/Attachments/Images/Icons/什么值得买-icon-cc-image.png","x":-163,"y":-351,"width":60,"height":60},
+		{
+		  "id": "4d5bd43294d2fb5a",
+		  "type": "link",
+		  "x": -163,
+		  "y": -351,
+		  "width": 60,
+		  "height": 60,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/ddf30b0f2d51ad64c53d990d14725032.png"
+		},
 		{
 			"id":"e646969d80b71b84",
 			"styleAttributes":{"border":"dashed"},

@@ -3,19 +3,15 @@ publish: true
 permalink: /Atlas/_ Atlas Readme.md
 title: About Atlas
 created: 2022-06-23
-modified: 2023-10-09
-published: 2026-03-14T17:06:51.925+08:00
-cssclasses:
-  - dashboard
+modified: 2026-05-04
+published: 2026-05-16T01:30:28.730+08:00
 ---
 
 # 🗺️ 知识图谱 (Atlas) 说明
 
-这里是我的核心知识库，我的“第二大脑”的核心区域。
+这里是本库的知识图谱、导航和工作台层，不再承担普通内容笔记的归档职责。
 
-存放的是经过思考和提炼的具有图、表等特殊格式的**永久笔记 (Evergreen Notes)**、**概念卡片 (Concept Notes)**、**文献笔记 (Literature Notes)** 等。
-
-由于这些图、表的生产成本较高，一年也创建不出多少，所以暂时先放这里同一管理。
+经过思考和提炼后的主题内容通常进入 `Cards/` 或 `Spaces/`；Atlas 负责把这些内容组织成 MOC、Base、Canvas、LLM Wiki 编译层和可巡检的控制台。
 
 **目标：**
 
@@ -25,14 +21,16 @@ cssclasses:
 
 **主要子文件夹说明：**
 
-- `Bases/`: 存放基础概念和核心知识框架，包含各种基础概念定义和知识结构
+- `Bases/`: 存放 Obsidian Bases 视图和工作台；任务系统视图已收拢到 `Bases/TaskNotes/`
 - `Canvas/`: 存放 Obsidian Canvas 画板文件，用于可视化思考和知识结构梳理
 - `Categories/`: 存放各种分类体系和标准，帮助组织和归类知识
-- `Components/`: 存放可复用的知识组件和模块
-- `Dataviews/`: 存放 Dataview 查询脚本，用于动态聚合和展示笔记数据
-- `Draws/`: 存放 Excalidraw 绘图文件和其他图形化资料
-- `Lineages/`: 存放知识谱系和演进脉络，追踪概念的发展历程
+- `Draws/`: 存放绘图源文件、导出图和其他图形化资料；子层分为 `Canvas/`、`Excalidraw/`、`Exports/`、`Cropped/` 和 `Notes/`
+- `LLM Wiki/`: 存放 source summary、concept、query、synthesis 等编译层产物
 - `MOCs/`: 存放内容地图 (Maps of Content)，作为知识导航的枢纽
+
+Skill 管理卡片现在放在 `Sources/Skills/`；对应管理视图仍在 `Atlas/Bases/skills管理.base`。
+
+原 `Atlas/Collections/` 已退役。web-to-base 这类系统集合样板移动到 `_system/docs/collections/`；临时属性化卡片本体回到 `Cards/`，说明保留在 `_system/docs/structure/card-property-staging`。
 
 **核心方法论：**
 
@@ -55,6 +53,6 @@ An Atlas is a "map of maps".
 
 The Atlas folder contains your Maps of Content (MOCs).
 
-You'll usually navigate to them using your [[Home]] note, but keeping them in a folder away from your ever-growing note collection allows you to maintain them more easily as well as quickly navigate between them using the sidebar.
+You'll usually navigate to them using your Home note, but keeping them in a folder away from your ever-growing note collection allows you to maintain them more easily as well as quickly navigate between them using the sidebar.
 
 These notes are so important, they truly deserve their own folder.

@@ -6,7 +6,7 @@ aliases:
   - lineage
 created: 2025-04-28
 modified: 2025-07-09
-published: 2025-08-26T18:25:02.759+08:00
+published: 2026-05-16T01:35:26.703+08:00
 ---
 
 相比使用[[gingko]]的优势：

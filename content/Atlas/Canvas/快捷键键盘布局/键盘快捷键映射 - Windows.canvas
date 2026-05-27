@@ -390,11 +390,11 @@
 			"y":-46
 		},
 		{
-			"file":"Cards/F.md",
+			"text":"F",
 			"height":160,
 			"id":"e699b8a923d2a9e3",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"width":162,
 			"x":-103,
 			"y":-259
@@ -557,11 +557,11 @@
 			"y":-46
 		},
 		{
-			"file":"Cards/J.md",
+			"text":"J",
 			"height":160,
 			"id":"7a591b98e4803b86",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"width":162,
 			"x":507,
 			"y":-259

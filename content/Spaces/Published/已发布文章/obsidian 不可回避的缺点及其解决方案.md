@@ -1,10 +1,10 @@
 ---
-date created: 2022-08-01 00:00:00+00:00
-date modified: 2023-03-14 00:00:00+00:00
-title: obsidian 不可回避的缺点及其解决方案
 publish: true
-分类:
-- '[[文章-已完成 - fileclass]]'
+permalink: /Spaces/Published/已发布文章/obsidian 不可回避的缺点及其解决方案.md
+title: obsidian 不可回避的缺点及其解决方案
+created: 2022-08-01 00:00:00+00:00
+modified: 2023-03-14 00:00:00+00:00
+published: 2026-05-16T01:30:27.733+08:00
 ---
 
 > 可以访问此文的双链版本，获得完整阅读体验：[Obsidian 不可回避的缺点及其解决方案 — 🌱 oldwinterの数字花园](https://notes.oldwinter.top/obsidian-%E4%B8%8D%E5%8F%AF%E5%9B%9E%E9%81%BF%E7%9A%84%E7%BC%BA%E7%82%B9%E5%8F%8A%E5%85%B6%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
@@ -38,7 +38,7 @@ publish: true
     - ，[[Bulk Rename]]插件能更完美地实现批量重命名，无需使用vscode了。
   - [[File Cooker]]插件解决文件按需批量移动和删除。
   - [[Note Refactor]]插件解决文件重组和拆分等场景。
-  - [[longform]]插件，解决文件合并与编排问题。
+  - longform插件，解决文件合并与编排问题。
   - [[DB Folder]]插件，解决[[frontmatter|frontdata]]批量处理问题。
     - 2025-07-10：[[File Cooker]]批量处理[[frontmatter]]。
 

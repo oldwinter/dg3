@@ -1,8 +1,10 @@
 ---
-date created: 2022-08-24
-date modified: 2023-03-14
-title: 本库obsidian如何批量重命名文件
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/本库obsidian如何批量重命名文件.md
+title: 本库obsidian如何批量重命名文件
+created: 2022-08-24
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.706+08:00
 ---
 
 以将`+ MOC`等格式的文件批量重命名成`∑ MOC`为例。分2步：

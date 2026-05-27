@@ -4,7 +4,7 @@ permalink: /Spaces/3-Resource/软件梳理/macos软件/BetterTouchTool.md
 title: BetterTouchTool
 created: 2022-06-09
 modified: 2025-06-18
-published: 2025-12-28T13:26:43.608+08:00
+published: 2026-05-24T14:30:49.915+08:00
 ---
 
 2025-07-29 目前在macOS 26 beta上面还有bug，设置hyper键，会让屏幕突然失效，无法点击，或者左键变成了右键的效果。
@@ -21,9 +21,9 @@ published: 2025-12-28T13:26:43.608+08:00
 
 相似的国产竞品：[[BetterAndBetter]]
 
-相似的其他竞品：[[multitouch]]
+相似的其他竞品：multitouch
 
-老牌的手势工具，死灰复燃，尤其是其画手势能力：[[jitouch]]
+老牌的手势工具，死灰复燃，尤其是其画手势能力：jitouch
 
 ## 激活码
 

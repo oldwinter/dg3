@@ -1,11 +1,12 @@
 ---
 publish: true
 permalink: /Spaces/2-Area/∑ 2-Area.md
+aliases:
+  - Area MOC
+title: ∑ 2-Area
 created: 2025-04-04
-modified: 2025-06-27
-published: 2025-09-04T16:01:21.792+08:00
-tags:
-  - categories
+modified: 2026-05-02
+published: 2026-05-16T01:30:27.143+08:00
 ---
 
 ![A.Obsidian-ABCDE预制仓库模版 7.3(阿泽小朋友更新).zip](https://drive.google.com/open?id=1YqJsJCppdPu_6SwIraiRz0fpddZQrxS0)
@@ -30,5 +31,5 @@ tags:
 
 - [[AIGC]]
 - [[∑ PKM]]
-- [[效率工具与服务专题]]
+- [[∑ 效率工具生态]]
 - [[∑ 运动健康]]

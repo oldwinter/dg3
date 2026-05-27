@@ -1,12 +1,16 @@
 filters:
   and:
-    - file.inFolder("Atlas/Skills")
+    - file.inFolder("Sources/Skills")
     - "!skill_name.isEmpty()"
+properties:
+  来源合集:
+    displayName: 来源合集
 views:
   - type: table
     name: 技能总览
     order:
       - file.name
+      - 来源合集
       - 个人评分
       - 个人状态
       - 精选
@@ -29,6 +33,7 @@ views:
         - 个人状态 == "待评估"
     order:
       - file.name
+      - 来源合集
       - 个人状态
       - 仓库分类
       - 仓库子分类
@@ -46,6 +51,7 @@ views:
         - 个人评分 >= 4
     order:
       - file.name
+      - 来源合集
       - 个人评分
       - 个人状态
       - 精选
@@ -65,6 +71,7 @@ views:
         - 精选 == true
     order:
       - file.name
+      - 来源合集
       - 个人评分
       - 个人状态
       - 精选

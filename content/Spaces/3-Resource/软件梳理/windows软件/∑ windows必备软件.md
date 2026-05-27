@@ -6,7 +6,7 @@ aliases:
 title: ∑ windows必备软件
 created: 2022-06-09
 modified: 2025-06-27
-published: 2025-08-15T22:00:04.223+08:00
+published: 2026-05-16T01:30:27.842+08:00
 ---
 
 > [[2025年我的Windows软件天梯榜.canvas|2025年我的Windows软件天梯榜]]
@@ -15,7 +15,7 @@ published: 2025-08-15T22:00:04.223+08:00
 ## 常用
 
 - [[Everything]]
-- [[ImageGlass]]
+- ImageGlass
 - [[AutoHotkey]]
 - [[MyKeyMap]]
 - [[Quicker]]
@@ -45,7 +45,7 @@ published: 2025-08-15T22:00:04.223+08:00
 - [[Fluent Reader]]
 - [[Fluent Search]]
 - [[OpenAI Translater]]
-- [[铁锅炖启动器]]
+- 铁锅炖启动器
 - [[水豚鼠标助手]]
 - [[recut]]
 - [[potplayer]]
@@ -65,7 +65,7 @@ published: 2025-08-15T22:00:04.223+08:00
   - [[MyKeyMap]]
   - [[IObit Uninstaller]]
   - [[HEU_KMS_Activator]]
-  - [[OFGB]]
+  - OFGB
   - [[StartAllBack]]
   - [[鲁大师精简版无广告]]
 
@@ -82,7 +82,7 @@ published: 2025-08-15T22:00:04.223+08:00
 [[UniGetUI]]
 
 2025-4-8备份：\
-![[软件捆绑包.ubundle]]
+软件捆绑包.ubundle
 
 ## 精简 系统优化
 
@@ -92,4 +92,4 @@ published: 2025-08-15T22:00:04.223+08:00
 [[RytuneX - windows 优化精简]]\
 [[Optimizer]]
 
-[[OFGB]]
+OFGB

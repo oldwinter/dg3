@@ -4,7 +4,7 @@ permalink: /Spaces/3-Resource/软件梳理/安卓软件/ChatGPT.md
 title: chatGPT
 created: 2023-02-15
 modified: 2024-11-15
-published: 2025-08-27T12:20:23.084+08:00
+published: 2026-05-24T14:06:37.679+08:00
 ---
 
 [[chatgpt windows 下载]]
@@ -15,7 +15,7 @@ published: 2025-08-27T12:20:23.084+08:00
 
 ## 参考文献
 
-[[ChatGPT高质量prompt技巧分享.pdf]]
+ChatGPT高质量prompt技巧分享.pdf
 
 [【极客时间】李佳芮：ChatGPT 从0到1.pdf](https://pub-pic.oldwinter.top/2025/02/53fee29a5d4b9756d477d2e413d3c349.pdf)
 

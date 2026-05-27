@@ -1,8 +1,10 @@
 ---
-date created: 2022-08-08
-date modified: 2023-03-14
-title: obsidian 搜索技巧
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian 搜索技巧.md
+title: obsidian 搜索技巧
+created: 2022-08-08
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.708+08:00
 ---
 
 [搜索 - Obsidian 中文帮助 - Obsidian Publish](https://publish.obsidian.md/help-zh/%E6%8F%92%E4%BB%B6/%E6%90%9C%E7%B4%A2)

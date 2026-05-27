@@ -4,13 +4,13 @@ permalink: /Spaces/2-Area/云服务和部署/CloudFlare.md
 title: CloudFlare
 created: 2022-07-01
 modified: 2023-03-14
-published: 2026-03-20T18:56:21.591+08:00
+published: 2026-05-16T01:30:27.222+08:00
 ---
 
 日常使用考虑配合ai生成命令行，用[[wrangler]]进行操作
 
 另外2个赛博菩萨：
-[[supabase]]和[[neon]]，都基于[[PostgreSQL]]提供开箱即用的[[无服务器计算服务|serverless]]
+[[supabase]]和neon，都基于[[PostgreSQL]]提供开箱即用的[[无服务器计算服务|serverless]]
 
 [[cloudflare资源汇聚]]
 

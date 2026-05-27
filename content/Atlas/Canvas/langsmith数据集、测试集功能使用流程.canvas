@@ -199,7 +199,7 @@
       "y": 460
     },
     {
-      "file": "Atlas/Spaces/ingtube/Inbox/映兔aigc - AI编辑器.md",
+      "file": "Spaces/4-Archive/ingtube/交接/Inbox/映兔aigc - AI编辑器.md",
       "height": 100,
       "id": "92039f6e173a1778",
       "styleAttributes": {},
@@ -209,11 +209,11 @@
       "y": 645
     },
     {
-      "file": "Cards/单次提问-无上下文.md",
+      "text": "单次提问-无上下文",
       "height": 80,
       "id": "a67a9a8e7add45ff",
       "styleAttributes": {},
-      "type": "file",
+      "type": "text",
       "width": 400,
       "x": -860,
       "y": 825

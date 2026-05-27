@@ -2,7 +2,15 @@
 	"nodes":[
 		{"id":"6f69724304620180","type":"group","x":444,"y":120,"width":986,"height":871,"label":"通过raycast的arc插件搜索跨Space的tab标签，并一键直达"},
 		{"id":"e56b71e54b75ab05","type":"group","x":-240,"y":120,"width":580,"height":871,"label":"每个space都是独立的账号系统"},
-		{"id":"53e0df30cbd6dd94","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/arc-第一个空间.png","x":-202,"y":161,"width":246,"height":793},
+		{
+		  "id": "53e0df30cbd6dd94",
+		  "type": "link",
+		  "x": -202,
+		  "y": 161,
+		  "width": 246,
+		  "height": 793,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/47a892fcffe5d6240eec351439cfa9a3.png"
+		},
 		{
 			"id":"ad573996397440d3",
 			"type":"text",
@@ -26,7 +34,15 @@
 		},
 		{"id":"0b52e67b18e816ee","type":"file","file":"Atlas/Bases/App应用软件管理.base","x":-240,"y":-320,"width":1670,"height":335},
 		{"id":"5109799db91beab6","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/raycast-search arc命令.png","x":487,"y":171,"width":400,"height":252},
-		{"id":"62aa3c0a798dec37","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/arc-第二个空间.png","x":86,"y":161,"width":214,"height":369},
+		{
+		  "id": "62aa3c0a798dec37",
+		  "type": "link",
+		  "x": 86,
+		  "y": 161,
+		  "width": 214,
+		  "height": 369,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/d69abffd0afd16aa2b61500bc3f44702.png"
+		},
 		{"id":"9f8235fee9fbab78","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/arc search-示例-gmail.png","x":977,"y":171,"width":400,"height":252},
 		{
 			"id":"9ea62922873a3ef4",
@@ -38,8 +54,24 @@
 			"width":274,
 			"height":145
 		},
-		{"id":"fc98e4bbcd89a448","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/search arc-示例-小红书.png","x":487,"y":646,"width":400,"height":250},
-		{"id":"00f5de0fb7fc36fc","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/arc-第三个空间.png","x":88,"y":585,"width":212,"height":369}
+		{
+		  "id": "fc98e4bbcd89a448",
+		  "type": "link",
+		  "x": 487,
+		  "y": 646,
+		  "width": 400,
+		  "height": 250,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/f2f958c4ef2fdb6027cd53187e678c87.png"
+		},
+		{
+		  "id": "00f5de0fb7fc36fc",
+		  "type": "link",
+		  "x": 88,
+		  "y": 585,
+		  "width": 212,
+		  "height": 369,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/734b951f8372f60406619af96e58145f.png"
+		}
 	],
 	"edges":[
 		{

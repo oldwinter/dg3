@@ -1,0 +1,794 @@
+{
+  "nodes": [
+    {
+      "id": "g001",
+      "type": "group",
+      "x": -40,
+      "y": -150,
+      "width": 920,
+      "height": 710,
+      "color": "3",
+      "label": "1. 核心纠偏"
+    },
+    {
+      "id": "g002",
+      "type": "group",
+      "x": 920,
+      "y": -150,
+      "width": 960,
+      "height": 710,
+      "color": "1",
+      "label": "2. 为什么旧流程会卡死"
+    },
+    {
+      "id": "g003",
+      "type": "group",
+      "x": 1920,
+      "y": -150,
+      "width": 1100,
+      "height": 710,
+      "color": "5",
+      "label": "3. 先做系统重构"
+    },
+    {
+      "id": "g004",
+      "type": "group",
+      "x": -40,
+      "y": 620,
+      "width": 3060,
+      "height": 760,
+      "color": "4",
+      "label": "4. 新功能到生产的主流水线"
+    },
+    {
+      "id": "g005",
+      "type": "group",
+      "x": -40,
+      "y": 1460,
+      "width": 2060,
+      "height": 760,
+      "color": "2",
+      "label": "5. 自愈式故障闭环"
+    },
+    {
+      "id": "g006",
+      "type": "group",
+      "x": 2060,
+      "y": 1460,
+      "width": 960,
+      "height": 760,
+      "color": "6",
+      "label": "6. 工具分层与接口分工"
+    },
+    {
+      "id": "g007",
+      "type": "group",
+      "x": -40,
+      "y": 2300,
+      "width": 2060,
+      "height": 980,
+      "color": "3",
+      "label": "7. 组织重构、结果与代价"
+    },
+    {
+      "id": "g008",
+      "type": "group",
+      "x": 2060,
+      "y": 2300,
+      "width": 960,
+      "height": 980,
+      "color": "5",
+      "label": "8. 关联材料"
+    },
+    {
+      "id": "n001",
+      "type": "text",
+      "x": 0,
+      "y": -420,
+      "width": 3380,
+      "height": 180,
+      "text": "# Why Your “AI-First” Strategy Is Probably Wrong\n\n**这篇文章的真正主张**：值得学的不是“99% 代码由 AI 编写”这句口号，而是它背后的系统重构：把 **可见性、验证、回滚、分诊、自愈** 做成 agent 能稳定运转的交付基础设施。"
+    },
+    {
+      "id": "n002",
+      "type": "text",
+      "x": 0,
+      "y": -80,
+      "width": 280,
+      "height": 220,
+      "text": "## 一句话纠偏\nAI-first 不是给旧流程加 Copilot。\n\n它是把 **流程、架构、组织** 都改写成：AI 是 primary builder，人负责方向、判断和风险。"
+    },
+    {
+      "id": "n003",
+      "type": "text",
+      "x": 300,
+      "y": -80,
+      "width": 260,
+      "height": 220,
+      "text": "## AI-assisted\n- 原有 sprint / Jira / QA / standup 不变\n- AI 只在局部提效\n- 效率提升通常停在 10% 到 20%"
+    },
+    {
+      "id": "n004",
+      "type": "text",
+      "x": 580,
+      "y": -80,
+      "width": 260,
+      "height": 220,
+      "text": "## 作者真正批评的对象\n- vibe coding 到能跑就 commit\n- 旧 loop 不变，只把 AI 塞进去\n- 提速的是写代码，不是交付系统"
+    },
+    {
+      "id": "n005",
+      "type": "text",
+      "x": 140,
+      "y": 180,
+      "width": 620,
+      "height": 260,
+      "text": "## Harness engineering 视角\n主任务不再是亲手写代码，而是让 agent 能稳定做有用工作。\n\n出问题时别说“再 prompt 一次”，而要追问：\n- 缺了什么能力\n- 缺了什么约束\n- 缺了什么验证 / 反馈"
+    },
+    {
+      "id": "n006",
+      "type": "text",
+      "x": 960,
+      "y": -80,
+      "width": 260,
+      "height": 240,
+      "text": "## PM 瓶颈\n构思和评审还要几周，但 agent 两小时就能做出一版。\n\n当 build time 从月级掉到小时级，长 planning cycle 就变成新的约束。"
+    },
+    {
+      "id": "n007",
+      "type": "text",
+      "x": 1240,
+      "y": -80,
+      "width": 260,
+      "height": 240,
+      "text": "## QA 瓶颈\nagent 两小时写完，人工 QA 却要三天补 corner cases。\n\n如果验证速度跟不上实现速度，只是把瓶颈往下游平移。"
+    },
+    {
+      "id": "n008",
+      "type": "text",
+      "x": 1520,
+      "y": -80,
+      "width": 260,
+      "height": 240,
+      "text": "## Headcount 瓶颈\n25 人团队不可能靠加人追上 100 倍规模的对手。\n\n作者的结论不是扩编，而是重写系统。"
+    },
+    {
+      "id": "n009",
+      "type": "text",
+      "x": 1110,
+      "y": 220,
+      "width": 560,
+      "height": 220,
+      "color": "3",
+      "text": "## 约束公式\n设计、实现、测试三段里，只要有任意一段仍是人工长周期，整条 pipeline 就会被它锁死。"
+    },
+    {
+      "id": "n010",
+      "type": "text",
+      "x": 1960,
+      "y": -80,
+      "width": 300,
+      "height": 220,
+      "text": "## Monorepo\n把分散在多仓、多服务里的上下文拉回一个 agent 看得见的整体。\n\n目标不是人更方便，而是 AI 能看全局、改全局、测全局。"
+    },
+    {
+      "id": "n011",
+      "type": "text",
+      "x": 2280,
+      "y": -80,
+      "width": 300,
+      "height": 220,
+      "text": "## Structured Signals\nCloudWatch、日志、指标、告警都要结构化、可查询。\n\nAI 读不懂运行时信号，就不可能可靠诊断。"
+    },
+    {
+      "id": "n012",
+      "type": "text",
+      "x": 2600,
+      "y": -80,
+      "width": 300,
+      "height": 220,
+      "text": "## Deterministic Pipeline\n无手工特批、无模糊 gate。\n\n只有可预测的 CI/CD，agent 才能根据失败形态稳定推理下一步。"
+    },
+    {
+      "id": "n013",
+      "type": "text",
+      "x": 2120,
+      "y": 240,
+      "width": 320,
+      "height": 220,
+      "text": "## Tool Per Phase\n每个工具负责一个阶段。\n\n不要期待单个工具包打天下，关键是让它们组成可验证闭环。"
+    },
+    {
+      "id": "n014",
+      "type": "text",
+      "x": 2460,
+      "y": 240,
+      "width": 420,
+      "height": 220,
+      "color": "5",
+      "text": "## 统一系统的真正价值\n让代码、测试、部署、观测都处于 agent 可 inspect / validate / modify 的视野里。\n\n作者把这叫做从 fragmented 变成 legible。"
+    },
+    {
+      "id": "n015",
+      "type": "text",
+      "x": 0,
+      "y": 740,
+      "width": 300,
+      "height": 220,
+      "text": "### 1. Architect 定义任务\n结构化 prompt = 代码上下文 + 目标 + 约束。\n\n人类先定方向与边界。"
+    },
+    {
+      "id": "n016",
+      "type": "text",
+      "x": 340,
+      "y": 740,
+      "width": 300,
+      "height": 220,
+      "text": "### 2. Agent 实施\n分解任务、写代码、补测试。\n\nAI 不是只产出 diff，而是先给出 plan 再执行。"
+    },
+    {
+      "id": "n017",
+      "type": "text",
+      "x": 680,
+      "y": 740,
+      "width": 300,
+      "height": 220,
+      "text": "### 3. AI Review\n3 路 Claude 并行 gate：\n- 代码质量\n- 安全\n- 依赖风险\n\n它们是 gate，不是可忽略建议。"
+    },
+    {
+      "id": "n018",
+      "type": "text",
+      "x": 1020,
+      "y": 740,
+      "width": 300,
+      "height": 240,
+      "text": "### 4. CI Validate\n类型检查、lint、单测、集成测试、Playwright E2E、环境一致性检查。\n\n没有可选项。"
+    },
+    {
+      "id": "n019",
+      "type": "text",
+      "x": 1360,
+      "y": 740,
+      "width": 300,
+      "height": 220,
+      "text": "### 5. Merge Queue\nGraphite 负责 rebase、重跑 CI、只在 green 时合并。\n\n高吞吐下也尽量避免分支漂移。"
+    },
+    {
+      "id": "n020",
+      "type": "text",
+      "x": 1700,
+      "y": 740,
+      "width": 320,
+      "height": 260,
+      "text": "### 6. Six-Phase Deploy\nVerify CI -> Build & Deploy Dev -> Test Dev -> Deploy Prod -> Test Prod -> Release\n\ndev / prod 都有测试。"
+    },
+    {
+      "id": "n021",
+      "type": "text",
+      "x": 2060,
+      "y": 740,
+      "width": 300,
+      "height": 240,
+      "text": "### 7. Flag Rollout\nStatsig 先 team 内开启，再按比例灰度，必要时同步做 A/B test。"
+    },
+    {
+      "id": "n022",
+      "type": "text",
+      "x": 2400,
+      "y": 740,
+      "width": 300,
+      "height": 260,
+      "color": "1",
+      "text": "### 8. Observe / Kill / Rollback\n指标劣化就 kill switch 关特性；严重问题由基础设施 circuit breaker 自动回滚。\n\n坏功能当日上线，当日也能死。"
+    },
+    {
+      "id": "n023",
+      "type": "text",
+      "x": 2740,
+      "y": 740,
+      "width": 240,
+      "height": 260,
+      "text": "## 这条线真正变化了什么\n人类把关 strategic risk，不再逐行承担 correctness。\n\n系统把大量重复判断前移到 gate 与回路里。"
+    },
+    {
+      "id": "n024",
+      "type": "text",
+      "x": 0,
+      "y": 1580,
+      "width": 300,
+      "height": 220,
+      "text": "### 1. Detect\nCloudWatch + Sentry 持续发现异常。"
+    },
+    {
+      "id": "n025",
+      "type": "text",
+      "x": 340,
+      "y": 1580,
+      "width": 320,
+      "height": 260,
+      "text": "### 2. Daily Health Report\n每天 09:00 UTC，Claude Sonnet 查询 CloudWatch，自动生成健康摘要并发到 Microsoft Teams。"
+    },
+    {
+      "id": "n026",
+      "type": "text",
+      "x": 700,
+      "y": 1580,
+      "width": 320,
+      "height": 260,
+      "text": "### 3. Triage Engine\n1 小时后聚类错误，按 9 个 severity 维度评分，自动在 Linear 建 investigation ticket。"
+    },
+    {
+      "id": "n027",
+      "type": "text",
+      "x": 1060,
+      "y": 1580,
+      "width": 320,
+      "height": 260,
+      "text": "### 4. Dedup / Reopen\n同类错误已存在就更新；已关闭但复发就 reopen。\n\n减少噪音，保留历史。"
+    },
+    {
+      "id": "n028",
+      "type": "text",
+      "x": 1420,
+      "y": 1580,
+      "width": 300,
+      "height": 240,
+      "text": "### 5. Fix Through Same Pipeline\n工程师核实诊断、提交修复；后续仍走同一套 review + CI + deploy。"
+    },
+    {
+      "id": "n029",
+      "type": "text",
+      "x": 1760,
+      "y": 1580,
+      "width": 220,
+      "height": 260,
+      "color": "4",
+      "text": "### 6. Re-verify\n部署后再查 CloudWatch。\n\n原问题消失则自动 close；未解决则继续循环。"
+    },
+    {
+      "id": "n030",
+      "type": "text",
+      "x": 620,
+      "y": 1880,
+      "width": 760,
+      "height": 220,
+      "text": "## 自愈 loop 的核心\n错误检测、分诊、修复、验证不是四支队伍的交接，而是一个可以天天自动跑的闭环。"
+    },
+    {
+      "id": "n031",
+      "type": "text",
+      "x": 2100,
+      "y": 1540,
+      "width": 260,
+      "height": 220,
+      "text": "## 观测层\nAWS / CloudWatch / structured logs / alarms / custom metrics"
+    },
+    {
+      "id": "n032",
+      "type": "text",
+      "x": 2380,
+      "y": 1540,
+      "width": 260,
+      "height": 220,
+      "text": "## 交付层\nGitHub Actions + Graphite\n\n负责 gate、merge queue、部署推进。"
+    },
+    {
+      "id": "n033",
+      "type": "text",
+      "x": 2660,
+      "y": 1540,
+      "width": 300,
+      "height": 220,
+      "text": "## 评审与诊断层\nClaude Opus / Sonnet\n\n负责 review、health summary、triage。"
+    },
+    {
+      "id": "n034",
+      "type": "text",
+      "x": 2100,
+      "y": 1790,
+      "width": 260,
+      "height": 220,
+      "text": "## 控制层\nStatsig + kill switch + circuit breaker rollback"
+    },
+    {
+      "id": "n035",
+      "type": "text",
+      "x": 2380,
+      "y": 1790,
+      "width": 260,
+      "height": 220,
+      "text": "## 人类协作层\nLinear tickets + human reviewer + Teams summary"
+    },
+    {
+      "id": "n036",
+      "type": "text",
+      "x": 2660,
+      "y": 1790,
+      "width": 300,
+      "height": 220,
+      "color": "6",
+      "text": "## 作者的选型原则\nEach tool handles one phase.\n\n关键不是单点最强，而是阶段清晰、接口清晰、反馈清晰。"
+    },
+    {
+      "id": "n037",
+      "type": "text",
+      "x": 0,
+      "y": 2420,
+      "width": 320,
+      "height": 260,
+      "text": "## 新组织分工\n**Architect**：设计 SOP、边界、测试基础设施、triage 系统。\n\n**Operator**：调查 bug、微调 UI、验证 PR、处理执行层任务。"
+    },
+    {
+      "id": "n038",
+      "type": "text",
+      "x": 360,
+      "y": 2420,
+      "width": 320,
+      "height": 260,
+      "text": "## 价值迁移\n工程师价值从“代码产量”转向“决策质量”。\n\n关键能力是批判 AI、发现漏洞、看见 failure mode。"
+    },
+    {
+      "id": "n039",
+      "type": "text",
+      "x": 720,
+      "y": 2420,
+      "width": 320,
+      "height": 260,
+      "text": "## 适应差异\n作者观察：junior 往往比 senior 更快适应，因为包袱更少、习惯更少。"
+    },
+    {
+      "id": "n040",
+      "type": "text",
+      "x": 1080,
+      "y": 2420,
+      "width": 320,
+      "height": 260,
+      "text": "## 管理变化\n作者的管理时间从约 60% 掉到 10% 以下。\n\n更多时间花在搭 harness，而不是对齐与开会。"
+    },
+    {
+      "id": "n041",
+      "type": "text",
+      "x": 1440,
+      "y": 2420,
+      "width": 520,
+      "height": 260,
+      "color": "2",
+      "text": "## 不止 engineering\n如果工程按小时交付，但产品、市场、增长仍按周 / 月节奏运作，它们就会成为新瓶颈。\n\n所以 release note、视频、社媒、health report 也被 AI-native 化。"
+    },
+    {
+      "id": "n042",
+      "type": "text",
+      "x": 0,
+      "y": 2740,
+      "width": 420,
+      "height": 240,
+      "color": "4",
+      "text": "## 结果\n- 14 天里平均每天 3 到 8 次 production deploy\n- 新功能当天提出、当天上线\n- 差功能当天 kill\n- engagement 和 payment conversion 上升"
+    },
+    {
+      "id": "n043",
+      "type": "text",
+      "x": 460,
+      "y": 2740,
+      "width": 420,
+      "height": 260,
+      "color": "1",
+      "text": "## 代价\n- 员工不确定感和角色焦虑\n- senior 工程师价值感被冲击\n- CTO 长时间高压亲自搭系统\n- 旧系统拆掉到新系统跑稳之间有过渡风险"
+    },
+    {
+      "id": "n044",
+      "type": "text",
+      "x": 920,
+      "y": 2740,
+      "width": 500,
+      "height": 300,
+      "text": "## 给 CTO / Founder 的行动建议\n1. 先找出 cycle time 长于 build time 的环节。\n2. 在放大 agent 前先补 testing harness。\n3. 先用 1 个 architect 把系统跑通，再扩 operator。\n4. 把 AI-native 推到工程之外。"
+    },
+    {
+      "id": "n045",
+      "type": "text",
+      "x": 1460,
+      "y": 2740,
+      "width": 500,
+      "height": 300,
+      "color": "3",
+      "text": "## 文章真正想让你记住的事\n竞争优势不在于“手上有这些工具”，而在于：\n- 有没有重设计流程的决心\n- 能不能承受重构期间的成本\n- 能不能把 judgment 变成系统约束"
+    },
+    {
+      "id": "n046",
+      "type": "text",
+      "x": 2100,
+      "y": 2420,
+      "width": 880,
+      "height": 180,
+      "text": "## 关联阅读\n这篇 clipping 更适合作为“AI-native 交付系统”的总览图。\n\n往下可以接到本库已有的 harness engineering / AI adoption / 最大化 AI 杠杆语境。"
+    },
+    {
+      "id": "n047",
+      "type": "file",
+      "x": 2100,
+      "y": 2640,
+      "width": 260,
+      "height": 200,
+      "file": "Sources/Clippings/Why Your “AI-First” Strategy Is Probably Wrong.md"
+    },
+    {
+      "id": "n048",
+      "type": "file",
+      "x": 2380,
+      "y": 2640,
+      "width": 260,
+      "height": 200,
+      "file": "Cards/Harness Engineering.md"
+    },
+    {
+      "id": "n049",
+      "type": "file",
+      "x": 2660,
+      "y": 2640,
+      "width": 320,
+      "height": 200,
+      "file": "Sources/Clippings/My AI Adoption Journey.md"
+    },
+    {
+      "id": "n050",
+      "type": "file",
+      "x": 2240,
+      "y": 2880,
+      "width": 320,
+      "height": 200,
+      "file": "Calendar/Daily notes/2026/最大化ai 杠杆.md"
+    },
+    {
+      "id": "n051",
+      "type": "link",
+      "x": 2600,
+      "y": 2880,
+      "width": 320,
+      "height": 200,
+      "url": "https://x.com/intuitiveml/status/2043545596699750791"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e001",
+      "fromNode": "n005",
+      "fromSide": "right",
+      "toNode": "n010",
+      "toSide": "left",
+      "label": "落到系统设计"
+    },
+    {
+      "id": "e002",
+      "fromNode": "n009",
+      "fromSide": "bottom",
+      "toNode": "n015",
+      "toSide": "top",
+      "label": "因此必须重写 loop"
+    },
+    {
+      "id": "e003",
+      "fromNode": "n014",
+      "fromSide": "bottom",
+      "toNode": "n015",
+      "toSide": "top",
+      "label": "先统一成可见系统"
+    },
+    {
+      "id": "e004",
+      "fromNode": "n015",
+      "fromSide": "right",
+      "toNode": "n016",
+      "toSide": "left"
+    },
+    {
+      "id": "e005",
+      "fromNode": "n016",
+      "fromSide": "right",
+      "toNode": "n017",
+      "toSide": "left"
+    },
+    {
+      "id": "e006",
+      "fromNode": "n017",
+      "fromSide": "right",
+      "toNode": "n018",
+      "toSide": "left"
+    },
+    {
+      "id": "e007",
+      "fromNode": "n018",
+      "fromSide": "right",
+      "toNode": "n019",
+      "toSide": "left"
+    },
+    {
+      "id": "e008",
+      "fromNode": "n019",
+      "fromSide": "right",
+      "toNode": "n020",
+      "toSide": "left"
+    },
+    {
+      "id": "e009",
+      "fromNode": "n020",
+      "fromSide": "right",
+      "toNode": "n021",
+      "toSide": "left"
+    },
+    {
+      "id": "e010",
+      "fromNode": "n021",
+      "fromSide": "right",
+      "toNode": "n022",
+      "toSide": "left"
+    },
+    {
+      "id": "e011",
+      "fromNode": "n022",
+      "fromSide": "right",
+      "toNode": "n023",
+      "toSide": "left",
+      "label": "人类看风险，不盯细节"
+    },
+    {
+      "id": "e012",
+      "fromNode": "n022",
+      "fromSide": "bottom",
+      "toNode": "n024",
+      "toSide": "top",
+      "label": "异常进入故障闭环"
+    },
+    {
+      "id": "e013",
+      "fromNode": "n024",
+      "fromSide": "right",
+      "toNode": "n025",
+      "toSide": "left"
+    },
+    {
+      "id": "e014",
+      "fromNode": "n025",
+      "fromSide": "right",
+      "toNode": "n026",
+      "toSide": "left"
+    },
+    {
+      "id": "e015",
+      "fromNode": "n026",
+      "fromSide": "right",
+      "toNode": "n027",
+      "toSide": "left"
+    },
+    {
+      "id": "e016",
+      "fromNode": "n027",
+      "fromSide": "right",
+      "toNode": "n028",
+      "toSide": "left"
+    },
+    {
+      "id": "e017",
+      "fromNode": "n028",
+      "fromSide": "right",
+      "toNode": "n029",
+      "toSide": "left"
+    },
+    {
+      "id": "e018",
+      "fromNode": "n029",
+      "fromSide": "bottom",
+      "toNode": "n030",
+      "toSide": "top",
+      "label": "闭环收口"
+    },
+    {
+      "id": "e019",
+      "fromNode": "n030",
+      "fromSide": "bottom",
+      "toNode": "n042",
+      "toSide": "top",
+      "label": "因此能高频发布"
+    },
+    {
+      "id": "e020",
+      "fromNode": "n031",
+      "fromSide": "left",
+      "toNode": "n024",
+      "toSide": "right",
+      "label": "signals"
+    },
+    {
+      "id": "e021",
+      "fromNode": "n032",
+      "fromSide": "top",
+      "toNode": "n020",
+      "toSide": "bottom",
+      "label": "delivery"
+    },
+    {
+      "id": "e022",
+      "fromNode": "n033",
+      "fromSide": "left",
+      "toNode": "n026",
+      "toSide": "right",
+      "label": "review + triage"
+    },
+    {
+      "id": "e023",
+      "fromNode": "n034",
+      "fromSide": "top",
+      "toNode": "n021",
+      "toSide": "bottom",
+      "label": "rollout guardrails"
+    },
+    {
+      "id": "e024",
+      "fromNode": "n035",
+      "fromSide": "left",
+      "toNode": "n028",
+      "toSide": "right",
+      "label": "human-facing layer"
+    },
+    {
+      "id": "e025",
+      "fromNode": "n037",
+      "fromSide": "bottom",
+      "toNode": "n044",
+      "toSide": "top",
+      "label": "组织打法"
+    },
+    {
+      "id": "e026",
+      "fromNode": "n038",
+      "fromSide": "bottom",
+      "toNode": "n045",
+      "toSide": "top",
+      "label": "价值迁移"
+    },
+    {
+      "id": "e027",
+      "fromNode": "n041",
+      "fromSide": "bottom",
+      "toNode": "n045",
+      "toSide": "top",
+      "label": "跨部门一起改"
+    },
+    {
+      "id": "e028",
+      "fromNode": "n047",
+      "fromSide": "top",
+      "toNode": "n046",
+      "toSide": "bottom",
+      "label": "原文"
+    },
+    {
+      "id": "e029",
+      "fromNode": "n048",
+      "fromSide": "top",
+      "toNode": "n005",
+      "toSide": "bottom",
+      "label": "概念对照"
+    },
+    {
+      "id": "e030",
+      "fromNode": "n049",
+      "fromSide": "left",
+      "toNode": "n046",
+      "toSide": "bottom",
+      "label": "阶段迁移"
+    },
+    {
+      "id": "e031",
+      "fromNode": "n050",
+      "fromSide": "left",
+      "toNode": "n045",
+      "toSide": "right",
+      "label": "本库主线"
+    }
+  ],
+  "metadata": {
+    "version": "1.0-1.0",
+    "frontmatter": {}
+  }
+}

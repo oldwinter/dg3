@@ -375,30 +375,30 @@
       "height": 530
     },
     {
-      "file": "Extras/Attachments/企业微信截图_77f96f8b-5b5c-4d92-93d0-3e5bcc370b60.png",
+      "text": "缺失附件\n企业微信截图_77f96f8b-5b5c-4d92-93d0-3e5bcc370b60.png",
       "id": "07b7b111dc2d56ec",
       "styleAttributes": {},
-      "type": "file",
+      "type": "text",
       "x": 2165,
       "y": -281,
       "width": 399,
       "height": 297
     },
     {
-      "file": "Extras/Media/企业微信截图_ab6b9a42-1334-4366-8c74-427b851907f3.png",
+      "text": "缺失附件\n企业微信截图_ab6b9a42-1334-4366-8c74-427b851907f3.png",
       "id": "744928330c3e75d3",
       "styleAttributes": {},
-      "type": "file",
+      "type": "text",
       "x": 2165,
       "y": 111,
       "width": 400,
       "height": 313
     },
     {
-      "file": "Extras/Media/Pasted image 20240201215752.png",
+      "text": "缺失附件\nPasted image 20240201215752.png",
       "id": "073088016a49f9c7",
       "styleAttributes": {},
-      "type": "file",
+      "type": "text",
       "x": 2165,
       "y": 634,
       "width": 400,

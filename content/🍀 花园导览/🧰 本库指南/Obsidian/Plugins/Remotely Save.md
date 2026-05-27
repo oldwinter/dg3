@@ -1,10 +1,10 @@
 ---
-date created: 2022-06-09
-date modified: 2023-03-14
-title: Remotely Save
 publish: true
-rating: 4
-分类: "[[obsidian插件 - fileclass]]"
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Remotely Save.md
+title: Remotely Save
+created: 2022-06-09
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.720+08:00
 ---
 
 通过 [[Onedrive]]或者[[S3 - 对象存储服务]] 进行不同终端的数据同步。

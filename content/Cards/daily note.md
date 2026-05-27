@@ -1,12 +1,12 @@
 ---
-date created: 2022-06-09
-date modified: 2025-07-09
-title: dailynote
+publish: true
+permalink: /Cards/daily note.md
 aliases:
   - 每日笔记
-相关笔记:
-  - "[[» Daily notes工作流]]"
-publish: true
+title: dailynote
+created: 2022-06-09
+modified: 2025-07-09
+published: 2026-05-16T01:30:26.832+08:00
 ---
 
 每日笔记（dailynote）不是每日日记。

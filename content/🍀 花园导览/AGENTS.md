@@ -3,27 +3,26 @@ publish: true
 permalink: /🍀 花园导览/AGENTS.md
 created: 2026-01-11
 modified: 2026-03-29
-published: 2026-03-29T19:24:13.865+08:00
+published: 2026-05-03T11:58:00.375+08:00
 ---
 
-# AGENTS.md — 🍀 花园导览 (Public Navigation)
+# AGENTS.md — 🍀 花园导览（公开导览）
 
-Reader-facing navigation and guides.
+本目录面向读者，存放公开入口、导览和本库使用说明。这里的断链、路径漂移和私人信息泄露会直接影响发布体验。
 
-Content here is commonly published and acts as entry points.
+## 先看
 
-## Where To Look
+- `🍀 花园导览/**`
+- `🍀 花园导览/🧰 本库指南/`
+- 发布相关入口如果存在，优先读对应说明页。
 
-- Navigation hubs/guides: `🍀 花园导览/**`
-- Usage guide entry: `🍀 花园导览/🧰 本库指南/🧰 本库使用指南.md` (if present)
-- Publish guide entry: `🍀 花园导览/🌏 本库发布指南.md` (if present)
+## 写入规则
 
-## Conventions
+- 标题和路径保持稳定；优先追加说明和补链接。
+- 使用 Obsidian 双链 `[[wikilinks]]`，不要制造不存在的假链接。
+- 发布面内容要默认按公开读者视角检查，避免泄露私人上下文。
 
-- Keep titles/paths stable; prefer additive edits.
-- Use Obsidian-native linking (`[[wikilinks]]`).
+## 禁区
 
-## Anti-Patterns
-
-- Avoid mass edits; navigation breakage is user-visible.
-- Do not introduce absolute filesystem links.
+- 不做大批量改写；导航断裂是用户可见问题。
+- 不写入本机绝对路径。

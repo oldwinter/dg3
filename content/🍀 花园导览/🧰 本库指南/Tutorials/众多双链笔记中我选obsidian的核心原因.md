@@ -1,8 +1,10 @@
 ---
-date created: 2022-08-18
-date modified: 2023-03-14
-title: 众多双链笔记中我选obsidian的核心原因
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/众多双链笔记中我选obsidian的核心原因.md
+title: 众多双链笔记中我选obsidian的核心原因
+created: 2022-08-18
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.696+08:00
 ---
 
 以下是当初在众多双链笔记软件中选择它的初始原因，即初心。

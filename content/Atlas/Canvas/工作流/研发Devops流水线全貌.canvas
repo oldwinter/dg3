@@ -352,10 +352,10 @@
 			"height":400
 		},
 		{
-			"file":"Spaces/4-Archive/ingtube/交接/canvas/没用了/流水线使用场景.md",
+			"text":"流水线使用场景",
 			"id":"6506bdb98498312c",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":-1795,
 			"y":-462,
 			"width":400,
@@ -555,10 +555,10 @@
 			"height":380
 		},
 		{
-			"file":"Spaces/4-Archive/ingtube/交接/canvas/没用了/统一的告警规则.md",
+			"text":"统一的告警规则",
 			"id":"6afd1d8c9e8e2566",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":2409,
 			"y":-222,
 			"width":400,
@@ -616,10 +616,10 @@
 			"height":400
 		},
 		{
-			"file":"Spaces/4-Archive/ingtube/交接/canvas/没用了/效能洞察 insight.md",
+			"text":"效能洞察 insight",
 			"id":"d81f2b95578b6fe3",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":2409,
 			"y":-832,
 			"width":400,

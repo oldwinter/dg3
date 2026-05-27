@@ -6,15 +6,9 @@ aliases:
   - 可观测性
   - 日志、监控与告警
 title: Observability (Logs, Monitoring, Alerting)
-created: 2025-12-26T22:54:32.908+08:00
-modified: 2026-03-07T20:38:08.859+08:00
-published: 2026-03-07T20:38:08.859+08:00
-tags:
-  - MOC
-  - Observability
-  - Logs
-  - Monitoring
-  - Alerting
+created: 2026-05-11
+modified: 2026-05-11
+published: 2026-05-16T01:35:28.100+08:00
 ---
 
 # ∑ Observability (Logs, Monitoring, Alerting)
@@ -26,6 +20,21 @@ This Map of Contents aggregates notes related to the three pillars of Observabil
 - **Monitoring**：系统现在怎么样了。
 - **Logs / Traces**：刚才到底发生了什么。
 - **Alerting**：什么时候需要把人叫醒，以及叫醒谁。
+
+## 当前 LLM Wiki 入口
+
+- [[Atlas/LLM Wiki/Synthesis/Kubernetes 的运维链：Helm、GitOps、Service Mesh 与 Observability 如何衔接|Kubernetes 的运维链：Helm、GitOps、Service Mesh 与 Observability 如何衔接]] - 当前这条运维链在 llm wiki 里的中层收口
+- [[Atlas/LLM Wiki/Synthesis/可观测性反馈闭环子层：状态、原因与处置如何接力|可观测性反馈闭环子层：状态、原因与处置如何接力]] - 当前对这条可观测性反馈闭环子层稳定三段结构的中层收口
+- [[Atlas/LLM Wiki/Queries/哪些可观测性反馈闭环判断已经足够上位，值得继续回桥 Kubernetes 主阅读路径|哪些可观测性反馈闭环判断已经足够上位，值得继续回桥 Kubernetes 主阅读路径]] - 当前对这条反馈闭环子层哪些判断已经值得继续上浮回 Kubernetes 主阅读路径的直接入口
+- [[Atlas/LLM Wiki/Synthesis/可观测性反馈闭环子层的回桥规则：哪些判断该回写 Kubernetes 主阅读路径|可观测性反馈闭环子层的回桥规则：哪些判断该回写 Kubernetes 主阅读路径]] - 当前对这条反馈闭环子层哪些判断已经足够稳定，可以正式回桥 Kubernetes 主入口的子层收口
+- [[Atlas/LLM Wiki/Synthesis/可观测性反馈闭环的执行形态：状态面、原因面与处置回写面如何分工|可观测性反馈闭环的执行形态：状态面、原因面与处置回写面如何分工]] - 当前对可观测性真正落地时三种执行形态如何分工的中层收口
+- [[Atlas/LLM Wiki/Synthesis/可观测性反馈闭环子层的案例形态：状态基线清单、原因排查清单与处置回写清单如何分工|可观测性反馈闭环子层的案例形态：状态基线清单、原因排查清单与处置回写清单如何分工]] - 当前对这条可观测性补料线继续往下压时，最值得沉淀成哪几种可复用案例件的中层收口
+- [[Atlas/LLM Wiki/Queries/哪些可观测性信号已经值得进入状态基线清单|哪些可观测性信号已经值得进入状态基线清单]] - 当前对哪些可观测性信号已经成熟到值得先进入状态基线清单的直接判断入口
+- [[Atlas/LLM Wiki/Queries/哪些可观测性入口已经值得进入原因排查清单|哪些可观测性入口已经值得进入原因排查清单]] - 当前对哪些可观测性入口已经更适合先固定进原因排查清单的直接判断入口
+- [[Atlas/LLM Wiki/Queries/哪些可观测性处置已经值得进入处置回写清单|哪些可观测性处置已经值得进入处置回写清单]] - 当前对哪些可观测性处置已经更适合先固定进处置回写清单的直接判断入口
+- [[Atlas/LLM Wiki/Synthesis/Kubernetes 与云原生运维的回桥规则：哪些结论该回写主阅读路径|Kubernetes 与云原生运维的回桥规则：哪些结论该回写主阅读路径]] - 当前对这条主线哪些结论已经值得继续挂回主入口的上位收口
+- [[Atlas/LLM Wiki/Queries/可观测性如何在 K8s 运行面里真正形成反馈闭环|可观测性如何在 K8s 运行面里真正形成反馈闭环]] - 当前对 `监控 / 日志 / 告警 / runbook` 闭环的直接判断入口
+- [[Atlas/LLM Wiki/Queries/为什么告警系统必须最终回写到运行手册，而不只是停在通知层|为什么告警系统必须最终回写到运行手册，而不只是停在通知层]] - 当前对告警与运行手册关系的直接判断入口
 
 ## Current Backbone
 

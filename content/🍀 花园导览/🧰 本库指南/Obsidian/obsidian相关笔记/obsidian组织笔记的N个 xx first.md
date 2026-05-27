@@ -1,8 +1,10 @@
 ---
-date created: 2022-08-11
-date modified: 2025-07-12
-title: obsidian组织笔记的N个 xx first
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian组织笔记的N个 xx first.md
+title: obsidian组织笔记的N个 xx first
+created: 2022-08-11
+modified: 2025-07-12
+published: 2026-05-16T01:30:28.705+08:00
 ---
 
 **在记录或整理一个想法时，脑子里冒出的第一个问题是什么**。这个问题决定了你的笔记组织方式的根基。
@@ -20,7 +22,7 @@ publish: true
 - [[folder first]]
 - [[dailynote first]]
 - [[topic first]]
-  - 白板[[Canvas]]的可能应用场景之一
+  - 白板Canvas的可能应用场景之一
 - [[architect first]]
   - MOC文件的自上而下用法。
 - [[action first]]

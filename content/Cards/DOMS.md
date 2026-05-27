@@ -6,7 +6,7 @@ aliases:
 title: DOMS
 created: 2022-09-04
 modified: 2023-03-14
-published: 2025-08-15T21:59:56.954+08:00
+published: 2026-05-16T01:30:26.589+08:00
 ---
 
 delayed onset muscle soreness

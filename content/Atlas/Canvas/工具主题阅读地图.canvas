@@ -1,0 +1,473 @@
+{
+  "nodes": [
+    {
+      "id": "a1b2c3d4e5f60719",
+      "type": "group",
+      "x": -120,
+      "y": -120,
+      "width": 2520,
+      "height": 1840,
+      "label": "Tool Topics"
+    },
+    {
+      "id": "b1c2d3e4f5061729",
+      "type": "text",
+      "x": 40,
+      "y": -40,
+      "width": 620,
+      "height": 160,
+      "text": "# 工具主题阅读地图\n\n把当前仓库里的工具主题、数据采集 / Intake 这条前置输入层，以及向下的模型层、向上的编排层，放到同一张画布里。"
+    },
+    {
+      "id": "c1d2e3f405162739",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Raycast 入门到精通.md",
+      "label": "Raycast",
+      "x": 60,
+      "y": 180,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "d1e2f30415263749",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Obsidian 入门到精通.md",
+      "label": "Obsidian",
+      "x": 440,
+      "y": 180,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "e1f2031425364759",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Claude Code 入门到精通.md",
+      "label": "Claude Code",
+      "x": 920,
+      "y": 180,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "f102132435465769",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Codex 入门到精通.md",
+      "label": "Codex",
+      "x": 1320,
+      "y": 180,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "1021324354657688",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Skills 作为轻量能力注入层.md",
+      "label": "Skills",
+      "x": 910,
+      "y": 500,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "2132435465768799",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Harness Engineering 从定义到工程实践.md",
+      "label": "Harness",
+      "x": 1320,
+      "y": 500,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "5465768798a9bbcc",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/模型主题阅读地图.md",
+      "label": "Models",
+      "x": 930,
+      "y": 820,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "65768798a9bbccdd",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Agent Orchestration 阅读地图.md",
+      "label": "Orchestration",
+      "x": 1720,
+      "y": 500,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "32435465768798aa",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/工具主题阅读地图.md",
+      "label": "总阅读地图",
+      "x": 540,
+      "y": 500,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "435465768798a9bb",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/个人 AI 工作流分层图.md",
+      "label": "分层图",
+      "x": 140,
+      "y": 500,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "7788aabbccddee11",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Obsidian 视图层三件套：Dataview、Bases、Canvas 如何协同.md",
+      "label": "Obsidian 视图层",
+      "x": 60,
+      "y": 820,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "8899bbccddeeff22",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Obsidian 上手阻力与低摩擦起步路径.md",
+      "label": "Obsidian 起步",
+      "x": 440,
+      "y": 820,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "99bbccddeeff0011",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/在 Obsidian 内实践 LLM Wiki：输入层、视图层与编译层.md",
+      "label": "在 Obsidian 内实践 LLM Wiki",
+      "x": 440,
+      "y": 1120,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "0011ccddeeff2233",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Obsidian 输入层：Clipper、Cubox、Jotting 如何分工.md",
+      "label": "Obsidian 输入层",
+      "x": 60,
+      "y": 1120,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "f0e1d2c3b4a59687",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/数据采集与输入层阅读地图.md",
+      "label": "Intake / 数据采集",
+      "x": 60,
+      "y": 1420,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "99aacceeff001133",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Claude Code 的工作面分层：从环境工程到接口层.md",
+      "label": "Claude Code 分层",
+      "x": 1320,
+      "y": 820,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "aabbdd0011223344",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Codex 的任务单元与执行位置.md",
+      "label": "Codex 任务单元",
+      "x": 1720,
+      "y": 820,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "bbccdd1122334455",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Skills 从能力包到开放标准与治理.md",
+      "label": "Skills 治理",
+      "x": 1320,
+      "y": 1120,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "ccddee2233445566",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Agent 上下文系统设计：从 KV-cache 到文件系统记忆.md",
+      "label": "Context 系统",
+      "x": 900,
+      "y": 1120,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "ddeeff3344556677",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Agent-ready interface：从 CLI 到 Browser.md",
+      "label": "Agent-ready 接口",
+      "x": 1720,
+      "y": 1120,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "eeff001122334455",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/长期状态 vs 任务单元：Obsidian、Claude Code、Codex、Skills 的自然分工.md",
+      "label": "长期状态 vs 任务单元",
+      "x": 500,
+      "y": 1120,
+      "width": 340,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "0011223344556677",
+      "fromNode": "c1d2e3f405162739",
+      "fromSide": "right",
+      "toNode": "d1e2f30415263749",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "动作 → 知识"
+    },
+    {
+      "id": "1122334455667788",
+      "fromNode": "d1e2f30415263749",
+      "fromSide": "right",
+      "toNode": "e1f2031425364759",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "知识 → 执行"
+    },
+    {
+      "id": "2233445566778899",
+      "fromNode": "e1f2031425364759",
+      "fromSide": "right",
+      "toNode": "f102132435465769",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "执行产品面"
+    },
+    {
+      "id": "33445566778899aa",
+      "fromNode": "e1f2031425364759",
+      "fromSide": "bottom",
+      "toNode": "1021324354657688",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "能力注入"
+    },
+    {
+      "id": "445566778899aabb",
+      "fromNode": "f102132435465769",
+      "fromSide": "bottom",
+      "toNode": "2132435465768799",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "更上层系统"
+    },
+    {
+      "id": "5566778899aabbce",
+      "fromNode": "f102132435465769",
+      "fromSide": "bottom",
+      "toNode": "5465768798a9bbcc",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "底层约束"
+    },
+    {
+      "id": "66778899aabbccde",
+      "fromNode": "2132435465768799",
+      "fromSide": "right",
+      "toNode": "65768798a9bbccdd",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "控制面再上移"
+    },
+    {
+      "id": "5566778899aabbcc",
+      "fromNode": "435465768798a9bb",
+      "fromSide": "right",
+      "toNode": "32435465768798aa",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "总入口"
+    },
+    {
+      "id": "66778899aabbccdd",
+      "fromNode": "32435465768798aa",
+      "fromSide": "right",
+      "toNode": "1021324354657688",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "778899aabbccddee",
+      "fromNode": "32435465768798aa",
+      "fromSide": "top",
+      "toNode": "d1e2f30415263749",
+      "toSide": "bottom",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "8899aabbccddeeff",
+      "fromNode": "32435465768798aa",
+      "fromSide": "bottom",
+      "toNode": "5465768798a9bbcc",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "f1e2d3c4b5a69788",
+      "fromNode": "32435465768798aa",
+      "fromSide": "bottom",
+      "toNode": "f0e1d2c3b4a59687",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "前置输入层"
+    },
+    {
+      "id": "99aabbccddeeff00",
+      "fromNode": "32435465768798aa",
+      "fromSide": "right",
+      "toNode": "65768798a9bbccdd",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "abcddcba00112233",
+      "fromNode": "d1e2f30415263749",
+      "fromSide": "bottom",
+      "toNode": "7788aabbccddee11",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "视图层"
+    },
+    {
+      "id": "bcddcbaa11223344",
+      "fromNode": "d1e2f30415263749",
+      "fromSide": "bottom",
+      "toNode": "8899bbccddeeff22",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "起步路径"
+    },
+    {
+      "id": "cacacaca11223344",
+      "fromNode": "d1e2f30415263749",
+      "fromSide": "bottom",
+      "toNode": "99bbccddeeff0011",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "实践路径"
+    },
+    {
+      "id": "dbdbdbdb22334455",
+      "fromNode": "d1e2f30415263749",
+      "fromSide": "bottom",
+      "toNode": "0011ccddeeff2233",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "输入层"
+    },
+    {
+      "id": "f2e3d4c5b6a79889",
+      "fromNode": "0011ccddeeff2233",
+      "fromSide": "bottom",
+      "toNode": "f0e1d2c3b4a59687",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "采集入口"
+    },
+    {
+      "id": "cddcbaaa22334455",
+      "fromNode": "e1f2031425364759",
+      "fromSide": "bottom",
+      "toNode": "99aacceeff001133",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "工作面分层"
+    },
+    {
+      "id": "ddcbaaaa33445566",
+      "fromNode": "f102132435465769",
+      "fromSide": "bottom",
+      "toNode": "aabbdd0011223344",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "任务单元"
+    },
+    {
+      "id": "edcbaaaa44556677",
+      "fromNode": "1021324354657688",
+      "fromSide": "bottom",
+      "toNode": "bbccdd1122334455",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "治理层"
+    },
+    {
+      "id": "fedcbaaa55667788",
+      "fromNode": "5465768798a9bbcc",
+      "fromSide": "bottom",
+      "toNode": "ccddee2233445566",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "上下文系统"
+    },
+    {
+      "id": "a1a2a3a455667788",
+      "fromNode": "65768798a9bbccdd",
+      "fromSide": "bottom",
+      "toNode": "ddeeff3344556677",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "接口层"
+    },
+    {
+      "id": "b1b1b1b155667788",
+      "fromNode": "d1e2f30415263749",
+      "fromSide": "bottom",
+      "toNode": "eeff001122334455",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "长期状态"
+    },
+    {
+      "id": "c1c1c1c166778899",
+      "fromNode": "e1f2031425364759",
+      "fromSide": "bottom",
+      "toNode": "eeff001122334455",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "执行面"
+    },
+    {
+      "id": "d1d1d1d1778899aa",
+      "fromNode": "f102132435465769",
+      "fromSide": "bottom",
+      "toNode": "eeff001122334455",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "任务单元"
+    },
+    {
+      "id": "e1e1e1e18899aabb",
+      "fromNode": "1021324354657688",
+      "fromSide": "bottom",
+      "toNode": "eeff001122334455",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "程序性知识"
+    }
+  ]
+}

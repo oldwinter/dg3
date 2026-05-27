@@ -4,9 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/ob
 title: obsidian和logseq都采用的开源的论坛forum方案
 created: 2022-07-30
 modified: 2023-03-14
-published: 2025-08-15T22:00:05.149+08:00
-tags:
-  - todo/某天
+published: 2026-05-16T01:35:26.675+08:00
 ---
 
 [GitHub - discourse/discourse: A platform for community discussion. Free, open, simple.](https://github.com/discourse/discourse)

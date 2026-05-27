@@ -1,8 +1,10 @@
 ---
-date created: 2022-06-09
-date modified: 2023-03-14
-title: vscode和obsidian的习惯映射
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/vscode和obsidian的习惯映射.md
+title: vscode和obsidian的习惯映射
+created: 2022-06-09
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.711+08:00
 ---
 
 等 obsidian 再成熟一些了，

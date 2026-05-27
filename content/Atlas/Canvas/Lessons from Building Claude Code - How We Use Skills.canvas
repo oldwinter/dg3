@@ -41,7 +41,7 @@
 		{"id":"n035","type":"text","text":"## C. 优先级建议\n如果资源有限，最值得先做的通常是：\n1. Product Verification\n2. Code Quality & Review\n3. Runbooks\n4. Data Fetching & Analysis\n\n因为这些直接影响结果正确性与排障效率。","x":930,"y":1980,"width":460,"height":300},
 		{"id":"n036","type":"text","text":"## D. 团队 rollout 路线\n- 先在 repo 内试验\n- 用 usage / trigger 数据看 traction\n- 逐步清理重复 skill\n- 成熟后再进 marketplace\n\n这是比一开始“大一统平台化”更稳的路径。","x":1430,"y":1980,"width":460,"height":300},
 		{"id":"n037","type":"text","text":"## E. 这篇文章真正想让你记住的 3 件事\n1. Skill 是文件夹，不是 markdown。\n2. Gotchas、scripts、progressive disclosure 往往比长篇说明更有用。\n3. Skill 体系也需要分发、策展和度量。","x":1930,"y":1980,"width":460,"height":300},
-		{"id":"n038","type":"file","file":"Clippings/Lessons from Building Claude Code How We Use Skills.md","x":2430,"y":1980,"width":330,"height":180},
+		{"id":"n038","type":"file","file":"Sources/Clippings/Lessons from Building Claude Code How We Use Skills.md","x":2430,"y":1980,"width":330,"height":180},
 		{"id":"n039","type":"file","file":"Cards/Claude Code Agent Harness 的 Action Space 设计拆解.md","x":2800,"y":1980,"width":330,"height":180},
 		{"id":"n025","type":"text","text":"## 9. On Demand Hooks\nSkill 可以带只在调用时激活、并持续到会话结束的 hooks。\n\n适合高 opinionated、但不该常开的约束：\n- 阻止危险命令\n- 限定编辑目录\n- 进入 prod / debug 模式时增加额外护栏","x":120,"y":1541,"width":820,"height":260}
 	],

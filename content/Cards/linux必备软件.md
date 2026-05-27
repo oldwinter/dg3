@@ -1,8 +1,10 @@
 ---
-date created: 2022-07-06
-date modified: 2023-03-14
-title: linux必备软件
 publish: true
+permalink: /Cards/linux必备软件.md
+title: linux必备软件
+created: 2022-07-06
+modified: 2023-03-14
+published: 2026-05-16T01:30:27.084+08:00
 ---
 
 很少使用linux图形界面。

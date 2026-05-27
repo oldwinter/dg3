@@ -1,12 +1,9 @@
 ---
-date created: 2025-04-04
-date modified: 2025-05-31
-评价: 6
-是否有firefox版本: true
-设置同步: 导出导入
 publish: true
-分类:
-- '[[chrome插件 - fileclass]]'
+permalink: /Spaces/3-Resource/chrome插件/obsidian web clipper.md
+created: 2025-04-04
+modified: 2026-04-20
+published: 2026-05-16T01:30:27.772+08:00
 ---
 
 最大的缺点就是很多图片都是防盗链设置，无法直接剪藏下来。这样一对比，还是[[Cubox]]有更多的应用场景。

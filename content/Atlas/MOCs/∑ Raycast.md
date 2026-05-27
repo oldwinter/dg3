@@ -1,14 +1,31 @@
 ---
 publish: true
 permalink: /Atlas/MOCs/∑ Raycast.md
+aliases:
+  - Raycast MOC
+title: ∑ Raycast
 created: 2025-07-07
-modified: 2025-07-07
-published: 2026-02-08T13:48:32.044+08:00
+modified: 2026-05-02
+published: 2026-05-16T01:30:29.109+08:00
 ---
 
 # ∑ Raycast
 
 Raycast 是一款适用于 macOS 的可扩展启动器，旨在通过将日常任务和工具整合到一个统一的界面中来提高生产力。它不仅仅是一个应用程序启动器，更是一个强大的命令中心，允许用户通过快捷键、别名和脚本来自动化和简化工作流程。
+
+## 当前 LLM Wiki 入口
+
+- [[Atlas/LLM Wiki/Synthesis/Raycast 阅读地图|Raycast 阅读地图]] - 当前这条主题在 llm wiki 里的总入口
+- [[Atlas/LLM Wiki/Synthesis/Raycast 主分工：收敛层、动作路由与个人操作面如何接力|Raycast 主分工：收敛层、动作路由与个人操作面如何接力]] - 当前对 Raycast 这条主线主分工的上位收口
+- [[Atlas/LLM Wiki/Synthesis/Raycast 的回桥规则：哪些结论该回写主阅读路径|Raycast 的回桥规则：哪些结论该回写主阅读路径]] - 当前对这条主题哪些结论已经值得继续挂回主入口的上位收口
+- [[Atlas/LLM Wiki/Synthesis/Raycast 入门到精通|Raycast 入门到精通]] - 当前对 Raycast 学习顺序、能力分层和仓库内读法的入门综合页
+- [[Atlas/LLM Wiki/Synthesis/Raycast 的案例形态：收敛清单、动作路由包与操作面入口清单如何分工|Raycast 的案例形态：收敛清单、动作路由包与操作面入口清单如何分工]] - 当前对 Raycast 这条主线最值得复用的案例资产如何分工的中层收口
+- [[Atlas/LLM Wiki/Queries/哪些 Raycast 能力已经值得进入操作面入口清单|哪些 Raycast 能力已经值得进入操作面入口清单]] - 当前对哪些 Raycast 能力已经值得先固定进操作面入口清单的直接入口
+- [[Atlas/LLM Wiki/Queries/哪些 Raycast 场景已经值得进入后台自动化清单|哪些 Raycast 场景已经值得进入后台自动化清单]] - 当前对 Raycast 场景何时从前台动作升级成可复跑自动化资产的直接入口
+- [[Atlas/LLM Wiki/Queries/哪些 Raycast 场景已经值得进入控制台入口清单|哪些 Raycast 场景已经值得进入控制台入口清单]] - 当前对 Raycast 场景何时只该暴露控制台入口的直接入口
+- [[Atlas/LLM Wiki/Queries/哪些本库系统层能力已经值得作为 Raycast 控制台入口候选|哪些本库系统层能力已经值得作为 Raycast 控制台入口候选]] - 当前把发布 gate、健康检查、LLM Wiki 工作台等本库真实控制面映射成 Raycast 入口候选
+- [[Atlas/LLM Wiki/Synthesis/个人操作面分层：Raycast、macOS 系统层与脚本层如何分工|个人操作面分层：Raycast、macOS 系统层与脚本层如何分工]] - 当前对 `启动器 / 系统层 / 脚本层` 分工的中层收口
+- [[Atlas/LLM Wiki/Synthesis/个人操作面的半显式控制面：入口该暴露到哪，控制面该留在哪|个人操作面的半显式控制面：入口该暴露到哪，控制面该留在哪]] - 当前对 `入口层 / 控制面` 分工的中层收口
 
 ## 入门与迁移
 
@@ -30,16 +47,16 @@ Raycast AI 将大型语言模型集成到您的日常工作流程中，提供快
 - **AI Command & Preset**: [[Raycast AI Command]], [[Raycast AI Preset]]
 - **AI 扩展**: [[Raycast AI Extension]], [[Raycast Companion]]
 - **模型与限制**:
-  - [[raycast 支持的模型models清单]]
+  - raycast 支持的模型models清单
   - [[Raycast AI Models Request Limits]]
-  - [[raycast ai 上下文限额测试]]
-  - [[raycast ai 的自带提示词破解]]
+  - raycast ai 上下文限额测试
+  - raycast ai 的自带提示词破解
   - [[raycast 的deepseek r1模型喜欢玩包含latex的高级和抽象]]
 - **自定义 API**:
   - [[一个搭配最新Raycast，无痛用自己的API畅享QuickAI功能的CF Workers - 开发调优  开发调优, Lv2]]
-  - [[fake-raycast-backend]]
-  - [[raycast-ai-openrouter-proxy]]
-  - [[raycast-relay]]
+  - fake-raycast-backend
+  - raycast-ai-openrouter-proxy
+  - raycast-relay
   - [[raycast2api]]
 
 ### 窗口管理
@@ -63,16 +80,16 @@ Raycast 提供了强大的窗口管理功能，可以替代 [[Rectangle]] 等专
   - [[raycast 2fa插件管理]]
   - [[raycast 快速查看时区]]
   - [[Raycast Auto Quit Applications]]
-  - [[Raycast Focus]]
+  - Raycast Focus
 
 ## 扩展与开发
 
 Raycast 的生态系统是其核心优势之一，允许用户通过插件和脚本无限扩展其功能。
 
 - **插件**:
-  - [[raycast插件]]
+  - raycast插件
   - [[categorized-raycast-extensions]]
-  - [[raycast-g4f]]
+  - raycast-g4f
 - **插件开发**: [[raycast插件开发]]
 - **脚本**: [[极具潜力的效率启动器 App，Raycast 脚本功能详解 - 少数派-2022-05-30]]
 
@@ -101,7 +118,7 @@ Raycast 的生态系统是其核心优势之一，允许用户通过插件和脚
 - [[Raycast AI Chat]] - AI聊天功能
 - [[Raycast AI Command]] - AI命令功能
 - [[Raycast AI Preset]] - AI预设配置
-- [[raycast 支持的模型models清单]] - 支持的AI模型列表
+- raycast 支持的模型models清单 - 支持的AI模型列表
 
 ### 应用管理与快捷键
 
@@ -132,11 +149,11 @@ Raycast 的生态系统是其核心优势之一，允许用户通过插件和脚
 
 ### 开源项目
 
-- [[raycast-ai-openrouter-proxy]] - AI路由代理
-- [[raycast-g4f]] - GPT4Free集成
-- [[raycast-relay]] - 中继服务
+- raycast-ai-openrouter-proxy - AI路由代理
+- raycast-g4f - GPT4Free集成
+- raycast-relay - 中继服务
 - [[raycast2api]] - API转换工具
-- [[fake-raycast-backend]] - 虚拟后端
+- fake-raycast-backend - 虚拟后端
 - [[categorized-raycast-extensions]] - 分类的Raycast扩展
 
 ### 教程与文档

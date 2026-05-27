@@ -34,7 +34,15 @@
 			"width":620,
 			"height":155
 		},
-		{"id":"8d53da20563a7cad","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/甄嬛传人物关系与时间线.png","x":-945,"y":1411,"width":620,"height":296},
+		{
+		  "id": "8d53da20563a7cad",
+		  "type": "link",
+		  "x": -945,
+		  "y": 1411,
+		  "width": 620,
+		  "height": 296,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/df1500098ae96fba1ac304c40c17d99c.png"
+		},
 		{"id":"21bbbbf47daddb1e","type":"file","file":"🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian canvas 使用 cursor生成.md","x":-945,"y":-432,"width":620,"height":1729},
 		{"id":"9ea37bd9d6ed3531","type":"file","file":"Extras/Attachments/Images/canvas中直接引用的图片/Cursor界面.png","x":-217,"y":-432,"width":937,"height":1101},
 		{

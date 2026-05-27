@@ -118,7 +118,7 @@
 			"width":400,
 			"height":140
 		},
-		{"id":"115c8d204c8be71c","type":"file","file":"Sources/Clippings/An AI glossary - Clippings.md","x":-1480,"y":-240,"width":400,"height":400},
+		{"id":"115c8d204c8be71c","type":"text","text":"An AI glossary - Clippings","x":-1480,"y":-240,"width":400,"height":400},
 		{
 			"id":"c7e255c2aa85ab86",
 			"styleAttributes":{},

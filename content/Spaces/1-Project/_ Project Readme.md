@@ -1,10 +1,10 @@
 ---
-date created: 2025-04-09
-date modified: 2025-06-27
-title: About Project
 publish: true
-分类:
-- '[[本库教程 - fileclass]]'
+permalink: /Spaces/1-Project/_ Project Readme.md
+title: About Project
+created: 2025-04-09
+modified: 2025-06-27
+published: 2026-05-16T01:30:27.895+08:00
 ---
 
 [[项目笔记]] 的所在地。集中存放短中期聚焦的项目内容。

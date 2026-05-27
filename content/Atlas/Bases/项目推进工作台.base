@@ -1,0 +1,286 @@
+filters:
+  or:
+    - and:
+        - file.inFolder("Spaces/1-Project")
+        - file.ext == "md"
+    - and:
+        - file.inFolder("Calendar/Tasks")
+        - file.hasTag("task")
+        - file.ext == "md"
+formulas:
+  项目资料: file.inFolder("Spaces/1-Project")
+  任务: file.hasTag("task")
+  活跃任务: file.hasTag("task") && status != "done" && !file.inFolder("Calendar/Tasks/Archive") && !file.inFolder("Calendar/Tasks/Converted") && !file.path.contains("/Archive/")
+  非项目杂务: contexts && list(contexts).contains("errands")
+  项目相关任务: formula.活跃任务 && !formula.非项目杂务
+  有项目归属: projects && list(projects).length > 0
+  距截止天数: if(due, ((number(date(due)) - number(today())) / 86400000).floor(), null)
+  距计划天数: if(scheduled, ((number(date(scheduled)) - number(today())) / 86400000).floor(), null)
+  最近修改天数: ((number(now()) - number(file.mtime)) / 86400000).floor()
+  长期未推进: formula.项目相关任务 && formula.最近修改天数 > 30
+  本周相关: formula.项目相关任务 && ((due && date(due) >= today() && date(due) <= today() + "7d") || (scheduled && date(scheduled) >= today() && date(scheduled) <= today() + "7d") || (due && date(due) < today()))
+  截止过期: formula.项目相关任务 && due && date(due) < today()
+  计划过期: formula.项目相关任务 && scheduled && date(scheduled) < today()
+  缺日期: formula.项目相关任务 && !due && !scheduled
+  日期债务: formula.截止过期 || formula.计划过期 || formula.缺日期
+  Linear同步元数据待补: formula.项目相关任务 && source == "linear" && ((!due && !scheduled) || !projects || list(projects).length == 0)
+properties:
+  formula.项目资料:
+    displayName: 项目资料
+  formula.任务:
+    displayName: 任务
+  formula.活跃任务:
+    displayName: 活跃任务
+  formula.非项目杂务:
+    displayName: 非项目杂务
+  formula.项目相关任务:
+    displayName: 项目相关任务
+  formula.有项目归属:
+    displayName: 有项目归属
+  formula.距截止天数:
+    displayName: 距截止天数
+  formula.距计划天数:
+    displayName: 距计划天数
+  formula.最近修改天数:
+    displayName: 最近修改天数
+  formula.长期未推进:
+    displayName: 长期未推进
+  formula.本周相关:
+    displayName: 本周相关
+  formula.截止过期:
+    displayName: 截止过期
+  formula.计划过期:
+    displayName: 计划过期
+  formula.缺日期:
+    displayName: 缺日期
+  formula.日期债务:
+    displayName: 日期债务
+  formula.Linear同步元数据待补:
+    displayName: Linear同步元数据待补
+  file.name:
+    displayName: 文件名
+  file.folder:
+    displayName: 文件夹
+  file.mtime:
+    displayName: 最近修改
+  file.backlinks:
+    displayName: 反链
+  projects:
+    displayName: 项目
+  status:
+    displayName: 状态
+  priority:
+    displayName: 优先级
+  due:
+    displayName: 截止
+  scheduled:
+    displayName: 计划
+  contexts:
+    displayName: 场景
+  source:
+    displayName: 来源
+  linearIssueId:
+    displayName: Linear Issue
+views:
+  - type: table
+    name: 项目｜索引与MOC
+    filters:
+      and:
+        - file.inFolder("Spaces/1-Project")
+        - or:
+            - file.name.contains("∑")
+            - file.name.contains("README")
+            - file.name.contains("Readme")
+            - file.name.contains("MOC")
+            - file.folder == "Spaces/1-Project"
+    order:
+      - file.name
+      - status
+      - priority
+      - file.folder
+      - file.backlinks
+      - file.mtime
+      - formula.最近修改天数
+    sort:
+      - property: file.folder
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 项目｜最近交付证据
+    filters:
+      and:
+        - file.inFolder("Spaces/1-Project")
+        - not:
+            - file.name.contains("README")
+            - file.name.contains("Readme")
+    order:
+      - file.name
+      - status
+      - priority
+      - file.folder
+      - file.backlinks
+      - file.mtime
+      - formula.最近修改天数
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    limit: 80
+  - type: table
+    name: 任务｜进行中
+    filters:
+      and:
+        - formula.项目相关任务
+    order:
+      - file.name
+      - status
+      - priority
+      - projects
+      - contexts
+      - due
+      - scheduled
+      - formula.距截止天数
+      - formula.距计划天数
+      - file.mtime
+    sort:
+      - property: priority
+        direction: DESC
+      - property: due
+        direction: ASC
+      - property: scheduled
+        direction: ASC
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 任务｜本周与过期
+    filters:
+      and:
+        - formula.本周相关
+    order:
+      - file.name
+      - status
+      - priority
+      - projects
+      - due
+      - scheduled
+      - formula.距截止天数
+      - formula.距计划天数
+      - file.mtime
+    sort:
+      - property: due
+        direction: ASC
+      - property: scheduled
+        direction: ASC
+      - property: priority
+        direction: DESC
+  - type: table
+    name: 任务｜按项目分组
+    filters:
+      and:
+        - formula.项目相关任务
+        - projects && list(projects).length > 0
+    groupBy:
+      property: projects
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - priority
+      - due
+      - scheduled
+      - contexts
+      - file.mtime
+    sort:
+      - property: priority
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 待补｜无项目归属
+    filters:
+      and:
+        - formula.项目相关任务
+        - or:
+            - "!projects"
+            - list(projects).length == 0
+    order:
+      - file.name
+      - status
+      - priority
+      - contexts
+      - due
+      - scheduled
+      - file.mtime
+      - formula.最近修改天数
+    sort:
+      - property: priority
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 任务｜日期债务
+    filters:
+      and:
+        - formula.日期债务
+    order:
+      - file.name
+      - status
+      - priority
+      - projects
+      - source
+      - due
+      - scheduled
+      - formula.距截止天数
+      - formula.距计划天数
+      - formula.截止过期
+      - formula.计划过期
+      - formula.缺日期
+      - file.mtime
+    sort:
+      - property: due
+        direction: ASC
+      - property: scheduled
+        direction: ASC
+      - property: priority
+        direction: DESC
+  - type: table
+    name: 待补｜Linear同步元数据
+    filters:
+      and:
+        - formula.Linear同步元数据待补
+    order:
+      - file.name
+      - status
+      - priority
+      - linearIssueId
+      - projects
+      - due
+      - scheduled
+      - contexts
+      - file.mtime
+    sort:
+      - property: priority
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: 风险｜长期未推进
+    filters:
+      and:
+        - formula.长期未推进
+    order:
+      - file.name
+      - status
+      - priority
+      - projects
+      - due
+      - scheduled
+      - file.mtime
+      - formula.最近修改天数
+    sort:
+      - property: formula.最近修改天数
+        direction: DESC
+      - property: priority
+        direction: DESC

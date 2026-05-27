@@ -1,8 +1,10 @@
 ---
-date created: 2022-06-09
-date modified: 2025-07-10
-title: PARA和MOC联用组织笔记
 publish: true
+permalink: /Spaces/2-Area/知识管理/PARA和MOC联用组织笔记.md
+title: PARA和MOC联用组织笔记
+created: 2022-06-09
+modified: 2025-07-10
+published: 2026-05-16T01:30:27.371+08:00
 ---
 
 ## PARA

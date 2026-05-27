@@ -172,7 +172,7 @@
 			"color":"1"
 		},
 		{
-			"file":"Spaces/3-Resource/软件梳理/macos软件/Bob.md",
+			"file":"Sources/GithubStarsSync/Bob.md",
 			"id":"0a5033f8879870ad",
 			"styleAttributes":{},
 			"type":"file",
@@ -384,10 +384,10 @@
 			"color":"1"
 		},
 		{
-			"file":"Spaces/3-Resource/软件梳理/macos软件/Localsend.md",
+			"text":"Localsend",
 			"id":"4a75ab00be8230ae",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":680,
 			"y":5420,
 			"width":400,
@@ -428,7 +428,7 @@
 			"height":400
 		},
 		{
-			"file":"Spaces/3-Resource/软件梳理/macos软件/Folo.md",
+			"file":"Spaces/3-Resource/软件梳理/好用网站/Folo.md",
 			"id":"340defe765009ea2",
 			"styleAttributes":{},
 			"type":"file",

@@ -1,9 +1,9 @@
 ---
 publish: true
-permalink: 2025/my-macos-ranks
+permalink: /Spaces/3-Resource/软件梳理/macos软件/2025年我的macOS软件天梯榜-文字版.md
 created: 2025-07-14
 modified: 2025-07-14
-published: 2026-02-08T13:48:32.095+08:00
+published: 2026-05-16T01:30:27.838+08:00
 ---
 
 ## God
@@ -47,7 +47,7 @@ published: 2026-02-08T13:48:32.095+08:00
 - [[Chrome]]
   - 插件同步器。arc和zen的plan b。
 - [[CleanShot X]]
-  - 别人都说好。比[[Snipaste]]和[[PixPin]]更原生。一键截图发给ai提问的功能，别家应该没有？
+  - 别人都说好。比[[Snipaste]]和PixPin更原生。一键截图发给ai提问的功能，别家应该没有？
 - [[Folo|Folo]]
   - 告别被推荐机制裹挟，让RSS再次伟大。
 - [[Klack]]
@@ -99,7 +99,7 @@ published: 2026-02-08T13:48:32.095+08:00
 ## D
 
 - [[网易云音乐]]
-- [[PixPin]]
+- PixPin
 - [[PicGo|PicGo]]
 - [[Apifox]]
 - [[百度网盘]]

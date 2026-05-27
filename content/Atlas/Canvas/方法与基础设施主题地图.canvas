@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "id": "6001020304050607",
+      "type": "group",
+      "x": -80,
+      "y": -80,
+      "width": 1900,
+      "height": 1180,
+      "label": "Methods and Infrastructure Topic Map"
+    },
+    {
+      "id": "6008091011121314",
+      "type": "text",
+      "x": 20,
+      "y": 0,
+      "width": 620,
+      "height": 140,
+      "text": "# 方法与基础设施主题地图\n\n把 llm-wiki 下一批主题的优先级、关系和入口放到同一张可点击画布里。"
+    },
+    {
+      "id": "6015161718192021",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/下一批 LLM Wiki 主题路线图.md",
+      "label": "路线图",
+      "x": 700,
+      "y": 40,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "6022232425262728",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/数字花园、第二大脑与 PKM 方法论 阅读地图.md",
+      "label": "PKM / 数字花园",
+      "x": 120,
+      "y": 360,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "6029303132333435",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 工具链 阅读地图.md",
+      "label": "AI 工具链",
+      "x": 540,
+      "y": 360,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "6036373839404142",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Prompt Engineering 阅读地图.md",
+      "label": "Prompt",
+      "x": 960,
+      "y": 360,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "id": "6043444546474849",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/AI 编程工具生态 阅读地图.md",
+      "label": "AI 编程工具生态",
+      "x": 200,
+      "y": 700,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "6050515253545556",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Kubernetes 与云原生运维 阅读地图.md",
+      "label": "Kubernetes / 云原生",
+      "x": 700,
+      "y": 700,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "6057585960616263",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/数字花园、第二大脑与 PKM 的边界：公开性、维护成本与系统分层.md",
+      "label": "PKM 综合页",
+      "x": 1240,
+      "y": 700,
+      "width": 380,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "6101010101010101",
+      "fromNode": "6015161718192021",
+      "fromSide": "bottom",
+      "toNode": "6022232425262728",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "第一优先"
+    },
+    {
+      "id": "6102020202020202",
+      "fromNode": "6015161718192021",
+      "fromSide": "bottom",
+      "toNode": "6029303132333435",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "第一优先"
+    },
+    {
+      "id": "6103030303030303",
+      "fromNode": "6015161718192021",
+      "fromSide": "bottom",
+      "toNode": "6036373839404142",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "第二优先"
+    },
+    {
+      "id": "6104040404040404",
+      "fromNode": "6015161718192021",
+      "fromSide": "bottom",
+      "toNode": "6043444546474849",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "第二优先"
+    },
+    {
+      "id": "6105050505050505",
+      "fromNode": "6015161718192021",
+      "fromSide": "bottom",
+      "toNode": "6050515253545556",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "第二优先"
+    },
+    {
+      "id": "6106060606060606",
+      "fromNode": "6022232425262728",
+      "fromSide": "right",
+      "toNode": "6057585960616263",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "已成最小闭环"
+    },
+    {
+      "id": "6107070707070707",
+      "fromNode": "6029303132333435",
+      "fromSide": "bottom",
+      "toNode": "6043444546474849",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "生态层延伸"
+    },
+    {
+      "id": "6108080808080808",
+      "fromNode": "6036373839404142",
+      "fromSide": "bottom",
+      "toNode": "6029303132333435",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "方法层接回工具链"
+    }
+  ]
+}

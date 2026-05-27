@@ -5,7 +5,7 @@ aliases:
   - darlal-switcher-plus
 created: 2024-05-11
 modified: 2025-08-07
-published: 2025-08-28T14:57:47.341+08:00
+published: 2026-05-16T01:35:26.709+08:00
 ---
 
 满分，神器。
@@ -20,7 +20,7 @@ published: 2025-08-28T14:57:47.341+08:00
 
 ![PixPin\_2025-08-21\_02-00-51.png](https://pub-pic.oldwinter.top/2025/08/2da3c96714d58aa3accdf30d3e690964.png)
 
-用$，也就是symble 功能，可以在canvas里面快速导航定位到指定node；也可以在md文件中定位到header标题。
+用\$，也就是symble 功能，可以在canvas里面快速导航定位到指定node；也可以在md文件中定位到header标题。
 
 @和~符号，写着embed，其实意思就是先输入文件名搜索，然后紧接着使用@符号，就能基于这个匹配到的文件名，直接检索文件内的标题heading内容，或者文件的同目录文件/反链/出链等信息。注意通过上下键先移到目标文件，再直接输入@符号既可。
 

@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"n_legacy","type":"text","x":-3460,"y":-1240,"width":980,"height":180,"text":"## 注意\n这张图在解释 `oldwinter/superpower-practice` 这个 todo-cli demo 的工程化方法，不是 `obra/superpowers` 当前官方技能系统。\n\n如果要看官方 superpowers 的 14 个 skills、三层机制和新版流程，请优先看 [[superpower]] 与 [[superpowers-workflow.canvas]]。","color":"1"},
 		{"id":"g_context","type":"group","x":-3600,"y":-980,"width":1280,"height":1620,"label":"Repository Context","color":"5"},
 		{"id":"g_arch","type":"group","x":-2200,"y":-980,"width":2240,"height":2240,"label":"三层运行时架构（Runtime）","color":"4"},
 		{"id":"g_behavior","type":"group","x":240,"y":-980,"width":2680,"height":2240,"label":"命令语义与状态变更（Behavior）","color":"2"},
@@ -8,7 +9,7 @@
 		{"id":"n_repo","type":"text","x":-3460,"y":-860,"width":980,"height":220,"text":"## Superpower 仓库定位\n- Repo: `oldwinter/superpower-practice`（private）\n- 技术栈：TypeScript + Node.js + Vitest\n- 主题：一个 Todo CLI 的完整工程化实现\n- 关键思想：用“计划驱动 + TDD”把需求稳定落地"},
 		{"id":"n_goal","type":"text","x":-3460,"y":-600,"width":980,"height":180,"text":"## 目标（docs/plans）\n- JSON 持久化\n- Priority（high/medium/low）\n- 完成/删除/过滤/搜索/排序\n- 最终交付可运行 CLI，而不是只写函数"},
 		{"id":"n_principle","type":"text","x":-3460,"y":-380,"width":980,"height":300,"text":"## 核心原理（你要的“Superpower 原理”）\n把系统拆成 4 层能力并做增量闭环：\n1. 类型约束（types）\n2. 持久化抽象（store）\n3. 业务编排（service）\n4. 命令入口（cli）\n\n每次功能都走：\n计划 -> 先写失败测试 -> 最小实现 -> 通过 -> commit。"},
-		{"id":"n_artifacts","type":"text","x":-3460,"y":-20,"width":980,"height":300,"text":"## 证据文件\n- 设计：`docs/plans/2026-02-26-todo-cli-design.md`\n- 执行计划：`docs/plans/2026-02-26-todo-cli-plan.md`\n- 增量计划：`docs/plans/2026-02-26-search-sort-plan.md`\n- 运行层：`src/types.ts | store.ts | service.ts | cli.ts`\n- 质量层：`tests/*.test.ts`\n- 演进轨迹：`git log --oneline`"},
+		{"id":"n_artifacts","type":"text","x":-3460,"y":-20,"width":980,"height":300,"text":"## 证据文件\n- 设计：`_system/docs/plans/2026-02-26-todo-cli-design.md`\n- 执行计划：`_system/docs/plans/2026-02-26-todo-cli-plan.md`\n- 增量计划：`_system/docs/plans/2026-02-26-search-sort-plan.md`\n- 运行层：`src/types.ts | store.ts | service.ts | cli.ts`\n- 质量层：`tests/*.test.ts`\n- 演进轨迹：`git log --oneline`"},
 		{"id":"n_types","type":"text","x":-2040,"y":-840,"width":460,"height":240,"text":"## types.ts（数据契约）\n- `Priority` 联合类型：high/medium/low\n- `Todo` 结构：\n  id, title, completed, priority, createdAt\n- 价值：业务行为先被类型边界约束"},
 		{"id":"n_store","type":"text","x":-1500,"y":-840,"width":500,"height":260,"text":"## store.ts（持久层）\n- `TodoStore.load()`：不存在文件 => `[]`\n- `TodoStore.save()`：整表覆盖写入 JSON\n- 默认文件：`./todos.json`\n- 价值：CLI/Service 不直接碰 fs 细节"},
 		{"id":"n_service","type":"text","x":-940,"y":-840,"width":500,"height":320,"text":"## service.ts（业务层核心）\n- add/list/complete/remove/search\n- list 支持 filter + sort(priority)\n- complete/remove 对不存在 id 抛错\n- search 大小写不敏感\n- 价值：把“规则”从 CLI 分离出来"},

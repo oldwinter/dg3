@@ -7,7 +7,7 @@ aliases:
 title: ∑ linux常用命令行
 created: 2022-06-09
 modified: 2026-03-14
-published: 2026-03-14T19:58:37.992+08:00
+published: 2026-05-16T01:30:27.796+08:00
 ---
 
 这一页收拢本库里跟 CLI、命令行工具、shell、终端工作流相关的笔记。
@@ -31,6 +31,14 @@ published: 2026-03-14T19:58:37.992+08:00
 - [[cloc]]
 - [[netstat]]
 - [[ssh]]
+
+### 网络查看与调试
+
+- [[Linux 网络调试与查看命令速查 - 从 ip、ss 到 tcpdump|Linux 网络调试与查看命令速查]] - Linux 网络排障命令入口，覆盖 `ip`、`ss`、DNS、防火墙、conntrack、tcpdump 与容器/K8s 场景
+- [[网络故障排-从ip到tcpdump]] - 旧的分层排障入门卡片
+- [[linux命令行测速 - speedtest]] - 公网测速命令
+- [[netstat]] - 传统网络连接查看命令；新系统优先用 `ss`
+- [[ssh]] - 远程登录、端口转发与隧道基础
 
 ### 环境与效率工具
 
@@ -123,7 +131,7 @@ published: 2026-03-14T19:58:37.992+08:00
 - [[Warp App|Warp]]
 - [[ghostty]]
 - [[Xshell]]
-- [[tabby terminal]]
+- tabby terminal
 - [[安卓使用terminal并使用git和github - termux]]
 - [[powershell]]
 - [[powershell 常用命令]]

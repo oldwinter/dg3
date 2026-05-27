@@ -1,10 +1,10 @@
 ---
-date created: 2022-06-09
-date modified: 2023-03-14
-title: Text expand
 publish: true
-rating: 1
-分类: "[[obsidian插件 - fileclass]]"
+permalink: /Cards/Text expand.md
+title: Text expand
+created: 2022-06-09
+modified: 2023-03-14
+published: 2026-05-16T01:30:26.741+08:00
 ---
 
 ## 这个插件对我真的有用吗？

@@ -1,7 +1,9 @@
 ---
-date created: 2025-05-06
-date modified: 2025-05-06
 publish: true
+permalink: /Cards/cherry studio 翻译提示词.md
+created: 2025-05-06
+modified: 2025-05-06
+published: 2026-05-16T01:30:26.864+08:00
 ---
 
 x: [[bob 翻译提示词]]

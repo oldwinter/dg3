@@ -52,8 +52,8 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"cf3af510f63a7810","type":"file","file":"Calendar/Daily notes/2026/公司 117集群的 kargo.md","x":-21,"y":-669,"width":781,"height":280},
-		{"id":"3e07152e8d6d550b","type":"file","file":"Calendar/Daily notes/2025/公司 117集群的argocd.md","x":826,"y":-669,"width":587,"height":280},
+		{"id":"cf3af510f63a7810","type":"file","file":"Spaces/Private/secrets重要/公司 117集群的 kargo.md","x":-21,"y":-669,"width":781,"height":280},
+		{"id":"3e07152e8d6d550b","type":"file","file":"Spaces/Private/secrets重要/公司 117集群的argocd.md","x":826,"y":-669,"width":587,"height":280},
 		{
 			"id":"eb15cbfaee11310a",
 			"type":"text",

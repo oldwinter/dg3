@@ -1,12 +1,15 @@
 ---
 publish: true
 permalink: /Spaces/3-Resource/软件梳理/macos软件/macos m3 重装list.md
+title: macos m3 重装list
 created: 2024-07-11
 modified: 2025-07-13
-published: 2025-10-12T18:06:04.317+08:00
+published: 2026-05-24T14:30:49.926+08:00
 ---
 
 [[macos m4 新装 list]]
+
+相关复盘：[[macOS M3 重装执行复盘]]
 
 其实现在有非常多都支持 brew cask 安装，后面记得尝试。
 
@@ -15,7 +18,7 @@ published: 2025-10-12T18:06:04.317+08:00
 ## 前置模块
 
 - [[Homebrew]]
-- [[Xcode Command Line Tools]]
+- Xcode Command Line Tools（通过 `xcode-select --install` 安装）
 
 ## 个人必装
 
@@ -47,8 +50,8 @@ published: 2025-10-12T18:06:04.317+08:00
   - [[Barbee]]
 - [[ChatGPT 桌面端]] ✅ 2024-07-23
 - [[Snipaste]] ✅ 2025-06-25
-  - [[shottr]] 免费
-  - [[PixPin]] ✅ 2024-07-23
+  - shottr 免费
+  - PixPin ✅ 2024-07-23
   - [[CleanShot X]] ✅ 2024-07-23
 - [[KeyboardHolder]]
   - [[Input source pro]] ✅ 2024-07-23
@@ -74,12 +77,12 @@ published: 2025-10-12T18:06:04.317+08:00
 - [[Presentify]] ✅ 2025-06-25
 - [[QLmarkdown]] ✅ 2024-07-23
 - [[QuickRecorder]]
-- [[UTM]] ✅ 2024-07-23
+- UTM ✅ 2024-07-23
   - [[VMware]] ✅ 2024-07-23
   - [[Parallels Desktop]]
 - [[Steam]] ✅ 2024-07-23
   - 只有 intel 架构版本，不用了。 ✅ 2024-07-23
-- [[Amnesia macos软件]] ✅ 2025-06-25
+- Amnesia macos软件（评价 3；icon: [icon-cc-image-Amnesia\_macos软件.png](https://pub-pic.oldwinter.top/2026/05/f562a10bfa56e55fae77c744c436644a.png)；brew: `brew install --cask amnesia`） ✅ 2025-06-25
 
 ## 还在考查作用
 
@@ -136,7 +139,7 @@ keyboardholder		tencent-meeting
   - [[QLmarkdown]]
   - [[pandoc]]
 - [[z命令]]
-- [[tldr]]
+- tldr
 - [[fzf]]
 
 ## 开发环境

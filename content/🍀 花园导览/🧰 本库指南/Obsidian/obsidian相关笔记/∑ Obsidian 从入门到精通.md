@@ -1,12 +1,10 @@
 ---
-tags:
-- todo
-date created: 2024-07-29
-date modified: 2025-07-05
 publish: true
-分类:
-- '[[AI生成 - fileclass]]'
-- '[[MOC内容地图 - fileclass]]'
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/∑ Obsidian 从入门到精通.md
+title: ∑ Obsidian 从入门到精通
+created: 2024-07-29
+modified: 2025-07-05
+published: 2026-05-16T01:35:26.675+08:00
 ---
 
 # Obsidian 从入门到精通
@@ -84,7 +82,7 @@ publish: true
 
 ## 结论：构建你的数字花园
 
-从入门到精通，Obsidian 最终将成为您的 [[个人知识笔记系统]]，一个不断生长的 [[打造个人数字花园的工具及方法论 1|数字花园]]。
+从入门到精通，Obsidian 最终将成为您的 [[个人知识笔记系统]]，一个不断生长的 数字花园。
 
 如 [[如果要我安利obsidian给别人，我会怎么做]] 中所述，Obsidian 的真正魅力在于其**本地化、持久性和可控性**。它不仅仅是一个工具，更是一种思维方式的延伸，一个可以陪伴您一生的知识伙伴。
 

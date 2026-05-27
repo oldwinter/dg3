@@ -1,17 +1,17 @@
 {
 	"nodes":[
-		{"id":"bfdf514b0017a5d6","x":-258,"y":-276,"width":657,"height":393,"type":"group","label":"传统office三件套 vs AI时代三件套 - 孤立视角"},
-		{"id":"af3b3cfaade794a1","x":421,"y":-282,"width":400,"height":497,"type":"group","label":"obsidian视角 - 双向链接"},
-		{"id":"e6360c6fac93e107","x":-238,"y":-256,"width":250,"height":60,"type":"text","text":"## docx"},
-		{"id":"1a2144252b6554bd","x":-238,"y":-107,"width":250,"height":60,"type":"text","text":"## excel"},
-		{"id":"e4c46569d5ba745c","x":-238,"y":37,"width":250,"height":60,"type":"text","text":"## ppt"},
-		{"id":"edfe3bc62328d9ac","x":129,"y":37,"width":250,"height":60,"type":"text","text":"## html"},
-		{"id":"9613c3ba729b02a0","x":129,"y":-107,"width":250,"height":60,"type":"text","text":"## csv"},
-		{"id":"3048e91637cd98bc","x":129,"y":-256,"width":250,"height":60,"type":"text","text":"## md"},
-		{"id":"9c589e72b088ff98","x":493,"y":-256,"width":250,"height":60,"type":"text","text":"## md"},
-		{"id":"51338f73d64f402c","x":493,"y":-107,"width":250,"height":60,"type":"text","text":"## base"},
-		{"id":"000f98f929d2704a","x":493,"y":37,"width":250,"height":60,"type":"text","text":"## canvas"},
-		{"id":"99b5c6b97b669495","x":493,"y":134,"width":250,"height":60,"type":"text","text":"## other file"}
+		{"id":"bfdf514b0017a5d6","type":"group","x":-258,"y":-276,"width":657,"height":393,"label":"传统office三件套 vs AI时代三件套 - 孤立视角"},
+		{"id":"af3b3cfaade794a1","type":"group","x":421,"y":-282,"width":400,"height":549,"label":"obsidian视角 - 双向链接"},
+		{"id":"e6360c6fac93e107","type":"text","text":"## docx","x":-238,"y":-256,"width":250,"height":60},
+		{"id":"1a2144252b6554bd","type":"text","text":"## excel","x":-238,"y":-107,"width":250,"height":60},
+		{"id":"e4c46569d5ba745c","type":"text","text":"## ppt","x":-238,"y":37,"width":250,"height":60},
+		{"id":"edfe3bc62328d9ac","type":"text","text":"## html","x":129,"y":37,"width":250,"height":60},
+		{"id":"9613c3ba729b02a0","type":"text","text":"## csv/jsonl","x":129,"y":-107,"width":250,"height":60},
+		{"id":"3048e91637cd98bc","type":"text","text":"## md","x":129,"y":-256,"width":250,"height":60},
+		{"id":"9c589e72b088ff98","type":"text","text":"## md","x":493,"y":-256,"width":250,"height":60},
+		{"id":"51338f73d64f402c","type":"text","text":"## base = 动态 csv","x":493,"y":-107,"width":250,"height":60},
+		{"id":"000f98f929d2704a","type":"text","text":"## canvas = 中间态 html","x":493,"y":37,"width":302,"height":60},
+		{"id":"99b5c6b97b669495","type":"text","text":"## other file","x":493,"y":179,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"8bdba1c3a112c2e1","fromNode":"e4c46569d5ba745c","fromSide":"right","toNode":"edfe3bc62328d9ac","toSide":"left"},

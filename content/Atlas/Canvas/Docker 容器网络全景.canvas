@@ -1,0 +1,321 @@
+{
+  "nodes": [
+    {
+      "id": "d0c0e0a0b0f01234",
+      "type": "group",
+      "x": -820,
+      "y": -560,
+      "width": 1720,
+      "height": 1160,
+      "label": "Docker 容器网络全景：单机容器网络到 Kubernetes 对照",
+      "color": "5"
+    },
+    {
+      "id": "a1b2c3d4e5f60123",
+      "type": "file",
+      "x": -220,
+      "y": -510,
+      "width": 470,
+      "height": 230,
+      "file": "Spaces/2-Area/云服务和部署/Docker 容器网络全景 - 从 network namespace 到 bridge、端口映射、Compose 与 Kubernetes.md"
+    },
+    {
+      "id": "b1c2d3e4f5a61234",
+      "type": "text",
+      "x": -760,
+      "y": -470,
+      "width": 430,
+      "height": 210,
+      "color": "4",
+      "text": "## 1. 容器网络身份\n\nDocker 先给容器一个 network namespace。\n\n容器只看到自己的 eth0、IP、路由、DNS 和网关。\n\n背后通常是 veth 接到宿主机 bridge。"
+    },
+    {
+      "id": "c1d2e3f4a5b62345",
+      "type": "text",
+      "x": -760,
+      "y": -200,
+      "width": 430,
+      "height": 250,
+      "color": "6",
+      "text": "## 2. bridge / NAT\n\n默认 bridge 或 user-defined bridge 负责单机容器互联。\n\n容器出站通常经 MASQUERADE / SNAT，外部看到宿主机 IP。\n\n自定义 bridge 比默认 bridge 更适合项目隔离和 DNS。"
+    },
+    {
+      "id": "d1e2f3a4b5c63456",
+      "type": "text",
+      "x": -760,
+      "y": 120,
+      "width": 430,
+      "height": 230,
+      "color": "3",
+      "text": "## 3. 端口发布\n\n`EXPOSE` 只是镜像元数据。\n\n`-p 8080:80` 才把 HostIP:8080 转到 ContainerIP:80。\n\n应用还必须监听 0.0.0.0，而不是只监听 127.0.0.1。"
+    },
+    {
+      "id": "e1f2a3b4c5d64567",
+      "type": "text",
+      "x": -220,
+      "y": -210,
+      "width": 470,
+      "height": 250,
+      "color": "5",
+      "text": "## 4. DNS / Compose\n\nUser-defined network 里可以按容器名 / alias 解析。\n\nCompose 默认创建项目网络，service name 是稳定入口。\n\n容器间访问用 service name + container port，不用宿主机 published port。"
+    },
+    {
+      "id": "f1a2b3c4d5e65678",
+      "type": "text",
+      "x": -220,
+      "y": 120,
+      "width": 470,
+      "height": 250,
+      "color": "2",
+      "text": "## 5. 网络驱动选择\n\nbridge：单机默认。\nhost：共享宿主网络。\nnone：只有 loopback。\noverlay：Swarm / 多 Docker host。\nmacvlan / ipvlan：接入物理网络。"
+    },
+    {
+      "id": "0a2b3c4d5e6f6789",
+      "type": "text",
+      "x": 320,
+      "y": -470,
+      "width": 480,
+      "height": 250,
+      "color": "1",
+      "text": "## 6. 防火墙 / 数据面\n\nDocker 会写 iptables / nftables 规则。\n\n端口发布、bridge 隔离、NAT 出站都依赖这些规则。\n\nUFW / firewalld 看到的结果可能和直觉不同，排障要看 Docker 自己的链。"
+    },
+    {
+      "id": "1a2b3c4d5e6f7890",
+      "type": "text",
+      "x": 320,
+      "y": -130,
+      "width": 480,
+      "height": 270,
+      "color": "4",
+      "text": "## 7. 和 Kubernetes 接上\n\nDocker 解释单机容器如何接入 Linux 网络。\n\nKubernetes 在此之上增加 Pod、CNI、Service、EndpointSlice、kube-proxy/eBPF、Ingress/Gateway 和 NetworkPolicy。\n\n`-p` 不等于 Service；host network 不等于生产入口。"
+    },
+    {
+      "id": "2a3b4c5d6e7f8901",
+      "type": "text",
+      "x": 320,
+      "y": 220,
+      "width": 480,
+      "height": 240,
+      "color": "3",
+      "text": "## 8. 排障路径\n\n容器内：ip addr / ip route / resolv.conf / getent hosts。\n\nDocker 层：network inspect / ps ports。\n\n宿主机：ss / iptables-save / nft / conntrack。\n\n先分清：出站、入站、容器间通信。"
+    },
+    {
+      "id": "3a4b5c6d7e8f9012",
+      "type": "file",
+      "x": -760,
+      "y": 410,
+      "width": 430,
+      "height": 180,
+      "file": "Cards/docker容器网络.md"
+    },
+    {
+      "id": "4a5b6c7d8e9f0123",
+      "type": "file",
+      "x": -220,
+      "y": 430,
+      "width": 470,
+      "height": 170,
+      "file": "Atlas/MOCs/∑ Docker Containerization.md"
+    },
+    {
+      "id": "5a6b7c8d9e0f1234",
+      "type": "file",
+      "x": 320,
+      "y": 500,
+      "width": 480,
+      "height": 180,
+      "file": "Spaces/2-Area/云服务和部署/Kubernetes 网络全景 - 从 Pod 到 Service、Ingress、Gateway 与 NetworkPolicy.md"
+    },
+    {
+      "id": "6a7b8c9d0e1f2345",
+      "type": "file",
+      "x": 880,
+      "y": -480,
+      "width": 420,
+      "height": 170,
+      "file": "Spaces/3-Resource/软件梳理/linux常用命令/Docker.md"
+    },
+    {
+      "id": "7a8b9c0d1e2f3456",
+      "type": "file",
+      "x": 880,
+      "y": -250,
+      "width": 420,
+      "height": 170,
+      "file": "Spaces/3-Resource/软件梳理/linux常用命令/docker compose.md"
+    },
+    {
+      "id": "8a9b0c1d2e3f4567",
+      "type": "file",
+      "x": 880,
+      "y": -20,
+      "width": 420,
+      "height": 170,
+      "file": "Spaces/2-Area/云服务和部署/cri容器运行时-containerd.md"
+    },
+    {
+      "id": "9a0b1c2d3e4f5678",
+      "type": "file",
+      "x": 880,
+      "y": 210,
+      "width": 420,
+      "height": 170,
+      "file": "Cards/dockerd、containerd、runc和podman的关系.md"
+    },
+    {
+      "id": "0b1c2d3e4f5a6789",
+      "type": "file",
+      "x": 880,
+      "y": 440,
+      "width": 420,
+      "height": 170,
+      "file": "Spaces/2-Area/云服务和部署/∑ 云计算与云原生.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "aa11bb22cc33dd44",
+      "fromNode": "b1c2d3e4f5a61234",
+      "fromSide": "bottom",
+      "toNode": "c1d2e3f4a5b62345",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "veth 接入 bridge"
+    },
+    {
+      "id": "bb22cc33dd44ee55",
+      "fromNode": "c1d2e3f4a5b62345",
+      "fromSide": "bottom",
+      "toNode": "d1e2f3a4b5c63456",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "外部入口靠端口发布"
+    },
+    {
+      "id": "cc33dd44ee55ff66",
+      "fromNode": "d1e2f3a4b5c63456",
+      "fromSide": "right",
+      "toNode": "e1f2a3b4c5d64567",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "内部互访用名字"
+    },
+    {
+      "id": "dd44ee55ff660011",
+      "fromNode": "e1f2a3b4c5d64567",
+      "fromSide": "bottom",
+      "toNode": "f1a2b3c4d5e65678",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "按需求选 driver"
+    },
+    {
+      "id": "ee55ff6600112233",
+      "fromNode": "f1a2b3c4d5e65678",
+      "fromSide": "right",
+      "toNode": "0a2b3c4d5e6f6789",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "落到宿主机规则"
+    },
+    {
+      "id": "ff66001122334455",
+      "fromNode": "0a2b3c4d5e6f6789",
+      "fromSide": "bottom",
+      "toNode": "1a2b3c4d5e6f7890",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "上升到 K8s"
+    },
+    {
+      "id": "0011223344556677",
+      "fromNode": "1a2b3c4d5e6f7890",
+      "fromSide": "bottom",
+      "toNode": "2a3b4c5d6e7f8901",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "出问题按层排"
+    },
+    {
+      "id": "1122334455667788",
+      "fromNode": "a1b2c3d4e5f60123",
+      "fromSide": "left",
+      "toNode": "e1f2a3b4c5d64567",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "主解释"
+    },
+    {
+      "id": "2233445566778899",
+      "fromNode": "a1b2c3d4e5f60123",
+      "fromSide": "bottom",
+      "toNode": "4a5b6c7d8e9f0123",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "挂回 Docker MOC"
+    },
+    {
+      "id": "33445566778899aa",
+      "fromNode": "3a4b5c6d7e8f9012",
+      "fromSide": "right",
+      "toNode": "a1b2c3d4e5f60123",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "旧卡片扩展"
+    },
+    {
+      "id": "445566778899aabb",
+      "fromNode": "1a2b3c4d5e6f7890",
+      "fromSide": "bottom",
+      "toNode": "5a6b7c8d9e0f1234",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "K8s 对照"
+    },
+    {
+      "id": "5566778899aabbcc",
+      "fromNode": "6a7b8c9d0e1f2345",
+      "fromSide": "left",
+      "toNode": "a1b2c3d4e5f60123",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "Docker 入口"
+    },
+    {
+      "id": "66778899aabbccdd",
+      "fromNode": "7a8b9c0d1e2f3456",
+      "fromSide": "left",
+      "toNode": "e1f2a3b4c5d64567",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "Compose 网络"
+    },
+    {
+      "id": "778899aabbccddee",
+      "fromNode": "8a9b0c1d2e3f4567",
+      "fromSide": "left",
+      "toNode": "1a2b3c4d5e6f7890",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "运行时边界"
+    },
+    {
+      "id": "8899aabbccddeeff",
+      "fromNode": "9a0b1c2d3e4f5678",
+      "fromSide": "left",
+      "toNode": "1a2b3c4d5e6f7890",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "dockerd/containerd/runc"
+    },
+    {
+      "id": "99aabbccddeeff00",
+      "fromNode": "4a5b6c7d8e9f0123",
+      "fromSide": "right",
+      "toNode": "0b1c2d3e4f5a6789",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "云原生总图"
+    }
+  ]
+}

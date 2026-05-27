@@ -13,7 +13,7 @@ views:
     name: macos软件画廊视图
     filters:
       and:
-        - 分类.containsAny(link("macOS软件 - fileclass"))
+        - topics.containsAny(link("macOS软件 - fileclass"))
     groupBy:
       property: 评价
       direction: DESC
@@ -32,7 +32,7 @@ views:
       - property: file.name
         direction: ASC
     columnSize:
-      note.分类: 97
+      note.topics: 97
     image: icon
     imageAspectRatio: 1
     imageFit: contain
@@ -41,7 +41,7 @@ views:
     name: macos软件画廊视图-3d果冻
     filters:
       and:
-        - 分类.containsAny(link("macOS软件 - fileclass"))
+        - topics.containsAny(link("macOS软件 - fileclass"))
         - '!note["icon-3d"].isEmpty()'
     order: []
     sort:
@@ -56,7 +56,7 @@ views:
       - property: file.name
         direction: ASC
     columnSize:
-      note.分类: 97
+      note.topics: 97
     image: note.icon-3d
     imageAspectRatio: 1
     imageFit: contain
@@ -65,7 +65,7 @@ views:
     name: macos软件
     filters:
       and:
-        - 分类.containsAny(link("macOS软件 - fileclass"))
+        - topics.containsAny(link("macOS软件 - fileclass"))
     order:
       - file.name
       - formula.icon行内显示
@@ -100,7 +100,7 @@ views:
     name: windows软件画廊视图
     filters:
       and:
-        - 分类.containsAny(link("windows软件 - fileclass"))
+        - topics.containsAny(link("windows软件 - fileclass"))
         - "!icon.isEmpty()"
     groupBy:
       property: 评价
@@ -123,7 +123,7 @@ views:
     name: window软件
     filters:
       and:
-        - 分类.containsAny(link("windows软件 - fileclass"))
+        - topics.containsAny(link("windows软件 - fileclass"))
     order:
       - file.name
       - 评价
@@ -149,7 +149,7 @@ views:
     name: macos + win软件画廊视图
     filters:
       and:
-        - 分类.containsAll(link("macOS软件 - fileclass"), link("windows软件 - fileclass"))
+        - topics.containsAll(link("macOS软件 - fileclass"), link("windows软件 - fileclass"))
         - 跨平台技术栈.containsAny(link("Electron"))
     order:
       - file.name
@@ -163,31 +163,31 @@ views:
     name: macos + win软件
     filters:
       and:
-        - 分类.containsAll(link("windows软件 - fileclass"), link("macOS软件 - fileclass"))
+        - topics.containsAll(link("windows软件 - fileclass"), link("macOS软件 - fileclass"))
         - 跨平台技术栈 == link("Electron")
     order:
       - file.name
-      - 分类
+      - topics
       - 跨平台技术栈
     columnSize:
       file.name: 129
-      note.分类: 242
+      note.topics: 242
   - type: cards
     name: 安卓软件画廊视图
     filters:
       and:
-        - 分类.containsAny(link("安卓软件 - fileclass"))
+        - topics.containsAny(link("安卓软件 - fileclass"))
     image: icon
   - type: table
     name: 安卓软件
     filters:
       and:
-        - 分类.containsAny(link("安卓软件 - fileclass"))
+        - topics.containsAny(link("安卓软件 - fileclass"))
     order:
       - file.name
       - 评价
       - file.ctime
-      - 分类
+      - topics
     sort:
       - property: 评价
         direction: DESC
@@ -200,7 +200,7 @@ views:
     name: 命令行工具
     filters:
       and:
-        - 分类.containsAny(link("linux命令 - fileclass"), link("windows命令行 - fileclass"))
+        - topics.containsAny(link("linux 命令行 cli - fileclass"), link("windows命令行 - fileclass"))
     order:
       - file.name
       - aliases

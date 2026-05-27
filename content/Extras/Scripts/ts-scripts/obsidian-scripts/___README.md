@@ -3,7 +3,7 @@ publish: true
 permalink: /Extras/Scripts/ts-scripts/obsidian-scripts/___README.md
 created: 2025-08-21
 modified: 2026-03-30
-published: 2026-03-30T01:31:09.390+08:00
+published: 2026-05-16T01:35:28.209+08:00
 ---
 
 # Obsidian 脚本目录

@@ -1,8 +1,10 @@
 ---
-date created: 2022-07-27
-date modified: 2023-03-14
-title: obsidian publish 发布 主题定制
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian publish 发布 主题定制.md
+title: obsidian publish 发布 主题定制
+created: 2022-07-27
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.712+08:00
 ---
 
 x:: [[minimal主题的publish.js参考]]

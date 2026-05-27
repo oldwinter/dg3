@@ -34,7 +34,7 @@
 			"label":"Langchain"
 		},
 		{
-			"file":"Atlas/Spaces/ingtube/canvas/映兔AIGC-语义化检索博主技术方案简易流程图.canvas",
+			"file":"Spaces/4-Archive/ingtube/交接/canvas/已review/映兔AIGC-语义化检索博主技术方案简易流程图.canvas",
 			"id":"85d131e1dc77896a",
 			"styleAttributes":{},
 			"type":"file",
@@ -44,10 +44,10 @@
 			"height":400
 		},
 		{
-			"file":"Atlas/Cards/openai embedding接口.md",
+			"text":"openai embedding接口",
 			"id":"45211108e01404b3",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":-840,
 			"y":-250,
 			"width":480,
@@ -84,10 +84,10 @@
 			"height":244
 		},
 		{
-			"file":"Extras/attachments/attachments/Pasted image 20250408151019.png",
+			"text":"缺失附件\nPasted image 20250408151019.png",
 			"id":"2f12dc79e8cbb5e6",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":-1229,
 			"y":-3206,
 			"width":1216,
@@ -104,10 +104,10 @@
 			"height":260
 		},
 		{
-			"file":"Extras/Media/Pasted image 20230811190555.png",
+			"text":"缺失附件\nPasted image 20230811190555.png",
 			"id":"0e617eb843c25f75",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":-2440,
 			"y":-2470,
 			"width":1211,
@@ -124,10 +124,10 @@
 			"height":260
 		},
 		{
-			"file":"Extras/Media/Pasted image 20230811190611.png",
+			"text":"缺失附件\nPasted image 20230811190611.png",
 			"id":"e3c006f7aeb5c387",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":-2440,
 			"y":-3368,
 			"width":1211,
@@ -164,10 +164,10 @@
 			"height":60
 		},
 		{
-			"file":"Atlas/Cards/openai embedding接口.md",
+			"text":"openai embedding接口",
 			"id":"86e5f240bbdafa64",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":-475,
 			"y":0,
 			"width":480,

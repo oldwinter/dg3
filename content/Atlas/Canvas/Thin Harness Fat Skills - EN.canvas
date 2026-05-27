@@ -1,0 +1,315 @@
+{
+  "nodes": [
+    {
+      "id": "a100000000000001",
+      "type": "group",
+      "x": -120,
+      "y": -160,
+      "width": 2860,
+      "height": 1500,
+      "label": "Thin Harness, Fat Skills"
+    },
+    {
+      "id": "a100000000000002",
+      "type": "text",
+      "x": 20,
+      "y": -90,
+      "width": 720,
+      "height": 220,
+      "color": "6",
+      "text": "# Thin Harness, Fat Skills\n\nCore thesis: 100x agent leverage comes less from a smarter model than from architecture: fat reusable skills, a thin harness, and deterministic application tools."
+    },
+    {
+      "id": "a100000000000003",
+      "type": "file",
+      "file": "Sources/Clippings/Thin Harness, Fat Skills.md",
+      "x": 820,
+      "y": -80,
+      "width": 380,
+      "height": 180
+    },
+    {
+      "id": "a100000000000004",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/Thin Harness Fat Skills - 源摘要.md",
+      "x": 1260,
+      "y": -80,
+      "width": 420,
+      "height": 180
+    },
+    {
+      "id": "a100000000000005",
+      "type": "group",
+      "x": 0,
+      "y": 180,
+      "width": 1800,
+      "height": 660,
+      "label": "Five concepts"
+    },
+    {
+      "id": "a100000000000006",
+      "type": "text",
+      "x": 40,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "5",
+      "text": "## 1. Skill files\n\nReusable Markdown procedures that teach the model how to do work.\n\nThe user supplies the task. The skill supplies the process.\n\nTreat a skill like a parameterized method call: same procedure, different target, question, and dataset."
+    },
+    {
+      "id": "a100000000000007",
+      "type": "text",
+      "x": 390,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "2",
+      "text": "## 2. The harness\n\nThe program wrapping the LLM: run the loop, read and write files, manage context, and enforce safety.\n\nThin means the harness avoids owning domain judgment or broad tool clutter."
+    },
+    {
+      "id": "a100000000000008",
+      "type": "text",
+      "x": 740,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "4",
+      "text": "## 3. Resolvers\n\nContext routing: when task type X appears, load document or skill Y first.\n\nDescriptions, AGENTS pointers, project docs, and skill metadata act as lazy loaders that protect attention."
+    },
+    {
+      "id": "a100000000000009",
+      "type": "text",
+      "x": 1090,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "3",
+      "text": "## 4. Latent vs deterministic\n\nLatent space is for judgment: reading, interpretation, synthesis, and pattern recognition.\n\nDeterministic tools are for trust: SQL, arithmetic, assignment, compiled code, and file operations."
+    },
+    {
+      "id": "a10000000000000a",
+      "type": "text",
+      "x": 1440,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "6",
+      "text": "## 5. Diarization\n\nRead everything about a subject and distill a structured profile.\n\nIt turns scattered documents into analyst-grade judgment, not just retrieval hits or keyword matches."
+    },
+    {
+      "id": "a10000000000000b",
+      "type": "text",
+      "x": 40,
+      "y": 560,
+      "width": 1720,
+      "height": 180,
+      "color": "1",
+      "text": "## Anti-pattern to avoid\n\nA fat harness with thin skills pushes the wrong material into the middle: huge tool schemas, slow generic MCP round trips, REST endpoints as tool spam, and a bloated context window. The result is more tokens, more latency, and more ways to fail."
+    },
+    {
+      "id": "a10000000000000c",
+      "type": "group",
+      "x": 1900,
+      "y": 180,
+      "width": 780,
+      "height": 940,
+      "label": "Three-layer architecture"
+    },
+    {
+      "id": "a10000000000000d",
+      "type": "text",
+      "x": 2030,
+      "y": 260,
+      "width": 500,
+      "height": 180,
+      "color": "5",
+      "text": "## Top: Fat skills\n\nMarkdown procedures encode judgment, process, and domain knowledge.\n\nThis is where most value compounds."
+    },
+    {
+      "id": "a10000000000000e",
+      "type": "text",
+      "x": 2030,
+      "y": 500,
+      "width": 500,
+      "height": 180,
+      "color": "2",
+      "text": "## Middle: Thin CLI harness\n\nSmall loop: JSON in, text out, read-only by default.\n\nIt orchestrates context and safety without absorbing business logic."
+    },
+    {
+      "id": "a10000000000000f",
+      "type": "text",
+      "x": 2030,
+      "y": 740,
+      "width": 500,
+      "height": 180,
+      "color": "4",
+      "text": "## Bottom: Application tools\n\nQueryDB, ReadDoc, Search, Timeline, browser or domain CLIs.\n\nDeterministic foundation: fast, narrow, testable."
+    },
+    {
+      "id": "a100000000000010",
+      "type": "text",
+      "x": 1920,
+      "y": 990,
+      "width": 740,
+      "height": 160,
+      "color": "3",
+      "text": "## Directional principle\n\nPush intelligence up into skills. Push execution down into deterministic tooling. Keep the harness thin so model upgrades improve every skill without destabilizing execution."
+    },
+    {
+      "id": "a100000000000011",
+      "type": "group",
+      "x": 0,
+      "y": 880,
+      "width": 1800,
+      "height": 430,
+      "label": "The system that learns"
+    },
+    {
+      "id": "a100000000000012",
+      "type": "text",
+      "x": 40,
+      "y": 960,
+      "width": 360,
+      "height": 180,
+      "color": "2",
+      "text": "## 1. Manual sample\n\nDo the repeatable task manually on 3 to 10 items and inspect the output."
+    },
+    {
+      "id": "a100000000000013",
+      "type": "text",
+      "x": 460,
+      "y": 960,
+      "width": 360,
+      "height": 180,
+      "color": "5",
+      "text": "## 2. Codify as a skill\n\nIf the output works, turn the process into a reusable skill file. If it should run automatically, schedule it."
+    },
+    {
+      "id": "a100000000000014",
+      "type": "text",
+      "x": 880,
+      "y": 960,
+      "width": 360,
+      "height": 180,
+      "color": "6",
+      "text": "## 3. Read feedback\n\nUse surveys, mediocre results, failures, logs, and eval regressions as the next dataset."
+    },
+    {
+      "id": "a100000000000015",
+      "type": "text",
+      "x": 1300,
+      "y": 960,
+      "width": 400,
+      "height": 180,
+      "color": "1",
+      "text": "## 4. Rewrite the skill\n\nExtract new rules and write them back into the skill. The system learns without rewriting core code."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e100000000000001",
+      "fromNode": "a100000000000003",
+      "fromSide": "left",
+      "toNode": "a100000000000002",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "source"
+    },
+    {
+      "id": "e100000000000002",
+      "fromNode": "a100000000000004",
+      "fromSide": "left",
+      "toNode": "a100000000000002",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "summary"
+    },
+    {
+      "id": "e100000000000003",
+      "fromNode": "a100000000000006",
+      "fromSide": "right",
+      "toNode": "a100000000000007",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "runs through"
+    },
+    {
+      "id": "e100000000000004",
+      "fromNode": "a100000000000007",
+      "fromSide": "right",
+      "toNode": "a100000000000008",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "loads context via"
+    },
+    {
+      "id": "e100000000000005",
+      "fromNode": "a100000000000008",
+      "fromSide": "right",
+      "toNode": "a100000000000009",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "routes work across"
+    },
+    {
+      "id": "e100000000000006",
+      "fromNode": "a100000000000009",
+      "fromSide": "right",
+      "toNode": "a10000000000000a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "feeds synthesis"
+    },
+    {
+      "id": "e100000000000007",
+      "fromNode": "a10000000000000d",
+      "fromSide": "bottom",
+      "toNode": "a10000000000000e",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "invoked through"
+    },
+    {
+      "id": "e100000000000008",
+      "fromNode": "a10000000000000e",
+      "fromSide": "bottom",
+      "toNode": "a10000000000000f",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "executes through"
+    },
+    {
+      "id": "e100000000000009",
+      "fromNode": "a100000000000012",
+      "fromSide": "right",
+      "toNode": "a100000000000013",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e10000000000000a",
+      "fromNode": "a100000000000013",
+      "fromSide": "right",
+      "toNode": "a100000000000014",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e10000000000000b",
+      "fromNode": "a100000000000014",
+      "fromSide": "right",
+      "toNode": "a100000000000015",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e10000000000000c",
+      "fromNode": "a100000000000015",
+      "fromSide": "bottom",
+      "toNode": "a100000000000013",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "improves"
+    }
+  ]
+}

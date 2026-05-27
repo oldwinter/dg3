@@ -1,10 +1,10 @@
 ---
-date created: 2022-06-25 00:00:00+00:00
-date modified: 2023-03-14 00:00:00+00:00
-title: 我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新
 publish: true
-分类:
-- '[[文章-已完成 - fileclass]]'
+permalink: /Spaces/Published/已发布文章/我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新.md
+title: 我用 Obsidian 建造了这座开源的数字花园，目前1000+笔记，每日更新
+created: 2022-06-25 00:00:00+00:00
+modified: 2023-03-14 00:00:00+00:00
+published: 2026-05-16T01:30:27.732+08:00
 ---
 
 ## 开门见山

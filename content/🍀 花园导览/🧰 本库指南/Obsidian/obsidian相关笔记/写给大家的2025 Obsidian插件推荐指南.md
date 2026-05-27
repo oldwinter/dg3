@@ -1,9 +1,12 @@
 ---
 publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/写给大家的2025 Obsidian插件推荐指南.md
-created: 2025-04-23T14:10:57.183+08:00
-modified: 2025-08-15T22:00:05.156+08:00
-published: 2025-08-15T22:00:05.156+08:00
+aliases:
+  - 写给大家的2025 Obsidian插件推荐指南
+title: 写给大家的 2025 Obsidian 插件推荐指南
+created: 2025-04-28
+modified: 2026-05-01
+published: 2026-05-16T01:35:26.680+08:00
 ---
 
 之前写过一篇[[2022年7月，obsidian 依然必装的 10 个插件]]
@@ -18,8 +21,8 @@ published: 2025-08-15T22:00:05.156+08:00
 - [[Note to RED]]
 - [[Pane Relief]]
 - [[POWER MODE]]
-- [[Tab Selector]]
-- [[Vertical Tabs]]
+- Tab Selector（评价 4；已并入 Tab Switcher 对比）
+- Vertical Tabs（评价 5，别名 `vertical-tabs`）
 
 本次，也有几个不推荐的插件，那就是全部的 AI相关插件，没错，是全部：
 

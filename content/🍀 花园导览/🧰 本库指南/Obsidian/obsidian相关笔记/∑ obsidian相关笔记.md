@@ -1,10 +1,12 @@
 ---
-date created: 2025-07-09
-date modified: 2025-07-13
 publish: true
-分类:
-- '[[AI生成 - fileclass]]'
-- '[[MOC内容地图 - fileclass]]'
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/∑ obsidian相关笔记.md
+aliases:
+  - Obsidian 相关笔记
+title: ∑ Obsidian 相关笔记
+created: 2025-07-09
+modified: 2026-05-01
+published: 2026-05-16T01:35:26.687+08:00
 ---
 
 # ∑ Obsidian 相关笔记
@@ -19,7 +21,7 @@ publish: true
 
 - [[obsidian入门]]：初学者的起点，了解基本概念。
 - [[obsidian的使用感受]]：深入探讨使用的体验和快感。
-- [[obsidian让我爱不释手的功能和细节]]：是什么让 Obsidian 如此特别。
+- obsidian让我爱不释手的功能和细节：是什么让 Obsidian 如此特别。
 - [[如果要我安利obsidian给别人，我会怎么做]]：如何向他人介绍 Obsidian 的魅力。
 - [[📹放弃roam用obsidian的理由]]：与 Roam Research 的对比，凸显 Obsidian 的优势。
 - [[Obsidian做为大二大脑工具的评分]]：一个直观的评分。
@@ -101,7 +103,7 @@ publish: true
 - [[1012发现的obsidian有用插件分享]]：一些实用插件的介绍。
 - [[写给大家的2025 Obsidian插件推荐指南]]：最新的插件推荐。
 - [[快速过一遍obsidian一些社区插件的功能点]]：快速了解常用插件的核心功能。
-- [[flashcards-obsidian]]：与 Anki 结合，实现间隔重复。
+- [flashcards-obsidian](https://github.com/reuseman/flashcards-obsidian)：与 Anki 结合实现间隔重复的 Obsidian 插件；原 metadata：TypeScript、MIT、976 stars、`reuseman/flashcards-obsidian`。
 
 ### 主题与外观
 
@@ -126,7 +128,7 @@ publish: true
 - [[obsidian开箱即用示例库]]：学习和借鉴他人的优秀实践。
 - [[Obsidian拎包入住开荒仓库]]：一个现成的开荒仓库。
 - [[§ obsidian 从了解到沉醉 - PPT]]：一个分享 Obsidian 的 PPT 大纲。
-- [[我的 Obsidian 大师进阶计划]]：系统化地提升你的 Obsidian 技能。
+- 我的 Obsidian 大师进阶计划：系统化地提升你的 Obsidian 技能。
 - [[∑ Obsidian 从入门到精通]]：一个已经存在的优秀 MOC，可作为参考。
 
 ## 6. 其他

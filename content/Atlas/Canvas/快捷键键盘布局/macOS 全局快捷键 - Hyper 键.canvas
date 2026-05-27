@@ -26,8 +26,16 @@
 		},
 		{"id":"19569723b6a94c18","type":"group","x":-340,"y":137,"width":1665,"height":523,"color":"1","label":"我的macOS全局快捷键布局"},
 		{"id":"19d25876aeee286a","type":"file","file":"Atlas/Bases/App应用软件管理.base","subpath":"#macos软件画廊视图","x":-340,"y":-1108,"width":1665,"height":321},
-		{"id":"e1be7181979c048f","type":"file","file":"Extras/Attachments/Images/Icons/右箭头-cc-image.png","x":1360,"y":318,"width":191,"height":191},
-		{"id":"52d7fd09db286403","type":"file","file":"Spaces/4-Archive/Raycast/全局快捷键将app一键打开或隐藏.md","x":801,"y":-260,"width":502,"height":237},
+		{
+		  "id": "e1be7181979c048f",
+		  "type": "link",
+		  "x": 1360,
+		  "y": 318,
+		  "width": 191,
+		  "height": 191,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/fed88b25a4d8b8bee04c3a7230a77895.png"
+		},
+		{"id":"52d7fd09db286403","type":"file","file":"Spaces/3-Resource/软件梳理/macos软件/全局快捷键将app一键打开或隐藏.md","x":801,"y":-260,"width":502,"height":237},
 		{
 			"id":"9b176c6b1958e0f0",
 			"type":"text",

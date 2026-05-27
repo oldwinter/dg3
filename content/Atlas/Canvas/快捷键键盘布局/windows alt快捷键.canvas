@@ -294,10 +294,10 @@
 		},
 		{
 			"dynamicHeight":true,
-			"file":"Cards/。.md",
+			"text":"。",
 			"id":"b54f13ce05fa2b3d",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":928,
 			"y":185,
 			"width":160,

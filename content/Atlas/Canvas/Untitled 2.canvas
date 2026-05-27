@@ -1,0 +1,73 @@
+{"nodes":[{"id":"f8c2866653755a04","type":"group","x":-80,"y":-120,"width":2740,"height":2410,"label":"10 个手机直播截图界面风格（非官方 UI 复刻，仅做视觉风格草图）","color":"6"},{"id":"114f6727cce0e3c5","type":"text","x":0,"y":-70,"width":2500,"height":70,"text":"# 10 个手机直播截图界面风格\n小红书 / 抖音 / 哔哩哔哩 / YouTube / TikTok / Twitch / Instagram / 快手 / 淘宝直播 / 微信视频号（平铺预览）","color":"6"},{"id":"2ae81e885bcc202f","type":"text","x":0,"y":40,"width":360,"height":52,"text":"## 哔哩哔哩\n`bilibili`","color":"5"},{
+  "id": "e77f44c626d2f267",
+  "type": "link",
+  "x": 0,
+  "y": 108,
+  "width": 360,
+  "height": 780,
+  "url": "https://pub-pic.oldwinter.top/2026/05/48b226b0a743df5cb28ad9cda6193964.png"
+},{"id":"51e7574aade3c61a","type":"text","x":520,"y":40,"width":360,"height":52,"text":"## 抖音\n`douyin`","color":"5"},{
+  "id": "ffb80ae56845260c",
+  "type": "link",
+  "x": 520,
+  "y": 108,
+  "width": 360,
+  "height": 780,
+  "url": "https://pub-pic.oldwinter.top/2026/05/204d8d22fe27e40e53cb7ace710cb68f.png"
+},{"id":"0d59c00a850410f1","type":"text","x":1040,"y":40,"width":360,"height":52,"text":"## Instagram\n`instagram`","color":"5"},{
+  "id": "33ec2b4e3387b7fb",
+  "type": "link",
+  "x": 1040,
+  "y": 108,
+  "width": 360,
+  "height": 780,
+  "url": "https://pub-pic.oldwinter.top/2026/05/eeff765606d71c5ec0a04e90e0c30358.png"
+},{"id":"c929f4a700af9f06","type":"text","x":1560,"y":40,"width":360,"height":52,"text":"## 快手\n`kuaishou`","color":"5"},{
+  "id": "7ec27b8833222953",
+  "type": "link",
+  "x": 1560,
+  "y": 108,
+  "width": 360,
+  "height": 780,
+  "url": "https://pub-pic.oldwinter.top/2026/05/3ce38bfb6908c5e9fa335befd0a2083e.png"
+},{"id":"3dfc91ca58d48781","type":"text","x":2080,"y":40,"width":360,"height":52,"text":"## 淘宝直播\n`taobao-live`","color":"5"},{
+  "id": "e559c716faaad7ed",
+  "type": "link",
+  "x": 2080,
+  "y": 108,
+  "width": 360,
+  "height": 780,
+  "url": "https://pub-pic.oldwinter.top/2026/05/e2e0453b9f7dbf8bb9bcfe90b78b69e3.png"
+},{"id":"0b373d390cb901af","type":"text","x":0,"y":1000,"width":360,"height":52,"text":"## TikTok\n`tiktok`","color":"5"},{
+  "id": "380b418bdbf44ea0",
+  "type": "link",
+  "x": 0,
+  "y": 1068,
+  "width": 360,
+  "height": 780,
+  "url": "https://pub-pic.oldwinter.top/2026/05/6aafa541e9416beebd398ea00d3b21dc.png"
+},{"id":"d917d2802f448b37","type":"text","x":520,"y":1000,"width":360,"height":52,"text":"## Twitch\n`twitch`","color":"5"},{
+  "id": "98abdf24d0d1e12c",
+  "type": "link",
+  "x": 520,
+  "y": 1068,
+  "width": 360,
+  "height": 780,
+  "url": "https://pub-pic.oldwinter.top/2026/05/cffea291c2cc09e80485018b3288dc44.png"
+},{"id":"e747b66098a72a10","type":"text","x":1040,"y":1000,"width":360,"height":52,"text":"## 微信视频号\n`wechat-channels`","color":"5"},{"id":"02c6bb772608a41c","type":"file","x":1040,"y":1068,"width":360,"height":780,"file":"Extras/Attachments/Images/Images4canvas/live-ui-mockups/wechat-channels-live-ui-mockup.png"},{"id":"a78ce2b1cc671c8e","type":"text","x":1560,"y":1000,"width":360,"height":52,"text":"## 小红书\n`xiaohongshu`","color":"5"},{
+  "id": "b68bdbcab36acf54",
+  "type": "link",
+  "x": 1560,
+  "y": 1068,
+  "width": 360,
+  "height": 780,
+  "url": "https://pub-pic.oldwinter.top/2026/05/0798587db460f1c07cc18af81bd42c98.png"
+},{"id":"3956252197aa3d29","type":"text","x":2080,"y":1000,"width":360,"height":52,"text":"## YouTube Live\n`youtube`","color":"5"},{
+  "id": "1119411f37c204bd",
+  "type": "link",
+  "x": 2080,
+  "y": 1068,
+  "width": 360,
+  "height": 780,
+  "url": "https://pub-pic.oldwinter.top/2026/05/647df50764b4b435b68916cca8c9dd37.png"
+}],"edges":[]}

@@ -4,15 +4,13 @@ permalink: /Spaces/3-Resource/软件梳理/安卓软件/Notion.md
 title: Notion
 created: 2022-06-09
 modified: 2025-07-31
-published: 2026-03-28T19:42:17.587+08:00
-tags:
-  - 评论/少数派
+published: 2026-05-24T14:30:49.934+08:00
 ---
 
 ## notion 教程
 
 - 官方文档
-- [[Notion All in One：搭建高能效率系统]] 课程 from[[二一的笔记]]
+- [[Notion All in One：搭建高能效率系统]] 课程 from二一的笔记
 
 ## notion ai
 
@@ -20,7 +18,7 @@ tags:
 
 - 2020 年，笔记软件领域的两个标志性软件 Notion 和 [[Roam Research]]
   - Notion 引入了 block 块的概念，让做笔记以及网站构建如同搭建积木的一样简单方便
-  - 而 [[Roam Research]] 则引入 [[双向链接]] 以及对 [[卢曼]] 的 [[卡片盒笔记法 - Zettelkasten]] 的宣传，引来一波大热。
+  - 而 [[Roam Research]] 则引入 [[双向链接]] 以及对 卢曼 的 [[卡片盒笔记法 - Zettelkasten]] 的宣传，引来一波大热。
 
 ## notion token
 

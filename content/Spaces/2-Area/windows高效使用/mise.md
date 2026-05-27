@@ -4,16 +4,21 @@ permalink: /Spaces/2-Area/windows高效使用/mise.md
 description: dev tools, env vars, task runner
 created: 2025-06-18
 modified: 2025-11-03
-published: 2025-12-30T15:40:12.575+08:00
+published: 2026-05-16T01:35:24.111+08:00
 ---
 
-在macos和linux上，可以替换掉[[goenv|goenv]]、[[rvm]]、[[vfox]]了。windows还是得继续用这些。
+在macos和linux上，可以替换掉goenv、[[rvm]]、[[vfox]]了。windows还是得继续用这些。
 
 https://github.com/jdx/mise
 
 这篇教程写得很好了：
 
 [[Mise：跨语言开发环境的高效配置工具]]
+
+## npm -g install 的包如何不漂移
+
+```
+```
 
 ## linux或macos安装
 
@@ -64,7 +69,7 @@ mise use --global python@3.11
 
 ```
 
-如果新建terminal，不识别python命令，则可能需要配置$PROFILE
+如果新建terminal，不识别python命令，则可能需要配置\$PROFILE
 
 ```shell
 Invoke-Expression (& { (mise activate pwsh | Out-String) })

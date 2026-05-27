@@ -3,7 +3,7 @@ publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/Obsidian canvas 使用 cursor生成.md
 created: 2025-06-08
 modified: 2025-06-27
-published: 2025-09-01T14:49:30.483+08:00
+published: 2026-05-16T01:30:28.702+08:00
 ---
 
 > [!important] 显著优势
@@ -29,7 +29,7 @@ published: 2025-09-01T14:49:30.483+08:00
 
 ## 示例二
 
-基于仓库内已存在的文档，让cursor分析汇总，并生成canvas，这样做的好处是，会引用仓库已有的文件，而不是单纯生成卡片。方便我们做二次修改和加工。详见[[cursor 引用Obsidian 知识库文件生成 canvas的提示词]]。
+基于仓库内已存在的文档，让cursor分析汇总，并生成canvas，这样做的好处是，会引用仓库已有的文件，而不是单纯生成卡片。方便我们做二次修改和加工。详见cursor 引用Obsidian 知识库文件生成 canvas的提示词。
 
 ## 经验
 
@@ -41,7 +41,7 @@ o3模型生成的会比较简单，可能是提示词给的太简短。
 
 ## cursorrules
 
-2025-06-27更新：[[my-obsidian-rules.mdc]]，全文：
+2025-06-27更新：my-obsidian-rules.mdc，全文：
 
 ```mdc
 # Obsidian 数字花园 Cursor Rule
@@ -53,7 +53,7 @@ o3模型生成的会比较简单，可能是提示词给的太简短。
 
 ## 2. 目录结构约定
 - `🍀 花园导览/`：知识库导航入口、MOC、结构说明、方法论、发布指南等。
-- `📥 Inbox/`：收集箱，临时笔记、灵感、待整理内容。
+- `Calendar/Daily notes/`：手写闪念、临时草稿和当天记录的默认入口。
 - `Atlas/`：核心知识区，包含 Canvas（可视化）、Dataviews（动态索引）、Draws（绘图）等。详见 @Atlas.md。
 - `Cards/`：卡片笔记区，存放原子化的永久笔记。
 - `Calendar/`：日历区，包含每日笔记、周报、月报、年报等。
@@ -77,7 +77,7 @@ o3模型生成的会比较简单，可能是提示词给的太简短。
 
 ## 5. 工作流与方法论
 - 参考 ACCESS、PARA、CODE 等 PKM 流程。
-- 日常流程：收集（Inbox/Sources/Clippings）→ 处理（整理/转化为永久笔记）→ 链接（建立关联）→ 索引（MOC/Dataview）→ 回顾（定期复习/优化）。
+- 日常流程：收集（Daily notes / Sources / Clippings）→ 处理（整理/转化为永久笔记）→ 链接（建立关联）→ 索引（MOC/Base/Canvas）→ 回顾（定期复习/优化）。
 - 强调链接优先，鼓励笔记间多建立双链，形成知识网络。双链的语法是`[[]]`。所以当有必要生成多个md文件的时候，请务必使用双链语法，将多个文件串联。倾向于尽可能地使用[[]]语法，引用已经存在的文档（md、canvas、base、excalidraw等均可），当然不要瞎编不存在的文档。
 - 详见 @∑ 本库 ACCESS 工作流汇总.md 。
 

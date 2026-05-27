@@ -4,7 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/ob
 title: obsidian开箱即用示例库
 created: 2022-06-29
 modified: 2023-03-14
-published: 2025-08-15T22:00:05.150+08:00
+published: 2026-05-16T01:30:28.703+08:00
 ---
 
 > [!INFO] 提示\
@@ -39,5 +39,5 @@ published: 2025-08-15T22:00:05.150+08:00
     - 介绍的长文：[一种实用新型 Obsidian 实践之构建我的第二大脑 🧠 - 林宜丙的博客](https://quanru.github.io/2023/06/18/%E4%B8%80%E7%A7%8D%E5%AE%9E%E7%94%A8%E6%96%B0%E5%9E%8B%20Obsidian%20%E5%AE%9E%E8%B7%B5%E4%B9%8B%E6%9E%84%E5%BB%BA%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E5%A4%A7%E8%84%91%20%F0%9F%A7%A0/)
       - [[LifeOS]]插件作者。
   - [新年规划的秘密武器：Obsidian计划设定，跟进完全指南！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Gu4y1G7Yy/?vd_source=c16ee9cfb2023d2af8428dbfe604b72f)
-    - 如何使用Obsidian进行计划、目标实现的示例库。作者：[[Chris就是Chris]]，b站新晋讲Obsidian的up主，很强👍。
+    - 如何使用Obsidian进行计划、目标实现的示例库。作者：Chris就是Chris，b站新晋讲Obsidian的up主，很强👍。
   - 外国小哥搜集的15个示例库，都是英文版本的：[Site Unreachable](https://amerpie.lol/2024/05/13/example-obsidian-vaults.html)

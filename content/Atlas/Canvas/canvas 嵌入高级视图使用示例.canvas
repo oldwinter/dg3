@@ -220,7 +220,7 @@
 			"height":60
 		},
 		{
-			"file":"Atlas/Draws/数字时代如何更好地工作与生活 - 图.md",
+			"file":"Atlas/Draws/Notes/数字时代如何更好地工作与生活 - 图.md",
 			"id":"02f6c3bfaaf62356",
 			"styleAttributes":{},
 			"type":"file",
@@ -240,6 +240,6 @@
 			"width":260,
 			"height":60
 		},
-		{"id":"a79ee5b1f117d3b0","type":"file","file":"Atlas/Components/view/Wiki Home.components","x":-1200,"y":1020,"width":543,"height":400}
+		{"id":"a79ee5b1f117d3b0","type":"text","text":"缺失组件\nWiki Home.components","x":-1200,"y":1020,"width":543,"height":400}
 	]
 }

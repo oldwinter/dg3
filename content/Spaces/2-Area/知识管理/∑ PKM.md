@@ -1,21 +1,21 @@
 ---
-aliases:
-- personal knowledge management
-- 『入不孵出』PKM系统
-- 个人知识管理
-date created: 2022-06-09
-date modified: 2024-11-07
-title: ∑ PKM
 publish: true
-分类:
-- '[[MOC内容地图 - fileclass]]'
+permalink: /Spaces/2-Area/知识管理/∑ PKM.md
+aliases:
+  - personal knowledge management
+  - 『入不孵出』PKM系统
+  - 个人知识管理
+title: ∑ PKM
+created: 2022-06-09
+modified: 2024-11-07
+published: 2026-05-16T01:30:27.368+08:00
 ---
 
 [[语雀创始人玉伯 对 笔记和知识管理的理解]]
 
 ## 相关
 
-- [[SOP]] 和 [[工作流]]
+- [[SOP]] 和 工作流
 - [[第二大脑]]
 - [[渐进式总结]]
 - [[C.O.D.E]]

@@ -4,7 +4,7 @@ permalink: /Spaces/3-Resource/软件梳理/macos软件/Raycast.md
 title: Raycast
 created: 2022-12-17
 modified: 2025-08-30
-published: 2026-02-08T13:48:32.096+08:00
+published: 2026-05-24T14:30:49.922+08:00
 ---
 
 ##
@@ -31,7 +31,7 @@ Raycast 是软件尊重用户时间的产物。
 
 ## 备份
 
-[[raycast 备份文件以及解压密码]]
+（已隐藏：不公开入口）
 
 ##
 

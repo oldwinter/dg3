@@ -1,14 +1,12 @@
 ---
-date created: 2022-07-22
-date modified: 2023-03-14
-tags:
-- review
-notetoolbar: SpacedRepetition
-title: 如何用 IARP 规划标签
 publish: true
-sr-due: 2031-05-01
-sr-interval: 2539
-sr-ease: 330
+permalink: /Sources/Articles/flomo101阅读笔记/如何用 IARP 规划标签.md
+title: 如何用 IARP 规划标签
+created: 2022-07-22
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.452+08:00
+tags:
+  - review
 ---
 
 up:: [[§ flomo101 - 思维方式目录]]

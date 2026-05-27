@@ -31,7 +31,15 @@
 		{"id":"0bf1c1cb8aaa960a","type":"file","file":"Cards/Raycast 配置 快捷键.md","x":800,"y":-628,"width":502,"height":511},
 		{"id":"b6b04c70ff056736","type":"file","file":"Atlas/Canvas/快捷键键盘布局/键盘快捷键映射图 - Hyper - macOS.canvas","x":-303,"y":364,"width":763,"height":400},
 		{"id":"aa94b4c15d12af37","type":"file","file":"Atlas/Canvas/快捷键键盘布局/键盘快捷键映射图 - option - macOS.canvas","x":520,"y":364,"width":727,"height":400},
-		{"id":"e1be7181979c048f","type":"file","file":"Extras/Attachments/Images/Icons/右箭头-cc-image.png","x":1151,"y":51,"width":191,"height":191}
+		{
+		  "id": "e1be7181979c048f",
+		  "type": "link",
+		  "x": 1151,
+		  "y": 51,
+		  "width": 191,
+		  "height": 191,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/fed88b25a4d8b8bee04c3a7230a77895.png"
+		}
 	],
 	"edges":[
 		{

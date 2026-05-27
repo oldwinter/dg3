@@ -1,8 +1,12 @@
 ---
-date created: 2022-06-09
-date modified: 2025-07-05
-title: obsidian入门
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian入门.md
+aliases:
+  - obsidian的使用感受
+title: obsidian入门
+created: 2022-06-09
+modified: 2026-05-01
+published: 2026-05-16T01:30:28.713+08:00
 ---
 
 ## 别人眼中的 obsidian
@@ -45,7 +49,7 @@ publish: true
 ### 待解决问题
 
 - [[个人知识笔记系统]]
-- [[打造个人数字花园的工具及方法论 1]]
+- 打造个人数字花园的工具及方法论 1
 
 ### 核心思路
 

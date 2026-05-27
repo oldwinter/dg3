@@ -1,10 +1,12 @@
 ---
-date created: 2023-12-27
-date modified: 2023-12-27
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/快速过一遍obsidian一些社区插件的功能点.md
+created: 2023-12-27
+modified: 2023-12-27
+published: 2026-05-16T01:30:28.705+08:00
 ---
 
-- [[3d graph]]
+- 3d graph
   - 3d版本的[[knowledge graph]]知识图谱
 - [[Another Quick Switcher]]
   - cmd t ，快速切换或打开md文档

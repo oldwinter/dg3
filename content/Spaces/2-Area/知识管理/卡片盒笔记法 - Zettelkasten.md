@@ -4,7 +4,7 @@ permalink: /Spaces/2-Area/知识管理/卡片盒笔记法 - Zettelkasten.md
 title: 卡片盒笔记法 - Zettelkasten
 created: 2022-06-09
 modified: 2023-03-14
-published: 2025-08-15T22:00:03.772+08:00
+published: 2026-05-16T01:30:27.366+08:00
 ---
 
 [[我的卡片盒笔记法实操]]
@@ -52,6 +52,6 @@ published: 2025-08-15T22:00:03.772+08:00
   - 开箱即用。往往有个最简单的版本，直接解决你的某个痛点
   - 没有上限。意味着永远能有新的插件让我们获得更多哇塞。
     - 这里给自己挖个坑，计划实践半年后，再进行系统性地总结。
-    - 挖坑[[如何一步步践行卡片笔记写作法]]
+    - 挖坑如何一步步践行卡片笔记写作法
 
 [^1]: [卢曼卡片盒笔记法介绍 (Introduction to the Zettelkasten Method) • Zettelkasten Method](https://zettelkasten.de/introduction/zh/)

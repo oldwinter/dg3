@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"a1b2c3d4e5f60718","type":"group","x":-120,"y":-140,"width":2000,"height":760,"label":"LLM Wiki Phase 1"},
+		{"id":"b1c2d3e4f5061728","type":"text","x":0,"y":-80,"width":500,"height":140,"text":"# LLM Wiki 最小闭环\n\n先把 1 条可重复执行的流程跑顺，再追求更强自动化。"},
+		{"id":"c1d2e3f405162738","type":"file","file":"Atlas/LLM Wiki/_playbook.md","label":"Playbook","x":0,"y":120,"width":320,"height":220},
+		{"id":"d1e2f30415263748","type":"text","x":380,"y":120,"width":320,"height":180,"text":"## 1. Ingest\n\n选 1 篇高价值 source。\n先判断它是否值得进入编译层。"},
+		{"id":"e1f2031425364758","type":"file","file":"Atlas/LLM Wiki/Source Summaries/Karpathy LLM Wiki - 源摘要.md","label":"Karpathy 源摘要","x":760,"y":120,"width":340,"height":230},
+		{"id":"f102132435465768","type":"text","x":1160,"y":120,"width":320,"height":180,"text":"## 2. Compile\n\n默认只提炼少量稳定页：\n1 个 concept，必要时再补 1 个 entity。"},
+		{"id":"1021324354657687","type":"file","file":"Atlas/LLM Wiki/Concepts/LLM Wiki.md","label":"LLM Wiki 概念页","x":1540,"y":120,"width":320,"height":230},
+		{"id":"2132435465768798","type":"text","x":1540,"y":420,"width":320,"height":180,"text":"## 3. Query / File Back\n\n围绕已编译页面提问。\n局部答案落 query，跨来源答案落 synthesis。"},
+		{"id":"32435465768798a9","type":"file","file":"Atlas/LLM Wiki/Synthesis/Karpathy LLM Wiki 在 Obsidian 中的最小实践.md","label":"最小实践综合页","x":1160,"y":420,"width":320,"height":230},
+		{"id":"435465768798a9ba","type":"file","file":"Atlas/Bases/LLM Wiki 工作台.base","label":"LLM Wiki 工作台","x":760,"y":430,"width":320,"height":220},
+		{"id":"5465768798a9bacb","type":"text","x":380,"y":430,"width":320,"height":180,"text":"## 4. Lint / Promote\n\n看 draft、缺来源、缺链接、弱连接、待晋升页面。"},
+		{"id":"65768798a9bacbdc","type":"file","file":"Atlas/LLM Wiki/_index.md","label":"LLM Wiki Index","x":0,"y":430,"width":320,"height":220}
+	],
+	"edges":[
+		{"id":"718293a4b5c6d7e8","fromNode":"c1d2e3f405162738","fromSide":"right","toNode":"d1e2f30415263748","toSide":"left","toEnd":"arrow"},
+		{"id":"8293a4b5c6d7e8f9","fromNode":"d1e2f30415263748","fromSide":"right","toNode":"e1f2031425364758","toSide":"left","toEnd":"arrow"},
+		{"id":"93a4b5c6d7e8f901","fromNode":"e1f2031425364758","fromSide":"right","toNode":"f102132435465768","toSide":"left","toEnd":"arrow"},
+		{"id":"a4b5c6d7e8f90112","fromNode":"f102132435465768","fromSide":"right","toNode":"1021324354657687","toSide":"left","toEnd":"arrow"},
+		{"id":"b5c6d7e8f9011223","fromNode":"1021324354657687","fromSide":"bottom","toNode":"2132435465768798","toSide":"top","toEnd":"arrow"},
+		{"id":"c6d7e8f901122334","fromNode":"2132435465768798","fromSide":"left","toNode":"32435465768798a9","toSide":"right","toEnd":"arrow"},
+		{"id":"d7e8f90112233445","fromNode":"32435465768798a9","fromSide":"left","toNode":"435465768798a9ba","toSide":"right","toEnd":"arrow"},
+		{"id":"e8f9011223344556","fromNode":"435465768798a9ba","fromSide":"left","toNode":"5465768798a9bacb","toSide":"right","toEnd":"arrow"},
+		{"id":"f901122334455667","fromNode":"5465768798a9bacb","fromSide":"left","toNode":"65768798a9bacbdc","toSide":"right","toEnd":"arrow"},
+		{"id":"0122334455667788","fromNode":"65768798a9bacbdc","fromSide":"top","toNode":"c1d2e3f405162738","toSide":"bottom","toEnd":"arrow","label":"继续下一轮"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

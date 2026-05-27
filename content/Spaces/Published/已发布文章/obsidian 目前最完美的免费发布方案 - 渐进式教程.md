@@ -1,10 +1,10 @@
 ---
-date created: 2022-08-15 00:00:00+00:00
-date modified: 2023-03-14 00:00:00+00:00
-title: obsidian 目前最完美的免费发布方案 - 渐进式教程
 publish: true
-分类:
-- '[[文章-已完成 - fileclass]]'
+permalink: /Spaces/Published/已发布文章/obsidian 目前最完美的免费发布方案 - 渐进式教程.md
+title: obsidian 目前最完美的免费发布方案 - 渐进式教程
+created: 2022-08-15 00:00:00+00:00
+modified: 2023-03-14 00:00:00+00:00
+published: 2026-05-16T01:30:27.732+08:00
 ---
 
 > 可以访问此文的双链版本，获得完整阅读体验：[obsidian 目前最完美的免费发布方案 - 渐进式教程 - 🌲 oldwinterの数字花园](https://oldwinter.top/Calendar/%E5%B7%B2%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0/obsidian+%E7%9B%AE%E5%89%8D%E6%9C%80%E5%AE%8C%E7%BE%8E%E7%9A%84%E5%85%8D%E8%B4%B9%E5%8F%91%E5%B8%83%E6%96%B9%E6%A1%88+-+%E6%B8%90%E8%BF%9B%E5%BC%8F%E6%95%99%E7%A8%8B)
@@ -30,7 +30,7 @@ publish: true
 | 支持搜索                    | 不支持，但通过google间接实现       | 支持                            | 支持，但中文不兼容                             | 支持                           |
 | 链接稳定性                  | 只要文件名不改，链接就稳定         | 受文件夹和文件名同时影响        | 只要文件名不改，链接就稳定                     | 只要文件名不改，链接就稳定     |
 | 文件夹层级显示              | 无                                 | 支持                            | 无                                             | 无                             |
-| [[首屏加载速度]]            | 极快，2s内，下载资源<1M            | 中等，5秒内，下载资源<5M        | 极快，2s内，下载资源<1M                        | 超慢，10秒，下载资源<30M       |
+| 首屏加载速度            | 极快，2s内，下载资源<1M            | 中等，5秒内，下载资源<5M        | 极快，2s内，下载资源<1M                        | 超慢，10秒，下载资源<30M       |
 | 图谱显示                    | 支持全局图谱，但1K+笔记就很卡      | 完美支持                        | 支持局部图谱，中文支持不友好                   | 支持，稍卡                     |
 | [[横向卷动布局- andy mode]] | 不支持                             | 支持                            | 不支持                                         | 不支持                         |
 | 暗色模式支持                | 不支持                             | 支持                            | 支持                                           | 支持，但固定，不能切换         |
@@ -61,7 +61,7 @@ publish: true
 
 ### 总的来说：
 
-通过基于[[jekyll]]开源的静态blog模板，通过[[git push]]自动触发[[Netlify]]进行构建操作，将md文件转换成静态服务器可以识别的html文件。
+通过基于[[jekyll]]开源的静态blog模板，通过git push自动触发[[Netlify]]进行构建操作，将md文件转换成静态服务器可以识别的html文件。
 
 ### 一步步来说：
 
@@ -80,7 +80,7 @@ publish: true
   - ctrl + c 停止`bundle exec jekyll serve`命令，并重新执行。接着浏览器打开`http://localhost:4000/笔记名`。例如我的obsidian笔记库里面有`数字花园`这条笔记，则访问`http://localhost:4000/数字花园`即可看到笔记。
 - 2.[[Netlify]]配置自动构建。
   - 按照这个教程[手把手教你使用Netlify部署博客及部署自动化 - 知乎](https://zhuanlan.zhihu.com/p/55252024)，界面一步步点，都按默认配置来，从而将上一步fork的自己仓库，通过netlify构建和发布。
-    - 主流的免费的还有[[github pages]]和[[Vercel]]服务，前者缺少[[CDN]]导致国内访问很慢，后者存在非html后缀的链接报404错误的问题。
+    - 主流的免费的还有[[github pages]]和[[Vercel]]服务，前者缺少CDN导致国内访问很慢，后者存在非html后缀的链接报404错误的问题。
   - 完成上一步后，应该能得到一个`https://master--zippy-dango-d43c8d.netlify.app/`类似格式的网址，打开后正常显示原仓库的页面即可。
 - 3.将本地全部文件push至github。
   - 本地仓库的根目录执行git三件套：`git add .` `git commit -m "first commit"` `git push`

@@ -1,8 +1,10 @@
 ---
-title: frontmatter 校验器使用说明
-date created: 2025-08-07
-date modified: 2025-08-07
 publish: true
+permalink: /Extras/Scripts/py-scripts/frontmatter 校验器.md
+title: frontmatter 校验器使用说明
+created: 2025-08-07
+modified: 2025-08-07
+published: 2026-05-16T01:30:29.126+08:00
 ---
 
 本工具用于一次性检查全库 Markdown 的 YAML frontmatter 是否符合推荐规范（字段齐全、日期格式正确、布尔/状态合法）。

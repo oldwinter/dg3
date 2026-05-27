@@ -1,0 +1,300 @@
+{
+  "nodes": [
+    {
+      "id": "ctop",
+      "type": "group",
+      "x": -80,
+      "y": 0,
+      "width": 4020,
+      "height": 860
+    },
+    {
+      "id": "cmid",
+      "type": "group",
+      "x": -80,
+      "y": 980,
+      "width": 4020,
+      "height": 880
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "x": 680,
+      "y": -620,
+      "width": 1280,
+      "height": 150,
+      "text": "# 三套 Agent Skills 工作流综合分析\nSuperpowers · gstack · Matt Pocock Skills 的相同底层问题与不同解法"
+    },
+    {
+      "id": "thesis",
+      "type": "text",
+      "x": -40,
+      "y": -410,
+      "width": 520,
+      "height": 270,
+      "text": "## 总判断\n\n三者都在解决同一个核心问题：\n\n**AI agent 默认会跳步、猜测、过早编码、缺少反馈回路。**\n\n差别在于解法尺度：\n- Superpowers：行为纪律内核\n- gstack：软件工厂操作系统\n- Matt Skills：工程基本功卡组\n\n它们不是互斥替代，更像三层不同粒度的控制面。"
+    },
+    {
+      "id": "axis",
+      "type": "text",
+      "x": 560,
+      "y": -410,
+      "width": 520,
+      "height": 270,
+      "text": "## 分析轴\n\n比较这几件事：\n- 入口调度：谁决定用哪个 skill\n- 需求对齐：如何阻止错题快答\n- 计划机制：如何把隐性判断变成工件\n- 实现纪律：如何防止大泥球\n- 反馈回路：测试、浏览器、QA、review\n- 运行时重量：纯 Markdown 还是工具系统\n- 记忆方式：文档、learnings、上下文恢复"
+    },
+    {
+      "id": "sources",
+      "type": "text",
+      "x": 1160,
+      "y": -410,
+      "width": 820,
+      "height": 270,
+      "text": "## 输入材料\n\n本地已有：`superpowers-workflow.canvas`\n\n新拆解：\n- [garrytan/gstack](https://github.com/garrytan/gstack)\n- [mattpocock/skills](https://github.com/mattpocock/skills)\n\n对应新画布：\n- `gstack-workflow.canvas`\n- `mattpocock-skills-workflow.canvas`\n\n本图聚焦异同，不重复全部节点。"
+    },
+    {
+      "id": "superpowers",
+      "type": "text",
+      "x": -40,
+      "y": 80,
+      "width": 560,
+      "height": 620,
+      "text": "## Superpowers\n### Agent discipline kernel\n\n**入口**：`using-superpowers` 总调度，哪怕 1% 可能适用也要先查 skill。\n\n**主链**：\nbrainstorming -> git worktree -> writing plans -> executing plans / subagent-driven dev -> TDD -> review -> verification -> finish branch。\n\n**质量兜底**：systematic debugging、parallel agents、request/receive review、verification-before-completion。\n\n**气质**：强制流程、强门禁、反跳步。"
+    },
+    {
+      "id": "gstack",
+      "type": "text",
+      "x": 620,
+      "y": 80,
+      "width": 560,
+      "height": 620,
+      "text": "## gstack\n### Software factory OS\n\n**入口**：安装 + CLAUDE.md routing + proactive skill suggestion；跨 Claude Code / Codex / Cursor / OpenClaw 等 host。\n\n**主链**：Think -> Plan -> Build -> Review -> Test -> Ship -> Deploy -> Reflect。\n\n**核心机制**：`/office-hours`、`/autoplan`、multi-role review、browser daemon、QA、ship、canary、learn。\n\n**气质**：产品交付全栈化，偏完整实现和真实反馈。"
+    },
+    {
+      "id": "matt",
+      "type": "text",
+      "x": 1280,
+      "y": 80,
+      "width": 560,
+      "height": 620,
+      "text": "## Matt Pocock Skills\n### Engineering craft library\n\n**入口**：`skills.sh` 安装，用户挑选技能；`/setup-matt-pocock-skills` 建立 repo 契约。\n\n**主链**：setup -> grill / grill-with-docs -> to-prd -> to-issues -> triage -> tdd / diagnose -> handoff。\n\n**核心机制**：CONTEXT.md 领域语言、ADR、issue tracker、triage state machine、vertical slices、deep modules。\n\n**气质**：小技能、可组合、保留人的控制。"
+    },
+    {
+      "id": "overlap",
+      "type": "text",
+      "x": 1940,
+      "y": 80,
+      "width": 660,
+      "height": 620,
+      "text": "## 三者共同点\n\n1. **先对齐再执行**\nSuperpowers brainstorm；gstack office-hours；Matt grilling。\n\n2. **把判断写成工件**\n计划、design doc、PRD、issue、ADR、review report。\n\n3. **用反馈回路管住 agent**\nTDD、debug loop、review、QA、verification。\n\n4. **反对只靠模型自信**\n都要求证据、验证或用户批准。\n\n5. **技能是 workflow，不是知识卡**\n每个技能都在规定行动顺序和停止条件。"
+    },
+    {
+      "id": "entrydiff",
+      "type": "text",
+      "x": -40,
+      "y": 1060,
+      "width": 420,
+      "height": 360,
+      "text": "## 差异 1：入口调度\n\nSuperpowers：最强制。`using-superpowers` 是总入口，先查 skill 再行动。\n\ngstack：半自动。routing + proactive suggestions，用户也可直接 slash command。\n\nMatt：最手动。安装后由用户/agent 选择小技能，只有 setup 建立共享契约。\n\n从硬到软：Superpowers -> gstack -> Matt。"
+    },
+    {
+      "id": "scopediff",
+      "type": "text",
+      "x": 440,
+      "y": 1060,
+      "width": 420,
+      "height": 360,
+      "text": "## 差异 2：流程覆盖面\n\nSuperpowers：覆盖开发生命周期，但重点是约束 agent 行为。\n\ngstack：覆盖产品交付生命周期，从 idea 到 production canary。\n\nMatt：覆盖工程活动的关键原语，不试图接管发布、部署、浏览器和团队运行。\n\n从小到大：Matt primitives -> Superpowers dev lifecycle -> gstack product factory。"
+    },
+    {
+      "id": "runtimeweight",
+      "type": "text",
+      "x": 920,
+      "y": 1060,
+      "width": 420,
+      "height": 360,
+      "text": "## 差异 3：运行时重量\n\nMatt：主要是 Markdown 技能 + repo 文档契约。\n\nSuperpowers：以技能指令为主，带一些流程硬规则和子代理模式。\n\ngstack：技能 + CLI + browser daemon + telemetry + learnings + config + host adapters。\n\n运行时越重，自动化和反馈越强，但迁移和理解成本也越高。"
+    },
+    {
+      "id": "planningdiff",
+      "type": "text",
+      "x": 1400,
+      "y": 1060,
+      "width": 420,
+      "height": 360,
+      "text": "## 差异 4：计划风格\n\nSuperpowers：brainstorm 得到批准后写 2-5 分钟小任务计划。\n\ngstack：office-hours 先重构问题，再用 CEO / Design / Eng / DX gauntlet 审查。\n\nMatt：grill-with-docs 对齐领域语言，再生成 PRD 和 vertical slice issues。\n\n一个偏执行任务，一个偏产品决策，一个偏工程问题定义。"
+    },
+    {
+      "id": "builddiff",
+      "type": "text",
+      "x": 1880,
+      "y": 1060,
+      "width": 420,
+      "height": 360,
+      "text": "## 差异 5：实现纪律\n\nSuperpowers：TDD 是铁律，没有失败测试不写代码；worktree 和 subagent 分工强调隔离。\n\ngstack：强调完整实现 blast radius，并用 review / QA / ship 管住结果。\n\nMatt：强调 public-interface behavior tests、vertical slices、deep modules，避免水平切片和浅模块。\n\n三者都反快写，但约束点不同。"
+    },
+    {
+      "id": "feedbackdiff",
+      "type": "text",
+      "x": 2360,
+      "y": 1060,
+      "width": 420,
+      "height": 360,
+      "text": "## 差异 6：反馈回路\n\nSuperpowers：验证前不能说完成，review 失败回到 TDD。\n\ngstack：反馈回路最外显，真实浏览器、截图、QA、benchmark、canary、security review 都成技能。\n\nMatt：反馈回路更工程内核化，重点是 deterministic loop、reproduce、hypotheses、regression test。\n\ngstack 强在运行反馈，Matt 强在诊断方法。"
+    },
+    {
+      "id": "memorydiff",
+      "type": "text",
+      "x": 2840,
+      "y": 1060,
+      "width": 420,
+      "height": 360,
+      "text": "## 差异 7：记忆和沉淀\n\nSuperpowers：主要沉淀为计划、reviews、verification 和完成分支状态。\n\ngstack：显式维护 project learnings、timeline、taste profile、builder profile、gbrain。\n\nMatt：沉淀在 `CONTEXT.md`、ADR、issue tracker、handoff 文档。\n\n一个偏过程状态，一个偏运行记忆，一个偏工程文档。"
+    },
+    {
+      "id": "bestfit",
+      "type": "text",
+      "x": 3320,
+      "y": 1060,
+      "width": 520,
+      "height": 360,
+      "text": "## 适用场景\n\nSuperpowers 最适合：想提升 agent 可靠性，避免跳步和虚假完成。\n\ngstack 最适合：solo founder / 小团队用 AI 端到端 ship web 产品，需要浏览器、review、QA、发布闭环。\n\nMatt 最适合：已有工程团队或个人 repo，想把 agent 拉回软件工程基本功，不想引入重运行时。\n\n组合使用：Superpowers 做底层纪律，gstack 做交付工厂，Matt 补领域语言与工程切片。"
+    },
+    {
+      "id": "fusion",
+      "type": "text",
+      "x": -40,
+      "y": 1540,
+      "width": 760,
+      "height": 260,
+      "text": "## 可融合的理想架构\n\n1. **Superpowers 作为 agent 行为内核**：先查 skill、先 brainstorm、先计划、先验证。\n2. **Matt 作为工程语义层**：CONTEXT.md、ADR、issue tracker、vertical slices、deep modules。\n3. **gstack 作为交付执行层**：multi-role review、browser QA、ship、deploy、canary、learnings。\n\n这样能同时获得：纪律、语义、反馈、交付闭环。"
+    },
+    {
+      "id": "failure",
+      "type": "text",
+      "x": 820,
+      "y": 1540,
+      "width": 760,
+      "height": 260,
+      "text": "## 各自风险\n\nSuperpowers 风险：流程过刚，简单任务显得仪式化；如果技能触发过宽，agent 可能花太多时间在 process 上。\n\ngstack 风险：强 opinion 和重基础设施让它更像一套操作系统；如果用户不想扩大 scope，会感觉被推着走。\n\nMatt 风险：太轻，依赖使用者有纪律；没有端到端工具链时，执行和验证仍可能断在外部。"
+    },
+    {
+      "id": "takeaway",
+      "type": "text",
+      "x": 1680,
+      "y": 1540,
+      "width": 820,
+      "height": 260,
+      "text": "## 一句话总结\n\n- Superpowers 回答：**怎样让 agent 不乱来？**\n- gstack 回答：**怎样让一个人像一支产品团队一样交付？**\n- Matt Skills 回答：**怎样把 agent 拉回可维护的软件工程？**\n\n最强的不是三选一，而是按任务粒度切换：先用 Superpowers 管住行为，用 Matt 澄清工程语义，再在需要端到端交付时启用 gstack。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "fromNode": "superpowers",
+      "fromSide": "right",
+      "toNode": "overlap",
+      "toSide": "left",
+      "label": "shared patterns"
+    },
+    {
+      "id": "e02",
+      "fromNode": "gstack",
+      "fromSide": "right",
+      "toNode": "overlap",
+      "toSide": "left",
+      "label": "shared patterns"
+    },
+    {
+      "id": "e03",
+      "fromNode": "matt",
+      "fromSide": "right",
+      "toNode": "overlap",
+      "toSide": "left",
+      "label": "shared patterns"
+    },
+    {
+      "id": "e04",
+      "fromNode": "overlap",
+      "fromSide": "bottom",
+      "toNode": "entrydiff",
+      "toSide": "top",
+      "label": "compare axes"
+    },
+    {
+      "id": "e05",
+      "fromNode": "entrydiff",
+      "fromSide": "right",
+      "toNode": "scopediff",
+      "toSide": "left"
+    },
+    {
+      "id": "e06",
+      "fromNode": "scopediff",
+      "fromSide": "right",
+      "toNode": "runtimeweight",
+      "toSide": "left"
+    },
+    {
+      "id": "e07",
+      "fromNode": "runtimeweight",
+      "fromSide": "right",
+      "toNode": "planningdiff",
+      "toSide": "left"
+    },
+    {
+      "id": "e08",
+      "fromNode": "planningdiff",
+      "fromSide": "right",
+      "toNode": "builddiff",
+      "toSide": "left"
+    },
+    {
+      "id": "e09",
+      "fromNode": "builddiff",
+      "fromSide": "right",
+      "toNode": "feedbackdiff",
+      "toSide": "left"
+    },
+    {
+      "id": "e10",
+      "fromNode": "feedbackdiff",
+      "fromSide": "right",
+      "toNode": "memorydiff",
+      "toSide": "left"
+    },
+    {
+      "id": "e11",
+      "fromNode": "memorydiff",
+      "fromSide": "right",
+      "toNode": "bestfit",
+      "toSide": "left"
+    },
+    {
+      "id": "e12",
+      "fromNode": "bestfit",
+      "fromSide": "bottom",
+      "toNode": "fusion",
+      "toSide": "top",
+      "color": "3",
+      "label": "combine"
+    },
+    {
+      "id": "e13",
+      "fromNode": "failure",
+      "fromSide": "right",
+      "toNode": "takeaway",
+      "toSide": "left",
+      "label": "decision"
+    },
+    {
+      "id": "e14",
+      "fromNode": "fusion",
+      "fromSide": "right",
+      "toNode": "takeaway",
+      "toSide": "left",
+      "color": "2",
+      "label": "synthesis"
+    }
+  ]
+}

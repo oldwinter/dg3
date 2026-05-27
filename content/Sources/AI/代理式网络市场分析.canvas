@@ -1,0 +1,56 @@
+{
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{"title":"代理式网络：自主浏览器及其塑造下一代互联网交互平台的市场分析","type":"market-analysis","created":"2025-07-18"}
+	},
+	"nodes":[
+		{
+			"id":"core_concept",
+			"type":"text",
+			"text":"# 代理式革命\n\n**从被动工具到主动伙伴**\n\n传统浏览器：文档查看器\n↓\n代理式浏览器：任务执行伙伴\n\n核心转变：\n• 符号自动化 → 感知自动化\n• 找到信息 → 完成任务\n• 被动观察 → 主动执行",
+			"styleAttributes":{"textAlign":"center"},
+			"x":100,
+			"y":100,
+			"width":300,
+			"height":200,
+			"color":"1"
+		},
+		{"id":"tech_breakthrough","type":"text","text":"## 技术飞跃\n\n**感知自动化的突破**\n\n🔍 **旧范式：符号自动化**\n- 依赖DOM选择器\n- 脆弱易失效\n- 维护成本高达60-80%\n\n👁️ **新范式：感知自动化**\n- 基于像素交互\n- 视觉语义理解\n- 抗UI变更能力强","x":500,"y":100,"width":280,"height":200,"color":"4"},
+		{"id":"market_leaders","type":"text","text":"# 市场领导者\n\n## 🚀 Fellou\n**跨平台工作流自动化**\n- 替代Zapier + 浏览器\n- Eko框架驱动\n- macOS Beta\n\n## 🧠 Perplexity Comet\n**对话式知识引擎**\n- 答案→行动\n- Max订阅集成\n- 思想伙伴定位\n\n## 💎 The Browser Company Dia\n**情境感知生产力**\n- Arc→Dia战略转型\n- 熟悉UI + 强大AI\n- 隐私优先架构","x":100,"y":400,"width":300,"height":300,"color":"5"},
+		{"id":"developer_ecosystem","type":"text","text":"# 开发者生态\n\n## 🏗️ BaaS层\n**Browserbase** - 可扩展基础设施\n**Bright Data** - 7200万IP代理池\n**Steel.dev** - 开源企业级\n\n## 🔧 框架层\n**Browser Use** - 6.5万⭐开源库\n**Stagehand** - Browserbase框架\n\n## 🤖 API层\n**MultiOn** - AI运动皮层\n**CrewAI** - 多代理编排\n**MindStudio** - 无代码平台","x":500,"y":400,"width":280,"height":300,"color":"3"},
+		{"id":"strategic_impact","type":"text","text":"## 战略影响\n\n### 🎯 意图→行动层争夺\n下一场浏览器战争的核心\n\n### 💥 商业模式颠覆\n- SEO → 代理优化\n- 广告收入威胁\n- 流量下降60%\n\n### 🔒 三大挑战\n- 隐私悖论\n- 安全信任\n- 可靠性问题","x":900,"y":100,"width":250,"height":250,"color":"6"},
+		{"id":"competitive_matrix","type":"text","text":"# 竞争矩阵\n\n| 产品 | 核心定位 | 目标用户 |\n|------|----------|----------|\n| **Fellou** | 工作流自动化 | 专业用户 |\n| **Comet** | 知识引擎 | 研究人员 |\n| **Dia** | 生产力伙伴 | 普通用户 |\n| **OpenAI** | 平台战略 | 全体用户 |\n\n**开发者工具对比**\n- BaaS：托管基础设施\n- 开源：自定义开发\n- API：即用型服务","x":900,"y":400,"width":300,"height":200,"color":"2"},
+		{"id":"future_prediction","type":"text","text":"# 未来预测\n\n## 🏆 长期赢家\nAI平台巨头（OpenAI、Google、Microsoft）\n- 最强底层模型\n- 完整生态整合\n- 平台锁定效应\n\n## 💰 投资机会\n- **创新初创**：高被收购潜力\n- **BaaS领域**：稳健增长投资\n- **垂直应用**：行业特化代理\n\n## 📈 市场建议\n**使用者**：从小规模自动化开始\n**开发者**：专注生态系统工具\n**投资者**：押注平台+工具双轨","x":100,"y":800,"width":350,"height":250,"color":"1"},
+		{
+			"id":"key_insights",
+			"type":"text",
+			"text":"## 🔑 核心洞察\n\n### 范式转移\n\"浏览器不再是窗口，而是代理人\"\n\n### 商业逻辑重构\n从\"内容换广告\"到\"意图换行动\"\n\n### 技术门槛\n感知自动化 > 符号自动化\n\n### 生态价值\n开发者工具 = B2C产品的底层引擎\n\n### 竞争焦点\nUI创新 < AI能力 < 生态整合",
+			"styleAttributes":{"textAlign":"left"},
+			"x":600,
+			"y":800,
+			"width":300,
+			"height":250,
+			"color":"4"
+		}
+	],
+	"edges":[
+		{"id":"edge1","fromNode":"core_concept","fromSide":"right","toNode":"tech_breakthrough","toSide":"left","color":"1","label":"技术基础"},
+		{"id":"edge2","fromNode":"core_concept","fromSide":"bottom","toNode":"market_leaders","toSide":"top","color":"5","label":"市场应用"},
+		{"id":"edge3","fromNode":"tech_breakthrough","fromSide":"bottom","toNode":"developer_ecosystem","toSide":"top","color":"3","label":"生态支撑"},
+		{"id":"edge4","fromNode":"market_leaders","fromSide":"right","toNode":"developer_ecosystem","toSide":"left","color":"2","label":"相互依赖"},
+		{"id":"edge5","fromNode":"tech_breakthrough","fromSide":"right","toNode":"strategic_impact","toSide":"left","color":"6","label":"战略影响"},
+		{"id":"edge6","fromNode":"strategic_impact","fromSide":"bottom","toNode":"competitive_matrix","toSide":"top","color":"2","label":"竞争分析"},
+		{"id":"edge7","fromNode":"market_leaders","fromSide":"bottom","toNode":"future_prediction","toSide":"top","color":"1","label":"趋势预测"},
+		{"id":"edge8","fromNode":"developer_ecosystem","fromSide":"bottom","toNode":"key_insights","toSide":"top","color":"4","label":"核心洞察"},
+		{
+			"id":"edge9",
+			"styleAttributes":{"path":"dotted"},
+			"fromNode":"future_prediction",
+			"fromSide":"right",
+			"toNode":"key_insights",
+			"toSide":"left",
+			"color":"4",
+			"label":"战略指导"
+		}
+	]
+}

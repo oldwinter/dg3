@@ -1,0 +1,57 @@
+{
+	"nodes":[
+		{"id":"0a1b2c3d4e5f6005","type":"group","x":-485,"y":411,"width":920,"height":600,"color":"2","label":"三类复利资产与 oldwinter 落地"},
+		{"id":"0a1b2c3d4e5f6002","type":"group","x":-700,"y":-520,"width":1350,"height":330,"color":"3","label":"LLM Wiki 拆解产物"},
+		{"id":"0a1b2c3d4e5f6004","type":"group","x":540,"y":-90,"width":600,"height":720,"color":"6","label":"Skillify 与评估飞轮：把成功流程沉淀成可复用、可评估、可路由的能力"},
+		{"id":"0a1b2c3d4e5f6003","type":"group","x":-1120,"y":-90,"width":560,"height":720,"color":"4","label":"数据与记忆层"},
+		{"id":"0a1b2c3d4e5f6001","type":"group","x":-1200,"y":-560,"width":520,"height":540,"color":"5","label":"原文入口与隐喻"},
+		{"id":"1a2b3c4d5e6f7005","type":"file","file":"Atlas/LLM Wiki/Queries/为什么个人 AI agent 的复利来自 skillify loop 而不是更长提示词.md","x":260,"y":-470,"width":360,"height":120,"color":"3"},
+		{"id":"2a3b4c5d6e7f8001","type":"text","text":"中心论点\n\nAI agent 能不能工作，不取决于一次 prompt 写得多聪明，而取决于个人是否拥有一个会积累上下文、固化 workflow、评估错误并复用修复的复利系统。","x":-210,"y":-120,"width":460,"height":170,"color":"6"},
+		{"id":"2a3b4c5d6e7f8002","type":"text","text":"公式：\nthin harness + fat skills + fat data + fat code + evals + resolver = personal AI operating system","x":-305,"y":165,"width":560,"height":130,"color":"6"},
+		{"id":"4a5b6c7d8e9fa001","type":"text","text":"1. Skillify 是 meta-skill\n\n它把一次手动完成的工作拆成触发条件、步骤、边界、检查和输出格式，并注册到 resolver。\n\n判断标准：下次遇到相似任务时，agent 不需要重新发明流程，而是能直接调用这套做法。","x":590,"y":-40,"width":500,"height":190,"color":"6"},
+		{"id":"4a5b6c7d8e9fa002","type":"text","text":"2. 复利飞轮\n\ndo → inspect → skillify → eval → resolver → reuse\n\n一次成功不只是被记住，而是变成未来自动调用的能力。飞轮越转，prompt 越薄，系统资产越厚。","x":590,"y":165,"width":500,"height":180,"color":"6"},
+		{"id":"4a5b6c7d8e9fa003","type":"text","text":"3. 错误修复写回系统\n\n事实错误、泛化、缺上下文，不只在本轮纠正；要进入 fact-check、深检索、cross-modal eval 和 skill 文件。\n\n关键不是“这次答对”，而是同类错误以后更难再次发生。","x":590,"y":380,"width":500,"height":190,"color":"6"},
+		{
+		  "id": "1a2b3c4d5e6f7001",
+		  "type": "link",
+		  "x": -1160,
+		  "y": -520,
+		  "width": 440,
+		  "height": 176,
+		  "color": "5",
+		  "url": "https://pub-pic.oldwinter.top/2026/05/574e4ac91d9b8eeadfabcca115d696ac.png"
+		},
+		{"id":"1a2b3c4d5e6f7002","type":"text","text":"原图像像一棵发光神经树：书、会议、日历、人物、文件都被同一套个人 AI 系统连接。它对应原文的核心隐喻：从 filing cabinet 变成 nervous system。","x":-1160,"y":-285,"width":440,"height":150,"color":"5"},
+		{"id":"1a2b3c4d5e6f7003","type":"link","url":"https://x.com/garrytan/status/2053127519872614419","x":-650,"y":-470,"width":360,"height":120,"color":"3"},
+		{"id":"1a2b3c4d5e6f7004","type":"file","file":"Atlas/LLM Wiki/Source Summaries/Meta-Meta-Prompting Making AI Agents Work - 源摘要.md","x":-220,"y":-470,"width":410,"height":120,"color":"3"},
+		{"id":"3a4b5c6d7e8f9001","type":"text","text":"1. 不是聊天窗，而是操作系统\n\n聊天窗处理当下问题；操作系统持有长期状态、调度工具、更新页面，并让每次互动改变下一次能力。","x":-1080,"y":-40,"width":460,"height":145,"color":"4"},
+		{"id":"3a4b5c6d7e8f9002","type":"text","text":"2. Brain pages 像 nervous system\n\n人物、公司、会议、书、文章、想法都有页面。系统会更新状态、传播实体、发现变化，并为当前任务浮现相关上下文。","x":-1080,"y":165,"width":460,"height":150,"color":"4"},
+		{"id":"3a4b5c6d7e8f9003","type":"text","text":"3. 页面 schema\n\n顶部：compiled truth，当前最佳理解\n下面：append-only timeline，证据与事件\n侧边：raw sidecars，来源材料","x":-1080,"y":380,"width":460,"height":150,"color":"4"},
+		{"id":"5a6b7c8d9eafa001","type":"text","text":"厚 data\n\n长期知识、人物页、会议页、阅读史、项目上下文。","x":-435,"y":471,"width":260,"height":130,"color":"2"},
+		{"id":"5a6b7c8d9eafa002","type":"text","text":"厚 skills\n\nBook mirror、meeting prep、media ingest、enrich 等可复用流程。","x":-135,"y":471,"width":260,"height":130,"color":"2"},
+		{"id":"5a6b7c8d9eafa003","type":"text","text":"厚 evals\n\nfact-check、多模型互评、引用真实 brain pages、回归样本。","x":165,"y":471,"width":260,"height":130,"color":"2"},
+		{"id":"5a6b7c8d9eafa004","type":"text","text":"oldwinter 可借鉴\n\nObsidian vault 已经有明文资产、_system/meta、LLM Wiki、repo-local skills、just/scripts、Bases/Canvas。下一步是把高频成功流程抽成 skill + eval。","x":-395,"y":686,"width":520,"height":140,"color":"2"},
+		{"id":"5a6b7c8d9eafa005","type":"text","text":"边界\n\n不要 skillify everything；高隐私知识脑必须保留来源、权限、审阅和回滚。","x":185,"y":686,"width":210,"height":140,"color":"1"}
+	],
+	"edges":[
+		{"id":"6a7b8c9d0e1f0001","fromNode":"1a2b3c4d5e6f7003","fromSide":"right","toNode":"1a2b3c4d5e6f7004","toSide":"left","label":"编译"},
+		{"id":"6a7b8c9d0e1f0002","fromNode":"1a2b3c4d5e6f7004","fromSide":"right","toNode":"1a2b3c4d5e6f7005","toSide":"left","label":"提炼问题"},
+		{"id":"6a7b8c9d0e1f0003","fromNode":"1a2b3c4d5e6f7004","fromSide":"bottom","toNode":"2a3b4c5d6e7f8001","toSide":"top","label":"核心论点"},
+		{"id":"6a7b8c9d0e1f0004","fromNode":"2a3b4c5d6e7f8001","fromSide":"bottom","toNode":"2a3b4c5d6e7f8002","toSide":"top","label":"架构化"},
+		{"id":"6a7b8c9d0e1f0005","fromNode":"2a3b4c5d6e7f8001","fromSide":"left","toNode":"3a4b5c6d7e8f9001","toSide":"right","label":"记忆层"},
+		{"id":"6a7b8c9d0e1f0006","fromNode":"3a4b5c6d7e8f9001","fromSide":"bottom","toNode":"3a4b5c6d7e8f9002","toSide":"top","label":"沉淀"},
+		{"id":"6a7b8c9d0e1f0007","fromNode":"3a4b5c6d7e8f9002","fromSide":"bottom","toNode":"3a4b5c6d7e8f9003","toSide":"top","label":"结构化"},
+		{"id":"6a7b8c9d0e1f0008","fromNode":"2a3b4c5d6e7f8001","fromSide":"right","toNode":"4a5b6c7d8e9fa001","toSide":"left","label":"技能层"},
+		{"id":"6a7b8c9d0e1f0009","fromNode":"4a5b6c7d8e9fa001","fromSide":"bottom","toNode":"4a5b6c7d8e9fa002","toSide":"top","label":"飞轮"},
+		{"id":"6a7b8c9d0e1f0010","fromNode":"4a5b6c7d8e9fa002","fromSide":"bottom","toNode":"4a5b6c7d8e9fa003","toSide":"top","label":"质量闭环"},
+		{"id":"6a7b8c9d0e1f0011","fromNode":"2a3b4c5d6e7f8002","fromSide":"bottom","toNode":"5a6b7c8d9eafa002","toSide":"top","label":"复利资产"},
+		{"id":"6a7b8c9d0e1f0012","fromNode":"5a6b7c8d9eafa001","fromSide":"bottom","toNode":"5a6b7c8d9eafa004","toSide":"top","label":"落地"},
+		{"id":"6a7b8c9d0e1f0013","fromNode":"5a6b7c8d9eafa002","fromSide":"bottom","toNode":"5a6b7c8d9eafa004","toSide":"top","label":"落地"},
+		{"id":"6a7b8c9d0e1f0014","fromNode":"5a6b7c8d9eafa003","fromSide":"bottom","toNode":"5a6b7c8d9eafa004","toSide":"top","label":"落地"},
+		{"id":"6a7b8c9d0e1f0015","fromNode":"5a6b7c8d9eafa005","fromSide":"left","toNode":"5a6b7c8d9eafa004","toSide":"right","label":"守边界"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

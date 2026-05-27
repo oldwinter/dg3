@@ -1,0 +1,315 @@
+{
+  "nodes": [
+    {
+      "id": "b100000000000001",
+      "type": "group",
+      "x": -120,
+      "y": -160,
+      "width": 2860,
+      "height": 1500,
+      "label": "Thin Harness, Fat Skills 中文版"
+    },
+    {
+      "id": "b100000000000002",
+      "type": "text",
+      "x": 20,
+      "y": -90,
+      "width": 720,
+      "height": 220,
+      "color": "6",
+      "text": "# Thin Harness, Fat Skills\n\n核心判断：100x 的 agent 杠杆主要不是来自更聪明的模型，而是来自架构：把可复用判断沉到 fat skills，把中间 harness 保持很薄，把可信执行压到确定性工具层。"
+    },
+    {
+      "id": "b100000000000003",
+      "type": "file",
+      "file": "Sources/Clippings/Thin Harness, Fat Skills.md",
+      "x": 820,
+      "y": -80,
+      "width": 380,
+      "height": 180
+    },
+    {
+      "id": "b100000000000004",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/Thin Harness Fat Skills - 源摘要.md",
+      "x": 1260,
+      "y": -80,
+      "width": 420,
+      "height": 180
+    },
+    {
+      "id": "b100000000000005",
+      "type": "group",
+      "x": 0,
+      "y": 180,
+      "width": 1800,
+      "height": 660,
+      "label": "五个概念"
+    },
+    {
+      "id": "b100000000000006",
+      "type": "text",
+      "x": 40,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "5",
+      "text": "## 1. Skill files\n\n可复用的 Markdown 过程文件，用来教模型怎么做事。\n\n用户提供任务，skill 提供流程。\n\n它更像带参数的方法调用：同一套过程，换不同目标、问题和数据集，就得到不同能力。"
+    },
+    {
+      "id": "b100000000000007",
+      "type": "text",
+      "x": 390,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "2",
+      "text": "## 2. Harness\n\n包住 LLM 的运行程序：跑模型循环、读写文件、管理上下文、执行安全边界。\n\n所谓 thin，就是不把领域判断、业务逻辑和一堆泛化工具都塞进中间层。"
+    },
+    {
+      "id": "b100000000000008",
+      "type": "text",
+      "x": 740,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "4",
+      "text": "## 3. Resolvers\n\n上下文路由表：当任务类型 X 出现时，先加载文档或 skill Y。\n\nSkill description、AGENTS 指针、项目文档和元数据，都是按需加载器，用来保护模型注意力。"
+    },
+    {
+      "id": "b100000000000009",
+      "type": "text",
+      "x": 1090,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "3",
+      "text": "## 4. Latent vs deterministic\n\nLatent space 适合判断：阅读、解释、综合、识别模式。\n\nDeterministic layer 负责可信执行：SQL、算术、分配、编译代码和文件操作。"
+    },
+    {
+      "id": "b10000000000000a",
+      "type": "text",
+      "x": 1440,
+      "y": 260,
+      "width": 320,
+      "height": 220,
+      "color": "6",
+      "text": "## 5. Diarization\n\n让模型读完一个对象的所有材料，再压缩成结构化画像。\n\n它把零散文档变成分析师简报，而不只是检索命中或关键词匹配。"
+    },
+    {
+      "id": "b10000000000000b",
+      "type": "text",
+      "x": 40,
+      "y": 560,
+      "width": 1720,
+      "height": 180,
+      "color": "1",
+      "text": "## 要避开的反模式\n\nFat harness + thin skills 会把错误的东西推到中间层：巨大的工具 schema、缓慢的通用 MCP 往返、把 REST endpoint 全变成工具、把上下文窗口塞满。结果是更多 token、更高延迟、更多失败面。"
+    },
+    {
+      "id": "b10000000000000c",
+      "type": "group",
+      "x": 1900,
+      "y": 180,
+      "width": 780,
+      "height": 940,
+      "label": "三层架构"
+    },
+    {
+      "id": "b10000000000000d",
+      "type": "text",
+      "x": 2030,
+      "y": 260,
+      "width": 500,
+      "height": 180,
+      "color": "5",
+      "text": "## 顶层：Fat skills\n\nMarkdown 过程文件承载判断、流程和领域知识。\n\n大部分复利价值都在这一层。"
+    },
+    {
+      "id": "b10000000000000e",
+      "type": "text",
+      "x": 2030,
+      "y": 500,
+      "width": 500,
+      "height": 180,
+      "color": "2",
+      "text": "## 中层：Thin CLI harness\n\n小而清晰的循环：JSON in，text out，默认只读。\n\n它组织上下文和安全边界，但不吸收业务逻辑。"
+    },
+    {
+      "id": "b10000000000000f",
+      "type": "text",
+      "x": 2030,
+      "y": 740,
+      "width": 500,
+      "height": 180,
+      "color": "4",
+      "text": "## 底层：Application tools\n\nQueryDB、ReadDoc、Search、Timeline、浏览器或领域 CLI。\n\n确定性基础设施：快、窄、可测试。"
+    },
+    {
+      "id": "b100000000000010",
+      "type": "text",
+      "x": 1920,
+      "y": 990,
+      "width": 740,
+      "height": 160,
+      "color": "3",
+      "text": "## 方向性原则\n\n把智能上推到 skills，把执行下沉到确定性工具，把 harness 保持很薄。这样模型升级会自动改善每个 skill，而不会破坏底层执行可靠性。"
+    },
+    {
+      "id": "b100000000000011",
+      "type": "group",
+      "x": 0,
+      "y": 880,
+      "width": 1800,
+      "height": 430,
+      "label": "会学习的系统"
+    },
+    {
+      "id": "b100000000000012",
+      "type": "text",
+      "x": 40,
+      "y": 960,
+      "width": 360,
+      "height": 180,
+      "color": "2",
+      "text": "## 1. 先手工跑样本\n\n对 3 到 10 个样本手工完成这个可重复任务，并检查真实输出。"
+    },
+    {
+      "id": "b100000000000013",
+      "type": "text",
+      "x": 460,
+      "y": 960,
+      "width": 360,
+      "height": 180,
+      "color": "5",
+      "text": "## 2. 固化成 skill\n\n如果输出成立，就把流程写成可复用 skill；如果需要周期运行，再放到 cron。"
+    },
+    {
+      "id": "b100000000000014",
+      "type": "text",
+      "x": 880,
+      "y": 960,
+      "width": 360,
+      "height": 180,
+      "color": "6",
+      "text": "## 3. 读取反馈\n\n把问卷、一般般的结果、失败样本、日志和 eval 回退作为下一轮数据集。"
+    },
+    {
+      "id": "b100000000000015",
+      "type": "text",
+      "x": 1300,
+      "y": 960,
+      "width": 400,
+      "height": 180,
+      "color": "1",
+      "text": "## 4. 改写 skill\n\n抽取新规则并写回 skill 文件。系统在不重写核心代码的情况下学习。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "f100000000000001",
+      "fromNode": "b100000000000003",
+      "fromSide": "left",
+      "toNode": "b100000000000002",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "原文"
+    },
+    {
+      "id": "f100000000000002",
+      "fromNode": "b100000000000004",
+      "fromSide": "left",
+      "toNode": "b100000000000002",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "源摘要"
+    },
+    {
+      "id": "f100000000000003",
+      "fromNode": "b100000000000006",
+      "fromSide": "right",
+      "toNode": "b100000000000007",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "通过它运行"
+    },
+    {
+      "id": "f100000000000004",
+      "fromNode": "b100000000000007",
+      "fromSide": "right",
+      "toNode": "b100000000000008",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "按需加载上下文"
+    },
+    {
+      "id": "f100000000000005",
+      "fromNode": "b100000000000008",
+      "fromSide": "right",
+      "toNode": "b100000000000009",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "路由任务"
+    },
+    {
+      "id": "f100000000000006",
+      "fromNode": "b100000000000009",
+      "fromSide": "right",
+      "toNode": "b10000000000000a",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "形成综合"
+    },
+    {
+      "id": "f100000000000007",
+      "fromNode": "b10000000000000d",
+      "fromSide": "bottom",
+      "toNode": "b10000000000000e",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "经由"
+    },
+    {
+      "id": "f100000000000008",
+      "fromNode": "b10000000000000e",
+      "fromSide": "bottom",
+      "toNode": "b10000000000000f",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "调用"
+    },
+    {
+      "id": "f100000000000009",
+      "fromNode": "b100000000000012",
+      "fromSide": "right",
+      "toNode": "b100000000000013",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "f10000000000000a",
+      "fromNode": "b100000000000013",
+      "fromSide": "right",
+      "toNode": "b100000000000014",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "f10000000000000b",
+      "fromNode": "b100000000000014",
+      "fromSide": "right",
+      "toNode": "b100000000000015",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "f10000000000000c",
+      "fromNode": "b100000000000015",
+      "fromSide": "bottom",
+      "toNode": "b100000000000013",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "label": "改进"
+    }
+  ]
+}

@@ -1,12 +1,10 @@
 ---
-date created: 2022-06-09
-date modified: 2023-03-14
-title: 🔗github
-评价: 7
 publish: true
-分类:
-- '[[好用网站 - fileclass]]'
-- '[[raycast插件 - fileclass]]'
+permalink: /Spaces/3-Resource/软件梳理/好用网站/Github.md
+title: 🔗github
+created: 2022-06-09
+modified: 2023-03-14
+published: 2026-05-16T01:30:27.857+08:00
 ---
 
 [[github star 列表导出]]

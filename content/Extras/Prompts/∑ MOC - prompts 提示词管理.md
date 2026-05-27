@@ -1,12 +1,25 @@
 ---
 publish: true
 permalink: /Extras/Prompts/∑ MOC - prompts 提示词管理.md
+title: ∑ MOC - prompts 提示词管理
 created: 2025-04-24
-modified: 2025-08-27
-published: 2026-01-01T12:12:58.199+08:00
+modified: 2026-05-01
+published: 2026-05-16T01:35:28.220+08:00
 ---
 
 [[如何快速地搜索存在obsidian中的提示词并复制]]
+
+## 当前 LLM Wiki 入口
+
+这页负责收拢可复制、可复用的 prompt 素材；LLM Wiki 里已经把 prompt 主题从“措辞技巧”推进到“问题定义、控制杆、承载层、评测和失败回放”的工作面。后续整理 prompt 时，优先用这些入口判断该沉淀成模板、规则、context loader，还是失败样本：
+
+- [[Atlas/LLM Wiki/Synthesis/Prompt Engineering 阅读地图|Prompt Engineering 阅读地图]]
+- [[Atlas/LLM Wiki/Synthesis/Prompt 进入顺序：问题定义、控制杆、承载层与评测如何接力|Prompt 进入顺序]]
+- [[Atlas/LLM Wiki/Synthesis/Prompt 的回桥规则：哪些失败归因该回写主阅读路径|Prompt 的回桥规则]]
+- [[Atlas/LLM Wiki/Synthesis/Prompt 的案例形态：控制杆清单、承载层清单与失败回放清单如何分工|Prompt 的案例形态]]
+- [[Atlas/LLM Wiki/Synthesis/Prompt 工作台资产的最小清单：控制杆清单、承载层清单与失败回放清单如何落地|Prompt 工作台资产最小清单]]
+
+当前首批归类样本已经把翻译、文章总结、元提示词、SVG 流程图和 Obsidian Canvas 生成这 5 类真实 prompt 分到控制杆清单或承载层清单。后续整理本页素材时，先判断它是单轮模板、稳定模板控制、repo rule / context loader 候选，还是失败回放样本，再决定是否继续留在普通 prompt 列表里。
 
 ## 提示词模板
 
@@ -51,7 +64,7 @@ nano banana： [GitHub - JimmyLv/awesome-nano-banana](https://github.com/JimmyLv
 - [[视觉学习导师]]
 - [[互联网讽刺大师]]
 - [[元提示词 - 优化提示词 - 优化prompts]]
-- [[阴阳怪气大师]]
+- 阴阳怪气大师（空占位已删除）
 - [[行业深度洞察大师]]
 - [[youtube视频提炼-转成blog风格]]
 
@@ -64,6 +77,7 @@ nano banana： [GitHub - JimmyLv/awesome-nano-banana](https://github.com/JimmyLv
 ## 图表与可视化生成
 
 - [[SVG流程图生成提示词模板]]
+- [[SVG流程图生成后验证清单]]
 
 ## 前端可视化页面生成
 
@@ -91,6 +105,7 @@ nano banana： [GitHub - JimmyLv/awesome-nano-banana](https://github.com/JimmyLv
 [[Obsidian advanced canvas 生成]]
 [[obsidian canvas 深度分析内容]]
 [[使用LLM生成obsidian canvas帮助日常阅读理解长文章]]
+[[JSON Canvas生成后验证清单]]
 [[obsidian canvas 和写代码配合]]
 
 ## 人设

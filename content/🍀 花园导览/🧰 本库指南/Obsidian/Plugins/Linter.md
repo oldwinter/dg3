@@ -6,7 +6,7 @@ aliases:
 title: Linter
 created: 2023-01-23
 modified: 2023-03-14
-published: 2025-08-26T18:25:03.283+08:00
+published: 2026-05-16T01:35:26.696+08:00
 ---
 
 神器，必备。

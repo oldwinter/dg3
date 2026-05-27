@@ -1,12 +1,17 @@
 ---
 publish: true
-分类:
-- '[[工作流workflow - fileclass]]'
+permalink: /Sources/Clippings/_ Clippings Readme.md
+title: _ Clippings Readme
+created: 2026-05-12
+modified: 2026-05-12
+published: 2026-05-16T01:45:55.374+08:00
+tags:
+  - clippings
 ---
 
 # 📰 剪藏文库 (Clippings) 说明
 
-这个文件夹用于存放从网络、书籍或其他来源剪藏或摘录的原始内容。
+这个文件夹用于统一存放从 Obsidian Web Clipper、网页、书籍或其他来源剪藏 / 摘录的原始内容。根目录 `Clippings/` 已退役，新的剪藏入口统一放在 `Sources/Clippings/`。
 
 这里的内容是外部信息的原始副本，通常未经深度处理。
 
@@ -21,7 +26,7 @@ publish: true
 2. **筛选:** 定期浏览剪藏内容，判断其价值。
 3. **处理:**
    - 对于有价值的内容，进行阅读、高亮、批注。
-   - 提炼核心观点，创建文献笔记 (Literature Notes) 或概念笔记 (Concept Notes)，并存放到 `Atlas/Sources/` 或 `Atlas/Cards/` 目录下。
+   - 提炼核心观点，创建文献笔记、概念笔记或 LLM Wiki 编译层页面，并放到 `Cards/`、`Spaces/` 或 `Atlas/LLM Wiki/` 下。
    - 在新的笔记中链接回原始剪藏，方便溯源。
    - 对于不再需要或价值不高的内容，可以直接删除。
 

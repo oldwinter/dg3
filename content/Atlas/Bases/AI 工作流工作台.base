@@ -1,0 +1,229 @@
+filters:
+  and:
+    - 'file.inFolder("Atlas/LLM Wiki")'
+    - 'file.ext == "md"'
+formulas:
+  阅读入口: 'file.name.contains("阅读地图") || file.name.contains("分层图") || file.name.contains("覆盖总览")'
+  待晋升: '!promotion_target.isEmpty() && status != "done"'
+  弱连接: 'file.backlinks.length < 2'
+properties:
+  formula.阅读入口:
+    displayName: 阅读入口
+  formula.待晋升:
+    displayName: 待晋升
+  formula.弱连接:
+    displayName: 弱连接
+  file.name:
+    displayName: 文件名
+  file.mtime:
+    displayName: 最近修改
+  file.backlinks:
+    displayName: 反链
+  promotion_target:
+    displayName: 回桥目标
+views:
+  - type: table
+    name: 入口｜阅读地图与总览
+    filters:
+      and:
+        - 'type == "synthesis"'
+        - or:
+            - 'file.name.contains("阅读地图")'
+            - 'file.name.contains("分层图")'
+            - 'file.name.contains("覆盖总览")'
+            - 'file.name.contains("当前覆盖总览")'
+    order:
+      - file.name
+      - status
+      - tags
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 执行面｜Claude Code
+    filters:
+      or:
+        - 'tags.containsAny("claude-code")'
+        - 'file.name.contains("Claude Code")'
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.待晋升
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 执行面｜Codex
+    filters:
+      or:
+        - 'tags.containsAny("codex")'
+        - 'file.name.contains("Codex")'
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.待晋升
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 能力层｜Skills
+    filters:
+      or:
+        - 'tags.containsAny("skills")'
+        - 'file.name.contains("Skills")'
+        - 'file.name.contains("skills")'
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.待晋升
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 执行资产｜Claude+Codex
+    filters:
+      and:
+        - 'type != "note"'
+        - or:
+            - 'file.name.contains("长期执行包")'
+            - 'file.name.contains("团队接力包")'
+            - 'file.name.contains("组织 rollout 清单")'
+            - 'file.name.contains("任务准备清单")'
+            - 'file.name.contains("远程执行清单")'
+            - 'file.name.contains("默认推进清单")'
+            - 'file.name.contains("Claude Code 的案例形态")'
+            - 'file.name.contains("Codex 的案例形态")'
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.待晋升
+      - formula.弱连接
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 系统层｜Harness
+    filters:
+      or:
+        - 'tags.containsAny("harness-engineering")'
+        - 'file.name.contains("Harness")'
+        - 'file.name.contains("harness")'
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.待晋升
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 接口与编排｜Agent-ready
+    filters:
+      or:
+        - 'tags.containsAny("orchestration", "agent-ready", "ai-toolchain")'
+        - 'file.name.contains("Agent-ready")'
+        - 'file.name.contains("Agent Orchestration")'
+        - 'file.name.contains("编排")'
+        - 'file.name.contains("AI 工具链")'
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.待晋升
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 治理｜主分工与回桥
+    filters:
+      and:
+        - 'type == "synthesis"'
+        - or:
+            - 'file.name.contains("主分工")'
+            - 'file.name.contains("回桥规则")'
+            - 'file.name.contains("案例形态")'
+            - 'file.name.contains("最小清单")'
+            - 'file.name.contains("晋升")'
+    order:
+      - file.name
+      - status
+      - related
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.待晋升
+      - formula.弱连接
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 待处理｜弱连接与待晋升
+    filters:
+      or:
+        - 'file.backlinks.length < 2'
+        - '!promotion_target.isEmpty() && status != "done"'
+        - 'status == "draft"'
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.待晋升
+      - formula.弱连接
+    sort:
+      - property: formula.待晋升
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC

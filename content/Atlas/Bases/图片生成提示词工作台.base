@@ -1,0 +1,161 @@
+filters:
+  and:
+    - file.ext == "md"
+    - or:
+        - image_generation == true
+        - type == "image-generation-record"
+        - tags.containsAny("image-generation")
+        - and:
+            - topics.containsAny(link("提示词prompts - fileclass"))
+            - or:
+                - file.name.contains("图片生成")
+                - file.name.contains("AI绘图")
+formulas:
+  有成图: "!result_image.isEmpty() || !result_url.isEmpty()"
+  待补成图: result_image.isEmpty() && result_url.isEmpty()
+  已完成研究: research_status == "done"
+  最近修改距今天数: (now() - file.mtime).days.round(0)
+properties:
+  prompt_topic:
+    displayName: 主题
+  source_title:
+    displayName: 来源作品
+  source_author:
+    displayName: 来源作者
+  prompt_use_case:
+    displayName: 用途
+  style_reference:
+    displayName: 风格参考
+  prompt_model:
+    displayName: 提示词模型
+  result_model:
+    displayName: 出图模型
+  aspect_ratio:
+    displayName: 比例
+  orientation:
+    displayName: 方向
+  image_status:
+    displayName: 成图状态
+  result_image:
+    displayName: 成图
+  result_url:
+    displayName: 成图 URL
+  research_status:
+    displayName: 检索状态
+  prompt_version:
+    displayName: 版本
+  quality_rating:
+    displayName: 评分
+  prompt_notes:
+    displayName: 备注
+  file.name:
+    displayName: 文件名
+  file.folder:
+    displayName: 文件夹
+  file.mtime:
+    displayName: 最近修改
+  file.embeds:
+    displayName: 嵌入图片
+  formula.有成图:
+    displayName: 有成图
+  formula.待补成图:
+    displayName: 待补成图
+  formula.已完成研究:
+    displayName: 已完成研究
+  formula.最近修改距今天数:
+    displayName: 距今天数
+views:
+  - type: table
+    name: 总览｜提示词与成图
+    order:
+      - file.name
+      - prompt_topic
+      - source_title
+      - prompt_use_case
+      - style_reference
+      - result_model
+      - aspect_ratio
+      - image_status
+      - result_image
+      - result_url
+      - research_status
+      - quality_rating
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    limit: 300
+  - type: cards
+    name: 画廊｜已出图
+    filters:
+      and:
+        - formula.有成图
+    order:
+      - file.name
+      - prompt_topic
+      - source_title
+      - style_reference
+      - result_model
+      - quality_rating
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 200
+    image: result_image
+  - type: table
+    name: 待补｜未挂成图
+    filters:
+      and:
+        - formula.待补成图
+    order:
+      - file.name
+      - prompt_topic
+      - source_title
+      - image_status
+      - result_image
+      - result_url
+      - file.embeds
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 200
+  - type: table
+    name: 研究｜需检索补证
+    filters:
+      or:
+        - research_status == "todo"
+        - research_status == "doing"
+        - research_status == "needs-review"
+        - research_status.isEmpty()
+    order:
+      - file.name
+      - prompt_topic
+      - source_title
+      - source_author
+      - research_status
+      - prompt_notes
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 200
+  - type: table
+    name: 复用｜提示词模板
+    filters:
+      and:
+        - topics.containsAny(link("提示词prompts - fileclass"))
+    order:
+      - file.name
+      - prompt_topic
+      - prompt_use_case
+      - prompt_model
+      - result_model
+      - aspect_ratio
+      - file.mtime
+    sort:
+      - property: file.name
+        direction: ASC
+    limit: 300

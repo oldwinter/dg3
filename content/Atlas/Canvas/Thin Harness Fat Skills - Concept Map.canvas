@@ -1,0 +1,302 @@
+{
+  "nodes": [
+    {
+      "id": "1000000000000003",
+      "type": "group",
+      "x": -1320,
+      "y": 0,
+      "width": 760,
+      "height": 1160,
+      "label": "Five Core Concepts",
+      "color": "5"
+    },
+    {
+      "id": "1000000000000009",
+      "type": "group",
+      "x": -500,
+      "y": 0,
+      "width": 840,
+      "height": 920,
+      "label": "Three-Layer Architecture",
+      "color": "4"
+    },
+    {
+      "id": "1000000000000018",
+      "type": "group",
+      "x": 400,
+      "y": 0,
+      "width": 740,
+      "height": 920,
+      "label": "System Behavior",
+      "color": "6"
+    },
+    {
+      "id": "1000000000000001",
+      "type": "file",
+      "x": -1060,
+      "y": -320,
+      "width": 440,
+      "height": 230,
+      "file": "Sources/Clippings/Thin Harness, Fat Skills.md",
+      "color": "3"
+    },
+    {
+      "id": "1000000000000002",
+      "type": "text",
+      "x": -500,
+      "y": -320,
+      "width": 620,
+      "height": 230,
+      "text": "# Thin Harness, Fat Skills\n\nThe productivity jump is architectural, not model-side. The winning system keeps the harness small, moves repeatable judgment into markdown skills, and delegates reliable execution to deterministic tools.",
+      "color": "3"
+    },
+    {
+      "id": "1000000000000004",
+      "type": "text",
+      "x": -1280,
+      "y": 80,
+      "width": 680,
+      "height": 170,
+      "text": "## 1. Skill Files\n\nReusable markdown procedures that teach **how** to do work. They behave like method calls: one procedure plus different parameters can become investigation, matching, enrichment, or review.",
+      "color": "5"
+    },
+    {
+      "id": "1000000000000005",
+      "type": "text",
+      "x": -1280,
+      "y": 280,
+      "width": 680,
+      "height": 170,
+      "text": "## 2. Harness\n\nThe program around the LLM: loop the model, read/write files, manage context, and enforce safety. The harness should stay thin and use fast, narrow tools instead of bloated tool catalogs.",
+      "color": "5"
+    },
+    {
+      "id": "1000000000000006",
+      "type": "text",
+      "x": -1280,
+      "y": 480,
+      "width": 680,
+      "height": 170,
+      "text": "## 3. Resolvers\n\nContext routing tables: when task type X appears, load document or skill Y. Descriptions, pointers, and lightweight rules replace giant always-loaded instruction files.",
+      "color": "5"
+    },
+    {
+      "id": "1000000000000007",
+      "type": "text",
+      "x": -1280,
+      "y": 680,
+      "width": 680,
+      "height": 170,
+      "text": "## 4. Latent vs Deterministic\n\nLatent space is for judgment, synthesis, pattern recognition, and ambiguity. Deterministic code is for trust: SQL, arithmetic, compiled code, assignment algorithms, and repeatable execution.",
+      "color": "5"
+    },
+    {
+      "id": "1000000000000008",
+      "type": "text",
+      "x": -1280,
+      "y": 880,
+      "width": 680,
+      "height": 190,
+      "text": "## 5. Diarization\n\nThe analyst step: read many documents, hold contradictions in mind, and produce one structured profile or brief. It turns raw retrieval into useful judgment.",
+      "color": "5"
+    },
+    {
+      "id": "1000000000000010",
+      "type": "text",
+      "x": -460,
+      "y": 90,
+      "width": 760,
+      "height": 160,
+      "text": "## Top Layer: Fat Skills\n\nMarkdown procedures encode judgment, domain knowledge, process, examples, and evaluation rules. This is where most of the value lives and where model upgrades compound.",
+      "color": "4"
+    },
+    {
+      "id": "1000000000000011",
+      "type": "text",
+      "x": -460,
+      "y": 300,
+      "width": 760,
+      "height": 150,
+      "text": "## Middle Layer: Thin CLI Harness\n\nJSON in, text out. Read-only by default. It manages the model loop, context, file access, tool calls, and safety without swallowing the system's knowledge.",
+      "color": "4"
+    },
+    {
+      "id": "1000000000000012",
+      "type": "text",
+      "x": -460,
+      "y": 500,
+      "width": 760,
+      "height": 150,
+      "text": "## Bottom Layer: Application\n\nDeterministic capabilities such as QueryDB, ReadDoc, Search, Timeline, browser checks, API pulls, embeddings, and assignment algorithms provide reliable execution.",
+      "color": "4"
+    },
+    {
+      "id": "1000000000000013",
+      "type": "text",
+      "x": -460,
+      "y": 700,
+      "width": 760,
+      "height": 130,
+      "text": "## Directional Rule\n\nPush intelligence upward into skills. Push execution downward into deterministic tooling. Keep the harness thin so context remains clean and latency stays low.",
+      "color": "4"
+    },
+    {
+      "id": "1000000000000017",
+      "type": "text",
+      "x": 440,
+      "y": 90,
+      "width": 660,
+      "height": 260,
+      "text": "## YC Example\n\nFounder enrichment, event matching, and post-event improvement use the same pattern. Skills decide how to read and judge; deterministic tools fetch data, run searches, compute stats, and assign seats.",
+      "color": "6"
+    },
+    {
+      "id": "1000000000000015",
+      "type": "text",
+      "x": 440,
+      "y": 400,
+      "width": 660,
+      "height": 230,
+      "text": "## Learning Loop\n\nRetrieve, read, diarize, count, synthesize. Then survey, investigate, diarize weak outcomes, extract rules, and write them back into the skill file. The skill rewrites the system's future behavior.",
+      "color": "6"
+    },
+    {
+      "id": "1000000000000016",
+      "type": "text",
+      "x": 440,
+      "y": 680,
+      "width": 660,
+      "height": 160,
+      "text": "## Main Anti-Pattern\n\nA fat harness with thin skills: dozens of tools, slow MCP round-trips, REST endpoint wrappers, context bloat, higher latency, and more failure modes.",
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "2000000000000001",
+      "fromNode": "1000000000000001",
+      "fromSide": "right",
+      "toNode": "1000000000000002",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "source"
+    },
+    {
+      "id": "2000000000000002",
+      "fromNode": "1000000000000002",
+      "fromSide": "bottom",
+      "toNode": "1000000000000004",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "defines"
+    },
+    {
+      "id": "2000000000000003",
+      "fromNode": "1000000000000002",
+      "fromSide": "bottom",
+      "toNode": "1000000000000010",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "composes into"
+    },
+    {
+      "id": "2000000000000004",
+      "fromNode": "1000000000000004",
+      "fromSide": "right",
+      "toNode": "1000000000000010",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "becomes"
+    },
+    {
+      "id": "2000000000000005",
+      "fromNode": "1000000000000005",
+      "fromSide": "right",
+      "toNode": "1000000000000011",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "is"
+    },
+    {
+      "id": "2000000000000006",
+      "fromNode": "1000000000000006",
+      "fromSide": "right",
+      "toNode": "1000000000000011",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "routes context for"
+    },
+    {
+      "id": "2000000000000007",
+      "fromNode": "1000000000000007",
+      "fromSide": "right",
+      "toNode": "1000000000000013",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "sets boundary"
+    },
+    {
+      "id": "2000000000000008",
+      "fromNode": "1000000000000008",
+      "fromSide": "right",
+      "toNode": "1000000000000015",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "label": "feeds"
+    },
+    {
+      "id": "2000000000000009",
+      "fromNode": "1000000000000010",
+      "fromSide": "bottom",
+      "toNode": "1000000000000011",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "invokes"
+    },
+    {
+      "id": "2000000000000010",
+      "fromNode": "1000000000000011",
+      "fromSide": "bottom",
+      "toNode": "1000000000000012",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "delegates to"
+    },
+    {
+      "id": "2000000000000011",
+      "fromNode": "1000000000000012",
+      "fromSide": "bottom",
+      "toNode": "1000000000000013",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "stays reliable under"
+    },
+    {
+      "id": "2000000000000012",
+      "fromNode": "1000000000000017",
+      "fromSide": "bottom",
+      "toNode": "1000000000000015",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "generates feedback"
+    },
+    {
+      "id": "2000000000000013",
+      "fromNode": "1000000000000015",
+      "fromSide": "left",
+      "toNode": "1000000000000010",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "rewrites"
+    },
+    {
+      "id": "2000000000000014",
+      "fromNode": "1000000000000016",
+      "fromSide": "left",
+      "toNode": "1000000000000011",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "label": "avoid"
+    }
+  ]
+}

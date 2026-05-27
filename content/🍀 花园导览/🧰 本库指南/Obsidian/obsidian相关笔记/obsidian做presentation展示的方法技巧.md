@@ -1,8 +1,10 @@
 ---
-title: obsidian做presentation展示的方法技巧
-date created: 2023-02-15
-date modified: 2023-03-14
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian做presentation展示的方法技巧.md
+title: obsidian做presentation展示的方法技巧
+created: 2023-02-15
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.705+08:00
 ---
 
 ## 考虑的点

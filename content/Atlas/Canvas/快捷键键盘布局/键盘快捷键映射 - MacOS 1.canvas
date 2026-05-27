@@ -554,10 +554,10 @@
 			"color":"1"
 		},
 		{
-			"file":"Cards/F.md",
+			"text":"F",
 			"id":"55aa59025a7edacd",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":87,
 			"y":27,
 			"width":162,
@@ -667,10 +667,10 @@
 		},
 		{
 			"dynamicHeight":true,
-			"file":"Cards/。.md",
+			"text":"。",
 			"id":"c43c5bfa06a61a66",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":1200,
 			"y":240,
 			"width":160,
@@ -698,10 +698,10 @@
 			"color":"1"
 		},
 		{
-			"file":"Cards/J.md",
+			"text":"J",
 			"id":"ab7aa01ebdeb9564",
 			"styleAttributes":{},
-			"type":"file",
+			"type":"text",
 			"x":697,
 			"y":27,
 			"width":162,

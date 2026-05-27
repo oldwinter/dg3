@@ -54,7 +54,7 @@
 		{"id":"7f8a9b0c1d2e3f4a","type":"text","text":"### 密钥管理\n\n**Vault** / **SealedSecret**\n\n- 敏感信息加密存储\n- 运行时注入\n- 自动轮换\n\nGitLab CI Variables:\n- Masked Variables\n- Protected Variables","x":1450,"y":1150,"width":400,"height":250,"color":"1"},
 		{"id":"8f9a0b1c2d3e4f5a","type":"text","text":"### 准入控制\n\n**分支保护**:\n- main/release/* 保护\n- 必须 MR + 至少 1 人 review\n- CI 通过才能合并\n\n**准入标准**:\n- 无单测/CI失败 → 禁止合并\n- 生产 MR 需多人审批","x":1900,"y":1150,"width":400,"height":250,"color":"1"},
 		{"id":"9f0a1b2c3d4e5f6a","type":"text","text":"### 统一规范\n\n- 代码结构统一\n- CI 模板复用\n- 禁止 kubectl apply\n- 配置收敛到 ConfigMap\n\n**《DevOps 开发指南》**\n- 分支命名规范\n- MR 规范\n- 提测/上线流程","x":2350,"y":1150,"width":350,"height":250,"color":"1"},
-		{"id":"d34e5f6a7b8c9d0e","type":"file","file":"Calendar/Daily notes/2026/公司 117集群的 kargo.md","x":1350,"y":1500,"width":400,"height":100},
+		{"id":"d34e5f6a7b8c9d0e","type":"file","file":"Spaces/Private/secrets重要/公司 117集群的 kargo.md","x":1350,"y":1500,"width":400,"height":100},
 		{"id":"e45f6a7b8c9d0e1f","type":"file","file":"Cards/gitops.md","x":1800,"y":1500,"width":400,"height":100},
 		{"id":"2b3c4d5e6f7a8b9c","type":"text","text":"**svc-analytics**\n分析服务","x":0,"y":160,"width":200,"height":60},
 		{"id":"6b7c8d9e0f1a2b3c","type":"text","text":"**svc-registry**\n服务注册","x":880,"y":160,"width":200,"height":60},

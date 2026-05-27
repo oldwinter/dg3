@@ -14,7 +14,7 @@
 	],
 	"metadata":{"version":"1.0-1.0"},
 	"nodes":[
-		{"id":"center","type":"file","file":"Sources/AIGC/∑ k8s 入门到精通 MOC.md","x":0,"y":-300,"width":400,"height":700},
+		{"id":"center","type":"file","file":"Sources/AI/∑ k8s 入门到精通 MOC.md","x":0,"y":-300,"width":400,"height":700},
 		{"id":"overview","type":"text","text":"🎯 学习概览","x":-600,"y":-300,"width":220,"height":120,"color":"3"},
 		{"id":"path","type":"text","text":"🛣️ 学习路径","x":-200,"y":-500,"width":220,"height":120,"color":"3"},
 		{"id":"install","type":"text","text":"🔧 安装与环境","x":250,"y":-500,"width":220,"height":120,"color":"3"},

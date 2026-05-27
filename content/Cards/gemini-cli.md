@@ -3,7 +3,7 @@ publish: true
 permalink: /Cards/gemini-cli.md
 created: 2025-06-25
 modified: 2025-07-10
-published: 2026-02-08T13:48:32.070+08:00
+published: 2026-05-16T01:30:26.949+08:00
 ---
 
 up:: [[∑ 大模型产品对比]]
@@ -67,4 +67,4 @@ gemini
 - 创建mermaid。
 - 编辑 jupyter notebook
 
-![[cursor 1.0 有的全部tools]]
+cursor 1.0 有的全部tools

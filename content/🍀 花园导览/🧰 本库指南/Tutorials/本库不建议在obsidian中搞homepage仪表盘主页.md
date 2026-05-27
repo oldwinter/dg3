@@ -1,9 +1,12 @@
 ---
-date created: 2025-07-18
-date modified: 2025-07-18
 publish: true
-分类:
-- '[[AI生成 - fileclass]]'
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库不建议在obsidian中搞homepage仪表盘主页.md
+aliases:
+  - 本库不建议在 Obsidian 中搞 homepage 仪表盘主页
+title: 本库不建议在 Obsidian 中搞 homepage 仪表盘主页
+created: 2025-07-18
+modified: 2026-05-01
+published: 2026-05-16T01:35:26.668+08:00
 ---
 
 > 注：以下内容为AI生成，我认真阅读后，基本符合我自己的观点，所以略作补充后，发出来。
@@ -44,7 +47,7 @@ publish: true
 2. **命令面板 (Command Palette)**：使用 `Ctrl/Cmd + P` 快速执行任何操作，如打开插件设置、执行命令等。
 3. **快速切换 (Quick Switcher)**：使用 `Ctrl/Cmd + O` 快速打开任何一篇笔记。这是最快、最直接的导航方式，远胜于在主页上寻找链接。
 4. **书签笔记 (Bookmaks Notes)**：将你最常用、最重要的几篇笔记（例如顶层 MOC、项目主页）加入星标，一键访问。
-5. **最近笔记 (Recent notes)**：快速翻阅最近编辑或创建过的笔记，有助于建立大脑中的临时处理上下文。需安装插件[[Recent Notes]]，另一个替代是[[Recent Files]]。
+5. **最近笔记 (Recent notes)**：快速翻阅最近编辑或创建过的笔记，有助于建立大脑中的临时处理上下文。可用 Recent Notes（评价 6，别名 `recent-notes`），另一个替代是[[Recent Files]]。
 6. **内容地图 (MOC - Map of Content)**：这才是主页的“精神内核”。但一个好的 MOC 是朴素的，它就是一个纯粹的链接列表，是你对某一领域知识的梳理和索引。它应该是功能性的，而非装饰性的。例如，你可以有一个 `[[MOC - Obsidian 插件]]`，里面只列出你研究过的插件笔记链接。
 7. **Canvas (画布)**：如果你确实需要一个可视化的、自由布局的入口，Canvas 是一个远比笔记主页更灵活、更强大的工具。你可以在上面自由拖拽笔记、图片、卡片，构建真正属于你的“可视化主页”，且其维护成本远低于用代码和插件堆砌的主页。
 

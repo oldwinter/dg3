@@ -4,7 +4,7 @@ permalink: /Cards/PPV.md
 title: PPV
 created: 2022-06-22
 modified: 2023-03-19
-published: 2025-08-15T21:59:57.217+08:00
+published: 2026-05-16T01:30:26.692+08:00
 ---
 
 相关：[[滴答清单官方理解的ppv]]
@@ -35,12 +35,12 @@ PPV就像一个人生经营系统。相比于[[P.A.R.A]]，更容易融入[[GTD]
 - 项目
 - 行动与习惯
   - 以前我忽视了习惯养成的重要性。比如减肥，如果花时间代价减下来了，但过几个月几年又反弹了，就没有价值，应该要形成习惯。
-  - [[原子习惯]] #todo
+  - 原子习惯 #todo
 
 ## Vaults - 参考资料（知识库）
 
 - 知识主题库
-  - [[中图法]]思路的主题分类。
+  - 中图法思路的主题分类。
 - 图书媒体库
 - 课程与学习库
 - 笔记与灵感
@@ -83,10 +83,10 @@ PPV就像一个人生经营系统。相比于[[P.A.R.A]]，更容易融入[[GTD]
   - Accomplishments and takeaway
   - Feedback
 
-[[∑ Pillars - 经营领域]]
+∑ Pillars - 经营领域
 
-[[Pipelines - 行动管道]]
+Pipelines - 行动管道
 
-[[Vaults - 知识库]]
+Vaults - 知识库
 
-[[Cycle - 检视回顾]]
+Cycle - 检视回顾

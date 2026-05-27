@@ -1,8 +1,10 @@
 ---
-date created: 2022-07-20
-date modified: 2023-03-14
-title: 如何通过obsidian打造自己的第二大脑
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/如何通过obsidian打造自己的第二大脑.md
+title: 如何通过obsidian打造自己的第二大脑
+created: 2022-07-20
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.709+08:00
 ---
 
 [[Building a Second Brain-Tiago Forte]]中，将[[第二大脑]]的建设，概括为4个有机结合的阶段[[C.O.D.E]]。Capture，Organize，Distill，Express

@@ -1,26 +1,10 @@
 ---
-star_date: 2023-12-06 05:46:59
-repo_name: pyenv/pyenv
-repo_url: https://github.com/pyenv/pyenv
-description: Simple Python version management
-language: Roff
-stars: 42385
-forks: 3182
-created_date: 2012-08-31
-updated_date: 2025-06-19
-pushed_date: 2025-06-18
-is_fork: false
-license: MIT License
-topics:
-- python
-- shell
-size_kb: 6189
-issues: 65
-date created: 2023-12-06
-date modified: 2024-11-05
 publish: true
-分类:
-- '[[github开源 - fileclass]]'
+permalink: /Sources/GithubStarsSync/pyenv.md
+description: Simple Python version management
+created: 2023-12-06
+modified: 2024-11-05
+published: 2026-05-16T01:30:28.591+08:00
 ---
 
 # pyenv/pyenv

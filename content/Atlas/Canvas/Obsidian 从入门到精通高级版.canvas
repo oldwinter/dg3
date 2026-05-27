@@ -165,7 +165,7 @@
 			"height":150,
 			"color":"3"
 		},
-		{"file":"Sources/AIGC/Obsidian 专家快速开始指南.md","id":"basics2","type":"file","x":-800,"y":450,"width":300,"height":150},
+		{"text":"Obsidian 专家快速开始指南","id":"basics2","type":"text","x":-800,"y":450,"width":300,"height":150},
 		{
 			"id":"basics3",
 			"styleAttributes":{"shape":"rectangle"},
@@ -221,7 +221,7 @@
 			"height":200,
 			"color":"4"
 		},
-		{"file":"🍀 花园导览/🧰 本库指南/Tutorials/» Daily notes工作流.md","id":"core2","type":"file","x":0,"y":450,"width":300,"height":150},
+		{"file":"Spaces/2-Area/数字花园建设与维护/» Daily notes工作流.md","id":"core2","type":"file","x":0,"y":450,"width":300,"height":150},
 		{"file":"Extras/Templates/∑ 模板文件创建入口.md","id":"core4","type":"file","x":0,"y":650,"width":300,"height":150},
 		{
 			"id":"plugin1",
@@ -258,7 +258,7 @@
 		{
 			"id":"workflowcenter",
 			"styleAttributes":{"shape":"circle","textAlign":"center"},
-			"text":"# 🔄 工作流整合\n\n将所有知识点整合成个人工作流：\n\n**输入** → **处理** → **连接** → **输出**\n\nInbox → Cards → Atlas → Published",
+			"text":"# 🔄 工作流整合\n\n将所有知识点整合成个人工作流：\n\n**输入** → **处理** → **连接** → **输出**\n\nDaily notes / Sources → Cards → Atlas → Published",
 			"type":"text",
 			"x":0,
 			"y":1400,
@@ -286,8 +286,8 @@
 			"width":300,
 			"height":100
 		},
-		{"file":"Spaces/4-Archive/黑洞/Dataviews/» 本库常用的dataview工作流.md","id":"plugin2","type":"file","x":450,"y":800,"width":300,"height":150},
-		{"file":"🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Templater.md","id":"plugin3","portal":true,"type":"file","x":800,"y":800,"width":300,"height":150},
+		{"text":"» 本库常用的dataview工作流","id":"plugin2","type":"text","x":450,"y":800,"width":300,"height":150},
+		{"file":"Cards/Templater.md","id":"plugin3","portal":true,"type":"file","x":800,"y":800,"width":300,"height":150},
 		{"file":"🍀 花园导览/🧰 本库指南/🍫 本库方法论指南.md","id":"advanced3","type":"file","x":1600,"y":700,"width":300,"height":150},
 		{"id":"advanced4","text":"## 🤖 AI 集成\n\n### Cursor AI 自动化\n- 笔记自动分类\n- 智能标签建议\n- 内容摘要生成\n\n### 其他 AI 工具\n- ChatGPT 集成\n- Claude 辅助写作","type":"text","x":1250,"y":900,"width":600,"height":250,"color":"2"},
 		{"id":"tips2","text":"## 🎯 进阶目标\n\n- 建立个人知识体系\n- 开发自定义插件\n- 分享经验与模板\n- 成为社区贡献者","type":"text","x":1200,"y":1400,"width":400,"height":200,"color":"6"}

@@ -1,11 +1,12 @@
 ---
-title: obsidian的不同人的用法
-date created: 2023-02-24
-date modified: 2023-03-14
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian的不同人的用法.md
 aliases:
   - obsidian的使用level tier
-是否已review: true
+title: obsidian的不同人的用法
+created: 2023-02-24
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.701+08:00
 ---
 
 - markdown编辑器

@@ -3,7 +3,7 @@ publish: true
 permalink: /Extras/Documents/Obsidian Bases View 视图.md
 created: 2025-07-25
 modified: 2025-08-19
-published: 2025-08-19T21:19:29.112+08:00
+published: 2026-05-16T01:30:29.187+08:00
 ---
 
 Views allow you to organize the information in a [Base](https://help.obsidian.md/bases) in multiple different ways. A base can contain several views, and each view can have a unique configuration to display, sort, and filter files.

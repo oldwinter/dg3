@@ -3,18 +3,18 @@ publish: true
 permalink: /Spaces/1-Project/入门到精通 ChatGPT和LLM 应用及原理/DeepSeek.md
 created: 2025-01-16
 modified: 2025-02-26
-published: 2025-08-27T12:20:56.054+08:00
+published: 2026-05-24T14:06:37.603+08:00
 ---
 
 [[deepseek 提示词技巧]]
 
 ## 相关资料
 
-[[DeepSeek内部研讨系列—DeepSeek与AIGC应用0220B.pdf]]
+DeepSeek内部研讨系列—DeepSeek与AIGC应用0220B.pdf
 
-[[DeepSeek内部研讨系列---提示词工程和落地场景20250222B.pdf]]
+DeepSeek内部研讨系列---提示词工程和落地场景20250222B.pdf
 
-[[DeepSeek完全实用手册V1.0 - 至顶AI实验室.pdf]]
+DeepSeek完全实用手册V1.0 - 至顶AI实验室.pdf
 
 ## 官方
 

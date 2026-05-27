@@ -1,16 +1,12 @@
 ---
-date created: 2022-06-23
-date modified: 2023-03-14
-tags:
-- review
-notetoolbar: SpacedRepetition
-title: 🔡DIKW
 publish: true
-分类:
-- '[[思维模型 - fileclass]]'
-sr-due: 2030-01-29
-sr-interval: 2082
-sr-ease: 314
+permalink: /Spaces/2-Area/思维工具与模块/🔡DIKW.md
+title: 🔡DIKW
+created: 2022-06-23
+modified: 2023-03-14
+published: 2026-05-16T01:30:27.302+08:00
+tags:
+  - review
 ---
 
 ## 基础概念

@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"aa11bb22cc33dd44","type":"group","x":-120,"y":-120,"width":2160,"height":980,"label":"Harness Reading Map"},
+		{"id":"bb22cc33dd44ee55","type":"text","text":"# Harness 阅读地图\n\n把当前 llm-wiki 里的定义、长任务、工具层、skills、控制论、元层优化放到一张画布里。","x":40,"y":-40,"width":560,"height":140},
+		{"id":"cc33dd44ee55ff66","type":"file","file":"Atlas/LLM Wiki/Concepts/Harness Engineering.md","label":"概念","x":60,"y":180,"width":320,"height":220},
+		{"id":"dd44ee55ff667788","type":"file","file":"Atlas/LLM Wiki/Synthesis/Harness Engineering 从定义到工程实践.md","label":"定义到实践","x":460,"y":180,"width":340,"height":220},
+		{"id":"ee55ff66778899aa","type":"file","file":"Atlas/LLM Wiki/Synthesis/Long-horizon Agent Harness 设计模式.md","label":"长任务","x":860,"y":180,"width":340,"height":220},
+		{"id":"ff66778899aabbcc","type":"file","file":"Atlas/LLM Wiki/Synthesis/Claude Code 与 Codex 的 Harness 设计原则.md","label":"Claude/Codex","x":1260,"y":180,"width":340,"height":220},
+		{"id":"1122334455667788","type":"file","file":"Atlas/LLM Wiki/Synthesis/Skills 作为轻量能力注入层.md","label":"Skills","x":1660,"y":180,"width":320,"height":220},
+		{"id":"2233445566778899","type":"file","file":"Atlas/LLM Wiki/Synthesis/Harness Engineering 阅读地图.md","label":"阅读地图","x":280,"y":520,"width":320,"height":220},
+		{"id":"33445566778899aa","type":"file","file":"Atlas/LLM Wiki/Queries/为什么说 Harness Engineering 更像控制论.md","label":"控制论","x":700,"y":520,"width":320,"height":220},
+		{"id":"445566778899aabb","type":"file","file":"Atlas/LLM Wiki/Queries/什么时候才值得让 agent 去优化 agent.md","label":"元层优化","x":1120,"y":520,"width":320,"height":220},
+		{"id":"5566778899aabbcc","type":"file","file":"Atlas/LLM Wiki/Synthesis/个人 AI 工作流分层图.md","label":"工作流分层","x":1540,"y":520,"width":340,"height":220}
+	],
+	"edges":[
+		{"id":"1011121314151617","fromNode":"cc33dd44ee55ff66","fromSide":"right","toNode":"dd44ee55ff667788","toSide":"left"},
+		{"id":"2021222324252627","fromNode":"dd44ee55ff667788","fromSide":"right","toNode":"ee55ff66778899aa","toSide":"left"},
+		{"id":"3031323334353637","fromNode":"ee55ff66778899aa","fromSide":"right","toNode":"ff66778899aabbcc","toSide":"left"},
+		{"id":"4041424344454647","fromNode":"ff66778899aabbcc","fromSide":"right","toNode":"1122334455667788","toSide":"left"},
+		{"id":"5051525354555657","fromNode":"2233445566778899","fromSide":"right","toNode":"33445566778899aa","toSide":"left","label":"阅读路径"},
+		{"id":"6061626364656667","fromNode":"33445566778899aa","fromSide":"right","toNode":"445566778899aabb","toSide":"left"},
+		{"id":"7071727374757677","fromNode":"445566778899aabb","fromSide":"right","toNode":"5566778899aabbcc","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

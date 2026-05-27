@@ -1,8 +1,10 @@
 ---
-date created: 2022-06-30
-date modified: 2023-03-14
-title: obsidian组织笔记的5个要素
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian组织笔记的5个要素.md
+title: obsidian组织笔记的5个要素
+created: 2022-06-30
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.700+08:00
 ---
 
 x:: [[obsidian组织笔记的N个 xx first]]

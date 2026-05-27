@@ -1,10 +1,13 @@
 ---
 publish: true
 permalink: /Spaces/3-Resource/软件梳理/macos软件/∑ macOS 必备软件.md
+aliases:
+  - macOS 必备软件
+  - mac 必备软件
 title: ∑ mac必备软件
 created: 2022-06-09
-modified: 2025-04-03
-published: 2026-02-08T14:30:47.526+08:00
+modified: 2026-05-01
+published: 2026-05-24T14:30:49.928+08:00
 ---
 
 [[2025年我的macOS软件天梯榜.canvas]]
@@ -28,7 +31,7 @@ published: 2026-02-08T14:30:47.526+08:00
   - [[Raycast Clipboard]]
   - [[Raycast Quicklinks]]
   - [[Raycast Auto Quit Applications]]
-  - [[Raycast Focus]]
+  - Raycast Focus
   - [[Raycast Notes]]
   - [[Raycast Window Management]]
   - [[Raycast Hyper Key]]
@@ -46,6 +49,9 @@ published: 2026-02-08T14:30:47.526+08:00
 - [[Hook]]
 - [[Rectangle]]
 - [[Rectangle Pro]]
+- AeroSpace（评价 4，icon: [icon-cc-image-aerospace.png](https://pub-pic.oldwinter.top/2026/05/d30f640d607e14c3b81b5a999a1508ae.png)，repo: [nikitabobko/AeroSpace](https://github.com/nikitabobko/AeroSpace)，Swift / MIT，stars: 13331；i3-like tiling window manager for macOS；教程：[AeroSpace macOS 上最好的平铺窗口管理器](https://www.bilibili.com/video/BV18Cj3z6E5a/?vd_source=c16ee9cfb2023d2af8428dbfe604b72f)；可作为 [[Rectangle]] 以外的高级平铺窗口管理补充，键盘党和 [[vim]] 党适合）
+- AirBuddy（评价 4，icon: [icon-cc-image-AirBuddy.jpg](https://pub-pic.oldwinter.top/2026/05/dc07dba1d3c87eb8b7ef1c9b9daa93e3.png)，brew: `brew install --cask airbuddy`；显示 [[airpods]] 的电量信息，替换系统部分 [[HUD]] 动画）
+- Lunar（评价 4，icon: [lunar-cc-image-icon.png](https://pub-pic.oldwinter.top/2026/05/51fbc299fb892e03230cf1c7a9f37b6c.png)；调整屏幕，加上流明信息；关联 BetterDisplay）
 - [[Houdahspot]]
 - [[one switch]]
 - [[Karabiner-Elements]]
@@ -106,7 +112,7 @@ published: 2026-02-08T14:30:47.526+08:00
 - [[App Cleaner & Uninstaller PRO]]
 - [[Hazeover]]
 - [[Lookaway]]
-- [[Amnesia macos软件]]
+- Amnesia macos软件（评价 3，icon: [icon-cc-image-Amnesia\_macos软件.png](https://pub-pic.oldwinter.top/2026/05/f562a10bfa56e55fae77c744c436644a.png)，brew: `brew install --cask amnesia`）
 
 ### 输入法工具
 
@@ -158,7 +164,7 @@ published: 2026-02-08T14:30:47.526+08:00
 
 - ! [[UU远程]]
 - [[Royal TSX]]
-- [[TeamViewer]] (列表中未出现)
+- TeamViewer（列表中未出现，icon\_hq: `https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/45/44/3b/45443b76-4bca-61e4-14ba-f3b9a3b2e16e/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg`）
 
 ### 安全隐私
 
@@ -171,6 +177,7 @@ published: 2026-02-08T14:30:47.526+08:00
 - ! [[Arc浏览器]]
 - [[Edge]]
 - [[Zen Browser]]
+- deta surf浏览器（评价 3，icon: [deta-surf-icon-cc-image.png](https://pub-pic.oldwinter.top/2026/05/abf144702873e8a1948340e72fccf8ba.png)；使用截图：![](https://pub-pic.oldwinter.top/2025/04/29462090a0c86a4e7f8d97c10da28912.png)）
 
 ### 邮件与通讯
 
@@ -184,6 +191,7 @@ published: 2026-02-08T14:30:47.526+08:00
 - ! [[istat Menus]]
 - [[Barbee]]
 - [[menubarX]]
+- notchnook（评价 4，icon: [icon-cc-image-notchnook.png](https://pub-pic.oldwinter.top/2026/05/175b6b2ac4c2b919771fa2c0a1c5b7d8.png)；原单页无正文）
 
 ### 其他工具
 

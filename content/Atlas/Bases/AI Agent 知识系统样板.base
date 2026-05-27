@@ -1,0 +1,140 @@
+filters:
+  and:
+    - "file.inFolder(\"_system/docs/collections/ai-agent-knowledge-system-sample\")"
+    - "collection_id == \"ai-agent-knowledge-system-sample\""
+properties:
+  title:
+    displayName: "名称"
+  summary:
+    displayName: "摘要"
+  component_layer:
+    displayName: "系统层"
+  primary_surface:
+    displayName: "主入口"
+  related_theme:
+    displayName: "相关主题"
+  reuse_pattern:
+    displayName: "复用模式"
+  workflow_stage:
+    displayName: "流程阶段"
+  priority:
+    displayName: "优先级"
+  trial_candidate:
+    displayName: "可复用样板"
+  needs_review:
+    displayName: "待复核"
+  status:
+    displayName: "状态"
+  confidence:
+    displayName: "可信度"
+  enrichment_status:
+    displayName: "补全状态"
+  source_notes:
+    displayName: "本库来源"
+  source_paths:
+    displayName: "相对路径证据"
+  evidence_notes:
+    displayName: "证据说明"
+  risk_notes:
+    displayName: "风险说明"
+  next_action:
+    displayName: "下一步"
+  why_selected:
+    displayName: "入选理由"
+  source_urls:
+    displayName: "外部来源URL"
+  updated_at:
+    displayName: "更新时间"
+views:
+  - type: "table"
+    name: "总览"
+    order:
+      - "file.name"
+      - "title"
+      - "component_layer"
+      - "primary_surface"
+      - "summary"
+      - "reuse_pattern"
+      - "priority"
+      - "status"
+      - "confidence"
+      - "source_notes"
+      - "next_action"
+    sort:
+      - property: "priority"
+        direction: "DESC"
+      - property: "file.name"
+        direction: "ASC"
+  - type: "table"
+    name: "按层级巡检"
+    groupBy:
+      property: "component_layer"
+      direction: "ASC"
+    order:
+      - "file.name"
+      - "primary_surface"
+      - "workflow_stage"
+      - "summary"
+      - "next_action"
+      - "source_notes"
+    sort:
+      - property: "component_layer"
+        direction: "ASC"
+      - property: "priority"
+        direction: "DESC"
+  - type: "table"
+    name: "优先复用"
+    filters:
+      and:
+        - "trial_candidate == true"
+        - "priority >= 4"
+    order:
+      - "file.name"
+      - "reuse_pattern"
+      - "next_action"
+      - "risk_notes"
+      - "source_notes"
+    sort:
+      - property: "priority"
+        direction: "DESC"
+      - property: "file.name"
+        direction: "ASC"
+  - type: "table"
+    name: "Codex 与 LLM Wiki"
+    filters:
+      or:
+        - "component_layer == \"execution\""
+        - "component_layer == \"compile\""
+        - "component_layer == \"view\""
+    order:
+      - "file.name"
+      - "component_layer"
+      - "primary_surface"
+      - "summary"
+      - "evidence_notes"
+      - "next_action"
+    sort:
+      - property: "component_layer"
+        direction: "ASC"
+      - property: "priority"
+        direction: "DESC"
+  - type: "table"
+    name: "待补字段"
+    filters:
+      or:
+        - "needs_review == true"
+        - "confidence == \"low\""
+        - "enrichment_status == \"needs_review\""
+    order:
+      - "file.name"
+      - "needs_review"
+      - "confidence"
+      - "enrichment_status"
+      - "risk_notes"
+      - "next_action"
+      - "source_notes"
+    sort:
+      - property: "needs_review"
+        direction: "DESC"
+      - property: "file.name"
+        direction: "ASC"

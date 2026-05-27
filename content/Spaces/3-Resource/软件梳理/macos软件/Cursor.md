@@ -4,20 +4,20 @@ permalink: /Spaces/3-Resource/软件梳理/macos软件/Cursor.md
 title: Cursor
 created: 2023-12-02
 modified: 2025-09-08
-published: 2025-12-28T16:17:05.970+08:00
+published: 2026-05-24T14:30:49.917+08:00
 ---
 
 [[cursor cli]]
 
-[[cursor 使用技巧总结]]
+cursor 使用技巧总结
 
-[[cursor和idea比如goland之间互相跳转]]
+cursor和idea比如goland之间互相跳转
 
-[[cursor开发ios 项目]]
+cursor开发ios 项目
 
 [[cursor账号清单]]
 
-[[cursor-auto 试用]]
+cursor-auto 试用
 
 ## 默认快捷键配置
 

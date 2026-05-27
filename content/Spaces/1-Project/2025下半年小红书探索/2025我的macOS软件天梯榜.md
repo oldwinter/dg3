@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Spaces/1-Project/2025下半年小红书探索/2025我的macOS软件天梯榜.md
+description: 很可能是新人福利，另一篇将Windows的同样格式，就凉了
 created: 2025-07-15
 modified: 2025-07-15
-published: 2025-08-15T02:49:24.795+08:00
+published: 2026-05-16T01:30:27.939+08:00
 ---
 
 ## 图片来源

@@ -1,9 +1,10 @@
 ---
 publish: true
+permalink: /Extras/Chrome工具箱.md
 title: Chrome工具箱
-date created: 2025-10-03
-date modified: 2025-10-03
-tags: #chrome #工具 #浏览器
+created: 2025-10-03
+modified: 2025-10-03
+published: 2026-05-16T01:35:28.188+08:00
 ---
 
 ## 🛠️ Chrome 实用功能

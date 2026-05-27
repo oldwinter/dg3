@@ -1,8 +1,10 @@
 ---
-date created: 2022-08-25
-date modified: 2023-03-14
-title: 本库如何自动每日同步至github
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库如何自动每日同步至github.md
+title: 本库如何自动每日同步至github
+created: 2022-08-25
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.698+08:00
 ---
 
 [[本库如何指定笔记同步至github]]
@@ -14,12 +16,12 @@ publish: true
 随便找一个自动化运行的工具，设置为定时触发以下命令即可：
 
 ```zsh
-cd /Users/cdd/Works/knowledge-garden
+cd <your-workspace>/knowledge-garden
 git pull
 git add .
 git commit -m "auto by keyboard"
 git push
 ```
 
-mac上常见的工具有：[[Keyboard Maestro]]、[[hazel]]等，我使用的前者。配置截图如下：\
+mac上常见的工具有：[[Keyboard Maestro]]、hazel等，我使用的前者。配置截图如下：
 ![](https://img2.oldwinter.top/202208250919001.png)

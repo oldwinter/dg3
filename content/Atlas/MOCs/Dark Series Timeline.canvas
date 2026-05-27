@@ -1,6 +1,14 @@
 {
 	"nodes":[
-		{"type":"file","file":"Extras/Attachments/banana_art.png","id":"banana_node","x":-600,"y":-600,"width":400,"height":400},
+		{
+		  "type": "link",
+		  "id": "banana_node",
+		  "x": -600,
+		  "y": -600,
+		  "width": 400,
+		  "height": 400,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/1d12235539f1c8f61bb4899ea75cdf9e.png"
+		},
 		{"type":"text","text":"# Dark Series Timeline\n## A Comprehensive Guide to Winden's Knot\nThis canvas visualizes the timeline, key events, and parallel worlds of the Netflix series *Dark*.\n\nEverything is connected. The beginning is the end, and the end is the beginning.","id":"title","x":-150,"y":-600,"width":800,"height":300},
 		{"type":"group","label":"Origin World","id":"origin_group","x":-600,"y":-150,"width":400,"height":700},
 		{"type":"text","text":"**1971**\n- **The Accident**: H.G. Tannhaus's son, daughter-in-law, and granddaughter die in a car crash on a rainy night. This is the catalyst for everything.","id":"origin_1971","x":-580,"y":-100,"width":360,"height":150},

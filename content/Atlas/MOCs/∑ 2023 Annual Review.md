@@ -1,13 +1,12 @@
 ---
 publish: true
 permalink: /Atlas/MOCs/∑ 2023 Annual Review.md
+aliases:
+  - 2023 Annual Review
 title: 2023 Annual Review
 created: 2025-12-28
-modified: 2026-02-08T14:30:47.509+08:00
-published: 2026-02-08T14:30:47.509+08:00
-tags:
-  - MOC
-  - AnnualReview
+modified: 2026-05-01
+published: 2026-05-16T01:30:29.106+08:00
 ---
 
 # 2023 Annual Review
@@ -87,27 +86,27 @@ tags:
 - [[Bulk Rename]]
 - [[CNI]]
 - [[CSR]]
-- [[CUDA]]
+- CUDA
 - [[DALL·E]]
 - [[DB Folders]]
 - [[DIgital Garden]]
 - [[Daily Note Outline]]
 - [[Devops云厂商流水线vs自建jenkins]]
 - [[EDC]]
-- [[Execute Code]]
+- Execute Code
 - [[FAST法则 - 张永锡]]
 - [[FQDN]]
 - [[Find orphaned files and broken links]]
 - [[Finetuning Large Language Models]]
-- [[GPGPU]]
-- [[GPU体系架构]]
+- GPGPU
+- GPU体系架构
 - [[Gmail 过滤器用法]]
 - [[Google等搜索引擎的高级搜索技巧]]
 - [[Gradio]]
 - [[HIIT，持续有氧各自有什么优势]]
 - [[HOMEPAGE]]
-- [[Hypothes.is]]
-- [[Image auto upoad Plugin]]
+- Hypothes.is
+- [[Image auto upload Plugin]]
 - [[JSONL]]
 - [[KA]]
 - [[KB - 测试看板]]
@@ -115,7 +114,7 @@ tags:
 - [[LoRa]]
 - [[Local images]]
 - [[MAKE]]
-- [[Mermail Tools]]
+- Mermail Tools
 - [[Midjourney - AI绘图]]
 - [[Mindmap NextGen]]
 - [[Modules]]
@@ -131,7 +130,7 @@ tags:
 - [[Plugin Groups]]
 - [[ProZen]]
 - [[QTE技能]]
-- [[Query Control]]
+- Query Control
 - [[RAG的细分技术]]
 - [[RLHF]]
 - [[Roadmap]]
@@ -146,7 +145,7 @@ tags:
 - [[Steam]]
 - [[TUN 和 TAP的区别]]
 - [[Telegram 值得关注的频道、群组和机器人]]
-- [[Text Extractor]]
+- Text Extractor
 - [[Text Generator]]
 - [[UUID]]
 - [[V2ray]]
@@ -235,7 +234,7 @@ tags:
 - [[友盟upush推送]]
 - [[双曲线]]
 - [[双曲贴现]]
-- [[同步与异步，阻塞与回调]]
+- 同步与异步，阻塞与回调
 - [[呼吸系统疾病]]
 - [[和凡可告别]]
 - [[和结构化思维相悖的七大常见错误]]
@@ -339,9 +338,9 @@ tags:
 - [[秦旭]]
 - [[稀少性偏误]]
 - [[管家及专业服务课题-一期方案]]
-- [[管道]]
-- [[管道(golang)]]
-- [[管道(python)]]
+- 管道
+- 管道(golang)
+- 管道(python)
 - [[结构化思维的应用场景]]
 - [[结构化表达的原则]]
 - [[结果偏误]]
@@ -366,7 +365,6 @@ tags:
 - [[选择的悖论]]
 - [[选择：DB folder插件和Projects插件]]
 - [[通过翻滚能躲掉的pve boss技能]]
-- [[通过翻滚能躲掉的pve boss技能 1]]
 - [[配置PAC - GFW list]]
 - [[金字塔原理]]
 - [[问题单管理]]
@@ -378,7 +376,7 @@ tags:
 ### Sources
 
 - [[gin|Gin]]
-- [[react|React]]
+- React
 - [[Rectangle]]
 - [[excalidraw]]
 - [[lx-music-desktop]]
@@ -417,7 +415,7 @@ tags:
 - [[AI搜索]]
 - [[Access Denied - 1020]]
 - [[Amphetamine]]
-- [[AngularJS]]
+- AngularJS
 - [[Apifox]]
 - [[App Cleaner & Uninstaller PRO]]
 - [[App Hosting：快速部署、更新、发布系统]]
@@ -456,7 +454,7 @@ tags:
 - [[Hazeover]]
 - [[Hook]]
 - [[Houdahspot]]
-- [[Humble New Tab Page]]
+- Humble New Tab Page
 - [[INSIDE]]
 - [[Inoreader]]
 - [[Jenkins]]
@@ -481,7 +479,7 @@ tags:
 - [[MacOS Windows 修饰键 对比]]
 - [[MacOS 常用快捷键]]
 - [[ManicTime]]
-- [[MarkDownload]]
+- MarkDownload
 - [[Memory - langchain]]
 - [[Movist Pro]]
 - [[MySQL]]
@@ -496,7 +494,7 @@ tags:
 - [[OrbStack]]
 - [[Orchestration：基于langchain的LLM应用编排]]
 - [[PDCA]]
-- [[Plugin Update Tracker]]
+- Plugin Update Tracker
 - [[Popclip]]
 - [[Presentify]]
 - [[Prompt Engineering]]
@@ -511,7 +509,7 @@ tags:
 - [[Reeder]]
 - [[Royal TSX]]
 - [[Scudo]]
-- [[Shell]]
+- Shell
 - [[Smart Connections]]
 - [[Snipaste]]
 - [[TODO TREE]]
@@ -533,13 +531,13 @@ tags:
 - [[aigc输出内容的敏感词违禁词过滤]]
 - [[azure openai token及其他信息]]
 - [[chatGPT Prompts]]
-- [[chatGPT 用于 头脑风暴和创意创新]]
+- chatGPT 用于 头脑风暴和创意创新
 - [[chatGPT 用于 学习新单词或新概念]]
 - [[chatGPT 用于 帮助编程]]
 - [[chatGPT 用于 总结提炼做笔记]]
-- [[chatGPT 用于 生成anki抽认卡]]
+- chatGPT 用于 生成anki抽认卡
 - [[chatGPT 用于 私人减肥助手]]
-- [[chatGPT 用于 英文邮件助手]]
+- chatGPT 用于 英文邮件助手
 - [[chatGPT 用于 阅读理解]]
 - [[chatGPT从0到1 - 李佳芮]]
 - [[chatGPT的使用经验]]
@@ -581,7 +579,7 @@ tags:
 - [[macbook m1 芯片性能 vs 台式主机]]
 - [[macos m1 重装list - 2025-06-29 renew]]
 - [[mac微信老插件 - wechatextension]]
-- [[markdown lint]]
+- markdown lint
 - [[markdown 中，无序列表中如何嵌入代码块]]
 - [[menubarX]]
 - [[notion database 多视图模式的使用场景探索]]
@@ -602,7 +600,7 @@ tags:
 - [[v2rayNG]]
 - [[vercel edge function]]
 - [[vscode profile规划]]
-- [[» obsidian中的文章草稿到少数派上投稿，需要经历的处理步骤]]
+- » obsidian中的文章草稿到少数派上投稿，需要经历的处理步骤
 - [[» 写文章选题分类]]
 - [[» 写文章选题管理技巧]]
 - [[∑ AIGC MOC]]
@@ -643,7 +641,7 @@ tags:
 - [[后端应用安装指导书]]
 - [[后端数据流角度业务梳理]]
 - [[向量数据库 vectorstore 选型]]
-- [[向量数据库Milvus - 前端]]
+- 向量数据库Milvus - 前端
 - [[呆哥]]
 - [[呆哥对映兔的战略规划]]
 - [[呆哥把映兔公司技术产品团队对半砍决策，我的思考]]
@@ -657,12 +655,12 @@ tags:
 - [[如何将markdown表格转换成csv表格]]
 - [[如何根据前端问题逐步定位到后端代码]]
 - [[如何正确看待及使用chatGPT]]
-- [[娜可露露]]
+- 娜可露露
 - [[孔乙己的长衫]]
 - [[小红书]]
 - [[小蚕霸王餐]]
 - [[少数派]]
-- [[庄周]]
+- 庄周
 - [[应用部署架构图]]
 - [[开发跳板机-连接阿里云的机器和自建k8s集群的方法]]
 - [[引入chatgpt辅助进行code review技术文档]]
@@ -685,7 +683,7 @@ tags:
 - [[数据端namespace组成及迁移分析]]
 - [[新型高效团队文档工具]]
 - [[日常研发问题排查思路]]
-- [[明世隐]]
+- 明世隐
 - [[映兔 mysql 创建新库的流程]]
 - [[映兔 开发、测试、生产环境信息梳理]]
 - [[映兔-阿里云-PAAS]]
@@ -702,7 +700,7 @@ tags:
 - [[映兔AIGC整体架构设计]]
 - [[映兔AIGC暴露给后端的接口整理-一期-废弃]]
 - [[映兔AIGC术语澄清和统一]]
-- [[映兔AIGC资料聚合汇总给德海]]
+- 映兔AIGC资料聚合汇总给德海
 - [[映兔AIGC项目开发手册 README]]
 - [[映兔Devops应用编排及流水线系统方案演示及评审]]
 - [[映兔aigc版图]]
@@ -712,10 +710,10 @@ tags:
 - [[映兔使用的阿里云全部服务]]
 - [[映兔入职学习双日报]]
 - [[映兔全部使用域名整理]]
-- [[映兔公用手机号： 18966491617]]
+- （已隐藏：不公开入口）
 - [[映兔后端common仓库走读笔记]]
 - [[映兔后端外部依赖清单]]
-- [[映兔后端开发全部账号密码汇总]]
+- （已隐藏：不公开入口）
 - [[映兔后端服务涉及到的外部依赖ip白名单]]
 - [[映兔员工座位分布图]]
 - [[映兔域名证书更换方案]]
@@ -728,11 +726,10 @@ tags:
 - [[映兔新人快速入门readme]]
 - [[映兔术语整理]]
 - [[映兔架构图汇总]]
-- [[映兔测试及生产环境,跳板机新账户开通创建-以及删除]]
-- [[映兔测试及生产环境跳板机新账户开通创建-删除]]
+- （已隐藏：不公开入口）
 - [[映兔现有mysql数据库的规划]]
 - [[映兔用户可见的全部产品梳理]]
-- [[映兔的代理科学上网账号]]
+- （已隐藏：不公开入口）
 - [[映兔的员工角色列表]]
 - [[映兔的研发环境介绍]]
 - [[映兔配套的办公系统梳理及权限开通]]
@@ -744,7 +741,7 @@ tags:
 - [[普拉提]]
 - [[普通人健身的目的]]
 - [[最长掩码匹配规则 - 网段规划]]
-- [[李钊鸿]]
+- 李钊鸿
 - [[杨飞交接文档的彻底完全消化- 目录]]
 - [[架构图的技巧和方法]]
 - [[核心肌群]]
@@ -755,13 +752,13 @@ tags:
 - [[消息队列]]
 - [[淘宝]]
 - [[滴答清单使用技巧]]
-- [[狂铁]]
+- 狂铁
 - [[现有自建k8s集群迁移到阿里云ack技术方案]]
 - [[用efforts而非projects思维，去发展自己的想法]]
 - [[用于chatgpt 阅读理解的一个英文文章demo]]
 - [[电脑主机装机2023年11月的配置单]]
 - [[百度网盘]]
-- [[盘古]]
+- 盘古
 - [[目前自建且发布的网站集合]]
 - [[目标管理、任务管理、时间管理都是什么，有什么区别]]
 - [[看图]]
@@ -790,10 +787,10 @@ tags:
 - [[膳食指南推荐的三大营养素碳水、蛋白质、脂肪供能比例]]
 - [[自上而下]]
 - [[自建k8s与使用阿里云ack优缺点分析]]
-- [[苏烈]]
+- 苏烈
 - [[营养素]]
 - [[营养素密度]]
-- [[蔡文姬]]
+- 蔡文姬
 - [[褪黑素和皮质醇对人的昼夜节律生物钟调节作用]]
 - [[规避损失倾向]]
 - [[誓羽]]
@@ -826,9 +823,9 @@ tags:
 - [[零风险偏误]]
 - [[非蠢既坏]]
 - [[预览obsidian主题的markdown语法效果]]
-- [[骑共享单车去酒吧，该省省该花花]]
+- 骑共享单车去酒吧，该省省该花花
 - [[高德地图]]
-- [[鲁班七号]]
+- 鲁班七号
 - [[鼻子呼吸]]
 - [[🔧映兔 DevOps 建设及优化]]
 

@@ -1,10 +1,8 @@
 ---
-title: 🔗netlify
-date created: 2022-12-11
-date modified: 2023-03-14
-评价: 6
-url: https://app.netlify.com
 publish: true
-分类:
-- '[[好用网站 - fileclass]]'
+permalink: /Cards/Netlify.md
+title: 🔗netlify
+created: 2022-12-11
+modified: 2023-03-14
+published: 2026-05-16T01:30:26.537+08:00
 ---

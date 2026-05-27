@@ -1,11 +1,10 @@
 ---
 publish: true
 permalink: /Spaces/3-Resource/∑ 3-Resource.md
+title: ∑ 3-Resource
 created: 2025-07-06
 modified: 2025-07-12
-published: 2026-02-08T13:48:32.094+08:00
-tags:
-  - categories
+published: 2026-05-16T01:35:24.829+08:00
 ---
 
 # ∑ Resources MOC
@@ -20,9 +19,9 @@ tags:
 
 ![[VSCode 插件]]
 
-![[账号与安全]]
+账号与安全
 
-![[影音娱乐]]
+影音娱乐
 
 ## 相关卡片
 

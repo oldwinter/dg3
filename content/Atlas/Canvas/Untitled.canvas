@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"1bbf891e99bbdeb7","type":"file","file":"Extras/Documents/HTML Artifacts/claude-code-html-artifact-playbook.html","x":100,"y":-500,"width":400,"height":400},
+		{"id":"5625e75b1a2fc2d2","type":"file","file":"Extras/Documents/HTML Artifacts/claude-code-html-artifact-playbook.html","x":-165,"y":-202,"width":400,"height":400}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

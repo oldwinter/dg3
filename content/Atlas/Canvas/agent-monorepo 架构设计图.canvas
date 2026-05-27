@@ -1,0 +1,48 @@
+{
+	"nodes":[
+		{"id":"c001122334455667","type":"group","x":500,"y":-20,"width":620,"height":811,"color":"2","label":"2. Control Plane：虚拟 monorepo"},
+		{"id":"d001122334455667","type":"group","x":1240,"y":-20,"width":660,"height":760,"color":"3","label":"3. Owning Repos：代码仍然多仓自治"},
+		{"id":"e001122334455667","type":"group","x":2040,"y":-20,"width":620,"height":760,"color":"4","label":"4. 可信交付：验证、证据、沉淀"},
+		{"id":"b001122334455667","type":"group","x":-60,"y":-20,"width":460,"height":760,"color":"1","label":"1. 团队入口：任务怎么进来"},
+		{"id":"f001122334455667","type":"text","text":"## 总结\n\nagent-monorepo 不是为了让 AI 一次读完整个世界，而是把世界切成可路由、可验证、可沉淀的工作面：先找对仓库，再拿到刚好够用的上下文，最后用证据闭环。","x":760,"y":830,"width":1320,"height":140},
+		{"id":"b203142536475869","type":"text","text":"## Agent Runtime\n\nCodex、Claude Code 或 IM bot 只是入口。\n\n真正关键的是：工具、认证、上下文、验证命令和回写路径都提前接好。","x":20,"y":292,"width":320,"height":228},
+		{"id":"b30415263748596a","type":"text","text":"## 第一道闸门\n\n先识别环境线索：production/main 还是 2.0/dev。分支错了，后面的交付都不可信。","x":20,"y":560,"width":320,"height":120},
+		{"id":"c102132435465768","type":"text","text":"## workspace.yaml\n\n机器可读事实源：repo id、路径、domain、上下游、docs、commands、validation、contracts。","x":560,"y":50,"width":440,"height":150},
+		{"id":"7aca4f93ac6b0d66","type":"file","file":"Calendar/Daily notes/agent-monorepo 仓库readme 节选.md","subpath":"#架构","x":-60,"y":1357,"width":1042,"height":1213},
+		{"id":"b102132435465768","type":"text","text":"## 需求 / Bug / 告警\n\n- Linear / GitLab / IM 转录\n- 截图、日志、share link\n- 部署检查、benchmark 补洞\n- 需要目标、证据、验收标准","x":20,"y":50,"width":300,"height":190},
+		{"id":"a001122334455667","type":"text","text":"# agent-monorepo 架构设计图\n\n一句话：不把多仓库物理合并，而是给团队和 AI agent 一个可读、可查、可验证的 virtual workspace control plane。","x":-40,"y":-220,"width":920,"height":140},
+		{"id":"468dfbeb0009a22b","type":"file","file":"Calendar/Daily notes/agent-monorepo 仓库readme 节选.md","subpath":"#请求处理流程","x":-55,"y":2721,"width":2124,"height":1150},
+		{"id":"d203142536475869","type":"text","text":"## AI DevOps / Runtime Ops\n\nsimplex-gitops 管基础设施与 GitOps；lambda-function 管告警逻辑；simplex-aiops 消费 runtime 事件。","x":1300,"y":280,"width":500,"height":150},
+		{"id":"d30415263748596a","type":"text","text":"## 其他业务域\n\nGrowth、internal tools、router management 继续独立演进，只在 catalog 中暴露职责、命令和边界。","x":1300,"y":480,"width":500,"height":130},
+		{"id":"d405162738495a6b","type":"text","text":"核心取舍：牺牲一点单仓便利，换来 ownership 清晰、风险隔离、CI 轻量、agent 更容易理解。","x":1300,"y":640,"width":500,"height":80},
+		{"id":"e30415263748596a","type":"text","text":"## MR / Preview / Handoff\n\n交付不是“代码改完了”，而是 branch、MR、预览、验证记录、风险和下一步 owner action 都说清楚。","x":2100,"y":425,"width":470,"height":140},
+		{"id":"e405162738495a6b","type":"text","text":"## Durable Learning\n\n重复踩坑沉淀回 AGENTS、skills、context packs、LLM Wiki，让下一次 agent 更少猜、更少反问。","x":2100,"y":610,"width":470,"height":105},
+		{"id":"e203142536475869","type":"text","text":"## test-hub / benchmark\n\n- test-hub：smoke、API/UI/E2E、release gate、环境证据\n- benchmark：数据集、judge、质量趋势、模型比较","x":2100,"y":235,"width":470,"height":150},
+		{"id":"d102132435465768","type":"text","text":"## Lev8 产品主链路\n\nsimplexai-front → anotherme-api → anotherme / deepsearch → database-caching / crawler / node-server / simplex-cron。","x":1300,"y":50,"width":500,"height":180},
+		{"id":"c203142536475869","type":"text","text":"## AGENTS.md / Context Packs\n\n人类和 agent 共享的路由规则：先读什么、避开什么、跨仓任务怎么判断 ownership。","x":560,"y":240,"width":440,"height":150},
+		{"id":"c405162738495a6b","type":"text","text":"## Worktree 约定\n\n真实改动在 owning child repo 的独立 worktree 中发生；control plane 负责导航，不吞并业务代码。","x":560,"y":675,"width":440,"height":90},
+		{"id":"c5061728394a5b6c","type":"file","file":"Atlas/Canvas/agent-monorepo skills 能力发现层.md","label":"Skills 能力发现层","x":560,"y":560,"width":440,"height":80},
+		{"id":"c30415263748596a","type":"text","text":"## just / tools/ws\n\n统一命令入口：repo-list、info、docs、search、affected、validate。让 agent 自己动态探索。","x":560,"y":410,"width":440,"height":110},
+		{"id":"e102132435465768","type":"text","text":"## Affected Checks\n\n代码路径变化先映射到受影响 repo 和必跑验证，避免只测当前仓库。","x":2100,"y":50,"width":470,"height":145}
+	],
+	"edges":[
+		{"id":"f102132435465768","fromNode":"b102132435465768","fromSide":"right","toNode":"c102132435465768","toSide":"left"},
+		{"id":"f203142536475869","fromNode":"b203142536475869","fromSide":"right","toNode":"c203142536475869","toSide":"left"},
+		{"id":"f30415263748596a","fromNode":"b30415263748596a","fromSide":"right","toNode":"c405162738495a6b","toSide":"left"},
+		{"id":"f405162738495a6b","fromNode":"c102132435465768","fromSide":"right","toNode":"d102132435465768","toSide":"left"},
+		{"id":"f5061728394a5b6c","fromNode":"c203142536475869","fromSide":"right","toNode":"d203142536475869","toSide":"left"},
+		{"id":"f60718293a4b5c6d","fromNode":"c30415263748596a","fromSide":"right","toNode":"e102132435465768","toSide":"left"},
+		{"id":"f708192a3b4c5d6e","fromNode":"c405162738495a6b","fromSide":"right","toNode":"d405162738495a6b","toSide":"left"},
+		{"id":"f8091a2b3c4d5e6f","fromNode":"d102132435465768","fromSide":"right","toNode":"e203142536475869","toSide":"left"},
+		{"id":"fa10213243546576","fromNode":"d203142536475869","fromSide":"right","toNode":"e30415263748596a","toSide":"left"},
+		{"id":"fb20314253647586","fromNode":"e30415263748596a","fromSide":"bottom","toNode":"e405162738495a6b","toSide":"top"},
+		{"id":"fc30415263748596","fromNode":"e405162738495a6b","fromSide":"bottom","toNode":"f001122334455667","toSide":"top"},
+		{"id":"fd405162738495a6","fromNode":"f001122334455667","fromSide":"left","toNode":"c203142536475869","toSide":"bottom"},
+		{"id":"fe5061728394a5b6","fromNode":"c203142536475869","fromSide":"bottom","toNode":"c5061728394a5b6c","toSide":"top"},
+		{"id":"ff60718293a4b5c","fromNode":"c5061728394a5b6c","fromSide":"bottom","toNode":"c405162738495a6b","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

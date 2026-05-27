@@ -1,0 +1,46 @@
+{
+	"nodes":[
+		{"id":"grp_core","type":"group","x":-80,"y":-80,"width":1320,"height":520,"label":"OpenSearch Service 托管引擎"},
+		{"id":"grp_ingest","type":"group","x":-160,"y":420,"width":1260,"height":520,"label":"数据源与摄取"},
+		{"id":"grp_sec","type":"group","x":1260,"y":-120,"width":520,"height":760,"label":"安全与治理"},
+		{"id":"grp_clients","type":"group","x":-620,"y":-80,"width":440,"height":540,"label":"客户端 / 使用者"},
+		{"id":"title","type":"text","text":"Amazon OpenSearch Service 全景架构","x":80,"y":-240,"width":540,"height":80,"color":"6"},
+		{"id":"n_dash","type":"text","text":"OpenSearch Dashboards\n（可视化 / 开发者门户）","x":-600,"y":-40,"width":400,"height":100,"color":"1"},
+		{"id":"n_api","type":"text","text":"应用 / 服务 / SDK\nREST API（SigV4）\nJDBC/ODBC（部分场景）","x":-600,"y":120,"width":400,"height":120,"color":"1"},
+		{"id":"n_analytics","type":"text","text":"分析/集成\nAthena/Glue、Lambda\n自建工具","x":-600,"y":300,"width":400,"height":120,"color":"1"},
+		{"id":"n_provisioned","type":"text","text":"预置型（Domains/域）\n- 多AZ、分片/副本\n- 数据节点（热）、专用主节点、UltraWarm、冷存储\n- EBS（gp3/io1），Auto-Tune\n- 蓝/绿部署，快照到 S3\n- 向量检索 k-NN / 语义搜索","x":-40,"y":-40,"width":560,"height":440,"color":"4"},
+		{"id":"n_serverless","type":"text","text":"Serverless（Collections/集合）\n- 自动扩缩（索引/查询 OCU）\n- 集合类型：Search / Time series / Vector\n- 策略：加密、网络、数据访问\n- 私有 VPC 访问 / 公网受控\n- Dashboards（Serverless）","x":640,"y":-40,"width":560,"height":440,"color":"4"},
+		{"id":"n_auth","type":"text","text":"认证与授权\nIAM（SigV4、资源策略）\nCognito / SAML / OIDC / IAM Identity Center\n细粒度访问（索引/字段/文档级）","x":1280,"y":-80,"width":480,"height":160,"color":"5"},
+		{"id":"n_osi","type":"text","text":"OpenSearch Ingestion（托管管道，Data Prepper）\nOTel / traces / logs / metrics","x":-120,"y":460,"width":420,"height":120,"color":"2"},
+		{"id":"n_kdf","type":"text","text":"Kinesis Data Firehose / Streams\nAmazon MSK（Kafka）","x":340,"y":460,"width":360,"height":120,"color":"2"},
+		{"id":"n_logstash","type":"text","text":"Logstash / Beats / Fluent Bit\n自管 ETL / 连接器","x":740,"y":460,"width":360,"height":120,"color":"2"},
+		{"id":"n_sources","type":"text","text":"数据源：应用日志、业务事件、时序指标、Clickstream\nAWS 服务：CloudWatch Logs、CloudTrail、S3、RDS、DynamoDB 等","x":140,"y":620,"width":1120,"height":280,"color":"3"},
+		{"id":"n_net","type":"text","text":"网络与隔离\nVPC、子网、Security Groups\n私有访问 / 公网受控、VPC 端点","x":1280,"y":120,"width":480,"height":140,"color":"5"},
+		{"id":"n_enc","type":"text","text":"加密与合规\nKMS（静态加密）\nTLS（传输/节点间）\n审计日志 -> CloudWatch Logs","x":1280,"y":300,"width":480,"height":120,"color":"5"},
+		{"id":"n_ops","type":"text","text":"可用性与运维\n多AZ/自动故障转移\nAuto-Tune、ISM 生命周期\n监控：CloudWatch、CloudTrail、蓝/绿部署","x":1280,"y":460,"width":480,"height":160,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"n_dash","fromSide":"right","toNode":"n_provisioned","toSide":"left","label":"查询/可视化"},
+		{"id":"e2","fromNode":"n_dash","fromSide":"right","toNode":"n_serverless","toSide":"left"},
+		{"id":"e3","fromNode":"n_api","fromSide":"right","toNode":"n_provisioned","toSide":"left","label":"API/SDK"},
+		{"id":"e4","fromNode":"n_api","fromSide":"right","toNode":"n_serverless","toSide":"left"},
+		{"id":"e5","fromNode":"n_osi","fromSide":"top","toNode":"n_provisioned","toSide":"bottom","label":"摄取"},
+		{"id":"e6","fromNode":"n_kdf","fromSide":"top","toNode":"n_provisioned","toSide":"bottom"},
+		{"id":"e7","fromNode":"n_logstash","fromSide":"top","toNode":"n_provisioned","toSide":"bottom"},
+		{"id":"e8","fromNode":"n_osi","fromSide":"top","toNode":"n_serverless","toSide":"bottom"},
+		{"id":"e9","fromNode":"n_kdf","fromSide":"top","toNode":"n_serverless","toSide":"bottom"},
+		{"id":"e10","fromNode":"n_logstash","fromSide":"top","toNode":"n_serverless","toSide":"bottom"},
+		{"id":"e11","fromNode":"n_auth","fromSide":"left","toNode":"n_provisioned","toSide":"right"},
+		{"id":"e12","fromNode":"n_auth","fromSide":"left","toNode":"n_serverless","toSide":"right"},
+		{"id":"e13","fromNode":"n_net","fromSide":"left","toNode":"n_provisioned","toSide":"right"},
+		{"id":"e14","fromNode":"n_net","fromSide":"left","toNode":"n_serverless","toSide":"right"},
+		{"id":"e15","fromNode":"n_enc","fromSide":"left","toNode":"n_provisioned","toSide":"right"},
+		{"id":"e16","fromNode":"n_enc","fromSide":"left","toNode":"n_serverless","toSide":"right"},
+		{"id":"e17","fromNode":"n_ops","fromSide":"left","toNode":"n_provisioned","toSide":"right"},
+		{"id":"e18","fromNode":"n_ops","fromSide":"left","toNode":"n_serverless","toSide":"right"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

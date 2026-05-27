@@ -1,10 +1,10 @@
 ---
-date created: 2022-08-07
-date modified: 2023-03-14
-title: » 本库tutorial编写工作流
 publish: true
-分类:
-- '[[工作流workflow - fileclass]]'
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/» 本库tutorial编写工作流.md
+title: » 本库tutorial编写工作流
+created: 2022-08-07
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.699+08:00
 ---
 
 提问：

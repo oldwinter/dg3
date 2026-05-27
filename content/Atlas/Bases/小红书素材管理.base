@@ -1,7 +1,7 @@
 filters:
   or:
     - file.folder == "Spaces/1-Project/2025下半年小红书探索"
-    - 分类.containsAny(link("小红书笔记 - fileclass"))
+    - topics.containsAny(link("小红书笔记 - fileclass"))
 views:
   - type: table
     name: Table

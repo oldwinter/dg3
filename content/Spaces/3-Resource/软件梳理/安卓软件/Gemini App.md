@@ -6,7 +6,7 @@ aliases:
   - Gemini
 created: 2025-04-27
 modified: 2025-04-27
-published: 2025-09-06T20:05:04.055+08:00
+published: 2026-05-24T14:30:49.934+08:00
 ---
 
 [[gemini api key]]

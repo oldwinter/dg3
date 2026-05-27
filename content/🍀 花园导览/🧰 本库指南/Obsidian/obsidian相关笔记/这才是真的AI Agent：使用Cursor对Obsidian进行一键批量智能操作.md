@@ -3,7 +3,7 @@ publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/这才是真的AI Agent：使用Cursor对Obsidian进行一键批量智能操作.md
 created: 2025-06-27
 modified: 2025-06-27
-published: 2025-08-25T19:09:34.879+08:00
+published: 2026-05-24T14:30:50.122+08:00
 ---
 
 ## 本次目标
@@ -69,12 +69,12 @@ published: 2025-08-25T19:09:34.879+08:00
 #### 3.1提示词详细拆解
 
 ```
-@/macos软件 分析当前文件夹的全部文件，有些文件的frontmatter yaml区缺少icon，你帮我去下载这些icon到该文件夹，并命名为`icon-cc-image-软件名`。类似 @Arc浏览器.md 中的 `icon: "[[icon-cc-image-Arc浏览器.png]]"`这种字段的方式，引用。请新建一个md todo list维护你的任务完成情况，直到全部文件配套的软件名，都配好了icon。如果没找到合适的，你就用一个默认的接近的icon。
+@/macos软件 分析当前文件夹的全部文件，有些文件的frontmatter yaml区缺少icon，你帮我去下载这些icon到该文件夹，并命名为`icon-cc-image-软件名`。类似 @Arc浏览器.md 中的 `icon: "[icon-cc-image-Arc浏览器.png](https://pub-pic.oldwinter.top/2026/05/a536cd7a9ba2ecea841e8912d38ed5b4.png)"`这种字段的方式，引用。请新建一个md todo list维护你的任务完成情况，直到全部文件配套的软件名，都配好了icon。如果没找到合适的，你就用一个默认的接近的icon。
 ```
 
 - @/macos软件 分析当前文件夹的全部文件，有些文件的frontmatter yaml区缺少icon，你帮我去下载这些icon到该文件夹，并命名为`icon-cc-image-软件名`。
   - // 这一句清晰地表达了任务目标，要求指定操作某个文件夹。
-- 类似 @Arc浏览器.md 中的 `icon: "[[icon-cc-image-Arc浏览器.png]]"`这种字段的方式，引用。
+- 类似 @Arc浏览器.md 中的 `icon: "[icon-cc-image-Arc浏览器.png](https://pub-pic.oldwinter.top/2026/05/a536cd7a9ba2ecea841e8912d38ed5b4.png)"`这种字段的方式，引用。
   - // 这一句是使用few prompts的方式，让ai完全理解我上一句话表达的意思。当然如果前面表达清晰，很可能就不需要补充这个示例了。
 - 请新建一个md todo list维护你的任务完成情况，直到全部文件配套的软件名，都配好了icon。
   - // 维护一个todo list，是让ai agent执行一个耗时分钟级别的批量任务的时候的最佳实践，这在manus和Genspark中均有体现。
@@ -89,7 +89,7 @@ published: 2025-08-25T19:09:34.879+08:00
 
 ![CleanShot 2025-06-27-j81a7a.png](https://pub-pic.oldwinter.top/2025/06/3b629dd0f71d4cc7993843f39c9ce70e.png)
 
-但仔细观察，会发现使用curl命令下载的很多图片，都是无法正常打开的。这证明了触发了网站的反爬虫策略（试想一下如果随便几个curl命令就能批量下载网站的图片等资源，那网站的cdn费用不是爆炸）。所以这里我们需要转换思路，使用带有图片搜索和下载功能的mcp，让cursor间接地通过mcp来干活。同时可以顺便问一下，cursor有哪些内置的tools，以便让我们更了解能力边界，不会提出过份的要求，比如让它生成一个视频之类的。（我这里启用了一个 使用浏览器的 playwright mcp）：之前的备忘录[[cursor 1.0 有的全部tools]]
+但仔细观察，会发现使用curl命令下载的很多图片，都是无法正常打开的。这证明了触发了网站的反爬虫策略（试想一下如果随便几个curl命令就能批量下载网站的图片等资源，那网站的cdn费用不是爆炸）。所以这里我们需要转换思路，使用带有图片搜索和下载功能的mcp，让cursor间接地通过mcp来干活。同时可以顺便问一下，cursor有哪些内置的tools，以便让我们更了解能力边界，不会提出过份的要求，比如让它生成一个视频之类的。（我这里启用了一个 使用浏览器的 playwright mcp）：之前的备忘录cursor 1.0 有的全部tools
 
 ![CleanShot 2025-06-27-w9932m.png](https://pub-pic.oldwinter.top/2025/06/105907c72fdec24b76962f5696503e57.png)
 
@@ -104,7 +104,7 @@ published: 2025-08-25T19:09:34.879+08:00
 最终提示词变成了：
 
 ```
-@/macos软件 分析当前文件夹的全部文件，有些文件的frontmatter yaml区缺少icon，你帮我去本机已安装的应用中，提取这些icon到该文件夹，并命名为`icon-cc-image-软件名.png`。类似 @Arc浏览器.md 中的 `icon: "[[icon-cc-image-Arc浏览器.png]]"`这种字段的方式，引用。请新建一个md todo list维护你的任务完成情况，直到全部文件配套的软件名，都配好了icon。如果没找到合适的，你就用一个默认的接近的icon。
+@/macos软件 分析当前文件夹的全部文件，有些文件的frontmatter yaml区缺少icon，你帮我去本机已安装的应用中，提取这些icon到该文件夹，并命名为`icon-cc-image-软件名.png`。类似 @Arc浏览器.md 中的 `icon: "[icon-cc-image-Arc浏览器.png](https://pub-pic.oldwinter.top/2026/05/a536cd7a9ba2ecea841e8912d38ed5b4.png)"`这种字段的方式，引用。请新建一个md todo list维护你的任务完成情况，直到全部文件配套的软件名，都配好了icon。如果没找到合适的，你就用一个默认的接近的icon。
 ```
 
 ### 4. 剩下的就是等它一直for循环干活了

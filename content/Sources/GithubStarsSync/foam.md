@@ -1,34 +1,10 @@
 ---
-star_date: 2022-03-08 05:21:16
-repo_name: foambubble/foam
-repo_url: https://github.com/foambubble/foam
-description: A personal knowledge management and sharing system for VSCode
-language: TypeScript
-stars: 16197
-forks: 706
-created_date: 2020-06-19
-updated_date: 2025-06-19
-pushed_date: 2025-06-18
-is_fork: false
-license: Other
-topics:
-- graph-visualisation
-- markdown
-- markdown-editor
-- note-taking
-- notes-app
-- personal-knowledge-base
-- pkm
-- vscode
-- zettelkasten
-size_kb: 60162
-issues: 130
-date created: 2025-06-15
-date modified: 2025-06-15 - VSCode插件
-评价: 6
 publish: true
-分类:
-- '[[github开源 - fileclass]]'
+permalink: /Sources/GithubStarsSync/foam.md
+description: A personal knowledge management and sharing system for VSCode
+created: 2025-06-15
+modified: 2025-06-15 - VSCode插件
+published: 2026-05-16T01:30:28.565+08:00
 ---
 
 # foambubble/foam

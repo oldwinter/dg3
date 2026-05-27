@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"f0a1b2c3d4e5a001","x":-420,"y":-280,"width":360,"height":220,"type":"text","text":"# harness workspace 详细设计\n\n把主流程里的 `workspace` 拆成可交接的四类表面：运行时、知识沉淀、issue 闭环和运行工件。"},
+		{"id":"f0a1b2c3d4e5a002","x":40,"y":-300,"width":300,"height":120,"type":"text","text":"## agents-monorepo\n运行时、工具调用、服务编排和自动化脚本。"},
+		{"id":"f0a1b2c3d4e5a003","x":40,"y":-120,"width":300,"height":120,"type":"text","text":"## Obsidian\n长期知识、reading map、memory 与回桥证据。"},
+		{"id":"f0a1b2c3d4e5a004","x":40,"y":60,"width":300,"height":120,"type":"text","text":"## Linear\nissue 状态、验收条件、阻塞项和人工确认。"},
+		{"id":"f0a1b2c3d4e5a005","x":40,"y":240,"width":300,"height":120,"type":"text","text":"## memory\n跨轮 handoff、失败样本、下一步判断和停止条件。"},
+		{"id":"f0a1b2c3d4e5a006","x":500,"y":-300,"width":300,"height":120,"type":"text","text":"## 任务 API / worker\n把意图拆成可执行任务单元，并承接服务侧执行。"},
+		{"id":"f0a1b2c3d4e5a007","x":500,"y":-120,"width":300,"height":120,"type":"text","text":"## 状态账本 / artifacts\n记录 run_id、输入、产物、失败标签、replay hint 和验收证据。"},
+		{"id":"f0a1b2c3d4e5a008","x":500,"y":60,"width":300,"height":120,"type":"text","text":"## 配置与权限边界\n区分只读上下文、可逆本地改动、外部副作用和必须确认动作。"},
+		{"id":"f0a1b2c3d4e5a009","x":500,"y":240,"width":300,"height":120,"type":"text","text":"## 输出表面\n给 human 的验收报告，给 agent 的结构化状态与下一轮接手包。"}
+	],
+	"edges":[
+		{"id":"e0a1b2c3d4e5a001","fromNode":"f0a1b2c3d4e5a001","fromSide":"right","toNode":"f0a1b2c3d4e5a002","toSide":"left"},
+		{"id":"e0a1b2c3d4e5a002","fromNode":"f0a1b2c3d4e5a001","fromSide":"right","toNode":"f0a1b2c3d4e5a003","toSide":"left"},
+		{"id":"e0a1b2c3d4e5a003","fromNode":"f0a1b2c3d4e5a001","fromSide":"right","toNode":"f0a1b2c3d4e5a004","toSide":"left"},
+		{"id":"e0a1b2c3d4e5a004","fromNode":"f0a1b2c3d4e5a001","fromSide":"right","toNode":"f0a1b2c3d4e5a005","toSide":"left"},
+		{"id":"e0a1b2c3d4e5a005","fromNode":"f0a1b2c3d4e5a002","fromSide":"right","toNode":"f0a1b2c3d4e5a006","toSide":"left"},
+		{"id":"e0a1b2c3d4e5a006","fromNode":"f0a1b2c3d4e5a003","fromSide":"right","toNode":"f0a1b2c3d4e5a007","toSide":"left"},
+		{"id":"e0a1b2c3d4e5a007","fromNode":"f0a1b2c3d4e5a004","fromSide":"right","toNode":"f0a1b2c3d4e5a008","toSide":"left"},
+		{"id":"e0a1b2c3d4e5a008","fromNode":"f0a1b2c3d4e5a005","fromSide":"right","toNode":"f0a1b2c3d4e5a009","toSide":"left"}
+	]
+}

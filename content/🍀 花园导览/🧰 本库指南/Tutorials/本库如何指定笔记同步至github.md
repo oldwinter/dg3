@@ -1,8 +1,10 @@
 ---
-date created: 2022-09-03
-date modified: 2023-03-14
-title: 本库如何指定笔记同步至github
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库如何指定笔记同步至github.md
+title: 本库如何指定笔记同步至github
+created: 2022-09-03
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.695+08:00
 ---
 
 按2个维度去讨论场景：

@@ -1,8 +1,10 @@
 ---
-title: obsidian中如何找到以前写过的笔记
-date created: 2022-12-10
-date modified: 2023-03-14
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/obsidian中如何搜索找到以前写过的笔记.md
+title: obsidian中如何找到以前写过的笔记
+created: 2022-12-10
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.692+08:00
 ---
 
 - 回想1个或多个标题里的关键词。通过cmd+o找到。

@@ -2,7 +2,7 @@
 	"nodes":[
 		{"id":"39aae6e15cd3fc6b","type":"group","ratio":1.7777777777777777,"x":-1060,"y":400,"width":1200,"height":675,"label":"New Slide","background":"Extras/Attachments/Images/Images4canvas/coolbackgrounds-unsplash-zeller.jpg"},
 		{"id":"c6732d39899e031c","type":"group","ratio":1.7777777777777777,"backgroundStyle":"ratio","x":200,"y":-130,"width":1195,"height":675,"label":"New Slide","background":"Extras/Attachments/Images/raycast的背景图/autumnal-peach-preview.png"},
-		{"id":"9a2535b548c165f3","type":"group","ratio":1.7777777777777777,"backgroundStyle":"ratio","x":-1000,"y":-940,"width":945,"height":675,"label":"New Slide","background":"Extras/Attachments/11111_transparent.png"},
+		{"id":"9a2535b548c165f3","type":"group","ratio":1.7777777777777777,"backgroundStyle":"ratio","x":-1000,"y":-940,"width":945,"height":675,"label":"New Slide","background":"Extras/Attachments/Images/Loose/11111_transparent.png"},
 		{
 			"id":"practice_group",
 			"type":"group",
@@ -33,7 +33,15 @@
 			"width":500,
 			"height":120
 		},
-		{"id":"c9311a7e2c8f5752","type":"file","file":"Extras/Attachments/4444_transparent.png","x":680,"y":-1280,"width":400,"height":286},
+		{
+		  "id": "c9311a7e2c8f5752",
+		  "type": "link",
+		  "x": 680,
+		  "y": -1280,
+		  "width": 400,
+		  "height": 286,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/2cc88e2f2475fe30ea50d11377addfa2.png"
+		},
 		{
 			"id":"ai_products",
 			"type":"text",
@@ -44,7 +52,15 @@
 			"width":350,
 			"height":200
 		},
-		{"id":"493683880744a0f6","type":"file","file":"Extras/Attachments/3333_transparent.png","x":1120,"y":-1280,"width":400,"height":286},
+		{
+		  "id": "493683880744a0f6",
+		  "type": "link",
+		  "x": 1120,
+		  "y": -1280,
+		  "width": 400,
+		  "height": 286,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/ad6efd27dea1a58e358e06330afb4bbe.png"
+		},
 		{
 			"id":"kimi_demo",
 			"type":"link",
@@ -65,8 +81,24 @@
 			"width":350,
 			"height":180
 		},
-		{"id":"e3e0313ee2a3dfb2","type":"file","file":"Extras/Attachments/55555_transparent.png","x":1560,"y":-1280,"width":400,"height":286},
-		{"id":"5f43166156ed6b7f","type":"file","file":"Extras/Attachments/22222_transparent.png","x":2000,"y":-1280,"width":400,"height":286},
+		{
+		  "id": "e3e0313ee2a3dfb2",
+		  "type": "link",
+		  "x": 1560,
+		  "y": -1280,
+		  "width": 400,
+		  "height": 286,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/6a80550acc1d56ec71718963fda8d795.png"
+		},
+		{
+		  "id": "5f43166156ed6b7f",
+		  "type": "link",
+		  "x": 2000,
+		  "y": -1280,
+		  "width": 400,
+		  "height": 286,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/b5319a90bd4fe78602bc8d0f4c4ae19d.png"
+		},
 		{
 			"id":"introduction",
 			"type":"text",
@@ -108,7 +140,15 @@
 			"width":400,
 			"height":200
 		},
-		{"id":"d90f5c4b39005f6f","type":"file","file":"Extras/Attachments/11111_transparent.png","x":220,"y":-1280,"width":400,"height":286},
+		{
+		  "id": "d90f5c4b39005f6f",
+		  "type": "link",
+		  "x": 220,
+		  "y": -1280,
+		  "width": 400,
+		  "height": 286,
+		  "url": "https://pub-pic.oldwinter.top/2026/05/b4971e39c797c02fe5e9e03584b27da3.png"
+		},
 		{
 			"id":"programmer_tools",
 			"type":"text",

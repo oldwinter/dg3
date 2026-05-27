@@ -1,8 +1,10 @@
 ---
-date created: 2022-09-02
-date modified: 2023-03-14
-title: 本库不建议在obsidian中搞任务管理
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库不建议在obsidian中搞任务管理.md
+title: 本库不建议在obsidian中搞任务管理
+created: 2022-09-02
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.689+08:00
 ---
 
 你也许会发现，我在本库中，几乎没有使用过`-[]`这个可以勾选的任务清单语法。取而代之的是，用 `#todo` 标签去做一些简易的任务管理。

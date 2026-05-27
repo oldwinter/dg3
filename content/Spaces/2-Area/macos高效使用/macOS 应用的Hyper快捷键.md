@@ -3,7 +3,7 @@ publish: true
 permalink: /Spaces/2-Area/macos高效使用/macOS 应用的Hyper快捷键.md
 created: 2024-11-21
 modified: 2024-11-21
-published: 2025-08-15T22:00:03.681+08:00
+published: 2026-05-16T01:30:27.443+08:00
 ---
 
 与option快捷键差别：hyper重复按键可以呼出/隐藏切换。option则只能呼出，再按一次无法隐藏。
@@ -42,7 +42,7 @@ published: 2025-08-15T22:00:03.681+08:00
 | O   | [[Obsidian]]    |         | O 即为 Output， 做为输出                        |
 | P   | 滴答清单开启/暂停专注     | 软件内     | [[番茄工作法]]，Potato                         |
 |     |                 |         |                                          |
-| A   | [[Arc浏览器\|Arc]] | Raycast |                                          |
+| A   | Arc | Raycast |                                          |
 | S   | 系统设置 - 隐私与安全    | Raycast | Security 安全                              |
 | D   | [[滴答清单]]        | Raycast |                                          |
 | F   | [[Finder]]      | Raycast |                                          |
@@ -63,4 +63,4 @@ published: 2025-08-15T22:00:03.681+08:00
 
 ## 搜索快捷键
 
-[[MacOS 搜索快捷键]]
+MacOS 搜索快捷键

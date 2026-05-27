@@ -3,7 +3,7 @@ publish: true
 permalink: /Spaces/2-Area/macos高效使用/macOS F区功能键快捷键分配.md
 created: 2024-10-08
 modified: 2024-10-22
-published: 2025-08-15T22:00:03.681+08:00
+published: 2026-05-16T01:30:27.428+08:00
 ---
 
 [[Windows F区功能键快捷键分配]]

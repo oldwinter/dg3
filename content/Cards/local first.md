@@ -1,10 +1,12 @@
 ---
+publish: true
+permalink: /Cards/local first.md
 aliases:
   - 本地优先
-date created: 2022-08-01
-date modified: 2025-07-09
 title: local first
-publish: true
+created: 2022-08-01
+modified: 2025-07-09
+published: 2026-05-16T01:30:26.524+08:00
 ---
 
 x:: [[本地优先的特点]]

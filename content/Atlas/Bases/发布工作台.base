@@ -1,0 +1,202 @@
+filters:
+  and:
+    - file.ext == "md"
+formulas:
+  已发布: public == true || public == "true" || ((public == null || public == "") && (publish == true || publish == "true"))
+  显式不发布: public == false || public == "false" || publish == false || publish == "false"
+  公开入口目录: file.path == "README.md" || file.inFolder("🍀 花园导览")
+  编译层候选: file.inFolder("Atlas/LLM Wiki/Synthesis") || file.inFolder("Atlas/LLM Wiki/Queries") || file.inFolder("Atlas/Bases") || file.inFolder("_system/docs/plans")
+  发布控制入口: file.path == "Spaces/Published/文章草稿/» 本库文章发布工作流.md" || file.path == "Atlas/LLM Wiki/Synthesis/数字花园发布前阻断清单与公开呈现清单如何分工.md" || file.path == "Atlas/LLM Wiki/Queries/数字花园发布脚本为什么需要 target profile 和 dry-run preflight.md" || file.path == "Atlas/LLM Wiki/Queries/数字花园发布前哪些检查可以自动阻断，哪些必须人工收口.md" || file.path == "Atlas/LLM Wiki/Queries/数字花园内容级脱敏报告模式应该怎么设计.md" || file.path == "Atlas/LLM Wiki/Queries/数字花园内容级脱敏报告应该扫描哪些文件，输出到哪里.md" || file.path == "Atlas/LLM Wiki/Queries/发布前 P0 manifest 与 redaction gate 应该怎样做定期巡检.md" || file.path == "Atlas/LLM Wiki/Queries/publish_redaction_report 作为 software for one 小工具，为什么该上浮成发布控制面.md" || file.path == "Extras/Scripts/README.md" || file.path == "Extras/Scripts/py-scripts/∑ 脚本索引.md" || file.path == "_system/meta/TOOLS.md"
+  私密目录: file.inFolder("_system/meta") || file.inFolder("_system/memory") || file.inFolder("Calendar") || file.inFolder("Atlas/Bases/TaskNotes") || file.inFolder("tmp") || file.inFolder(".agents")
+  强敏感词: file.name.contains("账号密码") || file.name.contains("账户密码") || file.name.contains("登录密码") || file.name.contains("默认密码") || file.name.contains("解压密码") || file.name.contains("连接密码") || file.name.contains("数据库密码") || file.name.contains("密码备忘") || file.name.contains("账号凭据") || file.name.contains("账户凭据") || file.name.contains("登录凭据") || file.name.contains("密钥") || file.name.contains("身份证") || file.name.contains("银行卡") || file.name.contains("手机号") || file.name.contains("Conflicted") || ((file.name.contains("api") || file.name.contains("API")) && (file.name.contains("key") || file.name.contains("Key") || file.name.contains("KEY") || file.name.contains("密钥"))) || file.name.contains("access token") || file.name.contains("Access Token") || file.name.contains("security token") || file.name.contains("Security Token") || file.name.contains("auth token") || file.name.contains("Auth Token")
+  弱敏感词: file.name.contains("客户资料") || file.name.contains("合同资料") || file.name.contains("发票") || file.name.contains("税务") || file.name.contains("成本明细") || file.name.contains("供应商账号") || file.name.contains("联系人电话") || file.name.contains("联系邮箱")
+  公开风险面: formula.已发布 || formula.公开入口目录 || formula.编译层候选 || (!formula.私密目录 && (status == "done" || status.contains("review")))
+  需脱敏: (formula.强敏感词 && formula.公开风险面) || (formula.弱敏感词 && formula.已发布) || (formula.已发布 && formula.私密目录)
+  可公开候选: '!formula.已发布 && !formula.需脱敏 && !formula.私密目录 && (status == "done" || status.contains("review") || formula.公开入口目录 || formula.编译层候选)'
+  待成熟: '!formula.已发布 && !formula.私密目录 && (status == "draft" || status == "review" || formula.显式不发布)'
+  最近修改距今天数: (now() - file.mtime).days.round(0)
+properties:
+  formula.已发布:
+    displayName: 已发布
+  formula.显式不发布:
+    displayName: 显式不发布
+  formula.公开入口目录:
+    displayName: 公开入口目录
+  formula.编译层候选:
+    displayName: 编译层候选
+  formula.发布控制入口:
+    displayName: 发布控制入口
+  formula.私密目录:
+    displayName: 私密目录
+  formula.强敏感词:
+    displayName: 强敏感词
+  formula.弱敏感词:
+    displayName: 弱敏感词
+  formula.公开风险面:
+    displayName: 公开风险面
+  formula.需脱敏:
+    displayName: 需脱敏
+  formula.可公开候选:
+    displayName: 可公开候选
+  formula.待成熟:
+    displayName: 待成熟
+  formula.最近修改距今天数:
+    displayName: 距今天数
+  file.name:
+    displayName: 文件名
+  file.folder:
+    displayName: 文件夹
+  file.mtime:
+    displayName: 最近修改
+  file.backlinks:
+    displayName: 反链
+  public:
+    displayName: public
+views:
+  - type: table
+    name: 入口｜公开主入口
+    filters:
+      and:
+        - formula.公开入口目录
+    order:
+      - file.name
+      - file.folder
+      - public
+      - publish
+      - status
+      - formula.已发布
+      - formula.需脱敏
+      - file.backlinks
+      - file.mtime
+    sort:
+      - property: publish
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+    limit: 200
+  - type: table
+    name: 协议｜发布控制面
+    filters:
+      and:
+        - formula.发布控制入口
+    order:
+      - file.name
+      - file.folder
+      - type
+      - status
+      - promotion_target
+      - public
+      - publish
+      - formula.发布控制入口
+      - formula.需脱敏
+      - file.backlinks
+      - file.mtime
+    sort:
+      - property: file.name
+        direction: ASC
+    limit: 100
+  - type: table
+    name: 候选｜可公开
+    filters:
+      and:
+        - formula.可公开候选
+    order:
+      - file.name
+      - file.folder
+      - public
+      - publish
+      - status
+      - type
+      - formula.编译层候选
+      - formula.最近修改距今天数
+      - file.backlinks
+      - file.mtime
+    sort:
+      - property: formula.编译层候选
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+    limit: 300
+  - type: table
+    name: 风险｜需脱敏
+    filters:
+      and:
+        - formula.需脱敏
+    order:
+      - file.name
+      - file.folder
+      - public
+      - publish
+      - status
+      - formula.私密目录
+      - formula.强敏感词
+      - formula.弱敏感词
+      - formula.公开风险面
+      - file.mtime
+    sort:
+      - property: publish
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+    limit: 200
+  - type: table
+    name: 草稿｜待成熟
+    filters:
+      and:
+        - formula.待成熟
+        - not:
+            - formula.需脱敏
+    order:
+      - file.name
+      - file.folder
+      - public
+      - publish
+      - status
+      - type
+      - formula.最近修改距今天数
+      - file.backlinks
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 300
+  - type: table
+    name: 已发布｜public or publish true
+    filters:
+      and:
+        - formula.已发布
+    order:
+      - file.name
+      - file.folder
+      - public
+      - publish
+      - status
+      - formula.需脱敏
+      - formula.最近修改距今天数
+      - file.backlinks
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 500
+  - type: table
+    name: 最近｜公开相关修改
+    filters:
+      or:
+        - formula.公开入口目录
+        - formula.编译层候选
+        - formula.已发布
+    order:
+      - file.name
+      - file.folder
+      - public
+      - publish
+      - status
+      - formula.可公开候选
+      - formula.需脱敏
+      - formula.最近修改距今天数
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+    limit: 200

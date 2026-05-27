@@ -3,7 +3,7 @@ publish: true
 permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian canvas.md
 created: 2025-06-08
 modified: 2025-07-11
-published: 2025-11-13T23:03:38.863+08:00
+published: 2026-05-16T01:30:28.700+08:00
 ---
 
 [[Obsidian canvas 使用 cursor生成]]

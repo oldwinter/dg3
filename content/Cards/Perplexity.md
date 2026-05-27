@@ -6,7 +6,7 @@ aliases:
   - pplx
 created: 2024-02-04
 modified: 2024-10-28
-published: 2025-08-27T12:28:11.357+08:00
+published: 2026-05-24T14:06:36.841+08:00
 ---
 
 ## Perplexity.ai

@@ -1,6 +1,6 @@
 filters:
   and:
-    - 分类.containsAny(link("linux命令 - fileclass"))
+    - topics.containsAny(link("linux 命令行 cli - fileclass"))
 views:
   - type: table
     name: Table

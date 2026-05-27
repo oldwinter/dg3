@@ -1,8 +1,10 @@
 ---
-date created: 2022-08-25
-date modified: 2023-03-14
-title: 本库如何自动每日发布至web
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库如何自动每日发布至web.md
+title: 本库如何自动每日发布至web
+created: 2022-08-25
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.695+08:00
 ---
 
 将obsidian的笔记库以类似博客的方式发布至网络，目前本库采用了2个第三方免费方案，详见[[obsidian 目前最完美的免费发布方案 - 渐进式教程]]。
@@ -18,19 +20,19 @@ publish: true
 
 ```zsh
 # dg jekyll方案
-cd /Users/cdd/works/dg/_notes/
+cd <your-workspace>/dg/_notes/
 git checkout -q main
 git pull 
-cd /Users/cdd/works/dg
+cd <your-workspace>/dg
 git add .
 git commit -m "auto publish1 by keyboard"
 git push
 
 # dg3 quartz方案
-cd /Users/cdd/works/dg3/content/
+cd <your-workspace>/dg3/content/
 git checkout -q main
 git pull
-cd /Users/cdd/works/dg3
+cd <your-workspace>/dg3
 git add .
 git commit -m "auto publish3 by keyboard"
 git push

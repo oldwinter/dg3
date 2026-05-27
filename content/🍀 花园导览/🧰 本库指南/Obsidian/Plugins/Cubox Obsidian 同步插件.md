@@ -1,12 +1,11 @@
 ---
-date created: 2025-06-05
-date modified: 2025-07-10
-rating: 6
-status: null
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/Plugins/Cubox Obsidian 同步插件.md
 aliases:
-- cubox-sync
-分类: "[[obsidian插件 - fileclass]]"
+  - cubox-sync
+created: 2025-06-05
+modified: 2025-07-10
+published: 2026-05-16T01:30:28.723+08:00
 ---
 
 [[AI 时代，剪藏不是为了稍后看，而是告诉 AI，我喜欢 by 玉伯]]

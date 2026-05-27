@@ -6,7 +6,7 @@ aliases:
 title: Warp
 created: 2023-01-06
 modified: 2025-09-02
-published: 2026-03-14T19:57:58.449+08:00
+published: 2026-05-24T14:30:49.924+08:00
 ---
 
 [[warp token]]
@@ -75,7 +75,7 @@ Warp官方优惠码，新开账号或续费用得上\
 
 配置文件：
 
-/Users/oldwinter/.warp/launch\_configurations/k8s.yaml
+`~/.warp/launch_configurations/vibe-coding.yaml`
 
 ```yaml
 # Warp Launch Configuration
@@ -97,7 +97,7 @@ Warp官方优惠码，新开账号或续费用得上\
 # windows:
 #  - tabs:
 #      - layout:
-#          cwd: /Users/warp-user/project
+#          cwd: ~/project
 #          commands:
 #            - exec: code .
 
@@ -110,17 +110,17 @@ windows:
       - layout:
           split_direction: horizontal
           panes:
-            - cwd: /Users/oldwinter/Code/gemini-space
+            - cwd: ~/Code/gemini-space
               is_focused: true
               commands:
                 - exec: gemini
-            - cwd: /Users/oldwinter/Code/claude-code-space
+            - cwd: ~/Code/claude-code-space
               commands:
                 - exec: claude
-            - cwd: /Users/oldwinter/Code/kimi-2-space
+            - cwd: ~/Code/kimi-2-space
               commands:
                 - exec: ccr code
-            - cwd: /Users/oldwinter/Code/glm-space
+            - cwd: ~/Code/glm-space
               commands:
                 - exec: ccr code
 

@@ -4,7 +4,7 @@ permalink: /Atlas/Canvas/» canvas使用经验和技巧.md
 title: » canvas使用经验
 created: 2023-02-27
 modified: 2025-08-19
-published: 2025-08-19T02:20:37.151+08:00
+published: 2026-05-16T01:30:29.088+08:00
 ---
 
 ## 熟悉各种操作
@@ -38,7 +38,7 @@ published: 2025-08-19T02:20:37.151+08:00
     - mindmap
     - kanban
 - 考虑使用[[金字塔原理]]，自上而下地构建canvas，可以模仿roadmap.sh网站，将宽度限制恒定，高度无限，这样更容易收住，也更容易画图。
-- canvas过大的时候，如果要搜索某个元素，使用[[Quick Switcher++]]的$模式，可以直达。设成了 cmd + k 快捷键。在md文件中，这个功能是快速到header节点。
+- canvas过大的时候，如果要搜索某个元素，使用[[Quick Switcher++]]的\$模式，可以直达。设成了 cmd + k 快捷键。在md文件中，这个功能是快速到header节点。
   - ![image.png](https://my-public-pic.oss-cn-hangzhou.aliyuncs.com/20250531014727939.png)
 - 如果要查看obsidian各种附件的反向链接，可以先临时拖动到canvas，然后安装[[Advanced Canvas]]插件后，在canvas中，点击附件，通过反向链接面板，就能查看到其被什么笔记引用了。
 

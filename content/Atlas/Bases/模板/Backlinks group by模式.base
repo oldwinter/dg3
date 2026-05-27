@@ -14,5 +14,5 @@ views:
     order:
       - file.name
       - file.folder
-      - 分类
+      - topics
     group_by: file.folder

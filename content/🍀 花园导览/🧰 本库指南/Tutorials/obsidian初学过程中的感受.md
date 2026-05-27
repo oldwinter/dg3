@@ -1,8 +1,10 @@
 ---
-date created: 2022-08-16
-date modified: 2023-03-14
-title: obsidian初学过程中的感受
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Tutorials/obsidian初学过程中的感受.md
+title: obsidian初学过程中的感受
+created: 2022-08-16
+modified: 2023-03-14
+published: 2026-05-16T01:30:28.692+08:00
 ---
 
 - [[闪念笔记]]

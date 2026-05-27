@@ -1,6 +1,6 @@
 filters:
   and:
-    - 分类.containsAny(link("secrets重要 - fileclass"))
+    - topics.containsAny(link("secrets重要 - fileclass"))
 views:
   - type: table
     name: Table

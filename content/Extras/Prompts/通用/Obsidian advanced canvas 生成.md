@@ -1,9 +1,9 @@
 ---
-date created: 2025-05-14
-date modified: 2025-05-26
 publish: true
-分类:
-- '[[提示词prompts - fileclass]]'
+permalink: /Extras/Prompts/通用/Obsidian advanced canvas 生成.md
+created: 2025-05-14
+modified: 2025-05-26
+published: 2026-05-16T01:30:29.163+08:00
 ---
 
 ## 提示词

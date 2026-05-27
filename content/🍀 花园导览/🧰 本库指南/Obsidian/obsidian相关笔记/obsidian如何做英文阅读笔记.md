@@ -1,10 +1,10 @@
 ---
-date created: 2022-07-06
-date modified: 2023-03-14
-title: obsidian如何做英文阅读笔记
-tags:
-  - todo
 publish: true
+permalink: /🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian如何做英文阅读笔记.md
+title: obsidian如何做英文阅读笔记
+created: 2022-07-06
+modified: 2023-03-14
+published: 2026-05-16T01:35:26.685+08:00
 ---
 
 英文阅读有几个诉求：
@@ -14,7 +14,7 @@ publish: true
 - 整段翻译必须能快速进行，且需要和原文有对照。
 - 支持批量导出批注或译文的[[deeplink]]，方便和笔记软件联动。
 
-体验过[[marginnote]]、、[[微信读书]]和obsidian内置annotator插件。综合下来还是[[marginnote]]最符合需求。
+体验过marginnote、、[[微信读书]]和obsidian内置annotator插件。综合下来还是marginnote最符合需求。
 
 本次实践[[∑ Building a Second Brain 翻译和读书笔记]]，就选用它进行。
 

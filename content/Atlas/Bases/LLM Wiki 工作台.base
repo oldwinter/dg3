@@ -1,0 +1,1056 @@
+filters:
+  and:
+    - file.inFolder("Atlas/LLM Wiki")
+    - file.ext == "md"
+formulas:
+  缺来源: sources.isEmpty()
+  缺相关链接: related.isEmpty()
+  待晋升: '!promotion_target.isEmpty() && status != "done"'
+  已回桥: '!promotion_target.isEmpty() && status == "done"'
+  弱连接: file.backlinks.length < 2
+  Prompt工作台资产: file.path == "Atlas/LLM Wiki/Synthesis/Prompt 的案例形态：控制杆清单、承载层清单与失败回放清单如何分工.md" || file.path == "Atlas/LLM Wiki/Synthesis/Prompt 工作台资产的最小清单：控制杆清单、承载层清单与失败回放清单如何落地.md" || file.path == "Atlas/LLM Wiki/Synthesis/Prompt 工作台资产的晋升规则：控制杆、承载层与失败回放如何切换.md" || file.path == "Atlas/LLM Wiki/Queries/哪些 prompt 控制已经值得进入控制杆清单.md" || file.path == "Atlas/LLM Wiki/Queries/哪些 prompt 控制已经值得从控制杆清单晋升到承载层清单.md" || file.path == "Atlas/LLM Wiki/Queries/哪些 prompt 失败已经值得进入失败回放清单.md" || file.path == "Atlas/LLM Wiki/Queries/哪些 prompt 控制已经值得进入承载层清单.md"
+properties:
+  formula.缺来源:
+    displayName: 缺来源
+  formula.缺相关链接:
+    displayName: 缺相关
+  formula.待晋升:
+    displayName: 待晋升
+  formula.已回桥:
+    displayName: 已回桥
+  formula.弱连接:
+    displayName: 弱连接
+  formula.Prompt工作台资产:
+    displayName: Prompt工作台资产
+  file.name:
+    displayName: 文件名
+  file.mtime:
+    displayName: 最近修改
+  file.backlinks:
+    displayName: 反链
+views:
+  - type: table
+    name: Inbox｜待整理草稿
+    filters:
+      and:
+        - type != "note"
+        - status == "draft"
+    order:
+      - file.name
+      - type
+      - status
+      - sources
+      - related
+      - file.mtime
+      - file.backlinks
+      - formula.缺来源
+      - formula.缺相关链接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Sources｜源摘要
+    filters:
+      and:
+        - type == "source_summary"
+    order:
+      - file.name
+      - status
+      - sources
+      - related
+      - file.mtime
+      - file.backlinks
+      - formula.缺相关链接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Knowledge｜概念与实体
+    filters:
+      or:
+        - type == "concept"
+        - type == "entity"
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.待晋升
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜全部综合页
+    filters:
+      and:
+        - type == "synthesis"
+    order:
+      - file.name
+      - status
+      - sources
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜工具主线
+    filters:
+      and:
+        - type == "synthesis"
+        - or:
+            - tags.containsAny("tools", "raycast", "claude-code", "codex", "obsidian")
+            - topics.containsAny("tools", "raycast", "claude-code", "codex", "obsidian")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜系统与治理
+    filters:
+      and:
+        - type == "synthesis"
+        - or:
+            - tags.containsAny("skills", "harness-engineering", "orchestration", "models")
+            - topics.containsAny("skills", "harness-engineering", "orchestration", "models")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜核心方法论
+    filters:
+      and:
+        - type == "synthesis"
+        - or:
+            - tags.containsAny("tools", "obsidian", "claude-code", "codex", "skills", "harness-engineering", "orchestration", "models")
+            - topics.containsAny("tools", "obsidian", "claude-code", "codex", "skills", "harness-engineering", "orchestration", "models")
+        - or:
+            - file.name.contains("工作面分层")
+            - file.name.contains("任务单元")
+            - file.name.contains("底座")
+            - file.name.contains("上手阻力")
+            - file.name.contains("视图层")
+            - file.name.contains("演进策略")
+            - file.name.contains("工程现实")
+            - file.name.contains("标准与治理")
+            - file.name.contains("上下文系统")
+            - file.name.contains("Agent-ready")
+            - file.name.contains("长期状态")
+            - file.name.contains("Harness")
+            - file.name.contains("harness")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜方法与基础设施
+    filters:
+      and:
+        - type == "synthesis"
+        - or:
+            - tags.containsAny("pkm", "ai-toolchain", "prompt-engineering", "ai-coding-tools", "kubernetes")
+            - topics.containsAny("pkm", "ai-toolchain", "prompt-engineering", "ai-coding-tools", "kubernetes")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜回桥规则
+    filters:
+      and:
+        - type == "synthesis"
+        - file.name.contains("回桥规则")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜主分工
+    filters:
+      and:
+        - type == "synthesis"
+        - file.name.contains("主分工")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜成熟主题骨架
+    filters:
+      and:
+        - type == "synthesis"
+        - or:
+            - file.name.contains("主分工")
+            - file.name.contains("回桥规则")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜阅读地图
+    filters:
+      and:
+        - type == "synthesis"
+        - file.name.contains("阅读地图")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜Clippings 后段收束
+    filters:
+      and:
+        - type == "synthesis"
+        - or:
+            - or:
+                - tags.containsAny("clippings")
+                - topics.containsAny("clippings")
+            - file.name.contains("Clippings 后段收束")
+    order:
+      - file.name
+      - status
+      - sources
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Synthesis｜Clippings 路由与再启动
+    filters:
+      and:
+        - type == "synthesis"
+        - or:
+            - file.name.contains("Clippings 剩余 58")
+            - file.name.contains("Clippings 后段再启动")
+            - file.name.contains("Clippings 暂缓池")
+            - file.name.contains("Clippings 后段阶段完成")
+            - file.name.contains("Clippings 后段收束入口")
+            - file.name.contains("Clippings 未编译来源")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Queries｜Clippings 后段收束
+    filters:
+      and:
+        - type == "query"
+        - or:
+            - or:
+                - tags.containsAny("clippings")
+                - topics.containsAny("clippings")
+            - file.name.contains("Clippings")
+    order:
+      - file.name
+      - status
+      - sources
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Queries｜全部问题页
+    filters:
+      and:
+        - type == "query"
+    order:
+      - file.name
+      - status
+      - sources
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Queries｜跨主题高价值
+    filters:
+      and:
+        - type == "query"
+        - or:
+            - tags.containsAny("tools", "raycast", "claude-code", "codex", "obsidian", "skills", "harness-engineering", "orchestration", "models")
+            - topics.containsAny("tools", "raycast", "claude-code", "codex", "obsidian", "skills", "harness-engineering", "orchestration", "models")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Queries｜方法与基础设施
+    filters:
+      and:
+        - type == "query"
+        - or:
+            - tags.containsAny("pkm", "ai-toolchain", "prompt-engineering", "ai-coding-tools", "kubernetes")
+            - topics.containsAny("pkm", "ai-toolchain", "prompt-engineering", "ai-coding-tools", "kubernetes")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Cross-theme｜核心原则
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - type == "query"
+            - type == "synthesis"
+        - or:
+            - tags.containsAny("tools", "raycast", "claude-code", "codex", "obsidian", "skills", "harness-engineering", "orchestration", "models")
+            - topics.containsAny("tools", "raycast", "claude-code", "codex", "obsidian", "skills", "harness-engineering", "orchestration", "models")
+        - or:
+            - file.name.contains("长期状态")
+            - file.name.contains("任务单元")
+            - file.name.contains("工作面分层")
+            - file.name.contains("上下文系统")
+            - file.name.contains("Agent-ready")
+            - file.name.contains("工程现实")
+            - file.name.contains("演进策略")
+            - file.name.contains("工作系统底座")
+            - file.name.contains("低摩擦")
+            - file.name.contains("视图层")
+            - file.name.contains("开放标准")
+            - file.name.contains("为什么")
+            - file.name.contains("Harness")
+            - file.name.contains("harness")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Lint｜缺来源/缺链接/弱连接
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - formula.缺来源
+            - formula.缺相关链接
+            - formula.弱连接
+            - formula.待晋升
+    order:
+      - file.name
+      - type
+      - status
+      - formula.缺来源
+      - formula.缺相关链接
+      - formula.弱连接
+      - formula.待晋升
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+    sort:
+      - property: formula.待晋升
+        direction: DESC
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: Promotion｜待回桥
+    filters:
+      and:
+        - type != "note"
+        - formula.待晋升
+    order:
+      - file.name
+      - type
+      - status
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Promotion｜已回桥
+    filters:
+      and:
+        - type != "note"
+        - formula.已回桥
+    order:
+      - file.name
+      - type
+      - status
+      - promotion_target
+      - file.backlinks
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Promotion｜需目标入口
+    filters:
+      and:
+        - type == "synthesis"
+        - status == "review"
+        - promotion_target.isEmpty()
+        - or:
+            - file.name.contains("AI coding 从工具榜单")
+            - file.name.contains("Raycast 入门到精通")
+    order:
+      - file.name
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Promotion｜控制页保留
+    filters:
+      and:
+        - type == "synthesis"
+        - status == "review"
+        - promotion_target.isEmpty()
+        - or:
+            - file.name.contains("Clippings 后段收束入口")
+            - file.name.contains("Clippings 未编译来源")
+            - file.name.contains("Karpathy LLM Wiki")
+            - file.name.contains("LLM Wiki 演进策略")
+            - file.name.contains("MOC 回桥策略")
+            - file.name.contains("下一批 LLM Wiki")
+            - file.name.contains("主题成熟度")
+            - file.name.contains("待处理主题盘点")
+            - file.name.contains("方法与基础设施主题当前覆盖总览")
+    order:
+      - file.name
+      - status
+      - tags
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Harness
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("harness-engineering")
+            - topics.containsAny("harness-engineering")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Raycast
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("raycast")
+            - topics.containsAny("raycast")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜ClaudeCode
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("claude-code")
+            - topics.containsAny("claude-code")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Codex
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("codex")
+            - topics.containsAny("codex")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Obsidian
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("obsidian")
+            - topics.containsAny("obsidian")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Obsidian 资产包
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("obsidian")
+            - topics.containsAny("obsidian")
+        - or:
+            - file.name.contains("底座约束")
+            - file.name.contains("输入入口")
+            - file.name.contains("视图共振")
+            - file.name.contains("工作系统底座")
+            - file.name.contains("可编排学习台")
+            - file.name.contains("案例形态")
+            - file.name.contains("阅读地图")
+            - file.name.contains("入门到精通")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Tools
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("raycast", "claude-code", "codex", "obsidian", "skills")
+            - topics.containsAny("raycast", "claude-code", "codex", "obsidian", "skills")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Skills
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("skills")
+            - topics.containsAny("skills")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Skills Eval
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("skills")
+            - topics.containsAny("skills")
+        - or:
+            - file.name.contains("eval")
+            - file.name.contains("Eval")
+            - file.name.contains("benchmark")
+            - file.name.contains("Benchmark")
+            - file.name.contains("smoke")
+            - file.name.contains("trigger")
+            - file.name.contains("undertrigger")
+            - file.name.contains("真实任务")
+            - file.name.contains("样本")
+            - file.name.contains("验证")
+            - file.name.contains("review")
+            - file.name.contains("Review")
+            - file.name.contains("测量")
+            - file.name.contains("description")
+            - file.name.contains("frontmatter")
+            - file.name.contains("usage")
+            - file.name.contains("measurement")
+            - file.name.contains("measure")
+            - file.name.contains("Measure")
+            - file.name.contains("refine")
+            - file.name.contains("Refine")
+            - file.name.contains("触发质量")
+            - file.name.contains("迭代闭环")
+    order:
+      - file.name
+      - type
+      - status
+      - sources
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜ClaudeCode+Codex
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("claude-code", "codex")
+            - topics.containsAny("claude-code", "codex")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Raycast+Obsidian
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("raycast", "obsidian")
+            - topics.containsAny("raycast", "obsidian")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Models
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("models")
+            - topics.containsAny("models")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Orchestration
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("orchestration")
+            - topics.containsAny("orchestration")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜PKM
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("pkm")
+            - topics.containsAny("pkm")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜AI Toolchain
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("ai-toolchain")
+            - topics.containsAny("ai-toolchain")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Intake
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("intake", "data-collection")
+            - topics.containsAny("intake", "data-collection")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Search
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - or:
+                - tags.containsAny("search", "search-infra")
+                - topics.containsAny("search", "search-infra")
+            - file.name.contains("搜索")
+            - file.name.contains("检索")
+            - file.name.contains("RAG")
+            - file.name.contains("向量")
+            - file.name.contains("OpenSearch")
+            - file.name.contains("Elasticsearch")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Digital Garden
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - or:
+                - tags.containsAny("digital-garden")
+                - topics.containsAny("digital-garden")
+            - file.name.contains("数字花园")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Prompt
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("prompt-engineering")
+            - topics.containsAny("prompt-engineering")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Prompt 工作台资产
+    filters:
+      and:
+        - formula.Prompt工作台资产
+    order:
+      - file.name
+      - type
+      - status
+      - promotion_target
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: type
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜AI Coding Tools
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("ai-coding-tools")
+            - topics.containsAny("ai-coding-tools")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics｜Kubernetes
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("kubernetes")
+            - topics.containsAny("kubernetes")
+    order:
+      - file.name
+      - type
+      - status
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: file.name
+        direction: ASC

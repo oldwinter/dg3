@@ -4,13 +4,11 @@ permalink: /Spaces/3-Resource/软件梳理/安卓软件/Obsidian.md
 title: Obsidian
 created: 2022-06-09
 modified: 2025-07-10
-published: 2025-11-15T16:39:12.396+08:00
-tags:
-  - 评论/少数派
+published: 2026-05-24T14:30:49.934+08:00
 ---
 
-up:: [[笔记软件的选择]]\
-down:: [[∑ obsidian插件]]\
+up:: [[笔记软件的选择]]
+down:: [[∑ obsidian插件]]
 jumps:: [[Notion]]
 
 [[本库使用时遵守的核心原则]]
@@ -45,7 +43,7 @@ jumps:: [[Notion]]
 
 ##
 
-[[Obsidian Sync 同步库账号密码 - 内测账号密码]]
+（已隐藏：不公开入口）
 
 ## 参考文献
 

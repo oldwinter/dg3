@@ -1,0 +1,111 @@
+filters:
+  or:
+    - collection_id == "skills-recommendation-collections"
+    - and:
+        - tags.contains("skills")
+        - topics.contains("skill-collection")
+properties:
+  skill_collection_name:
+    displayName: 合集名称
+  skill_collection_type:
+    displayName: 类型
+  skill_collection_scope:
+    displayName: 覆盖范围
+  skill_collection_install_fit:
+    displayName: 安装/加载建议
+  skill_collection_recommendation:
+    displayName: 推荐判断
+  skill_collection_risk_notes:
+    displayName: 风险备注
+  skill_collection_priority:
+    displayName: 优先级
+  skill_collection_trial_candidate:
+    displayName: 试用候选
+  skill_collection_repo_count:
+    displayName: 仓库数
+  skill_collection_skill_count:
+    displayName: Skill 数
+  skill_collection_stars_total:
+    displayName: Stars
+  skill_collection_forks_total:
+    displayName: Forks
+  skill_collection_license:
+    displayName: License
+  skill_collection_language:
+    displayName: 主语言
+  skill_collection_last_push:
+    displayName: 最近 Push
+  skill_collection_primary_repo:
+    displayName: 主仓库
+  skill_collection_repos:
+    displayName: 仓库列表
+  checked_at:
+    displayName: 检查日期
+  confidence:
+    displayName: 可信度
+  status:
+    displayName: 状态
+views:
+  - type: table
+    name: 技能合集总览
+    order:
+      - file.name
+      - skill_collection_name
+      - skill_collection_scope
+      - skill_collection_install_fit
+      - skill_collection_recommendation
+      - skill_collection_skill_count
+      - skill_collection_repo_count
+      - skill_collection_stars_total
+      - skill_collection_last_push
+      - skill_collection_license
+      - confidence
+      - checked_at
+    sort:
+      - property: skill_collection_name
+        direction: ASC
+      - property: skill_collection_priority
+        direction: DESC
+      - property: skill_collection_stars_total
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 优先试用
+    filters:
+      and:
+        - skill_collection_trial_candidate == true
+    order:
+      - file.name
+      - skill_collection_name
+      - skill_collection_install_fit
+      - skill_collection_recommendation
+      - skill_collection_risk_notes
+      - skill_collection_skill_count
+      - skill_collection_stars_total
+      - skill_collection_primary_repo
+    sort:
+      - property: skill_collection_priority
+        direction: DESC
+      - property: skill_collection_stars_total
+        direction: DESC
+  - type: table
+    name: 授权/风险待确认
+    filters:
+      or:
+        - skill_collection_license == "unknown"
+        - 'skill_collection_license == "mixed: Apache-2.0 / unknown"'
+        - confidence == "medium"
+    order:
+      - file.name
+      - skill_collection_name
+      - skill_collection_license
+      - confidence
+      - skill_collection_risk_notes
+      - skill_collection_primary_repo
+      - checked_at
+    sort:
+      - property: skill_collection_priority
+        direction: DESC
+      - property: file.name
+        direction: ASC

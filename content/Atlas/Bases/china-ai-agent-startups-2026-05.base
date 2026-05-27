@@ -1,0 +1,186 @@
+filters:
+  and:
+    - file.inFolder("_system/docs/collections/china-ai-agent-startups-2026-05")
+    - collection_id == "china-ai-agent-startups-2026-05"
+    - item_type == "company"
+properties:
+  title:
+    displayName: 公司/产品
+  product_name:
+    displayName: 核心 Agent 产品
+  tier:
+    displayName: 梯队
+  priority:
+    displayName: 关注优先级
+  company_type:
+    displayName: 公司类型
+  category:
+    displayName: Agent 类别
+  agent_native:
+    displayName: Agent-native
+  model_company_agent:
+    displayName: 模型公司 Agent
+  website:
+    displayName: 官网
+  hq_or_origin:
+    displayName: 总部/团队来源
+  founder_or_team:
+    displayName: 创始人/团队
+  summary:
+    displayName: 一句话说明
+  primary_use_case:
+    displayName: 主场景
+  use_cases:
+    displayName: 典型用例
+  platforms:
+    displayName: 平台
+  deployment:
+    displayName: 部署/形态
+  pricing:
+    displayName: 价格/商业化
+  funding_signal:
+    displayName: 融资信号
+  traction_signal:
+    displayName: 增长/使用信号
+  open_source:
+    displayName: 开源
+  license:
+    displayName: License
+  repo_url:
+    displayName: 仓库
+  github_stars:
+    displayName: GitHub stars
+  github_stars_checked_at:
+    displayName: Stars checked
+  product_maturity:
+    displayName: 成熟度
+  notable_activity:
+    displayName: 近期关键动向
+  why_selected:
+    displayName: 入选理由
+  risk_notes:
+    displayName: 风险/不确定
+  needs_review:
+    displayName: 需复核
+  next_action:
+    displayName: 下一步
+  confidence:
+    displayName: 可信度
+  enrichment_status:
+    displayName: 补全状态
+  checked_at:
+    displayName: 检查日期
+  source_titles:
+    displayName: 来源标题
+  source_urls:
+    displayName: 来源链接
+  updated_at:
+    displayName: 更新时间
+  status:
+    displayName: status
+views:
+  - type: table
+    name: 总览
+    order:
+      - file.name
+      - product_name
+      - tier
+      - priority
+      - company_type
+      - category
+      - hq_or_origin
+      - summary
+      - funding_signal
+      - traction_signal
+      - confidence
+      - needs_review
+    sort:
+      - property: hq_or_origin
+        direction: ASC
+      - property: priority
+        direction: DESC
+    columnSize:
+      note.product_name: 135
+      note.priority: 69
+      note.company_type: 125
+      note.category: 92
+      note.hq_or_origin: 140
+      note.summary: 137
+      note.funding_signal: 125
+      note.traction_signal: 269
+      note.confidence: 88
+  - type: table
+    name: 优先关注
+    filters:
+      and:
+        - priority >= 4
+    order:
+      - file.name
+      - product_name
+      - tier
+      - primary_use_case
+      - why_selected
+      - funding_signal
+      - traction_signal
+      - risk_notes
+      - next_action
+    sort:
+      - property: priority
+        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Agent-native 初创
+    filters:
+      and:
+        - agent_native == true
+    order:
+      - file.name
+      - product_name
+      - tier
+      - category
+      - summary
+      - funding_signal
+      - traction_signal
+      - risk_notes
+  - type: table
+    name: 模型公司 Agent
+    filters:
+      and:
+        - model_company_agent == true
+    order:
+      - file.name
+      - product_name
+      - category
+      - summary
+      - notable_activity
+      - risk_notes
+  - type: table
+    name: 开源/基础设施
+    filters:
+      or:
+        - open_source == true
+        - category == "Agentic workflow builder / LLMOps"
+        - category == "Multi-agent framework"
+    order:
+      - file.name
+      - product_name
+      - repo_url
+      - github_stars
+      - license
+      - summary
+      - next_action
+  - type: table
+    name: 待补字段
+    filters:
+      or:
+        - needs_review == true
+        - confidence == "low"
+        - enrichment_status == "partial"
+    order:
+      - file.name
+      - confidence
+      - enrichment_status
+      - risk_notes
+      - source_urls
+      - next_action

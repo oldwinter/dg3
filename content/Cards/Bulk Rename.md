@@ -1,12 +1,10 @@
 ---
-当前使用频率: 2
-当前是否还在使用: true
-title: Bulk Rename
-date created: 2023-01-23
-date modified: 2025-06-23
-rating: 5
 publish: true
-分类: "[[obsidian插件 - fileclass]]"
+permalink: /Cards/Bulk Rename.md
+title: Bulk Rename
+created: 2023-01-23
+modified: 2025-06-23
+published: 2026-05-16T01:30:26.773+08:00
 ---
 
 换成使用[[File Cooker]]，更方便一些。

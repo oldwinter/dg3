@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"3000000000000003","type":"group","x":-1320,"y":0,"width":760,"height":1160,"color":"5","label":"五个核心概念"},
+		{"id":"3000000000000009","type":"group","x":-500,"y":0,"width":840,"height":920,"color":"4","label":"三层架构"},
+		{"id":"3000000000000018","type":"group","x":400,"y":0,"width":740,"height":920,"color":"6","label":"系统行为"},
+		{"id":"3000000000000001","type":"file","file":"Sources/Clippings/Thin Harness, Fat Skills.md","x":-1060,"y":-320,"width":440,"height":230,"color":"3"},
+		{"id":"3000000000000002","type":"text","text":"# Thin Harness, Fat Skills\n\n文章的核心判断：100x 生产力主要不是模型更聪明，而是系统架构更正确。把 harness 做薄，把可复用判断沉淀成技能，把可信执行下沉到确定性工具。","x":-500,"y":-320,"width":620,"height":230,"color":"3"},
+		{"id":"3000000000000004","type":"text","text":"## 1. Skill Files｜技能文件\n\n可复用的 Markdown 流程文档，教模型**怎样做**，而不是替用户决定做什么。它像方法调用：同一套流程配不同参数，就能变成调查、匹配、富集或评审能力。","x":-1280,"y":80,"width":680,"height":170,"color":"5"},
+		{"id":"3000000000000005","type":"text","text":"## 2. Harness｜运行壳\n\n包在 LLM 外面的程序：循环调用模型、读写文件、管理上下文、执行安全边界。它应该很薄，用快速、窄口径工具，而不是塞进臃肿工具目录。","x":-1280,"y":280,"width":680,"height":170,"color":"5"},
+		{"id":"3000000000000006","type":"text","text":"## 3. Resolvers｜上下文解析器\n\n上下文路由表：出现任务类型 X 时，优先加载文档或技能 Y。用描述、指针和轻量规则替代总是加载的超长指令文件。","x":-1280,"y":480,"width":680,"height":170,"color":"5"},
+		{"id":"3000000000000007","type":"text","text":"## 4. Latent vs Deterministic｜潜空间与确定性\n\n潜空间适合判断、综合、模式识别和处理模糊性；确定性代码负责可信执行，例如 SQL、算术、编译代码、分配算法和可重复流程。","x":-1280,"y":680,"width":680,"height":170,"color":"5"},
+		{"id":"3000000000000008","type":"text","text":"## 5. Diarization｜结构化人物/对象画像\n\n这是分析师步骤：读完大量材料，保留矛盾和时间变化，再压缩成一页结构化 brief。它把原始检索变成可行动判断。","x":-1280,"y":880,"width":680,"height":190,"color":"5"},
+		{"id":"3000000000000010","type":"text","text":"## 上层：Fat Skills｜厚技能\n\nMarkdown 流程承载判断、领域知识、步骤、样例和评测规则。大部分价值在这里；新模型变强时，这一层的能力会自动放大。","x":-460,"y":90,"width":760,"height":160,"color":"4"},
+		{"id":"3000000000000011","type":"text","text":"## 中层：Thin CLI Harness｜薄命令行壳\n\nJSON 输入，文本输出，默认只读。它管理模型循环、上下文、文件访问、工具调用和安全，但不把系统知识吞进自己体内。","x":-460,"y":300,"width":760,"height":150,"color":"4"},
+		{"id":"3000000000000012","type":"text","text":"## 底层：Application｜确定性应用能力\n\nQueryDB、ReadDoc、Search、Timeline、浏览器检查、API 拉取、embedding、座位分配算法等，提供稳定、可重复、可信的执行面。","x":-460,"y":515,"width":760,"height":150,"color":"4"},
+		{"id":"3000000000000013","type":"text","text":"## 方向原则\n\n把智能上推到技能；把执行下沉到确定性工具；保持 harness 很薄。这样上下文更干净，延迟更低，失败面更可控。","x":-460,"y":760,"width":760,"height":130,"color":"4"},
+		{"id":"3000000000000017","type":"text","text":"## YC 案例\n\n创始人富集、活动匹配和事后改进都套用同一个模式：技能决定如何阅读和判断；确定性工具负责取数、搜索、统计、浏览器验证和座位分配。","x":440,"y":90,"width":660,"height":260,"color":"6"},
+		{"id":"3000000000000015","type":"text","text":"## 学习循环\n\n检索、阅读、diarize、计数、综合；再从问卷和弱反馈里调查、diarize、抽规则，并写回 skill 文件。技能文件会改写系统未来的行为。","x":440,"y":400,"width":660,"height":230,"color":"6"},
+		{"id":"3000000000000016","type":"text","text":"## 主要反模式\n\n厚 harness + 薄技能：几十个工具、慢 MCP 往返、REST endpoint 包装器、上下文膨胀、更高延迟和更多失败模式。","x":440,"y":680,"width":660,"height":160,"color":"1"}
+	],
+	"edges":[
+		{"id":"4000000000000001","fromNode":"3000000000000001","fromSide":"right","toNode":"3000000000000002","toSide":"left","label":"来源"},
+		{"id":"4000000000000002","fromFloating":false,"fromNode":"3000000000000002","fromSide":"bottom","toNode":"3000000000000004","toSide":"top","label":"定义"},
+		{"id":"4000000000000003","fromNode":"3000000000000002","fromSide":"bottom","toNode":"3000000000000010","toSide":"top","label":"组合成"},
+		{"id":"4000000000000004","fromNode":"3000000000000004","fromSide":"right","toNode":"3000000000000010","toSide":"left","label":"沉淀为"},
+		{"id":"4000000000000005","fromNode":"3000000000000005","fromSide":"right","toNode":"3000000000000011","toSide":"left","label":"对应"},
+		{"id":"4000000000000006","fromNode":"3000000000000006","fromSide":"right","toNode":"3000000000000011","toSide":"left","label":"为其路由上下文"},
+		{"id":"4000000000000007","fromNode":"3000000000000007","fromSide":"right","toNode":"3000000000000013","toSide":"left","label":"划定边界"},
+		{"id":"4000000000000008","fromNode":"3000000000000008","fromSide":"right","toNode":"3000000000000015","toSide":"left","label":"喂给"},
+		{"id":"4000000000000009","fromNode":"3000000000000010","fromSide":"bottom","toNode":"3000000000000011","toSide":"top","label":"调用"},
+		{"id":"4000000000000010","fromNode":"3000000000000011","fromSide":"bottom","toNode":"3000000000000012","toSide":"top","label":"委派执行"},
+		{"id":"4000000000000011","fromNode":"3000000000000012","fromSide":"bottom","toNode":"3000000000000013","toSide":"top","label":"在原则下保持可靠"},
+		{"id":"4000000000000012","fromNode":"3000000000000017","fromSide":"bottom","toNode":"3000000000000015","toSide":"top","label":"产生反馈"},
+		{"id":"4000000000000013","fromNode":"3000000000000015","fromSide":"left","toNode":"3000000000000010","toSide":"right","label":"改写"},
+		{"id":"4000000000000014","fromNode":"3000000000000016","fromSide":"left","toNode":"3000000000000011","toSide":"right","label":"避免"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

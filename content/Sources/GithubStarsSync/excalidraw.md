@@ -7,7 +7,7 @@ title: Excalidraw
 description: Virtual whiteboard for sketching hand-drawn like diagrams
 created: 2023-01-23
 modified: 2025-07-12
-published: 2025-08-26T18:25:03.084+08:00
+published: 2026-05-16T01:35:26.580+08:00
 ---
 
 ### 引用excalidraw中的局部区域

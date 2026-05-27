@@ -1,7 +1,9 @@
 ---
-date created: 2024-05-17
-date modified: 2024-05-17
 publish: true
+permalink: /Spaces/2-Area/知识管理/markdown 中如何界定一个块block.md
+created: 2024-05-17
+modified: 2024-05-17
+published: 2026-05-16T01:30:27.372+08:00
 ---
 
 用 [[Linter|Linter]] 格式化以后，一个内容块儿，前后有空格，则这个内容块整体是一个 block

@@ -1,0 +1,152 @@
+{
+  "nodes": [
+    {
+      "id": "9011223344556677",
+      "type": "group",
+      "x": -100,
+      "y": -100,
+      "width": 1880,
+      "height": 840,
+      "label": "Skills Reading Map"
+    },
+    {
+      "id": "0112233445566778",
+      "type": "text",
+      "x": 40,
+      "y": -30,
+      "width": 520,
+      "height": 120,
+      "text": "# Skills 阅读地图\n\n把 skills 的价值、设计、选择、组织生态与工作流层放在同一张图里。"
+    },
+    {
+      "id": "1223344556677889",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Skills 作为轻量能力注入层.md",
+      "label": "核心综合页",
+      "x": 80,
+      "y": 160,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "233445566778899a",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Synthesis/Skills 阅读地图.md",
+      "label": "阅读地图",
+      "x": 480,
+      "y": 160,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "3445566778899aab",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/为什么说很多场景下先做 Skills 比先造新 Agent 更值.md",
+      "label": "先做 skill 还是先造 agent",
+      "x": 880,
+      "y": 160,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "45566778899aabbc",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/什么时候该写进 AGENTS.md，什么时候该做成 skill.md",
+      "label": "AGENTS vs skill",
+      "x": 1280,
+      "y": 160,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "566778899aabbccd",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/为什么全局安装 skills 不能贪多.md",
+      "label": "全局安装策略",
+      "x": 1280,
+      "y": 460,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "6778899aabbccddee",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Queries/企业内部的 skills 生态为什么适合双层市场.md",
+      "label": "双层市场",
+      "x": 880,
+      "y": 460,
+      "width": 340,
+      "height": 220
+    },
+    {
+      "id": "78899aabbccddeef",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/五种 Skill 设计模式 - 源摘要.md",
+      "label": "设计模式",
+      "x": 480,
+      "y": 460,
+      "width": 320,
+      "height": 220
+    },
+    {
+      "id": "899aabbccddeeff0",
+      "type": "file",
+      "file": "Atlas/LLM Wiki/Source Summaries/Thread by JamesAI - workflow 比单个 skill 更值钱 - 源摘要.md",
+      "label": "workflow > skill",
+      "x": 80,
+      "y": 460,
+      "width": 320,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "8182838485868788",
+      "fromNode": "1223344556677889",
+      "fromSide": "right",
+      "toNode": "233445566778899a",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "9192939495969798",
+      "fromNode": "233445566778899a",
+      "fromSide": "right",
+      "toNode": "3445566778899aab",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "a1a2a3a4a5a6a7a8",
+      "fromNode": "3445566778899aab",
+      "fromSide": "bottom",
+      "toNode": "6778899aabbccddee",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "b1b2b3b4b5b6b7b8",
+      "fromNode": "6778899aabbccddee",
+      "fromSide": "right",
+      "toNode": "566778899aabbccd",
+      "toSide": "left",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "c1c2c3c4c5c6c7c8",
+      "fromNode": "233445566778899a",
+      "fromSide": "bottom",
+      "toNode": "78899aabbccddeef",
+      "toSide": "top",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "d1d2d3d4d5d6d7d8",
+      "fromNode": "78899aabbccddeef",
+      "fromSide": "left",
+      "toNode": "899aabbccddeeff0",
+      "toSide": "right",
+      "toEnd": "arrow"
+    }
+  ]
+}

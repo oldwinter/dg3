@@ -1,8 +1,9 @@
 ---
 publish: true
-分类:
-- '[[提示词prompts - fileclass]]'
-- '[[AI生成 - fileclass]]'
+permalink: /Extras/Prompts/Obsidian相关/Obsidian Canvas 生成提示词.md
+created: 2025-08-12T16:24:00.146+08:00
+modified: 2026-05-16T01:30:29.178+08:00
+published: 2026-05-16T01:30:29.178+08:00
 ---
 
 ### Obsidian Canvas 稳定生成提示词（Advanced Canvas 1.0-1.0）

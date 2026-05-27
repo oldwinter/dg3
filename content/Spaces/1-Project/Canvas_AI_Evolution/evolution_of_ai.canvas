@@ -21,14 +21,14 @@
             "color": "1"
         },
         {
-            "id": "101f0e506c78494a",
-            "type": "file",
-            "x": 750.0,
-            "y": -300.0,
-            "width": 600,
-            "height": 400,
-            "file": "ai_origins.png",
-            "color": "1"
+          "id": "101f0e506c78494a",
+          "type": "link",
+          "x": 750.0,
+          "y": -300.0,
+          "width": 600,
+          "height": 400,
+          "color": "1",
+          "url": "https://pub-pic.oldwinter.top/2026/05/a968d615f2f3aae41ddb74d8083cfc61.png"
         },
         {
             "id": "13619b2b02224194",
@@ -51,14 +51,14 @@
             "color": "5"
         },
         {
-            "id": "6d6dfcc3043d41ff",
-            "type": "file",
-            "x": -449.99999999999994,
-            "y": 900.0,
-            "width": 600,
-            "height": 400,
-            "file": "neural_network.png",
-            "color": "5"
+          "id": "6d6dfcc3043d41ff",
+          "type": "link",
+          "x": -449.99999999999994,
+          "y": 900.0,
+          "width": 600,
+          "height": 400,
+          "color": "5",
+          "url": "https://pub-pic.oldwinter.top/2026/05/9927f5d003cf1abf459a4e9aba3cd041.png"
         },
         {
             "id": "b00b3a6d5b764ddc",
@@ -81,14 +81,14 @@
             "color": "3"
         },
         {
-            "id": "f76f5c7e58df4927",
-            "type": "file",
-            "x": -1650.0,
-            "y": -299.99999999999983,
-            "width": 600,
-            "height": 400,
-            "file": "generative_ai.png",
-            "color": "3"
+          "id": "f76f5c7e58df4927",
+          "type": "link",
+          "x": -1650.0,
+          "y": -299.99999999999983,
+          "width": 600,
+          "height": 400,
+          "color": "3",
+          "url": "https://pub-pic.oldwinter.top/2026/05/bb11decd02a54ce5267ff36815171fc3.png"
         },
         {
             "id": "492ed0bfa5f643d2",
@@ -111,14 +111,14 @@
             "color": "6"
         },
         {
-            "id": "fbd93d3c72104b5d",
-            "type": "file",
-            "x": -450.0000000000002,
-            "y": -1500.0,
-            "width": 600,
-            "height": 400,
-            "file": "future_agi.png",
-            "color": "6"
+          "id": "fbd93d3c72104b5d",
+          "type": "link",
+          "x": -450.0000000000002,
+          "y": -1500.0,
+          "width": 600,
+          "height": 400,
+          "color": "6",
+          "url": "https://pub-pic.oldwinter.top/2026/05/f4dc383186628087729d9b19fcad2ecb.png"
         },
         {
             "id": "46fee3573dc74148",

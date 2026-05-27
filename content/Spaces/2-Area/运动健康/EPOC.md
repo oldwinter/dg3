@@ -6,10 +6,10 @@ aliases:
 title: EPOC
 created: 2022-09-04
 modified: 2023-03-14
-published: 2025-08-15T22:00:03.808+08:00
+published: 2026-05-16T01:30:27.184+08:00
 ---
 
-x:: [[艾宾浩斯记忆曲线]] [[肌肉不是锻炼的时候生长的，而是后面经历酸痛感的时期合成的]]
+x:: 艾宾浩斯记忆曲线 肌肉不是锻炼的时候生长的，而是后面经历酸痛感的时期合成的
 
 Excess post-exercise oxygen consumption
 
