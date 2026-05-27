@@ -1,5 +1,0 @@
-views:
-  - type: dynamic-views-masonry
-    name: Masonry
-    minimumColumns: two
-    id: t63h4c-Masonry
