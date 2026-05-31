@@ -166,14 +166,14 @@
     "obsidian-flavored-markdown": {
       "source": "github:quartz-community/obsidian-flavored-markdown",
       "resolved": "https://github.com/quartz-community/obsidian-flavored-markdown.git",
-      "commit": "4ad984e087449e619ee1629772c130c71ae163f0",
-      "installedAt": "2026-05-26T22:32:05.371Z"
+      "commit": "7f61d4bcf7537d056528f6cecaf5c35b39f74fe8",
+      "installedAt": "2026-05-27T18:30:09.459Z"
     },
     "obsidian-plugin-excalidraw": {
       "source": "github:quartz-community/obsidian-plugin-excalidraw",
       "resolved": "https://github.com/quartz-community/obsidian-plugin-excalidraw.git",
-      "commit": "9c5ff6bd6d2ee27814aeaf98ac4ddfd025a985fa",
-      "installedAt": "2026-05-25T17:40:01.376Z"
+      "commit": "554ae8af7ac4d7fdff8d78e65bfa9b4dd53cbb87",
+      "installedAt": "2026-05-27T18:30:09.649Z"
     },
     "obsidian-plugin-ttrpg-tools-maps": {
       "source": "github:quartz-community/obsidian-plugin-ttrpg-tools-maps",
@@ -206,9 +206,9 @@
         "subdir": "plugin"
       },
       "resolved": "https://github.com/saberzero1/quartz-themes.git",
-      "commit": "b82021d7866c11353a0cc55b75ac3198d988d7d7",
+      "commit": "0da7355c49aa68cb375726913f41c64ac1f11733",
       "subdir": "plugin",
-      "installedAt": "2026-05-26T16:05:23.365Z"
+      "installedAt": "2026-05-27T18:31:15.006Z"
     },
     "reader-mode": {
       "source": "github:quartz-community/reader-mode",
