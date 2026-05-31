@@ -4,8 +4,7 @@ permalink: /Sources/GithubStarsSync/vfox.md
 aliases:
   - tool-version
   - linux命令
-description:
-  - A cross-platform and extendable version manager with support for Java,
+description: A cross-platform and extendable version manager with support for Java,
 created: 2024-07-29
 modified: 2024-07-29
 published: 2026-05-16T01:30:28.601+08:00

@@ -2,8 +2,7 @@
 publish: true
 permalink: /Sources/GithubStarsSync/quartz.md
 title: quartz
-description:
-  - 🌱 a fast, batteries-included static-site generator that transforms Markdown
+description: 🌱 a fast, batteries-included static-site generator that transforms Markdown
 created: 2022-08-21
 modified: 2025-07-29
 published: 2026-05-16T01:30:28.599+08:00

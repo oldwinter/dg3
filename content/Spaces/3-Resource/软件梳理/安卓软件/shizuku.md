@@ -1,8 +1,7 @@
 ---
 publish: true
 permalink: /Spaces/3-Resource/软件梳理/安卓软件/shizuku.md
-description:
-  - Using system APIs directly with adb/root privileges from normal apps
+description: Using system APIs directly with adb/root privileges from normal apps
 created: 2024-04-13T22:16:30.978+08:00
 modified: 2026-05-16T01:30:27.872+08:00
 published: 2026-05-16T01:30:27.872+08:00

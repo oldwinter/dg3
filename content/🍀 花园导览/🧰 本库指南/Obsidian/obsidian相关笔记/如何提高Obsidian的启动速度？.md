@@ -120,7 +120,7 @@ published: 2026-05-16T01:30:28.700+08:00
 
 黑曜石中的模板设置
 
-##**FastStart-StartupScript 文件\*\*
+## **FastStart-StartupScript 文件**
 
 接下来，在上一步定义的文件夹中，**创建一个名为 FastStart-StartupScript 的文件**。此文件是我们将放置此解决方案的 JavaScript 代码的位置。
 
@@ -146,7 +146,7 @@ FastScript Javascript 代码
 
 ![](https://cubox.pro/c/filters:no_upscale\(\)?imageUrl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1400%2F1*i5MYer7lThEjOt0O1xm6eg.png)
 
-##*FastStart-Plugins-ShortDelay 和 FastStart-Plugins-LongDelay\*
+## *FastStart-Plugins-ShortDelay 和 FastStart-Plugins-LongDelay*
 
 接下来，在您的保管库中，您需要再创建两个文件。这些文件不应位于 Templater 使用的模板文件夹中，但可以存储在您喜欢的 Vault 中的任何位置。在您的 Vault 中创建这两个文件：
 
@@ -206,7 +206,7 @@ FastStart 基于插件启动的 3 个阶段：
 
 同样，这个概念是逐步加载插件以优化 Obsidian 的启动时间。
 
-##**第 1 步：启用/禁用以 Obsidian 开头的插件\*\*
+## **第 1 步：启用/禁用以 Obsidian 开头的插件**
 
 您需要在社区插件设置屏幕中打开插件列表。列出您已启用的所有插件。
 
