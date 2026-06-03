@@ -4,7 +4,7 @@ permalink: /Cards/wikilink.md
 title: wikilink
 created: 2022-08-10
 modified: 2025-07-09
-published: 2026-05-16T01:30:26.938+08:00
+published: 2026-05-15T17:30:26.938Z
 ---
 
 x:: [[mdlink]]

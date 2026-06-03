@@ -1,111 +1,134 @@
 filters:
-  or:
-    - collection_id == "skills-recommendation-collections"
-    - and:
-        - tags.contains("skills")
-        - topics.contains("skill-collection")
+  and:
+    - or:
+        - topics.contains(link("skills 合集 - fileclass"))
 properties:
-  skill_collection_name:
-    displayName: 合集名称
+  title:
+    displayName: 标题
+  description:
+    displayName: 描述
   skill_collection_type:
-    displayName: 类型
-  skill_collection_scope:
-    displayName: 覆盖范围
-  skill_collection_install_fit:
-    displayName: 安装/加载建议
+    displayName: 合集类型
   skill_collection_recommendation:
-    displayName: 推荐判断
-  skill_collection_risk_notes:
-    displayName: 风险备注
-  skill_collection_priority:
-    displayName: 优先级
-  skill_collection_trial_candidate:
-    displayName: 试用候选
-  skill_collection_repo_count:
-    displayName: 仓库数
-  skill_collection_skill_count:
-    displayName: Skill 数
-  skill_collection_stars_total:
-    displayName: Stars
-  skill_collection_forks_total:
-    displayName: Forks
-  skill_collection_license:
-    displayName: License
-  skill_collection_language:
-    displayName: 主语言
-  skill_collection_last_push:
-    displayName: 最近 Push
-  skill_collection_primary_repo:
-    displayName: 主仓库
-  skill_collection_repos:
-    displayName: 仓库列表
-  checked_at:
-    displayName: 检查日期
-  confidence:
-    displayName: 可信度
+    displayName: 推荐级别
+  why_worth_watching:
+    displayName: 为什么值得看
+  topics:
+    displayName: 主题
+  aliases:
+    displayName: 别名
+  tags:
+    displayName: 标签
   status:
     displayName: 状态
+  type:
+    displayName: 类型
+  publish:
+    displayName: 发布
+  up:
+    displayName: 上级
+  created:
+    displayName: 创建日期
+  modified:
+    displayName: 修改日期
+  insight_generated_at:
+    displayName: 洞察生成时间
+  insights:
+    displayName: 洞察
+  github_primary_repo:
+    displayName: 主仓库
+  github_primary_url:
+    displayName: 主仓库地址
+  github_stars_total:
+    displayName: Stars
+  github_forks_total:
+    displayName: Forks
+  github_open_issues:
+    displayName: Issues
+  repo_count:
+    displayName: 仓库数
+  github_license:
+    displayName: License
+  github_language:
+    displayName: 主语言
+  github_last_push:
+    displayName: 最近 Push
+  github_checked_at:
+    displayName: GitHub 检查时间
 views:
   - type: table
     name: 技能合集总览
     order:
       - file.name
-      - skill_collection_name
-      - skill_collection_scope
-      - skill_collection_install_fit
-      - skill_collection_recommendation
-      - skill_collection_skill_count
-      - skill_collection_repo_count
-      - skill_collection_stars_total
-      - skill_collection_last_push
-      - skill_collection_license
-      - confidence
-      - checked_at
+      - 个人评分
+      - description
+      - skill_collection_type
+      - why_worth_watching
+      - github_stars_total
+      - github_last_push
+      - github_checked_at
+      - status
+      - modified
     sort:
-      - property: skill_collection_name
+      - property: 个人评分
+        direction: DESC
+      - property: github_stars_total
+        direction: DESC
+      - property: modified
+        direction: DESC
+      - property: title
         direction: ASC
-      - property: skill_collection_priority
-        direction: DESC
-      - property: skill_collection_stars_total
-        direction: DESC
       - property: file.name
         direction: ASC
+    columnSize:
+      file.name: 254
+      note.description: 305
+      note.topics: 429
   - type: table
-    name: 优先试用
-    filters:
-      and:
-        - skill_collection_trial_candidate == true
-    order:
-      - file.name
-      - skill_collection_name
-      - skill_collection_install_fit
-      - skill_collection_recommendation
-      - skill_collection_risk_notes
-      - skill_collection_skill_count
-      - skill_collection_stars_total
-      - skill_collection_primary_repo
-    sort:
-      - property: skill_collection_priority
-        direction: DESC
-      - property: skill_collection_stars_total
-        direction: DESC
-  - type: table
-    name: 授权/风险待确认
+    name: 待整理
     filters:
       or:
-        - skill_collection_license == "unknown"
-        - 'skill_collection_license == "mixed: Apache-2.0 / unknown"'
-        - confidence == "medium"
+        - status == "review"
+        - status == "draft"
     order:
       - file.name
-      - skill_collection_name
-      - skill_collection_license
-      - confidence
-      - skill_collection_risk_notes
-      - skill_collection_primary_repo
-      - checked_at
+      - title
+      - description
+      - skill_collection_type
+      - skill_collection_recommendation
+      - why_worth_watching
+      - topics
+      - status
+      - insights
+      - modified
     sort:
-      - property: skill_collection_priority
+      - property: modified
         direction: DESC
-      - property: file.name
+      - property: title
         direction: ASC
+  - type: table
+    name: 来源/入口
+    filters:
+      or:
+        - type == "source"
+        - up
+    order:
+      - file.name
+      - title
+      - skill_collection_type
+      - github_primary_url
+      - github_stars_total
+      - github_forks_total
+      - github_open_issues
+      - repo_count
+      - github_license
+      - up
+      - aliases
+      - publish
+      - created
+      - modified
+    sort:
+      - property: type
+        direction: ASC
+      - property: modified
+        direction: DESC

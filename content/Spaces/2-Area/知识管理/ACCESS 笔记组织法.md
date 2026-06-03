@@ -4,7 +4,7 @@ permalink: /Spaces/2-Area/知识管理/ACCESS 笔记组织法.md
 title: ACCESS 笔记组织法
 created: 2022-06-22
 modified: 2025-07-10
-published: 2026-05-16T01:30:27.362+08:00
+published: 2026-05-15T17:30:27.362Z
 ---
 
 > [!NOTE] Title

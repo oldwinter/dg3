@@ -7,7 +7,7 @@ aliases:
 title: ∑ AI Agent 从入门到精通
 created: 2025-05-06
 modified: 2026-05-17
-published: 2026-05-17T00:33:22.344+08:00
+published: 2026-05-27T17:12:40.268Z
 tags:
   - AI生成
 ---
@@ -43,7 +43,7 @@ tags:
 [[_system/docs/plans/2026-04-26-project-task-date-debt-triage|项目任务日期债务复查报告]] 已把 `研究并拥抱 ai agent 实现软件交付到完整端到端工作流，并布道全员` 从普通任务池里拆出来。它不应该直接补一个日期后继续拖延，而要先判断落位：
 
 - 个人长期学习 / 方法论：回到本页和 [[Atlas/Bases/AI 工作流工作台.base|AI 工作流工作台]]。
-- 团队布道 / enablement：拆成一次分享、一个 demo、一个 checklist。
+- 团队布道 / enablement：拆成一次分享、一个 demo、一个 checklist；当前 Codex 团队分享准备入口是 [[第四次分享 Codex 日均使用一千美元经验分享准备包]]。
 - 交付流程改造：落成模板、验收标准、示例 PR 或失败回放。
 - 公司协作任务：等待 Linear / 公司项目补 owner、权限和截止时间，本库只保留索引。
 

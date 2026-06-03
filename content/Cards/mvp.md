@@ -7,7 +7,7 @@ aliases:
   - Minimum Viable Product
 created: 2023-09-03
 modified: 2024-08-15
-published: 2026-05-16T01:30:26.595+08:00
+published: 2026-05-15T17:30:26.595Z
 ---
 
 快速试错

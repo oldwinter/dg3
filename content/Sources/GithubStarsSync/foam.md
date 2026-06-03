@@ -4,7 +4,7 @@ permalink: /Sources/GithubStarsSync/foam.md
 description: A personal knowledge management and sharing system for VSCode
 created: 2025-06-15
 modified: 2025-06-15 - VSCode插件
-published: 2026-05-16T01:30:28.565+08:00
+published: 2026-05-15T17:30:28.565Z
 ---
 
 # foambubble/foam

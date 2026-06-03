@@ -6,7 +6,7 @@ aliases:
 title: CFF法则 - 夸奖别人的方法
 created: 2022-08-14
 modified: 2024-05-30
-published: 2026-05-16T01:30:29.169+08:00
+published: 2026-05-15T17:30:29.169Z
 ---
 
 相似：[[高级彩虹屁]]

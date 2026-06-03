@@ -4,7 +4,7 @@ permalink: /Cards/先鉴定你的做笔记风格和工作类型，再选一款ap
 title: 先鉴定你的做笔记风格和工作类型，再选一款app上车
 created: 2022-09-21
 modified: 2025-07-10
-published: 2026-05-16T01:30:26.982+08:00
+published: 2026-05-15T17:30:26.982Z
 ---
 
 [Build a Productivity System Designed for Your Job Type - YouTube](https://www.youtube.com/watch?v=fZi9kPCys7A) 根据工作类型打造适合自己的生产力系统。和图书馆员，园丁和建筑师的说法也可以映射起来。

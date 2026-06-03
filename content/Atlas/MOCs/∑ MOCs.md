@@ -8,7 +8,7 @@ aliases:
 title: MOC
 created: 2022-06-09
 modified: 2026-03-14
-published: 2026-05-16T01:30:29.111+08:00
+published: 2026-05-15T17:30:29.111Z
 ---
 
 Map Of Content，简单理解就是内容地图，是索引性质的笔记。往往带有很多链接，引导自己或读者跳转到其他笔记中。

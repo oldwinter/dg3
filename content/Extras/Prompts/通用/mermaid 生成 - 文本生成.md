@@ -3,7 +3,7 @@ publish: true
 permalink: /Extras/Prompts/通用/mermaid 生成 - 文本生成.md
 created: 2025-05-03
 modified: 2025-05-26
-published: 2026-05-16T01:30:29.170+08:00
+published: 2026-05-15T17:30:29.170Z
 ---
 
 Role：你是最擅长内容和数据视觉化、信息图展示的大师。

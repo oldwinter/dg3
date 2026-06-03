@@ -6,7 +6,7 @@ aliases:
 title: obsidian入门
 created: 2022-06-09
 modified: 2026-05-01
-published: 2026-05-16T01:30:28.713+08:00
+published: 2026-05-15T17:30:28.713Z
 ---
 
 ## 别人眼中的 obsidian

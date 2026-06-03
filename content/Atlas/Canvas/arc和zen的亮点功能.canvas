@@ -1,5 +1,43 @@
 {
-	"nodes":[],
+	"nodes":[
+		{
+			"id":"e5f60718293a4b5c",
+			"type":"text",
+			"x":0,
+			"y":0,
+			"width":420,
+			"height":180,
+			"color":"5",
+			"text":"# Arc 和 Zen 的亮点功能\n\n占位草图：这张 Canvas 用来承接 Arc / Zen 浏览器体验对比、亮点功能和文章素材。"
+		},
+		{
+			"id":"f60718293a4b5c6d",
+			"type":"text",
+			"x":520,
+			"y":0,
+			"width":380,
+			"height":180,
+			"text":"## 待补节点\n\n- 标签 / 空间管理\n- 分屏与侧边栏\n- 隐私和同步\n- 插件生态\n- 迁移成本"
+		},
+		{
+			"id":"0718293a4b5c6d7e",
+			"type":"file",
+			"x":0,
+			"y":280,
+			"width":420,
+			"height":240,
+			"file":"Spaces/1-Project/2025下半年小红书探索/人生若如初见，arc浏览器还值得吗？.md"
+		},
+		{
+			"id":"18293a4b5c6d7e8f",
+			"type":"file",
+			"x":520,
+			"y":280,
+			"width":420,
+			"height":240,
+			"file":"Spaces/3-Resource/chrome插件/arc浏览器插件重装list.md"
+		}
+	],
 	"edges":[],
 	"metadata":{
 		"version":"1.0-1.0",

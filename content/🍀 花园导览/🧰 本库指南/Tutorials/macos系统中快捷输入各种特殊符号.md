@@ -4,7 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Tutorials/macos系统中快捷�
 title: macos系统中快捷输入各种特殊符号
 created: 2022-08-24
 modified: 2023-03-14
-published: 2026-05-16T01:30:28.692+08:00
+published: 2026-05-15T17:30:28.692Z
 ---
 
 - 左上角的『edit - 表情与符号』中可以批量看emoji表情和所有特殊字符。但输入的话，没有快捷键很麻烦。

@@ -4,7 +4,7 @@ permalink: /🍀 花园导览/🧰 本库指南/Tutorials/本库使用的obsidia
 title: 本库使用的obsidian第三方插件及原因
 created: 2022-08-09
 modified: 2025-07-10
-published: 2026-05-16T01:30:28.691+08:00
+published: 2026-05-15T17:30:28.691Z
 ---
 
 up:: [[∑ obsidian插件]]\

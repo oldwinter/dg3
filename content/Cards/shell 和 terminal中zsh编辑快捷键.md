@@ -4,7 +4,7 @@ permalink: /Cards/shell 和 terminal中zsh编辑快捷键.md
 title: terminal中zsh编辑快捷键
 created: 2022-06-15
 modified: 2024-11-21
-published: 2026-05-16T01:30:26.808+08:00
+published: 2026-05-15T17:30:26.808Z
 ---
 
 |             |                   |

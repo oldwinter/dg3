@@ -3,7 +3,7 @@ publish: true
 permalink: /Cards/claude 伪多模态.md
 created: 2024-10-30
 modified: 2024-10-30
-published: 2026-05-16T01:30:26.709+08:00
+published: 2026-05-15T17:30:26.709Z
 ---
 
 相当于就是让大模型生成mermaid这样的纯text，但是其实它能被渲染成图表。包括让大模型生成[[obsidian canvas]]也是毫无问题的。

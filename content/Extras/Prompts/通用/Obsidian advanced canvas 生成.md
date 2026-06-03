@@ -3,7 +3,7 @@ publish: true
 permalink: /Extras/Prompts/通用/Obsidian advanced canvas 生成.md
 created: 2025-05-14
 modified: 2025-05-26
-published: 2026-05-16T01:30:29.163+08:00
+published: 2026-05-15T17:30:29.163Z
 ---
 
 ## 提示词

@@ -2,24 +2,71 @@
 	"nodes":[
 		{"id":"group_horizontal","type":"group","x":-200,"y":-1600,"width":4800,"height":1400,"color":"5","label":"📐 横向维度：单服务全生命周期 (Code → Production)"},
 		{"id":"group_vertical","type":"group","x":-200,"y":0,"width":4800,"height":1148,"color":"4","label":"📏 纵向维度：需求到交付闭环 (Requirement → Delivery)"},
-		{"id":"group_roadmap","type":"group","collapsed":true,"x":-100,"y":1000,"width":3700,"height":700,"color":"1","label":"🗓️ 实施路线图"},
-		{"id":"roadmap_phase5","type":"text","text":"### Phase 5\n**高级特性 (可选)**\n\n- [ ] Istio 服务网格\n- [ ] 全链路灰度\n- [ ] Argo Rollouts\n- [ ] SLO/SLI 监控\n\n**产出:**\n生产级渐进交付能力","x":1600,"y":1100,"width":350,"height":280,"color":"6"},
-		{"id":"roadmap_timeline","type":"text","text":"### ⏱️ 时间线: `Phase 1 (2w)` → `Phase 2 (3w)` → `Phase 3 (2w)` → `Phase 4 (2w)` → `Phase 5 (Optional)`  **总计: 9-11周**","x":0,"y":1420,"width":2550,"height":80,"color":"2"},
-		{"id":"roadmap_phase4","type":"text","text":"### Phase 4\n**质量门禁 (2周)**\n\n- [ ] Staging 自动化测试\n- [ ] Kargo 晋升策略\n- [ ] ArgoCD 分析\n- [ ] 回滚 SOP\n\n**产出:**\n可靠的环境晋升流程","x":1200,"y":1100,"width":350,"height":280,"color":"2"},
-		{"id":"roadmap_phase3","type":"text","text":"### Phase 3\n**聚合系统 (2周)**\n\n- [ ] platform-releases\n- [ ] Aggregator 脚本\n- [ ] 聚合 Changelog\n- [ ] 通知渠道接入\n\n**产出:**\n老板可看的变更汇总","x":800,"y":1100,"width":350,"height":280,"color":"5"},
-		{"id":"roadmap_phase2","type":"text","text":"### Phase 2\n**需求管理 (2-3周)**\n\n- [ ] Linear 部署配置\n- [ ] GitLab 集成\n- [ ] 团队培训\n- [ ] 状态自动流转\n\n**产出:**\n需求与代码双向链接","x":400,"y":1100,"width":350,"height":280,"color":"4"},
-		{"id":"roadmap_phase1","type":"text","text":"### Phase 1\n**基础规范 (1-2周)**\n\n- [ ] Conventional Commits\n- [ ] commitlint 配置\n- [ ] 自动 Changelog\n- [ ] release-notes.json\n\n**产出:**\n每个服务有规范的\nCommit 和 Changelog","x":0,"y":1100,"width":350,"height":280,"color":"3"},
-		{"id":"roadmap_week1","type":"text","text":"### 🚀 Week 1 快速启动\n\n**Day 1-2: Commits 规范**\n- [ ] 创建 `.commitlintrc.json`\n- [ ] 配置 CI job\n- [ ] 编写规范文档\n\n**Day 3-4: Linear 配置**\n- [ ] 注册团队账户\n- [ ] GitLab 集成\n- [ ] 导入现有 Issues\n\n**Day 5: 验证**\n- [ ] 完整流程测试","x":2000,"y":1100,"width":550,"height":280,"color":"1"},
-		{"id":"roadmap_goals","type":"text","text":"### 🎯 最终目标\n\n**可见性:**\n- leader能看到每次变更内容\n- 产品能追踪需求交付状态\n- 开发能快速定位问题来源\n\n**可靠性:**\n- 自动化测试门禁\n- 可控的环境晋升\n- 一键回滚能力\n\n**效率:**\n- 需求→交付全自动化\n- 减少沟通成本\n- 缩短交付周期","x":2600,"y":1100,"width":450,"height":400,"color":"4"},
 		{
-			"id":"7676e2fe0424fb8e",
-			"type":"text",
-			"text":"## 转tasknote",
-			"styleAttributes":{},
-			"x":197,
-			"y":1638,
-			"width":260,
-			"height":60
+			"id":"group_roadmap",
+			"type":"group",
+			"collapsed":true,
+			"x":-100,
+			"y":1000,
+			"width":3700,
+			"height":700,
+			"color":"1",
+			"label":"🗓️ 实施路线图",
+			"collapsedData":{
+				"nodes":[
+					{"id":"roadmap_phase5","type":"text","text":"### Phase 5\n**高级特性 (可选)**\n\n- [ ] Istio 服务网格\n- [ ] 全链路灰度\n- [ ] Argo Rollouts\n- [ ] SLO/SLI 监控\n\n**产出:**\n生产级渐进交付能力","x":1700,"y":100,"width":350,"height":280,"color":"6"},
+					{"id":"roadmap_timeline","type":"text","text":"### ⏱️ 时间线: `Phase 1 (2w)` → `Phase 2 (3w)` → `Phase 3 (2w)` → `Phase 4 (2w)` → `Phase 5 (Optional)`  **总计: 9-11周**","x":100,"y":420,"width":2550,"height":80,"color":"2"},
+					{"id":"roadmap_phase4","type":"text","text":"### Phase 4\n**质量门禁 (2周)**\n\n- [ ] Staging 自动化测试\n- [ ] Kargo 晋升策略\n- [ ] ArgoCD 分析\n- [ ] 回滚 SOP\n\n**产出:**\n可靠的环境晋升流程","x":1300,"y":100,"width":350,"height":280,"color":"2"},
+					{"id":"roadmap_phase3","type":"text","text":"### Phase 3\n**聚合系统 (2周)**\n\n- [ ] platform-releases\n- [ ] Aggregator 脚本\n- [ ] 聚合 Changelog\n- [ ] 通知渠道接入\n\n**产出:**\n老板可看的变更汇总","x":900,"y":100,"width":350,"height":280,"color":"5"},
+					{"id":"roadmap_phase2","type":"text","text":"### Phase 2\n**需求管理 (2-3周)**\n\n- [ ] Linear 部署配置\n- [ ] GitLab 集成\n- [ ] 团队培训\n- [ ] 状态自动流转\n\n**产出:**\n需求与代码双向链接","x":500,"y":100,"width":350,"height":280,"color":"4"},
+					{"id":"roadmap_phase1","type":"text","text":"### Phase 1\n**基础规范 (1-2周)**\n\n- [ ] Conventional Commits\n- [ ] commitlint 配置\n- [ ] 自动 Changelog\n- [ ] release-notes.json\n\n**产出:**\n每个服务有规范的\nCommit 和 Changelog","x":100,"y":100,"width":350,"height":280,"color":"3"},
+					{"id":"roadmap_week1","type":"text","text":"### 🚀 Week 1 快速启动\n\n**Day 1-2: Commits 规范**\n- [ ] 创建 `.commitlintrc.json`\n- [ ] 配置 CI job\n- [ ] 编写规范文档\n\n**Day 3-4: Linear 配置**\n- [ ] 注册团队账户\n- [ ] GitLab 集成\n- [ ] 导入现有 Issues\n\n**Day 5: 验证**\n- [ ] 完整流程测试","x":2100,"y":100,"width":550,"height":280,"color":"1"},
+					{"id":"roadmap_goals","type":"text","text":"### 🎯 最终目标\n\n**可见性:**\n- leader能看到每次变更内容\n- 产品能追踪需求交付状态\n- 开发能快速定位问题来源\n\n**可靠性:**\n- 自动化测试门禁\n- 可控的环境晋升\n- 一键回滚能力\n\n**效率:**\n- 需求→交付全自动化\n- 减少沟通成本\n- 缩短交付周期","x":2700,"y":100,"width":450,"height":400,"color":"4"},
+					{
+						"id":"7676e2fe0424fb8e",
+						"type":"text",
+						"text":"## 转tasknote",
+						"styleAttributes":{},
+						"x":297,
+						"y":638,
+						"width":260,
+						"height":60
+					}
+				],
+				"edges":[
+					{
+						"id":"e79e31c628afd8c0",
+						"styleAttributes":{},
+						"toFloating":false,
+						"fromFloating":false,
+						"fromNode":"b03344717c6dea97",
+						"fromSide":"right",
+						"toNode":"7676e2fe0424fb8e",
+						"toSide":"left",
+						"label":"需一小时以上"
+					},
+					{
+						"id":"2c464f165945142b",
+						"styleAttributes":{},
+						"toFloating":false,
+						"fromNode":"7676e2fe0424fb8e",
+						"fromSide":"bottom",
+						"toNode":"b047e3406af6e14e",
+						"toSide":"top",
+						"label":"复杂，补充更多上下文"
+					},
+					{
+						"id":"f1e7e425b7a5efb6",
+						"styleAttributes":{},
+						"toFloating":false,
+						"fromNode":"7676e2fe0424fb8e",
+						"fromSide":"bottom",
+						"toNode":"264c9d9c47eab1bd",
+						"toSide":"top",
+						"label":"简单"
+					}
+				]
+			}
 		},
 		{"id":"e802b0d789908da4","type":"group","x":-200,"y":1350,"width":2879,"height":888,"color":"6","label":"个人使用ai agent的流水线"},
 		{"id":"group_envs","type":"group","x":-100,"y":-800,"width":4550,"height":540,"color":"3","label":"🌍 环境流转与晋升 (Promotion Pipeline)"},
@@ -137,15 +184,7 @@
 			"width":260,
 			"height":60
 		},
-		{
-		  "id": "8c36f541a4879a46",
-		  "type": "link",
-		  "x": 1036,
-		  "y": 1458,
-		  "width": 1629,
-		  "height": 692,
-		  "url": "https://pub-pic.oldwinter.top/2026/05/bbee8fe63398a334e1d720eff47e21b8.png"
-		},
+		{"id":"8c36f541a4879a46","type":"link","x":1036,"y":1458,"width":1629,"height":692,"url":"https://pub-pic.oldwinter.top/2026/05/bbee8fe63398a334e1d720eff47e21b8.png"},
 		{"id":"cfd5e558ccdebca3","type":"file","file":"Calendar/Daily notes/2026/我的 ai agent 流水线.md","x":578,"y":1469,"width":400,"height":670},
 		{"id":"7d8e72c752e1aeeb","type":"file","file":"Calendar/Daily notes/2026/生产环境 预发环境 镜像变更操作手册.md","x":4648,"y":-1379,"width":786,"height":478},
 		{
@@ -180,15 +219,7 @@
 			"width":410,
 			"height":133
 		},
-		{
-		  "id": "21a38ee489b7783c",
-		  "type": "link",
-		  "x": 4860,
-		  "y": 100,
-		  "width": 350,
-		  "height": 2741,
-		  "url": "https://pub-pic.oldwinter.top/2026/05/1573d00c1c65f97d659c88d85acd820a.png"
-		},
+		{"id":"21a38ee489b7783c","type":"link","x":4860,"y":100,"width":350,"height":2741,"url":"https://pub-pic.oldwinter.top/2026/05/1573d00c1c65f97d659c88d85acd820a.png"},
 		{"id":"9254ffd86efd76dd","type":"link","url":"https://manus.im/share/szDGTAMBpoKDi4j7vhpWrK","x":5310,"y":120,"width":400,"height":993},
 		{"id":"1f0857bc4ecbd6e7","type":"file","file":"Cards/claude code 周边神器.md","x":4101,"y":1522,"width":400,"height":566},
 		{"id":"flow_main","type":"text","text":"### 🔄 核心流程\n\n```\nIdea → Issue → Branch\n  ↓\nCode → Test → Review\n  ↓  \nMerge → Build → Push\n  ↓\nKargo → ArgoCD → Deploy\n  ↓\nMonitor → Feedback → Iterate\n```\n\n贯彻[[声明式 和 推送式 思想]]的声明式：\n- 继承k8s的实现思路，用声明式的方式watch环境\n\t- watch main分支\n\t- watch 镜像仓库\n\t- watch gitops的yaml配置仓库","x":3957,"y":-1450,"width":400,"height":524,"color":"6"},
@@ -360,37 +391,6 @@
 			"toNode":"b047e3406af6e14e",
 			"toSide":"top",
 			"label":"需要x小时，委托ai agent完成"
-		},
-		{
-			"id":"e79e31c628afd8c0",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"b03344717c6dea97",
-			"fromSide":"right",
-			"toNode":"7676e2fe0424fb8e",
-			"toSide":"left",
-			"label":"需一小时以上"
-		},
-		{
-			"id":"2c464f165945142b",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"7676e2fe0424fb8e",
-			"fromSide":"bottom",
-			"toNode":"b047e3406af6e14e",
-			"toSide":"top",
-			"label":"复杂，补充更多上下文"
-		},
-		{
-			"id":"f1e7e425b7a5efb6",
-			"styleAttributes":{},
-			"toFloating":false,
-			"fromNode":"7676e2fe0424fb8e",
-			"fromSide":"bottom",
-			"toNode":"264c9d9c47eab1bd",
-			"toSide":"top",
-			"label":"简单"
 		}
 	],
 	"metadata":{

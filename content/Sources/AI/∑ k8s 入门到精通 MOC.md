@@ -4,7 +4,7 @@ permalink: /Sources/AI/∑ k8s 入门到精通 MOC.md
 title: ∑ k8s 入门到精通 MOC
 created: 2025-06-20
 modified: 2025-06-20
-published: 2026-05-16T01:30:28.554+08:00
+published: 2026-05-15T17:30:28.554Z
 ---
 
 up:: [[∑ Kubernetes & K8s]]

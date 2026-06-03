@@ -4,7 +4,7 @@ permalink: /Sources/Clippings/_ Clippings Readme.md
 title: _ Clippings Readme
 created: 2026-05-12
 modified: 2026-05-12
-published: 2026-05-16T01:45:55.374+08:00
+published: 2026-05-15T17:45:55.374Z
 tags:
   - clippings
 ---

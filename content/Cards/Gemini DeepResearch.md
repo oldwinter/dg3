@@ -3,7 +3,7 @@ publish: true
 permalink: /Cards/Gemini DeepResearch.md
 created: 2025-04-28
 modified: 2025-07-11
-published: 2026-05-16T01:30:26.850+08:00
+published: 2026-05-15T17:30:26.850Z
 ---
 
 up:: [[∑ 大模型产品对比]]

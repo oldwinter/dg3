@@ -7,7 +7,7 @@ aliases:
 title: ∑ Elasticsearch
 created: 2025-12-26
 modified: 2026-05-02
-published: 2026-05-16T01:30:29.093+08:00
+published: 2026-05-15T17:30:29.093Z
 ---
 
 # ∑ Elasticsearch

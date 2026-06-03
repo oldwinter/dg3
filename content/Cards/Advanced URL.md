@@ -4,7 +4,7 @@ permalink: /Cards/Advanced URL.md
 title: Advanced URL
 created: 2022-06-09
 modified: 2023-03-14
-published: 2026-05-16T01:30:26.671+08:00
+published: 2026-05-15T17:30:26.671Z
 ---
 
 iii:: [[小红书|小红书]]

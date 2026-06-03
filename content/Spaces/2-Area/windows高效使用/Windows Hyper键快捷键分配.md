@@ -4,7 +4,7 @@ permalink: /Spaces/2-Area/windows高效使用/Windows Hyper键快捷键分配.md
 title: Windows Hyper键快捷键分配
 created: 2024-11-21
 modified: 2026-05-01
-published: 2026-05-16T01:30:27.353+08:00
+published: 2026-05-15T17:30:27.353Z
 ---
 
 hyper 使用 [[MyKeyMap]] 配置

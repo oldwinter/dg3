@@ -537,6 +537,7 @@ views:
             - file.name.contains("Clippings 未编译来源")
             - file.name.contains("Karpathy LLM Wiki")
             - file.name.contains("LLM Wiki 演进策略")
+            - file.name.contains("nashsu llm_wiki")
             - file.name.contains("MOC 回桥策略")
             - file.name.contains("下一批 LLM Wiki")
             - file.name.contains("主题成熟度")
@@ -551,6 +552,42 @@ views:
       - file.mtime
       - formula.弱连接
     sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Method｜LLM Wiki 方法论
+    filters:
+      and:
+        - type != "note"
+        - or:
+            - tags.containsAny("llm-wiki")
+            - topics.containsAny("llm-wiki")
+            - file.name.contains("LLM Wiki")
+            - file.name.contains("llm_wiki")
+        - or:
+            - file.name.contains("Karpathy")
+            - file.name.contains("nashsu")
+            - file.name.contains("方法论")
+            - file.name.contains("演进策略")
+            - file.name.contains("最小实践")
+            - file.name.contains("落地改进")
+            - file.name.contains("两步")
+            - file.name.contains("review")
+            - file.name.contains("Review")
+            - file.name.contains("回桥")
+    order:
+      - file.name
+      - type
+      - status
+      - sources
+      - promotion_target
+      - related
+      - file.backlinks
+      - file.mtime
+      - formula.弱连接
+    sort:
+      - property: file.mtime
+        direction: DESC
       - property: file.name
         direction: ASC
   - type: table

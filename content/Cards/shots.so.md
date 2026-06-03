@@ -3,7 +3,7 @@ publish: true
 permalink: /Cards/shots.so.md
 created: 2025-06-05
 modified: 2025-06-05
-published: 2026-05-16T01:30:26.773+08:00
+published: 2026-05-15T17:30:26.773Z
 ---
 
 [Shots - Create Amazing Mockups](https://shots.so/)

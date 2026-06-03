@@ -4,7 +4,7 @@ permalink: /Cards/vim 常用快捷键和命令.md
 title: vi常用快捷键
 created: 2022-06-15
 modified: 2023-03-14
-published: 2026-05-16T01:30:26.836+08:00
+published: 2026-05-15T17:30:26.836Z
 ---
 
 [[shell 和 terminal中zsh编辑快捷键]]

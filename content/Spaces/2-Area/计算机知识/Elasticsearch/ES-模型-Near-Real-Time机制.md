@@ -6,7 +6,7 @@ aliases:
 title: ES-模型-Near-Real-Time机制
 created: 2026-05-02
 modified: 2026-05-02
-published: 2026-05-12T01:25:27.786+08:00
+published: 2026-05-11T17:25:27.786Z
 tags:
   - AI生成
 ---

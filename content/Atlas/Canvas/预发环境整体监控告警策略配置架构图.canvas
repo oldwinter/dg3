@@ -1,5 +1,43 @@
 {
-	"nodes":[],
+	"nodes":[
+		{
+			"id":"a1b2c3d4e5f60718",
+			"type":"text",
+			"x":0,
+			"y":0,
+			"width":420,
+			"height":180,
+			"color":"5",
+			"text":"# 预发环境整体监控告警策略配置架构图\n\n占位草图：这张 Canvas 用来承接预发环境监控、告警清单和 AWS 能力差异。"
+		},
+		{
+			"id":"b2c3d4e5f6071829",
+			"type":"text",
+			"x":520,
+			"y":0,
+			"width":380,
+			"height":180,
+			"text":"## 待补节点\n\n- 指标来源\n- 日志来源\n- 告警规则\n- AWS 托管能力\n- 预发到生产差异"
+		},
+		{
+			"id":"c3d4e5f60718293a",
+			"type":"file",
+			"x":0,
+			"y":280,
+			"width":420,
+			"height":240,
+			"file":"Atlas/MOCs/∑ Observability (Logs, Monitoring, Alerting).md"
+		},
+		{
+			"id":"d4e5f60718293a4b",
+			"type":"file",
+			"x":520,
+			"y":280,
+			"width":420,
+			"height":240,
+			"file":"Calendar/Tasks/Archive/补一下预发环境的告警清单，有哪些额外地用aws的能力了.md"
+		}
+	],
 	"edges":[],
 	"metadata":{
 		"version":"1.0-1.0",

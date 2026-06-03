@@ -6,7 +6,7 @@ aliases:
 title: Cubox
 created: 2022-06-17
 modified: 2025-07-25
-published: 2026-05-24T14:30:49.916+08:00
+published: 2026-05-24T06:30:49.916Z
 ---
 
 浏览器插件：Cubox Chrome 剪藏插件（评价 6；Firefox 版：有；设置同步：不需要；备注：Zen 安装一直有 bug，登录不上）

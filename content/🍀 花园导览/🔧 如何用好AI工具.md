@@ -1,10 +1,12 @@
 ---
 publish: true
 permalink: /🍀 花园导览/🔧 如何用好AI工具.md
+aliases:
+  - 如何用好AI工具
 title: 🔧 如何用好AI工具
 created: 2023-03-16
 modified: 2026-04-26
-published: 2026-05-16T01:30:28.687+08:00
+published: 2026-05-31T13:40:08.619Z
 ---
 
 > [!MAP] 领域导航
@@ -22,6 +24,7 @@ published: 2026-05-16T01:30:28.687+08:00
 
 现在更稳的理解不是“多装几个 AI 工具”，而是先看工作面、能力层、接口层和编排层怎么分工：
 
+- [[AI + 知识管理核心工作流]] - 把 AI 放进捕获、路由、编译、回桥、执行和复盘的日常链路
 - [[Atlas/LLM Wiki/Synthesis/个人 AI 工作流分层图|个人 AI 工作流分层图]] - 从 Raycast、Obsidian、Claude Code、Codex、Skills、Agent-ready interface 到 Harness 的总分层
 - [[Atlas/LLM Wiki/Synthesis/AI 工具链 阅读地图|AI 工具链 阅读地图]] - 看 CLI、browser、IDE、MCP、skills、orchestration 在工具链里的位置
 - [[Atlas/LLM Wiki/Synthesis/Claude Code 阅读地图|Claude Code 阅读地图]] - 长上下文执行面与团队工作面

@@ -4,7 +4,7 @@ permalink: /Cards/org-mode.md
 title: org-mode
 created: 2022-06-09
 modified: 2023-03-14
-published: 2026-05-16T01:30:26.508+08:00
+published: 2026-05-15T17:30:26.508Z
 ---
 
 甚至和 子弹笔记 那种通过各种标记来处理文本和事务的方法很类似。

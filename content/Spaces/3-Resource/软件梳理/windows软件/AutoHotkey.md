@@ -6,7 +6,7 @@ aliases:
 title: AutoHotkey
 created: 2023-03-03
 modified: 2023-03-14
-published: 2026-05-24T14:30:49.930+08:00
+published: 2026-05-24T06:30:49.930Z
 ---
 
 改键后的ahk文件，需要创建一个快捷方式，然后放到[[windows开启开机自启动文件夹]]

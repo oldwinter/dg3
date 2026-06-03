@@ -3,7 +3,7 @@ publish: true
 permalink: /Cards/AI Assisted Coding.md
 created: 2025-04-25
 modified: 2025-04-25
-published: 2026-05-16T01:30:27.082+08:00
+published: 2026-05-15T17:30:27.082Z
 ---
 
 依旧from[[Andrej Karpathy]]

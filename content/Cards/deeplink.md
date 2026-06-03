@@ -4,7 +4,7 @@ permalink: /Cards/deeplink.md
 title: deeplink
 created: 2022-06-09
 modified: 2023-03-14
-published: 2026-05-16T01:30:27.119+08:00
+published: 2026-05-15T17:30:27.119Z
 ---
 
 x:: [[URL scheme]]

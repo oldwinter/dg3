@@ -3,7 +3,7 @@ publish: true
 permalink: /Spaces/3-Resource/个人成长/hyperKey.md
 created: 2024-10-23
 modified: 2025-06-18
-published: 2026-05-16T01:30:27.890+08:00
+published: 2026-05-15T17:30:27.890Z
 ---
 
 [[Raycast]]配置和[[BetterTouchTool]]有冲突，选后者进行配置。[[BetterTouchTool 配置hyperkey]]

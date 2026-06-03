@@ -3,7 +3,7 @@ publish: true
 permalink: /Cards/nvm.md
 created: 2024-03-20
 modified: 2024-09-13
-published: 2026-05-16T01:30:27.117+08:00
+published: 2026-05-15T17:30:27.117Z
 ---
 
 ## 安装

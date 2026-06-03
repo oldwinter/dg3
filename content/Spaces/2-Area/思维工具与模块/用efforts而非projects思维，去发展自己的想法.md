@@ -4,7 +4,7 @@ permalink: /Spaces/2-Area/思维工具与模块/用efforts而非projects思维�
 title: 用efforts而非projects思维，去发展自己的想法
 created: 2023-02-18
 modified: 2023-03-14
-published: 2026-05-16T01:30:27.335+08:00
+published: 2026-05-15T17:30:27.335Z
 ---
 
 其实就是传统的项目思维，适合有工期、协作、具体目标的事情。而努力思维，更适合个人思考的长期发展。

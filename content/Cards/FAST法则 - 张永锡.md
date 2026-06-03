@@ -4,7 +4,7 @@ permalink: /Cards/FAST法则 - 张永锡.md
 title: FAST法则 - 张永锡
 created: 2023-03-11
 modified: 2025-05-21
-published: 2026-05-16T01:30:26.807+08:00
+published: 2026-05-15T17:30:26.807Z
 ---
 
 根据FAST四部曲的内容，帮你总结成口诀，方便记忆和实践：
