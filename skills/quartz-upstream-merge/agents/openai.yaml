@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quartz Upstream Merge"
+  short_description: "Sync this Quartz fork with upstream v5"
+  default_prompt: "Use $quartz-upstream-merge to merge upstream Quartz v5 into this fork and verify deployment."
