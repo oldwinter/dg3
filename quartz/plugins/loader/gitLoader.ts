@@ -1,6 +1,6 @@
 import fs from "fs"
 import path from "path"
-import { execSync } from "child_process"
+import { execFileSync, execSync } from "child_process"
 import git from "isomorphic-git"
 import http from "isomorphic-git/http/node"
 import { styleText } from "util"
@@ -36,6 +36,156 @@ export interface GitPluginSpec {
 export type PluginInstallSource = string | GitPluginSpec
 
 const PLUGINS_CACHE_DIR = path.join(process.cwd(), ".quartz", "plugins")
+const SAFE_PLUGIN_NAME_PATTERN = /^(?:@[-A-Za-z0-9._]+\/)?[-A-Za-z0-9._]+$/
+const SAFE_GIT_REF_PATTERN =
+  /^(?!-)(?!\/)(?!.*(?:^|\/)-)(?!.*(?:^|\/)\.?(?:\.)(?:\/|$))(?!.*\/\/)(?!.*@\{)(?!.*\\)(?!.*\.\.)(?!.*\.lock$)[A-Za-z0-9._/-]+$/
+const SAFE_GITHUB_PATH_PATTERN = /^[-A-Za-z0-9_.]+\/[-A-Za-z0-9_.]+$/
+const SAFE_GIT_HTTPS_HOST_PATTERN = /^(?:[-A-Za-z0-9]+\.)+[A-Za-z0-9][-A-Za-z0-9]*$/
+const SAFE_GIT_HTTPS_PATH_PATTERN = /^\/[-A-Za-z0-9._~/%]+(?:\.git)?$/
+const SAFE_NPM_PACKAGE_NAME_PATTERN = /^(?:@[a-z0-9][a-z0-9._~-]*\/)?[a-z0-9][a-z0-9._~-]*$/
+
+function validatePluginName(name: string): string {
+  if (!SAFE_PLUGIN_NAME_PATTERN.test(name)) {
+    throw new Error(`Plugin name must be a single safe directory name: ${name}`)
+  }
+  return name
+}
+
+function validateGitRef(ref: string | undefined): string | undefined {
+  if (ref === undefined) {
+    return undefined
+  }
+  if (!SAFE_GIT_REF_PATTERN.test(ref)) {
+    throw new Error(`Invalid git ref: ${ref}`)
+  }
+  return ref
+}
+
+function parseGitHubPath(repoPath: string, source: string): { owner: string; repo: string } {
+  if (!SAFE_GITHUB_PATH_PATTERN.test(repoPath)) {
+    throw new Error(`Invalid GitHub source: ${source}. Expected format: github:user/repo`)
+  }
+
+  const [owner, repo] = repoPath.split("/")
+  return { owner, repo }
+}
+
+function validateGitHttpsUrl(url: string): string {
+  let parsed: URL
+  try {
+    parsed = new URL(url)
+  } catch {
+    throw new Error(`Invalid git repository URL: ${url}`)
+  }
+
+  if (
+    parsed.protocol !== "https:" ||
+    parsed.username !== "" ||
+    parsed.password !== "" ||
+    parsed.search !== "" ||
+    parsed.hash !== "" ||
+    !SAFE_GIT_HTTPS_HOST_PATTERN.test(parsed.hostname) ||
+    !SAFE_GIT_HTTPS_PATH_PATTERN.test(parsed.pathname)
+  ) {
+    throw new Error(`Invalid git repository URL: ${url}`)
+  }
+
+  return parsed.href
+}
+
+function gitClone(repo: string, destination: string, ref: string | undefined): void {
+  const args = ["clone", "--depth", "1"]
+  if (ref !== undefined) {
+    args.push("--branch", ref)
+  }
+  args.push("--", repo, destination)
+  execFileSync("git", args, { stdio: "pipe" })
+}
+
+function resolvePluginDir(name: string): string {
+  const pluginDir = path.resolve(PLUGINS_CACHE_DIR, validatePluginName(name))
+  const pluginsRoot = path.resolve(PLUGINS_CACHE_DIR)
+  const relative = path.relative(pluginsRoot, pluginDir)
+  if (relative === "" || relative.startsWith("..") || path.isAbsolute(relative)) {
+    throw new Error(`Plugin install path must stay under .quartz/plugins: ${name}`)
+  }
+  return pluginDir
+}
+
+function validateNativePackageSpec(name: string, range: string): string {
+  if (!SAFE_NPM_PACKAGE_NAME_PATTERN.test(name)) {
+    throw new Error(`Invalid native dependency package name: ${name}`)
+  }
+  if (range === "" || /[\0\r\n]/.test(range)) {
+    throw new Error(`Invalid native dependency range for ${name}: ${range}`)
+  }
+  return `${name}@${range}`
+}
+
+function getNpmInvocation(): { command: string; args: string[] } {
+  if (process.platform !== "win32") {
+    return { command: "npm", args: [] }
+  }
+
+  const npmExecPath = process.env.npm_execpath
+  if (npmExecPath !== undefined && npmExecPath !== "") {
+    return {
+      command: process.env.npm_node_execpath ?? process.execPath,
+      args: [npmExecPath],
+    }
+  }
+
+  const npmCliPath = path.join(
+    path.dirname(process.execPath),
+    "node_modules",
+    "npm",
+    "bin",
+    "npm-cli.js",
+  )
+  if (fs.existsSync(npmCliPath)) {
+    return { command: process.execPath, args: [npmCliPath] }
+  }
+
+  throw new Error("Unable to locate npm CLI for argv execution on Windows")
+}
+
+function resolvePluginSubdir(tmpDir: string, subdir: string): string {
+  if (
+    subdir === "" ||
+    subdir
+      .split(/[\\/]/)
+      .some((segment) => segment === "" || segment === "." || segment === "..") ||
+    path.isAbsolute(subdir) ||
+    path.win32.isAbsolute(subdir) ||
+    subdir.includes("\0")
+  ) {
+    throw new Error(`Invalid plugin subdirectory: ${subdir}`)
+  }
+
+  const tmpRoot = path.resolve(tmpDir)
+  const subdirPath = path.resolve(tmpRoot, subdir)
+  const relative = path.relative(tmpRoot, subdirPath)
+  if (relative === "" || relative.startsWith("..") || path.isAbsolute(relative)) {
+    throw new Error(`Invalid plugin subdirectory: ${subdir}`)
+  }
+  return subdirPath
+}
+
+function isErrnoException(error: unknown): error is NodeJS.ErrnoException {
+  return error instanceof Error && "code" in error
+}
+
+function normalizeInstallSpec(spec: GitPluginSpec): GitPluginSpec {
+  if (spec.local === true) {
+    return {
+      ...spec,
+      name: validatePluginName(spec.name),
+      ref: validateGitRef(spec.ref),
+    }
+  }
+
+  return parsePluginSource(spec)
+}
 
 /**
  * Check if a source string refers to a local file path.
@@ -68,11 +218,11 @@ export function parsePluginSource(source: PluginSource): GitPluginSpec {
   if (typeof source === "object" && source !== null) {
     const url = source.repo
     const subdir = source.subdir
-    const ref = source.ref
+    const ref = validateGitRef(source.ref)
 
     if (isLocalSource(url)) {
       const resolved = path.resolve(url)
-      const name = source.name ?? path.basename(resolved)
+      const name = validatePluginName(source.name ?? path.basename(resolved))
       return { name, repo: resolved, local: true, subdir }
     }
 
@@ -80,7 +230,7 @@ export function parsePluginSource(source: PluginSource): GitPluginSpec {
     // by recursing through the string-based parsing path, then overlay
     // the object-level fields (subdir, ref, name) on top.
     const expanded = parsePluginSource(url)
-    const name = source.name ?? expanded.name
+    const name = validatePluginName(source.name ?? expanded.name)
     return {
       name,
       repo: expanded.repo,
@@ -93,7 +243,7 @@ export function parsePluginSource(source: PluginSource): GitPluginSpec {
   // Handle local paths
   if (isLocalSource(source)) {
     const resolved = path.resolve(source)
-    const name = path.basename(resolved)
+    const name = validatePluginName(path.basename(resolved))
     return { name, repo: resolved, local: true }
   }
 
@@ -101,16 +251,12 @@ export function parsePluginSource(source: PluginSource): GitPluginSpec {
   if (source.startsWith("github:")) {
     const withoutPrefix = source.replace("github:", "")
     const [repoPath, ref] = withoutPrefix.split("#")
-    const [owner, repo] = repoPath.split("/")
-
-    if (!owner || !repo) {
-      throw new Error(`Invalid GitHub source: ${source}. Expected format: github:user/repo`)
-    }
+    const { owner, repo } = parseGitHubPath(repoPath, source)
 
     return {
-      name: repo,
+      name: validatePluginName(repo),
       repo: `https://github.com/${owner}/${repo}.git`,
-      ref: ref || undefined,
+      ref: validateGitRef(ref || undefined),
     }
   }
 
@@ -118,23 +264,26 @@ export function parsePluginSource(source: PluginSource): GitPluginSpec {
   if (source.startsWith("git+")) {
     const raw = source.replace("git+", "")
     const [url, ref] = raw.split("#")
-    const name = extractRepoName(url)
-    return { name, repo: url, ref: ref || undefined }
+    const repoUrl = validateGitHttpsUrl(url)
+    const name = validatePluginName(extractRepoName(repoUrl))
+    return { name, repo: repoUrl, ref: validateGitRef(ref || undefined) }
   }
 
   // Handle direct HTTPS URL (GitHub, GitLab, etc.)
   if (source.startsWith("https://")) {
     const [url, ref] = source.split("#")
-    const name = extractRepoName(url)
-    return { name, repo: url, ref: ref || undefined }
+    const repoUrl = validateGitHttpsUrl(url)
+    const name = validatePluginName(extractRepoName(repoUrl))
+    return { name, repo: repoUrl, ref: validateGitRef(ref || undefined) }
   }
 
   // Assume it's a plain repo name and try github
   const parts = source.split("/")
   if (parts.length === 2) {
+    const { owner, repo } = parseGitHubPath(source, source)
     return {
-      name: parts[1],
-      repo: `https://github.com/${source}.git`,
+      name: validatePluginName(repo),
+      repo: `https://github.com/${owner}/${repo}.git`,
     }
   }
 
@@ -186,10 +335,9 @@ export function installNativeDeps(
   const merged = new Map<string, Map<string, string>>()
   for (const [pluginName, deps] of nativeDeps) {
     for (const [pkg, range] of deps) {
-      if (!merged.has(pkg)) {
-        merged.set(pkg, new Map())
-      }
-      merged.get(pkg)!.set(pluginName, range)
+      const pluginRanges = merged.get(pkg) ?? new Map<string, string>()
+      pluginRanges.set(pluginName, range)
+      merged.set(pkg, pluginRanges)
     }
   }
 
@@ -211,7 +359,7 @@ export function installNativeDeps(
     }
 
     if (uniqueRanges.length === 1) {
-      installArgs.push(`${pkg}@${JSON.stringify(uniqueRanges[0])}`)
+      installArgs.push(validateNativePackageSpec(pkg, uniqueRanges[0]))
     } else {
       if (options.verbose) {
         console.warn(
@@ -220,7 +368,7 @@ export function installNativeDeps(
         )
       }
       // Use first range; npm will fail if truly incompatible
-      installArgs.push(`${pkg}@${JSON.stringify(uniqueRanges[0])}`)
+      installArgs.push(validateNativePackageSpec(pkg, uniqueRanges[0]))
     }
   }
 
@@ -234,7 +382,8 @@ export function installNativeDeps(
   }
 
   try {
-    execSync(`npm install --no-save ${installArgs.join(" ")}`, {
+    const npm = getNpmInvocation()
+    execFileSync(npm.command, [...npm.args, "install", "--no-save", "--", ...installArgs], {
       cwd: process.cwd(),
       stdio: options.verbose ? "inherit" : "pipe",
       timeout: 120_000,
@@ -310,7 +459,7 @@ function trySymlink(target: string, linkPath: string): void {
   try {
     fs.symlinkSync(target, linkPath, "dir")
   } catch (err: unknown) {
-    if ((err as NodeJS.ErrnoException).code === "EEXIST") return
+    if (isErrnoException(err) && err.code === "EEXIST") return
     throw err
   }
 }
@@ -416,21 +565,26 @@ export async function installPlugin(
   spec: GitPluginSpec,
   options: { verbose?: boolean; force?: boolean } = {},
 ): Promise<PluginInstallResult> {
-  const pluginDir = path.join(PLUGINS_CACHE_DIR, spec.name)
+  const installSpec = normalizeInstallSpec(spec)
+  const pluginDir = resolvePluginDir(installSpec.name)
+  const ref = validateGitRef(installSpec.ref)
 
   // Local source: symlink instead of clone
-  if (spec.local) {
-    if (!fs.existsSync(spec.repo)) {
-      throw new Error(`Local plugin path does not exist: ${spec.repo}`)
+  if (installSpec.local) {
+    if (!fs.existsSync(installSpec.repo)) {
+      throw new Error(`Local plugin path does not exist: ${installSpec.repo}`)
     }
 
     if (!options.force && fs.existsSync(pluginDir)) {
       // Check if existing entry is already a symlink to the right place
       try {
         const stat = fs.lstatSync(pluginDir)
-        if (stat.isSymbolicLink() && fs.realpathSync(pluginDir) === fs.realpathSync(spec.repo)) {
+        if (
+          stat.isSymbolicLink() &&
+          fs.realpathSync(pluginDir) === fs.realpathSync(installSpec.repo)
+        ) {
           if (options.verbose) {
-            console.log(styleText("cyan", `→`), `Plugin ${spec.name} already linked`)
+            console.log(styleText("cyan", `→`), `Plugin ${installSpec.name} already linked`)
           }
           return { pluginDir, nativeDeps: collectNativeDeps(pluginDir) }
         }
@@ -456,13 +610,13 @@ export async function installPlugin(
     }
 
     if (options.verbose) {
-      console.log(styleText("cyan", `→`), `Linking ${spec.name} from ${spec.repo}...`)
+      console.log(styleText("cyan", `→`), `Linking ${installSpec.name} from ${installSpec.repo}...`)
     }
 
-    fs.symlinkSync(spec.repo, pluginDir, "dir")
+    fs.symlinkSync(installSpec.repo, pluginDir, "dir")
 
     if (options.verbose) {
-      console.log(styleText("green", `✓`), `Linked ${spec.name}`)
+      console.log(styleText("green", `✓`), `Linked ${installSpec.name}`)
     }
 
     return { pluginDir, nativeDeps: collectNativeDeps(pluginDir) }
@@ -473,11 +627,11 @@ export async function installPlugin(
   if (!options.force && fs.existsSync(pluginDir)) {
     // For subdir installs, the .git directory is removed after extraction,
     // so check for package.json instead. For full-repo installs, check git HEAD.
-    if (spec.subdir) {
+    if (installSpec.subdir) {
       const pkgPath = path.join(pluginDir, "package.json")
       if (fs.existsSync(pkgPath)) {
         if (options.verbose) {
-          console.log(styleText("cyan", `→`), `Plugin ${spec.name} already installed`)
+          console.log(styleText("cyan", `→`), `Plugin ${installSpec.name} already installed`)
         }
         return { pluginDir, nativeDeps: collectNativeDeps(pluginDir) }
       }
@@ -485,7 +639,7 @@ export async function installPlugin(
       try {
         await git.resolveRef({ fs, dir: pluginDir, ref: "HEAD" })
         if (options.verbose) {
-          console.log(styleText("cyan", `→`), `Plugin ${spec.name} already installed`)
+          console.log(styleText("cyan", `→`), `Plugin ${installSpec.name} already installed`)
         }
         return { pluginDir, nativeDeps: collectNativeDeps(pluginDir) }
       } catch {
@@ -500,40 +654,40 @@ export async function installPlugin(
   }
 
   if (options.verbose) {
-    const refSuffix = spec.ref ? `#${spec.ref}` : ""
-    const subdirSuffix = spec.subdir ? ` (subdir: ${spec.subdir})` : ""
+    const refSuffix = ref ? `#${ref}` : ""
+    const subdirSuffix = installSpec.subdir ? ` (subdir: ${installSpec.subdir})` : ""
     console.log(
       styleText("cyan", `→`),
-      `Cloning ${spec.name} from ${spec.repo}${refSuffix}${subdirSuffix}...`,
+      `Cloning ${installSpec.name} from ${installSpec.repo}${refSuffix}${subdirSuffix}...`,
     )
   }
 
-  if (spec.subdir) {
+  if (installSpec.subdir) {
     const tmpDir = pluginDir + ".__tmp__"
     if (fs.existsSync(tmpDir)) {
       fs.rmSync(tmpDir, { recursive: true })
     }
 
-    const branchArg = spec.ref ? ` --branch ${spec.ref}` : ""
-    execSync(`git clone --depth 1${branchArg} "${spec.repo}" "${tmpDir}"`, { stdio: "pipe" })
+    const subdirPath = resolvePluginSubdir(tmpDir, installSpec.subdir)
+    gitClone(installSpec.repo, tmpDir, ref)
 
-    const subdirPath = path.join(tmpDir, spec.subdir)
     if (!fs.existsSync(subdirPath)) {
       fs.rmSync(tmpDir, { recursive: true })
-      throw new Error(`Subdirectory "${spec.subdir}" not found in repository ${spec.repo}`)
+      throw new Error(
+        `Subdirectory "${installSpec.subdir}" not found in repository ${installSpec.repo}`,
+      )
     }
 
     fs.renameSync(subdirPath, pluginDir)
     fs.rmSync(tmpDir, { recursive: true })
   } else {
-    const branchArg = spec.ref ? ` --branch ${spec.ref}` : ""
-    execSync(`git clone --depth 1${branchArg} "${spec.repo}" "${pluginDir}"`, { stdio: "pipe" })
+    gitClone(installSpec.repo, pluginDir, ref)
   }
 
-  buildInstalledPlugin(pluginDir, spec.name, options.verbose)
+  buildInstalledPlugin(pluginDir, installSpec.name, options.verbose)
 
   if (options.verbose) {
-    console.log(styleText("green", `✓`), `Installed ${spec.name}`)
+    console.log(styleText("green", `✓`), `Installed ${installSpec.name}`)
   }
 
   return { pluginDir, nativeDeps: collectNativeDeps(pluginDir) }
@@ -551,7 +705,7 @@ export async function installPlugins(
 
   for (const source of sources) {
     try {
-      const spec = typeof source === "string" ? parsePluginSource(source) : source
+      const spec = parsePluginSource(source)
       const result = await installPlugin(spec, options)
       installed.set(spec.name, result.pluginDir)
       if (result.nativeDeps.size > 0) {
@@ -576,7 +730,7 @@ export async function installPlugins(
  * Get the installation directory for a plugin
  */
 export function getPluginDir(name: string): string {
-  return path.join(PLUGINS_CACHE_DIR, name)
+  return resolvePluginDir(name)
 }
 
 /**
@@ -980,7 +1134,7 @@ export async function regeneratePluginIndex(options: { verbose?: boolean } = {})
     lines.push(`  "${escapedName}": {`)
     for (const n of overridable) {
       lines.push(
-        `    ${n}: (...args: unknown[]) => { componentRegistry.setOptionOverrides("${escapedName}", args[0] as Record<string, unknown>); },`,
+        `    ${n}: (...args: unknown[]) => { const options = args[0]; if (typeof options === "object" && options !== null && !Array.isArray(options)) componentRegistry.setOptionOverrides("${escapedName}", Object.fromEntries(Object.entries(options))); },`,
       )
     }
     lines.push(`  },`)

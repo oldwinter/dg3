@@ -1,0 +1,87 @@
+{
+  "name": "@local/theme-switcher",
+  "version": "0.1.0",
+  "description": "Local Quartz component plugin scaffold for a toolbar theme switcher",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "quartz",
+    "quartz-plugin",
+    "theme-switcher",
+    "component"
+  ],
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node -e \"const { spawnSync } = require('node:child_process'); const { readdirSync } = require('node:fs'); const filter = process.argv[1] ?? ''; const files = readdirSync('test').filter((name) => name.endsWith('.test.ts') && (!filter || name.includes(filter))).map((name) => 'test/' + name); if (files.length === 0) { console.error('No test files matched ' + filter); process.exit(1); } const result = spawnSync(process.execPath, ['--test', ...files], { stdio: 'inherit' }); process.exit(result.status ?? 1);\"",
+    "check": "npm run typecheck && npm run build"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  },
+  "peerDependenciesMeta": {
+    "preact": {
+      "optional": false
+    }
+  },
+  "dependencies": {
+    "@quartz-community/types": "github:quartz-community/types"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^28.0.3",
+    "@types/node": "^25.0.10",
+    "jsdom": "^29.1.1",
+    "preact": "^10.28.2",
+    "preact-render-to-string": "^6.7.0",
+    "sass": "^1.97.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10.9.2"
+  },
+  "quartz": {
+    "name": "theme-switcher",
+    "displayName": "Theme Switcher",
+    "description": "Toolbar component for selecting local visual theme presets.",
+    "category": "component",
+    "version": "0.1.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 45,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "defaultPreset": "linear",
+      "storageKey": "themePreset"
+    },
+    "components": {
+      "ThemeSwitcher": {
+        "name": "ThemeSwitcher",
+        "displayName": "Theme Switcher",
+        "description": "Compact toolbar control for selecting theme presets.",
+        "version": "0.1.0",
+        "defaultPosition": "left",
+        "defaultPriority": 32
+      }
+    }
+  }
+}
