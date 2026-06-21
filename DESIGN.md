@@ -2,9 +2,14 @@
 
 ## 1. Atmosphere & Identity
 
-dg3 is a quiet Quartz reading and workbench interface for a personal digital garden. It should feel calm, precise, and durable: the page is for reading, cross-linking, searching, and returning to notes, not for marketing, hero storytelling, or decorative spectacle. The signature is restrained tonal adaptation: theme presets change the site mood through Quartz tokens while the reading rhythm, typography, toolbar placement, and content hierarchy remain stable.
+dg3 is a quiet Quartz reading and workbench interface for a personal digital garden. It should feel calm, precise, and durable: the page is for reading, cross-linking, searching, and returning to notes, not for marketing, hero storytelling, or decorative spectacle.
 
-The theme switcher introduces ten brand-inspired presets: `linear`, `raycast`, `apple`, `notion`, `vercel`, `claude`, `stripe`, `figma`, `spotify`, and `tesla`. These are inspiration labels for palette and surface behavior only. `github.md` is not available in the local design references, so Tesla is the selected tenth preset.
+The design system has two theme layers:
+
+- Build-time Quartz base presets selected with `QUARTZ_THEME`: `oldwinter`, `ink`, `mist`, `ember`, `atlas`, and `sakura`.
+- Runtime toolbar presets selected by `ThemeSwitcher`: `linear`, `raycast`, `apple`, `notion`, `vercel`, `claude`, `stripe`, `figma`, `spotify`, and `tesla`.
+
+Both layers express the same reading-desk identity. Build-time presets set the default garden atmosphere for generated CSS; runtime presets let readers shift the mood locally without rebuilding. The reading rhythm, typography, toolbar placement, and content hierarchy stay stable across both layers.
 
 Brand-inspiration guardrails are strict: do not use logos, marks, trademarked artwork, product screenshots, copied brand layouts/assets, or "copy brand" implementations. Do not reproduce any brand's navigation, hero, product cards, screenshots, illustrations, or proprietary type assets. Extract only high-level mood, contrast, accent restraint, and surface treatment into this site's own Quartz workbench.
 
@@ -12,7 +17,7 @@ Brand-inspiration guardrails are strict: do not use logos, marks, trademarked ar
 
 ### Quartz Token Contract
 
-Theme presets must override only the existing Quartz variable surface and preserve the no-JS baseline from `quartz.config.yaml`. The current baseline uses a soft off-white light mode, a dark charcoal mode, `#284b63` / `#7b97aa` as `--secondary`, `#84a59d` as `--tertiary`, and existing highlight values. If JavaScript fails, the site remains readable with that configured theme.
+Theme presets must override only the existing Quartz variable surface and preserve a readable no-JS baseline from `quartz.config.yaml`. If JavaScript fails, the site remains readable with the configured build-time theme.
 
 | Role | Token | Usage |
 | --- | --- | --- |
@@ -29,9 +34,26 @@ Theme presets must override only the existing Quartz variable surface and preser
 | Accent saturation | `--accent-s` | Explicit HSL saturation for Quartz/Obsidian alias compatibility. |
 | Accent lightness | `--accent-l` | Explicit HSL lightness for Quartz/Obsidian alias compatibility. |
 
-Because `quartz/util/theme.ts` computes aliases such as `--background-primary`, `--text-normal`, `--interactive-accent`, `--nav-item-color-active`, `--tag-color`, and `--divider-color` from this surface, preset CSS must scope overrides to the core tokens above. Any alias that does not update due to CSS ordering must be explicitly overridden in the preset CSS, but `DESIGN.md` remains the source of intended roles.
+Because `quartz/util/theme.ts` computes aliases such as `--background-primary`, `--text-normal`, `--interactive-accent`, `--nav-item-color-active`, `--tag-color`, and `--divider-color` from this surface, runtime preset CSS must scope overrides to the core tokens above. Any alias that does not update due to CSS ordering must be explicitly overridden in preset CSS, but this document remains the source of intended roles.
 
-### Presets
+### Build-Time Presets
+
+Six named build-time presets live in `quartz/util/themePresets.ts`; each preset supplies both `lightMode` and `darkMode`, and Quartz still toggles only `saved-theme="light"` or `saved-theme="dark"` at runtime.
+
+Set the base preset with `QUARTZ_THEME=<preset>`. When `QUARTZ_THEME` is unset, Quartz uses the `theme` object in `quartz.config.yaml`, which is the `oldwinter` preset for this garden.
+
+| Preset | Intent |
+| --- | --- |
+| `oldwinter` | Default warm-neutral garden palette with blue-green navigation accents. |
+| `ink` | Paper-and-ink reading palette with olive and clay accents. |
+| `mist` | Cool mist palette for soft cyan-green links and quiet diagrams. |
+| `ember` | Warm ember palette for a more editorial, earthy reading tone. |
+| `atlas` | Crisp atlas palette with blue structural accents and brass highlights. |
+| `sakura` | Soft rose palette balanced by teal secondary accents. |
+
+### Runtime Presets
+
+The runtime theme switcher introduces ten brand-inspired presets. These are inspiration labels for palette and surface behavior only. `github.md` is not available in the local design references, so Tesla is the selected tenth preset.
 
 | Preset | Visual Intent | Accent Use |
 | --- | --- | --- |
@@ -48,11 +70,12 @@ Because `quartz/util/theme.ts` computes aliases such as `--background-primary`, 
 
 ### Rules
 
-- Component CSS uses Quartz variables and local semantic variables only. Raw preset color values belong in the future theme catalog and this design contract.
+- Component CSS uses Quartz variables and local semantic variables only. Raw runtime preset color values belong in `local-plugins/theme-switcher/src/themes.ts` and this design contract.
+- Build-time presets affect the generated base theme; runtime presets apply scoped local overrides through `data-theme-preset`.
 - Accent color is functional: links, focus, selected preset, active toolbar state. It is not decorative background noise.
 - Presets must define both light and dark values for every token in the Quartz Token Contract.
-- Light/dark state remains independent from preset state. Dark mode owns `saved-theme` and `localStorage.theme`; the theme switcher must not mutate either.
-- Preset state is `localStorage.themePreset` plus `document.documentElement.dataset.themePreset`, rendered as the `data-theme-preset` HTML attribute.
+- Runtime dark mode remains independent from preset state. Dark mode owns `saved-theme` and `localStorage.theme`; the runtime theme switcher must not mutate either.
+- Runtime preset state is `localStorage.themePreset` plus `document.documentElement.dataset.themePreset`, rendered as the `data-theme-preset` HTML attribute.
 
 ## 3. Typography
 
@@ -75,7 +98,7 @@ Rules:
 
 ## 4. Spacing & Layout
 
-Spacing follows Quartz's existing reading layout and a base-4 rhythm. Theme work must not introduce a marketing layout, full-bleed hero, decorative cards, or landing-page section pacing.
+Spacing follows Quartz's existing reading layout and a base-4 rhythm. Theme work must not introduce a marketing layout, full-bleed hero, decorative cards, or landing-page section pacing. Keep prose width constrained by Quartz frames, and keep sidebars resilient to long CJK and English note titles.
 
 | Token | Value | Usage |
 | --- | --- | --- |
@@ -86,7 +109,7 @@ Spacing follows Quartz's existing reading layout and a base-4 rhythm. Theme work
 | `--space-6` | 24px | Reading-section separation. |
 | `--space-8` | 32px | Larger content group separation. |
 
-Toolbar placement is fixed for the future plugin: `ThemeSwitcher` lives in `local-plugins/theme-switcher`, in the toolbar group, with priority 32. It must sit between the existing darkmode priority 30 and reader-mode priority 35 controls. The intended Quartz config shape is a local plugin source named `theme-switcher`, layout position `left`, group `toolbar`, and priority `32`.
+Toolbar placement is fixed: `ThemeSwitcher` lives in `local-plugins/theme-switcher`, in the toolbar group, with priority 32. It sits between the existing darkmode priority 30 and reader-mode priority 35 controls.
 
 Layout rules:
 
@@ -96,6 +119,14 @@ Layout rules:
 - Preset names may be visible in a native select or accessible popover, but they must not force toolbar layout shift.
 
 ## 5. Components
+
+### Build-Time Theme Presets
+
+- **Structure**: named TypeScript registry in `quartz/util/themePresets.ts`.
+- **Variants**: `oldwinter`, `ink`, `mist`, `ember`, `atlas`, `sakura`.
+- **Selection**: `QUARTZ_THEME=<preset>` at build time, or `quartz.config.yaml` when unset.
+- **States**: light and dark mode are both required for every preset.
+- **Accessibility**: body text, heading text, link text, and hover text must keep readable contrast on `--light`.
 
 ### ThemeSwitcher
 
@@ -114,6 +145,13 @@ Layout rules:
 - **Events**: Dispatch `themepresetchange` with `{ preset }` after user changes.
 - **Dark mode compatibility**: Do not change `saved-theme`, `localStorage.theme`, darkmode buttons, or reader-mode state.
 - **Invalid state**: Unknown preset IDs clamp to the configured default and do not throw.
+
+### Dark Mode Toggle
+
+- **Structure**: existing `github:quartz-community/darkmode` plugin.
+- **Variants**: light mode and dark mode icons.
+- **States**: hover, click, and persisted localStorage state.
+- **Accessibility**: icon titles and aria labels come from i18n strings.
 
 ## 6. Motion & Interaction
 
