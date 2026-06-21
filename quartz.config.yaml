@@ -1,12 +1,5 @@
-#yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
-
-#yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
-
-#yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
-
-#yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
-
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+
 configuration:
   pageTitle: 🌱 oldwinterの数字花园
   pageTitleSuffix: ""
@@ -176,6 +169,18 @@ plugins:
     layout:
       position: left
       priority: 30
+      group: toolbar
+  - source:
+      name: theme-switcher
+      repo: ./local-plugins/theme-switcher
+    enabled: true
+    order: 45
+    options:
+      defaultPreset: linear
+      storageKey: themePreset
+    layout:
+      position: left
+      priority: 32
       group: toolbar
   - source: github:quartz-community/reader-mode
     enabled: true
