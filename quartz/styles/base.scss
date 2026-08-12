@@ -422,10 +422,40 @@ h6 {
   &[id] > a[href^="#"] {
     margin: 0 0.5rem;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition:
+      color 150ms ease-out,
+      opacity 150ms ease-out;
     transform: translateY(-0.1rem);
     font-family: var(--codeFont);
     user-select: none;
+
+    @media (hover: none) {
+      opacity: 0.65;
+    }
+
+    &:focus-visible,
+    &[data-copied] {
+      opacity: 1;
+    }
+
+    &[data-copied] {
+      color: var(--tertiary);
+      display: inline-flex;
+      width: 18px;
+      height: 18px;
+      align-items: center;
+      justify-content: center;
+
+      > svg {
+        display: none;
+      }
+
+      &::after {
+        content: "✓";
+        font-size: 0.9rem;
+        line-height: 1;
+      }
+    }
   }
 
   &[id]:hover > a {
