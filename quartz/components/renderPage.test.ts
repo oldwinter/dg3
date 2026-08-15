@@ -1,6 +1,11 @@
 import test, { describe } from "node:test"
 import assert from "node:assert"
-import { pageResources, renderTranscludes, resolvePageLocale } from "./renderPage"
+import {
+  pageResources,
+  readLaterTriggerLabels,
+  renderTranscludes,
+  resolvePageLocale,
+} from "./renderPage"
 import { Root, Element } from "hast"
 import { FullSlug } from "../util/path"
 import { GlobalConfiguration } from "../cfg"
@@ -59,6 +64,17 @@ describe("resolvePageLocale", () => {
     assert.equal(resolvePageLocale("constructor", "zh-CN"), "zh-CN")
     assert.equal(resolvePageLocale({}, "zh-CN"), "zh-CN")
   })
+})
+
+test("readLaterTriggerLabels evaluates bounded counts through the locale function", () => {
+  const labels = readLaterTriggerLabels(({ count }) =>
+    count === 1 ? "One saved note" : `${count} saved notes`,
+  )
+
+  assert.equal(labels[0], "0 saved notes")
+  assert.equal(labels[1], "One saved note")
+  assert.equal(labels[20], "20 saved notes")
+  assert.equal(labels.length, 21)
 })
 
 function makeComponentData(

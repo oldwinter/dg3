@@ -16,6 +16,7 @@ import { styleText } from "util"
 import { resolveFrame } from "./frames"
 import type { TreeTransform } from "../plugins/types"
 import type { BuildCtx } from "../util/ctx"
+import { READ_LATER_LIMIT } from "./scripts/readLaterStorage"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -44,6 +45,12 @@ export function resolvePageLocale(language: unknown, fallback: ValidLocale): Val
       return candidate === normalized || candidate.startsWith(`${normalized}-`)
     }) as ValidLocale | undefined) ?? fallback
   )
+}
+
+export function readLaterTriggerLabels(
+  trigger: (variables: { count: number }) => string,
+): readonly string[] {
+  return Array.from({ length: READ_LATER_LIMIT + 1 }, (_, count) => trigger({ count }))
 }
 
 export function pageResources(
@@ -356,6 +363,8 @@ export function renderPage(
   const pageLocale = resolvePageLocale(lang, cfg.locale)
   const fallbackHeadingPermalink = TRANSLATIONS[defaultTranslation].components.headingPermalink
   const headingPermalink = i18n(pageLocale).components.headingPermalink ?? fallbackHeadingPermalink
+  const fallbackReadLater = TRANSLATIONS[defaultTranslation].components.readLater
+  const readLater = i18n(pageLocale).components.readLater ?? fallbackReadLater
   // During local dev (--serve), the dev server serves from root without the
   // baseUrl subpath, so basePath must be empty to avoid broken links.
   const basePath =
@@ -371,6 +380,16 @@ export function renderPage(
         data-heading-permalink-label={headingPermalink.title}
         data-heading-permalink-copied-title={headingPermalink.copiedTitle}
         data-heading-permalink-copied-label={headingPermalink.copiedLabel}
+        data-read-later-title={readLater.title}
+        data-read-later-trigger={JSON.stringify(readLaterTriggerLabels(readLater.trigger))}
+        data-read-later-save={readLater.save}
+        data-read-later-remove-current={readLater.removeCurrent}
+        data-read-later-remove-item={readLater.removeItem({ title: "{title}" })}
+        data-read-later-close={readLater.close}
+        data-read-later-empty={readLater.empty}
+        data-read-later-saved={readLater.saved}
+        data-read-later-removed={readLater.removed}
+        data-read-later-failed={readLater.failed}
       >
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>

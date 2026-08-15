@@ -162,6 +162,15 @@ Layout rules:
 - **Accessibility**: The arrow is decorative; the button name and tooltip follow the page language. Hidden state is removed from keyboard and accessibility navigation.
 - **Motion**: Visibility uses the existing 150ms micro transition. Press feedback scales to 93%, following the beui button mechanism; reduced-motion mode removes spatial and smooth-scroll motion.
 
+### ReadLater
+
+- **Structure**: One stable 40px bookmark trigger after content metadata opens a 320px anchored panel with a current-note toggle and a bounded list of saved links. The panel follows the beui popover attachment and dismissal contract without adding its gooey morph or a motion dependency.
+- **Placement**: Inline-end below content metadata; the panel remains within `100vw - 32px`, uses the existing 6px control radius, and is hidden from print.
+- **States**: Empty, populated, current note saved, current note unsaved, hover, pressed, focus-visible, browser-storage failure, and cross-tab synchronization.
+- **Storage**: Keep at most 20 newest entries in `localStorage`; accept only root-relative paths and normalized plain-text titles. No content writes, accounts, cookies, analytics, or external requests.
+- **Accessibility**: Chinese and English names include the current saved count. The trigger reports expanded state, the current-note toggle reports pressed state, status changes use a polite live region, Escape restores trigger focus, and every remove action names its note.
+- **Motion**: Open and close are immediate. Existing 150ms micro transitions cover color and press feedback; reduced-motion mode removes the press transform.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.

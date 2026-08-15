@@ -46,6 +46,18 @@ export interface Translation {
       copiedTitle: string
       copiedLabel: string
     }
+    readLater?: {
+      title: string
+      trigger: (variables: { count: number }) => string
+      save: string
+      removeCurrent: string
+      removeItem: (variables: { title: string }) => string
+      close: string
+      empty: string
+      saved: string
+      removed: string
+      failed: string
+    }
     explorer: {
       title: string
     }
