@@ -118,6 +118,10 @@ test("themeCss component styles cover stable toolbar interaction states", () => 
   assert.match(style, /min-inline-size/)
   assert.match(style, /inline-size:\s*min\(/)
   assert.match(style, /box-sizing:\s*border-box/)
+  assert.match(
+    style,
+    /\.sidebar\.left \.flex-component:has\(\.theme-switcher\)\s*\{[^}]*flex-wrap:\s*wrap/s,
+  )
   assert.match(style, /@media\s*\(prefers-reduced-motion:\s*reduce\)/)
   assert.match(style, /@media\s*\(max-width:\s*600px\)/)
 })

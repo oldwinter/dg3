@@ -18,6 +18,10 @@
   margin: 0;
 }
 
+.sidebar.left .flex-component:has(.theme-switcher) {
+  flex-wrap: wrap !important;
+}
+
 .theme-switcher-swatch {
   position: absolute;
   z-index: 1;
