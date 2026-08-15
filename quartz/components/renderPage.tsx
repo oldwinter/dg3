@@ -337,7 +337,10 @@ export function renderPage(
 
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const direction = i18n(cfg.locale).direction ?? "ltr"
-  const pageLocale = lang in TRANSLATIONS ? (lang as ValidLocale) : cfg.locale
+  const pageLocale =
+    typeof lang === "string" && Object.hasOwn(TRANSLATIONS, lang)
+      ? (lang as ValidLocale)
+      : cfg.locale
   const fallbackHeadingPermalink = TRANSLATIONS[defaultTranslation].components.headingPermalink
   const headingPermalink = i18n(pageLocale).components.headingPermalink ?? fallbackHeadingPermalink
   // During local dev (--serve), the dev server serves from root without the
