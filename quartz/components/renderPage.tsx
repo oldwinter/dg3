@@ -11,7 +11,7 @@ import { FullSlug, RelativeURL, joinSegments, normalizeHastElement } from "../ut
 import { clone } from "../util/clone"
 import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
-import { i18n } from "../i18n"
+import { defaultTranslation, i18n, TRANSLATIONS, ValidLocale } from "../i18n"
 import { styleText } from "util"
 import { resolveFrame } from "./frames"
 import type { TreeTransform } from "../plugins/types"
@@ -30,6 +30,22 @@ interface RenderComponents {
 }
 
 const headerRegex = new RegExp(/h[1-6]/)
+
+export function resolvePageLocale(language: unknown, fallback: ValidLocale): ValidLocale {
+  if (typeof language !== "string") return fallback
+  if (Object.hasOwn(TRANSLATIONS, language)) return language as ValidLocale
+
+  const normalized = language.toLowerCase()
+  if (fallback.toLowerCase().startsWith(`${normalized}-`)) return fallback
+
+  return (
+    (Object.keys(TRANSLATIONS).find((locale) => {
+      const candidate = locale.toLowerCase()
+      return candidate === normalized || candidate.startsWith(`${normalized}-`)
+    }) as ValidLocale | undefined) ?? fallback
+  )
+}
+
 export function pageResources(
   baseDir: FullSlug | RelativeURL,
   staticResources: StaticResources,
@@ -337,6 +353,9 @@ export function renderPage(
 
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const direction = i18n(cfg.locale).direction ?? "ltr"
+  const pageLocale = resolvePageLocale(lang, cfg.locale)
+  const fallbackHeadingPermalink = TRANSLATIONS[defaultTranslation].components.headingPermalink
+  const headingPermalink = i18n(pageLocale).components.headingPermalink ?? fallbackHeadingPermalink
   // During local dev (--serve), the dev server serves from root without the
   // baseUrl subpath, so basePath must be empty to avoid broken links.
   const basePath =
@@ -346,7 +365,13 @@ export function renderPage(
   const doc = (
     <html lang={lang} dir={direction}>
       <Head {...componentData} />
-      <body data-slug={slug} data-basepath={basePath}>
+      <body
+        data-slug={slug}
+        data-basepath={basePath}
+        data-heading-permalink-label={headingPermalink.title}
+        data-heading-permalink-copied-title={headingPermalink.copiedTitle}
+        data-heading-permalink-copied-label={headingPermalink.copiedLabel}
+      >
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>
           <Body {...componentData}>

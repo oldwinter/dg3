@@ -38,6 +38,11 @@ export default {
     backToTop: {
       title: "Back to top",
     },
+    headingPermalink: {
+      title: "Copy link to this section",
+      copiedTitle: "Copied",
+      copiedLabel: "Section link copied",
+    },
     explorer: {
       title: "Explorer",
     },

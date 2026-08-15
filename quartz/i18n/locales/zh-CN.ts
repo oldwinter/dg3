@@ -38,6 +38,11 @@ export default {
     backToTop: {
       title: "返回顶部",
     },
+    headingPermalink: {
+      title: "复制本节链接",
+      copiedTitle: "已复制",
+      copiedLabel: "本节链接已复制",
+    },
     explorer: {
       title: "探索",
     },
