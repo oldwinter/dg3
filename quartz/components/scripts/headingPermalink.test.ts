@@ -1,8 +1,38 @@
 import assert from "node:assert"
 import test, { describe } from "node:test"
-import { headingPermalink } from "./headingPermalink"
+import { headingPermalink, headingPermalinkLabels } from "./headingPermalink"
 
 describe("headingPermalink", () => {
+  test("provides English labels for the default Quartz locale", () => {
+    // Given
+    const language = "en-US"
+
+    // When
+    const labels = headingPermalinkLabels(language)
+
+    // Then
+    assert.deepEqual(labels, {
+      defaultLabel: "Copy link to this section",
+      copiedTitle: "Copied",
+      copiedLabel: "Section link copied",
+    })
+  })
+
+  test("provides Chinese labels for the garden locale", () => {
+    // Given
+    const language = "zh-CN"
+
+    // When
+    const labels = headingPermalinkLabels(language)
+
+    // Then
+    assert.deepEqual(labels, {
+      defaultLabel: "复制本节链接",
+      copiedTitle: "已复制",
+      copiedLabel: "本节链接已复制",
+    })
+  })
+
   test("replaces the current fragment while preserving the page query", () => {
     // Given
     const pageUrl = new URL("https://garden.example/note?view=reader#old-section")

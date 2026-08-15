@@ -1,13 +1,15 @@
-import { headingPermalink } from "./headingPermalink"
+import { headingPermalink, headingPermalinkLabels } from "./headingPermalink"
 
 function registerHeadingPermalinks() {
   const anchors = document.querySelectorAll<HTMLAnchorElement>(
     'article :is(h1, h2, h3, h4, h5, h6):not(.sr-only)[id] > a[href^="#"]',
   )
   const resetTimers = new Map<HTMLAnchorElement, number>()
+  const { defaultLabel, copiedTitle, copiedLabel } = headingPermalinkLabels(
+    document.documentElement.lang,
+  )
 
   for (const anchor of anchors) {
-    const defaultLabel = "复制本节链接"
     anchor.title = defaultLabel
     anchor.setAttribute("aria-label", defaultLabel)
     anchor.removeAttribute("aria-hidden")
@@ -28,8 +30,8 @@ function registerHeadingPermalinks() {
       if (previousTimer !== undefined) window.clearTimeout(previousTimer)
 
       anchor.dataset.copied = ""
-      anchor.title = "已复制"
-      anchor.setAttribute("aria-label", "本节链接已复制")
+      anchor.title = copiedTitle
+      anchor.setAttribute("aria-label", copiedLabel)
 
       const resetTimer = window.setTimeout(() => {
         delete anchor.dataset.copied
