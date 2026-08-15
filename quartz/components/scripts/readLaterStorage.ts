@@ -27,6 +27,14 @@ export function parseReadLaterEntry(candidate: unknown): ReadLaterEntry | undefi
     return undefined
   }
 
+  let resolvedPath: URL
+  try {
+    resolvedPath = new URL(path, "https://read-later.invalid/")
+  } catch {
+    return undefined
+  }
+  if (resolvedPath.origin !== "https://read-later.invalid") return undefined
+
   const normalizedTitle = title.trim().slice(0, 200)
   if (normalizedTitle.length === 0) return undefined
   return { path, title: normalizedTitle, savedAt }

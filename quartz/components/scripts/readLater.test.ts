@@ -29,7 +29,9 @@ describe("read-later storage", () => {
     const stored = JSON.stringify([
       { path: "/older", title: " Older copy ", savedAt: 10 },
       { path: "javascript:alert(1)", title: "Unsafe", savedAt: 40 },
-      { path: "/\n/evil.example", title: "Control character", savedAt: 40 },
+      { path: "/\n/evil.example", title: "Line feed", savedAt: 40 },
+      { path: "/\r/evil.example", title: "Carriage return", savedAt: 40 },
+      { path: "/\t/evil.example", title: "Tab", savedAt: 40 },
       { path: "/newer", title: "Newer", savedAt: 30 },
       { path: "/older", title: "Latest copy", savedAt: 20 },
       { path: "/missing-title", title: "", savedAt: 50 },
