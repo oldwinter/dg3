@@ -45,10 +45,10 @@ export default {
     },
     readLater: {
       title: "Read later",
-      trigger: "Read later, {count} saved",
+      trigger: ({ count }) => `Read later, ${count} saved`,
       save: "Save this note",
       removeCurrent: "Remove this note",
-      removeItem: "Remove {title}",
+      removeItem: ({ title }) => `Remove ${title}`,
       close: "Close read later",
       empty: "No saved notes yet",
       saved: "Saved for later",

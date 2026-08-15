@@ -45,10 +45,10 @@ export default {
     },
     readLater: {
       title: "稍后读",
-      trigger: "稍后读，已保存 {count} 篇",
+      trigger: ({ count }) => `稍后读，已保存 ${count} 篇`,
       save: "保存当前笔记",
       removeCurrent: "从稍后读移除",
-      removeItem: "移除《{title}》",
+      removeItem: ({ title }) => `移除《${title}》`,
       close: "关闭稍后读",
       empty: "还没有稍后读笔记",
       saved: "已加入稍后读",

@@ -27,10 +27,10 @@ test("read-later browser script handles navigation and in-place renders", () => 
 })
 
 test("read-later labels use the central locale catalog", () => {
-  assert.equal(enUs.components.readLater.trigger, "Read later, {count} saved")
-  assert.equal(zhCn.components.readLater.trigger, "稍后读，已保存 {count} 篇")
-  assert.equal(zhTw.components.readLater.trigger, "稍後讀，已儲存 {count} 篇")
-  assert.match(enUs.components.readLater.removeItem, /\{title\}/)
+  assert.equal(enUs.components.readLater.trigger({ count: 2 }), "Read later, 2 saved")
+  assert.equal(zhCn.components.readLater.trigger({ count: 2 }), "稍后读，已保存 2 篇")
+  assert.equal(zhTw.components.readLater.trigger({ count: 2 }), "稍後讀，已儲存 2 篇")
+  assert.equal(enUs.components.readLater.removeItem({ title: "Note" }), "Remove Note")
 })
 
 describe("read-later storage", () => {

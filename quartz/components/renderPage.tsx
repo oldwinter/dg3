@@ -374,10 +374,10 @@ export function renderPage(
         data-heading-permalink-copied-title={headingPermalink.copiedTitle}
         data-heading-permalink-copied-label={headingPermalink.copiedLabel}
         data-read-later-title={readLater.title}
-        data-read-later-trigger={readLater.trigger}
+        data-read-later-trigger={readLater.trigger({ count: "{count}" })}
         data-read-later-save={readLater.save}
         data-read-later-remove-current={readLater.removeCurrent}
-        data-read-later-remove-item={readLater.removeItem}
+        data-read-later-remove-item={readLater.removeItem({ title: "{title}" })}
         data-read-later-close={readLater.close}
         data-read-later-empty={readLater.empty}
         data-read-later-saved={readLater.saved}

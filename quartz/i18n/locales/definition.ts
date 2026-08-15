@@ -48,10 +48,10 @@ export interface Translation {
     }
     readLater?: {
       title: string
-      trigger: string
+      trigger: (variables: { count: number | string }) => string
       save: string
       removeCurrent: string
-      removeItem: string
+      removeItem: (variables: { title: string }) => string
       close: string
       empty: string
       saved: string
