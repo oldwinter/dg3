@@ -32,6 +32,12 @@ export default {
     readerMode: {
       title: "Reader mode",
     },
+    readingProgress: {
+      title: "Reading progress",
+    },
+    backToTop: {
+      title: "Back to top",
+    },
     explorer: {
       title: "Explorer",
     },

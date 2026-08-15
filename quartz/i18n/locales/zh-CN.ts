@@ -32,6 +32,12 @@ export default {
     readerMode: {
       title: "阅读模式",
     },
+    readingProgress: {
+      title: "阅读进度",
+    },
+    backToTop: {
+      title: "返回顶部",
+    },
     explorer: {
       title: "探索",
     },

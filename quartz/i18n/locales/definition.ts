@@ -35,6 +35,12 @@ export interface Translation {
     readerMode: {
       title: string
     }
+    readingProgress?: {
+      title: string
+    }
+    backToTop?: {
+      title: string
+    }
     explorer: {
       title: string
     }

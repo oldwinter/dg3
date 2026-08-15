@@ -130,11 +130,11 @@ Layout rules:
 
 ### ThemeSwitcher
 
-- **Structure**: A compact toolbar control from `local-plugins/theme-switcher`, rendered as `ThemeSwitcher`. Prefer a native `select` unless Quartz toolbar constraints require an accessible button/listbox.
+- **Structure**: A compact toolbar control from `local-plugins/theme-switcher`, rendered as `ThemeSwitcher`. Keep the native preset `select` and pair it with one square icon button for choosing a different preset at random. Below 341px, let its containing toolbar wrap and place the complete theme control on a second, right-aligned row so labels stay readable.
 - **Variants**: Default toolbar control; disabled-safe fallback if script setup fails; dark and light compositions through `saved-theme`.
 - **Spacing**: Use `--space-1`, `--space-2`, and `--space-3` equivalents only.
-- **States**: default, hover, active/open, focus-visible, disabled, invalid stored preset fallback.
-- **Accessibility**: Expose an accessible name such as "Theme preset"; support keyboard operation; show a visible focus ring using `--secondary`; maintain at least WCAG AA contrast for text and focus indicators; preserve readable labels for all ten presets.
+- **States**: Select default, hover, active/open, focus-visible, disabled, and invalid stored preset fallback; random action default, hover, pressed, focus-visible, and disabled.
+- **Accessibility**: Localize accessible names for both the preset select and random action; use native keyboard-operable controls; show an opaque 2px focus outline using `--secondary`; maintain at least WCAG AA contrast for text and focus indicators; preserve readable labels for all ten presets.
 - **Motion**: Token changes should feel immediate. Control hover/focus transitions may use 100-150ms opacity, color, or box-shadow transitions only.
 
 ### Theme State
@@ -143,6 +143,7 @@ Layout rules:
 - **Persistence**: Store only the preset ID in `localStorage.themePreset`.
 - **HTML contract**: Apply the chosen ID to `document.documentElement.dataset.themePreset`, producing `data-theme-preset="<id>"`.
 - **Events**: Dispatch `themepresetchange` with `{ preset }` after user changes.
+- **Random action**: Choose uniformly from every preset except the active one, so each activation visibly changes the garden while preserving the same persistence and event contract as manual selection.
 - **Dark mode compatibility**: Do not change `saved-theme`, `localStorage.theme`, darkmode buttons, or reader-mode state.
 - **Invalid state**: Unknown preset IDs clamp to the configured default and do not throw.
 
@@ -152,6 +153,14 @@ Layout rules:
 - **Variants**: light mode and dark mode icons.
 - **States**: hover, click, and persisted localStorage state.
 - **Accessibility**: icon titles and aria labels come from i18n strings.
+
+### BackToTop
+
+- **Structure**: A fixed 40px circular icon button created once per page, outside the reading grid.
+- **Placement**: Bottom inline-end with 16px spacing and safe-area inset support; hidden from print.
+- **States**: Disabled and visually absent near the top; visible after 75% of one viewport; hover, active, and focus-visible feedback use existing Quartz tokens.
+- **Accessibility**: The arrow is decorative; the button name and tooltip follow the page language. Hidden state is removed from keyboard and accessibility navigation.
+- **Motion**: Visibility uses the existing 150ms micro transition. Press feedback scales to 93%, following the beui button mechanism; reduced-motion mode removes spatial and smooth-scroll motion.
 
 ## 6. Motion & Interaction
 

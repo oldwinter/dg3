@@ -9,6 +9,7 @@ import {
   THEME_PRESETS,
   type CanonicalThemePreset,
 } from "../themes"
+import { i18n } from "../i18n"
 import themeSwitcherScriptTemplate from "./scripts/themeSwitcher.inline.ts?raw"
 import styles from "./styles/themeSwitcher.scss"
 
@@ -52,20 +53,21 @@ function buildBeforeScript(options: NormalizedThemeSwitcherOptions): string {
 
 const ThemeSwitcher = ((options?: ThemeSwitcherOptions): QuartzComponent => {
   const scriptOptions = normalizeOptions(options)
-  const Component: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+  const Component: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const classes = displayClass ? `${displayClass} theme-switcher` : "theme-switcher"
+    const translations = i18n(cfg?.locale)
 
     return (
       <div class={classes} data-theme-switcher-shell>
         <span class="theme-switcher-swatch" aria-hidden="true" />
         <label class="theme-switcher-label" for="theme-switcher-select">
-          Theme
+          {translations.label}
         </label>
         <select
           id="theme-switcher-select"
           class="theme-switcher-select"
           data-theme-switcher
-          aria-label="Theme preset"
+          aria-label={translations.presetLabel}
           name="theme-preset"
         >
           {THEME_PRESETS.map((preset) => (
@@ -74,6 +76,14 @@ const ThemeSwitcher = ((options?: ThemeSwitcherOptions): QuartzComponent => {
             </option>
           ))}
         </select>
+        <button
+          type="button"
+          class="theme-switcher-shuffle"
+          data-theme-shuffle
+          aria-label={translations.shuffleLabel}
+          title={translations.shuffleLabel}
+          disabled
+        />
       </div>
     )
   }
