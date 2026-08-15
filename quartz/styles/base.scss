@@ -681,3 +681,28 @@ iframe.pdf {
   transition: width 0.2s ease;
   z-index: 9999;
 }
+
+.reading-progress {
+  appearance: none;
+  position: fixed;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 3px;
+  border: 0;
+  background: transparent;
+  color: var(--secondary);
+  pointer-events: none;
+  z-index: 9998;
+
+  &::-webkit-progress-bar {
+    background: transparent;
+  }
+
+  &::-webkit-progress-value {
+    background: var(--secondary);
+  }
+
+  &::-moz-progress-bar {
+    background: var(--secondary);
+  }
+}

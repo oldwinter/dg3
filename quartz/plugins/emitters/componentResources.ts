@@ -9,6 +9,7 @@ import popoverScript from "../../components/scripts/popover.inline"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
+import { readingProgressScript } from "../../components/scripts/readingProgress"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -83,6 +84,8 @@ async function joinScripts(scripts: string[]): Promise<string> {
 
 function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentResources) {
   const cfg = ctx.cfg.configuration
+
+  componentResources.afterDOMLoaded.push(readingProgressScript)
 
   // popovers
   if (cfg.enablePopovers) {
