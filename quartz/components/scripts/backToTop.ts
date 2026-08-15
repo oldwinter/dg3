@@ -44,11 +44,13 @@ function bindBackToTop() {
   }
 
   window.addEventListener("scroll", updateVisibility, { passive: true })
+  window.addEventListener("resize", updateVisibility)
   button.addEventListener("click", returnToTop)
   updateVisibility()
 
   cleanupCurrentButton = () => {
     window.removeEventListener("scroll", updateVisibility)
+    window.removeEventListener("resize", updateVisibility)
     button.removeEventListener("click", returnToTop)
   }
 }

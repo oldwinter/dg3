@@ -22,6 +22,7 @@ type Scenario = {
   readonly scrollRequests: ScrollRequest[]
   navigate: () => void
   scrollTo: (position: number) => void
+  resizeTo: (height: number) => void
   click: () => void
 }
 
@@ -102,6 +103,10 @@ function createScenario(reducedMotion: boolean, hasButton = true, language = "en
       windowState.scrollY = position
       windowListeners.get("scroll")?.()
     },
+    resizeTo: (height) => {
+      windowState.innerHeight = height
+      windowListeners.get("resize")?.()
+    },
     click: () => buttonListeners.get("click")?.(),
   }
 }
@@ -144,6 +149,21 @@ describe("back-to-top control", () => {
       label: "",
       title: "",
     })
+  })
+
+  test("recalculates visibility when the viewport height changes", () => {
+    // Given
+    const scenario = createScenario(false)
+    scenario.navigate()
+    scenario.scrollTo(700)
+
+    // When
+    scenario.resizeTo(1000)
+
+    // Then
+    assert.equal(scenario.button.visible, false)
+    assert.equal(scenario.button.disabled, true)
+    assert.equal(scenario.button.ariaHidden, "true")
   })
 
   test("scrolls smoothly when motion is allowed", () => {
