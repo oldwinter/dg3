@@ -46,7 +46,7 @@ function createBookmarkIcon() {
 function getReadLaterLabels() {
   const {
     readLaterTitle: title,
-    readLaterTrigger: trigger,
+    readLaterTrigger: serializedTriggers,
     readLaterSave: save,
     readLaterRemoveCurrent: removeCurrent,
     readLaterRemoveItem: removeItem,
@@ -58,7 +58,7 @@ function getReadLaterLabels() {
   } = document.body.dataset
   if (
     !title ||
-    !trigger ||
+    !serializedTriggers ||
     !save ||
     !removeCurrent ||
     !removeItem ||
@@ -71,9 +71,23 @@ function getReadLaterLabels() {
     return undefined
   }
 
+  let triggers
+  try {
+    triggers = JSON.parse(serializedTriggers)
+  } catch {
+    return undefined
+  }
+  if (
+    !Array.isArray(triggers) ||
+    triggers.length !== READ_LATER_LIMIT + 1 ||
+    triggers.some((label) => typeof label !== "string" || label.length === 0)
+  ) {
+    return undefined
+  }
+
   return {
     title,
-    trigger: (count) => trigger.replace("{count}", () => String(count)),
+    trigger: (count) => triggers[count],
     save,
     removeCurrent,
     removeItem: (name) => removeItem.replace("{title}", () => name),

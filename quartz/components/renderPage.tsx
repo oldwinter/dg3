@@ -16,6 +16,7 @@ import { styleText } from "util"
 import { resolveFrame } from "./frames"
 import type { TreeTransform } from "../plugins/types"
 import type { BuildCtx } from "../util/ctx"
+import { READ_LATER_LIMIT } from "./scripts/readLaterStorage"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -44,6 +45,12 @@ export function resolvePageLocale(language: unknown, fallback: ValidLocale): Val
       return candidate === normalized || candidate.startsWith(`${normalized}-`)
     }) as ValidLocale | undefined) ?? fallback
   )
+}
+
+export function readLaterTriggerLabels(
+  trigger: (variables: { count: number }) => string,
+): readonly string[] {
+  return Array.from({ length: READ_LATER_LIMIT + 1 }, (_, count) => trigger({ count }))
 }
 
 export function pageResources(
@@ -374,7 +381,7 @@ export function renderPage(
         data-heading-permalink-copied-title={headingPermalink.copiedTitle}
         data-heading-permalink-copied-label={headingPermalink.copiedLabel}
         data-read-later-title={readLater.title}
-        data-read-later-trigger={readLater.trigger({ count: "{count}" })}
+        data-read-later-trigger={JSON.stringify(readLaterTriggerLabels(readLater.trigger))}
         data-read-later-save={readLater.save}
         data-read-later-remove-current={readLater.removeCurrent}
         data-read-later-remove-item={readLater.removeItem({ title: "{title}" })}
