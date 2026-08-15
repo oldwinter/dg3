@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
   text-size-adjust: none;
   overflow-x: hidden;
   width: 100vw;
@@ -420,6 +421,11 @@ h4,
 h5,
 h6 {
   &[id] > a[href^="#"] {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    justify-content: center;
     margin: 0 0.5rem;
     opacity: 0;
     transition:
@@ -428,6 +434,11 @@ h6 {
     transform: translateY(-0.1rem);
     font-family: var(--codeFont);
     user-select: none;
+
+    @media (pointer: coarse) {
+      box-sizing: content-box;
+      padding: 13px;
+    }
 
     @media (hover: none) {
       opacity: 0.65;
@@ -440,11 +451,6 @@ h6 {
 
     &[data-copied] {
       color: var(--tertiary);
-      display: inline-flex;
-      width: 18px;
-      height: 18px;
-      align-items: center;
-      justify-content: center;
 
       > svg {
         display: none;
