@@ -422,8 +422,8 @@ h5,
 h6 {
   &[id] > a[role="anchor"][href^="#"] {
     display: inline-flex;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     align-items: center;
     justify-content: center;
     margin: 0 0.5rem;
@@ -437,7 +437,7 @@ h6 {
 
     @media (pointer: coarse) {
       box-sizing: content-box;
-      padding: 13px;
+      padding: 12px;
     }
 
     @media (hover: none) {

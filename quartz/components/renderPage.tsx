@@ -30,6 +30,22 @@ interface RenderComponents {
 }
 
 const headerRegex = new RegExp(/h[1-6]/)
+
+export function resolvePageLocale(language: unknown, fallback: ValidLocale): ValidLocale {
+  if (typeof language !== "string") return fallback
+  if (Object.hasOwn(TRANSLATIONS, language)) return language as ValidLocale
+
+  const normalized = language.toLowerCase()
+  if (fallback.toLowerCase().startsWith(`${normalized}-`)) return fallback
+
+  return (
+    (Object.keys(TRANSLATIONS).find((locale) => {
+      const candidate = locale.toLowerCase()
+      return candidate === normalized || candidate.startsWith(`${normalized}-`)
+    }) as ValidLocale | undefined) ?? fallback
+  )
+}
+
 export function pageResources(
   baseDir: FullSlug | RelativeURL,
   staticResources: StaticResources,
@@ -337,10 +353,7 @@ export function renderPage(
 
   const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "en"
   const direction = i18n(cfg.locale).direction ?? "ltr"
-  const pageLocale =
-    typeof lang === "string" && Object.hasOwn(TRANSLATIONS, lang)
-      ? (lang as ValidLocale)
-      : cfg.locale
+  const pageLocale = resolvePageLocale(lang, cfg.locale)
   const fallbackHeadingPermalink = TRANSLATIONS[defaultTranslation].components.headingPermalink
   const headingPermalink = i18n(pageLocale).components.headingPermalink ?? fallbackHeadingPermalink
   // During local dev (--serve), the dev server serves from root without the

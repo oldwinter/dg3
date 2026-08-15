@@ -1,5 +1,7 @@
 import { headingPermalink, headingPermalinkLabels } from "./headingPermalink"
 
+const boundAnchors = new WeakSet<HTMLAnchorElement>()
+
 function registerHeadingPermalinks() {
   const anchors = document.querySelectorAll<HTMLAnchorElement>(
     'article :is(h1, h2, h3, h4, h5, h6):not(.sr-only)[id] > a[role="anchor"][href^="#"]',
@@ -10,6 +12,9 @@ function registerHeadingPermalinks() {
   const { defaultLabel, copiedTitle, copiedLabel } = labels
 
   for (const anchor of anchors) {
+    if (boundAnchors.has(anchor)) continue
+    boundAnchors.add(anchor)
+
     anchor.title = defaultLabel
     anchor.setAttribute("aria-label", defaultLabel)
     anchor.removeAttribute("aria-hidden")
@@ -45,6 +50,7 @@ function registerHeadingPermalinks() {
     anchor.addEventListener("click", copyPermalink)
     window.addCleanup(() => {
       anchor.removeEventListener("click", copyPermalink)
+      boundAnchors.delete(anchor)
       const resetTimer = resetTimers.get(anchor)
       if (resetTimer !== undefined) window.clearTimeout(resetTimer)
     })
@@ -52,5 +58,6 @@ function registerHeadingPermalinks() {
 }
 
 document.addEventListener("nav", registerHeadingPermalinks)
+document.addEventListener("render", registerHeadingPermalinks)
 
 export default ""
