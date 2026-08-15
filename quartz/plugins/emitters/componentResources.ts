@@ -11,6 +11,8 @@ import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
 import { readingProgressScript } from "../../components/scripts/readingProgress"
+import { readLaterScript } from "../../components/scripts/readLater"
+import readLaterStyle from "../../components/styles/readLater.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -88,6 +90,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
 
   componentResources.afterDOMLoaded.push(backToTopScript)
   componentResources.afterDOMLoaded.push(readingProgressScript)
+  componentResources.afterDOMLoaded.push(readLaterScript)
+  componentResources.css.push(readLaterStyle)
 
   // popovers
   if (cfg.enablePopovers) {
