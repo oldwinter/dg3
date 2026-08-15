@@ -114,7 +114,8 @@ function initializeReadLater() {
   const labels = getReadLaterLabels()
   if (anchor === null || !title || labels === undefined) return
 
-  const current = { path: location.pathname, title, savedAt: 0 }
+  const current = parseReadLaterEntry({ path: location.pathname, title, savedAt: 0 })
+  if (current === undefined) return
   let entries = readStoredEntries()
   const root = document.createElement("div")
   root.className = "read-later"

@@ -24,6 +24,7 @@ test("read-later browser script handles navigation and in-place renders", () => 
   assert.match(readLaterScript, /document\.addEventListener\("render", initializeReadLater\)/)
   assert.match(readLaterScript, /window\.addCleanup\(cleanupReadLater\)/)
   assert.match(readLaterScript, /event\.key !== null && event\.key !== READ_LATER_KEY/)
+  assert.match(readLaterScript, /const current = parseReadLaterEntry\(/)
 })
 
 test("read-later labels use the central locale catalog", () => {
@@ -66,6 +67,16 @@ describe("read-later storage", () => {
 
     // Then
     assert.deepEqual(entries, [])
+  })
+
+  test("rejects a protocol-relative current page before it can be saved", () => {
+    const entries = toggleReadLaterEntry([], {
+      path: "//evil.example/note",
+      title: "Unsafe current page",
+      savedAt: 20,
+    })
+
+    assert.deepEqual(parseReadLaterEntries(JSON.stringify(entries)), [])
   })
 
   test("adds a new note to the front", () => {
