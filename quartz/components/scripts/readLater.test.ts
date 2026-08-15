@@ -20,6 +20,7 @@ test("read-later browser script handles navigation and in-place renders", () => 
   assert.match(readLaterScript, /document\.addEventListener\("nav", initializeReadLater\)/)
   assert.match(readLaterScript, /document\.addEventListener\("render", initializeReadLater\)/)
   assert.match(readLaterScript, /window\.addCleanup\(cleanupReadLater\)/)
+  assert.match(readLaterScript, /event\.key !== null && event\.key !== READ_LATER_KEY/)
 })
 
 describe("read-later storage", () => {

@@ -207,7 +207,7 @@ function initializeReadLater() {
     if (event.key === "Escape" && !panel.hidden) closePanel(true)
   }
   const syncStoredEntries = (event) => {
-    if (event.key !== READ_LATER_KEY) return
+    if (event.key !== null && event.key !== READ_LATER_KEY) return
     entries = readStoredEntries()
     render()
   }
