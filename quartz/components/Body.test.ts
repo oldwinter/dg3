@@ -6,7 +6,7 @@ import { QuartzComponentProps } from "./types"
 import Body from "./Body"
 
 describe("Body", () => {
-  const renderBody = (locale: "en-US" | "zh-CN" | "zh-TW") => {
+  const renderBody = (locale: "en-US" | "fr-FR" | "zh-CN" | "zh-TW") => {
     const Component = Body()
     const props = {
       cfg: { locale },
@@ -48,5 +48,16 @@ describe("Body", () => {
 
     // Then
     assert.match(html, /aria-label="返回頂部"/)
+  })
+
+  test("falls back to English when a locale has no back-to-top label", () => {
+    // Given
+    const locale = "fr-FR"
+
+    // When
+    const html = renderBody(locale)
+
+    // Then
+    assert.match(html, /aria-label="Back to top"/)
   })
 })

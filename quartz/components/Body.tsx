@@ -1,13 +1,13 @@
-import { defaultTranslation, i18n } from "../i18n"
+import { defaultTranslation, i18n, TRANSLATIONS } from "../i18n"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 const Body: QuartzComponent = ({ cfg, children }: QuartzComponentProps) => {
   const translation = i18n(cfg.locale)
-  const fallback = i18n(defaultTranslation)
+  const fallback = TRANSLATIONS[defaultTranslation]
   const readingProgressTitle =
-    translation.components.readingProgress?.title ?? fallback.components.readingProgress!.title
+    translation.components.readingProgress?.title ?? fallback.components.readingProgress.title
   const backToTopTitle =
-    translation.components.backToTop?.title ?? fallback.components.backToTop!.title
+    translation.components.backToTop?.title ?? fallback.components.backToTop.title
 
   return (
     <>

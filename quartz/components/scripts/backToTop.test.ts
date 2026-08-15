@@ -19,6 +19,11 @@ type ButtonState = {
 
 type Scenario = {
   readonly button: ButtonState
+  readonly activeListeners: Readonly<{
+    scroll: number
+    resize: number
+    click: number
+  }>
   readonly scrollRequests: ScrollRequest[]
   navigate: () => void
   scrollTo: (position: number) => void
@@ -30,6 +35,7 @@ function createScenario(reducedMotion: boolean, hasButton = true, language = "en
   const documentListeners = new Map<string, () => void>()
   const windowListeners = new Map<string, () => void>()
   const buttonListeners = new Map<string, () => void>()
+  const activeListeners = { scroll: 0, resize: 0, click: 0 }
   const scrollRequests: ScrollRequest[] = []
   const button: ButtonState = {
     disabled: true,
@@ -54,9 +60,15 @@ function createScenario(reducedMotion: boolean, hasButton = true, language = "en
     set title(value: string) {
       button.title = value
     },
-    addEventListener: (name: string, listener: () => void) => buttonListeners.set(name, listener),
+    addEventListener: (name: string, listener: () => void) => {
+      buttonListeners.set(name, listener)
+      if (name === "click") activeListeners.click += 1
+    },
     removeEventListener: (name: string, listener: () => void) => {
-      if (buttonListeners.get(name) === listener) buttonListeners.delete(name)
+      if (buttonListeners.get(name) === listener) {
+        buttonListeners.delete(name)
+        if (name === "click") activeListeners.click -= 1
+      }
     },
     append: () => undefined,
     setAttribute: (name: string, value: string) => {
@@ -70,9 +82,15 @@ function createScenario(reducedMotion: boolean, hasButton = true, language = "en
   const windowState = {
     innerHeight: 800,
     scrollY: 0,
-    addEventListener: (name: string, listener: () => void) => windowListeners.set(name, listener),
+    addEventListener: (name: string, listener: () => void) => {
+      windowListeners.set(name, listener)
+      if (name === "scroll" || name === "resize") activeListeners[name] += 1
+    },
     removeEventListener: (name: string, listener: () => void) => {
-      if (windowListeners.get(name) === listener) windowListeners.delete(name)
+      if (windowListeners.get(name) === listener) {
+        windowListeners.delete(name)
+        if (name === "scroll" || name === "resize") activeListeners[name] -= 1
+      }
     },
     matchMedia: () => ({ matches: reducedMotion }),
     scrollTo: (request: ScrollRequest) => scrollRequests.push(request),
@@ -97,6 +115,7 @@ function createScenario(reducedMotion: boolean, hasButton = true, language = "en
 
   return {
     button,
+    activeListeners,
     scrollRequests,
     navigate: () => documentListeners.get("nav")?.(),
     scrollTo: (position) => {
@@ -200,5 +219,17 @@ describe("back-to-top control", () => {
     // Then
     assert.equal(scenario.button.attached, false)
     assert.deepEqual(scenario.scrollRequests, [])
+  })
+
+  test("keeps one active handler per event after repeated navigation", () => {
+    // Given
+    const scenario = createScenario(false)
+
+    // When
+    scenario.navigate()
+    scenario.navigate()
+
+    // Then
+    assert.deepEqual(scenario.activeListeners, { scroll: 1, resize: 1, click: 1 })
   })
 })
