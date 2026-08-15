@@ -18,6 +18,7 @@ export function parseReadLaterEntry(candidate: unknown): ReadLaterEntry | undefi
     !path.startsWith("/") ||
     path.startsWith("//") ||
     path.includes("\\") ||
+    /[\u0000-\u0020\u007f]/u.test(path) ||
     typeof title !== "string" ||
     typeof savedAt !== "number" ||
     !Number.isSafeInteger(savedAt) ||
