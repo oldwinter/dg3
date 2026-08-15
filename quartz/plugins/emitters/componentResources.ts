@@ -10,6 +10,7 @@ import { backToTopScript } from "../../components/scripts/backToTop"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
+import { readingProgressScript } from "../../components/scripts/readingProgress"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -86,6 +87,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   const cfg = ctx.cfg.configuration
 
   componentResources.afterDOMLoaded.push(backToTopScript)
+  componentResources.afterDOMLoaded.push(readingProgressScript)
 
   // popovers
   if (cfg.enablePopovers) {

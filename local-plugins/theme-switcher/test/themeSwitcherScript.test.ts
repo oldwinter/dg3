@@ -4,6 +4,7 @@ import vm from "node:vm"
 
 import { JSDOM } from "jsdom"
 import { ThemeSwitcher } from "../dist/components/index.js"
+import { THEME_PRESET_IDS } from "../src/themes.ts"
 
 type Listener = (event: Event) => void
 
@@ -36,6 +37,7 @@ class TestEvent extends Event {
 function resetDom(): {
   readonly storage: MemoryLocalStorage
   readonly select: HTMLSelectElement
+  readonly shuffleButton: HTMLButtonElement
   readonly records: EventRecord[]
   readonly makeEvent: (type: string) => Event
 } {
@@ -48,12 +50,13 @@ function resetDom(): {
   const select = dom.window.document.createElement("select")
   select.className = "theme-switcher-select"
   select.dataset["themeSwitcher"] = ""
-  select.innerHTML = `
-    <option value="linear">Linear</option>
-    <option value="raycast">Raycast</option>
-  `
+  select.innerHTML = THEME_PRESET_IDS.map(
+    (preset) => `<option value="${preset}">${preset}</option>`,
+  ).join("")
+  const shuffleButton = dom.window.document.createElement("button")
+  shuffleButton.dataset["themeShuffle"] = ""
 
-  dom.window.document.body.replaceChildren(select)
+  dom.window.document.body.replaceChildren(select, shuffleButton)
   dom.window.document.documentElement.removeAttribute("data-theme-preset")
   dom.window.document.documentElement.setAttribute("saved-theme", "dark")
 
@@ -109,9 +112,14 @@ function resetDom(): {
     configurable: true,
     value: dom.window.HTMLSelectElement,
   })
+  Object.defineProperty(globalThis, "HTMLButtonElement", {
+    configurable: true,
+    value: dom.window.HTMLButtonElement,
+  })
   return {
     storage,
     select,
+    shuffleButton,
     records,
     makeEvent: (type: string) => new dom.window.Event(type, { bubbles: true }),
   }
@@ -181,6 +189,64 @@ test("themeSwitcher script persists raycast changes and leaves darkmode state un
   assert.equal(storage.getItem("theme"), "dark")
 })
 
+test("themeSwitcher script switches to another preset when the random action is clicked", () => {
+  // Given
+  const { storage, select, shuffleButton, records, makeEvent } = resetDom()
+  runThemeSwitcherScript()
+  records.length = 0
+  const originalRandom = Math.random
+  Math.random = () => 0
+
+  try {
+    // When
+    shuffleButton.dispatchEvent(makeEvent("click"))
+  } finally {
+    Math.random = originalRandom
+  }
+
+  // Then
+  const presetEvents = records.filter((record) => record.type === "themepresetchange")
+  assert.equal(document.documentElement.dataset["themePreset"], "raycast")
+  assert.equal(storage.getItem("themePreset"), "raycast")
+  assert.equal(select.value, "raycast")
+  assert.equal(presetEvents.length, 1)
+  assert.deepEqual(presetEvents[0]?.detail, { preset: "raycast" })
+  assert.equal(document.documentElement.getAttribute("saved-theme"), "dark")
+  assert.equal(storage.getItem("theme"), "dark")
+})
+
+test("themeSwitcher script enables the random action after setup", () => {
+  // Given
+  const { shuffleButton } = resetDom()
+  shuffleButton.disabled = true
+
+  // When
+  runThemeSwitcherScript()
+
+  // Then
+  assert.equal(shuffleButton.disabled, false)
+})
+
+test("themeSwitcher script excludes the visibly active preset when storage changed elsewhere", () => {
+  // Given
+  const { storage, shuffleButton, makeEvent } = resetDom()
+  runThemeSwitcherScript()
+  document.documentElement.dataset["themePreset"] = "linear"
+  storage.setItem("themePreset", "raycast")
+  const originalRandom = Math.random
+  Math.random = () => 0
+
+  try {
+    // When
+    shuffleButton.dispatchEvent(makeEvent("click"))
+  } finally {
+    Math.random = originalRandom
+  }
+
+  // Then
+  assert.equal(document.documentElement.dataset["themePreset"], "raycast")
+})
+
 test("themeSwitcher script rebinding on nav and render does not duplicate change listeners", () => {
   // Given
   const { select, records, makeEvent } = resetDom()
@@ -193,6 +259,22 @@ test("themeSwitcher script rebinding on nav and render does not duplicate change
   // When
   select.value = "raycast"
   select.dispatchEvent(makeEvent("change"))
+
+  // Then
+  assert.equal(records.filter((record) => record.type === "themepresetchange").length, 1)
+})
+
+test("themeSwitcher script rebinding on nav and render does not duplicate random listeners", () => {
+  // Given
+  const { shuffleButton, records, makeEvent } = resetDom()
+  runThemeSwitcherScript()
+  document.dispatchEvent(makeEvent("nav"))
+  document.dispatchEvent(makeEvent("render"))
+  document.dispatchEvent(makeEvent("nav"))
+  records.length = 0
+
+  // When
+  shuffleButton.dispatchEvent(makeEvent("click"))
 
   // Then
   assert.equal(records.filter((record) => record.type === "themepresetchange").length, 1)

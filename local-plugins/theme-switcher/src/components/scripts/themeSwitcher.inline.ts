@@ -3,7 +3,9 @@
   const defaultPreset = "__THEME_SWITCHER_DEFAULT__"
   const storageKey = "__THEME_SWITCHER_STORAGE_KEY__"
   const controlSelector = "[data-theme-switcher]"
-  const handlerProperty = "__themeSwitcherChangeHandler"
+  const shuffleSelector = "[data-theme-shuffle]"
+  const changeHandlerProperty = "__themeSwitcherChangeHandler"
+  const shuffleHandlerProperty = "__themeSwitcherShuffleHandler"
   const isValidPreset = (preset) => presets.includes(preset)
   const readPreset = () => {
     const storedPreset = localStorage.getItem(storageKey)
@@ -36,7 +38,7 @@
       if (!(control instanceof HTMLSelectElement)) {
         continue
       }
-      const existing = control[handlerProperty]
+      const existing = control[changeHandlerProperty]
       if (existing) {
         control.removeEventListener("change", existing)
       }
@@ -44,9 +46,29 @@
         const selectedPreset = isValidPreset(control.value) ? control.value : defaultPreset
         applyPreset(selectedPreset, true)
       }
-      control[handlerProperty] = handler
+      control[changeHandlerProperty] = handler
       control.addEventListener("change", handler)
       window.addCleanup?.(() => control.removeEventListener("change", handler))
+    }
+    for (const control of document.querySelectorAll(shuffleSelector)) {
+      if (!(control instanceof HTMLButtonElement)) {
+        continue
+      }
+      const existing = control[shuffleHandlerProperty]
+      if (existing) {
+        control.removeEventListener("click", existing)
+      }
+      const handler = () => {
+        const renderedPreset = document.documentElement.dataset.themePreset
+        const currentPreset = isValidPreset(renderedPreset) ? renderedPreset : readPreset()
+        const alternatives = presets.filter((preset) => preset !== currentPreset)
+        const selectedPreset = alternatives[Math.floor(Math.random() * alternatives.length)]
+        applyPreset(selectedPreset, true)
+      }
+      control[shuffleHandlerProperty] = handler
+      control.addEventListener("click", handler)
+      control.disabled = false
+      window.addCleanup?.(() => control.removeEventListener("click", handler))
     }
   }
   readPreset()

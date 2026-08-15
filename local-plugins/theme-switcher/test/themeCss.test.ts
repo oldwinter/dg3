@@ -105,9 +105,20 @@ test("themeCss component styles cover stable toolbar interaction states", () => 
   assert.match(style, /:hover/)
   assert.match(style, /:focus-visible/)
   assert.match(style, /:disabled/)
+  assert.match(style, /\.theme-switcher-shuffle\s*\{/)
+  assert.match(style, /\.theme-switcher-shuffle:active/)
+  assert.match(
+    style,
+    /\.theme-switcher-shuffle:focus-visible\s*\{[^}]*outline:\s*2px solid var\(--theme-switcher-focus\)/s,
+  )
+  assert.match(
+    style,
+    /\.theme-switcher-shuffle:active:not\(:disabled\)\s*\{[^}]*background-color:/s,
+  )
   assert.match(style, /min-inline-size/)
   assert.match(style, /inline-size:\s*min\(/)
   assert.match(style, /box-sizing:\s*border-box/)
+  assert.match(style, /@media\s*\(prefers-reduced-motion:\s*reduce\)/)
   assert.match(style, /@media\s*\(max-width:\s*600px\)/)
 })
 
@@ -120,10 +131,23 @@ test("themeCss mobile switcher stays compact enough for the Quartz toolbar", () 
     /@media\s*\(max-width:\s*600px\)\s*\{[\s\S]*?\.theme-switcher-select\s*\{(?<rule>[\s\S]*?)\n\s*\}/.exec(
       style,
     )?.groups?.["rule"] ?? ""
+  const mobileSwatchRule =
+    /@media\s*\(max-width:\s*600px\)\s*\{[\s\S]*?\.theme-switcher-swatch\s*\{(?<rule>[\s\S]*?)\n\s*\}/.exec(
+      style,
+    )?.groups?.["rule"] ?? ""
 
   // Then
-  assert.match(mobileSelectRule, /inline-size:\s*min\(6rem,\s*30vw\)/)
+  assert.match(mobileSelectRule, /inline-size:\s*min\(5rem,\s*19vw\)/)
   assert.match(mobileSelectRule, /min-inline-size:\s*var\(--theme-switcher-size\)/)
-  assert.match(mobileSelectRule, /padding-inline-start:\s*1\.25rem/)
-  assert.match(mobileSelectRule, /padding-inline-end:\s*1\.125rem/)
+  assert.match(mobileSelectRule, /padding-inline-start:\s*0\.25rem/)
+  assert.match(mobileSelectRule, /padding-inline-end:\s*0/)
+  assert.match(mobileSelectRule, /font-size:\s*0\.8125rem/)
+  assert.match(mobileSwatchRule, /display:\s*none/)
+  assert.match(
+    style,
+    /@media\s*\(max-width:\s*600px\)[\s\S]*?\.flex-component:has\(\.theme-switcher\)\s*\{[^}]*gap:\s*0\.25rem\s*!important/s,
+  )
+  assert.match(style, /@media\s*\(max-width:\s*340px\)/)
+  assert.match(style, /\.flex-component:has\(\.theme-switcher\)\s*\{[^}]*flex-wrap:\s*wrap/s)
+  assert.match(style, /inline-size:\s*6rem/)
 })
