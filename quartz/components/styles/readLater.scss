@@ -86,6 +86,10 @@
   font-family: var(--codeFont);
   font-size: 0.625rem;
   line-height: 1;
+
+  &[hidden] {
+    display: none;
+  }
 }
 
 .read-later-panel {
