@@ -43,6 +43,18 @@ export default {
       copiedTitle: "Copied",
       copiedLabel: "Section link copied",
     },
+    readLater: {
+      title: "Read later",
+      trigger: "Read later, {count} saved",
+      save: "Save this note",
+      removeCurrent: "Remove this note",
+      removeItem: "Remove {title}",
+      close: "Close read later",
+      empty: "No saved notes yet",
+      saved: "Saved for later",
+      removed: "Removed from read later",
+      failed: "The browser could not save this change",
+    },
     explorer: {
       title: "Explorer",
     },

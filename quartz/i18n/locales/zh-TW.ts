@@ -40,6 +40,18 @@ export default {
       copiedTitle: "已複製",
       copiedLabel: "本節連結已複製",
     },
+    readLater: {
+      title: "稍後讀",
+      trigger: "稍後讀，已儲存 {count} 篇",
+      save: "儲存目前筆記",
+      removeCurrent: "從稍後讀移除",
+      removeItem: "移除《{title}》",
+      close: "關閉稍後讀",
+      empty: "還沒有稍後讀筆記",
+      saved: "已加入稍後讀",
+      removed: "已從稍後讀移除",
+      failed: "瀏覽器未能儲存變更",
+    },
     explorer: {
       title: "探索",
     },

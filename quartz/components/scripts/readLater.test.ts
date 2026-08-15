@@ -1,5 +1,8 @@
 import assert from "node:assert"
 import test, { describe } from "node:test"
+import enUs from "../../i18n/locales/en-US"
+import zhCn from "../../i18n/locales/zh-CN"
+import zhTw from "../../i18n/locales/zh-TW"
 import { readLaterScript } from "./readLater"
 import {
   READ_LATER_LIMIT,
@@ -21,6 +24,13 @@ test("read-later browser script handles navigation and in-place renders", () => 
   assert.match(readLaterScript, /document\.addEventListener\("render", initializeReadLater\)/)
   assert.match(readLaterScript, /window\.addCleanup\(cleanupReadLater\)/)
   assert.match(readLaterScript, /event\.key !== null && event\.key !== READ_LATER_KEY/)
+})
+
+test("read-later labels use the central locale catalog", () => {
+  assert.equal(enUs.components.readLater.trigger, "Read later, {count} saved")
+  assert.equal(zhCn.components.readLater.trigger, "稍后读，已保存 {count} 篇")
+  assert.equal(zhTw.components.readLater.trigger, "稍後讀，已儲存 {count} 篇")
+  assert.match(enUs.components.readLater.removeItem, /\{title\}/)
 })
 
 describe("read-later storage", () => {

@@ -43,6 +43,48 @@ function createBookmarkIcon() {
   return icon
 }
 
+function getReadLaterLabels() {
+  const {
+    readLaterTitle: title,
+    readLaterTrigger: trigger,
+    readLaterSave: save,
+    readLaterRemoveCurrent: removeCurrent,
+    readLaterRemoveItem: removeItem,
+    readLaterClose: close,
+    readLaterEmpty: empty,
+    readLaterSaved: saved,
+    readLaterRemoved: removed,
+    readLaterFailed: failed,
+  } = document.body.dataset
+  if (
+    !title ||
+    !trigger ||
+    !save ||
+    !removeCurrent ||
+    !removeItem ||
+    !close ||
+    !empty ||
+    !saved ||
+    !removed ||
+    !failed
+  ) {
+    return undefined
+  }
+
+  return {
+    title,
+    trigger: (count) => trigger.replace("{count}", () => String(count)),
+    save,
+    removeCurrent,
+    removeItem: (name) => removeItem.replace("{title}", () => name),
+    close,
+    empty,
+    saved,
+    removed,
+    failed,
+  }
+}
+
 let cleanupCurrentReadLater = () => {}
 const cleanupReadLater = () => {
   const cleanup = cleanupCurrentReadLater
@@ -55,34 +97,8 @@ function initializeReadLater() {
   const titleElement = document.querySelector("h1.article-title")
   const anchor = document.querySelector(".content-meta") ?? titleElement
   const title = titleElement?.textContent?.trim()
-  if (anchor === null || !title) return
-
-  const isChinese = document.documentElement.lang.toLowerCase().startsWith("zh")
-  const labels = isChinese
-    ? {
-        title: "稍后读",
-        trigger: (count) => "稍后读，已保存 " + count + " 篇",
-        save: "保存当前笔记",
-        removeCurrent: "从稍后读移除",
-        removeItem: (name) => "移除《" + name + "》",
-        close: "关闭稍后读",
-        empty: "还没有稍后读笔记",
-        saved: "已加入稍后读",
-        removed: "已从稍后读移除",
-        failed: "浏览器未能保存更改",
-      }
-    : {
-        title: "Read later",
-        trigger: (count) => "Read later, " + count + " saved",
-        save: "Save this note",
-        removeCurrent: "Remove this note",
-        removeItem: (name) => "Remove " + name,
-        close: "Close read later",
-        empty: "No saved notes yet",
-        saved: "Saved for later",
-        removed: "Removed from read later",
-        failed: "The browser could not save this change",
-      }
+  const labels = getReadLaterLabels()
+  if (anchor === null || !title || labels === undefined) return
 
   const current = { path: location.pathname, title, savedAt: 0 }
   let entries = readStoredEntries()

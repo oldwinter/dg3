@@ -3,7 +3,8 @@
   z-index: 3;
   display: flex;
   width: fit-content;
-  margin: -0.5rem 0 1rem auto;
+  margin-block: -0.5rem 1rem;
+  margin-inline: auto 0;
   justify-content: flex-end;
 }
 
