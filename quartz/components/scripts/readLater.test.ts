@@ -16,6 +16,12 @@ test("read-later browser script compiles", () => {
   assert.doesNotThrow(compile)
 })
 
+test("read-later browser script handles navigation and in-place renders", () => {
+  assert.match(readLaterScript, /document\.addEventListener\("nav", initializeReadLater\)/)
+  assert.match(readLaterScript, /document\.addEventListener\("render", initializeReadLater\)/)
+  assert.match(readLaterScript, /window\.addCleanup\(cleanupReadLater\)/)
+})
+
 describe("read-later storage", () => {
   test("keeps only safe, unique entries with the newest save first", () => {
     // Given

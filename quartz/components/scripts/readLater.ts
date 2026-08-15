@@ -43,8 +43,12 @@ function createBookmarkIcon() {
   return icon
 }
 
-document.addEventListener("nav", () => {
-  document.querySelector("[data-read-later-root]")?.remove()
+let cleanupCurrentReadLater = () => {}
+const cleanupReadLater = () => cleanupCurrentReadLater()
+
+function initializeReadLater() {
+  cleanupCurrentReadLater()
+  cleanupCurrentReadLater = () => {}
   const titleElement = document.querySelector("h1.article-title")
   const anchor = document.querySelector(".content-meta") ?? titleElement
   const title = titleElement?.textContent?.trim()
@@ -207,12 +211,16 @@ document.addEventListener("nav", () => {
   document.addEventListener("pointerdown", dismissOutside)
   document.addEventListener("keydown", dismissWithKeyboard)
   window.addEventListener("storage", syncStoredEntries)
-  window.addCleanup(() => {
+  cleanupCurrentReadLater = () => {
     document.removeEventListener("pointerdown", dismissOutside)
     document.removeEventListener("keydown", dismissWithKeyboard)
     window.removeEventListener("storage", syncStoredEntries)
     root.remove()
-  })
+  }
+  window.addCleanup(cleanupReadLater)
   render()
-})
+}
+
+document.addEventListener("nav", initializeReadLater)
+document.addEventListener("render", initializeReadLater)
 `
