@@ -38,6 +38,9 @@ export interface Translation {
     readingProgress?: {
       title: string
     }
+    backToTop?: {
+      title: string
+    }
     explorer: {
       title: string
     }

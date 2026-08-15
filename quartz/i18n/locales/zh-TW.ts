@@ -32,6 +32,9 @@ export default {
     readerMode: {
       title: "閱讀模式",
     },
+    backToTop: {
+      title: "返回頂部",
+    },
     explorer: {
       title: "探索",
     },

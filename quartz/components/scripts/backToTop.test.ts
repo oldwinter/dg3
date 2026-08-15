@@ -190,16 +190,15 @@ describe("back-to-top control", () => {
     assert.deepEqual(scenario.scrollRequests, [{ top: 0, behavior: "auto" }])
   })
 
-  test("creates a localized accessible control when the page has none", () => {
+  test("does nothing when the layout omits the control", () => {
     // Given
-    const scenario = createScenario(false, false, "zh")
+    const scenario = createScenario(false, false)
 
     // When
     scenario.navigate()
 
     // Then
-    assert.equal(scenario.button.attached, true)
-    assert.equal(scenario.button.label, "返回顶部")
-    assert.equal(scenario.button.title, "返回顶部")
+    assert.equal(scenario.button.attached, false)
+    assert.deepEqual(scenario.scrollRequests, [])
   })
 })
