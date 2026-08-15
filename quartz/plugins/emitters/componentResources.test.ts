@@ -18,12 +18,17 @@ describe("componentResources", () => {
       const backToTopIndex = contents.indexOf(
         "componentResources.afterDOMLoaded.push(backToTopScript)",
       )
+      const headingPermalinksIndex = contents.indexOf(
+        "componentResources.afterDOMLoaded.push(headingPermalinksScript)",
+      )
       const spaBranchIndex = contents.indexOf("if (cfg.enableSPA)")
 
       assert.notEqual(progressIndex, -1)
       assert.notEqual(backToTopIndex, -1)
+      assert.notEqual(headingPermalinksIndex, -1)
       assert.ok(progressIndex < spaBranchIndex)
       assert.ok(backToTopIndex < spaBranchIndex)
+      assert.ok(headingPermalinksIndex < spaBranchIndex)
     })
   })
 })

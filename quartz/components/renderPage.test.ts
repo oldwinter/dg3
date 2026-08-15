@@ -1,6 +1,6 @@
 import test, { describe } from "node:test"
 import assert from "node:assert"
-import { renderTranscludes, pageResources } from "./renderPage"
+import { pageResources, renderTranscludes, resolvePageLocale } from "./renderPage"
 import { Root, Element } from "hast"
 import { FullSlug } from "../util/path"
 import { GlobalConfiguration } from "../cfg"
@@ -40,6 +40,26 @@ function makePageData(slug: string, htmlAst: Root, extra?: Record<string, unknow
 }
 
 const cfg = { locale: "en-US" } as GlobalConfiguration
+
+describe("resolvePageLocale", () => {
+  test("keeps an exact locale", () => {
+    assert.equal(resolvePageLocale("zh-TW", "zh-CN"), "zh-TW")
+  })
+
+  test("prefers the configured locale for its bare language", () => {
+    assert.equal(resolvePageLocale("zh", "zh-TW"), "zh-TW")
+  })
+
+  test("resolves a different bare language deterministically", () => {
+    assert.equal(resolvePageLocale("en", "zh-CN"), "en-US")
+  })
+
+  test("rejects inherited and non-string locale keys", () => {
+    assert.equal(resolvePageLocale("__proto__", "zh-CN"), "zh-CN")
+    assert.equal(resolvePageLocale("constructor", "zh-CN"), "zh-CN")
+    assert.equal(resolvePageLocale({}, "zh-CN"), "zh-CN")
+  })
+})
 
 function makeComponentData(
   allFiles: QuartzComponentProps["allFiles"],

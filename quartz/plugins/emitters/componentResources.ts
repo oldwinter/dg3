@@ -6,6 +6,7 @@ import { QuartzEmitterPlugin } from "../types"
 import spaRouterScript from "../../components/scripts/spa.inline"
 // @ts-ignore
 import popoverScript from "../../components/scripts/popover.inline"
+import headingPermalinksScript from "../../components/scripts/headingPermalinks.inline"
 import { backToTopScript } from "../../components/scripts/backToTop"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
@@ -86,6 +87,7 @@ async function joinScripts(scripts: string[]): Promise<string> {
 function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentResources) {
   const cfg = ctx.cfg.configuration
 
+  componentResources.afterDOMLoaded.push(headingPermalinksScript)
   componentResources.afterDOMLoaded.push(backToTopScript)
   componentResources.afterDOMLoaded.push(readingProgressScript)
 
