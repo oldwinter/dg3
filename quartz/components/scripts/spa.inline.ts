@@ -1,6 +1,7 @@
 import micromorph from "micromorph"
 import { FullSlug, RelativeURL, getFullSlug, normalizeRelativeURLs } from "../../util/path"
 import { fetchCanonical } from "./util"
+import { syncDocumentRoot } from "./spaRoot"
 
 // adapted from `micromorph`
 // https://github.com/natemoo-re/micromorph
@@ -110,6 +111,7 @@ async function _navigate(url: URL, isBack: boolean = false) {
   // morph body
   document.querySelector(".navigation-progress")?.remove()
   await micromorph(document.body, html.body)
+  syncDocumentRoot(document.documentElement, html.documentElement)
 
   // scroll into place and add history
   if (!isBack) {
