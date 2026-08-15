@@ -2,12 +2,12 @@ import { headingPermalink, headingPermalinkLabels } from "./headingPermalink"
 
 function registerHeadingPermalinks() {
   const anchors = document.querySelectorAll<HTMLAnchorElement>(
-    'article :is(h1, h2, h3, h4, h5, h6):not(.sr-only)[id] > a[href^="#"]',
+    'article :is(h1, h2, h3, h4, h5, h6):not(.sr-only)[id] > a[role="anchor"][href^="#"]',
   )
   const resetTimers = new Map<HTMLAnchorElement, number>()
-  const { defaultLabel, copiedTitle, copiedLabel } = headingPermalinkLabels(
-    document.documentElement.lang,
-  )
+  const labels = headingPermalinkLabels(document.body.dataset)
+  if (!labels) return
+  const { defaultLabel, copiedTitle, copiedLabel } = labels
 
   for (const anchor of anchors) {
     anchor.title = defaultLabel

@@ -41,6 +41,11 @@ export interface Translation {
     backToTop?: {
       title: string
     }
+    headingPermalink?: {
+      title: string
+      copiedTitle: string
+      copiedLabel: string
+    }
     explorer: {
       title: string
     }

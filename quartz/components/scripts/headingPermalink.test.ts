@@ -3,12 +3,16 @@ import test, { describe } from "node:test"
 import { headingPermalink, headingPermalinkLabels } from "./headingPermalink"
 
 describe("headingPermalink", () => {
-  test("provides English labels for the default Quartz locale", () => {
+  test("reads labels rendered by Quartz i18n", () => {
     // Given
-    const language = "en-US"
+    const dataset = {
+      headingPermalinkLabel: "Copy link to this section",
+      headingPermalinkCopiedTitle: "Copied",
+      headingPermalinkCopiedLabel: "Section link copied",
+    } as DOMStringMap
 
     // When
-    const labels = headingPermalinkLabels(language)
+    const labels = headingPermalinkLabels(dataset)
 
     // Then
     assert.deepEqual(labels, {
@@ -18,19 +22,17 @@ describe("headingPermalink", () => {
     })
   })
 
-  test("provides Chinese labels for the garden locale", () => {
+  test("does not bind when rendered labels are incomplete", () => {
     // Given
-    const language = "zh-CN"
+    const dataset = {
+      headingPermalinkLabel: "Copy link to this section",
+    } as DOMStringMap
 
     // When
-    const labels = headingPermalinkLabels(language)
+    const labels = headingPermalinkLabels(dataset)
 
     // Then
-    assert.deepEqual(labels, {
-      defaultLabel: "复制本节链接",
-      copiedTitle: "已复制",
-      copiedLabel: "本节链接已复制",
-    })
+    assert.strictEqual(labels, undefined)
   })
 
   test("replaces the current fragment while preserving the page query", () => {

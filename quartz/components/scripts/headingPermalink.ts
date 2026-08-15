@@ -4,20 +4,13 @@ export type HeadingPermalinkLabels = Readonly<{
   copiedLabel: string
 }>
 
-export function headingPermalinkLabels(language: string): HeadingPermalinkLabels {
-  if (language.toLowerCase().startsWith("zh")) {
-    return {
-      defaultLabel: "复制本节链接",
-      copiedTitle: "已复制",
-      copiedLabel: "本节链接已复制",
-    }
-  }
+export function headingPermalinkLabels(dataset: DOMStringMap): HeadingPermalinkLabels | undefined {
+  const defaultLabel = dataset.headingPermalinkLabel
+  const copiedTitle = dataset.headingPermalinkCopiedTitle
+  const copiedLabel = dataset.headingPermalinkCopiedLabel
+  if (!defaultLabel || !copiedTitle || !copiedLabel) return
 
-  return {
-    defaultLabel: "Copy link to this section",
-    copiedTitle: "Copied",
-    copiedLabel: "Section link copied",
-  }
+  return { defaultLabel, copiedTitle, copiedLabel }
 }
 
 export function headingPermalink(pageUrl: URL, fragment: string): URL {

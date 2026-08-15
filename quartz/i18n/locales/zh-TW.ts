@@ -35,6 +35,11 @@ export default {
     backToTop: {
       title: "返回頂部",
     },
+    headingPermalink: {
+      title: "複製本節連結",
+      copiedTitle: "已複製",
+      copiedLabel: "本節連結已複製",
+    },
     explorer: {
       title: "探索",
     },
