@@ -134,6 +134,10 @@ a {
   display: flex;
 }
 
+.sidebar.left .flex-component:has(.theme-switcher) {
+  flex-wrap: wrap !important;
+}
+
 .desktop-only {
   display: contents;
   &.flex-component {
