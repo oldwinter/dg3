@@ -44,11 +44,14 @@ function createBookmarkIcon() {
 }
 
 let cleanupCurrentReadLater = () => {}
-const cleanupReadLater = () => cleanupCurrentReadLater()
+const cleanupReadLater = () => {
+  const cleanup = cleanupCurrentReadLater
+  cleanupCurrentReadLater = () => {}
+  cleanup()
+}
 
 function initializeReadLater() {
-  cleanupCurrentReadLater()
-  cleanupCurrentReadLater = () => {}
+  cleanupReadLater()
   const titleElement = document.querySelector("h1.article-title")
   const anchor = document.querySelector(".content-meta") ?? titleElement
   const title = titleElement?.textContent?.trim()
