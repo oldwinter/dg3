@@ -35,6 +35,9 @@ export default {
     readingProgress: {
       title: "阅读进度",
     },
+    backToTop: {
+      title: "返回顶部",
+    },
     explorer: {
       title: "探索",
     },

@@ -1,10 +1,13 @@
-import { defaultTranslation, i18n } from "../i18n"
+import { defaultTranslation, i18n, TRANSLATIONS } from "../i18n"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 const Body: QuartzComponent = ({ cfg, children }: QuartzComponentProps) => {
+  const translation = i18n(cfg.locale)
+  const fallback = TRANSLATIONS[defaultTranslation]
   const readingProgressTitle =
-    i18n(cfg.locale).components.readingProgress?.title ??
-    i18n(defaultTranslation).components.readingProgress!.title
+    translation.components.readingProgress?.title ?? fallback.components.readingProgress.title
+  const backToTopTitle =
+    translation.components.backToTop?.title ?? fallback.components.backToTop.title
 
   return (
     <>
@@ -16,6 +19,17 @@ const Body: QuartzComponent = ({ cfg, children }: QuartzComponentProps) => {
         hidden
       />
       <div id="quartz-body">{children}</div>
+      <button
+        class="back-to-top"
+        type="button"
+        disabled
+        title={backToTopTitle}
+        aria-label={backToTopTitle}
+        aria-hidden="true"
+        data-back-to-top=""
+      >
+        <span aria-hidden="true">↑</span>
+      </button>
     </>
   )
 }

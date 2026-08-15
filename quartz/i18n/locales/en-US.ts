@@ -35,6 +35,9 @@ export default {
     readingProgress: {
       title: "Reading progress",
     },
+    backToTop: {
+      title: "Back to top",
+    },
     explorer: {
       title: "Explorer",
     },

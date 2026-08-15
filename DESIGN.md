@@ -154,6 +154,14 @@ Layout rules:
 - **States**: hover, click, and persisted localStorage state.
 - **Accessibility**: icon titles and aria labels come from i18n strings.
 
+### BackToTop
+
+- **Structure**: A fixed 40px circular icon button created once per page, outside the reading grid.
+- **Placement**: Bottom inline-end with 16px spacing and safe-area inset support; hidden from print.
+- **States**: Disabled and visually absent near the top; visible after 75% of one viewport; hover, active, and focus-visible feedback use existing Quartz tokens.
+- **Accessibility**: The arrow is decorative; the button name and tooltip follow the page language. Hidden state is removed from keyboard and accessibility navigation.
+- **Motion**: Visibility uses the existing 150ms micro transition. Press feedback scales to 93%, following the beui button mechanism; reduced-motion mode removes spatial and smooth-scroll motion.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.

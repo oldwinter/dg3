@@ -6,18 +6,58 @@ import { QuartzComponentProps } from "./types"
 import Body from "./Body"
 
 describe("Body", () => {
-  test("localizes the reading progress label", () => {
-    // Given
+  const renderBody = (locale: "en-US" | "fr-FR" | "zh-CN" | "zh-TW") => {
     const Component = Body()
     const props = {
-      cfg: { locale: "en-US" },
+      cfg: { locale },
       children: [],
     } as unknown as QuartzComponentProps
 
+    return render(h(Component, props))
+  }
+
+  test("localizes the reader controls in English", () => {
+    // Given
+    const locale = "en-US"
+
     // When
-    const html = render(h(Component, props))
+    const html = renderBody(locale)
 
     // Then
     assert.match(html, /aria-label="Reading progress"/)
+    assert.match(html, /aria-label="Back to top"/)
+  })
+
+  test("localizes the back-to-top label in Simplified Chinese", () => {
+    // Given
+    const locale = "zh-CN"
+
+    // When
+    const html = renderBody(locale)
+
+    // Then
+    assert.match(html, /aria-label="返回顶部"/)
+  })
+
+  test("localizes the back-to-top label in Traditional Chinese", () => {
+    // Given
+    const locale = "zh-TW"
+
+    // When
+    const html = renderBody(locale)
+
+    // Then
+    assert.match(html, /aria-label="返回頂部"/)
+  })
+
+  test("falls back to English when a locale has no back-to-top label", () => {
+    // Given
+    const locale = "fr-FR"
+
+    // When
+    const html = renderBody(locale)
+
+    // Then
+    assert.match(html, /aria-label="Back to top"/)
   })
 })

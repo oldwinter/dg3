@@ -682,6 +682,76 @@ iframe.pdf {
   z-index: 9999;
 }
 
+.back-to-top {
+  appearance: none;
+  position: fixed;
+  z-index: 2;
+  inset-block-end: max(1rem, env(safe-area-inset-bottom));
+  inset-inline-end: max(1rem, env(safe-area-inset-right));
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  background-color: var(--light);
+  color: var(--dark);
+  font: inherit;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.5rem);
+  touch-action: manipulation;
+  user-select: none;
+  transition:
+    opacity 0.15s ease-out,
+    transform 0.15s ease-out,
+    color 0.15s ease-out,
+    background-color 0.15s ease-out;
+
+  &[data-visible] {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: var(--lightgray);
+      color: var(--secondary);
+    }
+  }
+
+  &[data-visible]:active {
+    transform: scale(0.93);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .back-to-top {
+    transform: none;
+    transition: none;
+  }
+}
+
+@media print {
+  .back-to-top {
+    display: none;
+  }
+}
+
 .reading-progress {
   appearance: none;
   position: fixed;
