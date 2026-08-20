@@ -1,0 +1,121 @@
+.reader-actions {
+  gap: 0.5rem;
+}
+
+.note-share-only {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  width: fit-content;
+  margin-block: -0.5rem 1rem;
+  margin-inline: auto 0;
+  justify-content: flex-end;
+}
+
+.note-share-trigger {
+  appearance: none;
+  position: relative;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--gray) 54%, transparent);
+  border-radius: 6px;
+  background-color: var(--light);
+  color: var(--dark);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    background-color 0.15s ease-out,
+    color 0.15s ease-out,
+    transform 0.15s ease-out;
+
+  &:hover {
+    border-color: var(--secondary);
+    background-color: var(--lightgray);
+    color: var(--secondary);
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: wait;
+    opacity: 0.65;
+  }
+}
+
+.note-share-icon {
+  grid-area: 1 / 1;
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  transition:
+    filter 0.15s ease-out,
+    opacity 0.15s ease-out,
+    transform 0.15s ease-out;
+}
+
+.note-share-icon-success {
+  opacity: 0;
+  filter: blur(3px);
+  transform: scale(0.75);
+}
+
+.note-share-trigger[data-state="success"] {
+  color: var(--secondary);
+
+  .note-share-icon-default {
+    opacity: 0;
+    filter: blur(3px);
+    transform: scale(0.75);
+  }
+
+  .note-share-icon-success {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+.note-share-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .note-share-trigger,
+  .note-share-icon {
+    transition: none;
+  }
+
+  .note-share-trigger:active,
+  .note-share-icon {
+    transform: none;
+    filter: none;
+  }
+}
+
+@media print {
+  .note-share-trigger,
+  .note-share-only {
+    display: none;
+  }
+}

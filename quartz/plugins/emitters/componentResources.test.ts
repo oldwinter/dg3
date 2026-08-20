@@ -125,4 +125,22 @@ describe("componentResources", () => {
       assert.ok(randomWanderStyleIndex < spaBranchIndex)
     })
   })
+
+  test("includes note sharing when SPA navigation is disabled", () => {
+    const emitterPath = new URL("./componentResources.ts", import.meta.url)
+    const source = readFile(emitterPath, "utf8")
+
+    return source.then((contents) => {
+      const noteShareIndex = contents.indexOf(
+        "componentResources.afterDOMLoaded.push(noteShareScript)",
+      )
+      const noteShareStyleIndex = contents.indexOf("componentResources.css.push(noteShareStyle)")
+      const spaBranchIndex = contents.indexOf("if (cfg.enableSPA)")
+
+      assert.notEqual(noteShareIndex, -1)
+      assert.notEqual(noteShareStyleIndex, -1)
+      assert.ok(noteShareIndex < spaBranchIndex)
+      assert.ok(noteShareStyleIndex < spaBranchIndex)
+    })
+  })
 })

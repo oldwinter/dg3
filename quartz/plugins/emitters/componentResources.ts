@@ -22,6 +22,8 @@ import { mobileOutlineScript } from "../../components/scripts/mobileOutline"
 import mobileOutlineStyle from "../../components/styles/mobileOutline.scss"
 import { randomWanderScript } from "../../components/scripts/randomWander"
 import randomWanderStyle from "../../components/styles/randomWander.scss"
+import { noteShareScript } from "../../components/scripts/noteShare"
+import noteShareStyle from "../../components/styles/noteShare.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -110,6 +112,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.css.push(mobileOutlineStyle)
   componentResources.afterDOMLoaded.push(randomWanderScript)
   componentResources.css.push(randomWanderStyle)
+  componentResources.afterDOMLoaded.push(noteShareScript)
+  componentResources.css.push(noteShareStyle)
 
   // popovers
   if (cfg.enablePopovers) {

@@ -77,6 +77,12 @@ export interface Translation {
     randomWander?: {
       title: string
     }
+    noteShare?: {
+      title: string
+      shared: string
+      copied: string
+      failed: string
+    }
     explorer: {
       title: string
     }

@@ -204,6 +204,12 @@ Layout rules:
 - **States**: Hidden until the content index resolves; default, hover, pressed, and focus-visible once a destination is available. Reinitialize idempotently after SPA navigation and in-place renders.
 - **Accessibility**: Use a native internal link so open-in-new-tab and browser navigation remain available. The icon is decorative; the tooltip and accessible name follow the page language.
 - **Motion**: Reuse the existing 150ms color and press feedback. Reduced-motion mode removes the press transform.
+### NoteShare
+
+- **Structure**: One 40px share action beside `ReadLater`; it uses the browser's native share sheet when available and copies the current note URL otherwise. If `ReadLater` is unavailable, the action keeps the same inline-end placement in its own compact action group.
+- **States**: Default, native share pending, shared, copied, cancelled, clipboard failure, hover, pressed, focus-visible, and disabled. Successful actions swap the share icon to a check for 1.8 seconds; cancellation returns silently to default.
+- **Accessibility**: The button and polite live region use page-localized names and outcomes. The icon is decorative, the control remains keyboard-operable, and whole-note links omit heading fragments so section sharing stays owned by heading permalinks.
+- **Motion**: The beui `action-swap` blur/scale mechanism is adapted to the existing 150ms micro token, using a 3px blur and 75% scale only during the icon crossfade. Reduced-motion mode removes blur, scale, and press transforms while preserving the state change.
 
 ## 6. Motion & Interaction
 
