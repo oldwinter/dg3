@@ -68,6 +68,9 @@ export default {
       open: "開啟本頁大綱",
       close: "關閉本頁大綱",
     },
+    randomWander: {
+      title: "隨機漫遊到另一篇筆記",
+    },
     explorer: {
       title: "探索",
     },

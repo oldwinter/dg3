@@ -197,6 +197,14 @@ Layout rules:
 - **Accessibility**: Localize the dialog title and open/close names; use native `dialog` modal behavior for focus containment and Escape; report expanded state on the trigger; mark the current section with `aria-current="location"`; keep every target as a native hash link.
 - **Motion**: Opening and closing are immediate. Existing 150ms color and press transitions apply to controls and links; reduced-motion mode removes the press transform.
 
+### RandomWander
+
+- **Structure**: One 40px internal-link control with a shuffle icon. It joins the `ReadLater` action row when available and falls back to its own inline-end row without changing page layout.
+- **Destination**: Reuse the page's existing static content index. Choose uniformly from nonempty notes while excluding the current page, home, and 404; do not add storage, analytics, content writes, dependencies, or network requests beyond the index Quartz already loads.
+- **States**: Hidden until the content index resolves; default, hover, pressed, and focus-visible once a destination is available. Reinitialize idempotently after SPA navigation and in-place renders.
+- **Accessibility**: Use a native internal link so open-in-new-tab and browser navigation remain available. The icon is decorative; the tooltip and accessible name follow the page language.
+- **Motion**: Reuse the existing 150ms color and press feedback. Reduced-motion mode removes the press transform.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.

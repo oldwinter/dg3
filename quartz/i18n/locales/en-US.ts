@@ -71,6 +71,9 @@ export default {
       open: "Open page outline",
       close: "Close page outline",
     },
+    randomWander: {
+      title: "Wander to another note",
+    },
     explorer: {
       title: "Explorer",
     },

@@ -101,4 +101,28 @@ describe("componentResources", () => {
       assert.ok(styleIndex < spaBranchIndex)
     })
   })
+
+  test("includes random wander when SPA navigation is disabled", () => {
+    // Given
+    const emitterPath = new URL("./componentResources.ts", import.meta.url)
+
+    // When
+    const source = readFile(emitterPath, "utf8")
+
+    // Then
+    return source.then((contents) => {
+      const randomWanderIndex = contents.indexOf(
+        "componentResources.afterDOMLoaded.push(randomWanderScript)",
+      )
+      const randomWanderStyleIndex = contents.indexOf(
+        "componentResources.css.push(randomWanderStyle)",
+      )
+      const spaBranchIndex = contents.indexOf("if (cfg.enableSPA)")
+
+      assert.notEqual(randomWanderIndex, -1)
+      assert.notEqual(randomWanderStyleIndex, -1)
+      assert.ok(randomWanderIndex < spaBranchIndex)
+      assert.ok(randomWanderStyleIndex < spaBranchIndex)
+    })
+  })
 })

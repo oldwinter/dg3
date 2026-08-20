@@ -74,6 +74,9 @@ export interface Translation {
       open: string
       close: string
     }
+    randomWander?: {
+      title: string
+    }
     explorer: {
       title: string
     }
