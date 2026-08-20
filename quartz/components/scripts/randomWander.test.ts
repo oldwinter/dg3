@@ -35,12 +35,28 @@ describe("random wander selection", () => {
     // When / Then
     assert.equal(pickRandomWanderSlug(currentOnly, "current", 0.5), undefined)
   })
+
+  test("rejects slugs that can escape the site origin or base path", () => {
+    // Given
+    const unsafeIndex = {
+      "\\evil.test": { content: "Cross-origin backslash" },
+      "/evil.test": { content: "Protocol-relative path" },
+      "folder/../outside": { content: "Escaped base path" },
+      safe: { content: "Safe destination" },
+    }
+
+    // When / Then
+    assert.equal(pickRandomWanderSlug(unsafeIndex, "current", 0), "safe")
+  })
 })
 
 test("random wander builds root and subpath links", () => {
   // Given / When / Then
   assert.equal(randomWanderHref("", "Cards/Delight"), "/Cards/Delight")
   assert.equal(randomWanderHref("/garden", "Cards/Delight"), "/garden/Cards/Delight")
+  assert.equal(randomWanderHref("", "\\evil.test"), undefined)
+  assert.equal(randomWanderHref("", "/evil.test"), undefined)
+  assert.equal(randomWanderHref("/garden", "folder/../outside"), undefined)
 })
 
 test("random wander browser script compiles and follows the Quartz lifecycle", () => {

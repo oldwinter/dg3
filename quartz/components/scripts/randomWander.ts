@@ -1,5 +1,10 @@
 type WanderIndex = Readonly<Record<string, Readonly<{ content: string }>>>
 
+export function isSafeRandomWanderSlug(slug: string): boolean {
+  if (slug.length === 0 || slug.startsWith("/") || slug.includes("\\")) return false
+  return slug.split("/").every((segment) => segment !== "." && segment !== "..")
+}
+
 export function pickRandomWanderSlug(
   index: WanderIndex,
   currentSlug: string,
@@ -11,6 +16,7 @@ export function pickRandomWanderSlug(
         slug !== "404" &&
         slug !== "index" &&
         slug !== currentSlug &&
+        isSafeRandomWanderSlug(slug) &&
         item.content.trim().length > 0,
     )
     .map(([slug]) => slug)
@@ -18,11 +24,13 @@ export function pickRandomWanderSlug(
   return eligibleSlugs[Math.floor(random * eligibleSlugs.length)]
 }
 
-export function randomWanderHref(basePath: string, slug: string): string {
+export function randomWanderHref(basePath: string, slug: string): string | undefined {
+  if (!isSafeRandomWanderSlug(slug)) return undefined
   return `${basePath}/${slug}`
 }
 
 export const randomWanderScript = `
+const isSafeRandomWanderSlug = ${isSafeRandomWanderSlug.toString()}
 const pickRandomWanderSlug = ${pickRandomWanderSlug.toString()}
 const randomWanderHref = ${randomWanderHref.toString()}
 
@@ -79,10 +87,12 @@ function initializeRandomWander() {
       if (!active) return
       const slug = pickRandomWanderSlug(index, currentSlug, Math.random())
       if (slug === undefined) return
+      const href = randomWanderHref(document.body.dataset.basepath ?? "", slug)
+      if (href === undefined) return
 
       const link = document.createElement("a")
       link.className = "random-wander-link internal"
-      link.href = randomWanderHref(document.body.dataset.basepath ?? "", slug)
+      link.href = href
       link.title = label
       link.setAttribute("aria-label", label)
       link.dataset.noPopover = ""
