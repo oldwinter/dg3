@@ -42,6 +42,11 @@ describe("random wander selection", () => {
       "\\evil.test": { content: "Cross-origin backslash" },
       "/evil.test": { content: "Protocol-relative path" },
       "folder/../outside": { content: "Escaped base path" },
+      "%2e%2e/%2e%2e/evil": { content: "Encoded traversal" },
+      "%2E./evil": { content: "Mixed encoded traversal" },
+      ".%2e/evil": { content: "Mixed literal traversal" },
+      "folder/%2foutside": { content: "Encoded slash" },
+      "folder/%5Coutside": { content: "Encoded backslash" },
       safe: { content: "Safe destination" },
     }
 
@@ -57,6 +62,12 @@ test("random wander builds root and subpath links", () => {
   assert.equal(randomWanderHref("", "\\evil.test"), undefined)
   assert.equal(randomWanderHref("", "/evil.test"), undefined)
   assert.equal(randomWanderHref("/garden", "folder/../outside"), undefined)
+  assert.equal(randomWanderHref("/garden", "%2e%2e/%2e%2e/evil"), undefined)
+  assert.equal(randomWanderHref("/garden", "%2E./evil"), undefined)
+  assert.equal(randomWanderHref("/garden", ".%2e/evil"), undefined)
+  assert.equal(randomWanderHref("/garden", "folder/%2foutside"), undefined)
+  assert.equal(randomWanderHref("/garden", "folder/%5Coutside"), undefined)
+  assert.equal(randomWanderHref("/garden", "80%时间输入"), "/garden/80%时间输入")
 })
 
 test("random wander browser script compiles and follows the Quartz lifecycle", () => {

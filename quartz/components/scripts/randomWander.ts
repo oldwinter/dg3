@@ -2,7 +2,19 @@ type WanderIndex = Readonly<Record<string, Readonly<{ content: string }>>>
 
 export function isSafeRandomWanderSlug(slug: string): boolean {
   if (slug.length === 0 || slug.startsWith("/") || slug.includes("\\")) return false
-  return slug.split("/").every((segment) => segment !== "." && segment !== "..")
+  return slug.split("/").every((segment) => {
+    const decodedSeparators = segment
+      .replace(/%2e/gi, ".")
+      .replace(/%2f/gi, "/")
+      .replace(/%5c/gi, "\\")
+
+    return (
+      decodedSeparators !== "." &&
+      decodedSeparators !== ".." &&
+      !decodedSeparators.includes("/") &&
+      !decodedSeparators.includes("\\")
+    )
+  })
 }
 
 export function pickRandomWanderSlug(
