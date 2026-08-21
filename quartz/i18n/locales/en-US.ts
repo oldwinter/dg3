@@ -43,6 +43,12 @@ export default {
       copiedTitle: "Copied",
       copiedLabel: "Section link copied",
     },
+    quoteLink: {
+      title: "Copy quote link",
+      copied: "Quote link copied",
+      failed: "The browser could not copy this quote",
+      open: "Open this passage",
+    },
     readLater: {
       title: "Read later",
       trigger: ({ count }) => `Read later, ${count} saved`,

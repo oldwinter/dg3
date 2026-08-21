@@ -21,14 +21,22 @@ describe("componentResources", () => {
       const headingPermalinksIndex = contents.indexOf(
         "componentResources.afterDOMLoaded.push(headingPermalinksScript)",
       )
+      const quoteLinkIndex = contents.indexOf(
+        "componentResources.afterDOMLoaded.push(quoteLinkScript)",
+      )
+      const quoteLinkStyleIndex = contents.indexOf("componentResources.css.push(quoteLinkStyle)")
       const spaBranchIndex = contents.indexOf("if (cfg.enableSPA)")
 
       assert.notEqual(progressIndex, -1)
       assert.notEqual(backToTopIndex, -1)
       assert.notEqual(headingPermalinksIndex, -1)
+      assert.notEqual(quoteLinkIndex, -1)
+      assert.notEqual(quoteLinkStyleIndex, -1)
       assert.ok(progressIndex < spaBranchIndex)
       assert.ok(backToTopIndex < spaBranchIndex)
       assert.ok(headingPermalinksIndex < spaBranchIndex)
+      assert.ok(quoteLinkIndex < spaBranchIndex)
+      assert.ok(quoteLinkStyleIndex < spaBranchIndex)
     })
   })
 

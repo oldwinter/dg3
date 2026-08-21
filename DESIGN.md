@@ -179,6 +179,15 @@ Layout rules:
 - **Accessibility**: The prompt is a named complementary region, both controls use localized accessible names, focus remains explicit when the prompt is removed, and the continue action focuses the article before scrolling.
 - **Motion**: Resume uses smooth scrolling only when motion is allowed. Hover, focus, and press feedback follow the existing 150ms reader-control contract; reduced-motion mode removes transitions and spatial press feedback.
 
+### QuoteLink
+
+- **Structure**: One 40px floating quote action appears only for a 3-280 character plain-text selection inside the current article. It copies a Markdown blockquote followed by a browser Text Fragment link to the selected passage.
+- **Placement**: Anchor 8px above the final selection line, fall below near the viewport top, and clamp within an 8px viewport inset. Hide when the selection collapses, leaves the viewport, enters code or authored controls, or the article is unavailable.
+- **States**: Hidden, ready, copying, copied, failed, hover, pressed, and focus-visible. Copied swaps the quote glyph for a check for 1.8 seconds; failure remains available for retry.
+- **Accessibility**: The icon is decorative; localized title and accessible names describe the action and result. A polite live region announces copy outcomes, Escape dismisses the action, and keyboard-created selections receive the same control.
+- **Privacy**: The action uses only the current selection and URL. It does not write content or storage, send requests, or persist selection text.
+- **Motion**: Existing 150ms micro transitions cover color and press feedback. Reduced-motion mode removes scale feedback, and print hides the action.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.

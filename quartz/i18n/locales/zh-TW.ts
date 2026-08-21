@@ -40,6 +40,12 @@ export default {
       copiedTitle: "已複製",
       copiedLabel: "本節連結已複製",
     },
+    quoteLink: {
+      title: "複製引用連結",
+      copied: "引用連結已複製",
+      failed: "瀏覽器未能複製這段引用",
+      open: "開啟這段原文",
+    },
     readLater: {
       title: "稍後讀",
       trigger: ({ count }) => `稍後讀，已儲存 ${count} 篇`,

@@ -1,0 +1,121 @@
+.quote-link {
+  position: fixed;
+  z-index: 10;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  place-items: center;
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--gray) 54%, transparent);
+  border-radius: 6px;
+  background-color: var(--light);
+  box-shadow: 0 0.25rem 0.75rem color-mix(in srgb, var(--dark) 14%, transparent);
+  color: var(--dark);
+  cursor: pointer;
+  touch-action: manipulation;
+  transform: translate(-50%, -100%);
+  transition:
+    background-color 0.15s ease-out,
+    border-color 0.15s ease-out,
+    color 0.15s ease-out,
+    transform 0.15s ease-out;
+
+  &[data-placement="below"] {
+    transform: translate(-50%, 0);
+  }
+
+  &[hidden] {
+    display: none;
+  }
+
+  &:hover {
+    border-color: var(--secondary);
+    background-color: var(--lightgray);
+    color: var(--secondary);
+  }
+
+  &:active {
+    transform: translate(-50%, -100%) scale(0.96);
+
+    &[data-placement="below"] {
+      transform: translate(-50%, 0) scale(0.96);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: wait;
+  }
+
+  &[data-copied] {
+    border-color: var(--secondary);
+    color: var(--secondary);
+  }
+
+  &[data-failed] {
+    border-color: var(--tertiary);
+    color: var(--tertiary);
+  }
+}
+
+.quote-link-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.quote-link-icon-check {
+  display: none;
+  fill: none;
+}
+
+.quote-link[data-copied] {
+  .quote-link-icon-quote {
+    display: none;
+  }
+
+  .quote-link-icon-check {
+    display: initial;
+  }
+}
+
+.quote-link-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quote-link {
+    transition: none;
+
+    &:active {
+      transform: translate(-50%, -100%);
+    }
+
+    &:active[data-placement="below"] {
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+@media print {
+  .quote-link,
+  .quote-link-status {
+    display: none;
+  }
+}
