@@ -69,6 +69,11 @@ export interface Translation {
       dismiss: string
       region: string
     }
+    mobileOutline?: {
+      title: string
+      open: string
+      close: string
+    }
     explorer: {
       title: string
     }

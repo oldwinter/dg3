@@ -18,6 +18,8 @@ import readLaterStyle from "../../components/styles/readLater.scss"
 import { resumeReadingScript } from "../../components/scripts/resumeReading"
 import resumeReadingStyle from "../../components/styles/resumeReading.scss"
 import quoteLinkStyle from "../../components/styles/quoteLink.scss"
+import { mobileOutlineScript } from "../../components/scripts/mobileOutline"
+import mobileOutlineStyle from "../../components/styles/mobileOutline.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -102,6 +104,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.afterDOMLoaded.push(resumeReadingScript)
   componentResources.css.push(resumeReadingStyle)
   componentResources.css.push(quoteLinkStyle)
+  componentResources.afterDOMLoaded.push(mobileOutlineScript)
+  componentResources.css.push(mobileOutlineStyle)
 
   // popovers
   if (cfg.enablePopovers) {

@@ -63,6 +63,11 @@ export default {
       dismiss: "忽略儲存的閱讀位置",
       region: "繼續閱讀",
     },
+    mobileOutline: {
+      title: "本頁大綱",
+      open: "開啟本頁大綱",
+      close: "關閉本頁大綱",
+    },
     explorer: {
       title: "探索",
     },
