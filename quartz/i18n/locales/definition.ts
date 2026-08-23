@@ -58,6 +58,11 @@ export interface Translation {
       removed: string
       failed: string
     }
+    resumeReading?: {
+      continueFrom: string
+      dismiss: string
+      region: string
+    }
     explorer: {
       title: string
     }

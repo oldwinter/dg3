@@ -55,6 +55,11 @@ export default {
       removed: "已从稍后读移除",
       failed: "浏览器未能保存更改",
     },
+    resumeReading: {
+      continueFrom: "从 {percent}% 继续阅读",
+      dismiss: "忽略保存的阅读位置",
+      region: "继续阅读",
+    },
     explorer: {
       title: "探索",
     },

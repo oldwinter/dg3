@@ -171,6 +171,14 @@ Layout rules:
 - **Accessibility**: Chinese and English names include the current saved count. The trigger reports expanded state, the current-note toggle reports pressed state, status changes use a polite live region, Escape restores trigger focus, and every remove action names its note.
 - **Motion**: Open and close are immediate. Existing 150ms micro transitions cover color and press feedback; reduced-motion mode removes the press transform.
 
+### ResumeReading
+
+- **Structure**: A compact inline prompt after the existing reader actions, with one localized continue command and one 40px dismiss icon button. It appears only on a long note when a fresh unfinished position exists for that exact path.
+- **Behavior**: Save progress between 15% and 90% after scrolling pauses. Returning near the top never jumps automatically; the reader explicitly chooses whether to resume. Heading fragments and already-restored browser positions take priority over the prompt.
+- **Storage**: Keep at most 20 path-and-progress entries in `localStorage` for 30 days. Entries contain no note text, title, account data, cookies, analytics, or external requests. Dismissing a prompt removes that note's saved position.
+- **Accessibility**: The prompt is a named complementary region, both controls use localized accessible names, focus remains explicit when the prompt is removed, and the continue action focuses the article before scrolling.
+- **Motion**: Resume uses smooth scrolling only when motion is allowed. Hover, focus, and press feedback follow the existing 150ms reader-control contract; reduced-motion mode removes transitions and spatial press feedback.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.
