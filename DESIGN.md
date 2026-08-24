@@ -211,6 +211,15 @@ Layout rules:
 - **Accessibility**: The button and polite live region use page-localized names and outcomes. The icon is decorative, the control remains keyboard-operable, and whole-note links omit heading fragments so section sharing stays owned by heading permalinks.
 - **Motion**: The beui `action-swap` blur/scale mechanism is adapted to the existing 150ms micro token, using a 3px blur and 75% scale only during the icon crossfade. Reduced-motion mode removes blur, scale, and press transforms while preserving the state change.
 
+### ReadingTrail
+
+- **Structure**: One 40px history action joins the existing reader action row. It opens a 320px anchored panel listing the notes visited immediately before the current note, newest first, with a bounded path hint for duplicate titles.
+- **Behavior**: Record eligible titled pages after `nav` and in-place `render` events. Revisiting a note moves it to the front, so a reader can retrace a nonlinear wander without duplicate entries. Opening the trail closes the overlapping `ReadLater` panel.
+- **Storage**: Keep at most 8 safe path, title, and visit-time entries in `sessionStorage`; the trail disappears with the tab session. No note text, account data, cookies, analytics, content writes, or external requests.
+- **States**: Empty, populated, open, cleared, storage fallback, hover, pressed, focus-visible, long-list scrolling, and repeated SPA initialization without duplicate nodes or listeners.
+- **Accessibility**: The localized trigger reports the number of prior notes; the panel has a localized heading; every entry is a native internal link; Escape and the close action restore trigger focus; clear is named and disabled when the list is empty.
+- **Motion**: Open and close are immediate. Existing 150ms color and press transitions apply to controls; reduced-motion mode removes press transforms, and print hides the trail.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.

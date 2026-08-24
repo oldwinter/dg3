@@ -24,6 +24,8 @@ import { randomWanderScript } from "../../components/scripts/randomWander"
 import randomWanderStyle from "../../components/styles/randomWander.scss"
 import { noteShareScript } from "../../components/scripts/noteShare"
 import noteShareStyle from "../../components/styles/noteShare.scss"
+import { readingTrailScript } from "../../components/scripts/readingTrail"
+import readingTrailStyle from "../../components/styles/readingTrail.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -114,6 +116,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.css.push(randomWanderStyle)
   componentResources.afterDOMLoaded.push(noteShareScript)
   componentResources.css.push(noteShareStyle)
+  componentResources.afterDOMLoaded.push(readingTrailScript)
+  componentResources.css.push(readingTrailStyle)
 
   // popovers
   if (cfg.enablePopovers) {
