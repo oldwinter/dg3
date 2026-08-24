@@ -74,6 +74,12 @@ export default {
     randomWander: {
       title: "Wander to another note",
     },
+    noteShare: {
+      title: "Share this note",
+      shared: "Note shared",
+      copied: "Note link copied",
+      failed: "The browser could not share this note",
+    },
     explorer: {
       title: "Explorer",
     },

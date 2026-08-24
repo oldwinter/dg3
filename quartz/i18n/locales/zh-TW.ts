@@ -71,6 +71,12 @@ export default {
     randomWander: {
       title: "隨機漫遊到另一篇筆記",
     },
+    noteShare: {
+      title: "分享這篇筆記",
+      shared: "筆記已分享",
+      copied: "筆記連結已複製",
+      failed: "瀏覽器未能分享這篇筆記",
+    },
     explorer: {
       title: "探索",
     },

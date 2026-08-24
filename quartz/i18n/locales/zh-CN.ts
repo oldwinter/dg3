@@ -74,6 +74,12 @@ export default {
     randomWander: {
       title: "随机漫游到另一篇笔记",
     },
+    noteShare: {
+      title: "分享这篇笔记",
+      shared: "笔记已分享",
+      copied: "笔记链接已复制",
+      failed: "浏览器未能分享这篇笔记",
+    },
     explorer: {
       title: "探索",
     },
