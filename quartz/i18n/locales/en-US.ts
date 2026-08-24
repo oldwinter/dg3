@@ -110,6 +110,16 @@ export default {
       value: "Article text at {percent}%",
       failed: "Applied, but the browser could not save this preference",
     },
+    readingTrail: {
+      title: "Reading trail",
+      trigger: ({ count }) =>
+        count === 1 ? "Reading trail, 1 previous note" : `Reading trail, ${count} previous notes`,
+      close: "Close reading trail",
+      clear: "Clear reading trail",
+      empty: "No previous notes in this tab yet",
+      cleared: "Reading trail cleared",
+      failed: "The browser could not keep this reading trail",
+    },
     explorer: {
       title: "Explorer",
     },

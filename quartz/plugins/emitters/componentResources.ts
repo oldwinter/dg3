@@ -39,6 +39,8 @@ import {
   readingComfortScript,
 } from "../../components/scripts/readingComfort"
 import readingComfortStyle from "../../components/styles/readingComfort.scss"
+import { readingTrailScript } from "../../components/scripts/readingTrail"
+import readingTrailStyle from "../../components/styles/readingTrail.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -142,6 +144,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.beforeDOMLoaded.push(readingComfortBootstrapScript)
   componentResources.afterDOMLoaded.push(readingComfortScript)
   componentResources.css.push(readingComfortStyle)
+  componentResources.afterDOMLoaded.push(readingTrailScript)
+  componentResources.css.push(readingTrailStyle)
 
   // popovers
   if (cfg.enablePopovers) {
