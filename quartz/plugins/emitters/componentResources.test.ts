@@ -143,4 +143,22 @@ describe("componentResources", () => {
       assert.ok(noteShareStyleIndex < spaBranchIndex)
     })
   })
+
+  test("includes the reading trail when SPA navigation is disabled", () => {
+    const emitterPath = new URL("./componentResources.ts", import.meta.url)
+    const source = readFile(emitterPath, "utf8")
+
+    return source.then((contents) => {
+      const scriptIndex = contents.indexOf(
+        "componentResources.afterDOMLoaded.push(readingTrailScript)",
+      )
+      const styleIndex = contents.indexOf("componentResources.css.push(readingTrailStyle)")
+      const spaBranchIndex = contents.indexOf("if (cfg.enableSPA)")
+
+      assert.notEqual(scriptIndex, -1)
+      assert.notEqual(styleIndex, -1)
+      assert.ok(scriptIndex < spaBranchIndex)
+      assert.ok(styleIndex < spaBranchIndex)
+    })
+  })
 })

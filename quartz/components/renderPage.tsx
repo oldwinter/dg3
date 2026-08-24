@@ -17,6 +17,7 @@ import { resolveFrame } from "./frames"
 import type { TreeTransform } from "../plugins/types"
 import type { BuildCtx } from "../util/ctx"
 import { READ_LATER_LIMIT } from "./scripts/readLaterStorage"
+import { READING_TRAIL_LIMIT } from "./scripts/readingTrailStorage"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -51,6 +52,12 @@ export function readLaterTriggerLabels(
   trigger: (variables: { count: number }) => string,
 ): readonly string[] {
   return Array.from({ length: READ_LATER_LIMIT + 1 }, (_, count) => trigger({ count }))
+}
+
+export function readingTrailTriggerLabels(
+  trigger: (variables: { count: number }) => string,
+): readonly string[] {
+  return Array.from({ length: READING_TRAIL_LIMIT + 1 }, (_, count) => trigger({ count }))
 }
 
 export function pageResources(
@@ -373,6 +380,8 @@ export function renderPage(
   const randomWander = i18n(pageLocale).components.randomWander ?? fallbackRandomWander
   const fallbackNoteShare = TRANSLATIONS[defaultTranslation].components.noteShare
   const noteShare = i18n(pageLocale).components.noteShare ?? fallbackNoteShare
+  const fallbackReadingTrail = TRANSLATIONS[defaultTranslation].components.readingTrail
+  const readingTrail = i18n(pageLocale).components.readingTrail ?? fallbackReadingTrail
   // During local dev (--serve), the dev server serves from root without the
   // baseUrl subpath, so basePath must be empty to avoid broken links.
   const basePath =
@@ -410,6 +419,13 @@ export function renderPage(
         data-note-share-shared={noteShare.shared}
         data-note-share-copied={noteShare.copied}
         data-note-share-failed={noteShare.failed}
+        data-reading-trail-title={readingTrail.title}
+        data-reading-trail-trigger={JSON.stringify(readingTrailTriggerLabels(readingTrail.trigger))}
+        data-reading-trail-close={readingTrail.close}
+        data-reading-trail-clear={readingTrail.clear}
+        data-reading-trail-empty={readingTrail.empty}
+        data-reading-trail-cleared={readingTrail.cleared}
+        data-reading-trail-failed={readingTrail.failed}
       >
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>

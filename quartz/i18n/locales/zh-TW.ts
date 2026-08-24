@@ -77,6 +77,15 @@ export default {
       copied: "筆記連結已複製",
       failed: "瀏覽器未能分享這篇筆記",
     },
+    readingTrail: {
+      title: "閱讀足跡",
+      trigger: ({ count }) => `閱讀足跡，前面有 ${count} 篇筆記`,
+      close: "關閉閱讀足跡",
+      clear: "清空閱讀足跡",
+      empty: "這個分頁還沒有之前讀過的筆記",
+      cleared: "閱讀足跡已清空",
+      failed: "瀏覽器未能保留閱讀足跡",
+    },
     explorer: {
       title: "探索",
     },
