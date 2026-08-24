@@ -66,6 +66,11 @@ export default {
       dismiss: "忽略保存的阅读位置",
       region: "继续阅读",
     },
+    mobileOutline: {
+      title: "本页大纲",
+      open: "打开本页大纲",
+      close: "关闭本页大纲",
+    },
     explorer: {
       title: "探索",
     },

@@ -188,6 +188,15 @@ Layout rules:
 - **Privacy**: The action uses only the current selection and URL. It does not write content or storage, send requests, or persist selection text.
 - **Motion**: Existing 150ms micro transitions cover color and press feedback. Reduced-motion mode removes scale feedback, and print hides the action.
 
+### MobileOutline
+
+- **Structure**: One fixed 40px list button opens a native modal dialog containing links to the current article's non-transcluded `h2` and `h3` headings. The control is rendered once by `Body` and populated from the live article after navigation.
+- **Placement**: Mobile only, at the bottom inline-start with 16px and safe-area inset support. Its dialog sits above the fixed controls, stays within `100vw - 32px`, uses the existing 6px radius, and is hidden from print.
+- **Eligibility**: Keep the control hidden on desktop, list/404 surfaces, and articles with fewer than two eligible headings. Repeated SPA `nav` and in-place `render` events must replace the prior outline without duplicate nodes or listeners.
+- **States**: Hidden, ready, open, current section, hover, pressed, focus-visible, long-list scrolling, and missing-native-dialog fallback.
+- **Accessibility**: Localize the dialog title and open/close names; use native `dialog` modal behavior for focus containment and Escape; report expanded state on the trigger; mark the current section with `aria-current="location"`; keep every target as a native hash link.
+- **Motion**: Opening and closing are immediate. Existing 150ms color and press transitions apply to controls and links; reduced-motion mode removes the press transform.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.

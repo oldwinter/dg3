@@ -1,0 +1,178 @@
+@use "../../styles/variables.scss" as *;
+
+.mobile-outline {
+  display: none;
+}
+
+@media all and ($mobile) {
+  .mobile-outline:not([hidden]) {
+    display: block;
+  }
+}
+
+.mobile-outline__trigger,
+.mobile-outline__close {
+  appearance: none;
+  box-sizing: border-box;
+  display: grid;
+  padding: 0;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--gray) 54%, transparent);
+  background-color: var(--light);
+  color: var(--dark);
+  font: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  transition:
+    background-color 0.15s ease-out,
+    color 0.15s ease-out,
+    transform 0.15s ease-out;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      border-color: var(--secondary);
+      background-color: var(--lightgray);
+      color: var(--secondary);
+    }
+  }
+
+  &:active {
+    transform: scale(0.93);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
+.mobile-outline__trigger {
+  position: fixed;
+  z-index: 4;
+  inset-block-end: max(1rem, env(safe-area-inset-bottom));
+  inset-inline-start: max(1rem, env(safe-area-inset-left));
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.mobile-outline__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.mobile-outline__dialog {
+  position: fixed;
+  z-index: 5;
+  inset: auto 1rem max(4.25rem, calc(4.25rem + env(safe-area-inset-bottom))) 1rem;
+  box-sizing: border-box;
+  width: min(22rem, calc(100vw - 2rem));
+  max-height: min(70dvh, 32rem);
+  margin: 0 auto;
+  padding: 0.75rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--gray) 54%, transparent);
+  border-radius: 6px;
+  background-color: var(--light);
+  color: var(--darkgray);
+
+  &[open] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &::backdrop {
+    background-color: color-mix(in srgb, var(--dark) 24%, transparent);
+  }
+}
+
+.mobile-outline__header {
+  display: flex;
+  min-height: 2.5rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  h2 {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 1.25;
+  }
+}
+
+.mobile-outline__close {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 2.5rem;
+  border-radius: 6px;
+}
+
+.mobile-outline__list {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  list-style: none;
+
+  > li {
+    margin: 0;
+  }
+}
+
+.mobile-outline__link {
+  display: block;
+  padding: 0.625rem 0.75rem;
+  border-radius: 4px;
+  color: var(--darkgray);
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease-out,
+    color 0.15s ease-out;
+
+  &[data-level="3"] {
+    padding-inline-start: 1.5rem;
+    color: var(--gray);
+    font-size: 0.925rem;
+  }
+
+  &[aria-current="location"] {
+    background-color: var(--highlight);
+    color: var(--secondary);
+    box-shadow: inset 3px 0 var(--secondary);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: var(--lightgray);
+      color: var(--secondary);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: -2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-outline__trigger,
+  .mobile-outline__close,
+  .mobile-outline__link {
+    transition: none;
+
+    &:active {
+      transform: none;
+    }
+  }
+}
+
+@media print {
+  .mobile-outline {
+    display: none;
+  }
+}

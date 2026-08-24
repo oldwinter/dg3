@@ -26,6 +26,8 @@ describe("Body", () => {
     // Then
     assert.match(html, /aria-label="Reading progress"/)
     assert.match(html, /aria-label="Back to top"/)
+    assert.match(html, /aria-label="Open page outline"/)
+    assert.match(html, />On this page</)
   })
 
   test("localizes the back-to-top label in Simplified Chinese", () => {
@@ -37,6 +39,7 @@ describe("Body", () => {
 
     // Then
     assert.match(html, /aria-label="返回顶部"/)
+    assert.match(html, /aria-label="打开本页大纲"/)
   })
 
   test("localizes the back-to-top label in Traditional Chinese", () => {
@@ -48,6 +51,7 @@ describe("Body", () => {
 
     // Then
     assert.match(html, /aria-label="返回頂部"/)
+    assert.match(html, /aria-label="開啟本頁大綱"/)
   })
 
   test("falls back to English when a locale has no back-to-top label", () => {
@@ -59,5 +63,6 @@ describe("Body", () => {
 
     // Then
     assert.match(html, /aria-label="Back to top"/)
+    assert.match(html, /aria-label="Open page outline"/)
   })
 })

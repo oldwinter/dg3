@@ -66,6 +66,11 @@ export default {
       dismiss: "Dismiss saved reading position",
       region: "Continue reading",
     },
+    mobileOutline: {
+      title: "On this page",
+      open: "Open page outline",
+      close: "Close page outline",
+    },
     explorer: {
       title: "Explorer",
     },
