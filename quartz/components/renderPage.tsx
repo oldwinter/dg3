@@ -369,6 +369,8 @@ export function renderPage(
   const readLater = i18n(pageLocale).components.readLater ?? fallbackReadLater
   const fallbackResumeReading = TRANSLATIONS[defaultTranslation].components.resumeReading
   const resumeReading = i18n(pageLocale).components.resumeReading ?? fallbackResumeReading
+  const fallbackRandomWander = TRANSLATIONS[defaultTranslation].components.randomWander
+  const randomWander = i18n(pageLocale).components.randomWander ?? fallbackRandomWander
   // During local dev (--serve), the dev server serves from root without the
   // baseUrl subpath, so basePath must be empty to avoid broken links.
   const basePath =
@@ -401,6 +403,7 @@ export function renderPage(
         data-resume-reading-continue={resumeReading.continueFrom}
         data-resume-reading-dismiss={resumeReading.dismiss}
         data-resume-reading-region={resumeReading.region}
+        data-random-wander-label={randomWander.title}
       >
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>

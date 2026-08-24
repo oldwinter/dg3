@@ -71,6 +71,9 @@ export default {
       open: "打开本页大纲",
       close: "关闭本页大纲",
     },
+    randomWander: {
+      title: "随机漫游到另一篇笔记",
+    },
     explorer: {
       title: "探索",
     },
