@@ -363,6 +363,8 @@ export function renderPage(
   const pageLocale = resolvePageLocale(lang, cfg.locale)
   const fallbackHeadingPermalink = TRANSLATIONS[defaultTranslation].components.headingPermalink
   const headingPermalink = i18n(pageLocale).components.headingPermalink ?? fallbackHeadingPermalink
+  const fallbackQuoteLink = TRANSLATIONS[defaultTranslation].components.quoteLink
+  const quoteLink = i18n(pageLocale).components.quoteLink ?? fallbackQuoteLink
   const fallbackReadLater = TRANSLATIONS[defaultTranslation].components.readLater
   const readLater = i18n(pageLocale).components.readLater ?? fallbackReadLater
   const fallbackResumeReading = TRANSLATIONS[defaultTranslation].components.resumeReading
@@ -382,6 +384,10 @@ export function renderPage(
         data-heading-permalink-label={headingPermalink.title}
         data-heading-permalink-copied-title={headingPermalink.copiedTitle}
         data-heading-permalink-copied-label={headingPermalink.copiedLabel}
+        data-quote-link-title={quoteLink.title}
+        data-quote-link-copied={quoteLink.copied}
+        data-quote-link-failed={quoteLink.failed}
+        data-quote-link-open={quoteLink.open}
         data-read-later-title={readLater.title}
         data-read-later-trigger={JSON.stringify(readLaterTriggerLabels(readLater.trigger))}
         data-read-later-save={readLater.save}

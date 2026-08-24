@@ -46,6 +46,12 @@ export interface Translation {
       copiedTitle: string
       copiedLabel: string
     }
+    quoteLink?: {
+      title: string
+      copied: string
+      failed: string
+      open: string
+    }
     readLater?: {
       title: string
       trigger: (variables: { count: number }) => string

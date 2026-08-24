@@ -43,6 +43,12 @@ export default {
       copiedTitle: "已复制",
       copiedLabel: "本节链接已复制",
     },
+    quoteLink: {
+      title: "复制引用链接",
+      copied: "引用链接已复制",
+      failed: "浏览器未能复制这段引用",
+      open: "打开这段原文",
+    },
     readLater: {
       title: "稍后读",
       trigger: ({ count }) => `稍后读，已保存 ${count} 篇`,

@@ -7,6 +7,7 @@ import spaRouterScript from "../../components/scripts/spa.inline"
 // @ts-ignore
 import popoverScript from "../../components/scripts/popover.inline"
 import headingPermalinksScript from "../../components/scripts/headingPermalinks.inline"
+import quoteLinkScript from "../../components/scripts/quoteLink.inline"
 import { backToTopScript } from "../../components/scripts/backToTop"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
@@ -16,6 +17,7 @@ import { readLaterScript } from "../../components/scripts/readLater"
 import readLaterStyle from "../../components/styles/readLater.scss"
 import { resumeReadingScript } from "../../components/scripts/resumeReading"
 import resumeReadingStyle from "../../components/styles/resumeReading.scss"
+import quoteLinkStyle from "../../components/styles/quoteLink.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -92,12 +94,14 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   const cfg = ctx.cfg.configuration
 
   componentResources.afterDOMLoaded.push(headingPermalinksScript)
+  componentResources.afterDOMLoaded.push(quoteLinkScript)
   componentResources.afterDOMLoaded.push(backToTopScript)
   componentResources.afterDOMLoaded.push(readingProgressScript)
   componentResources.afterDOMLoaded.push(readLaterScript)
   componentResources.css.push(readLaterStyle)
   componentResources.afterDOMLoaded.push(resumeReadingScript)
   componentResources.css.push(resumeReadingStyle)
+  componentResources.css.push(quoteLinkStyle)
 
   // popovers
   if (cfg.enablePopovers) {
