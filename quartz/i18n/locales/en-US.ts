@@ -55,6 +55,11 @@ export default {
       removed: "Removed from read later",
       failed: "The browser could not save this change",
     },
+    resumeReading: {
+      continueFrom: "Continue from {percent}%",
+      dismiss: "Dismiss saved reading position",
+      region: "Continue reading",
+    },
     explorer: {
       title: "Explorer",
     },

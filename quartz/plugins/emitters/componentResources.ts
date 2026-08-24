@@ -14,6 +14,8 @@ import popoverStyle from "../../components/styles/popover.scss"
 import { readingProgressScript } from "../../components/scripts/readingProgress"
 import { readLaterScript } from "../../components/scripts/readLater"
 import readLaterStyle from "../../components/styles/readLater.scss"
+import { resumeReadingScript } from "../../components/scripts/resumeReading"
+import resumeReadingStyle from "../../components/styles/resumeReading.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -94,6 +96,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.afterDOMLoaded.push(readingProgressScript)
   componentResources.afterDOMLoaded.push(readLaterScript)
   componentResources.css.push(readLaterStyle)
+  componentResources.afterDOMLoaded.push(resumeReadingScript)
+  componentResources.css.push(resumeReadingStyle)
 
   // popovers
   if (cfg.enablePopovers) {

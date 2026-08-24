@@ -53,4 +53,26 @@ describe("componentResources", () => {
       assert.ok(readLaterStyleIndex < spaBranchIndex)
     })
   })
+
+  test("includes resume reading when SPA navigation is disabled", () => {
+    // Given
+    const emitterPath = new URL("./componentResources.ts", import.meta.url)
+
+    // When
+    const source = readFile(emitterPath, "utf8")
+
+    // Then
+    return source.then((contents) => {
+      const resumeIndex = contents.indexOf(
+        "componentResources.afterDOMLoaded.push(resumeReadingScript)",
+      )
+      const resumeStyleIndex = contents.indexOf("componentResources.css.push(resumeReadingStyle)")
+      const spaBranchIndex = contents.indexOf("if (cfg.enableSPA)")
+
+      assert.notEqual(resumeIndex, -1)
+      assert.notEqual(resumeStyleIndex, -1)
+      assert.ok(resumeIndex < spaBranchIndex)
+      assert.ok(resumeStyleIndex < spaBranchIndex)
+    })
+  })
 })
