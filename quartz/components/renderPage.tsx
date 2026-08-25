@@ -410,6 +410,9 @@ export function renderPage(
         data-note-share-shared={noteShare.shared}
         data-note-share-copied={noteShare.copied}
         data-note-share-failed={noteShare.failed}
+        data-note-share-copy-markdown={noteShare.copyMarkdown}
+        data-note-share-markdown-copied={noteShare.markdownCopied}
+        data-note-share-markdown-failed={noteShare.markdownFailed}
       >
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>
