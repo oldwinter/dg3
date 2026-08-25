@@ -79,6 +79,9 @@ export default {
       shared: "笔记已分享",
       copied: "笔记链接已复制",
       failed: "浏览器未能分享这篇笔记",
+      copyMarkdown: "复制为 Markdown 链接",
+      markdownCopied: "Markdown 链接已复制",
+      markdownFailed: "浏览器未能复制 Markdown 链接",
     },
     explorer: {
       title: "探索",

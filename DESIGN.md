@@ -206,9 +206,10 @@ Layout rules:
 - **Motion**: Reuse the existing 150ms color and press feedback. Reduced-motion mode removes the press transform.
 ### NoteShare
 
-- **Structure**: One 40px share action beside `ReadLater`; it uses the browser's native share sheet when available and copies the current note URL otherwise. If `ReadLater` is unavailable, the action keeps the same inline-end placement in its own compact action group.
-- **States**: Default, native share pending, shared, copied, cancelled, clipboard failure, hover, pressed, focus-visible, and disabled. Successful actions swap the share icon to a check for 1.8 seconds; cancellation returns silently to default.
-- **Accessibility**: The button and polite live region use page-localized names and outcomes. The icon is decorative, the control remains keyboard-operable, and whole-note links omit heading fragments so section sharing stays owned by heading permalinks.
+- **Structure**: Two 40px actions beside `ReadLater`: share uses the browser's native share sheet when available and copies the current URL otherwise, while copy creates a portable `[title](<URL>)` Markdown link for notes and documentation. If `ReadLater` is unavailable, both actions keep the same inline-end placement in their own compact group.
+- **States**: Default, native share pending, shared, URL copied, Markdown copied, cancelled, clipboard failure, hover, pressed, focus-visible, and disabled. Each successful action independently swaps its icon to a check for 1.8 seconds; cancellation returns silently to default.
+- **Accessibility**: Both buttons and their polite live regions use page-localized names and outcomes. Icons are decorative, controls remain keyboard-operable, and whole-note links omit heading fragments so section sharing stays owned by heading permalinks.
+- **Formatting**: Markdown titles normalize whitespace and escape square brackets and backslashes. Angle-bracket destinations preserve valid URLs that contain parentheses without changing the note URL.
 - **Motion**: The beui `action-swap` blur/scale mechanism is adapted to the existing 150ms micro token, using a 3px blur and 75% scale only during the icon crossfade. Reduced-motion mode removes blur, scale, and press transforms while preserving the state change.
 
 ## 6. Motion & Interaction

@@ -76,6 +76,9 @@ export default {
       shared: "筆記已分享",
       copied: "筆記連結已複製",
       failed: "瀏覽器未能分享這篇筆記",
+      copyMarkdown: "複製為 Markdown 連結",
+      markdownCopied: "Markdown 連結已複製",
+      markdownFailed: "瀏覽器未能複製 Markdown 連結",
     },
     explorer: {
       title: "探索",
