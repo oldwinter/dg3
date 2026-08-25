@@ -88,6 +88,9 @@ export interface Translation {
       shared: string
       copied: string
       failed: string
+      copyMarkdown: string
+      markdownCopied: string
+      markdownFailed: string
     }
     wideContentScroll?: {
       table: string
