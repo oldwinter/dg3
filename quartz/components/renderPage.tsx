@@ -392,6 +392,8 @@ export function renderPage(
   const tableMarkdown = i18n(pageLocale).components.tableMarkdown ?? fallbackTableMarkdown
   const fallbackCodeFolding = TRANSLATIONS[defaultTranslation].components.codeFolding
   const codeFolding = i18n(pageLocale).components.codeFolding ?? fallbackCodeFolding
+  const fallbackReadingComfort = TRANSLATIONS[defaultTranslation].components.readingComfort
+  const readingComfort = i18n(pageLocale).components.readingComfort ?? fallbackReadingComfort
   // During local dev (--serve), the dev server serves from root without the
   // baseUrl subpath, so basePath must be empty to avoid broken links.
   const basePath =
@@ -448,6 +450,12 @@ export function renderPage(
         data-table-markdown-failed={tableMarkdown.failed}
         data-code-folding-expand={codeFolding.expand}
         data-code-folding-collapse={codeFolding.collapse}
+        data-reading-comfort-title={readingComfort.title}
+        data-reading-comfort-smaller={readingComfort.smaller}
+        data-reading-comfort-reset={readingComfort.reset}
+        data-reading-comfort-larger={readingComfort.larger}
+        data-reading-comfort-value={readingComfort.value}
+        data-reading-comfort-failed={readingComfort.failed}
       >
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>

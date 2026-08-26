@@ -102,6 +102,14 @@ export default {
       expand: "展开代码块",
       collapse: "收起代码块",
     },
+    readingComfort: {
+      title: "阅读字号",
+      smaller: "缩小正文",
+      reset: "恢复默认字号",
+      larger: "放大正文",
+      value: "正文字号 {percent}%",
+      failed: "已应用，但浏览器未能保存偏好",
+    },
     explorer: {
       title: "探索",
     },

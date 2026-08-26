@@ -34,6 +34,11 @@ import { tableMarkdownScript } from "../../components/scripts/tableMarkdown"
 import tableMarkdownStyle from "../../components/styles/tableMarkdown.scss"
 import { codeFoldingScript } from "../../components/scripts/codeFolding"
 import codeFoldingStyle from "../../components/styles/codeFolding.scss"
+import {
+  readingComfortBootstrapScript,
+  readingComfortScript,
+} from "../../components/scripts/readingComfort"
+import readingComfortStyle from "../../components/styles/readingComfort.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -134,6 +139,9 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.css.push(tableMarkdownStyle)
   componentResources.afterDOMLoaded.push(codeFoldingScript)
   componentResources.css.push(codeFoldingStyle)
+  componentResources.beforeDOMLoaded.push(readingComfortBootstrapScript)
+  componentResources.afterDOMLoaded.push(readingComfortScript)
+  componentResources.css.push(readingComfortStyle)
 
   // popovers
   if (cfg.enablePopovers) {

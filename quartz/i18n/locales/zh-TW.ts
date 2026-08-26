@@ -99,6 +99,14 @@ export default {
       expand: "展開程式碼區塊",
       collapse: "收合程式碼區塊",
     },
+    readingComfort: {
+      title: "閱讀字號",
+      smaller: "縮小正文",
+      reset: "恢復預設字號",
+      larger: "放大正文",
+      value: "正文字號 {percent}%",
+      failed: "已套用，但瀏覽器未能儲存偏好",
+    },
     explorer: {
       title: "探索",
     },

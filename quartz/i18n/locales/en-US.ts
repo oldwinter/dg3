@@ -102,6 +102,14 @@ export default {
       expand: "Expand code block",
       collapse: "Collapse code block",
     },
+    readingComfort: {
+      title: "Reading size",
+      smaller: "Make article text smaller",
+      reset: "Reset article text size",
+      larger: "Make article text larger",
+      value: "Article text at {percent}%",
+      failed: "Applied, but the browser could not save this preference",
+    },
     explorer: {
       title: "Explorer",
     },
