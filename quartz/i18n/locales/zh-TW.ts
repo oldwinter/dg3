@@ -77,6 +77,14 @@ export default {
       copied: "筆記連結已複製",
       failed: "瀏覽器未能分享這篇筆記",
     },
+    readingComfort: {
+      title: "閱讀字號",
+      smaller: "縮小正文",
+      reset: "恢復預設字號",
+      larger: "放大正文",
+      value: "正文字號 {percent}%",
+      failed: "已套用，但瀏覽器未能儲存偏好",
+    },
     explorer: {
       title: "探索",
     },
