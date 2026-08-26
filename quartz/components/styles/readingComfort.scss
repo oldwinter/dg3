@@ -1,0 +1,221 @@
+:root {
+  --reading-comfort-body: 1rem;
+  --reading-comfort-line: 1.6rem;
+  --reading-comfort-h1: 1.75rem;
+  --reading-comfort-h2: 1.4rem;
+  --reading-comfort-h3: 1.12rem;
+  --reading-comfort-h4: 1rem;
+}
+
+:root[data-reading-comfort="90"] {
+  --reading-comfort-body: 0.9rem;
+  --reading-comfort-line: 1.44rem;
+  --reading-comfort-h1: 1.575rem;
+  --reading-comfort-h2: 1.26rem;
+  --reading-comfort-h3: 1.008rem;
+  --reading-comfort-h4: 0.9rem;
+}
+
+:root[data-reading-comfort="110"] {
+  --reading-comfort-body: 1.1rem;
+  --reading-comfort-line: 1.76rem;
+  --reading-comfort-h1: 1.925rem;
+  --reading-comfort-h2: 1.54rem;
+  --reading-comfort-h3: 1.232rem;
+  --reading-comfort-h4: 1.1rem;
+}
+
+:root[data-reading-comfort="120"] {
+  --reading-comfort-body: 1.2rem;
+  --reading-comfort-line: 1.92rem;
+  --reading-comfort-h1: 2.1rem;
+  --reading-comfort-h2: 1.68rem;
+  --reading-comfort-h3: 1.344rem;
+  --reading-comfort-h4: 1.2rem;
+}
+
+.center > article {
+  font-size: var(--reading-comfort-body);
+
+  :where(p, li, dt, dd, blockquote, th, td) {
+    line-height: var(--reading-comfort-line);
+  }
+
+  h1 {
+    font-size: var(--reading-comfort-h1);
+  }
+
+  h2 {
+    font-size: var(--reading-comfort-h2);
+  }
+
+  h3 {
+    font-size: var(--reading-comfort-h3);
+  }
+
+  :where(h4, h5, h6) {
+    font-size: var(--reading-comfort-h4);
+  }
+}
+
+.reading-comfort {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  width: fit-content;
+  margin-block: -0.5rem 1rem;
+  margin-inline: auto 0;
+  justify-content: flex-end;
+}
+
+.reading-comfort-trigger,
+.reading-comfort-controls button {
+  appearance: none;
+  box-sizing: border-box;
+  border: 1px solid color-mix(in srgb, var(--gray) 54%, transparent);
+  border-radius: 6px;
+  background-color: var(--light);
+  color: var(--dark);
+  font-family: var(--bodyFont);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    background-color 0.15s ease-out,
+    color 0.15s ease-out,
+    transform 0.15s ease-out;
+
+  &:hover:not(:disabled) {
+    border-color: var(--secondary);
+    background-color: var(--lightgray);
+    color: var(--secondary);
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0.96);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.45;
+  }
+}
+
+.reading-comfort-trigger {
+  position: relative;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 2.5rem;
+  padding: 0;
+  place-items: center;
+  font-family: var(--headerFont);
+  font-size: 0.875rem;
+  font-weight: 650;
+  line-height: 1;
+
+  &[data-level]:not([data-level="100"]) {
+    color: var(--secondary);
+    background-color: color-mix(in srgb, var(--highlight) 74%, var(--light));
+  }
+}
+
+.read-later.reading-comfort-host > .reading-comfort-trigger {
+  margin-inline-end: 0.5rem;
+}
+
+.reading-comfort-panel {
+  position: absolute;
+  inset-block-start: calc(100% + 0.5rem);
+  inset-inline-end: 0;
+  box-sizing: border-box;
+  width: min(14rem, calc(100vw - 2rem));
+  padding: 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--gray) 54%, transparent);
+  border-radius: 6px;
+  background-color: var(--light);
+  color: var(--darkgray);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.reading-comfort-value {
+  display: block;
+  margin-block-end: 0.5rem;
+  color: var(--darkgray);
+  font-family: var(--codeFont);
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.reading-comfort-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.25rem;
+
+  button {
+    min-width: 0;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+}
+
+.reading-comfort-reset {
+  font-family: var(--codeFont) !important;
+  font-size: 0.75rem;
+}
+
+.reading-comfort-status {
+  display: block;
+  min-height: 0;
+  color: var(--gray);
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  text-align: center;
+
+  &:not(:empty) {
+    margin-block-start: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .reading-comfort-host {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .reading-comfort-host > .reading-comfort-panel {
+    position: static;
+    flex: 0 0 min(14rem, calc(100vw - 2rem));
+    margin-block-start: 0.5rem;
+    margin-inline-start: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-comfort-trigger,
+  .reading-comfort-controls button {
+    transition: none;
+
+    &:active:not(:disabled) {
+      transform: none;
+    }
+  }
+}
+
+@media print {
+  .reading-comfort,
+  .reading-comfort-trigger,
+  .reading-comfort-panel {
+    display: none;
+  }
+}

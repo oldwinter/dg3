@@ -211,6 +211,14 @@ Layout rules:
 - **Accessibility**: The button and polite live region use page-localized names and outcomes. The icon is decorative, the control remains keyboard-operable, and whole-note links omit heading fragments so section sharing stays owned by heading permalinks.
 - **Motion**: The beui `action-swap` blur/scale mechanism is adapted to the existing 150ms micro token, using a 3px blur and 75% scale only during the icon crossfade. Reduced-motion mode removes blur, scale, and press transforms while preserving the state change.
 
+### ReadingComfort
+
+- **Structure**: One 40px `Aa` action joins the existing reader-action row and opens a compact three-button stepper for smaller, default, or larger article text. It changes only the current article body and headings; metadata, toolbars, sidebars, code blocks, and page width keep their existing metrics.
+- **Scale**: Offer four bounded levels: 90%, 100%, 110%, and 120%. The smaller and larger commands clamp at the bounds, the center command restores 100%, and the current percentage is announced in the panel and trigger label.
+- **Storage**: Persist only the selected percentage in `localStorage.reading-comfort`; unknown or unavailable values fall back to 100%. Storage failure leaves the selected size active for the current page and reports the non-persistent state without blocking reading.
+- **Accessibility**: Use native buttons with localized names, visible focus rings, disabled boundary states, a polite value/status region, Escape and outside-click dismissal, and focus restoration. Cross-tab changes update the rendered article without navigation.
+- **Motion**: Reuse the 150ms reader-control hover and press feedback. Reduced-motion mode removes spatial feedback, and print hides the control while preserving the selected article scale.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.

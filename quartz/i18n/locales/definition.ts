@@ -83,6 +83,14 @@ export interface Translation {
       copied: string
       failed: string
     }
+    readingComfort?: {
+      title: string
+      smaller: string
+      reset: string
+      larger: string
+      value: string
+      failed: string
+    }
     explorer: {
       title: string
     }

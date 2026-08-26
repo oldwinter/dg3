@@ -143,4 +143,27 @@ describe("componentResources", () => {
       assert.ok(noteShareStyleIndex < spaBranchIndex)
     })
   })
+
+  test("includes reading comfort before SPA navigation is initialized", () => {
+    const emitterPath = new URL("./componentResources.ts", import.meta.url)
+    const source = readFile(emitterPath, "utf8")
+
+    return source.then((contents) => {
+      const bootstrapIndex = contents.indexOf(
+        "componentResources.beforeDOMLoaded.push(readingComfortBootstrapScript)",
+      )
+      const scriptIndex = contents.indexOf(
+        "componentResources.afterDOMLoaded.push(readingComfortScript)",
+      )
+      const styleIndex = contents.indexOf("componentResources.css.push(readingComfortStyle)")
+      const spaBranchIndex = contents.indexOf("if (cfg.enableSPA)")
+
+      assert.notEqual(bootstrapIndex, -1)
+      assert.notEqual(scriptIndex, -1)
+      assert.notEqual(styleIndex, -1)
+      assert.ok(bootstrapIndex < spaBranchIndex)
+      assert.ok(scriptIndex < spaBranchIndex)
+      assert.ok(styleIndex < spaBranchIndex)
+    })
+  })
 })
