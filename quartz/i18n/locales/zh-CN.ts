@@ -80,6 +80,10 @@ export default {
       copied: "笔记链接已复制",
       failed: "浏览器未能分享这篇笔记",
     },
+    wideContentScroll: {
+      table: "可横向滚动的表格",
+      code: "可横向滚动的代码块",
+    },
     explorer: {
       title: "探索",
     },

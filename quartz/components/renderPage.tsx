@@ -373,6 +373,9 @@ export function renderPage(
   const randomWander = i18n(pageLocale).components.randomWander ?? fallbackRandomWander
   const fallbackNoteShare = TRANSLATIONS[defaultTranslation].components.noteShare
   const noteShare = i18n(pageLocale).components.noteShare ?? fallbackNoteShare
+  const fallbackWideContentScroll = TRANSLATIONS[defaultTranslation].components.wideContentScroll
+  const wideContentScroll =
+    i18n(pageLocale).components.wideContentScroll ?? fallbackWideContentScroll
   // During local dev (--serve), the dev server serves from root without the
   // baseUrl subpath, so basePath must be empty to avoid broken links.
   const basePath =
@@ -410,6 +413,8 @@ export function renderPage(
         data-note-share-shared={noteShare.shared}
         data-note-share-copied={noteShare.copied}
         data-note-share-failed={noteShare.failed}
+        data-wide-content-table={wideContentScroll.table}
+        data-wide-content-code={wideContentScroll.code}
       >
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>

@@ -80,6 +80,10 @@ export default {
       copied: "Note link copied",
       failed: "The browser could not share this note",
     },
+    wideContentScroll: {
+      table: "Scrollable table",
+      code: "Scrollable code block",
+    },
     explorer: {
       title: "Explorer",
     },

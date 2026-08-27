@@ -83,6 +83,10 @@ export interface Translation {
       copied: string
       failed: string
     }
+    wideContentScroll?: {
+      table: string
+      code: string
+    }
     explorer: {
       title: string
     }
