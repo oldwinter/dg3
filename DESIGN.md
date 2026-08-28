@@ -211,6 +211,13 @@ Layout rules:
 - **Accessibility**: The button and polite live region use page-localized names and outcomes. The icon is decorative, the control remains keyboard-operable, and whole-note links omit heading fragments so section sharing stays owned by heading permalinks.
 - **Motion**: The beui `action-swap` blur/scale mechanism is adapted to the existing 150ms micro token, using a 3px blur and 75% scale only during the icon crossfade. Reduced-motion mode removes blur, scale, and press transforms while preserving the state change.
 
+### WideContentScroll
+
+- **Structure**: Wide tables and code blocks gain quiet inset edge cues only while content remains clipped on that side. Mermaid blocks keep their dedicated controls and are excluded.
+- **Behavior**: Resize, horizontal scroll, initial load, SPA navigation, and in-place render events recalculate both edges without duplicating listeners or leaving stale attributes.
+- **Accessibility**: Only genuinely overflowing containers enter the tab order. Each receives a localized accessible name and supports native keyboard scrolling; the existing 2px focus ring identifies the active region.
+- **Motion**: Edge cues use the 150ms micro transition and existing Quartz tokens. Reduced-motion removes the transition, and print removes both cues and focus decoration.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.
