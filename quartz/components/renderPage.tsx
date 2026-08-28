@@ -371,6 +371,8 @@ export function renderPage(
   const resumeReading = i18n(pageLocale).components.resumeReading ?? fallbackResumeReading
   const fallbackRandomWander = TRANSLATIONS[defaultTranslation].components.randomWander
   const randomWander = i18n(pageLocale).components.randomWander ?? fallbackRandomWander
+  const fallbackLocalLinkWander = TRANSLATIONS[defaultTranslation].components.localLinkWander
+  const localLinkWander = i18n(pageLocale).components.localLinkWander ?? fallbackLocalLinkWander
   const fallbackNoteShare = TRANSLATIONS[defaultTranslation].components.noteShare
   const noteShare = i18n(pageLocale).components.noteShare ?? fallbackNoteShare
   const fallbackWideContentScroll = TRANSLATIONS[defaultTranslation].components.wideContentScroll
@@ -409,6 +411,7 @@ export function renderPage(
         data-resume-reading-dismiss={resumeReading.dismiss}
         data-resume-reading-region={resumeReading.region}
         data-random-wander-label={randomWander.title}
+        data-local-link-wander-label={localLinkWander.title}
         data-note-share-title={noteShare.title}
         data-note-share-shared={noteShare.shared}
         data-note-share-copied={noteShare.copied}

@@ -77,6 +77,9 @@ export interface Translation {
     randomWander?: {
       title: string
     }
+    localLinkWander?: {
+      title: string
+    }
     noteShare?: {
       title: string
       shared: string

@@ -74,6 +74,9 @@ export default {
     randomWander: {
       title: "随机漫游到另一篇笔记",
     },
+    localLinkWander: {
+      title: "顺着当前笔记漫游",
+    },
     noteShare: {
       title: "分享这篇笔记",
       shared: "笔记已分享",

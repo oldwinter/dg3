@@ -74,6 +74,9 @@ export default {
     randomWander: {
       title: "Wander to another note",
     },
+    localLinkWander: {
+      title: "Follow a link from this note",
+    },
     noteShare: {
       title: "Share this note",
       shared: "Note shared",
