@@ -98,6 +98,10 @@ export default {
       copied: "表格 Markdown 已复制",
       failed: "浏览器未能复制表格",
     },
+    codeFolding: {
+      expand: "展开代码块",
+      collapse: "收起代码块",
+    },
     explorer: {
       title: "探索",
     },

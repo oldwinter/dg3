@@ -390,6 +390,8 @@ export function renderPage(
     i18n(pageLocale).components.wideContentScroll ?? fallbackWideContentScroll
   const fallbackTableMarkdown = TRANSLATIONS[defaultTranslation].components.tableMarkdown
   const tableMarkdown = i18n(pageLocale).components.tableMarkdown ?? fallbackTableMarkdown
+  const fallbackCodeFolding = TRANSLATIONS[defaultTranslation].components.codeFolding
+  const codeFolding = i18n(pageLocale).components.codeFolding ?? fallbackCodeFolding
   // During local dev (--serve), the dev server serves from root without the
   // baseUrl subpath, so basePath must be empty to avoid broken links.
   const basePath =
@@ -444,6 +446,8 @@ export function renderPage(
         data-table-markdown-title={tableMarkdown.title}
         data-table-markdown-copied={tableMarkdown.copied}
         data-table-markdown-failed={tableMarkdown.failed}
+        data-code-folding-expand={codeFolding.expand}
+        data-code-folding-collapse={codeFolding.collapse}
       >
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>

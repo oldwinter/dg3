@@ -95,6 +95,10 @@ export default {
       copied: "表格 Markdown 已複製",
       failed: "瀏覽器未能複製表格",
     },
+    codeFolding: {
+      expand: "展開程式碼區塊",
+      collapse: "收合程式碼區塊",
+    },
     explorer: {
       title: "探索",
     },

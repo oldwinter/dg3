@@ -236,6 +236,13 @@ Layout rules:
 - **Accessibility**: The native button and polite live region use page-localized names. Keyboard activation, a stable 40px target, print hiding, and Quartz SPA `nav`/`render` cleanup are required.
 - **Motion**: Existing 150ms micro transitions cover hover and press feedback. Reduced-motion removes transitions and spatial press feedback.
 
+### CodeFolding
+
+- **Structure**: Syntax-highlighted, non-Mermaid code blocks longer than 24 rendered lines receive one compact chevron control beside the existing copy action. Short and plain code blocks remain untouched.
+- **Behavior**: Long blocks begin at a bounded reading height and expand in place without moving or rewriting code. No-JavaScript and print output always expose the complete source; SPA navigation and in-place render cleanup never duplicate controls.
+- **Accessibility**: The native button reports localized expand/collapse names, `aria-expanded`, and its controlled code region. Keyboard focus remains on the action while state changes, with the existing opaque 2px focus ring.
+- **Motion**: Expand and collapse are immediate. Control feedback uses the 150ms micro transition; reduced motion removes transitions and press scaling, and no scroll or layout animation is introduced.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.
