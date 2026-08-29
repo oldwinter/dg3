@@ -1,4 +1,6 @@
 import test, { describe } from "node:test"
+import { i18n } from "../../i18n"
+import { applySearchEmptyState, searchEmptyStateLabels } from "./searchEmptyState"
 import assert from "node:assert"
 
 // Inline the encoder function from search.inline.ts for testing
@@ -159,5 +161,92 @@ describe("search encoder", () => {
       const result = encoder("hello  ")
       assert.deepStrictEqual(result, ["hello"])
     })
+  })
+})
+
+describe("search empty state i18n", () => {
+  test("zh-CN uses the garden empty-state copy", () => {
+    // Given
+    const locale = "zh-CN"
+
+    // When
+    const search = i18n(locale).components.search
+
+    // Then
+    assert.equal(search.noResults, "没有找到相关笔记")
+    assert.equal(search.noResultsHint, "换个关键词试试？")
+  })
+
+  test("en-US keeps the English empty-state copy", () => {
+    // Given
+    const locale = "en-US"
+
+    // When
+    const search = i18n(locale).components.search
+
+    // Then
+    assert.equal(search.noResults, "No results.")
+    assert.equal(search.noResultsHint, "Try another search term?")
+  })
+
+  test("reads labels rendered by Quartz i18n", () => {
+    // Given
+    const dataset = {
+      searchNoResults: "没有找到相关笔记",
+      searchNoResultsHint: "换个关键词试试？",
+    } as DOMStringMap
+
+    // When
+    const labels = searchEmptyStateLabels(dataset)
+
+    // Then
+    assert.deepEqual(labels, {
+      noResults: "没有找到相关笔记",
+      noResultsHint: "换个关键词试试？",
+    })
+  })
+
+  test("does not bind when rendered labels are incomplete", () => {
+    // Given
+    const dataset = {
+      searchNoResults: "没有找到相关笔记",
+    } as DOMStringMap
+
+    // When
+    const labels = searchEmptyStateLabels(dataset)
+
+    // Then
+    assert.strictEqual(labels, undefined)
+  })
+
+  test("localizes the empty-state card without touching matches", () => {
+    // Given
+    const matchTitle = { textContent: "Obsidian Flight School" }
+    const emptyTitle = { textContent: "No results." }
+    const emptyHint = { textContent: "Try another search term?" }
+    const labels = {
+      noResults: "没有找到相关笔记",
+      noResultsHint: "换个关键词试试？",
+    }
+    const root = {
+      querySelectorAll(selector: string) {
+        assert.equal(selector, ".result-card.no-match")
+        return [
+          {
+            querySelector(sel: string) {
+              return sel === "h3" ? emptyTitle : emptyHint
+            },
+          },
+        ]
+      },
+    }
+
+    // When
+    applySearchEmptyState(root, labels)
+
+    // Then
+    assert.equal(emptyTitle.textContent, "没有找到相关笔记")
+    assert.equal(emptyHint.textContent, "换个关键词试试？")
+    assert.equal(matchTitle.textContent, "Obsidian Flight School")
   })
 })
