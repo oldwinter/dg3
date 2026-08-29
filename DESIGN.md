@@ -218,6 +218,13 @@ Layout rules:
 - **Accessibility**: Only genuinely overflowing containers enter the tab order. Each receives a localized accessible name and supports native keyboard scrolling; the existing 2px focus ring identifies the active region.
 - **Motion**: Edge cues use the 150ms micro transition and existing Quartz tokens. Reduced-motion removes the transition, and print removes both cues and focus decoration.
 
+### CodeFolding
+
+- **Structure**: Syntax-highlighted, non-Mermaid code blocks longer than 24 rendered lines receive one compact chevron control beside the existing copy action. Short and plain code blocks remain untouched.
+- **Behavior**: Long blocks begin at a bounded reading height and expand in place without moving or rewriting code. No-JavaScript and print output always expose the complete source; SPA navigation and in-place render cleanup never duplicate controls.
+- **Accessibility**: The native button reports localized expand/collapse names, `aria-expanded`, and its controlled code region. Keyboard focus remains on the action while state changes, with the existing opaque 2px focus ring.
+- **Motion**: Expand and collapse are immediate. Control feedback uses the 150ms micro transition; reduced motion removes transitions and press scaling, and no scroll or layout animation is introduced.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.

@@ -81,6 +81,10 @@ export default {
       table: "可橫向捲動的表格",
       code: "可橫向捲動的程式碼區塊",
     },
+    codeFolding: {
+      expand: "展開程式碼區塊",
+      collapse: "收合程式碼區塊",
+    },
     explorer: {
       title: "探索",
     },
