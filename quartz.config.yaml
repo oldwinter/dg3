@@ -76,7 +76,6 @@ plugins:
     options:
       enableInHtmlEmbed: false
       enableCheckbox: true
-      disableBrokenWikilinks: true
     order: 30
   - source: github:quartz-community/github-flavored-markdown
     enabled: true
@@ -93,6 +92,7 @@ plugins:
     enabled: true
     options:
       markdownLinkResolution: shortest
+      disableBrokenWikilinks: true
     order: 60
   - source: github:quartz-community/description
     enabled: true
