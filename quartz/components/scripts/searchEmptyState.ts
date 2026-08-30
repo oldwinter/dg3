@@ -25,8 +25,12 @@ export function applySearchEmptyState(root: EmptyStateRoot, labels: SearchEmptyS
     if (!card) continue
     const title = card.querySelector("h3")
     const hint = card.querySelector("p")
-    if (title) title.textContent = labels.noResults
-    if (hint) hint.textContent = labels.noResultsHint
+    if (title && title.textContent !== labels.noResults) {
+      title.textContent = labels.noResults
+    }
+    if (hint && hint.textContent !== labels.noResultsHint) {
+      hint.textContent = labels.noResultsHint
+    }
   }
 }
 
