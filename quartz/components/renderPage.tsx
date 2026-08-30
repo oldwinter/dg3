@@ -373,6 +373,11 @@ export function renderPage(
   const randomWander = i18n(pageLocale).components.randomWander ?? fallbackRandomWander
   const fallbackNoteShare = TRANSLATIONS[defaultTranslation].components.noteShare
   const noteShare = i18n(pageLocale).components.noteShare ?? fallbackNoteShare
+  const fallbackSearch = TRANSLATIONS[defaultTranslation].components.search
+  const searchI18n = i18n(pageLocale).components.search
+  const searchNoResults = searchI18n.noResults ?? fallbackSearch.noResults ?? "No results."
+  const searchNoResultsHint =
+    searchI18n.noResultsHint ?? fallbackSearch.noResultsHint ?? "Try another search term?"
   const fallbackWideContentScroll = TRANSLATIONS[defaultTranslation].components.wideContentScroll
   const wideContentScroll =
     i18n(pageLocale).components.wideContentScroll ?? fallbackWideContentScroll
@@ -413,6 +418,8 @@ export function renderPage(
         data-note-share-shared={noteShare.shared}
         data-note-share-copied={noteShare.copied}
         data-note-share-failed={noteShare.failed}
+        data-search-no-results={searchNoResults}
+        data-search-no-results-hint={searchNoResultsHint}
         data-wide-content-table={wideContentScroll.table}
         data-wide-content-code={wideContentScroll.code}
       >
