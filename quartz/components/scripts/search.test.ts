@@ -249,4 +249,56 @@ describe("search empty state i18n", () => {
     assert.equal(emptyHint.textContent, "换个关键词试试？")
     assert.equal(matchTitle.textContent, "Obsidian Flight School")
   })
+
+  test("writes localized empty-state copy only when the text changed", () => {
+    // Given
+    let titleWrites = 0
+    let hintWrites = 0
+    const emptyTitle = {
+      current: "No results.",
+      get textContent() {
+        return this.current
+      },
+      set textContent(value: string) {
+        titleWrites += 1
+        this.current = value
+      },
+    }
+    const emptyHint = {
+      current: "Try another search term?",
+      get textContent() {
+        return this.current
+      },
+      set textContent(value: string) {
+        hintWrites += 1
+        this.current = value
+      },
+    }
+    const labels = {
+      noResults: "没有找到相关笔记",
+      noResultsHint: "换个关键词试试？",
+    }
+    const root = {
+      querySelectorAll(selector: string) {
+        assert.equal(selector, ".result-card.no-match")
+        return [
+          {
+            querySelector(sel: string) {
+              return sel === "h3" ? emptyTitle : emptyHint
+            },
+          },
+        ]
+      },
+    }
+
+    // When
+    applySearchEmptyState(root, labels)
+    applySearchEmptyState(root, labels)
+
+    // Then
+    assert.equal(titleWrites, 1)
+    assert.equal(hintWrites, 1)
+    assert.equal(emptyTitle.textContent, "没有找到相关笔记")
+    assert.equal(emptyHint.textContent, "换个关键词试试？")
+  })
 })
