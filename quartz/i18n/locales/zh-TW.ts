@@ -101,8 +101,6 @@ export default {
     search: {
       title: "搜尋",
       searchBarPlaceholder: "搜尋些什麼",
-      noResults: "沒有找到相關筆記",
-      noResultsHint: "換個關鍵詞試試？",
     },
     tableOfContents: {
       title: "目錄",

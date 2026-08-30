@@ -189,6 +189,18 @@ describe("search empty state i18n", () => {
     assert.equal(search.noResultsHint, "Try another search term?")
   })
 
+  test("zh-TW preserves the existing fallback empty state", () => {
+    // Given
+    const locale = "zh-TW"
+
+    // When
+    const search = i18n(locale).components.search
+
+    // Then
+    assert.equal(search.noResults, undefined)
+    assert.equal(search.noResultsHint, undefined)
+  })
+
   test("reads labels rendered by Quartz i18n", () => {
     // Given
     const dataset = {
