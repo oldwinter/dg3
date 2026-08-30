@@ -68,6 +68,35 @@ export function parseReadLaterEntries(raw: string | null): readonly ReadLaterEnt
     .slice(0, READ_LATER_LIMIT)
 }
 
+export function readLaterEntriesToMarkdown(
+  entries: readonly ReadLaterEntry[],
+  baseUrl: string,
+): string {
+  let base: URL
+  try {
+    base = new URL(baseUrl)
+  } catch {
+    return ""
+  }
+  if (base.protocol !== "http:" && base.protocol !== "https:") return ""
+
+  const lines: string[] = []
+  for (const candidate of entries) {
+    const entry = parseReadLaterEntry(candidate)
+    if (entry === undefined) continue
+
+    const destination = new URL(entry.path, base)
+    if (destination.origin !== base.origin) continue
+    const label = entry.title
+      .replace(/\s+/gu, " ")
+      .trim()
+      .replace(/([\\[\]])/gu, "\\$1")
+    lines.push(`- [ ] [${label}](<${destination.href}>)`)
+  }
+
+  return lines.join("\n")
+}
+
 export function toggleReadLaterEntry(
   entries: readonly ReadLaterEntry[],
   current: ReadLaterEntry,
