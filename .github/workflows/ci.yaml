@@ -44,7 +44,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-plugins-
 
-      - run: npm ci
+      - run: npm install
 
       - name: Install Quartz plugins
         run: npx quartz plugin install

@@ -412,13 +412,13 @@ export const MyFrame: PageFrame = {
   grid-template-areas: "center";
 }
 `,
-  render({ componentData, pageBody: Content, footer: Footer }: PageFrameProps): unknown {
+  render({ componentData, pageBody: Content, footer: Footers }: PageFrameProps): unknown {
     const renderSlot = (C: (props: typeof componentData) => unknown): ComponentChildren =>
       C(componentData) as ComponentChildren
     return (
       <div class="center">
         {(Content as any)(componentData)}
-        {(Footer as any)(componentData)}
+        {Footers.map((Footer) => (Footer as any)(componentData))}
       </div>
     )
   },
@@ -428,7 +428,7 @@ export const MyFrame: PageFrame = {
 Key requirements:
 
 - `name`: A unique string identifier. This is what page types and YAML config reference.
-- `render()`: Receives all layout slots (header, sidebars, content, footer) and returns JSX for the inner page structure.
+- `render()`: Receives all layout slots (header, sidebars, content, footer) and returns JSX for the inner page structure. Note that `footer` is a `QuartzComponent[]` (an array) — frames should iterate over it with `.map()` to render all footer components.
 - `css` (optional): Frame-specific CSS. Scope it with `.page[data-frame="my-frame"]` selectors to avoid conflicts.
 
 **2. Re-export the frame:**

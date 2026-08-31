@@ -36,7 +36,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-plugins-
 
-      - run: npm ci
+      - run: npm install
 
       - name: Install Quartz plugins
         run: npx quartz plugin install
@@ -48,7 +48,7 @@ jobs:
         run: npx quartz build -d docs -v
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: preview-build
           path: public
