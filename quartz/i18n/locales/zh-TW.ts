@@ -81,6 +81,11 @@ export default {
       table: "可橫向捲動的表格",
       code: "可橫向捲動的程式碼區塊",
     },
+    tableMarkdown: {
+      title: "複製表格為 Markdown",
+      copied: "表格 Markdown 已複製",
+      failed: "瀏覽器未能複製表格",
+    },
     explorer: {
       title: "探索",
     },

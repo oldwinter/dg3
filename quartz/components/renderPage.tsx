@@ -381,6 +381,8 @@ export function renderPage(
   const fallbackWideContentScroll = TRANSLATIONS[defaultTranslation].components.wideContentScroll
   const wideContentScroll =
     i18n(pageLocale).components.wideContentScroll ?? fallbackWideContentScroll
+  const fallbackTableMarkdown = TRANSLATIONS[defaultTranslation].components.tableMarkdown
+  const tableMarkdown = i18n(pageLocale).components.tableMarkdown ?? fallbackTableMarkdown
   // During local dev (--serve), the dev server serves from root without the
   // baseUrl subpath, so basePath must be empty to avoid broken links.
   const basePath =
@@ -422,6 +424,9 @@ export function renderPage(
         data-search-no-results-hint={searchNoResultsHint}
         data-wide-content-table={wideContentScroll.table}
         data-wide-content-code={wideContentScroll.code}
+        data-table-markdown-title={tableMarkdown.title}
+        data-table-markdown-copied={tableMarkdown.copied}
+        data-table-markdown-failed={tableMarkdown.failed}
       >
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>

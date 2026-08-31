@@ -27,6 +27,8 @@ import noteShareStyle from "../../components/styles/noteShare.scss"
 import { wideContentScrollScript } from "../../components/scripts/wideContentScroll"
 import { searchEmptyStateScript } from "../../components/scripts/searchEmptyState"
 import wideContentScrollStyle from "../../components/styles/wideContentScroll.scss"
+import { tableMarkdownScript } from "../../components/scripts/tableMarkdown"
+import tableMarkdownStyle from "../../components/styles/tableMarkdown.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -120,6 +122,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.afterDOMLoaded.push(wideContentScrollScript)
   componentResources.afterDOMLoaded.push(searchEmptyStateScript)
   componentResources.css.push(wideContentScrollStyle)
+  componentResources.afterDOMLoaded.push(tableMarkdownScript)
+  componentResources.css.push(tableMarkdownStyle)
 
   // popovers
   if (cfg.enablePopovers) {

@@ -84,6 +84,11 @@ export default {
       table: "Scrollable table",
       code: "Scrollable code block",
     },
+    tableMarkdown: {
+      title: "Copy table as Markdown",
+      copied: "Table Markdown copied",
+      failed: "The browser could not copy this table",
+    },
     explorer: {
       title: "Explorer",
     },
