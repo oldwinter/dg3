@@ -1,6 +1,7 @@
 {
   "name": "@quartz-community/obsidian-flavored-markdown",
   "version": "0.1.0",
+  "packageManager": "npm@12.0.2",
   "description": "Obsidian Flavored Markdown transformer plugin for Quartz",
   "type": "module",
   "license": "MIT",
@@ -46,50 +47,52 @@
     "check": "npm run typecheck && npm run lint && npm run format && npm run test"
   },
   "peerDependencies": {
-    "@jackyzha0/quartz": "^4.5.2",
     "preact": "^10.0.0"
   },
   "peerDependenciesMeta": {
-    "@jackyzha0/quartz": {
-      "optional": true
-    },
     "preact": {
       "optional": false
     }
   },
   "dependencies": {
-    "@quartz-community/rehype-obsidian": "github:quartz-community/rehype-obsidian",
-    "@quartz-community/remark-obsidian": "github:quartz-community/remark-obsidian",
-    "@quartz-community/types": "github:quartz-community/types",
-    "@quartz-community/utils": "github:quartz-community/utils"
+    "@quartz-community/rehype-obsidian": "^0.1.2",
+    "@quartz-community/remark-obsidian": "^0.2.4",
+    "@quartz-community/types": "^0.3.0",
+    "@quartz-community/utils": "^0.1.1"
   },
   "devDependencies": {
-    "@types/hast": "^3.0.4",
+    "@eslint/js": "^10.0.1",
+    "@types/hast": "^3.0.5",
     "@types/mdast": "^4.0.4",
-    "@types/node": "^24.10.0",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
+    "@types/node": "^26.4.0",
+    "eslint": "^10.9.1",
+    "eslint-config-prettier": "^10.1.8",
     "github-slugger": "^2.0.0",
-    "hast": "^1.0.0",
     "hast-util-to-html": "^9.0.5",
     "hast-util-to-jsx-runtime": "^2.3.6",
-    "mdast": "^3.0.0",
     "mdast-util-to-hast": "^13.2.1",
-    "preact": "^10.28.2",
-    "prettier": "^3.6.2",
+    "preact": "^10.29.8",
+    "prettier": "^3.9.6",
     "rehype-raw": "^7.0.0",
-    "sass": "^1.97.3",
-    "tsup": "^8.5.0",
+    "sass": "^1.103.1",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.68.0",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.1.0",
-    "vitest": "^2.1.9"
+    "vitest": "^4.1.11"
+  },
+  "overrides": {
+    "esbuild": "0.28.2"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true,
+    "esbuild@0.28.2": true,
+    "fsevents@2.3.3": true
   },
   "engines": {
-    "node": ">=22",
-    "npm": ">=10.9.2"
+    "node": ">=26",
+    "npm": ">=12"
   },
   "quartz": {
     "name": "obsidian-flavored-markdown",

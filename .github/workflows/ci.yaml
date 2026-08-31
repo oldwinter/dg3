@@ -19,17 +19,20 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 24
+          node-version: 26.8.1
+
+      - name: Setup npm
+        run: npm install --global npm@12.0.2
 
       - name: Cache dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -37,17 +40,17 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Cache Quartz plugins
-        uses: actions/cache@v5
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: .quartz/plugins
-          key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
+          key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.config.yaml', 'package-lock.json', 'local-plugins/**/package-lock.json', 'external-plugins/**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-plugins-
 
-      - run: npm install
+      - run: npm ci
 
       - name: Install Quartz plugins
-        run: npx quartz plugin install
+        run: npm run install-plugins
 
       - name: Check types and style
         run: npm run check
@@ -64,17 +67,17 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 24
+          node-version: 26.8.1
       - name: Get package version
         run: node -p -e '`PACKAGE_VERSION=${require("./package.json").version}`' >> $GITHUB_ENV
       - name: Create release tag
-        uses: pkgdeps/git-tag-action@v3
+        uses: pkgdeps/git-tag-action@a5a161774bace8b4e1969dd850c67a7421f1b710 # v3.0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           github_repo: ${{ github.repository }}
