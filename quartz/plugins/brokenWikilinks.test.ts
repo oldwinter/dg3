@@ -1,5 +1,5 @@
 import assert from "node:assert"
-import { readFile } from "node:fs/promises"
+import { access, readFile } from "node:fs/promises"
 import test, { describe } from "node:test"
 
 describe("disableBrokenWikilinks config", () => {
@@ -21,25 +21,85 @@ describe("disableBrokenWikilinks config", () => {
 })
 
 describe("homepage and tour wikilink remaps", () => {
-  test("maps publish and health entries to existing notes, leaves remaining dead links as wikilinks", async () => {
+  test("keeps public navigation on published canonical notes", async () => {
     const gardenRoot = new URL("../../", import.meta.url)
-    const homepage = await readFile(new URL("content/AboutTheGarden.md", gardenRoot), "utf8")
-    const tour = await readFile(new URL("content/🍀 花园导览/🍀 花园导览.md", gardenRoot), "utf8")
+    const navigation = [
+      {
+        source: "content/AboutTheGarden.md",
+        links: [
+          ["Spaces/2-Area/数字花园建设与维护/数字花园", "数字花园"],
+          ["Atlas/MOCs/∑ 笔记方法论与工作流", "卡片笔记"],
+          ["🍀 花园导览/🧰 本库指南/🧰 本库使用指南", "🧰 本库使用指南"],
+          ["Spaces/2-Area/运动健康/∑ 运动健康", "🏋 如何保持健康"],
+          ["🍀 花园导览/🧀 个人知识管理", "🧀 个人知识管理"],
+          ["🍀 花园导览/🔧 如何用好AI工具", "🔧 如何用好AI工具"],
+          ["Atlas/MOCs/∑ 效率工具生态", "🗜 效率工具使用"],
+          ["🍀 花园导览/🍀 花园导览", "🍀 花园导览"],
+          ["Spaces/2-Area/数字花园建设与维护/数字花园", "思考的过程容器"],
+          ["Cards/上下文", "上下文"],
+          ["Cards/反向链接", "反向链接"],
+          ["🍀 花园导览/🧰 本库指南/Obsidian/obsidian相关笔记/obsidian入门", "Obsidian"],
+          ["README", "README"],
+        ],
+      },
+      {
+        source: "content/🍀 花园导览/🍀 花园导览.md",
+        links: [
+          ["🍀 花园导览/🧰 本库指南/🧰 本库使用指南", "🧰 本库使用指南"],
+          ["🍀 花园导览/🧰 本库指南/AI + 知识管理核心工作流", "AI + 知识管理核心工作流"],
+          ["Cards/本库如何免费发布至web", "🌏 本库发布指南"],
+          ["🍀 花园导览/🔧 如何用好AI工具", "🔧 如何用好AI工具"],
+          ["Spaces/2-Area/运动健康/∑ 运动健康", "🏋 如何保持健康"],
+          ["🍀 花园导览/🧀 个人知识管理", "🧀 个人知识管理"],
+          ["Atlas/MOCs/∑ 效率工具生态", "🗜 效率工具使用"],
+        ],
+      },
+      {
+        source: "content/🍀 花园导览/🔧 如何用好AI工具.md",
+        links: [
+          ["Spaces/2-Area/运动健康/∑ 运动健康", "🏋 如何保持健康"],
+          ["🍀 花园导览/🧀 个人知识管理", "🧀 个人知识管理"],
+          ["Atlas/MOCs/∑ 效率工具生态", "🗜 效率工具使用"],
+        ],
+      },
+      {
+        source: "content/🍀 花园导览/🧀 个人知识管理.md",
+        links: [
+          ["🍀 花园导览/🔧 如何用好AI工具", "🔧 如何用好AI工具"],
+          ["Spaces/2-Area/运动健康/∑ 运动健康", "🏋 如何保持健康"],
+          ["Atlas/MOCs/∑ 效率工具生态", "🗜 效率工具使用"],
+        ],
+      },
+      {
+        source: "content/🍀 花园导览/🧰 本库指南/🧰 本库使用指南.md",
+        links: [["Cards/本库如何免费发布至web", "🌏 本库发布指南"]],
+      },
+    ] as const
 
-    assert.match(homepage, /\[\[∑ 运动健康\|🏋 如何保持健康\]\]/)
-    assert.match(homepage, /\[\[🧰 本库使用指南\]\]/)
-    assert.match(homepage, /\[\[🧀 个人知识管理\]\]/)
-    assert.match(homepage, /\[\[🔧 如何用好AI工具\]\]/)
-    assert.match(homepage, /\[\[🗜 效率工具使用\]\]/)
-    assert.match(homepage, /\[\[卡片笔记\]\]/)
-    assert.doesNotMatch(homepage, /\[\[🏋 如何保持健康\]\]/)
+    for (const entry of navigation) {
+      const source = await readFile(new URL(entry.source, gardenRoot), "utf8")
+      for (const [target, label] of entry.links) {
+        assert.ok(source.includes(`[[${target}|${label}]]`), `${entry.source} should use ${target}`)
+        await access(new URL(`content/${target}.md`, gardenRoot))
+      }
+    }
 
-    assert.match(tour, /\[\[本库如何免费发布至web\|🌏 本库发布指南\]\]/)
-    assert.match(tour, /\[\[∑ 运动健康\|🏋 如何保持健康\]\]/)
-    assert.match(tour, /\[\[🏗 本库Roadmap\]\]/)
-    assert.match(tour, /\[\[如何阅读由双链笔记组成的文章\]\]/)
-    assert.match(tour, /\[\[🗜 效率工具使用\]\]/)
-    assert.doesNotMatch(tour, /\[\[🌏 本库发布指南\]\]/)
+    const orphanLabels = [
+      "🏋 如何保持健康",
+      "🗜 效率工具使用",
+      "🏗 本库Roadmap",
+      "如何阅读由双链笔记组成的文章",
+      "🍫 本库方法论指南",
+      "🌏 本库发布指南",
+    ]
+    const publishedNavigation = await Promise.all(
+      navigation.map((entry) => readFile(new URL(entry.source, gardenRoot), "utf8")),
+    )
+    for (const source of publishedNavigation) {
+      for (const label of orphanLabels) {
+        assert.ok(!source.includes(`[[${label}]]`), `dead ${label} wikilink should not remain`)
+      }
+    }
   })
 })
 
