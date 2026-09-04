@@ -84,6 +84,10 @@ export default {
       table: "Scrollable table",
       code: "Scrollable code block",
     },
+    codeFolding: {
+      expand: "Expand code block",
+      collapse: "Collapse code block",
+    },
     explorer: {
       title: "Explorer",
     },

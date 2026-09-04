@@ -87,6 +87,10 @@ export interface Translation {
       table: string
       code: string
     }
+    codeFolding?: {
+      expand: string
+      collapse: string
+    }
     explorer: {
       title: string
     }

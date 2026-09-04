@@ -84,6 +84,10 @@ export default {
       table: "可横向滚动的表格",
       code: "可横向滚动的代码块",
     },
+    codeFolding: {
+      expand: "展开代码块",
+      collapse: "收起代码块",
+    },
     explorer: {
       title: "探索",
     },

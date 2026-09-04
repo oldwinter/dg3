@@ -161,4 +161,22 @@ describe("componentResources", () => {
       assert.ok(styleIndex < spaBranchIndex)
     })
   })
+
+  test("includes code folding when SPA navigation is disabled", () => {
+    const emitterPath = new URL("./componentResources.ts", import.meta.url)
+    const source = readFile(emitterPath, "utf8")
+
+    return source.then((contents) => {
+      const scriptIndex = contents.indexOf(
+        "componentResources.afterDOMLoaded.push(codeFoldingScript)",
+      )
+      const styleIndex = contents.indexOf("componentResources.css.push(codeFoldingStyle)")
+      const spaBranchIndex = contents.indexOf("if (cfg.enableSPA)")
+
+      assert.notEqual(scriptIndex, -1)
+      assert.notEqual(styleIndex, -1)
+      assert.ok(scriptIndex < spaBranchIndex)
+      assert.ok(styleIndex < spaBranchIndex)
+    })
+  })
 })
