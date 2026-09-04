@@ -24,6 +24,8 @@ import { randomWanderScript } from "../../components/scripts/randomWander"
 import randomWanderStyle from "../../components/styles/randomWander.scss"
 import { noteShareScript } from "../../components/scripts/noteShare"
 import noteShareStyle from "../../components/styles/noteShare.scss"
+import { localLinkWanderScript } from "../../components/scripts/localLinkWander"
+import localLinkWanderStyle from "../../components/styles/localLinkWander.scss"
 import { wideContentScrollScript } from "../../components/scripts/wideContentScroll"
 import { searchEmptyStateScript } from "../../components/scripts/searchEmptyState"
 import wideContentScrollStyle from "../../components/styles/wideContentScroll.scss"
@@ -117,6 +119,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.css.push(randomWanderStyle)
   componentResources.afterDOMLoaded.push(noteShareScript)
   componentResources.css.push(noteShareStyle)
+  componentResources.afterDOMLoaded.push(localLinkWanderScript)
+  componentResources.css.push(localLinkWanderStyle)
   componentResources.afterDOMLoaded.push(wideContentScrollScript)
   componentResources.afterDOMLoaded.push(searchEmptyStateScript)
   componentResources.css.push(wideContentScrollStyle)
