@@ -87,6 +87,11 @@ export interface Translation {
       table: string
       code: string
     }
+    tableMarkdown?: {
+      title: string
+      copied: string
+      failed: string
+    }
     explorer: {
       title: string
     }

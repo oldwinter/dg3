@@ -84,6 +84,11 @@ export default {
       table: "可横向滚动的表格",
       code: "可横向滚动的代码块",
     },
+    tableMarkdown: {
+      title: "复制表格为 Markdown",
+      copied: "表格 Markdown 已复制",
+      failed: "浏览器未能复制表格",
+    },
     explorer: {
       title: "探索",
     },

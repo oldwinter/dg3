@@ -218,6 +218,14 @@ Layout rules:
 - **Accessibility**: Only genuinely overflowing containers enter the tab order. Each receives a localized accessible name and supports native keyboard scrolling; the existing 2px focus ring identifies the active region.
 - **Motion**: Edge cues use the 150ms micro transition and existing Quartz tokens. Reduced-motion removes the transition, and print removes both cues and focus decoration.
 
+### TableMarkdown
+
+- **Structure**: Every authored Markdown table with a header and body receives one 40px copy icon immediately after its scroll container. Transcluded and structurally unsupported tables remain untouched.
+- **Output**: Copy a portable Markdown table with normalized whitespace, escaped pipes and backslashes, and padded short rows. No source content, storage, analytics, dependencies, or network requests are involved.
+- **States**: Ready, copying, copied, failed, hover, pressed, focus-visible, and disabled. Success swaps the copy glyph for a check for 1.8 seconds; failure keeps the action available for retry.
+- **Accessibility**: The native button and polite live region use page-localized names. Keyboard activation, a stable 40px target, print hiding, and Quartz SPA `nav`/`render` cleanup are required.
+- **Motion**: Existing 150ms micro transitions cover hover and press feedback. Reduced-motion removes transitions and spatial press feedback.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.
