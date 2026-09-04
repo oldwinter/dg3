@@ -26,6 +26,7 @@ import { noteShareScript } from "../../components/scripts/noteShare"
 import noteShareStyle from "../../components/styles/noteShare.scss"
 import { wideContentScrollScript } from "../../components/scripts/wideContentScroll"
 import { searchEmptyStateScript } from "../../components/scripts/searchEmptyState"
+import searchFeedbackStyle from "../../components/styles/searchFeedback.scss"
 import wideContentScrollStyle from "../../components/styles/wideContentScroll.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
@@ -119,6 +120,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.css.push(noteShareStyle)
   componentResources.afterDOMLoaded.push(wideContentScrollScript)
   componentResources.afterDOMLoaded.push(searchEmptyStateScript)
+  componentResources.css.push(searchFeedbackStyle)
   componentResources.css.push(wideContentScrollStyle)
 
   // popovers

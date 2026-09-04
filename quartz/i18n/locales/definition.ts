@@ -109,6 +109,9 @@ export interface Translation {
       searchBarPlaceholder: string
       noResults?: string
       noResultsHint?: string
+      resultList?: string
+      resultShown?: string
+      resultsShown?: string
     }
     tableOfContents: {
       title: string

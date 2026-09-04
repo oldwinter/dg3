@@ -106,6 +106,9 @@ export default {
       searchBarPlaceholder: "搜索些什么",
       noResults: "没有找到相关笔记",
       noResultsHint: "换个关键词试试？",
+      resultList: "搜索结果",
+      resultShown: "显示 {count} 条结果",
+      resultsShown: "显示 {count} 条结果",
     },
     tableOfContents: {
       title: "目录",

@@ -378,6 +378,11 @@ export function renderPage(
   const searchNoResults = searchI18n.noResults ?? fallbackSearch.noResults ?? "No results."
   const searchNoResultsHint =
     searchI18n.noResultsHint ?? fallbackSearch.noResultsHint ?? "Try another search term?"
+  const searchResultList = searchI18n.resultList ?? fallbackSearch.resultList ?? "Search results"
+  const searchResultShown =
+    searchI18n.resultShown ?? fallbackSearch.resultShown ?? "Showing {count} result"
+  const searchResultsShown =
+    searchI18n.resultsShown ?? fallbackSearch.resultsShown ?? "Showing {count} results"
   const fallbackWideContentScroll = TRANSLATIONS[defaultTranslation].components.wideContentScroll
   const wideContentScroll =
     i18n(pageLocale).components.wideContentScroll ?? fallbackWideContentScroll
@@ -420,6 +425,9 @@ export function renderPage(
         data-note-share-failed={noteShare.failed}
         data-search-no-results={searchNoResults}
         data-search-no-results-hint={searchNoResultsHint}
+        data-search-result-list={searchResultList}
+        data-search-result-shown={searchResultShown}
+        data-search-results-shown={searchResultsShown}
         data-wide-content-table={wideContentScroll.table}
         data-wide-content-code={wideContentScroll.code}
       >

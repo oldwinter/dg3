@@ -101,6 +101,9 @@ export default {
     search: {
       title: "搜尋",
       searchBarPlaceholder: "搜尋些什麼",
+      resultList: "搜尋結果",
+      resultShown: "顯示 {count} 筆結果",
+      resultsShown: "顯示 {count} 筆結果",
     },
     tableOfContents: {
       title: "目錄",
