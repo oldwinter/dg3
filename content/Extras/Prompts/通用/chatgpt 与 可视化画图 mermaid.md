@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Extras/Prompts/通用/chatgpt 与 可视化画图 mermaid.md
+title: chatgpt 与 可视化画图 mermaid
 created: 2024-11-04
-modified: 2025-08-27
-published: 2026-05-15T17:35:28.244Z
+modified: 2026-08-23
+published: 2026-08-23T12:51:59.590Z
 ---
 
 如果要样式精美，最推荐的是[[chatgpt 与 svg画图]]
@@ -15,8 +16,6 @@ published: 2026-05-15T17:35:28.244Z
 转成思维导图，mermaid 图等
 
 ![](https://pub-pic.oldwinter.top/2024/11/7fcf198434c4e6eb5a689fcd32f10ea5.png)
-
-##
 
 ## 参考
 

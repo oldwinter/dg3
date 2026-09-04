@@ -1,10 +1,15 @@
 ---
 publish: true
 permalink: /Cards/AI Assisted Coding.md
+title: AI Assisted Coding
 created: 2025-04-25
 modified: 2025-04-25
-published: 2026-05-15T17:30:27.082Z
+published: 2026-08-23T12:51:57.847Z
+tags:
+  - AI生成
 ---
+
+AI Assisted Coding 强调人深度审查和参与，把 AI 当辅助，而不是放手给 agent。
 
 依旧from[[Andrej Karpathy]]
 

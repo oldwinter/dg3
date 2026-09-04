@@ -19,7 +19,7 @@
 		{"id":"c7a2cf3ade54fefd","type":"text","text":"## hermes agent","x":-459,"y":-359,"width":260,"height":60},
 		{"id":"08892030f657726d","type":"text","text":"## Automations","x":1056,"y":-646,"width":250,"height":60},
 		{"id":"26cd3afaee5324c3","type":"text","text":"## browser use","x":708,"y":-646,"width":250,"height":60},
-		{"id":"961326f4b8eb1207","type":"text","text":"### 117 or 118 服务器","x":-479,"y":-488,"width":218,"height":57},
+		{"id":"961326f4b8eb1207","type":"text","text":"### 117 or 118 服务器","x":-479,"y":-488,"width":277,"height":57},
 		{"id":"722cc765199cb3a5","type":"text","text":"### 个人pc","x":-479,"y":-578,"width":162,"height":60},
 		{"id":"fd75c9ea0abd6988","type":"text","text":"## 飞书","x":-966,"y":-633,"width":260,"height":60},
 		{"id":"b3466a59c3de956d","type":"text","text":"## [[happy cli]]","x":-966,"y":-546,"width":260,"height":60},

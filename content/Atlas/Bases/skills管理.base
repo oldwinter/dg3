@@ -1,7 +1,8 @@
 filters:
-  and:
+  or:
     - file.inFolder("Sources/Skills")
     - "!skill_name.isEmpty()"
+    - topics.contains("agent-skills")
 properties:
   来源合集:
     displayName: 来源合集
@@ -87,3 +88,13 @@ views:
         direction: DESC
       - property: file.name
         direction: ASC
+  - type: kanban
+    name: View
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - file.backlinks
+      - file.basename
+      - file.ext

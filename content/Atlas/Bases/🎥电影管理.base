@@ -1,6 +1,6 @@
 filters:
   and:
-    - type == "movie"
+    - topics == []
 views:
   - type: cards
     name: 画廊视图

@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Spaces/2-Area/macos高效使用/macOS 和空格配合的快捷键.md
+title: macOS 和空格配合的快捷键
 created: 2025-03-05
 modified: 2025-07-18
-published: 2026-05-15T17:30:27.450Z
+published: 2026-08-04T14:33:52.872Z
 ---
 
 相关笔记：[[windows 和空格配合的快捷键]]

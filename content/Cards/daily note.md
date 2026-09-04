@@ -6,7 +6,7 @@ aliases:
 title: dailynote
 created: 2022-06-09
 modified: 2025-07-09
-published: 2026-05-15T17:30:26.832Z
+published: 2026-08-04T14:33:52.717Z
 ---
 
 每日笔记（dailynote）不是每日日记。

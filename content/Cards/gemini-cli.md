@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Cards/gemini-cli.md
+title: gemini-cli
 created: 2025-06-25
 modified: 2025-07-10
-published: 2026-05-15T17:30:26.949Z
+published: 2026-08-04T14:33:52.721Z
 ---
 
 up:: [[∑ 大模型产品对比]]

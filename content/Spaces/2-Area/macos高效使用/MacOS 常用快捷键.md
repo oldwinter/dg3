@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Spaces/2-Area/macos高效使用/MacOS 常用快捷键.md
+title: MacOS 常用快捷键
 created: 2023-12-24
 modified: 2024-12-19
-published: 2026-05-15T17:35:24.195Z
+published: 2026-08-01T11:57:45.430Z
 ---
 
 [[MacOS Windows 修饰键 对比]]

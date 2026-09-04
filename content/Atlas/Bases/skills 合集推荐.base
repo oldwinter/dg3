@@ -61,12 +61,13 @@ views:
     order:
       - file.name
       - 个人评分
-      - description
+      - github_primary_url
+      - github_stars_total
       - skill_collection_type
       - why_worth_watching
-      - github_stars_total
       - github_last_push
       - github_checked_at
+      - description
       - status
       - modified
     sort:
@@ -82,8 +83,9 @@ views:
         direction: ASC
     columnSize:
       file.name: 254
+      note.github_primary_url: 302
+      note.github_stars_total: 92
       note.description: 305
-      note.topics: 429
   - type: table
     name: 待整理
     filters:

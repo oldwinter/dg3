@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Cards/kiro.md
+title: kiro
 created: 2025-07-15
 modified: 2025-07-15
-published: 2026-05-24T06:06:36.902Z
+published: 2026-08-04T14:33:52.723Z
 ---
 
 [[kiro auth文件路径]]

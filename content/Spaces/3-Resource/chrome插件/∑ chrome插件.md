@@ -7,7 +7,7 @@ aliases:
 title: chrome必装插件
 created: 2022-06-09
 modified: 2025-07-25
-published: 2026-05-15T17:30:27.775Z
+published: 2026-08-04T14:33:52.906Z
 ---
 
 [[chrome插件.base]]

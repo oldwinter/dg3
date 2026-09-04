@@ -4,7 +4,7 @@ permalink: /Atlas/_ Atlas Readme.md
 title: About Atlas
 created: 2022-06-23
 modified: 2026-05-04
-published: 2026-05-15T17:30:28.730Z
+published: 2026-06-30T17:32:50.005Z
 ---
 
 # 🗺️ 知识图谱 (Atlas) 说明
@@ -22,11 +22,18 @@ published: 2026-05-15T17:30:28.730Z
 **主要子文件夹说明：**
 
 - `Bases/`: 存放 Obsidian Bases 视图和工作台；任务系统视图已收拢到 `Bases/TaskNotes/`
+
 - `Canvas/`: 存放 Obsidian Canvas 画板文件，用于可视化思考和知识结构梳理
+
 - `Categories/`: 存放各种分类体系和标准，帮助组织和归类知识
+
 - `Draws/`: 存放绘图源文件、导出图和其他图形化资料；子层分为 `Canvas/`、`Excalidraw/`、`Exports/`、`Cropped/` 和 `Notes/`
+
 - `LLM Wiki/`: 存放 source summary、concept、query、synthesis 等编译层产物
+
 - `MOCs/`: 存放内容地图 (Maps of Content)，作为知识导航的枢纽
+
+- `Reports/`: 存放长期可复用的审计、整理方案和跨区汇总报告；临时原始输出仍应放在 ignored `.tmp/`
 
 Skill 管理卡片现在放在 `Sources/Skills/`；对应管理视图仍在 `Atlas/Bases/skills管理.base`。
 

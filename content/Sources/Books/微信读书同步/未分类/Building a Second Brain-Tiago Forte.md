@@ -4,7 +4,7 @@ permalink: /Sources/Books/微信读书同步/未分类/Building a Second Brain-T
 title: Building a Second Brain-Tiago Forte
 created: 2022-08-09
 modified: 2023-03-14
-published: 2026-05-15T17:45:55.408Z
+published: 2026-06-06T17:00:29.281Z
 tags:
   - source
 socialImage: https://res.weread.qq.com/wrepub/CB_1x64Y84a47Mu6ZM6YE_parsecover

@@ -3,9 +3,10 @@ publish: true
 permalink: /Cards/vibe coding.md
 aliases:
   - 氛围编码
+title: vibe coding
 created: 2025-03-16
 modified: 2026-01-02
-published: 2026-05-15T17:35:23.453Z
+published: 2026-08-04T14:56:46.702Z
 ---
 
 ## 我的理解

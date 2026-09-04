@@ -7,7 +7,7 @@ aliases:
 title: MCP与AI工具链
 created: 2025-12-26
 modified: 2025-12-26
-published: 2026-05-15T17:30:29.109Z
+published: 2026-08-04T14:33:52.676Z
 ---
 
 > MCP (Model Context Protocol) 及相关 AI 工具链的知识整合，涵盖配置、使用技巧和最佳实践。

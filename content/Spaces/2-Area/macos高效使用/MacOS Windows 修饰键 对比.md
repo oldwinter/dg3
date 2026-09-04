@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Spaces/2-Area/macos高效使用/MacOS Windows 修饰键 对比.md
+title: MacOS Windows 修饰键 对比
 created: 2023-12-24
 modified: 2023-12-24
-published: 2026-05-15T17:30:27.392Z
+published: 2026-08-04T14:33:52.871Z
 ---
 
 - Windows 键 = ⌘ Command

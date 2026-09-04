@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Cards/Obsidian Flight School.md
+title: Obsidian Flight School
 created: 2025-08-01
 modified: 2025-08-01
-published: 2026-05-15T17:30:26.519Z
+published: 2026-08-04T14:33:52.704Z
 ---
 
 up:: [[∑ Obsidian Explorer]]

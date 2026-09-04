@@ -4,7 +4,7 @@ permalink: /Sources/AI/kubectl 命令执行流程图.md
 title: kubectl 命令执行流程图
 created: 2025-01-28
 modified: 2025-01-28
-published: 2026-05-15T17:30:28.550Z
+published: 2026-08-04T14:33:52.775Z
 ---
 
 # 🔧 kubectl 命令执行流程图

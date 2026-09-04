@@ -1,9 +1,12 @@
 ---
 publish: true
 permalink: /Cards/RemNote.md
+title: RemNote
 created: 2025-07-10
 modified: 2025-07-10
-published: 2026-05-15T17:30:26.769Z
+published: 2026-08-23T13:03:36.658Z
+tags:
+  - AI生成
 ---
 
-似乎主打间隔重复功能。
+RemNote 是带间隔重复的笔记软件。

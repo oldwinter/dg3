@@ -6,8 +6,8 @@ aliases:
   - 来源说明
 title: About Sources
 created: 2022-06-22
-modified: 2026-05-04
-published: 2026-05-15T17:30:28.017Z
+modified: 2026-08-10
+published: 2026-08-23T13:55:49.180Z
 tags:
   - source
 ---
@@ -19,7 +19,7 @@ up:: [[ACCESS 笔记组织法]]
 - `AI/`: 存放与 AI / AIGC 相关的文献、资料、生成稿和案例
 - `Articles/`: 存放网络文章、博客文章等的文献笔记和摘要
 - `Books/`: 存放书籍阅读笔记、摘要和思考
-- `Clippings/`: 存放 Obsidian Web Clipper 等工具剪藏的原始资料；根 `Clippings/` 已合并到这里
+- `Clippings/`: 存放 Obsidian Web Clipper 等工具剪藏的原始资料；根 `Clippings/` 已于 2026-07-26 合并、2026-08-09 / 2026-08-23 两次补遗归位后退役（入口统一在 `Sources/Clippings/`）
 - `Courses/`: 存放在线课程、培训等的学习笔记和资料
 - `CuboxSync/`: 从Cubox同步的网络收藏和剪藏内容
 - `GithubStarsSync/`: 从GitHub Stars同步的开源项目和代码库资料
@@ -30,9 +30,33 @@ up:: [[ACCESS 笔记组织法]]
 - `WuCaiSync/`: 从五彩同步的网络高亮和标注内容
 - [[导入空正文索引]]：承接已删除的无正文、无入链同步导入记录，避免空壳单页继续占据笔记数量。
 - [[GithubStarsSync 生成页归档索引]]：承接已删除的无入链 GitHub Stars 同步生成页；这些页正文只是 frontmatter 的模板展开，索引保留 repo URL、描述、stars、语言和 topics。
-- [[Movies + TV/豆瓣影音无评论归档索引|豆瓣影音无评论归档索引]]：承接已删除的无入链、无个人评分、空 Comment 的豆瓣影音同步记录；索引保留标题、类型、评分、日期、类型、国家、导演和 Douban ID。
-- [[Movies + TV/豆瓣影音评分归档索引|豆瓣影音评分归档索引]]：承接已删除的无非同步日志入链、保留个人评分但无手写评论的豆瓣影音同步记录；索引保留个人评分、豆瓣评分、日期、类型、国家、导演、Douban ID 和正文图片链接。
-- [[Books/微信读书同步元数据归档索引|微信读书同步元数据归档索引]]：承接已删除的零入链或只被 2022 年度回顾引用、且无高亮 / 无读书笔记 / 无有效评论的微信读书同步书目；索引保留书目元数据和原简介，并用 aliases 承接旧年度回顾链接。
+- [[Sources/Movies + TV/豆瓣影音无评论归档索引|豆瓣影音无评论归档索引]]：承接已删除的无入链、无个人评分、空 Comment 的豆瓣影音同步记录；索引保留标题、类型、评分、日期、类型、国家、导演和 Douban ID。
+- [[Sources/Movies + TV/豆瓣影音评分归档索引|豆瓣影音评分归档索引]]：承接已删除的无非同步日志入链、保留个人评分但无手写评论的豆瓣影音同步记录；索引保留个人评分、豆瓣评分、日期、类型、国家、导演、Douban ID 和正文图片链接。
+- [[Sources/Books/微信读书同步元数据归档索引|微信读书同步元数据归档索引]]：承接已删除的零入链或只被 2022 年度回顾引用、且无高亮 / 无读书笔记 / 无有效评论的微信读书同步书目；索引保留书目元数据和原简介，并用 aliases 承接旧年度回顾链接。
+
+## Source lifecycle
+
+来源层的核心职责是保留 provenance，而不是把所有外部材料都改写成常青笔记。推荐流转：
+
+```text
+raw import / clipping
+  → source summary
+  → synthesis / concept
+  → MOC / Area / guide 回桥
+```
+
+- 原始导入：保留在 `Sources/Clippings/`、`Sources/CuboxSync/`、`Sources/GithubStarsSync/` 等来源目录。
+- 编译层：有价值的来源优先进入 [[Atlas/LLM Wiki/_index|LLM Wiki]]，用 source summary、query、synthesis 承接。
+- 常青层：稳定判断再回桥到 `Cards/`、`Spaces/` 或 [[∑ 全库MOC索引]]。
+- root `Clippings/` 已退役且目录已空；新剪藏只进 `Sources/Clippings/`。若根目录再次出现遗留文件，先扫引用和同名碰撞，再小批 `git mv`，不改正文。
+- 本轮全库审计后的来源整理入口是 [[Atlas/MOCs/Source Intake 与 Provenance Hub|Source Intake 与 Provenance Hub]]；重复和 source-of-record 候选见 [[_system/reports/vault-audit-2026-07-01/clippings-dedupe-manifest|Clippings Dedupe Manifest]]。
+
+## 当前入口
+
+- 剪藏入口：[[Sources/Clippings/_ Clippings Readme|Clippings Readme]]
+- Cubox 导入登记：[[Sources/CuboxSync/_ CuboxSync Index|CuboxSync Index]]
+- LLM Wiki 编译层：[[Atlas/LLM Wiki/_index|LLM Wiki Index]]
+- 全库主题入口：[[∑ 全库MOC索引]]
 
 ## 个人用法
 

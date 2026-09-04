@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Spaces/1-Project/2025下半年小红书探索/我奶奶用了都说丝滑的mac触控板配置方案.md
+title: 我奶奶用了都说丝滑的mac触控板配置方案
 created: 2025-07-22
 modified: 2025-07-24
-published: 2026-05-15T17:30:27.928Z
+published: 2026-08-04T14:33:52.824Z
 ---
 
 ## 来源

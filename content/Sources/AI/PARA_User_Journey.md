@@ -4,7 +4,7 @@ permalink: /Sources/AI/PARA_User_Journey.md
 title: PARA 管理流程详细工作流
 created: 2025-01-27
 modified: 2025-01-27
-published: 2026-05-15T17:30:28.557Z
+published: 2026-08-04T14:33:52.773Z
 ---
 
 # PARA 管理流程详细工作流

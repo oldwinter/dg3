@@ -6,8 +6,8 @@ aliases:
   - 所有MOC汇总
 title: 全库MOC索引
 created: 2025-12-26
-modified: 2026-03-14
-published: 2026-05-15T17:30:29.097Z
+modified: 2026-06-06
+published: 2026-06-30T17:47:29.279Z
 ---
 
 > 这是本库所有 MOC（Map of Content）的汇总索引，按照主题分类整理，便于快速导航到各个知识领域。
@@ -20,9 +20,13 @@ published: 2026-05-15T17:30:29.097Z
 
 ## 入口分层
 
-- 主题总入口：放在 `Atlas/MOCs/`，负责跨目录导航
-- 目录内部入口：保留在各自 `Spaces/`、`Cards/`、`Sources/`、`Calendar/` 中
-- 临时或实验性索引：尽量不要和正式 `∑ 主题名` 并行重复
+- 主题总入口：放在 `Atlas/MOCs/`，负责跨目录导航。
+- 目录内部入口：保留在各自 `Spaces/`、`Cards/`、`Sources/`、`Calendar/` 中，只解释本目录怎么用。
+- LLM Wiki 阅读地图：放在 `Atlas/LLM Wiki/Synthesis/`，负责承接来源编译后的成熟阅读路径。
+- 来源队列：放在 `Sources/` 及其子目录，负责保留 provenance 和待消化入口。
+- 项目 / 课程 MOC：保留局部上下文，但应向上链接到主题总入口。
+- Archive / historical：保留历史证据，不和当前入口竞争。
+- 临时或实验性索引：尽量不要和正式 `∑ 主题名` 并行重复。
 
 ## 当前 LLM Wiki 主入口
 
@@ -32,6 +36,19 @@ published: 2026-05-15T17:30:29.097Z
 - [[Atlas/LLM Wiki/Synthesis/主题成熟度：什么时候从阅读地图长到主分工与回桥规则|主题成熟度：什么时候从阅读地图长到主分工与回桥规则]] - 当前对主题如何从入口成长到结构与回桥规则的成熟度说明
 - [[Atlas/LLM Wiki/Synthesis/主题成熟度快照：已进入主分工与回桥规则阶段的主题|主题成熟度快照：已进入主分工与回桥规则阶段的主题]] - 当前已经进入高成熟度阶段、最适合优先阅读的主题快照
 - [[Atlas/LLM Wiki/Synthesis/MOC 回桥策略：什么时候该把 LLM Wiki 入口挂回原始导航页|MOC 回桥策略：什么时候该把 LLM Wiki 入口挂回原始导航页]] - 当前对原始 MOC 何时该补 `当前 LLM Wiki 入口` 的方法页
+
+## Canonical topic registry
+
+| 主题 | canonical MOC | LLM Wiki / 编译层入口 | local index / source queue | 说明 |
+|---|---|---|---|---|
+| PKM / 数字花园 / 第二大脑 | [[∑ 笔记方法论与工作流]] | [[Atlas/LLM Wiki/Synthesis/数字花园、第二大脑与 PKM 方法论 阅读地图\|数字花园、第二大脑与 PKM 方法论 阅读地图]] | [[Spaces/2-Area/知识管理/∑ 知识管理\|知识管理 Area]]、[[Spaces/2-Area/数字花园建设与维护/∑ 数字花园建设与维护\|数字花园建设与维护 Area]] | 概念定义进入 LLM Wiki，持续实践入口留在 Spaces。 |
+| AI / LLM / Agent Engineering | [[∑ LLM & Agent Engineering]] | [[Atlas/LLM Wiki/Synthesis/AI 工具链 阅读地图\|AI 工具链 阅读地图]]、[[Atlas/LLM Wiki/Synthesis/Harness Engineering 阅读地图\|Harness Engineering 阅读地图]] | [[Atlas/LLM Wiki/_index\|LLM Wiki Index]]、[[Sources/Skills/∑ Skills 管理\|Skills 管理]] | 快速增长主题优先回桥到 LLM Wiki reading map，项目 MOC 保留局部上下文。 |
+| DevOps / Kubernetes / 搜索运维 | [[∑ Kubernetes & K8s]]、[[∑ OpenSearch & Elasticsearch]] | 暂以相关 MOC 和项目复盘为入口 | [[Spaces/2-Area/云服务和部署/∑ 云服务和部署\|云服务和部署 Area]] | 搜索引擎材料需要区分 Elasticsearch 概念、OpenSearch 运维和任务派生 runbook。 |
+| 软件 / 效率工具 / skill catalog | [[∑ 效率工具生态]] | [[Atlas/LLM Wiki/Synthesis/AI 工具链 阅读地图\|AI 工具链 阅读地图]] | [[Spaces/3-Resource/软件梳理/∑ 软件梳理\|软件梳理]]、[[Sources/Skills/∑ Skills 管理\|Skills 管理]] | GitHub star、skill 卡、运行 skill、常青评价不要混成同一层。 |
+| 来源生命周期 | [[∑ 资源与阅读索引]] | [[Atlas/LLM Wiki/_index\|LLM Wiki Index]] | [[Sources/_ Sources Readme\|Sources Readme]]、[[_ Clippings Readme]]、[[Sources/CuboxSync/_ CuboxSync Index\|CuboxSync Index]] | raw import → source summary → synthesis / concept → MOC 回桥。 |
+| 项目 / 任务 / 工作流 | [[∑ 项目与工作管理]] | 相关 LLM Wiki synthesis 或项目 reading map | [[Calendar/_ Calendar Readme\|Calendar Readme]]、[[Calendar/Tasks/AGENTS\|Tasks 规则]] | Daily 记录、TaskNotes、项目交接和 Archive 分工不同，优先补链接而非合并。 |
+| Prompt / AI 工作流资产 | [[∑ Prompts]] | [[Atlas/LLM Wiki/Synthesis/Prompt Engineering 阅读地图\|Prompt Engineering 阅读地图]] | [[Extras/Prompts/∑ Prompts\|Prompts 索引]] | 单轮 prompt、规则/context、评测和失败回放分层管理。 |
+| Vault 整理 / 结构卫生 | [[∑ Vault Organization Hub]] | [[Atlas/Reports/2026-07-01 笔记库50Agent审计与整理优化方案\|50Agent 审计主报告]] | [[_system/reports/vault-audit-2026-07-01/README\|Vault Audit 2026-07-01 manifest index]]、[[Calendar/Plan & Review/Weekly Cleanup Review\|Weekly Cleanup Review]] | 50Agent 审计后的全库整理控制面，所有移动 / 删除 / untrack / 发布动作继续走 confirmation pack。 |
 
 ## 🗺️ 综合导航 MOC（新增）
 
@@ -130,7 +147,7 @@ published: 2026-05-15T17:30:29.097Z
 - [[∑ macos高效使用]] - macOS 高效使用
 - [[∑ macOS 必备软件]] - macOS 软件推荐
 - [[∑ Raycast]] - Raycast 使用
-- [[∑ Personal Productivity]] - 个人生产力
+- [[∑ Personal Productivity]] - 个人生产力主入口
 
 ### 其他平台
 
@@ -146,7 +163,7 @@ published: 2026-05-15T17:30:29.097Z
 - ∑ Cursor - Cursor 编辑器
 - [[∑ AI Programming Tools 2024-2025]] - AI 编程工具
 - [[∑ VSCode插件]] - VSCode 插件
-- [[∑ Chrome插件]] - Chrome 插件
+- [[Spaces/3-Resource/chrome插件/∑ chrome插件|∑ Chrome插件]] - Chrome 插件
 - [[∑ Arc & Zen Browser]] - 浏览器
 
 ### 软件与资源
@@ -174,7 +191,7 @@ published: 2026-05-15T17:30:29.097Z
 - [[∑ 求职面试与职业发展]] - 求职面试
 - [[∑ 个人职业生涯]] - 职业生涯
 - [[∑ 个人成长]] - 个人成长
-- [[∑ 生产力与学习技巧]] - 学习技巧
+- [[∑ 生产力与学习技巧]] - 学习技巧子页
 - [[∑ 工作和生活的效率体系建设]] - 效率体系
 - [[∑ 工作流与SOP]] - 工作流
 

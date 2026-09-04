@@ -4,7 +4,7 @@ permalink: /Spaces/2-Area/数字花园建设与维护/» Daily notes工作流.md
 title: » Daily notes工作流
 created: 2022-06-09
 modified: 2025-07-05
-published: 2026-05-15T17:30:27.464Z
+published: 2026-08-04T14:33:52.885Z
 ---
 
 ## dailynote中写闪念笔记，生成的文件回顾整理时挪到永久笔记中

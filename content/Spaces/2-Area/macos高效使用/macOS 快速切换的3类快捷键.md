@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Spaces/2-Area/macos高效使用/macOS 快速切换的3类快捷键.md
+title: macOS 快速切换的3类快捷键
 created: 2024-12-19
 modified: 2025-03-20
-published: 2026-05-15T17:30:27.456Z
+published: 2026-08-01T11:57:45.939Z
 ---
 
 [[macOS 和空格配合的快捷键]]

@@ -1,11 +1,15 @@
 ---
 publish: true
 permalink: /Cards/我因为 Linux 失去了我的妻子.md
+title: 我因为 Linux 失去了我的妻子
 created: 2025-07-08
 modified: 2025-07-08
-published: 2026-05-15T17:30:26.663Z
+published: 2026-08-23T13:39:35.104Z
+tags:
+  - AI生成
 ---
 
+Linux 梗图/提示词素材。
 我因为 Linux 失去了我的妻子![Image\_1751895898416.jpg](https://pub-pic.oldwinter.top/2025/07/b7359fce537a7619506b662bcc81c00c.png)
 
 ![CleanShot 2025-08-30 at 18.25.10@2x.png](https://pub-pic.oldwinter.top/2025/08/fae73dab181734035a9a68cefae57a72.png)

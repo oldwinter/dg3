@@ -4,10 +4,10 @@ permalink: /Spaces/3-Resource/软件梳理/macos软件/Raycast.md
 title: Raycast
 created: 2022-12-17
 modified: 2025-08-30
-published: 2026-05-24T06:30:49.922Z
+published: 2026-08-23T13:03:46.773Z
 ---
 
-##
+## 相关
 
 [[Raycast 庆祝加emoji]]
 
@@ -33,7 +33,7 @@ Raycast 是软件尊重用户时间的产物。
 
 （已隐藏：不公开入口）
 
-##
+## 相关笔记
 
 [[Raycast for Windows]]
 
@@ -57,7 +57,7 @@ Raycast 是软件尊重用户时间的产物。
 
 [[Raycast Companion]]
 
-##
+## 备注
 
 最近的促销码: ELAIPACK
 

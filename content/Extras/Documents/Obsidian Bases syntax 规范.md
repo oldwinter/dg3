@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Extras/Documents/Obsidian Bases syntax 规范.md
+title: Obsidian Bases syntax 规范
 created: 2025-05-21
 modified: 2025-08-19
-published: 2026-05-15T17:30:29.187Z
+published: 2026-08-04T14:33:52.769Z
 ---
 
 When you [create a base](https://help.obsidian.md/bases/create-base) in Obsidian, it is saved as a `.base` file. Bases are typically edited using the app interface, but the syntax can also be edited manually, and embedded in a code block.

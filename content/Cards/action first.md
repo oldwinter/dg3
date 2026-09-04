@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Cards/action first.md
+title: action first
 created: 2025-07-09
 modified: 2025-07-09
-published: 2026-05-15T17:30:26.769Z
+published: 2026-08-04T14:33:52.709Z
 ---
 
 当笔记带有任务性质。多使用清单语法，进行勾选完成。则可以简单认为是 action first。

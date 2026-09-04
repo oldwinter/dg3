@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Spaces/1-Project/2025下半年小红书探索/为什么我不顾一切，给Cursor评级God.md
+title: 为什么我不顾一切，给Cursor评级God
 created: 2025-07-21
 modified: 2025-07-21
-published: 2026-05-15T17:30:27.931Z
+published: 2026-08-04T14:33:52.823Z
 ---
 
 ## 图片来源

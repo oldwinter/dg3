@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Atlas/Draws/+ Draws Readme.md
-created: 2025-04-14T11:08:57.040Z
-modified: 2025-08-15T13:59:56.435Z
-published: 2025-08-15T13:59:56.435Z
+title: Draws
+created: 2026-08-23T12:51:57.443Z
+modified: 2026-08-23T12:51:57.443Z
+published: 2026-08-23T12:51:57.443Z
 ---
 
 # ✏️ 绘图 (Draws) 说明
@@ -11,6 +12,14 @@ published: 2025-08-15T13:59:56.435Z
 这个文件夹用于存放绘图文件，例如使用 Excalidraw 插件创建的图形。
 
 Excalidraw 是一个强大的绘图工具，可以方便地在 Obsidian 中创建手绘风格的图表、示意图、草图等。
+
+**当前子层：**
+
+- `Canvas/`：独立绘图用 `.canvas`
+- `Excalidraw/`：Excalidraw 源文件和库
+- `Exports/`：导出的 SVG / PNG
+- `Cropped/`：裁剪图和对应说明
+- `Notes/`：图注、头图说明
 
 **用途：**
 

@@ -3,9 +3,10 @@ publish: true
 permalink: /Cards/claude code 第三方中转站.md
 aliases:
   - anyrouter
+title: claude code 第三方中转站
 created: 2025-07-06
 modified: 2025-08-01
-published: 2026-05-15T17:30:26.909Z
+published: 2026-08-04T14:33:52.714Z
 ---
 
 - [🚀 AnyRouter｜Claude Code 免费共享平台](https://anyrouter.top/)

@@ -30,21 +30,21 @@ views:
         nodes:
           - id: e1e166f8b370f0de
             type: file
-            file: 🍀 花园导览/🧰 本库指南/📂 本库目录及插件介绍.md
+            file: _system/docs/vault-operations/📂 本库目录及插件介绍.md
             x: -340
             y: -380
             width: 400
             height: 400
           - id: 31b54999d03847a9
             type: file
-            file: 🍀 花园导览/🧰 本库指南/Tutorials/本库通过todo标签进行简易计划和执行.md
+            file: _system/docs/vault-operations/Tutorials/本库通过todo标签进行简易计划和执行.md
             x: -320
             y: 198
             width: 400
             height: 400
           - id: ff64776115f0cb82
             type: file
-            file: 🍀 花园导览/🧰 本库指南/Tutorials/链接优先.md
+            file: Spaces/2-Area/知识管理/Obsidian/Tutorials/链接优先.md
             x: 327
             y: -453
             width: 400
@@ -79,9 +79,9 @@ views:
         y: 109
         zoom: -2.3267077199689354
       managedPaths:
-        - 🍀 花园导览/🧰 本库指南/📂 本库目录及插件介绍.md
-        - 🍀 花园导览/🧰 本库指南/Tutorials/本库通过todo标签进行简易计划和执行.md
-        - 🍀 花园导览/🧰 本库指南/Tutorials/链接优先.md
+        - _system/docs/vault-operations/📂 本库目录及插件介绍.md
+        - _system/docs/vault-operations/Tutorials/本库通过todo标签进行简易计划和执行.md
+        - Spaces/2-Area/知识管理/Obsidian/Tutorials/链接优先.md
         - Atlas/Canvas/普通人需要知道的AI常见术语.canvas
   - type: canvas-list-view
     name: View 2

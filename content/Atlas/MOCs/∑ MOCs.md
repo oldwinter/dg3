@@ -8,7 +8,7 @@ aliases:
 title: MOC
 created: 2022-06-09
 modified: 2026-03-14
-published: 2026-05-15T17:30:29.111Z
+published: 2026-08-04T14:33:52.677Z
 ---
 
 Map Of Content，简单理解就是内容地图，是索引性质的笔记。往往带有很多链接，引导自己或读者跳转到其他笔记中。
@@ -27,6 +27,17 @@ Map Of Content，简单理解就是内容地图，是索引性质的笔记。往
 - 如果要判断一个主题什么时候会从 `阅读地图` 长到 `主分工 / 回桥规则`，直接看 [[Atlas/LLM Wiki/Synthesis/主题成熟度：什么时候从阅读地图长到主分工与回桥规则|主题成熟度：什么时候从阅读地图长到主分工与回桥规则]]
 - 如果要直接看当前哪些主题已经进入这一成熟阶段，直接看 [[Atlas/LLM Wiki/Synthesis/主题成熟度快照：已进入主分工与回桥规则阶段的主题|主题成熟度快照：已进入主分工与回桥规则阶段的主题]]
 - 如果要判断原始 MOC 什么时候该补 `当前 LLM Wiki 入口`，直接看 [[Atlas/LLM Wiki/Synthesis/MOC 回桥策略：什么时候该把 LLM Wiki 入口挂回原始导航页|MOC 回桥策略：什么时候该把 LLM Wiki 入口挂回原始导航页]]
+
+## 2026-07-01 全库整理与维护入口
+
+- [[∑ Vault Organization Hub]] — 50Agent 全库审计后的整理总入口。
+- [[Source Intake 与 Provenance Hub]] — Sources / Clippings / provenance 生命周期。
+- [[Cards Triage Hub]] — Cards 常青池每周小批 triage。
+- [[Active Project Portfolio]] — Spaces/1-Project 状态登记与 portfolio 入口。
+- [[Public Garden Readiness Hub]] — publish / private / link / stub 发布前检查。
+- [[Asset Runtime Hygiene Hub]] — Extras、附件、secret/PII 和运行态 tracked artifacts。
+
+这些入口只承接 manifest、确认包和小批整理；不授权批量删除、移动、发布或 untrack。
 
 如果你要找本库现在有哪些 MOC，直接看 [[∑ 全库MOC索引]]；如果你要看 `Atlas/MOCs/` 这层是怎么分工的，看 [[_ MOCs Readme]]。
 

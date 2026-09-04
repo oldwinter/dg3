@@ -4,7 +4,7 @@ permalink: /Cards/渐进式 - progressive.md
 title: 渐进式 - progressive
 created: 2022-06-09
 modified: 2026-05-01
-published: 2026-05-15T17:30:26.920Z
+published: 2026-08-04T14:33:52.763Z
 tags:
   - AI生成
 ---

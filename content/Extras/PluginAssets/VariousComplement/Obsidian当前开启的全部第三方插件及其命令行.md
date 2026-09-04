@@ -4,7 +4,7 @@ permalink: /Extras/PluginAssets/VariousComplement/Obsidian当前开启的全部�
 description: 不能随便改名、删除、挪动位置，需要various complement插件一起改
 created: 2025-06-27
 modified: 2025-06-27
-published: 2026-05-15T17:30:29.125Z
+published: 2026-06-07T18:08:31.503Z
 ---
 
 advanced-canvas:clone-node-down

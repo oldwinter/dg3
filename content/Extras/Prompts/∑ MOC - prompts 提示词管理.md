@@ -4,7 +4,7 @@ permalink: /Extras/Prompts/∑ MOC - prompts 提示词管理.md
 title: ∑ MOC - prompts 提示词管理
 created: 2025-04-24
 modified: 2026-05-01
-published: 2026-05-15T17:35:28.220Z
+published: 2026-08-23T12:51:59.589Z
 ---
 
 [[如何快速地搜索存在obsidian中的提示词并复制]]
@@ -106,7 +106,7 @@ nano banana： [GitHub - JimmyLv/awesome-nano-banana](https://github.com/JimmyLv
 [[obsidian canvas 深度分析内容]]
 [[使用LLM生成obsidian canvas帮助日常阅读理解长文章]]
 [[JSON Canvas生成后验证清单]]
-[[obsidian canvas 和写代码配合]]
+obsidian canvas 和写代码配合（待确认：库内无对应笔记）
 
 ## 人设
 

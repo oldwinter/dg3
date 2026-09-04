@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Extras/Documents/Obsidian Base 规范 - moc.md
+title: Obsidian Base 规范 - moc
 created: 2025-07-25
 modified: 2025-08-19
-published: 2026-05-15T17:30:29.187Z
+published: 2026-08-04T14:33:52.768Z
 ---
 
 ## 更新记录

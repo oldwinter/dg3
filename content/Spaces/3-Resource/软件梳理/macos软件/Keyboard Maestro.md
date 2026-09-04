@@ -4,7 +4,7 @@ permalink: /Spaces/3-Resource/软件梳理/macos软件/Keyboard Maestro.md
 title: Keyboard Maestro
 created: 2023-02-28
 modified: 2023-03-14
-published: 2026-05-24T06:30:49.918Z
+published: 2026-06-07T17:57:28.039Z
 ---
 
 [Keyboard Maestro Macros.kmsync](https://drive.google.com/open?id=1-r3o2LSws9LDivT5cWcQ6poKF8fFM5iJ)

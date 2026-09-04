@@ -1,9 +1,10 @@
 ---
 publish: true
 permalink: /Atlas/Canvas/candy/canvas candy.md
+title: canvas candy
 created: 2025-06-23
 modified: 2025-08-27
-published: 2026-05-15T17:35:28.090Z
+published: 2026-08-23T12:51:57.442Z
 ---
 
 使用css的方式，改变[[obsidian canvas]]的界面表现，已经免费且开源：
@@ -75,9 +76,7 @@ published: 2026-05-15T17:35:28.090Z
 
 ---
 
-## 合并内容
-
-[GitHub - TfTHacker/obsidian-canvas-candy: Enhances the visual capabilities of Obsidian's Canvas feature](https://github.com/TfTHacker/obsidian-canvas-candy)
+## 补充
 
 作者曾经想收费，后来还是开源免费了，有几个样式可能会有些用。
 

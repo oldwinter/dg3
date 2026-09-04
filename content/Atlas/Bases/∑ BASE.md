@@ -5,13 +5,33 @@ aliases:
   - Bases
 title: ∑ BASE
 created: 2025-05-22
-modified: 2026-05-05
-published: 2026-05-15T17:30:29.087Z
+modified: 2026-06-12
+published: 2026-08-23T12:51:57.441Z
 tags:
   - AI生成
 ---
 
 x: [[base 使用技巧]]
+
+本页是 Base / dashboard 的深参考索引，不是每日默认入口清单。日常和 agent 接手只把 `active-primary` 当默认入口；`active-specialist`、`template`、`private-protected` 和 `do-not-touch` 只在任务明确命中时进入。
+
+Base 视图发现优先用静态 helper：`rtk just base-views path="Atlas/Bases/LLM Wiki 工作台.base"`，JSON 用 `rtk just base-views-json path="Atlas/Bases/LLM Wiki 工作台.base"`。`rtk just base-query path="..." view="..."` 是只读查询，但空输出是 inconclusive；`rtk just base-views-active path="..."` 走 Obsidian Base CLI，可能受 active file 影响。遇到 active file 或 fallback 警告时，先回到 `.base` YAML、静态 `base-views` 和小范围 frontmatter 复核。
+
+## Current Active Dashboards
+
+| Role | Dashboard | When To Use |
+|---|---|---|
+| `active-primary` default entry | [[Atlas/Bases/LLM Wiki 工作台.base]] | 处理 LLM Wiki source summary、query、synthesis、promotion 和回桥队列。 |
+| `active-primary` default entry | [[Atlas/Bases/项目推进工作台.base]] | 处理 `Spaces/1-Project/` 与 `Calendar/Tasks/` 的项目 / 任务推进判断。 |
+| `active-specialist` explicit route | [[Atlas/Bases/笔记整理工作台.base]] | 清理候选、结构卫生和整理 manifest 的复核入口；真实改动仍走 confirmation pack。 |
+| `active-specialist` workbench | [[Atlas/Bases/AI 工作流工作台.base]] | Claude Code、Codex、Skills、Harness 等 AI 工作流资产巡检。 |
+| `active-specialist` workbench | [[Atlas/Bases/发布工作台.base]] | 发布 preflight、redaction gate 和公开候选巡检；只读复核，不执行发布。 |
+| `active-specialist` workbench | [[Atlas/Bases/LifeOS 工作台.base]] | 健康、训练、饮食、睡眠和 LifeOS 复盘入口巡检。 |
+| meta-index, not daily entry | [[Atlas/Bases/∑ Bases 控制台.base]] | 维护 Base / dashboard 本身时使用，不作为普通每日入口。 |
+| `archive-candidate` pending validation | [[Atlas/Bases/清理面板 - ai生成.base]] | 与整理工作台有重叠；Task 9 再决定 docs-only demotion 或 no-op。 |
+| `private-protected` | [[密码管理.base]] | 密码 / 凭据语义保护面；不公开、不外链化、不作为清理入口。 |
+
+模板类 Base 默认属于 `template`：保留在 [[#模板文件]] 和 [[#模板汇总]]，但不进入 daily entry。上表口径来自 [[_system/docs/plans/2026-06-07-vault-focus-consolidation/dashboard-rubric|dashboard-rubric]]；后续 `.base` 改动必须另有显式 manifest 或验证任务。
 
 ## PARA
 
@@ -27,9 +47,9 @@ x: [[base 使用技巧]]
 
 模板文件中，包含了this.file这样的表达，从而表现为：放到不同文件夹，会有不同表现。
 
-##
+## 控制台
 
-[[∑ Bases 控制台.base]]
+[[Atlas/Bases/∑ Bases 控制台.base]]
 
 ## 任务视图
 
@@ -38,18 +58,16 @@ x: [[base 使用技巧]]
 - [[Atlas/Bases/TaskNotes/Views/agenda-default.base|TaskNotes Agenda 视图]]
 - [[Atlas/Bases/TaskNotes/Views/calendar-default.base|TaskNotes Calendar 视图]]
 
-## 模板汇总
-
 ## 分类汇总
 
 ### 知识编译与 LLM Wiki
 
-- [[LLM Wiki 工作台.base]]
-- [[AI 工作流工作台.base]]
+- [[Atlas/Bases/LLM Wiki 工作台.base]]
+- [[Atlas/Bases/AI 工作流工作台.base]]
 - [[AI Agent 知识系统样板.base]]
-- [[发布工作台.base]]
-- [[项目推进工作台.base]]
-- [[LifeOS 工作台.base]]
+- [[Atlas/Bases/发布工作台.base]]
+- [[Atlas/Bases/项目推进工作台.base]]
+- [[Atlas/Bases/LifeOS 工作台.base]]
 
 `LLM Wiki 工作台` 是 `Atlas/LLM Wiki/` 的主巡检入口，用来把 source summary、query、synthesis、topic view、lint 和 promotion 回桥队列放在同一个操作面里。接手 LLM Wiki 时优先从这里判断当前该补 source、补 query、补 synthesis、做 promotion，还是维护控制页。
 
@@ -139,7 +157,7 @@ Sprint 351 继续单页复核 [[Atlas/LLM Wiki/Synthesis/Clippings 剩余 58 路
 
 `Lint｜缺来源/缺链接/弱连接` 是 LLM Wiki 的结构卫生总视图，用来同时看缺 `sources`、缺 `related`、弱入链和待晋升项。2026-04-28 Sprint 316 静态复刻：初查 `ALL_NON_NOTE = 1031`，`LINT_ALL = 1`，其中缺来源 0、缺相关链接 0、待晋升 0、弱连接 1；唯一候选是 [[Atlas/LLM Wiki/Queries/哪些 skill 已经值得进入实验市场清单]]。它已经有来源和 related，真实问题是 [[Atlas/LLM Wiki/Synthesis/Skills 阅读地图]] 的“可复用的案例层”段落提到实验市场清单但没有链接实际 query。本轮只把该 query 补入阅读地图列表，复查后 `LINT_ALL = 0`。当前不改 `.base` 公式，也不新增 lint 子视图。
 
-`Topics｜AI Coding Tools` 是 AI 编程工作面的大视图，也会接住 Automated Testing / 原型验证与验收治理这批页面。当前 Automated Testing 线已经有 [[Atlas/LLM Wiki/Synthesis/原型验证与验收治理 阅读地图]]、[[Atlas/LLM Wiki/Synthesis/验证治理资产的最小工件包：共享巡检协议、固定 job 骨架与 handoff 模板如何落地]]、[[Atlas/LLM Wiki/Queries/Markdown 增量验证链哪些部分值得脚本化，哪些应该留在 handoff]]、[[Atlas/LLM Wiki/Source Summaries/Apifox T0 门禁测试 - 源摘要]]、[[Atlas/LLM Wiki/Queries/CI-CD 更新后为什么必须先跑 T0 门禁用例再扩大验收]] 和只读 helper [[Extras/Scripts/py-scripts/check_changed_markdown.py]]；继续这条线时先找真实失败样本、T0 gate 执行报告 / 关闭证据或 helper 输出问题，不要为了“有主题”新增 `Topics｜Automated Testing` 窄视图。2026-04-28 Sprint 388 后，`Topics｜AI Coding Tools` 当前 124 页，Automated Testing / 验证治理核心子集约 28 页，仍然能由大视图解释，不需要新增窄视图。
+`Topics｜AI Coding Tools` 是 AI 编程工作面的大视图，也会接住 Automated Testing / 原型验证与验收治理这批页面。当前 Automated Testing 线已经有 [[Atlas/LLM Wiki/Synthesis/原型验证与验收治理 阅读地图]]、[[Atlas/LLM Wiki/Synthesis/验证治理资产的最小工件包：共享巡检协议、固定 job 骨架与 handoff 模板如何落地]]、[[Atlas/LLM Wiki/Queries/Markdown 增量验证链哪些部分值得脚本化，哪些应该留在 handoff]]、[[Atlas/LLM Wiki/Source Summaries/Apifox T0 门禁测试 - 源摘要]]、[[Atlas/LLM Wiki/Queries/CI-CD 更新后为什么必须先跑 T0 门禁用例再扩大验收]] 和只读 helper [[_ops/scripts/archive/py-sh/py-scripts/check_changed_markdown.py]]；继续这条线时先找真实失败样本、T0 gate 执行报告 / 关闭证据或 helper 输出问题，不要为了“有主题”新增 `Topics｜Automated Testing` 窄视图。2026-04-28 Sprint 388 后，`Topics｜AI Coding Tools` 当前 124 页，Automated Testing / 验证治理核心子集约 28 页，仍然能由大视图解释，不需要新增窄视图。
 
 2026-04-28 已给 [[Atlas/LLM Wiki/Synthesis/AI 编程工作面默认的案例校验：项目记忆、验证链与 builder 退出如何反证上浮边界]] 补入本库近期实证样本：文件化 roadmap / handoff 说明项目记忆应该外化但具体路径属于 repo-local，`check_changed_markdown.py` staged-only 验证说明通用门禁和本库语义要分层，`json-canvas` iteration-004 的 Claude CLI 503 阻断说明 builder / generator 结果必须退出到 validator、aggregator 和人工 review，外部服务故障不能伪装成 skill 失败。继续 AI Coding Tools 线时，优先找新的真实失败样本或跨 repo 复用证据，不要把本库 runner 细节直接上浮成所有 AI 编程工作面的默认。
 
@@ -362,7 +380,7 @@ Sprint 324 已复查 `Topics｜Prompt 工作台资产`：公式显式路径 7 �
 
 ### 整理与维护
 
-- [[笔记整理工作台.base]]
+- [[Atlas/Bases/笔记整理工作台.base]]
 
 ### 书、电影、电视剧
 
@@ -388,7 +406,7 @@ Sprint 324 已复查 `Topics｜Prompt 工作台资产`：公式显式路径 7 �
 
 ### 任务、todo、计划与回顾
 
-- [[项目推进工作台.base]]
+- [[Atlas/Bases/项目推进工作台.base]]
 - [[review notes.base]]
 - [[todo list.base]]
 
@@ -398,7 +416,7 @@ Sprint 324 已复查 `Topics｜Prompt 工作台资产`：公式显式路径 7 �
 
 - [[CuboxSync文件管理.base]]
 - [[webclipping and cubox.base]]
-- [[wucai剪藏管理.base]]
+- wucai剪藏管理.base（未建 / 暂停）
 
 ### 软件、产品、插件
 
