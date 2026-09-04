@@ -2,143 +2,85 @@
 import fs from "fs"
 import path from "path"
 import YAML from "yaml"
-import { installPlugins, parsePluginSource } from "./gitLoader.js"
-import type { PluginSource } from "./types.js"
+import { installPlugins, parsePluginSource, regeneratePluginIndex } from "./gitLoader.js"
+import type { PluginSource, QuartzPluginsJson } from "./types.js"
 
-const CONFIG_PATHS = [
-  "quartz.config.yaml",
-  "quartz.config.yml",
-  "quartz.plugins.json",
-  "quartz.config.default.yaml",
-  "quartz.config.default.yml",
-  "quartz.plugins.default.json",
-] as const
+function resolveConfigPath(): string {
+  const configYamlPath = path.join(process.cwd(), "quartz.config.yaml")
+  const defaultConfigYamlPath = path.join(process.cwd(), "quartz.config.default.yaml")
+  const legacyPluginsJsonPath = path.join(process.cwd(), "quartz.plugins.json")
+  const legacyDefaultPluginsJsonPath = path.join(process.cwd(), "quartz.plugins.default.json")
 
-type LegacyQuartzConfig = {
-  readonly externalPlugins?: readonly PluginSource[]
+  if (fs.existsSync(configYamlPath)) return configYamlPath
+  if (fs.existsSync(legacyPluginsJsonPath)) return legacyPluginsJsonPath
+  if (fs.existsSync(defaultConfigYamlPath)) return defaultConfigYamlPath
+  if (fs.existsSync(legacyDefaultPluginsJsonPath)) return legacyDefaultPluginsJsonPath
+  return configYamlPath
 }
 
-type InstallPluginEntry = {
-  readonly enabled: boolean
-  readonly source: PluginSource
-}
-
-type InstallPluginsConfig = {
-  readonly plugins: readonly InstallPluginEntry[]
-}
-
-function resolveConfigPath(): string | null {
-  for (const configPath of CONFIG_PATHS) {
-    const resolved = path.join(process.cwd(), configPath)
-    if (fs.existsSync(resolved)) return resolved
-  }
-
-  return null
-}
-
-function readConfiguredPluginSources(configPath: string): PluginSource[] {
+function readPluginsJson(): QuartzPluginsJson | null {
+  const configPath = resolveConfigPath()
+  if (!fs.existsSync(configPath)) return null
   const raw = fs.readFileSync(configPath, "utf-8")
-  const parsed: unknown = configPath.endsWith(".json") ? JSON.parse(raw) : YAML.parse(raw)
-  const config = parseInstallPluginsConfig(parsed, configPath)
-
-  return config.plugins.filter((entry) => entry.enabled).map((entry) => entry.source)
+  if (configPath.endsWith(".yaml") || configPath.endsWith(".yml")) {
+    return YAML.parse(raw)
+  }
+  return JSON.parse(raw)
 }
 
-function parseInstallPluginsConfig(value: unknown, configPath: string): InstallPluginsConfig {
-  if (
-    typeof value === "object" &&
-    value !== null &&
-    "plugins" in value &&
-    Array.isArray(value.plugins)
-  ) {
-    const plugins: InstallPluginEntry[] = []
-
-    for (const entry of value.plugins) {
-      const pluginEntry = parseInstallPluginEntry(entry)
-      if (pluginEntry) {
-        plugins.push(pluginEntry)
-      } else {
-        throw new Error(`${configPath} contains a plugin entry without enabled/source fields`)
-      }
+async function getExternalPluginSources(): Promise<PluginSource[]> {
+  try {
+    const module = await import("../../../quartz.js")
+    const config = module.default ?? module
+    const externalPlugins = config.externalPlugins
+    if (Array.isArray(externalPlugins) && externalPlugins.length > 0) {
+      return externalPlugins as PluginSource[]
     }
-
-    return { plugins }
+  } catch {
+    // fall back to config yaml parsing
   }
 
-  throw new Error(`${configPath} must contain a plugins array`)
-}
-
-function parseInstallPluginEntry(value: unknown): InstallPluginEntry | null {
-  if (
-    typeof value !== "object" ||
-    value === null ||
-    !("enabled" in value) ||
-    typeof value.enabled !== "boolean" ||
-    !("source" in value) ||
-    !isPluginSource(value.source)
-  ) {
-    return null
-  }
-
-  return { enabled: value.enabled, source: value.source }
-}
-
-function isPluginSource(value: unknown): value is PluginSource {
-  if (typeof value === "string") {
-    return true
-  }
-
-  return (
-    typeof value === "object" &&
-    value !== null &&
-    "repo" in value &&
-    typeof value.repo === "string" &&
-    (!("subdir" in value) || value.subdir === undefined || typeof value.subdir === "string") &&
-    (!("ref" in value) || value.ref === undefined || typeof value.ref === "string") &&
-    (!("name" in value) || value.name === undefined || typeof value.name === "string")
-  )
-}
-
-function parseLegacyQuartzConfig(value: unknown): LegacyQuartzConfig {
-  if (typeof value !== "object" || value === null || !("externalPlugins" in value)) {
-    return {}
-  }
-
-  if (value.externalPlugins === undefined) {
-    return {}
-  }
-
-  if (Array.isArray(value.externalPlugins) && value.externalPlugins.every(isPluginSource)) {
-    return { externalPlugins: value.externalPlugins }
-  }
-
-  throw new Error("Legacy quartz config externalPlugins must be an array of plugin sources")
+  const pluginsJson = readPluginsJson()
+  const entries = pluginsJson?.plugins ?? []
+  return entries.filter((entry) => entry.enabled !== false).map((entry) => entry.source)
 }
 
 async function main() {
-  const configPath = resolveConfigPath()
-  const externalPlugins = configPath
-    ? readConfiguredPluginSources(configPath)
-    : [
-        ...(parseLegacyQuartzConfig((await import("../../../quartz.js")).default).externalPlugins ??
-          []),
-      ]
+  const externalPlugins = await getExternalPluginSources()
 
   if (externalPlugins.length === 0) {
     console.log("No external plugins to install.")
     return
   }
 
-  console.log(`Installing ${externalPlugins.length} plugin(s) from Git...`)
+  const specs = externalPlugins
+    .map((source: PluginSource) => parsePluginSource(source))
+    .filter((spec) => !spec.npmPackage)
 
-  const specs = externalPlugins.map((source) => parsePluginSource(source))
-  const installed = await installPlugins(specs, { verbose: true })
+  const npmSpecs = externalPlugins
+    .map((source: PluginSource) => parsePluginSource(source))
+    .filter((spec) => spec.npmPackage)
 
-  if (installed.size === externalPlugins.length) {
-    console.log("✓ All plugins installed successfully")
-  } else {
-    console.error(`✗ Only ${installed.size}/${externalPlugins.length} plugins installed`)
-    process.exit(1)
+  if (specs.length === 0 && npmSpecs.length === 0) {
+    console.log("No external plugins to install.")
+    return
+  }
+
+  if (specs.length > 0) {
+    console.log(`Installing ${specs.length} plugin(s) from Git...`)
+    const installed = await installPlugins(specs, { verbose: true })
+
+    if (installed.size === specs.length) {
+      console.log("✓ All Git plugins installed successfully")
+    } else {
+      console.error(`✗ Only ${installed.size}/${specs.length} Git plugins installed`)
+      process.exit(1)
+    }
+  }
+
+  if (npmSpecs.length > 0) {
+    console.log(`Found ${npmSpecs.length} npm plugin(s), regenerating plugin index...`)
+    await regeneratePluginIndex({ verbose: true, npmPackages: npmSpecs.map((s) => s.name) })
   }
 }
 

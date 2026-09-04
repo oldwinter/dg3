@@ -6,10 +6,10 @@ describe("disableBrokenWikilinks config", () => {
   test("honors the option on CrawlLinks, not ObsidianFlavoredMarkdown", async () => {
     const raw = await readFile(new URL("../../quartz.config.yaml", import.meta.url), "utf8")
     const ofmBlock = raw.match(
-      /source: github:quartz-community\/obsidian-flavored-markdown\n[\s\S]*?(?=\n  - source:)/,
+      /source: \.\/external-plugins\/obsidian-flavored-markdown\n[\s\S]*?(?=\n  - source:)/,
     )
     const crawlBlock = raw.match(
-      /source: github:quartz-community\/crawl-links\n[\s\S]*?(?=\n  - source:)/,
+      /source: "@quartz-community\/crawl-links"\n[\s\S]*?(?=\n  - source:)/,
     )
 
     assert.ok(ofmBlock, "missing ObsidianFlavoredMarkdown plugin block")
