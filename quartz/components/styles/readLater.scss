@@ -11,7 +11,8 @@
 .read-later-trigger,
 .read-later-close,
 .read-later-current,
-.read-later-remove {
+.read-later-remove,
+.read-later-export {
   appearance: none;
   box-sizing: border-box;
   border: 1px solid color-mix(in srgb, var(--gray) 54%, transparent);
@@ -39,6 +40,15 @@
   &:focus-visible {
     outline: 2px solid var(--secondary);
     outline-offset: 2px;
+  }
+
+  &:disabled {
+    border-color: color-mix(in srgb, var(--gray) 36%, transparent);
+    background-color: var(--light);
+    color: var(--gray);
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
   }
 }
 
@@ -148,6 +158,17 @@
   text-align: start;
 }
 
+.read-later-export {
+  display: flex;
+  width: 100%;
+  min-height: 2.5rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .read-later-list {
   max-height: 14rem;
   margin: 0.75rem 0 0;
@@ -192,7 +213,8 @@
   .read-later-trigger,
   .read-later-close,
   .read-later-current,
-  .read-later-remove {
+  .read-later-remove,
+  .read-later-export {
     transition: none;
 
     &:active {

@@ -410,6 +410,9 @@ export function renderPage(
         data-read-later-saved={readLater.saved}
         data-read-later-removed={readLater.removed}
         data-read-later-failed={readLater.failed}
+        data-read-later-export={readLater.exportList}
+        data-read-later-exported={readLater.exported}
+        data-read-later-export-failed={readLater.exportFailed}
         data-resume-reading-continue={resumeReading.continueFrom}
         data-resume-reading-dismiss={resumeReading.dismiss}
         data-resume-reading-region={resumeReading.region}

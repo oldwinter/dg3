@@ -57,6 +57,9 @@ export default {
       saved: "已加入稍後讀",
       removed: "已從稍後讀移除",
       failed: "瀏覽器未能儲存變更",
+      exportList: "複製 Markdown 清單",
+      exported: "Markdown 清單已複製",
+      exportFailed: "瀏覽器未能複製 Markdown 清單",
     },
     resumeReading: {
       continueFrom: "從 {percent}% 繼續閱讀",

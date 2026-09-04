@@ -2,6 +2,7 @@ import {
   READ_LATER_LIMIT,
   parseReadLaterEntries,
   parseReadLaterEntry,
+  readLaterEntriesToMarkdown,
   toggleReadLaterEntry,
 } from "./readLaterStorage"
 
@@ -9,6 +10,7 @@ export const readLaterScript = `
 const READ_LATER_KEY = "dg3.readLater.v1"
 const parseReadLaterEntry = ${parseReadLaterEntry.toString()}
 const parseReadLaterEntries = ${parseReadLaterEntries.toString()}
+const readLaterEntriesToMarkdown = ${readLaterEntriesToMarkdown.toString()}
 const toggleReadLaterEntry = ${toggleReadLaterEntry.toString()}
 const READ_LATER_LIMIT = ${READ_LATER_LIMIT}
 
@@ -55,6 +57,9 @@ function getReadLaterLabels() {
     readLaterSaved: saved,
     readLaterRemoved: removed,
     readLaterFailed: failed,
+    readLaterExport: exportList,
+    readLaterExported: exported,
+    readLaterExportFailed: exportFailed,
   } = document.body.dataset
   if (
     !title ||
@@ -66,7 +71,10 @@ function getReadLaterLabels() {
     !empty ||
     !saved ||
     !removed ||
-    !failed
+    !failed ||
+    !exportList ||
+    !exported ||
+    !exportFailed
   ) {
     return undefined
   }
@@ -96,6 +104,9 @@ function getReadLaterLabels() {
     saved,
     removed,
     failed,
+    exportList,
+    exported,
+    exportFailed,
   }
 }
 
@@ -155,10 +166,14 @@ function initializeReadLater() {
   currentButton.append(createBookmarkIcon(), document.createElement("span"))
   const list = document.createElement("ul")
   list.className = "read-later-list"
+  const exportButton = document.createElement("button")
+  exportButton.type = "button"
+  exportButton.className = "read-later-export"
+  exportButton.textContent = labels.exportList
   const status = document.createElement("p")
   status.className = "read-later-status"
   status.setAttribute("aria-live", "polite")
-  panel.append(header, currentButton, list, status)
+  panel.append(header, currentButton, list, exportButton, status)
   root.append(trigger, panel)
   anchor.insertAdjacentElement("afterend", root)
 
@@ -178,6 +193,7 @@ function initializeReadLater() {
     count.textContent = String(entries.length)
     trigger.title = labels.trigger(entries.length)
     trigger.setAttribute("aria-label", labels.trigger(entries.length))
+    exportButton.disabled = entries.length === 0
     list.replaceChildren()
     if (entries.length === 0) {
       const empty = document.createElement("li")
@@ -230,6 +246,23 @@ function initializeReadLater() {
     entries = next
     status.textContent = wasSaved ? labels.removed : labels.saved
     render()
+  })
+  exportButton.addEventListener("click", async () => {
+    const markdown = readLaterEntriesToMarkdown(entries, location.href)
+    if (markdown.length === 0 || navigator.clipboard === undefined) {
+      status.textContent = labels.exportFailed
+      return
+    }
+
+    exportButton.disabled = true
+    try {
+      await navigator.clipboard.writeText(markdown)
+      status.textContent = labels.exported
+    } catch {
+      status.textContent = labels.exportFailed
+    } finally {
+      exportButton.disabled = entries.length === 0
+    }
   })
   const dismissOutside = (event) => {
     if (event.target instanceof Node && !root.contains(event.target)) closePanel(false)
