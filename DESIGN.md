@@ -204,6 +204,15 @@ Layout rules:
 - **States**: Hidden until the content index resolves; default, hover, pressed, and focus-visible once a destination is available. Reinitialize idempotently after SPA navigation and in-place renders.
 - **Accessibility**: Use a native internal link so open-in-new-tab and browser navigation remain available. The icon is decorative; the tooltip and accessible name follow the page language.
 - **Motion**: Reuse the existing 150ms color and press feedback. Reduced-motion mode removes the press transform.
+
+### LocalLinkWander
+
+- **Structure**: One 40px native internal-link control in the existing reader action row. Its route icon distinguishes a connected hop from the whole-garden shuffle action.
+- **Destination**: Choose uniformly from visible published internal links authored in the current article, cross-checked against Quartz's existing content index. Exclude the current path, broken links, transclusions, footnotes, hidden links, duplicates, cross-origin URLs, and links that escape the configured base path.
+- **States**: Stay hidden until the content index resolves and omit the control when no safe destination exists; otherwise provide default, hover, pressed, and focus-visible states. Reinitialize idempotently after SPA navigation and in-place renders.
+- **Accessibility**: Preserve native link and open-in-new-tab behavior. The icon is decorative; the tooltip and accessible name follow the page language.
+- **Motion**: Reuse the existing 150ms color and press feedback. Reduced-motion mode removes the press transform, and print hides the control.
+
 ### NoteShare
 
 - **Structure**: One 40px share action beside `ReadLater`; it uses the browser's native share sheet when available and copies the current note URL otherwise. If `ReadLater` is unavailable, the action keeps the same inline-end placement in its own compact action group.
