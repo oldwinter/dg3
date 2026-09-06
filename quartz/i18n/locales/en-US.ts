@@ -98,6 +98,10 @@ export default {
       copied: "Table Markdown copied",
       failed: "The browser could not copy this table",
     },
+    codeFolding: {
+      expand: "Expand code block",
+      collapse: "Collapse code block",
+    },
     explorer: {
       title: "Explorer",
     },

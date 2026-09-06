@@ -32,6 +32,8 @@ import searchFeedbackStyle from "../../components/styles/searchFeedback.scss"
 import wideContentScrollStyle from "../../components/styles/wideContentScroll.scss"
 import { tableMarkdownScript } from "../../components/scripts/tableMarkdown"
 import tableMarkdownStyle from "../../components/styles/tableMarkdown.scss"
+import { codeFoldingScript } from "../../components/scripts/codeFolding"
+import codeFoldingStyle from "../../components/styles/codeFolding.scss"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzComponent } from "../../components/types"
 import { normalizeResource } from "../../util/resources"
@@ -130,6 +132,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.css.push(wideContentScrollStyle)
   componentResources.afterDOMLoaded.push(tableMarkdownScript)
   componentResources.css.push(tableMarkdownStyle)
+  componentResources.afterDOMLoaded.push(codeFoldingScript)
+  componentResources.css.push(codeFoldingStyle)
 
   // popovers
   if (cfg.enablePopovers) {

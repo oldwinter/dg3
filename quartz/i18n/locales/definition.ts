@@ -101,6 +101,10 @@ export interface Translation {
       copied: string
       failed: string
     }
+    codeFolding?: {
+      expand: string
+      collapse: string
+    }
     explorer: {
       title: string
     }
