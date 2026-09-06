@@ -14,6 +14,7 @@ import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
 import { BuildCtx, WorkerSerializableBuildCtx } from "../util/ctx"
 import { styleText } from "util"
+import { stripCalloutTitleContinuationsInMarkdown } from "../util/calloutTitle"
 
 export type QuartzMdProcessor = Processor<MDRoot, MDRoot, MDRoot>
 export type QuartzHtmlProcessor = Processor<undefined, MDRoot, HTMLRoot>
@@ -98,6 +99,8 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
         for (const plugin of cfg.plugins.transformers.filter((p) => p.textTransform)) {
           file.value = plugin.textTransform!(ctx, file.value.toString())
         }
+
+        file.value = stripCalloutTitleContinuationsInMarkdown(file.value.toString())
 
         // base data properties that plugins may use
         file.data.filePath = file.path as FilePath
