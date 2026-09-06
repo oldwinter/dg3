@@ -85,6 +85,9 @@ export default {
       shared: "Note shared",
       copied: "Note link copied",
       failed: "The browser could not share this note",
+      copyMarkdown: "Copy as Markdown",
+      markdownCopied: "Markdown link copied",
+      markdownFailed: "The browser could not copy the Markdown link",
     },
     wideContentScroll: {
       table: "Scrollable table",
