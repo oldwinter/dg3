@@ -1,5 +1,7 @@
 import test, { describe } from "node:test"
 import assert from "node:assert"
+import { readFile } from "node:fs/promises"
+import { fileURLToPath } from "node:url"
 
 type ScrollArg = { top: number; behavior?: ScrollBehavior }
 type FakeHeading = { offsetTop: number }
@@ -182,4 +184,15 @@ describe("buggy showPopover (lexical-capture pattern) regression guard", () => {
 
     assert.doesNotThrow(() => simulateBuggyMouseEnter(""))
   })
+})
+
+test("clears active popovers when a page is restored from bfcache", async () => {
+  const source = await readFile(
+    fileURLToPath(new URL("./popover.inline.ts", import.meta.url)),
+    "utf8",
+  )
+  assert.match(
+    source,
+    /window\.addEventListener\("pageshow", \(event\) => \{\s*if \(event\.persisted\) \{\s*clearActivePopover\(\)\s*\}\s*\}\)/s,
+  )
 })
