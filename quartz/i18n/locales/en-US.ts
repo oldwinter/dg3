@@ -106,6 +106,9 @@ export default {
       searchBarPlaceholder: "Search for something",
       noResults: "No results.",
       noResultsHint: "Try another search term?",
+      resultList: "Search results",
+      resultShown: "Showing {count} result",
+      resultsShown: "Showing {count} results",
     },
     tableOfContents: {
       title: "Table of Contents",
