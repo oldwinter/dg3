@@ -60,6 +60,9 @@ export default {
       saved: "已加入稍后读",
       removed: "已从稍后读移除",
       failed: "浏览器未能保存更改",
+      exportList: "复制 Markdown 清单",
+      exported: "Markdown 清单已复制",
+      exportFailed: "浏览器未能复制 Markdown 清单",
     },
     resumeReading: {
       continueFrom: "从 {percent}% 继续阅读",

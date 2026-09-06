@@ -60,6 +60,9 @@ export default {
       saved: "Saved for later",
       removed: "Removed from read later",
       failed: "The browser could not save this change",
+      exportList: "Copy Markdown checklist",
+      exported: "Markdown checklist copied",
+      exportFailed: "The browser could not copy the Markdown checklist",
     },
     resumeReading: {
       continueFrom: "Continue from {percent}%",

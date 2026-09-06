@@ -7,6 +7,7 @@ import { readLaterScript } from "./readLater"
 import {
   READ_LATER_LIMIT,
   parseReadLaterEntries,
+  readLaterEntriesToMarkdown,
   toggleReadLaterEntry,
   type ReadLaterEntry,
 } from "./readLaterStorage"
@@ -25,6 +26,8 @@ test("read-later browser script handles navigation and in-place renders", () => 
   assert.match(readLaterScript, /window\.addCleanup\(cleanupReadLater\)/)
   assert.match(readLaterScript, /event\.key !== null && event\.key !== READ_LATER_KEY/)
   assert.match(readLaterScript, /const current = parseReadLaterEntry\(/)
+  assert.match(readLaterScript, /navigator\.clipboard\.writeText\(markdown\)/)
+  assert.match(readLaterScript, /exportButton\.disabled = entries\.length === 0/)
 })
 
 test("read-later labels use the central locale catalog", () => {
@@ -32,6 +35,9 @@ test("read-later labels use the central locale catalog", () => {
   assert.equal(zhCn.components.readLater.trigger({ count: 2 }), "稍后读，已保存 2 篇")
   assert.equal(zhTw.components.readLater.trigger({ count: 2 }), "稍後讀，已儲存 2 篇")
   assert.equal(enUs.components.readLater.removeItem({ title: "Note" }), "Remove Note")
+  assert.equal(enUs.components.readLater.exportList, "Copy Markdown checklist")
+  assert.equal(zhCn.components.readLater.exported, "Markdown 清单已复制")
+  assert.equal(zhTw.components.readLater.exportFailed, "瀏覽器未能複製 Markdown 清單")
 })
 
 describe("read-later storage", () => {
@@ -126,5 +132,30 @@ describe("read-later storage", () => {
       updated.some((entry) => entry.path === "/note-19"),
       false,
     )
+  })
+
+  test("exports an Obsidian-ready Markdown checklist in saved order", () => {
+    const entries: readonly ReadLaterEntry[] = [
+      { path: "/notes/newest?q=one", title: " Newest\n note ", savedAt: 20 },
+      { path: "/notes/road-map", title: String.raw`Road \ [Map]`, savedAt: 10 },
+    ]
+
+    const markdown = readLaterEntriesToMarkdown(entries, "https://garden.example/current")
+
+    assert.equal(
+      markdown,
+      [
+        "- [ ] [Newest note](<https://garden.example/notes/newest?q=one>)",
+        String.raw`- [ ] [Road \\ \[Map\]](<https://garden.example/notes/road-map>)`,
+      ].join("\n"),
+    )
+  })
+
+  test("returns no checklist for empty entries or a non-web base URL", () => {
+    const entries: readonly ReadLaterEntry[] = [{ path: "/note", title: "Note", savedAt: 10 }]
+
+    assert.equal(readLaterEntriesToMarkdown([], "https://garden.example/"), "")
+    assert.equal(readLaterEntriesToMarkdown(entries, "not a URL"), "")
+    assert.equal(readLaterEntriesToMarkdown(entries, "file:///garden/index.html"), "")
   })
 })

@@ -63,6 +63,9 @@ export interface Translation {
       saved: string
       removed: string
       failed: string
+      exportList: string
+      exported: string
+      exportFailed: string
     }
     resumeReading?: {
       continueFrom: string
