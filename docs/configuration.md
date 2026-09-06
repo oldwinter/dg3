@@ -298,3 +298,6 @@ const config = await loadQuartzConfig({
 export default config
 export const layout = await loadQuartzLayout()
 ```
+
+> [!tip]
+> For per-heading font control, self-hosted fonts, or Obsidian theme font bridging, see the [[plugins/Fonts|Fonts]] plugin. It can download Google Fonts at build time and serve them locally with `fontOrigin: selfHosted`, making your site fully self-contained.

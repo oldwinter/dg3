@@ -20,7 +20,7 @@ export interface FullPageLayout {
   afterBody: QuartzComponent[] // laid out vertically
   left: QuartzComponent[] // vertical on desktop and tablet, horizontal on mobile
   right: QuartzComponent[] // vertical on desktop, horizontal on tablet and mobile
-  footer: QuartzComponent // single component
+  footer: QuartzComponent[] // laid out vertically
 }
 ```
 
@@ -36,7 +36,7 @@ These correspond to following parts of the page:
 > There are two additional layout fields that are _not_ shown in the above diagram.
 >
 > 1. `head` is a single component that renders the `<head>` [tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head) in the HTML. This doesn't appear visually on the page and is only is responsible for metadata about the document like the tab title, scripts, and styles.
-> 2. `header` is a set of components that are laid out horizontally and appears _before_ the `beforeBody` section. This enables you to replicate the old Quartz 3 header bar where the title, search bar, and dark mode toggle. By default, Quartz doesn't place any components in the `header`.
+> 2. `header` is a set of components that are laid out horizontally and appears _before_ the `beforeBody` section. You can place components in the header by setting `layout.position: header` in your plugin configuration. This enables layouts similar to Quartz 3's header bar with title, search bar, and dark mode toggle.
 
 Layout components are configured in the `layout` section of `quartz.config.yaml`. Plugins declare their position and priority, and the layout system arranges them automatically:
 
@@ -77,12 +77,20 @@ plugins:
     layout:
       position: beforeBody
       priority: 30
+  - source: github:quartz-community/darkmode
+    enabled: true
+    layout:
+      position: header
+      priority: 10
   - source: github:quartz-community/footer
     enabled: true
     options:
       links:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
+    layout:
+      position: footer
+      priority: 50
 
 layout:
   groups:

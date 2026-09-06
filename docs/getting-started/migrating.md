@@ -87,6 +87,26 @@ Key changes:
 - **Import pattern**: Community plugins use `ExternalPlugin.X()` (from `.quartz/plugins`) instead of `Plugin.X()` (from `./quartz/plugins`)
 - **Layout structure**: `quartz.layout.ts` is gone — layout position is now a per-plugin property in `quartz.config.yaml`
 - **Page types**: A new plugin category for page rendering (content, folder, tag pages)
+- **URL casing**: All generated URLs are now lowercased and hyphenated (e.g. `My Notes/Hello World.md` → `/my-notes/hello-world`). In v4, the original casing of file and folder names was preserved in URLs.
+
+### URL Casing and SEO
+
+If your v4 site had URLs with uppercase letters, those URLs will return 404 errors after upgrading to v5. This also affects search engine indexing, since Google treats URLs as [case-sensitive](https://developers.google.com/search/docs/crawling-indexing/url-structure).
+
+The [[AliasRedirects]] plugin (enabled by default) automatically handles this. During build, it detects files whose original path contained uppercase characters and generates redirect pages at the old URLs. These redirect pages include proper SEO signals (`<link rel="canonical">`, `<meta http-equiv="refresh">`, `<meta name="robots" content="noindex">`) so that search engines transfer ranking to the new lowercase URLs.
+
+No manual configuration is needed — the plugin is enabled by default and the case redirect behavior is on by default. If you want to disable it, set `enableCaseRedirects: false` in the plugin options:
+
+```yaml title="quartz.config.yaml"
+plugins:
+  - source: github:quartz-community/alias-redirects
+    enabled: true
+    options:
+      enableCaseRedirects: false
+```
+
+> [!tip] Hosting on Netlify?
+> Netlify automatically lowercases all URLs and issues server-side 301 redirects. If you're hosting on Netlify, the case redirect pages aren't strictly necessary, but they don't hurt either.
 
 > [!note] Most users don't need to worry about these details
 > If you used the default Quartz 4 configuration (or only changed settings that `npx quartz create` prompts for), the setup wizard handles everything. The details below are for users who had custom plugin configurations.

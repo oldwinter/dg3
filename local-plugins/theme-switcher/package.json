@@ -4,6 +4,7 @@
   "description": "Local Quartz component plugin scaffold for a toolbar theme switcher",
   "type": "module",
   "private": true,
+  "packageManager": "npm@12.0.2",
   "license": "MIT",
   "keywords": [
     "quartz",
@@ -43,21 +44,29 @@
     }
   },
   "dependencies": {
-    "@quartz-community/types": "github:quartz-community/types"
+    "@quartz-community/types": "^0.3.0"
   },
   "devDependencies": {
-    "@types/jsdom": "^28.0.3",
-    "@types/node": "^25.0.10",
-    "jsdom": "^29.1.1",
-    "preact": "^10.28.2",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.4.0",
+    "jsdom": "^30.0.1",
+    "preact": "^10.29.8",
     "preact-render-to-string": "^6.7.0",
-    "sass": "^1.97.3",
-    "tsup": "^8.5.0",
+    "sass": "^1.103.1",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },
+  "overrides": {
+    "esbuild": "0.28.2"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.5.6": true,
+    "esbuild@0.28.2": true,
+    "fsevents@2.3.3": true
+  },
   "engines": {
-    "node": ">=22",
-    "npm": ">=10.9.2"
+    "node": ">=26",
+    "npm": ">=12"
   },
   "quartz": {
     "name": "theme-switcher",
