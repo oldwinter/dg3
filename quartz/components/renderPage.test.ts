@@ -3,6 +3,7 @@ import assert from "node:assert"
 import {
   pageResources,
   readLaterTriggerLabels,
+  readingTrailTriggerLabels,
   renderTranscludes,
   resolvePageLocale,
 } from "./renderPage"
@@ -75,6 +76,14 @@ test("readLaterTriggerLabels evaluates bounded counts through the locale functio
   assert.equal(labels[1], "One saved note")
   assert.equal(labels[20], "20 saved notes")
   assert.equal(labels.length, 21)
+})
+
+test("readingTrailTriggerLabels evaluates every bounded count", () => {
+  const labels = readingTrailTriggerLabels(({ count }) => `${count} previous`)
+
+  assert.equal(labels[0], "0 previous")
+  assert.equal(labels[8], "8 previous")
+  assert.equal(labels.length, 9)
 })
 
 function makeComponentData(

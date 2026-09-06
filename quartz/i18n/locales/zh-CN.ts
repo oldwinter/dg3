@@ -110,6 +110,15 @@ export default {
       value: "正文字号 {percent}%",
       failed: "已应用，但浏览器未能保存偏好",
     },
+    readingTrail: {
+      title: "阅读足迹",
+      trigger: ({ count }) => `阅读足迹，前面有 ${count} 篇笔记`,
+      close: "关闭阅读足迹",
+      clear: "清空阅读足迹",
+      empty: "这个标签页还没有之前读过的笔记",
+      cleared: "阅读足迹已清空",
+      failed: "浏览器未能保留阅读足迹",
+    },
     explorer: {
       title: "探索",
     },

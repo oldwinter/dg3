@@ -17,6 +17,7 @@ import { resolveFrame } from "./frames"
 import type { TreeTransform } from "../plugins/types"
 import type { BuildCtx } from "../util/ctx"
 import { READ_LATER_LIMIT } from "./scripts/readLaterStorage"
+import { READING_TRAIL_LIMIT } from "./scripts/readingTrailStorage"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -51,6 +52,12 @@ export function readLaterTriggerLabels(
   trigger: (variables: { count: number }) => string,
 ): readonly string[] {
   return Array.from({ length: READ_LATER_LIMIT + 1 }, (_, count) => trigger({ count }))
+}
+
+export function readingTrailTriggerLabels(
+  trigger: (variables: { count: number }) => string,
+): readonly string[] {
+  return Array.from({ length: READING_TRAIL_LIMIT + 1 }, (_, count) => trigger({ count }))
 }
 
 export function pageResources(
@@ -394,6 +401,8 @@ export function renderPage(
   const codeFolding = i18n(pageLocale).components.codeFolding ?? fallbackCodeFolding
   const fallbackReadingComfort = TRANSLATIONS[defaultTranslation].components.readingComfort
   const readingComfort = i18n(pageLocale).components.readingComfort ?? fallbackReadingComfort
+  const fallbackReadingTrail = TRANSLATIONS[defaultTranslation].components.readingTrail
+  const readingTrail = i18n(pageLocale).components.readingTrail ?? fallbackReadingTrail
   // During local dev (--serve), the dev server serves from root without the
   // baseUrl subpath, so basePath must be empty to avoid broken links.
   const basePath =
@@ -438,6 +447,13 @@ export function renderPage(
         data-note-share-copy-markdown={noteShare.copyMarkdown}
         data-note-share-markdown-copied={noteShare.markdownCopied}
         data-note-share-markdown-failed={noteShare.markdownFailed}
+        data-reading-trail-title={readingTrail.title}
+        data-reading-trail-trigger={JSON.stringify(readingTrailTriggerLabels(readingTrail.trigger))}
+        data-reading-trail-close={readingTrail.close}
+        data-reading-trail-clear={readingTrail.clear}
+        data-reading-trail-empty={readingTrail.empty}
+        data-reading-trail-cleared={readingTrail.cleared}
+        data-reading-trail-failed={readingTrail.failed}
         data-search-no-results={searchNoResults}
         data-search-no-results-hint={searchNoResultsHint}
         data-search-result-list={searchResultList}

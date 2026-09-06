@@ -113,6 +113,15 @@ export interface Translation {
       value: string
       failed: string
     }
+    readingTrail?: {
+      title: string
+      trigger: (variables: { count: number }) => string
+      close: string
+      clear: string
+      empty: string
+      cleared: string
+      failed: string
+    }
     explorer: {
       title: string
     }
