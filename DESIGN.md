@@ -243,6 +243,14 @@ Layout rules:
 - **Accessibility**: The native button reports localized expand/collapse names, `aria-expanded`, and its controlled code region. Keyboard focus remains on the action while state changes, with the existing opaque 2px focus ring.
 - **Motion**: Expand and collapse are immediate. Control feedback uses the 150ms micro transition; reduced motion removes transitions and press scaling, and no scroll or layout animation is introduced.
 
+### ReadingComfort
+
+- **Structure**: One 40px `Aa` action joins the existing reader-action row and opens a compact three-button stepper for smaller, default, or larger article text. It changes only the current article body and headings; metadata, toolbars, sidebars, code blocks, and page width keep their existing metrics.
+- **Scale**: Offer four bounded levels: 90%, 100%, 110%, and 120%. The smaller and larger commands clamp at the bounds, the center command restores 100%, and the current percentage is announced in the panel and trigger label.
+- **Storage**: Persist only the selected percentage in `localStorage.reading-comfort`; unknown or unavailable values fall back to 100%. Storage failure leaves the selected size active for the current page and reports the non-persistent state without blocking reading.
+- **Accessibility**: Use native buttons with localized names, visible focus rings, disabled boundary states, a polite value/status region, Escape and outside-click dismissal, and focus restoration. Cross-tab changes update the rendered article without navigation.
+- **Motion**: Reuse the 150ms reader-control hover and press feedback. Reduced-motion mode removes spatial feedback, and print hides the control while preserving the selected article scale.
+
 ## 6. Motion & Interaction
 
 Motion is quiet utility feedback, not brand theater.
