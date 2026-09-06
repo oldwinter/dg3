@@ -1,0 +1,87 @@
+.table-markdown-action {
+  display: flex;
+  width: 100%;
+  min-height: 2.5rem;
+  margin-block: 0.25rem 0.75rem;
+  justify-content: flex-end;
+}
+
+.table-markdown-button {
+  appearance: none;
+  display: grid;
+  box-sizing: border-box;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--gray) 54%, transparent);
+  border-radius: 6px;
+  background-color: var(--light);
+  color: var(--dark);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition:
+    background-color 0.15s ease-out,
+    color 0.15s ease-out,
+    transform 0.15s ease-out;
+
+  &:hover {
+    border-color: var(--secondary);
+    background-color: var(--lightgray);
+    color: var(--secondary);
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: wait;
+    opacity: 0.72;
+  }
+
+  &[data-state="copied"] {
+    color: var(--secondary);
+  }
+}
+
+.table-markdown-icon {
+  grid-area: 1 / 1;
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.table-markdown-icon-copied,
+.table-markdown-button[data-state="copied"] .table-markdown-icon-copy {
+  display: none;
+}
+
+.table-markdown-button[data-state="copied"] .table-markdown-icon-copied {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .table-markdown-button {
+    transition: none;
+
+    &:active {
+      transform: none;
+    }
+  }
+}
+
+@media print {
+  .table-markdown-action {
+    display: none;
+  }
+}
