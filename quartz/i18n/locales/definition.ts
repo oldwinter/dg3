@@ -60,6 +60,8 @@ export interface Translation {
       removeItem: (variables: { title: string }) => string
       close: string
       empty: string
+      filter: string
+      noMatches: string
       saved: string
       removed: string
       failed: string

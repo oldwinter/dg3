@@ -168,6 +168,7 @@ Layout rules:
 - **Placement**: Inline-end below content metadata; the panel remains within `100vw - 32px`, uses the existing 6px control radius, and is hidden from print.
 - **States**: Empty, populated, current note saved, current note unsaved, hover, pressed, focus-visible, browser-storage failure, and cross-tab synchronization.
 - **Storage**: Keep at most 20 newest entries in `localStorage`; accept only root-relative paths and normalized plain-text titles. No content writes, accounts, cookies, analytics, or external requests.
+- **Filtering**: A localized search field matches saved titles case-insensitively and trims the query. Clearing it restores saved order; no matches has its own empty state. The query resets when Quartz rebuilds the panel, while the badge and Markdown checklist always include all saved notes. Removing a filtered result returns focus to the field.
 - **Accessibility**: Chinese and English names include the current saved count. The trigger reports expanded state, the current-note toggle reports pressed state, status changes use a polite live region, Escape restores trigger focus, and every remove action names its note.
 - **Motion**: Open and close are immediate. Existing 150ms micro transitions cover color and press feedback; reduced-motion mode removes the press transform.
 

@@ -429,6 +429,8 @@ export function renderPage(
         data-read-later-remove-item={readLater.removeItem({ title: "{title}" })}
         data-read-later-close={readLater.close}
         data-read-later-empty={readLater.empty}
+        data-read-later-filter={readLater.filter}
+        data-read-later-no-matches={readLater.noMatches}
         data-read-later-saved={readLater.saved}
         data-read-later-removed={readLater.removed}
         data-read-later-failed={readLater.failed}

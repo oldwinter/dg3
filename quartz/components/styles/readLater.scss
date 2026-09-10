@@ -8,6 +8,31 @@
   justify-content: flex-end;
 }
 
+.read-later-filter {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.5rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--gray) 54%, transparent);
+  border-radius: 6px;
+  background-color: var(--light);
+  color: var(--dark);
+  font: inherit;
+  font-size: 16px;
+
+  &::placeholder {
+    color: var(--darkgray);
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
 .read-later-trigger,
 .read-later-close,
 .read-later-current,
