@@ -54,6 +54,8 @@ function getReadLaterLabels() {
     readLaterRemoveItem: removeItem,
     readLaterClose: close,
     readLaterEmpty: empty,
+    readLaterFilter: filter,
+    readLaterNoMatches: noMatches,
     readLaterSaved: saved,
     readLaterRemoved: removed,
     readLaterFailed: failed,
@@ -69,6 +71,8 @@ function getReadLaterLabels() {
     !removeItem ||
     !close ||
     !empty ||
+    !filter ||
+    !noMatches ||
     !saved ||
     !removed ||
     !failed ||
@@ -101,6 +105,8 @@ function getReadLaterLabels() {
     removeItem: (name) => removeItem.replace("{title}", () => name),
     close,
     empty,
+    filter,
+    noMatches,
     saved,
     removed,
     failed,
@@ -164,7 +170,14 @@ function initializeReadLater() {
   currentButton.type = "button"
   currentButton.className = "read-later-current"
   currentButton.append(createBookmarkIcon(), document.createElement("span"))
+  const filterInput = document.createElement("input")
+  filterInput.type = "search"
+  filterInput.className = "read-later-filter"
+  filterInput.placeholder = labels.filter
+  filterInput.setAttribute("aria-label", labels.filter)
+  filterInput.setAttribute("aria-controls", "read-later-list")
   const list = document.createElement("ul")
+  list.id = "read-later-list"
   list.className = "read-later-list"
   const exportButton = document.createElement("button")
   exportButton.type = "button"
@@ -173,7 +186,7 @@ function initializeReadLater() {
   const status = document.createElement("p")
   status.className = "read-later-status"
   status.setAttribute("aria-live", "polite")
-  panel.append(header, currentButton, list, exportButton, status)
+  panel.append(header, currentButton, filterInput, list, exportButton, status)
   root.append(trigger, panel)
   anchor.insertAdjacentElement("afterend", root)
 
@@ -194,15 +207,18 @@ function initializeReadLater() {
     trigger.title = labels.trigger(entries.length)
     trigger.setAttribute("aria-label", labels.trigger(entries.length))
     exportButton.disabled = entries.length === 0
+    const query = filterInput.value.trim().toLowerCase()
+    const visibleEntries = entries.filter((entry) => entry.title.toLowerCase().includes(query))
     list.replaceChildren()
-    if (entries.length === 0) {
+    if (visibleEntries.length === 0) {
       const empty = document.createElement("li")
       empty.className = "read-later-empty"
-      empty.textContent = labels.empty
+      empty.textContent = entries.length === 0 ? labels.empty : labels.noMatches
+      empty.setAttribute("role", "status")
       list.append(empty)
       return
     }
-    for (const entry of entries) {
+    for (const entry of visibleEntries) {
       const item = document.createElement("li")
       const link = document.createElement("a")
       link.className = "read-later-link internal"
@@ -224,12 +240,17 @@ function initializeReadLater() {
         entries = next
         status.textContent = labels.removed
         render()
+        filterInput.focus()
       })
       item.append(link, removeButton)
       list.append(item)
     }
   }
 
+  filterInput.addEventListener("input", () => {
+    status.textContent = ""
+    render()
+  })
   trigger.addEventListener("click", () => {
     panel.hidden = !panel.hidden
     trigger.setAttribute("aria-expanded", String(!panel.hidden))
