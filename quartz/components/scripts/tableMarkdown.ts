@@ -4,12 +4,15 @@ export type TableMarkdownLabels = Readonly<{
   failed: string
 }>
 
+export type TableColumnAlignment = "left" | "center" | "right" | null
+
 export function normalizeMarkdownTableCell(value: string): string {
   return value.replace(/\s+/gu, " ").trim().replace(/\\/gu, "\\\\").replace(/\|/gu, "\\|")
 }
 
 export function tableRowsToMarkdown(
   rows: ReadonlyArray<ReadonlyArray<string>>,
+  alignments: readonly TableColumnAlignment[] = [],
 ): string | undefined {
   if (rows.length < 2) return
   let columnCount = 0
@@ -25,7 +28,20 @@ export function tableRowsToMarkdown(
     }
     lines.push(`| ${cells.join(" | ")} |`)
     if (rowIndex === 0) {
-      lines.push(`| ${new Array<string>(columnCount).fill("---").join(" | ")} |`)
+      const separators: string[] = []
+      for (let columnIndex = 0; columnIndex < columnCount; columnIndex++) {
+        const alignment = alignments[columnIndex]
+        separators.push(
+          alignment === "left"
+            ? ":---"
+            : alignment === "center"
+              ? ":---:"
+              : alignment === "right"
+                ? "---:"
+                : "---",
+        )
+      }
+      lines.push(`| ${separators.join(" | ")} |`)
     }
   }
 
@@ -53,7 +69,14 @@ export function tableElementToMarkdown(table: HTMLTableElement): string | undefi
     rows.push(values)
   }
 
-  return tableRowsToMarkdown(rows)
+  const alignments: TableColumnAlignment[] = []
+  for (const cell of Array.from(firstRow.cells)) {
+    const value = (cell.style.textAlign || cell.getAttribute("align") || "").trim().toLowerCase()
+    const alignment = value === "left" || value === "center" || value === "right" ? value : null
+    for (let index = 0; index < cell.colSpan; index++) alignments.push(alignment)
+  }
+
+  return tableRowsToMarkdown(rows, alignments)
 }
 
 export function tableMarkdownLabels(dataset: DOMStringMap): TableMarkdownLabels | undefined {
