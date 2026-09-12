@@ -28,6 +28,7 @@ import { localLinkWanderScript } from "../../components/scripts/localLinkWander"
 import localLinkWanderStyle from "../../components/styles/localLinkWander.scss"
 import { wideContentScrollScript } from "../../components/scripts/wideContentScroll"
 import { searchEmptyStateScript } from "../../components/scripts/searchEmptyState"
+import { searchShortcutScript } from "../../components/scripts/searchShortcut"
 import searchFeedbackStyle from "../../components/styles/searchFeedback.scss"
 import wideContentScrollStyle from "../../components/styles/wideContentScroll.scss"
 import { tableMarkdownScript } from "../../components/scripts/tableMarkdown"
@@ -135,6 +136,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   componentResources.css.push(localLinkWanderStyle)
   componentResources.afterDOMLoaded.push(wideContentScrollScript)
   componentResources.afterDOMLoaded.push(searchEmptyStateScript)
+  componentResources.afterDOMLoaded.push(searchShortcutScript)
   componentResources.css.push(searchFeedbackStyle)
   componentResources.css.push(wideContentScrollStyle)
   componentResources.afterDOMLoaded.push(tableMarkdownScript)
