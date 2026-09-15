@@ -88,4 +88,10 @@ describe("404 random note recovery", () => {
     assert.equal(randomLink.href, "/")
     assert.equal(randomLink.hidden, true)
   })
+
+  test("labels the recovery link with randomWander, not explorer", () => {
+    const source = readFileSync(new URL("./404.tsx", import.meta.url), "utf8")
+    assert.match(source, /components\.randomWander/)
+    assert.doesNotMatch(source, /components\.explorer\.title/)
+  })
 })
