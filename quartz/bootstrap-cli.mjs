@@ -1,8 +1,8 @@
 #!/usr/bin/env -S node --no-deprecation
 const [major] = process.versions.node.split(".").map(Number)
-if (major < 22) {
+if (major < 26) {
   console.error(
-    `\nQuartz requires Node.js >= 22, but you are running Node.js ${process.version}.\n` +
+    `\nQuartz requires Node.js >= 26, but you are running Node.js ${process.version}.\n` +
       `Please upgrade: https://nodejs.org/\n`,
   )
   process.exit(1)
