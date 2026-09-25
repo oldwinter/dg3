@@ -3,4 +3,4 @@ command = "git fetch --unshallow || true && mv -f content/AboutTheGarden.md cont
 publish = "public"
 
 [build.environment]
-NODE_VERSION = "24"
+NODE_VERSION = "26"
