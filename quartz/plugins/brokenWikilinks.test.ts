@@ -91,6 +91,9 @@ describe("homepage and tour wikilink remaps", () => {
       "如何阅读由双链笔记组成的文章",
       "🍫 本库方法论指南",
       "🌏 本库发布指南",
+      "Obsidian",
+      "卡片笔记",
+      "思考的过程容器",
     ]
     const publishedNavigation = await Promise.all(
       navigation.map((entry) => readFile(new URL(entry.source, gardenRoot), "utf8")),
