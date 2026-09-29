@@ -197,8 +197,6 @@ describe("componentResources", () => {
       assert.ok(styleIndex < spaBranchIndex)
     })
   })
-
-
   test("includes table Markdown copying when SPA navigation is disabled", () => {
     const emitterPath = new URL("./componentResources.ts", import.meta.url)
     const source = readFile(emitterPath, "utf8")

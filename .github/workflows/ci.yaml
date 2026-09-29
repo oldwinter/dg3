@@ -11,7 +11,6 @@ on:
 
 jobs:
   build-and-test:
-    if: ${{ github.repository == 'jackyzha0/quartz' }}
     strategy:
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
@@ -48,6 +47,9 @@ jobs:
             ${{ runner.os }}-plugins-
 
       - run: npm ci
+
+      - name: Install theme switcher test dependencies
+        run: npm ci --prefix local-plugins/theme-switcher
 
       - name: Install Quartz plugins
         run: npm run install-plugins
