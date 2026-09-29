@@ -26,3 +26,20 @@ test("format checks exclude authored content and generated plugin bundles", () =
     "vendored external plugins should retain their own formatting contract",
   )
 })
+
+test("preview builds run in this repository", () => {
+  const workflow = readFileSync(
+    new URL("../.github/workflows/build-preview.yaml", import.meta.url),
+    "utf8",
+  )
+
+  assert.doesNotMatch(workflow, /github\.repository\s*==\s*['"]jackyzha0\/quartz['"]/)
+})
+
+test("validation jobs use read-only repository contents permission", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/ci.yaml", import.meta.url), "utf8")
+  const buildJob = workflow.split("  publish-tag:")[0]
+
+  assert.match(buildJob, /permissions:\s*\n\s+contents: read/)
+  assert.doesNotMatch(buildJob, /contents: write/)
+})
