@@ -51,10 +51,7 @@ test(
   { skip: skipOnWindows },
   async () => {
     const workspace = await createWorkspace()
-    installFakeGit(
-      workspace.bin,
-      'echo "$*" >> ' + shellQuote(workspace.gitLog) + "\nexit 99",
-    )
+    installFakeGit(workspace.bin, 'echo "$*" >> ' + shellQuote(workspace.gitLog) + "\nexit 99")
 
     const result = runAction(workspace, "../escape")
 
@@ -64,19 +61,15 @@ test(
   },
 )
 
-test(
-  "preserves the active theme when cloning fails",
-  { skip: skipOnWindows },
-  async () => {
-    const workspace = await createWorkspace()
-    installFakeGit(workspace.bin, 'if [[ "$1" == "clone" ]]; then exit 42; fi')
+test("preserves the active theme when cloning fails", { skip: skipOnWindows }, async () => {
+  const workspace = await createWorkspace()
+  installFakeGit(workspace.bin, 'if [[ "$1" == "clone" ]]; then exit 42; fi')
 
-    const result = runAction(workspace, "tokyo-night")
+  const result = runAction(workspace, "tokyo-night")
 
-    assert.notEqual(result.status, 0)
-    assert.equal(readFileSync(path.join(workspace.theme, "marker.txt"), "utf8"), "keep\n")
-  },
-)
+  assert.notEqual(result.status, 0)
+  assert.equal(readFileSync(path.join(workspace.theme, "marker.txt"), "utf8"), "keep\n")
+})
 
 test(
   "never reuses or deletes a pre-existing quartz-themes directory",
