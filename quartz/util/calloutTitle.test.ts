@@ -26,14 +26,8 @@ describe("stripCalloutTitleContinuationsInMarkdown", () => {
   })
 
   test("strips foldable and nested openers", () => {
-    assert.equal(
-      stripCalloutTitleContinuationsInMarkdown("> [!TIP]- 标题\\"),
-      "> [!TIP]- 标题",
-    )
-    assert.equal(
-      stripCalloutTitleContinuationsInMarkdown("> > [!NOTE] x\\"),
-      "> > [!NOTE] x",
-    )
+    assert.equal(stripCalloutTitleContinuationsInMarkdown("> [!TIP]- 标题\\"), "> [!TIP]- 标题")
+    assert.equal(stripCalloutTitleContinuationsInMarkdown("> > [!NOTE] x\\"), "> > [!NOTE] x")
   })
 
   test("does not touch ordinary quotes or mid-title backslashes", () => {
