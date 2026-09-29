@@ -7,6 +7,11 @@ test("build-and-test CI job is not restricted to the upstream Quartz repository"
   const buildJob = workflow.split("  publish-tag:")[0]
 
   assert.doesNotMatch(buildJob, /github\.repository\s*==\s*['"]jackyzha0\/quartz['"]/)
+  assert.match(
+    buildJob,
+    /npm ci --prefix local-plugins\/theme-switcher/,
+    "CI must install the local plugin's locked test dependencies",
+  )
 })
 
 test("format checks exclude authored content and generated plugin bundles", () => {
