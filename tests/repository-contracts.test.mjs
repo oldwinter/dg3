@@ -8,3 +8,12 @@ test("build-and-test CI job is not restricted to the upstream Quartz repository"
 
   assert.doesNotMatch(buildJob, /github\.repository\s*==\s*['"]jackyzha0\/quartz['"]/)
 })
+
+test("format checks exclude authored content and generated plugin bundles", () => {
+  const ignores = readFileSync(new URL("../.prettierignore", import.meta.url), "utf8")
+    .split(/\r?\n/)
+    .filter(Boolean)
+
+  assert.ok(ignores.includes("content"), "content should not be rewritten by the code formatter")
+  assert.ok(ignores.includes("**/dist"), "generated plugin bundles should be excluded")
+})

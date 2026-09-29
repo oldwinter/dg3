@@ -1,3 +1,9 @@
 public
 node_modules
 .quartz-cache
+content
+**/dist
+.vscode
+*.base
+*.canvas
+*.md
