@@ -16,4 +16,8 @@ test("format checks exclude authored content and generated plugin bundles", () =
 
   assert.ok(ignores.includes("content"), "content should not be rewritten by the code formatter")
   assert.ok(ignores.includes("**/dist"), "generated plugin bundles should be excluded")
+  assert.ok(
+    ignores.includes("external-plugins"),
+    "vendored external plugins should retain their own formatting contract",
+  )
 })

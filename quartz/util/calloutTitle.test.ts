@@ -37,10 +37,7 @@ describe("stripCalloutTitleContinuationsInMarkdown", () => {
   })
 
   test("does not touch ordinary quotes or mid-title backslashes", () => {
-    assert.equal(
-      stripCalloutTitleContinuationsInMarkdown("> quote\\"),
-      "> quote\\",
-    )
+    assert.equal(stripCalloutTitleContinuationsInMarkdown("> quote\\"), "> quote\\")
     assert.equal(
       stripCalloutTitleContinuationsInMarkdown("> [!NOTE] C:\\Windows"),
       "> [!NOTE] C:\\Windows",

@@ -3,6 +3,7 @@ node_modules
 .quartz-cache
 content
 **/dist
+external-plugins
 .vscode
 *.base
 *.canvas
