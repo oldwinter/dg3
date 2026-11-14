@@ -101,6 +101,11 @@ const calloutMapping = {
   cite: "quote",
 } as const;
 
+function stripCalloutTitleContinuation(title: string): string {
+  if (!/(?:\\[ \t]*)+$/.test(title)) return title;
+  return title.replace(/(?:\\[ \t]*)+$/u, "").replace(/[ \t]+$/u, "");
+}
+
 function canonicalizeCallout(calloutName: string): keyof typeof calloutMapping {
   const normalizedCallout = calloutName.toLowerCase() as keyof typeof calloutMapping;
   // if callout is not recognized, make it a custom one
@@ -477,7 +482,9 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<
                 const calloutType = canonicalizeCallout(typeStringValue.toLowerCase());
                 const collapse = collapseChar === "+" || collapseChar === "-";
                 const defaultState = collapseChar === "-" ? "collapsed" : "expanded";
-                const titleContent = match.input.slice(calloutDirective.length).trim();
+                const titleContent = stripCalloutTitleContinuation(
+                  match.input.slice(calloutDirective.length),
+                ).trim();
                 const useDefaultTitle = titleContent === "" && restOfTitle.length === 0;
                 const titleNode: Paragraph = {
                   type: "paragraph",

@@ -137,11 +137,11 @@ test("themeCss mobile switcher stays compact enough for the Quartz toolbar", () 
     )?.groups?.["rule"] ?? ""
 
   // Then
-  assert.match(mobileSelectRule, /inline-size:\s*min\(5rem,\s*19vw\)/)
+  assert.match(mobileSelectRule, /inline-size:\s*7\.75rem/)
   assert.match(mobileSelectRule, /min-inline-size:\s*var\(--theme-switcher-size\)/)
-  assert.match(mobileSelectRule, /padding-inline-start:\s*0\.25rem/)
-  assert.match(mobileSelectRule, /padding-inline-end:\s*0/)
-  assert.match(mobileSelectRule, /font-size:\s*0\.8125rem/)
+  assert.match(mobileSelectRule, /padding-inline-start:\s*0\.5rem/)
+  assert.match(mobileSelectRule, /padding-inline-end:\s*1\.25rem/)
+  assert.match(mobileSelectRule, /font-size:\s*0\.875rem/)
   assert.match(mobileSwatchRule, /display:\s*none/)
   assert.match(
     style,
@@ -149,5 +149,5 @@ test("themeCss mobile switcher stays compact enough for the Quartz toolbar", () 
   )
   assert.match(style, /@media\s*\(max-width:\s*340px\)/)
   assert.match(style, /\.flex-component:has\(\.theme-switcher\)\s*\{[^}]*flex-wrap:\s*wrap/s)
-  assert.match(style, /inline-size:\s*6rem/)
+  assert.match(style, /inline-size:\s*7\.75rem/)
 })

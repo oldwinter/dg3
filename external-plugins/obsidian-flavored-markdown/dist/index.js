@@ -26049,7 +26049,10 @@ var ObsidianFlavoredMarkdown = (userOpts) => {
                 const calloutType = canonicalizeCallout(typeStringValue.toLowerCase());
                 const collapse = collapseChar === "+" || collapseChar === "-";
                 const defaultState = collapseChar === "-" ? "collapsed" : "expanded";
-                const titleContent = match.input.slice(calloutDirective.length).trim();
+                const titleContent = match.input
+                  .slice(calloutDirective.length)
+                  .replace(/(?:\\[ \t]*)+$/u, "")
+                  .replace(/^[ \t]+|[ \t]+$/gu, "");
                 const useDefaultTitle = titleContent === "" && restOfTitle.length === 0;
                 const titleNode = {
                   type: "paragraph",

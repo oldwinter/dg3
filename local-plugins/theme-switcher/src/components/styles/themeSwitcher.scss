@@ -159,12 +159,16 @@
     display: none;
   }
 
+  .theme-switcher {
+    flex-shrink: 0;
+  }
+
   .theme-switcher-select {
-    inline-size: min(5rem, 19vw);
+    inline-size: 7.75rem;
     min-inline-size: var(--theme-switcher-size);
-    padding-inline-start: 0.25rem;
-    padding-inline-end: 0;
-    font-size: 0.8125rem;
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 1.25rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -180,7 +184,7 @@
   }
 
   .theme-switcher-select {
-    inline-size: 6rem;
+    inline-size: 7.75rem;
     font-size: 0.875rem;
   }
 }

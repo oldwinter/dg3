@@ -126,6 +126,47 @@ footer {
   .readermode {
     display: none !important;
   }
+
+  // 窄屏把站名单独放一行，工具按钮另起一行，避免站名折成三行挤住搜索。
+  .sidebar.left {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+    column-gap: 0.5rem;
+    align-items: center;
+
+    > .page-title {
+      flex: 1 0 100%;
+      min-width: 0;
+      line-height: 1.25;
+    }
+
+    > .mobile-only {
+      display: none;
+    }
+
+    > .flex-component {
+      flex: 1 1 100%;
+      min-width: 0;
+      justify-content: flex-start;
+    }
+
+    > .flex-component > div:has(> .search) {
+      flex-grow: 0 !important;
+      flex-basis: auto !important;
+    }
+
+    .theme-switcher {
+      flex-shrink: 0;
+    }
+
+    .theme-switcher-select {
+      inline-size: 7.75rem;
+      min-inline-size: 2rem;
+      padding-inline-start: 0.5rem;
+      padding-inline-end: 1.25rem;
+      font-size: 0.875rem;
+    }
+  }
 }
 
 // 可选：增加侧边栏宽度以显示更多内容
